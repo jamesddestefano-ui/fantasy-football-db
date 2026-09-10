@@ -10,6 +10,7 @@ from sqlalchemy import select
 from .db import DEFAULT_DB, make_engine, session_scope
 from .models import Authority, Base, CurrentOwnership, FantasyTeam, LineupAssignment, NFLPlayer, OwnershipEvent, ReconciliationIssue, Source, WaiverWatch
 from .seed import seed_mongo
+from .sparta_seed import seed_sparta
 from .services import DomainError, add_drop, backup_database, export_state, faab_balance, league, ownership, player, rebuild_state, roster, team, validate
 
 app = typer.Typer(no_args_is_help=True)
@@ -28,7 +29,9 @@ def _run(fn):
 def init(seed: bool = True):
     engine = make_engine(); Base.metadata.create_all(engine)
     if seed:
-        with session_scope(engine) as session: seed_mongo(session)
+        with session_scope(engine) as session:
+            seed_mongo(session)
+            seed_sparta(session)
     typer.echo(f"Initialized {DEFAULT_DB}")
 
 @roster_app.command("show")
