@@ -15,6 +15,20 @@ CURRENT_ROSTER = [
 ("Jalen Hurts","QB"),("Quinshon Judkins","RB"),("Rhamondre Stevenson","RB"),("J.K. Dobbins","RB"),("Malik Davis","RB"),("Ja'Marr Chase","WR"),("Jaxon Smith-Njigba","WR"),("Tetairoa McMillan","WR"),("Xavier Worthy","WR"),("Dontayvion Wicks","WR"),("Ja'Kobi Lane","WR"),("Devaughn Vele","WR"),("Caleb Douglas","WR"),("Malachi Fields","WR"),("Michael Mayer","TE"),("Evan McPherson","K"),("Jets D/ST","D/ST")]
 KNOWN_OWNED_ELSEWHERE = {"Jacob Saylors":"SR","Emmett Johnson":"ANT","Najee Harris":"VV","Juwan Johnson":"MN","George Holani":"JU","Dylan Sampson":"VV","Keaton Mitchell":"MN","Kaelon Black":"TM","Kaleb Johnson":"VV","Terrance Ferguson":"JU","Brenton Strange":"JP","Greg Dulcich":"MN","Kayshon Boutte":"ANT","MarShawn Lloyd":"SR","Mike Washington Jr.":"BE","Ka'imi Fairbairn":"JP","Cyrus Allen":"VV","Chris Bell":"MC","Tre Tucker":"JU","Jonah Coleman":"SR","Samaje Perine":"SR","Hunter Henry":"SR","T.J. Hockenson":"SR","Denzel Boston":"ME","Adonai Mitchell":"JP","Keenan Allen":"ME"}
 TEAM_CODES = list(SPARTA_2026_DRAFT.keys())
+TEAM_NAMES = {
+    "BE": "The Showstoppers",
+    "MN": "MattyBad",
+    "TM": "Dynamic Duo of Lad and Strips",
+    "VV": "Focus",
+    "MC": "Clinton Portis",
+    "ANT": "Amon A-Roll",
+    "JU": "The U",
+    "JD": "TB12 of Ass",
+    "SR": "King Kong",
+    "JP": "X-Factor",
+    "ME": "Brown Rice and Craft",
+    "MM": "Pablo Pledge-Scabars",
+}
 
 def _player(session: Session, name: str, position: str | None = None) -> NFLPlayer:
     normalized = normalize_name(name); p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalized))
@@ -29,7 +43,9 @@ def seed_sparta(session: Session) -> None:
     manager = Manager(name="James DeStefano", aliases=["James","JD"]); session.add_all([league,manager]); session.flush()
     teams = {}
     for code in TEAM_CODES:
-        tm = FantasyTeam(league_id=league.id, manager_id=manager.id if code=="JD" else None, slug=code.lower(), name=code, aliases=[code], is_mine=(code=="JD")); session.add(tm); teams[code]=tm
+        aliases = [code]
+        if code == "JD": aliases += ["JD", "James", "me", "TB12 of Ass"]
+        tm = FantasyTeam(league_id=league.id, manager_id=manager.id if code=="JD" else None, slug=code.lower(), name=TEAM_NAMES[code], aliases=aliases, is_mine=(code=="JD")); session.add(tm); teams[code]=tm
     session.flush()
     draft_source = Source(league_id=league.id, source_type="DRAFT_BOARD_SCREENSHOTS", description="Authoritative Aug. 30, 2026 Sparta full auction board supplied by user in two screenshots", platform="Sparta/Yahoo", observed_at=DRAFT_AT, authority=Authority.DRAFT, notes="All 12 board columns transcribed; 17 players per team. Displayed auction prices preserved exactly.")
     roster_source = Source(league_id=league.id, source_type="USER_CONFIRMATION", description="Authoritative current Sparta roster confirmed by user through Sept. 9, 2026", platform="ChatGPT/Yahoo screenshots", observed_at=AS_OF, authority=Authority.MANUAL_CORRECTION)
@@ -42,8 +58,6 @@ def seed_sparta(session: Session) -> None:
     current_names={name for name,_ in CURRENT_ROSTER}
     for name, position in CURRENT_ROSTER:
         p=_player(session,name,position); session.add(OwnershipEvent(league_id=league.id, player_id=p.id, fantasy_team_id=teams["JD"].id, state=OwnershipState.OWNED, event_type="CURRENT_ROSTER_SNAPSHOT", effective_at=AS_OF, source_id=roster_source.id, authority=Authority.MANUAL_CORRECTION))
-    # A complete current-roster snapshot proves these draft-day JD players are no longer confirmed on JD.
-    # UNKNOWN intentionally does not claim they are free agents or identify a new owner.
     for name,_ in SPARTA_2026_DRAFT["JD"]:
         if name not in current_names:
             p=_player(session,name); session.add(OwnershipEvent(league_id=league.id, player_id=p.id, state=OwnershipState.UNKNOWN, event_type="ABSENT_FROM_CURRENT_ROSTER", effective_at=AS_OF, source_id=roster_source.id, authority=Authority.CURRENT_ROSTER, notes="Not on confirmed current JD roster; present league ownership/free-agent status not inferred."))
