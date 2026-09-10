@@ -1,11 +1,23 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from decimal import Decimal
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from .models import Authority, FantasyTeam, League, Manager, NFLPlayer, OwnershipEvent, OwnershipState, Source
+from .models import (
+    Authority,
+    FaabBalanceObservation,
+    FantasyTeam,
+    League,
+    Manager,
+    NFLPlayer,
+    OwnershipEvent,
+    OwnershipState,
+    ReconciliationIssue,
+    Source,
+)
 from .names import normalize_name
 from .services import rebuild_state
 
@@ -160,6 +172,40 @@ def seed_sparta(session: Session) -> None:
             authority=Authority.MANUAL_CORRECTION,
             explicit_override=True,
         ))
+
+    # No real-dollar FAAB has been spent yet because pickups are free through Week 1.
+    session.add(FaabBalanceObservation(
+        league_id=league.id,
+        fantasy_team_id=teams["JD"].id,
+        balance=Decimal("100"),
+        observed_at=AS_OF,
+        source_id=roster_source.id,
+    ))
+
+    # These are intentionally explicit so future imports can reconcile rather than guess.
+    session.add(ReconciliationIssue(
+        league_id=league.id,
+        category="MISSING_2026_DRAFT_IMPORT",
+        details={
+            "missing": "Complete Aug. 30, 2026 Sparta auction board with all 12 teams, prices, and nominations",
+            "rule": "Do not infer 2026 ownership from older draft-history spreadsheets.",
+        },
+    ))
+    session.add(ReconciliationIssue(
+        league_id=league.id,
+        category="DRAFT_TO_CURRENT_TRANSACTION_HISTORY",
+        details={
+            "known": [
+                "Devin Neal -> Malik Davis",
+                "Kendre Miller -> Evan McPherson",
+                "Pat Bryant -> Caleb Douglas",
+                "Malik Willis -> Malachi Fields",
+                "Dalton Schultz -> Michael Mayer",
+                "Jets D/ST added",
+            ],
+            "missing": "Exact complete event chain needed to reproduce current roster from the Aug. 30 draft snapshot, including any intermediate adds/drops and Ravens D/ST disposition.",
+        },
+    ))
 
     session.flush()
     rebuild_state(session, "sparta")
