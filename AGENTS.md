@@ -21,3 +21,17 @@ This database is the source of truth. Integrity outranks an immediate recommenda
 17. Never substitute older Sparta draft-history spreadsheets for the Aug. 30, 2026 board.
 
 Natural-language completed add/drop workflow: query current state; validate the drop; treat the user's completed add as authoritative even if prior ownership was unknown; append one grouped transaction; add FAAB debit when known; rebuild current state; validate; report roster, balance, and provenance. For proposed pickups, stop at `UNKNOWN` until availability is verified.
+
+## Required repository update loop
+
+For every substantive fantasy update in any chat:
+
+1. Read the current repository state for the specified league.
+2. Analyze the proposed or completed update.
+3. Validate league scope, ownership prerequisites, and data integrity.
+4. Write only an authoritative completed change; never persist a contemplated move.
+5. Commit the change to GitHub with a descriptive message.
+6. Read the committed values back from GitHub and compare them with the intended write.
+7. Report success only after exact read-back verification, including the commit SHA. If any write, commit, or read-back step fails, report the failure explicitly.
+
+The repository overrides conflicting chat history or memory. Chat context may help locate evidence but cannot silently overwrite committed league facts.
