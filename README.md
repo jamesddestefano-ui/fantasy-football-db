@@ -1,6 +1,6 @@
-# Fantasy Football DB
+# Mongo Fantasy Football DB
 
-An event-history-first, auditable source of truth for James's 2026 fantasy leagues. Mongo and Billy's Sparta league share a canonical NFL player universe while keeping all league-dependent state completely isolated.
+An event-history-first, auditable source of truth for James's 2026 Mongo ESPN Mangarelli Auction League. This repository contains Mongo data only. Data from any other fantasy league belongs in a separate repository and must never be imported here.
 
 ## Setup
 
@@ -19,36 +19,24 @@ The production database defaults to `data/fantasy.db`; set `FFDB_DATABASE_URL` t
 
 ```bash
 ffdb roster show --league mongo
-ffdb roster show --league sparta
-ffdb player ownership "Dylan Sampson" --league sparta
-ffdb player history "Ja'Kobi Lane" --league sparta
-ffdb faab show --league sparta
-ffdb transaction add-drop --league sparta --team mine --drop "Player A" --add "Player B" --faab 0
-ffdb waiver-watch show --league sparta
-ffdb reconcile --league sparta
-ffdb validate --league sparta
-ffdb rebuild-state --league sparta
+ffdb player ownership "Kendre Miller" --league mongo
+ffdb player history "Ja'Kobi Lane" --league mongo
+ffdb lineup show --league mongo --week 1
+ffdb faab show --league mongo
+ffdb transaction add-drop --league mongo --team mine --drop "Kendre Miller" --add "Player X" --faab 4
+ffdb waiver-watch show --league mongo
+ffdb reconcile --league mongo
+ffdb validate --league mongo
+ffdb rebuild-state --league mongo
 ffdb backup
-ffdb export --league sparta
+ffdb export --league mongo
 ```
 
-A completed transaction statement is evidence of the resulting ownership; a proposed pickup is not. Before a recommendation, query ownership and distinguish `OWNED`, `FREE_AGENT_CONFIRMED`, `WAIVERS_CONFIRMED`, and `UNKNOWN`. See `AGENTS.md` for mandatory behavior.
+A completed transaction statement is evidence of the resulting ownership; a proposed pickup is not. Before a recommendation, query Mongo ownership and distinguish `OWNED`, `FREE_AGENT_CONFIRMED`, `WAIVERS_CONFIRMED`, and `UNKNOWN`. See `AGENTS.md` for mandatory behavior.
 
-## Current seeds
+## Current seed
 
-### Mongo
-
-The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 lineup snapshot, and a $94 FAAB balance checkpoint. It does not fabricate missing historical acquisition records; reconciliation issues record gaps.
-
-### Sparta
-
-The Sparta seed currently stores the user-confirmed current roster through Sept. 9, 2026, a $100 real-money FAAB opening checkpoint, and known ownership corrections that block false free-agent recommendations. It explicitly records reconciliation issues for the still-missing complete Aug. 30, 2026 draft-board import and any missing transaction links between the draft and current roster.
-
-The current Sparta seed intentionally does **not** treat absence from the database as free agency. The complete Aug. 30, 2026 board must be imported before broad availability can be trusted from draft evidence alone.
-
-## League isolation
-
-Every ownership, roster, transaction, lineup, FAAB, waiver-watch, and recommendation query must carry a league namespace. A player may be owned by James in Mongo, owned by another manager in Sparta, or have different availability states in each league without conflict.
+The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 lineup snapshot, and a $94 FAAB balance checkpoint. It does not fabricate missing historical acquisition records; reconciliation issues preserve those gaps.
 
 ## Backup and restore
 

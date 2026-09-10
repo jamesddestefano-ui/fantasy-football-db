@@ -48,12 +48,12 @@ def test_add_owned_elsewhere_is_rejected_atomically(session):
 
 def test_league_namespace_isolation(session):
     mongo = session.scalar(select(League).where(League.slug == "mongo")); p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Kendre Miller")))
-    sparta = League(slug="sparta-test", name="Synthetic isolation test", season=2026, settings={}); session.add(sparta); session.flush()
-    other = FantasyTeam(league_id=sparta.id, slug="other", name="Synthetic Other"); session.add(other); session.flush()
-    src = Source(league_id=sparta.id, source_type="OTHER", description="synthetic test only", observed_at=datetime.now(timezone.utc), authority=Authority.OTHER_SNAPSHOT); session.add(src); session.flush()
-    session.add(OwnershipEvent(league_id=sparta.id, player_id=p.id, fantasy_team_id=other.id, state=OwnershipState.OWNED,
-        event_type="OWNERSHIP_SNAPSHOT", effective_at=datetime.now(timezone.utc), source_id=src.id, authority=Authority.OTHER_SNAPSHOT)); session.flush(); rebuild_state(session, "sparta-test")
-    assert ownership(session, "mongo", "Kendre Miller").fantasy_team_id != ownership(session, "sparta-test", "Kendre Miller").fantasy_team_id
+    other_league = League(slug="isolation-test", name="Synthetic isolation test", season=2026, settings={}); session.add(other_league); session.flush()
+    other = FantasyTeam(league_id=other_league.id, slug="other", name="Synthetic Other"); session.add(other); session.flush()
+    src = Source(league_id=other_league.id, source_type="OTHER", description="synthetic test only", observed_at=datetime.now(timezone.utc), authority=Authority.OTHER_SNAPSHOT); session.add(src); session.flush()
+    session.add(OwnershipEvent(league_id=other_league.id, player_id=p.id, fantasy_team_id=other.id, state=OwnershipState.OWNED,
+        event_type="OWNERSHIP_SNAPSHOT", effective_at=datetime.now(timezone.utc), source_id=src.id, authority=Authority.OTHER_SNAPSHOT)); session.flush(); rebuild_state(session, "isolation-test")
+    assert ownership(session, "mongo", "Kendre Miller").fantasy_team_id != ownership(session, "isolation-test", "Kendre Miller").fantasy_team_id
 
 def test_news_never_changes_ownership(session):
     before = ownership(session, "mongo", "Browns D/ST").winning_event_id
