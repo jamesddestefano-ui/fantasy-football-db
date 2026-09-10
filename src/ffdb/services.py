@@ -95,7 +95,10 @@ def add_drop(session: Session, league_slug: str, team_slug: str, drop_name: str,
     new_balance = faab_balance(session, league_slug, team_slug)
     if new_balance is not None and new_balance - faab < 0: raise DomainError("Transaction would make FAAB negative")
     gid = str(uuid.uuid4())
+    # Flush the parent transaction group first. Without an ORM relationship SQLAlchemy is not
+    # guaranteed to order the pending child inserts ahead of this FK dependency on every flush.
     session.add(TransactionGroup(id=gid, league_id=lg.id, fantasy_team_id=tm.id, effective_at=when, source_id=source_id))
+    session.flush()
     session.add_all([
         TransactionEvent(group_id=gid, sequence=1, event_type="DROP", player_id=dropped.id),
         TransactionEvent(group_id=gid, sequence=2, event_type="ADD", player_id=added.id, faab_amount=faab),
@@ -149,4 +152,3 @@ def export_state(session: Session, league_slug: str, target_dir: Path):
     with csv_path.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=payload[0].keys() if payload else ["player", "position", "state", "team", "verified_at"]); w.writeheader(); w.writerows(payload)
     return [json_path, csv_path]
-
