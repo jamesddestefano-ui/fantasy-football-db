@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "record_id": "mongo-2026-09-11-malik-davis-hip-injury",
+  "league_id": "mongo",
+  "record_type": "verified_player_injury_intelligence",
+  "player": "Malik Davis",
+  "ownership_state_at_retrieval": "OWNED",
+  "ownership_team": "Tom Brady of Ass",
+  "event": {
+    "season": 2026,
+    "week": 1,
+    "team": "Dallas Cowboys",
+    "occurred_at": "2026-09-11",
+    "facts": [
+      "Malik Davis suffered a hip injury during Friday practice and left the field in a vehicle.",
+      "Dallas ruled Davis out for its Week 1 game against the New York Giants.",
+      "Cowboys COO Stephen Jones described the injury as pretty serious and said it could sideline Davis for some period of time.",
+      "Davis had won the Cowboys' No. 2 running back role; Emari Demercado is the current next back behind Javonte Williams."
+    ]
+  },
+  "sources": [
+    {
+      "publisher": "Fort Worth Star-Telegram",
+      "author": "Nick Harris",
+      "type": "credentialed_beat_reporter_x_post",
+      "url": "https://x.com/NickHarrisFWST/status/2098487367745126565",
+      "published_at": "2026-09-11T19:02:31Z",
+      "publication_time_display": "September 11, 2026 at 3:02 p.m. ET"
+    },
+    {
+      "publisher": "Dallas Cowboys",
+      "author": "Tommy Yarrish",
+      "type": "official_team_reporter_x_post",
+      "url": "https://x.com/tommy_yarrish/status/2098503064512536757",
+      "published_at": "2026-09-11T20:04:53Z",
+      "publication_time_display": "September 11, 2026 at 4:04 p.m. ET"
+    },
+    {
+      "publisher": "Blogging The Boys",
+      "author": "LP Cruz",
+      "type": "final_injury_report",
+      "url": "https://www.bloggingtheboys.com/dallas-cowboys-injuries/217493/injuries-running-back-malik-davis-ruled-giants",
+      "published_at": "2026-09-11T20:26:00Z",
+      "publication_time_display": "September 11, 2026 at 4:26 p.m. ET"
+    }
+  ],
+  "retrieved_at": "2026-09-11T20:55:54Z",
+  "retrieved_at_display": "September 11, 2026 at 4:55 p.m. ET",
+  "confidence": "HIGH",
+  "confirmed_vs_speculative": {
+    "confirmed": "Davis suffered a hip injury in Friday practice, was ruled out for Week 1, and the Cowboys characterized the injury as potentially serious.",
+    "analysis": "The injury materially reduces Davis's stash value and makes him the weakest current Mongo bench hold while further testing is pending.",
+    "speculation": "The exact diagnosis, timetable, and whether Dallas will place Davis on injured reserve remain unknown."
+  },
+  "fantasy_significance": "Davis loses his immediate RB2 contingency value and may miss extended time. Emari Demercado inherits the current backup role, but Dallas could add another running back.",
+  "mongo_relevance": "Malik Davis is OWNED by James and is on the Mongo bench. Keep him out of the Week 1 lineup; move him to IR only if ESPN makes him eligible, otherwise treat him as the first drop when a clearly superior verified target is available.",
+  "recommended_action": "BENCH; MOVE TO IR IF ELIGIBLE; OTHERWISE FIRST DROP FOR A VERIFIED TARGET",
+  "conditional_target": {
+    "player": "Emari Demercado",
+    "ownership_state": "UNKNOWN",
+    "classification": "TARGET — OWNERSHIP UNKNOWN / VERIFY IN ESPN",
+    "recommendation": "If confirmed available and Davis cannot be placed in IR, Demercado is a reasonable direct replacement for Davis only.",
+    "faab_range": "$1-$3",
+    "faab_ceiling": "$3"
+  },
+  "drop_candidate": "Malik Davis",
+  "urgency": "HIGH",
+  "tags": [
+    "mongo",
+    "week-1",
+    "injury",
+    "running-back",
+    "cowboys",
+    "role-change",
+    "drop-candidate",
+    "waiver-watch"
+  ]
+}
