@@ -1,0 +1,18 @@
+{
+  "event_type": "IR_MOVE",
+  "league": "mongo",
+  "player": "Malik Davis",
+  "from": {
+    "slot": "BN",
+    "placement": "BENCH"
+  },
+  "to": {
+    "slot": "IR",
+    "placement": "IR"
+  },
+  "ownership_changed": false,
+  "status": "completed",
+  "observed_at": "2026-09-11T21:05:15.038Z",
+  "source_type": "USER_CONFIRMATION",
+  "notes": "User explicitly confirmed Malik Davis moved to IR. Exact ESPN transaction time was not supplied; observed_at is the confirmation time."
+}

@@ -4,8 +4,8 @@ from decimal import Decimal
 import pytest
 from sqlalchemy import select
 
-from ffdb.models import (Authority, CurrentOwnership, FantasyTeam, League, NFLPlayer, NewsItem,
-    OwnershipEvent, OwnershipState, Source)
+from ffdb.models import (Authority, CurrentOwnership, FantasyTeam, League, LineupAssignment, NFLPlayer, NewsItem,
+    OwnershipEvent, OwnershipState, Source, TransactionEvent)
 from ffdb.names import normalize_name
 from ffdb.seed import ROSTER
 from ffdb.services import DomainError, add_drop, faab_balance, ownership, rebuild_state, roster, validate
@@ -16,6 +16,26 @@ def test_seed_roster_is_exact(session):
     assert len(actual) == 16
     assert faab_balance(session, "mongo") == Decimal("94.00")
     assert validate(session, "mongo") == []
+
+
+def test_malik_davis_is_owned_and_in_ir(session):
+    current = ownership(session, "mongo", "Malik Davis")
+    assert current.state == OwnershipState.OWNED
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    malik = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Malik Davis")))
+    assignment = session.scalar(select(LineupAssignment).where(
+        LineupAssignment.league_id == lg.id,
+        LineupAssignment.player_id == malik.id,
+        LineupAssignment.season == 2026,
+        LineupAssignment.week == 1,
+    ))
+    assert assignment.slot == "IR"
+    assert assignment.placement == "IR"
+    move = session.scalar(select(TransactionEvent).where(
+        TransactionEvent.player_id == malik.id,
+        TransactionEvent.event_type == "IR_MOVE",
+    ))
+    assert move is not None
 
 def test_not_mine_is_unknown_not_free_agent(session):
     for name in ["Browns D/ST", "Nicholas Singleton", "Kayshon Boutte", "Jacob Saylors"]:

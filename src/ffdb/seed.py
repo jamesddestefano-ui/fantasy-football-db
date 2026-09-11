@@ -5,18 +5,19 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from .models import (Authority, FaabBalanceObservation, FantasyTeam, League, LineupAssignment,
-    Manager, NFLPlayer, OwnershipEvent, OwnershipState, ReconciliationIssue, Source)
+    Manager, NFLPlayer, OwnershipEvent, OwnershipState, ReconciliationIssue, Source, TransactionEvent, TransactionGroup)
 from .names import normalize_name
 from .services import rebuild_state
 
 AS_OF = datetime(2026, 9, 10, 12, 0, tzinfo=timezone.utc)
+MALIK_DAVIS_IR_CONFIRMED_AT = datetime(2026, 9, 11, 21, 5, 15, tzinfo=timezone.utc)
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
     ("Tetairoa McMillan", "WR", "WR", "STARTER"), ("Mark Andrews", "TE", "TE", "STARTER"),
     ("Josh Downs", "WR", "FLEX", "STARTER"), ("CeeDee Lamb", "WR", "FLEX", "STARTER"),
     ("Eagles D/ST", "D/ST", "D/ST", "STARTER"), ("Kaelon Black", "RB", "BN", "BENCH"),
-    ("Ray Davis", "RB", "BN", "BENCH"), ("Malik Davis", "RB", "BN", "BENCH"),
+    ("Ray Davis", "RB", "BN", "BENCH"), ("Malik Davis", "RB", "IR", "IR"),
     ("Ja'Kobi Lane", "WR", "BN", "BENCH"), ("Kendre Miller", "RB", "BN", "BENCH"),
     ("Dylan Sampson", "RB", "BN", "BENCH"), ("Tre Tucker", "WR", "BN", "BENCH"),
 ]
@@ -40,6 +41,28 @@ def seed_mongo(session: Session):
             event_type="OWNERSHIP_SNAPSHOT", effective_at=AS_OF, source_id=src.id, authority=Authority.MANUAL_CORRECTION))
         session.add(LineupAssignment(league_id=lg.id, season=2026, week=1, fantasy_team_id=tm.id, player_id=p.id,
             slot=slot, placement=placement, effective_at=AS_OF, source_id=src.id))
+    malik = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Malik Davis")))
+    ir_source = Source(
+        league_id=lg.id,
+        source_type="USER_CONFIRMATION",
+        description="User confirmed Malik Davis moved from bench to IR",
+        original_ref="data/imports/2026-09-11-malik-davis-ir.json",
+        platform="ChatGPT/ESPN",
+        observed_at=MALIK_DAVIS_IR_CONFIRMED_AT,
+        authority=Authority.MANUAL_CORRECTION,
+        notes="Exact ESPN transaction time was not supplied; timestamp is the user-confirmation time.",
+    )
+    session.add(ir_source); session.flush()
+    ir_group = TransactionGroup(
+        id="malik-ir-20260911-confirmed-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=MALIK_DAVIS_IR_CONFIRMED_AT, source_id=ir_source.id,
+        notes="Malik Davis moved from bench to IR; ownership unchanged.",
+    )
+    session.add(ir_group); session.flush()
+    session.add(TransactionEvent(
+        group_id=ir_group.id, sequence=1, event_type="IR_MOVE", player_id=malik.id,
+        notes="Moved from BN/BENCH to IR/IR based on explicit user confirmation.",
+    ))
     for name, pos in NOT_MINE_UNKNOWN:
         p = NFLPlayer(canonical_name=name, normalized_name=normalize_name(name), position=pos); session.add(p); session.flush()
         session.add(OwnershipEvent(league_id=lg.id, player_id=p.id, state=OwnershipState.UNKNOWN,
