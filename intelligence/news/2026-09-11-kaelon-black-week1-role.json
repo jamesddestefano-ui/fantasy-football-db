@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "record_id": "mongo-2026-09-11-kaelon-black-week1-role",
+  "league_id": "mongo",
+  "record_type": "verified_player_role_intelligence",
+  "player": "Kaelon Black",
+  "ownership_state_at_retrieval": "OWNED",
+  "ownership_team": "Tom Brady of Ass",
+  "event": {
+    "season": 2026,
+    "week": 1,
+    "game": "San Francisco 49ers at Los Angeles Rams",
+    "played_at": "2026-09-10",
+    "facts": [
+      "Kaelon Black carried 14 times for 65 yards.",
+      "Christian McCaffrey carried 10 times for 68 yards.",
+      "Jordan James was a healthy inactive, establishing Black as San Francisco's clear RB2.",
+      "Black rotated into the opening drive and handled substantial early-down work; McCaffrey retained third-down, short-yardage, and goal-line priority."
+    ]
+  },
+  "sources": [
+    {
+      "publisher": "San Francisco 49ers",
+      "type": "official_team_report",
+      "url": "https://www.49ers.com/news/49ers-open-2026-with-27-7-win-over-rams-in-melbourne-takeaways-from-larvssf",
+      "published_at": "2026-09-11T03:05:00Z",
+      "publication_time_display": "September 10, 2026 at 11:05 p.m. ET"
+    },
+    {
+      "publisher": "PFF",
+      "author": "Nathan Jahnke",
+      "type": "usage_analysis",
+      "url": "https://www.pff.com/news/fantasy-football-week-1-recap-49ers-rams",
+      "published_at": "2026-09-11T03:26:13Z",
+      "publication_time_display": "September 10, 2026 at 11:26 p.m. ET"
+    }
+  ],
+  "retrieved_at": "2026-09-11T09:57:56Z",
+  "retrieved_at_display": "September 11, 2026 at 5:57 a.m. ET",
+  "confidence": "HIGH",
+  "confirmed_vs_speculative": {
+    "confirmed": "Official box-score usage and Jordan James's inactive status.",
+    "analysis": "Black appears to have standalone early-down work plus premium contingency value behind McCaffrey.",
+    "speculation": "The exact Week 2 touch share may change with game script and McCaffrey's health."
+  },
+  "fantasy_significance": "Black's Week 1 workload materially increases his rest-of-season value from pure handcuff to clear RB2 with possible standalone early-down usage.",
+  "mongo_relevance": "Kaelon Black is already OWNED by James and is on the Mongo bench. Hold him and do not treat him as a drop candidate.",
+  "recommended_action": "HOLD",
+  "drop_candidate": null,
+  "faab_recommendation": null,
+  "urgency": "MEDIUM",
+  "tags": [
+    "mongo",
+    "week-1",
+    "usage",
+    "running-back",
+    "49ers",
+    "handcuff",
+    "role-change"
+  ]
+}
