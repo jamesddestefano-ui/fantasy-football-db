@@ -12,11 +12,10 @@ from ffdb.services import DomainError, add_drop, faab_balance, ownership, rebuil
 
 def test_seed_roster_is_exact(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    assert actual == {r[0] for r in ROSTER}
-    assert len(actual) == 16
+    assert actual == {r[0] for r in ROSTER} | {"Emari Demercado"}
+    assert len(actual) == 17
     assert faab_balance(session, "mongo") == Decimal("94.00")
     assert validate(session, "mongo") == []
-
 
 def test_malik_davis_is_owned_and_in_ir(session):
     current = ownership(session, "mongo", "Malik Davis")
@@ -36,6 +35,26 @@ def test_malik_davis_is_owned_and_in_ir(session):
         TransactionEvent.event_type == "IR_MOVE",
     ))
     assert move is not None
+
+def test_demercado_free_add_is_owned_on_bench_without_faab_debit(session):
+    current = ownership(session, "mongo", "Emari Demercado")
+    assert current.state == OwnershipState.OWNED
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    demercado = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Emari Demercado")))
+    assignment = session.scalar(select(LineupAssignment).where(
+        LineupAssignment.league_id == lg.id,
+        LineupAssignment.player_id == demercado.id,
+        LineupAssignment.season == 2026,
+        LineupAssignment.week == 1,
+    ))
+    assert assignment.slot == "BN"
+    assert assignment.placement == "BENCH"
+    add = session.scalar(select(TransactionEvent).where(
+        TransactionEvent.player_id == demercado.id,
+        TransactionEvent.event_type == "FREE_AGENT_ADD",
+    ))
+    assert add.faab_amount == Decimal("0.00")
+    assert faab_balance(session, "mongo") == Decimal("94.00")
 
 def test_not_mine_is_unknown_not_free_agent(session):
     for name in ["Browns D/ST", "Nicholas Singleton", "Kayshon Boutte", "Jacob Saylors"]:
@@ -81,4 +100,3 @@ def test_news_never_changes_ownership(session):
     src = Source(league_id=lg.id, source_type="FANTASY_ANALYSIS", description="waiver article", authority=Authority.NON_OWNERSHIP); session.add(src); session.flush()
     session.add(NewsItem(player_id=p.id, league_id=lg.id, category="WAIVER_ANALYSIS", headline="Add them", source_id=src.id)); session.flush(); rebuild_state(session, "mongo")
     assert ownership(session, "mongo", "Browns D/ST").winning_event_id == before
-

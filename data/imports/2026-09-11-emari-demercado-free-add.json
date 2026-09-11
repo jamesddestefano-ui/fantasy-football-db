@@ -1,0 +1,26 @@
+{
+  "event_type": "FREE_AGENT_ADD",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Emari Demercado",
+  "nfl_team": "DAL",
+  "position": "RB",
+  "faab_amount": 0,
+  "dropped_player": null,
+  "related_ir_player": "Malik Davis",
+  "lineup_slot": "BN",
+  "lineup_placement": "BENCH",
+  "observed_at": "2026-09-11T21:43:00Z",
+  "effective_time_note": "Exact ESPN transaction time was not supplied; observed_at is the user-confirmation time.",
+  "sources": [
+    {
+      "type": "USER_CONFIRMATION",
+      "statement": "I added Demercado for Davis. It was free."
+    },
+    {
+      "type": "CURRENT_ROSTER_SCREENSHOT",
+      "original_ref": "IMG_1658.png",
+      "observation": "Emari Demercado appears on the bench and Malik Davis remains rostered in IR."
+    }
+  ]
+}

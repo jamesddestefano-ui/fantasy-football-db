@@ -12,7 +12,7 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from .models import (AUTHORITY_RANK, Authority, CurrentOwnership, FaabBalanceObservation,
-    FaabEntry, FantasyTeam, League, NFLPlayer, OwnershipEvent, OwnershipState,
+    FaabEntry, FantasyTeam, League, LineupAssignment, NFLPlayer, OwnershipEvent, OwnershipState,
     ReconciliationIssue, Source, TransactionEvent, TransactionGroup)
 from .names import normalize_name
 
@@ -126,7 +126,34 @@ def validate(session: Session, league_slug: str) -> list[str]:
         count = session.scalar(select(func.count()).select_from(CurrentOwnership).where(CurrentOwnership.league_id == lg.id,
             CurrentOwnership.fantasy_team_id == tm.id, CurrentOwnership.state == OwnershipState.OWNED))
         size = lg.settings.get("roster_size") if lg.settings else None
-        if size is not None and tm.is_mine and count != size: errors.append(f"{tm.name} roster size {count}, expected {size}")
+        ir_limit = lg.settings.get("ir", 0) if lg.settings else 0
+        latest_week = session.scalar(select(func.max(LineupAssignment.week)).where(
+            LineupAssignment.league_id == lg.id,
+            LineupAssignment.season == lg.season,
+            LineupAssignment.fantasy_team_id == tm.id,
+        ))
+        ir_count = 0
+        if latest_week is not None:
+            ir_count = session.scalar(select(func.count(func.distinct(LineupAssignment.player_id)))
+                .select_from(LineupAssignment)
+                .join(CurrentOwnership, CurrentOwnership.player_id == LineupAssignment.player_id)
+                .where(
+                    LineupAssignment.league_id == lg.id,
+                    LineupAssignment.season == lg.season,
+                    LineupAssignment.week == latest_week,
+                    LineupAssignment.fantasy_team_id == tm.id,
+                    LineupAssignment.placement == "IR",
+                    CurrentOwnership.league_id == lg.id,
+                    CurrentOwnership.fantasy_team_id == tm.id,
+                    CurrentOwnership.state == OwnershipState.OWNED,
+                ))
+        active_count = count - ir_count
+        if size is not None and tm.is_mine and active_count != size:
+            errors.append(f"{tm.name} active roster size {active_count}, expected {size}")
+        if ir_count > ir_limit:
+            errors.append(f"{tm.name} IR usage {ir_count}, limit {ir_limit}")
+        if size is not None and count > size + ir_limit:
+            errors.append(f"{tm.name} total roster size {count}, limit {size + ir_limit} including IR")
         balance = faab_balance(session, league_slug, tm.slug)
         if balance is not None and balance < 0: errors.append(f"{tm.name} has negative FAAB")
     missing_source = session.scalar(select(func.count()).select_from(CurrentOwnership).join(OwnershipEvent,
