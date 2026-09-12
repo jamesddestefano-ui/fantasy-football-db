@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-12T061000Z",
-  "generated_at": "2026-09-12T06:05:00Z",
-  "completed_at": "2026-09-12T06:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-12T081000Z",
+  "generated_at": "2026-09-12T08:05:00Z",
+  "completed_at": "2026-09-12T08:10:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "overnight_hourly_refresh",
@@ -62,7 +62,7 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new official team transaction or confirmed surgery completion since prior Pulse. Archer (source) and AP continue to report Saturday hip surgery and expected NFL IR placement. No credentialed confirmation of completed IR transaction or surgery as of this overnight run (~06:00Z). RotoWire est. return remains projection only.",
+      "summary": "No new official team transaction or confirmed surgery completion since prior Pulse. Archer (source) and AP continue to report Saturday hip surgery and expected NFL IR placement. No credentialed confirmation of completed IR transaction or surgery as of this overnight run (~08:00Z). RotoWire est. return remains projection only. Some reports frame as season-ending possibility.",
       "mongo_impact": "Davis remains OWNED and in the Mongo IR slot. Do not start. Do not drop. Await authenticated ESPN or official Cowboys IR announcement before treating as formal four-game lock.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -70,7 +70,7 @@
       "availability": "OWNED",
       "sources": [
         "Todd Archer @toddarcher 2026-09-12T00:55:31Z",
-        "AP via FOX Sports",
+        "AP via FOX Sports / NBC DFW",
         "RotoWire",
         "Mongo data/imports/2026-09-11-malik-davis-ir.json"
       ]
@@ -219,8 +219,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-12T041500Z",
-    "completed_at": "2026-09-12T04:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-12T061000Z",
+    "completed_at": "2026-09-12T06:10:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -232,6 +232,6 @@
     "Overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
     "Davis IR still attributed/expected; no confirmed official transaction or surgery completion in this window. Surgery scheduled Saturday.",
-    "No material new signals vs prior 04:15Z Pulse."
+    "No material new signals vs prior 06:10Z Pulse."
   ]
 }
