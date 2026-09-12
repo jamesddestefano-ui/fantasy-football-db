@@ -54,11 +54,17 @@ def test_historical_transactions_are_seeded_without_changing_current_roster(sess
     assert "Kaelon Black" in actual and "Tre Tucker" in actual
     assert "Ja'Kobi Lane" in actual and "Malik Davis" in actual
     assert "Jacob Saylors" not in actual and "Kayshon Boutte" not in actual
-    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "black-add-20260903-free-001"))
-    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "tucker-add-20260903-free-001"))
+    assert "Nicholas Singleton" not in actual
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "black-add-lane-drop-20260903-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "tucker-add-singleton-drop-20260903-001"))
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "lane-add-boutte-drop-20260908-001"))
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "malik-add-saylors-drop-20260908-001"))
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "saylors-waiver-20260903-faab6-001"))
+    # ESPN live: Sep 3 Black/Tucker were ADD_DROP, not bare free adds.
+    black_events = {e.event_type for e in session.scalars(select(TransactionEvent).where(TransactionEvent.group_id == "black-add-lane-drop-20260903-001"))}
+    tucker_events = {e.event_type for e in session.scalars(select(TransactionEvent).where(TransactionEvent.group_id == "tucker-add-singleton-drop-20260903-001"))}
+    assert black_events == {"DROP", "FREE_AGENT_ADD"}
+    assert tucker_events == {"DROP", "FREE_AGENT_ADD"}
 
 def test_open_reconciliation_issues_are_draft_and_player_espn_ids(session):
     lg = session.scalar(select(League).where(League.slug == "mongo"))

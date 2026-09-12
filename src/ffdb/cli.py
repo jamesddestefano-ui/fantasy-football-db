@@ -10,6 +10,7 @@ from sqlalchemy import select
 from .db import DEFAULT_DB, make_engine, session_scope
 from .models import Authority, Base, CurrentOwnership, FantasyTeam, LineupAssignment, NFLPlayer, OwnershipEvent, ReconciliationIssue, Source, WaiverWatch
 from .seed import seed_mongo
+from .dedupe import KNOWN_ESPN_EVENTS, dry_run_classify
 from .services import DomainError, add_drop, backup_database, export_state, faab_balance, league, ownership, player, rebuild_state, roster, team, validate
 
 app = typer.Typer(no_args_is_help=True)
@@ -61,12 +62,12 @@ def player_history(name: str, league_slug: str = typer.Option(..., "--league")):
 
 @tx_app.command("add-drop")
 def transaction_add_drop(league_slug: str = typer.Option(..., "--league"), team_slug: str = typer.Option("mine", "--team"),
-                         drop: str = typer.Option(...), add: str = typer.Option(...), faab: Decimal = typer.Option(Decimal("0"))):
+                         drop: str = typer.Option(...), add: str = typer.Option(...), faab: float = typer.Option(0.0)):
     def go(s):
         lg = league(s, league_slug)
         src = Source(league_id=lg.id, source_type="USER_CONFIRMATION", description="Completed transaction supplied conversationally",
             platform="CLI", observed_at=datetime.now(timezone.utc), authority=Authority.CONFIRMED_TRANSACTION)
-        s.add(src); s.flush(); gid = add_drop(s, league_slug, team_slug, drop, add, faab, src.id)
+        s.add(src); s.flush(); gid = add_drop(s, league_slug, team_slug, drop, add, Decimal(str(faab)), src.id)
         typer.echo(f"Recorded atomic transaction {gid}; FAAB balance: {faab_balance(s, league_slug, team_slug)}")
     _run(go)
 
@@ -125,5 +126,34 @@ def backup(db: Path = DEFAULT_DB):
 @app.command("export")
 def export_cmd(league_slug: str = typer.Option(..., "--league")):
     _run(lambda s: [typer.echo(p) for p in export_state(s, league_slug, Path("data/exports"))])
+
+
+@app.command("ingest-dry-run")
+def ingest_dry_run(league_slug: str = typer.Option("mongo", "--league")):
+    """Classify known ESPN historical events against the DB without writing (Mongo only)."""
+    if league_slug != "mongo":
+        typer.echo("ERROR: ingest-dry-run is Mongo-only", err=True)
+        raise typer.Exit(2)
+    def go(s):
+        results = dry_run_classify(s, KNOWN_ESPN_EVENTS)
+        for event, result in zip(KNOWN_ESPN_EVENTS, results):
+            key = result.semantic_key
+            key_s = (
+                f"{key.league}/{key.team}/{key.transaction_type}/"
+                f"{key.added_player}/{key.dropped_player}/{key.calendar_day_ET}"
+                if key else "?"
+            )
+            typer.echo(
+                f"{result.classification.value:18} {event['description'][:60]:60} "
+                f"match={result.matched_group_id or '-'} key={key_s}"
+            )
+        recorded = sum(1 for r in results if r.classification.value == "ALREADY_RECORDED")
+        uncertain = sum(1 for r in results if r.classification.value == "UNCERTAIN")
+        new = sum(1 for r in results if r.classification.value == "NEW")
+        typer.echo(f"summary: ALREADY_RECORDED={recorded} NEW={new} UNCERTAIN={uncertain}")
+        if uncertain or new:
+            raise typer.Exit(1)
+        typer.echo("DRY RUN PASS")
+    _run(go)
 
 if __name__ == "__main__": app()

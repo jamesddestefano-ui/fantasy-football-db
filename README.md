@@ -30,13 +30,14 @@ ffdb validate --league mongo
 ffdb rebuild-state --league mongo
 ffdb backup
 ffdb export --league mongo
+ffdb ingest-dry-run --league mongo
 ```
 
 A completed transaction statement is evidence of the resulting ownership; a proposed pickup is not. Before a recommendation, query Mongo ownership and distinguish `OWNED`, `FREE_AGENT_CONFIRMED`, `WAIVERS_CONFIRMED`, and `UNKNOWN`. See `AGENTS.md` for mandatory behavior.
 
 ## Current seed
 
-The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 lineup snapshot, and a $94 FAAB balance checkpoint. Authenticated ESPN evidence also seeds league/team IDs, INT `-2` scoring, FAAB opening `$100`, and dated waiver/add/drop history that explains `$100 → $94`. Auction draft prices and player `espn_id` values remain open/held reconciliation items — never fabricated.
+The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 lineup snapshot, and a $94 FAAB balance checkpoint. Authenticated ESPN evidence also seeds league/team IDs, INT `-2` scoring, FAAB opening `$100`, and dated waiver/add/drop history that explains `$100 → $94`. Sep 3 Black/Tucker history matches ESPN live activity as ADD_DROP (Lane and Singleton drops). `ffdb.dedupe` / `ffdb ingest-dry-run` classifies ESPN events before append; routine auto-ingest stays disabled. Auction draft prices and player `espn_id` values remain open/held reconciliation items — never fabricated.
 
 ## Backup and restore
 

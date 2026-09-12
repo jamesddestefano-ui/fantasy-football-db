@@ -16,3 +16,24 @@ Still open / held:
 - `MISSING_DRAFT_DATA` — complete auction results and prices were not in ESPN evidence
 - `MISSING_PLAYER_ESPN_IDS` — `nfl_players.espn_id` held; do not invent numeric IDs
 - Boutte original acquisition date/method remains unknown (only the Sep 8 drop is evidenced)
+
+## ESPN live activity correction (2026-09-12)
+
+Authenticated ESPN activity (`/workspace/espn-live-transactions.json`) corrected Sep 3 history:
+
+- Kaelon Black was **ADD + DROP Ja'Kobi Lane** (not a bare free add)
+- Tre Tucker was **ADD + DROP Nicholas Singleton** (not a bare free add)
+- Lane drop on Sep 3 then re-add on Sep 8 (Boutte drop) is coherent; end roster still 17
+- Malik BN→IR remains a **user-confirmation** `IR_MOVE` — ESPN activity filter did not show a Moved/IR row; do not invent an ESPN IR transaction
+
+## Semantic dedupe safety (Mongo only)
+
+`ffdb.dedupe` classifies inbound ESPN/import events before append:
+
+- Semantic key: `mongo` + team + normalized type family + added/dropped player keys + `calendar_day_ET`
+- Type family mapping collapses `FREE_AGENT_ADD+DROP` / `ADD_DROP` / seed `DROP+FREE_AGENT_ADD` → `ADD_DROP`
+- Player keys use `normalize_name` + `PlayerAlias` (Ja'Kobi↔Jakobi, Eagles D/ST↔Eagles, De'Von↔Devon)
+- Match → `ALREADY_RECORDED` (no write); uncertain → `UNCERTAIN` / INGESTION HELD; else `NEW`
+
+Dry check: `ffdb ingest-dry-run --league mongo` or `pytest tests/test_dedupe.py`. Routine auto-ingest stays disabled until the parent enables it.
+

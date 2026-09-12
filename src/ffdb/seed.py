@@ -5,7 +5,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from .models import (Authority, FaabBalanceObservation, FaabEntry, FantasyTeam, League, LineupAssignment,
-    Manager, NFLPlayer, OwnershipEvent, OwnershipState, ReconciliationIssue, Source,
+    Manager, NFLPlayer, OwnershipEvent, OwnershipState, PlayerAlias, ReconciliationIssue, Source,
     TransactionEvent, TransactionGroup)
 from .names import normalize_name
 from .services import rebuild_state
@@ -144,45 +144,69 @@ def seed_mongo(session: Session):
         ),
     ])
 
+    # Sep 3 ESPN live: Black add + Lane drop; Tucker add + Singleton drop (not bare free adds).
+    # Lane is re-acquired Sep 8 (Boutte drop); Singleton remains not on roster.
     black = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Kaelon Black")))
-    black_add = TransactionGroup(
-        id="black-add-20260903-free-001", league_id=lg.id, fantasy_team_id=tm.id,
+    lane = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Ja'Kobi Lane")))
+    black_lane = TransactionGroup(
+        id="black-add-lane-drop-20260903-001", league_id=lg.id, fantasy_team_id=tm.id,
         effective_at=SEP3_ET, source_id=espn_src.id,
-        notes="Kaelon Black added for $0. " + ET_DAY_NOTE,
+        notes="Kaelon Black added for $0; Ja'Kobi Lane dropped. " + ET_DAY_NOTE,
     )
-    session.add(black_add)
+    session.add(black_lane)
     session.flush()
     session.add_all([
         TransactionEvent(
-            group_id=black_add.id, sequence=1, event_type="FREE_AGENT_ADD", player_id=black.id,
+            group_id=black_lane.id, sequence=1, event_type="DROP", player_id=lane.id,
+            notes="Dropped when adding Kaelon Black.",
+        ),
+        TransactionEvent(
+            group_id=black_lane.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=black.id,
             faab_amount=Decimal("0"), notes="Free add.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=lane.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=SEP3_ET, source_id=espn_src.id, authority=Authority.CONFIRMED_TRANSACTION,
+            transaction_group_id=black_lane.id,
+            notes="Drop proves departure from roster, not current free agency. Lane re-added Sep 8. " + ET_DAY_NOTE,
         ),
         OwnershipEvent(
             league_id=lg.id, player_id=black.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
             event_type="ADDED", effective_at=SEP3_ET, source_id=espn_src.id,
-            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=black_add.id,
-            notes="ESPN free add. Later confirmed still owned by Sep 10 roster snapshot. " + ET_DAY_NOTE,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=black_lane.id,
+            notes="ESPN free add dropping Lane. Later confirmed still owned by Sep 10 roster snapshot. " + ET_DAY_NOTE,
         ),
     ])
 
     tucker = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Tre Tucker")))
-    tucker_add = TransactionGroup(
-        id="tucker-add-20260903-free-001", league_id=lg.id, fantasy_team_id=tm.id,
+    singleton = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Nicholas Singleton")))
+    tucker_singleton = TransactionGroup(
+        id="tucker-add-singleton-drop-20260903-001", league_id=lg.id, fantasy_team_id=tm.id,
         effective_at=SEP3_ET, source_id=espn_src.id,
-        notes="Tre Tucker added for $0. " + ET_DAY_NOTE,
+        notes="Tre Tucker added for $0; Nicholas Singleton dropped. " + ET_DAY_NOTE,
     )
-    session.add(tucker_add)
+    session.add(tucker_singleton)
     session.flush()
     session.add_all([
         TransactionEvent(
-            group_id=tucker_add.id, sequence=1, event_type="FREE_AGENT_ADD", player_id=tucker.id,
+            group_id=tucker_singleton.id, sequence=1, event_type="DROP", player_id=singleton.id,
+            notes="Dropped when adding Tre Tucker.",
+        ),
+        TransactionEvent(
+            group_id=tucker_singleton.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=tucker.id,
             faab_amount=Decimal("0"), notes="Free add.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=singleton.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=SEP3_ET, source_id=espn_src.id, authority=Authority.CONFIRMED_TRANSACTION,
+            transaction_group_id=tucker_singleton.id,
+            notes="Drop proves departure from roster, not current free agency. " + ET_DAY_NOTE,
         ),
         OwnershipEvent(
             league_id=lg.id, player_id=tucker.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
             event_type="ADDED", effective_at=SEP3_ET, source_id=espn_src.id,
-            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=tucker_add.id,
-            notes="ESPN free add. Later confirmed still owned by Sep 10 roster snapshot. " + ET_DAY_NOTE,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=tucker_singleton.id,
+            notes="ESPN free add dropping Singleton. Later confirmed still owned by Sep 10 roster snapshot. " + ET_DAY_NOTE,
         ),
     ])
 
@@ -334,5 +358,24 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("94"), observed_at=AS_OF, source_id=src.id,
     ))
+
+    # Name aliases for ESPN/alternate spellings (no new ownership).
+    for canonical, alias in [
+        ("Ja'Kobi Lane", "Jakobi Lane"),
+        ("Eagles D/ST", "Eagles"),
+        ("De'Von Achane", "Devon Achane"),
+    ]:
+        p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(canonical)))
+        if not p:
+            continue
+        norm_alias = normalize_name(alias)
+        existing_alias = session.scalar(select(PlayerAlias).where(PlayerAlias.normalized_alias == norm_alias))
+        if existing_alias:
+            continue
+        # Skip if alias normalizes to the same key as the canonical player row.
+        if norm_alias == p.normalized_name:
+            continue
+        session.add(PlayerAlias(player_id=p.id, alias=alias, normalized_alias=norm_alias))
+
     session.flush()
     rebuild_state(session, "mongo")

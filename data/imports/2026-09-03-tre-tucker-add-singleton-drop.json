@@ -1,0 +1,25 @@
+{
+  "event_type": "ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Tre Tucker",
+  "position": "WR",
+  "faab_amount": 0,
+  "dropped_player": "Nicholas Singleton",
+  "observed_at": "2026-09-03T16:00:00Z",
+  "effective_time_note": "ESPN evidence supplied calendar day America/New_York only; observed_at is noon Eastern (16:00 UTC during EDT). ESPN UI showed ~6:31 am local display.",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "ADD_DROP",
+    "added": "Tre Tucker",
+    "dropped": "Nicholas Singleton",
+    "calendar_day_ET": "2026-09-03"
+  },
+  "sources": [
+    {
+      "type": "ESPN_UI",
+      "observation": "Dropped Nicholas Singleton, TEN RB to Waivers; added Tre Tucker, LV WR from Free Agency on Sep 3 ET."
+    }
+  ]
+}
