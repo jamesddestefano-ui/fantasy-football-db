@@ -5,20 +5,53 @@
   "generated_at": null,
   "total_decisions": 0,
   "reviewed_decisions": 0,
+  "pending_decisions": 0,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
   "outcome_grade_distribution": {},
   "process_grade_distribution": {},
-  "confidence_calibration": {},
+  "confidence_calibration": {
+    "1": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
+    "2": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
+    "3": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
+    "4": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
+    "5": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null}
+  },
   "decision_type_performance": {},
   "signal_performance": {},
   "major_error_counts": {},
   "timing_failures": 0,
   "data_quality_failures": 0,
   "user_action_performance": {
-    "followed": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "ignored": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "overrode": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null}
+    "followed": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
+    "ignored": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
+    "overrode": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null}
+  },
+  "mongo_outcome_metrics": {
+    "reviewed_decisions": 0,
+    "actual_acquisitions": 0,
+    "tracked_value_count": {
+      "recommended_faab": 0,
+      "actual_faab_cost": 0,
+      "winning_faab": 0,
+      "next_highest_bid": 0,
+      "faab_saved_or_overspent": 0,
+      "points_added_above_replacement": 0,
+      "starter_bench_differential": 0,
+      "weeks_retained": 0,
+      "roster_value_improvement": 0
+    },
+    "averages": {
+      "recommended_faab": null,
+      "actual_faab_cost": null,
+      "winning_faab": null,
+      "next_highest_bid": null,
+      "faab_saved_or_overspent": null,
+      "points_added_above_replacement": null,
+      "starter_bench_differential": null,
+      "weeks_retained": null,
+      "roster_value_improvement": null
+    }
   }
 }

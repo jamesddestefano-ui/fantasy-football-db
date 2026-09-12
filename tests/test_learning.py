@@ -85,7 +85,26 @@ def test_scorecard_tracks_confidence_signals_and_user_action(tmp_path: Path):
     assert scorecard["user_action_performance"]["followed"]["count"] == 1
 
 
+def test_pending_decisions_count_toward_signal_usage_before_review(tmp_path: Path):
+    ledger = tmp_path / "ledger.jsonl"
+    append_decision(ledger, decision())
+    scorecard = build_scorecard(ledger)
+    assert scorecard["pending_decisions"] == 1
+    assert scorecard["confidence_calibration"]["4"]["count"] == 1
+    assert scorecard["confidence_calibration"]["4"]["reviewed_count"] == 0
+    assert scorecard["signal_performance"]["authenticated league state"]["count"] == 1
+    assert scorecard["signal_performance"]["authenticated league state"]["false_positive_rate"] is None
+    assert scorecard["signal_performance"]["authenticated league state"]["false_negative_rate"] is None
+
+
 def test_ledger_is_valid_jsonl(tmp_path: Path):
     ledger = tmp_path / "ledger.jsonl"
     append_decision(ledger, decision())
     assert json.loads(ledger.read_text())["record_type"] == "DECISION"
+
+
+def test_repository_scorecard_matches_empty_ledger_baseline():
+    ledger = Path("learning/decision_ledger.jsonl")
+    stored = json.loads(Path("learning/season_scorecard.json").read_text())
+    stored.pop("generated_at", None)
+    assert stored == build_scorecard(ledger)

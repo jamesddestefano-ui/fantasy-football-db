@@ -1,0 +1,28 @@
+{
+  "system": "PRIME_MONGO_FANTASY_WATCH",
+  "season": 2026,
+  "week": null,
+  "reviewed_at": null,
+  "best_decisions": [],
+  "worst_decisions": [],
+  "good_process_bad_result": [],
+  "bad_process_good_result": [],
+  "missed_opportunities": [],
+  "signals_that_worked": [],
+  "signals_that_failed": [],
+  "data_quality_issues": [],
+  "timing_issues": [],
+  "rule_changes_proposed": [],
+  "rule_changes_adopted": [],
+  "rules_rejected_due_to_insufficient_sample": [],
+  "mongo_metrics": {
+    "recommended_acquisition_vs_actual": [],
+    "recommended_faab_vs_actual_and_winning": [],
+    "points_added_above_replacement": [],
+    "starter_bench_differential": [],
+    "weeks_retained": [],
+    "drop_timing_and_regret": [],
+    "missed_waiver_opportunities": [],
+    "roster_value_improvement": []
+  }
+}

@@ -18,7 +18,8 @@ ERROR_CATEGORIES = {
     "MATCHUP_UNDERWEIGHTED", "VOLUME_PROJECTION_ERROR", "EFFICIENCY_PROJECTION_ERROR",
     "GAME_SCRIPT_ERROR", "WEATHER_ERROR", "NEWS_REACTION_TOO_SLOW",
     "NEWS_REACTION_TOO_AGGRESSIVE", "RECENCY_BIAS", "SMALL_SAMPLE_ERROR",
-    "MARKET_PRICE_IGNORED", "FAAB_OVERPAY", "FAAB_UNDERBID", "DROP_ERROR",
+    "MARKET_PRICE_IGNORED", "LINE_MOVEMENT_IGNORED", "CORRELATION_ERROR",
+    "CONTEST_SELECTION_ERROR", "FAAB_OVERPAY", "FAAB_UNDERBID", "DROP_ERROR",
     "START_SIT_ERROR", "PLAYER_EVALUATION_ERROR", "RISK_NOT_PRICED",
     "PROCESS_GOOD_VARIANCE_BAD", "OTHER",
 }
@@ -160,19 +161,23 @@ def build_scorecard(path: Path, season: int = 2026) -> dict[str, Any]:
     signals: dict[str, Any] = {}
 
     for level in range(1, 6):
-        bucket = [row for row in reviewed if row["confidence"] == level]
-        confidence[str(level)] = _bucket(bucket)
+        bucket = [row for row in rows if row["confidence"] == level]
+        confidence[str(level)] = _decision_bucket(bucket)
     for kind in sorted({row["decision_type"] for row in rows}):
-        decision_types[kind] = _bucket([row for row in reviewed if row["decision_type"] == kind])
+        decision_types[kind] = _decision_bucket([row for row in rows if row["decision_type"] == kind])
     signal_rows: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for row in reviewed:
+    for row in rows:
         for signal in set(row["key_supporting_signals"]):
             signal_rows[signal].append(row)
     for signal, bucket in sorted(signal_rows.items()):
-        metrics = _bucket(bucket)
-        metrics["false_positive_rate"] = round(
-            sum(row["outcome_grade"] in {"D", "F"} for row in bucket) / len(bucket), 3
+        reviewed_bucket = [row for row in bucket if row.get("reviewed_at")]
+        metrics = _decision_bucket(bucket)
+        metrics["false_positive_rate"] = (
+            round(sum(row["outcome_grade"] in {"D", "F"} for row in reviewed_bucket) / len(reviewed_bucket), 3)
+            if reviewed_bucket else None
         )
+        metrics["false_negative_rate"] = None
+        metrics["false_negative_note"] = "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
         signals[signal] = metrics
 
     action_groups = {"followed": [], "ignored": [], "overrode": []}
@@ -189,6 +194,7 @@ def build_scorecard(path: Path, season: int = 2026) -> dict[str, Any]:
         "season": season,
         "total_decisions": len(rows),
         "reviewed_decisions": len(reviewed),
+        "pending_decisions": len(rows) - len(reviewed),
         "wins": outcomes["A"] + outcomes["B"],
         "losses": outcomes["D"] + outcomes["F"],
         "neutral": outcomes["C"],
@@ -200,7 +206,8 @@ def build_scorecard(path: Path, season: int = 2026) -> dict[str, Any]:
         "major_error_counts": dict(errors.most_common()),
         "timing_failures": errors["NEWS_REACTION_TOO_SLOW"],
         "data_quality_failures": errors["STALE_DATA"] + errors["OWNERSHIP_ERROR"] + errors["ROSTER_STATE_ERROR"],
-        "user_action_performance": {key: _bucket(value) for key, value in action_groups.items()},
+        "user_action_performance": {key: _decision_bucket(value) for key, value in action_groups.items()},
+        "mongo_outcome_metrics": _mongo_outcome_metrics(reviewed),
     }
 
 
@@ -210,4 +217,41 @@ def _bucket(rows: list[dict[str, Any]]) -> dict[str, Any]:
         "success_rate": round(sum(row["outcome_grade"] in {"A", "B"} for row in rows) / len(rows), 3) if rows else None,
         "average_outcome_grade": _average([GRADE_POINTS[row["outcome_grade"]] for row in rows]),
         "average_process_grade": _average([GRADE_POINTS[row["process_grade"]] for row in rows]),
+    }
+
+
+def _decision_bucket(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    reviewed = [row for row in rows if row.get("reviewed_at")]
+    metrics = _bucket(reviewed)
+    metrics["count"] = len(rows)
+    metrics["reviewed_count"] = len(reviewed)
+    return metrics
+
+
+def _mongo_outcome_metrics(reviewed: list[dict[str, Any]]) -> dict[str, Any]:
+    numeric_fields = (
+        "recommended_faab", "actual_faab_cost", "winning_faab", "next_highest_bid",
+        "faab_saved_or_overspent", "points_added_above_replacement",
+        "starter_bench_differential", "weeks_retained", "roster_value_improvement",
+    )
+    values: dict[str, list[float]] = {field: [] for field in numeric_fields}
+    actual_acquisitions = 0
+    for row in reviewed:
+        outcome = row.get("outcome")
+        if not isinstance(outcome, dict):
+            continue
+        if outcome.get("actual_acquisition"):
+            actual_acquisitions += 1
+        for field in numeric_fields:
+            value = outcome.get(field)
+            if isinstance(value, (int, float)) and not isinstance(value, bool):
+                values[field].append(float(value))
+    return {
+        "reviewed_decisions": len(reviewed),
+        "actual_acquisitions": actual_acquisitions,
+        "tracked_value_count": {field: len(items) for field, items in values.items()},
+        "averages": {
+            field: round(sum(items) / len(items), 3) if items else None
+            for field, items in values.items()
+        },
     }
