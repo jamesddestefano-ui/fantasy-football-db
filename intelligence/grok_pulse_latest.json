@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-12T160500Z",
-  "generated_at": "2026-09-12T16:00:00Z",
-  "completed_at": "2026-09-12T16:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-12T171500Z",
+  "generated_at": "2026-09-12T17:10:00Z",
+  "completed_at": "2026-09-12T17:15:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -62,7 +62,7 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Official DallasCowboys.com (Nick Eatman) and Todd Archer confirm hip injury requires surgery on Saturday and expected season-ending IR placement. No credentialed confirmation of completed surgery or formal NFL IR transaction as of this hourly run (~16:00Z). Secondary sources continue to frame as season-ending; RotoWire return estimates remain projections only.",
+      "summary": "Official DallasCowboys.com (Nick Eatman) and Todd Archer confirm hip injury requires surgery and expected season-ending IR placement. Conflicting secondary reports on exact surgery timing (Friday evening vs Saturday). No credentialed confirmation of completed formal NFL IR transaction as of this hourly run (~17:10Z). Secondary sources continue to frame as season-ending; RotoWire return estimates remain projections only.",
       "mongo_impact": "Davis remains OWNED and in the Mongo IR slot. Do not start. Do not drop. Await authenticated ESPN or official Cowboys IR announcement before treating as formal four-game lock or free IR slot for a superior target.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -221,8 +221,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-12T151500Z",
-    "completed_at": "2026-09-12T15:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-12T160500Z",
+    "completed_at": "2026-09-12T16:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -233,7 +233,7 @@
   "notes": [
     "Hourly intelligence-only refresh (7AM-11PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Davis surgery still scheduled Saturday per official Cowboys site and Archer; no confirmed official transaction or surgery completion in this window.",
-    "No material new signals vs prior 15:15Z Pulse."
+    "Davis surgery timing reports remain mixed (Fri evening official team vs Saturday Archer); no confirmed formal NFL IR transaction or completed surgery confirmation in this window beyond prior reporting.",
+    "No material new signals vs prior 16:05Z Pulse."
   ]
 }
