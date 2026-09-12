@@ -1,32 +1,119 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-09-12T14:59:29Z",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 0,
+  "total_decisions": 1,
   "reviewed_decisions": 0,
-  "pending_decisions": 0,
+  "pending_decisions": 1,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
   "outcome_grade_distribution": {},
   "process_grade_distribution": {},
   "confidence_calibration": {
-    "1": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
-    "2": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
-    "3": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
-    "4": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
-    "5": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0}
+    "1": {
+      "count": 0,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
+    "2": {
+      "count": 0,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
+    "3": {
+      "count": 0,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
+    "4": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
+    "5": {
+      "count": 0,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    }
   },
-  "decision_type_performance": {},
-  "signal_performance": {},
+  "decision_type_performance": {
+    "INJURY_CONTINGENCY": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    }
+  },
+  "signal_performance": {
+    "authenticated league state": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "injury replacement role": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "official team report": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    }
+  },
   "major_error_counts": {},
   "timing_failures": 0,
   "data_quality_failures": 0,
   "user_action_performance": {
-    "followed": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
-    "ignored": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
-    "overrode": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0}
+    "followed": {
+      "count": 0,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
+    "ignored": {
+      "count": 0,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
+    "overrode": {
+      "count": 0,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    }
   },
   "mongo_outcome_metrics": {
     "reviewed_decisions": 0,
@@ -55,10 +142,10 @@
     }
   },
   "nfl_pulse_performance": {
-    "pulses_considered": 0,
+    "pulses_considered": 1,
     "pulses_used": 0,
-    "pulses_rejected": 0,
-    "decision_lineages_considered": 0,
+    "pulses_rejected": 1,
+    "decision_lineages_considered": 1,
     "decision_lineages_used": 0,
     "actions_changed_by_pulse": 0,
     "successful_actions_changed_by_pulse": 0,
@@ -68,7 +155,29 @@
     "misleading_pulses": 0,
     "too_late_pulses": 0,
     "usefulness_grade_distribution": {},
-    "pulse_category_performance": {},
-    "pulse_source_performance": {}
+    "pulse_category_performance": {
+      "injury": {
+        "count": 1,
+        "success_rate": null,
+        "average_outcome_grade": null,
+        "average_process_grade": null,
+        "reviewed_count": 0,
+        "used_count": 0,
+        "changed_decision_count": 0,
+        "usefulness_grade_distribution": {}
+      }
+    },
+    "pulse_source_performance": {
+      "Mongo Grok Pulse": {
+        "count": 1,
+        "success_rate": null,
+        "average_outcome_grade": null,
+        "average_process_grade": null,
+        "reviewed_count": 0,
+        "used_count": 0,
+        "changed_decision_count": 0,
+        "usefulness_grade_distribution": {}
+      }
+    }
   }
 }

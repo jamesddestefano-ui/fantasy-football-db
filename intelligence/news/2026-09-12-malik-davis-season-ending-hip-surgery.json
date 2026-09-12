@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "record_id": "mongo-2026-09-12-malik-davis-season-ending-hip-surgery",
+  "league_id": "mongo",
+  "record_type": "verified_player_injury_update",
+  "player": "Malik Davis",
+  "ownership_state_at_retrieval": "OWNED",
+  "ownership_team": "Tom Brady of Ass",
+  "roster_slot_at_retrieval": "IR",
+  "event": {
+    "season": 2026,
+    "week": 1,
+    "team": "Dallas Cowboys",
+    "occurred_at": "2026-09-11",
+    "facts": [
+      "DallasCowboys.com reports that Malik Davis's hip injury ends his 2026 season.",
+      "The official team report says Davis required surgery Friday evening.",
+      "Dallas says Davis will be placed on season-ending injured reserve.",
+      "The formal NFL injured-reserve transaction was not independently verified as completed at retrieval."
+    ]
+  },
+  "sources": [
+    {
+      "publisher": "Dallas Cowboys",
+      "author": "Nick Eatman",
+      "type": "official_team_report",
+      "url": "https://www.dallascowboys.com/news/malik-davis-out-with-pretty-serious-injury",
+      "published_at_display": "September 11, 2026 at 3:20 p.m. ET",
+      "source_content_verified_at": "2026-09-12T14:59:29Z",
+      "publication_timestamp_note": "The page shows its original publication time; its current text reports surgery later that evening and does not expose a separate modified timestamp."
+    }
+  ],
+  "retrieved_at": "2026-09-12T14:59:29Z",
+  "retrieved_at_display": "September 12, 2026 at 10:59 a.m. ET",
+  "confidence": "HIGH",
+  "significance": "HIGH",
+  "confirmed_vs_speculative": {
+    "confirmed": "The Cowboys' official site reports season-ending hip surgery and planned season-ending IR placement.",
+    "analysis": "Davis no longer has 2026 redraft contingency value and should be treated as an expendable IR stash.",
+    "unresolved": "A completed NFL IR transaction and the authenticated Mongo availability of any superior IR-eligible replacement are not yet established."
+  },
+  "fantasy_significance": "Davis has no expected 2026 redraft production. Emari Demercado's role as the current backup to Javonte Williams is strengthened, but Dallas could still elevate or add another running back.",
+  "mongo_relevance": "Davis is authenticated as OWNED in JDD's sole IR slot. Keep him there temporarily if the slot would otherwise be empty, but replace/drop him as soon as a meaningful IR-eligible player is authenticated as FREE_AGENT_CONFIRMED or WAIVERS_CONFIRMED. Demercado is already OWNED on the bench and remains a hold.",
+  "recommended_action": "REPLACE IR STASH WHEN A SUPERIOR IR-ELIGIBLE TARGET IS AUTHENTICATED AS AVAILABLE; HOLD EMARI DEMERCADO; NO LINEUP OR FAAB ACTION NOW",
+  "acquisition_target": {
+    "player": null,
+    "ownership_state": "UNKNOWN",
+    "recommendation": "No acquisition recommendation until authenticated ESPN/Mongo availability is established.",
+    "faab_range": null,
+    "faab_ceiling": null
+  },
+  "decision_id": "mongo-2026-w01-injury-contingency-malik-davis-001",
+  "pulse_lineage": {
+    "pulse_id": "mongo-grok-pulse-2026-09-12T143000Z",
+    "pulse_information_event_id": "malik-davis-hip-surgery-season-ending-ir-2026-09-11",
+    "pulse_conflicted_with_other_evidence": true,
+    "conflict": "Pulse said completed surgery and season-ending status were not confirmed; the current official Cowboys report says surgery occurred Friday evening and the injury is season-ending."
+  },
+  "urgency": "MEDIUM",
+  "tags": [
+    "mongo",
+    "week-1",
+    "injury",
+    "hip-surgery",
+    "season-ending",
+    "injured-reserve",
+    "ir-stash",
+    "cowboys",
+    "PULSE_CONFLICT"
+  ]
+}
