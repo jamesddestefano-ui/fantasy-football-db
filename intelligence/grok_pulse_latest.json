@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-12T151500Z",
-  "generated_at": "2026-09-12T15:10:00Z",
-  "completed_at": "2026-09-12T15:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-12T160500Z",
+  "generated_at": "2026-09-12T16:00:00Z",
+  "completed_at": "2026-09-12T16:05:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -62,17 +62,19 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new official team transaction or confirmed surgery completion since prior Pulse. Archer and multiple sources continue to report Saturday hip surgery and expected NFL IR placement. No credentialed confirmation of completed IR transaction or surgery as of this hourly run (~15:10Z). Some reports frame as season-ending; RotoWire est. return remains projection only.",
-      "mongo_impact": "Davis remains OWNED and in the Mongo IR slot. Do not start. Do not drop. Await authenticated ESPN or official Cowboys IR announcement before treating as formal four-game lock.",
+      "summary": "Official DallasCowboys.com (Nick Eatman) and Todd Archer confirm hip injury requires surgery on Saturday and expected season-ending IR placement. No credentialed confirmation of completed surgery or formal NFL IR transaction as of this hourly run (~16:00Z). Secondary sources continue to frame as season-ending; RotoWire return estimates remain projections only.",
+      "mongo_impact": "Davis remains OWNED and in the Mongo IR slot. Do not start. Do not drop. Await authenticated ESPN or official Cowboys IR announcement before treating as formal four-game lock or free IR slot for a superior target.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
+        "DallasCowboys.com Nick Eatman (official team report)",
         "Todd Archer @toddarcher 2026-09-12T00:55:31Z",
         "AP via FOX Sports / NBC DFW",
         "RotoWire",
-        "Mongo data/imports/2026-09-11-malik-davis-ir.json"
+        "Mongo data/imports/2026-09-11-malik-davis-ir.json",
+        "Mongo intelligence/news/2026-09-12-malik-davis-season-ending-hip-surgery.json"
       ]
     },
     {
@@ -96,12 +98,12 @@
       "player": "Kaelon Black",
       "team": "SF",
       "signal_type": "usage",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Unchanged vs prior: Shanahan attributed part of Week 1 CMC under-usage to cramps. Black 14-65-1/5 and James inactive remain facts. No new practice or Week 2 role updates in this window.",
+      "status": "CONFIRMED_FACT",
+      "summary": "Week 1 (Thu Australia) already complete: Black 14-65-1/5, CMC under-used (attributed partly to cramps). No new practice or Week 2 role updates in this window.",
       "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
         "Nick Wagoner / NBC Rotoworld",
@@ -121,7 +123,7 @@
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "Nick Underhill @nick_underhill 2026-09-12T00:33:38Z",
+        "Nick Underhill @nick_underhill",
         "Saints Wire / NewOrleansSaints.com final injury report",
         "CBS Sports Week 1 tracker"
       ]
@@ -219,8 +221,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-12T143000Z",
-    "completed_at": "2026-09-12T14:30:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-12T151500Z",
+    "completed_at": "2026-09-12T15:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -231,7 +233,7 @@
   "notes": [
     "Hourly intelligence-only refresh (7AM-11PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Davis IR still attributed/expected; no confirmed official transaction or surgery completion in this window. Surgery scheduled Saturday.",
-    "No material new signals vs prior 14:30Z Pulse."
+    "Davis surgery still scheduled Saturday per official Cowboys site and Archer; no confirmed official transaction or surgery completion in this window.",
+    "No material new signals vs prior 15:15Z Pulse."
   ]
 }
