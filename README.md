@@ -42,3 +42,8 @@ The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 
 ## Backup and restore
 
 `ffdb backup` creates a timestamped SQLite copy in `data/backups/` before risky imports. Restore while no writer is active by copying the selected backup over `data/fantasy.db`; validate immediately afterward. Backups and exports are ignored by Git.
+
+
+## Measurable learning loop
+
+Prime Mongo recommendations are recorded before their deadlines in `learning/decision_ledger.jsonl`. Outcomes are appended later as separate review events so the original recommendation and information set remain immutable. `src/ffdb/learning.py` validates Mongo-only records and rebuilds confidence, decision-type, signal and user-action performance metrics. Weekly reviews, the season scorecard and versioned rule changes live under `learning/`.

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "system": "PRIME_MONGO_FANTASY_WATCH",
+  "effective_date": "2026-09-12",
+  "rules": [
+    {
+      "rule_id": "mongo-learning-001",
+      "old_rule": null,
+      "new_rule": "Record every material Mongo recommendation before its decision deadline with contemporaneous evidence, confidence, urgency, risks and alternatives.",
+      "reason": "Create a durable decision-to-outcome learning record without hindsight rewriting.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Measure recommendation quality, calibration and timing."
+    },
+    {
+      "rule_id": "mongo-learning-002",
+      "old_rule": null,
+      "new_rule": "Append reviews after outcomes; grade outcome and process separately.",
+      "reason": "Separate decision quality from variance.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Prevent outcome bias and preserve reasoning as known at decision time."
+    },
+    {
+      "rule_id": "mongo-learning-003",
+      "old_rule": null,
+      "new_rule": "Require repeated evidence before changing predictive signal weights, except for clear structural defects.",
+      "reason": "Avoid overfitting to one result.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Improve stability and confidence calibration."
+    },
+    {
+      "rule_id": "mongo-learning-004",
+      "old_rule": null,
+      "new_rule": "Use authenticated ESPN state for Mongo ownership and availability; treat Grok Pulse and external analysis as intelligence only.",
+      "reason": "Preserve Mongo production authority and league isolation.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Reduce ownership, stale-state and cross-system errors."
+    }
+  ]
+}

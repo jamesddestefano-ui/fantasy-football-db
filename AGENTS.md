@@ -33,3 +33,17 @@ For every substantive fantasy update in any chat:
 7. Report success only after exact read-back verification, including the commit SHA. If any write, commit, or read-back step fails, report the failure explicitly.
 
 The repository overrides conflicting chat history or memory. Chat context may help locate evidence but cannot silently overwrite committed Mongo facts.
+
+
+## Measurable decision learning loop
+
+Prime Mongo Fantasy Watch uses the append-only learning layer under `learning/`.
+
+1. Record every material Mongo recommendation before its deadline in `learning/decision_ledger.jsonl` with contemporaneous evidence, confidence (1–5), urgency, risks and alternatives.
+2. A `DECISION` event is immutable. Never edit it after the result. Append a separate `REVIEW` event with outcome grade, process grade, errors, lesson and any proposed rule adjustment.
+3. Do not fabricate or backfill a recommendation that was not actually made. News without a material recommendation is not a decision-ledger entry.
+4. Ground Mongo ownership and availability in authenticated ESPN state. Grok Pulse, articles, projections, experts and news are intelligence signals only.
+5. Keep Mongo decisions and metrics isolated. Never store Sparta, DFS or prop decisions in this repository.
+6. Rebuild cumulative metrics from the ledger and produce one weekly review after each NFL week.
+7. Adopt a learning-rule change only in a new versioned file under `learning/rules/`; preserve all earlier rule versions.
+8. Do not change signal weights because of one ordinary result. Require repeated evidence unless a clear structural defect is exposed.
