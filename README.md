@@ -36,7 +36,7 @@ A completed transaction statement is evidence of the resulting ownership; a prop
 
 ## Current seed
 
-The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 lineup snapshot, and a $94 FAAB balance checkpoint. It does not fabricate missing historical acquisition records; reconciliation issues preserve those gaps.
+The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 lineup snapshot, and a $94 FAAB balance checkpoint. Authenticated ESPN evidence also seeds league/team IDs, INT `-2` scoring, FAAB opening `$100`, and dated waiver/add/drop history that explains `$100 → $94`. Auction draft prices and player `espn_id` values remain open/held reconciliation items — never fabricated.
 
 ## Backup and restore
 

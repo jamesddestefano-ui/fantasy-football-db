@@ -1,0 +1,25 @@
+{
+  "event_type": "FREE_AGENT_ADD",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Tre Tucker",
+  "position": "WR",
+  "faab_amount": 0,
+  "dropped_player": null,
+  "observed_at": "2026-09-03T16:00:00Z",
+  "effective_time_note": "ESPN evidence supplied calendar day America/New_York only; observed_at is noon Eastern (16:00 UTC during EDT).",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "FREE_AGENT_ADD",
+    "added": "Tre Tucker",
+    "dropped": null,
+    "calendar_day_ET": "2026-09-03"
+  },
+  "sources": [
+    {
+      "type": "ESPN_UI",
+      "observation": "Tre Tucker added for $0 on Sep 3 ET."
+    }
+  ]
+}

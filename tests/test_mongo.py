@@ -4,8 +4,8 @@ from decimal import Decimal
 import pytest
 from sqlalchemy import select
 
-from ffdb.models import (Authority, CurrentOwnership, FantasyTeam, League, LineupAssignment, NFLPlayer, NewsItem,
-    OwnershipEvent, OwnershipState, Source, TransactionEvent)
+from ffdb.models import (Authority, CurrentOwnership, FaabEntry, FantasyTeam, League, LineupAssignment, NFLPlayer, NewsItem,
+    OwnershipEvent, OwnershipState, ReconciliationIssue, Source, TransactionEvent, TransactionGroup)
 from ffdb.names import normalize_name
 from ffdb.seed import ROSTER
 from ffdb.services import DomainError, add_drop, faab_balance, ownership, rebuild_state, roster, validate
@@ -16,6 +16,58 @@ def test_seed_roster_is_exact(session):
     assert len(actual) == 17
     assert faab_balance(session, "mongo") == Decimal("94.00")
     assert validate(session, "mongo") == []
+
+def test_league_settings_include_espn_ids_scoring_and_faab_budget(session):
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    assert lg.settings["espn_league_id"] == "1470431049"
+    assert lg.settings["espn_team_id"] == 2
+    assert lg.settings["passing_int"] == -2
+    assert lg.settings["passing_td"] == 6
+    assert lg.settings["passing_yards_per_point"] == 25
+    assert lg.settings["kicker"] is False
+    assert lg.settings["faab_budget"] == 100
+    assert lg.settings["roster_slots"] == {
+        "QB": 1, "RB": 2, "WR": 2, "TE": 1, "FLEX": 2, "D/ST": 1, "BN": 7, "IR": 1,
+    }
+
+def test_faab_history_explains_100_to_94_via_saylors_claim(session):
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    tm = session.scalar(select(FantasyTeam).where(FantasyTeam.league_id == lg.id, FantasyTeam.is_mine.is_(True)))
+    opening = session.scalar(select(FaabEntry).where(
+        FaabEntry.league_id == lg.id, FaabEntry.fantasy_team_id == tm.id, FaabEntry.kind == "OPENING_BUDGET",
+    ))
+    assert opening.amount == Decimal("100.00")
+    saylors = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Jacob Saylors")))
+    claim = session.scalar(select(TransactionEvent).where(
+        TransactionEvent.player_id == saylors.id, TransactionEvent.event_type == "WAIVER_ADD",
+    ))
+    assert claim.faab_amount == Decimal("6.00")
+    debit = session.scalar(select(FaabEntry).where(
+        FaabEntry.league_id == lg.id, FaabEntry.kind == "WAIVER_EXPENDITURE",
+        FaabEntry.transaction_group_id == claim.group_id,
+    ))
+    assert debit.amount == Decimal("-6.00")
+    assert faab_balance(session, "mongo") == Decimal("94.00")
+
+def test_historical_transactions_are_seeded_without_changing_current_roster(session):
+    actual = {p.canonical_name for p, _ in roster(session, "mongo")}
+    assert "Kaelon Black" in actual and "Tre Tucker" in actual
+    assert "Ja'Kobi Lane" in actual and "Malik Davis" in actual
+    assert "Jacob Saylors" not in actual and "Kayshon Boutte" not in actual
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "black-add-20260903-free-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "tucker-add-20260903-free-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "lane-add-boutte-drop-20260908-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "malik-add-saylors-drop-20260908-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "saylors-waiver-20260903-faab6-001"))
+
+def test_open_reconciliation_issues_are_draft_and_player_espn_ids(session):
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    open_issues = session.scalars(select(ReconciliationIssue).where(
+        ReconciliationIssue.league_id == lg.id, ReconciliationIssue.status == "OPEN",
+    )).all()
+    cats = {i.category for i in open_issues}
+    assert cats == {"MISSING_DRAFT_DATA", "MISSING_PLAYER_ESPN_IDS"}
+    assert not any(i.category == "MISSING_TRANSACTION_HISTORY" for i in open_issues)
 
 def test_malik_davis_is_owned_and_in_ir(session):
     current = ownership(session, "mongo", "Malik Davis")

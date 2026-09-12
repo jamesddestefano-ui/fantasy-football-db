@@ -1,0 +1,25 @@
+{
+  "event_type": "ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Malik Davis",
+  "position": "RB",
+  "faab_amount": 0,
+  "dropped_player": "Jacob Saylors",
+  "observed_at": "2026-09-08T16:00:00Z",
+  "effective_time_note": "ESPN evidence supplied calendar day America/New_York only; observed_at is noon Eastern (16:00 UTC during EDT).",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "ADD_DROP",
+    "added": "Malik Davis",
+    "dropped": "Jacob Saylors",
+    "calendar_day_ET": "2026-09-08"
+  },
+  "sources": [
+    {
+      "type": "ESPN_UI",
+      "observation": "Malik Davis added for $0; Jacob Saylors dropped on Sep 8 ET."
+    }
+  ]
+}
