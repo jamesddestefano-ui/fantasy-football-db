@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-12T192500Z",
-  "generated_at": "2026-09-12T19:15:00Z",
-  "completed_at": "2026-09-12T19:25:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-12T222000Z",
+  "generated_at": "2026-09-12T22:10:00Z",
+  "completed_at": "2026-09-12T22:20:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -62,8 +62,8 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Cowboys officially placed Malik Davis on injured reserve Saturday after he underwent hip surgery earlier today. Confirmed by Todd Archer (ESPN), Dallas Morning News, RotoWire (citing Adam Schefter), and team announcement. Season-ending expected; minimum four-game IR absence. Israel Abanikanda elevated from practice squad to active roster.",
-      "mongo_impact": "Davis remains OWNED in the Mongo IR slot. Formal NFL IR now confirmed. Do not start. Do not drop. IR slot is locked for at least four games; no free IR upgrade available from this Pulse.",
+      "summary": "Cowboys officially placed Malik Davis on injured reserve Saturday after he underwent hip surgery. Confirmed by Todd Archer (ESPN), Dallas Morning News, RotoWire (citing Adam Schefter), NFL transactions, and team announcement. Season-ending; no return designation. Israel Abanikanda elevated from practice squad to active roster as RB3.",
+      "mongo_impact": "Davis remains OWNED in the Mongo IR slot. Formal NFL IR confirmed. Do not start. Do not drop. IR slot locked for at least four games; no free IR upgrade available from this Pulse.",
       "recommendation": "HOLD",
       "urgency": "NONE",
       "confidence": "HIGH",
@@ -72,6 +72,7 @@
         "Todd Archer @toddarcher (ESPN)",
         "Dallas Morning News / Calvin Watkins",
         "RotoWire (Adam Schefter)",
+        "NFL.com reserve-list transactions 09/12",
         "DallasCowboys.com / team announcement",
         "Mongo data/imports/2026-09-11-malik-davis-ir.json"
       ]
@@ -81,7 +82,7 @@
       "team": "DAL",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Primary backup to Javonte Williams confirmed with Davis now on formal IR. Abanikanda elevated as RB3. No change to Week 1 role expectation.",
+      "summary": "Primary backup to Javonte Williams confirmed with Davis on formal IR. Abanikanda elevated as RB3. No change to Week 1 role expectation.",
       "mongo_impact": "OWNED on Mongo bench. Hold as handcuff. Limited Week 1 standalone upside behind Williams.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
@@ -116,7 +117,7 @@
       "team": "NO",
       "signal_type": "role",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Unchanged vs prior Pulse: Nick Underhill reports Kamara (knee) QUESTIONABLE after full Friday practice; expects limited role if active. Estime OUT. Etienne leads, Miller next among healthy backs. Possible practice-squad elevation still in play but no new confirmation this hour.",
+      "summary": "Unchanged vs prior Pulse: Nick Underhill reports Kamara (knee) QUESTIONABLE after full Friday practice; expects limited role if active. Estime OUT. Etienne leads, Miller next among healthy backs. No new confirmation this hour on practice-squad elevations or final inactives.",
       "mongo_impact": "Miller OWNED on bench. Watch Sunday inactives. Not a start over Achane/Bijan.",
       "recommendation": "WATCH",
       "urgency": "BEFORE_KICKOFF",
@@ -197,7 +198,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (now formal NFL IR confirmed).",
+      "summary": "No Pulse-driven lineup change. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed).",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -218,17 +219,11 @@
       ]
     }
   ],
-  "material_changes": [
-    {
-      "type": "injury_status",
-      "player": "Malik Davis",
-      "detail": "Formal NFL IR placement and hip surgery completion confirmed Saturday (previously expected/attributed). Status upgraded from ATTRIBUTED_REPORT to CONFIRMED_FACT."
-    }
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-12T182000Z",
-    "completed_at": "2026-09-12T18:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-12T192500Z",
+    "completed_at": "2026-09-12T19:25:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -239,7 +234,6 @@
   "notes": [
     "Hourly intelligence-only refresh (7AM-11PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Material update: Davis surgery completed and formal IR transaction confirmed by Archer, DMN, Schefter/RotoWire, and team.",
-    "No other material new signals vs prior 18:20Z Pulse."
+    "No material new signals vs prior 19:25Z Pulse. Davis IR already confirmed; Kamara remains Q with limited expected role; Miller status unchanged."
   ]
 }
