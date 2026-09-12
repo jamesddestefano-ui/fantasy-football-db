@@ -3,12 +3,12 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-12T101500Z",
-  "generated_at": "2026-09-12T10:10:00Z",
-  "completed_at": "2026-09-12T10:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-12T112000Z",
+  "generated_at": "2026-09-12T11:15:00Z",
+  "completed_at": "2026-09-12T11:20:00Z",
   "week": 1,
   "season": 2026,
-  "run_type": "overnight_hourly_refresh",
+  "run_type": "hourly_refresh",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -62,7 +62,7 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new official team transaction or confirmed surgery completion since prior Pulse. Archer and multiple sources continue to report Saturday hip surgery and expected NFL IR placement. No credentialed confirmation of completed IR transaction or surgery as of this overnight run (~10:10Z). Some reports frame as season-ending possibility. RotoWire est. return remains projection only.",
+      "summary": "No new official team transaction or confirmed surgery completion since prior Pulse. Archer and multiple sources continue to report Saturday hip surgery and expected NFL IR placement. No credentialed confirmation of completed IR transaction or surgery as of this hourly run (~11:15Z). Some reports (NBC DFW) frame as season-ending; RotoWire est. return remains projection only.",
       "mongo_impact": "Davis remains OWNED and in the Mongo IR slot. Do not start. Do not drop. Await authenticated ESPN or official Cowboys IR announcement before treating as formal four-game lock.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -97,7 +97,7 @@
       "team": "SF",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Unchanged vs prior: Shanahan attributed part of Week 1 CMC under-usage to cramps. Black 14-65-1/5 and James inactive remain facts. No new practice or Week 2 role updates in this overnight window.",
+      "summary": "Unchanged vs prior: Shanahan attributed part of Week 1 CMC under-usage to cramps. Black 14-65-1/5 and James inactive remain facts. No new practice or Week 2 role updates in this window.",
       "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -219,8 +219,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-12T081000Z",
-    "completed_at": "2026-09-12T08:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-12T101500Z",
+    "completed_at": "2026-09-12T10:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -229,9 +229,9 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (7AM-11PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
     "Davis IR still attributed/expected; no confirmed official transaction or surgery completion in this window. Surgery scheduled Saturday.",
-    "No material new signals vs prior 08:10Z Pulse."
+    "No material new signals vs prior 10:15Z Pulse."
   ]
 }
