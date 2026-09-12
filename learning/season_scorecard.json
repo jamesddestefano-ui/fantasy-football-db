@@ -1,8 +1,8 @@
 {
+  "generated_at": null,
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "generated_at": null,
   "total_decisions": 0,
   "reviewed_decisions": 0,
   "pending_decisions": 0,
@@ -12,11 +12,11 @@
   "outcome_grade_distribution": {},
   "process_grade_distribution": {},
   "confidence_calibration": {
-    "1": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "2": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "3": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "4": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "5": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null}
+    "1": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
+    "2": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
+    "3": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
+    "4": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
+    "5": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0}
   },
   "decision_type_performance": {},
   "signal_performance": {},
@@ -24,9 +24,9 @@
   "timing_failures": 0,
   "data_quality_failures": 0,
   "user_action_performance": {
-    "followed": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "ignored": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null},
-    "overrode": {"count": 0, "reviewed_count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null}
+    "followed": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
+    "ignored": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0},
+    "overrode": {"count": 0, "success_rate": null, "average_outcome_grade": null, "average_process_grade": null, "reviewed_count": 0}
   },
   "mongo_outcome_metrics": {
     "reviewed_decisions": 0,
@@ -54,18 +54,21 @@
       "roster_value_improvement": null
     }
   },
-  "pulse_performance": {
-    "usage_count": 0,
-    "reviewed_count": 0,
-    "changed_decision_count": 0,
-    "confirmed_thesis_count": 0,
-    "created_thesis_count": 0,
-    "conflict_count": 0,
-    "average_usefulness_grade": null,
-    "early_count": 0,
-    "improved_decision_count": 0,
-    "prevented_mistake_count": 0,
-    "too_late_count": 0,
-    "misleading_count": 0
+  "nfl_pulse_performance": {
+    "pulses_considered": 0,
+    "pulses_used": 0,
+    "pulses_rejected": 0,
+    "decision_lineages_considered": 0,
+    "decision_lineages_used": 0,
+    "actions_changed_by_pulse": 0,
+    "successful_actions_changed_by_pulse": 0,
+    "unsuccessful_actions_changed_by_pulse": 0,
+    "average_information_lead_time_minutes": null,
+    "highly_useful_pulses": 0,
+    "misleading_pulses": 0,
+    "too_late_pulses": 0,
+    "usefulness_grade_distribution": {},
+    "pulse_category_performance": {},
+    "pulse_source_performance": {}
   }
 }

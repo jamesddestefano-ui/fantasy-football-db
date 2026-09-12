@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "supersedes": "learning_rules_v1.json",
+  "system": "PRIME_MONGO_FANTASY_WATCH",
+  "effective_date": "2026-09-12",
+  "changes": [
+    {
+      "rule_id": "mongo-learning-005",
+      "old_rule": "NFL Pulse could be recorded as a general supporting signal.",
+      "new_rule": "When NFL Pulse is materially considered, preserve decision-level Pulse lineage, usefulness grading and one canonical information-event ID for duplicate reports.",
+      "reason": "Measure whether Pulse improved Mongo decisions without duplicating the Pulse database or treating repeated reporting as independent evidence.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Measure Pulse accuracy, timeliness, decision impact and false alarms while protecting ESPN authority."
+    },
+    {
+      "rule_id": "mongo-learning-006",
+      "old_rule": "Pulse was intelligence-only under the general source-authority rule.",
+      "new_rule": "Pulse remains intelligence-only and can never change Mongo league state without authenticated ESPN confirmation.",
+      "reason": "Preserve production authority and strict system isolation.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Prevent ownership, roster, FAAB, transaction, IR and lineup contamination."
+    },
+    {
+      "rule_id": "mongo-learning-007",
+      "old_rule": "Signal promotion required repeated evidence.",
+      "new_rule": "Do not promote a Pulse-derived signal into a permanent Mongo rule from one result; require repeated evidence unless a clear structural failure is discovered.",
+      "reason": "Avoid overfitting Pulse usefulness to isolated outcomes.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Improve long-run calibration and rule stability."
+    }
+  ]
+}

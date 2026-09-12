@@ -9,6 +9,8 @@ This directory is exclusively for Prime Mongo Fantasy Watch decisions and outcom
 - `weekly_reviews/`: one review after each NFL week.
 - `rules/learning_rules_vN.json`: immutable, versioned operating-rule changes.
 
+Pulse lineage is stored only when an NFL Pulse item was considered in a material Mongo decision. Store the Pulse ID and one canonical `pulse_information_event_id`; never copy the Pulse database into this directory. Repeated reports of the same NFL fact share the same information-event ID so they are not counted as independent evidence. Authenticated ESPN remains authoritative for ownership, availability, transactions, FAAB, IR and lineup state.
+
 ## Operating loop
 
 1. Read current Mongo repository and authenticated ESPN state.
@@ -17,11 +19,5 @@ This directory is exclusively for Prime Mongo Fantasy Watch decisions and outcom
 4. After the result is known, append a separate review with outcome and process grades.
 5. Rebuild the scorecard and signal metrics from the event ledger.
 6. Propose rule changes during the weekly review; adopt changes only in a new versioned rules file.
-
-## NFL Pulse lineage
-
-NFL Pulse is an approved intelligence input, not a command or ownership authority. When it materially informs a decision, the immutable `DECISION` event records the Pulse ID, detection time, category, fact confidence, urgency, relevance, lead time and whether it changed, confirmed, created or conflicted with the Mongo thesis. Repeated reporting of the same underlying NFL fact counts as one signal.
-
-After the outcome, the `REVIEW` event grades Pulse usefulness separately and records whether Pulse was early, improved the decision, prevented a mistake, arrived too late or was misleading. Pulse fact confidence and Mongo decision confidence must remain separate.
 
 Do not backfill a recommendation that was not actually made. Historical enrichment may document context, but it is not a contemporaneous decision.

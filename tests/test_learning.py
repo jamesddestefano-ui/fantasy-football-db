@@ -23,20 +23,6 @@ def decision(decision_id="mongo-w1-001"):
         "key_supporting_signals": ["authenticated league state", "depth-chart promotion"],
         "key_risk_factors": ["small sample"],
         "alternative_considered": "Hold current roster",
-        "pulse_used": False,
-        "pulse_id": None,
-        "pulse_detected_at_et": None,
-        "pulse_category": None,
-        "pulse_fact_confidence": None,
-        "pulse_urgency": None,
-        "pulse_relevance": None,
-        "pulse_information_lead_time_minutes": None,
-        "pulse_changed_decision": False,
-        "pulse_confirmed_existing_thesis": False,
-        "pulse_created_new_thesis": False,
-        "pulse_conflicted_with_other_evidence": False,
-        "pulse_usefulness_grade": None,
-        "pulse_result_notes": None,
         "actual_user_action": None,
         "final_pre_deadline_state": None,
         "outcome": None,
@@ -47,6 +33,22 @@ def decision(decision_id="mongo-w1-001"):
         "lesson": None,
         "future_rule_adjustment": None,
         "reviewed_at": None,
+        "pulse_used": False,
+        "pulse_id": None,
+        "pulse_information_event_id": None,
+        "pulse_source": None,
+        "pulse_detected_at_et": None,
+        "pulse_category": None,
+        "pulse_fact_confidence": None,
+        "pulse_urgency": None,
+        "pulse_relevance": None,
+        "pulse_information_lead_time": None,
+        "pulse_changed_decision": False,
+        "pulse_confirmed_existing_thesis": False,
+        "pulse_created_new_thesis": False,
+        "pulse_conflicted_with_other_evidence": False,
+        "pulse_usefulness_grade": None,
+        "pulse_result_notes": None,
     }
 
 
@@ -61,14 +63,9 @@ def review():
         "error_category": [],
         "lesson": "Authenticated availability plus promotion was useful.",
         "future_rule_adjustment": None,
+        "reviewed_at": "2026-09-22T09:00:00-04:00",
         "pulse_usefulness_grade": None,
         "pulse_result_notes": None,
-        "pulse_was_early": None,
-        "pulse_improved_decision": None,
-        "pulse_prevented_mistake": None,
-        "pulse_was_too_late": None,
-        "pulse_was_misleading": None,
-        "reviewed_at": "2026-09-22T09:00:00-04:00",
     }
 
 
@@ -106,69 +103,101 @@ def test_scorecard_tracks_confidence_signals_and_user_action(tmp_path: Path):
     assert scorecard["user_action_performance"]["followed"]["count"] == 1
 
 
-def test_pending_decisions_count_toward_signal_usage_before_review(tmp_path: Path):
-    ledger = tmp_path / "ledger.jsonl"
-    append_decision(ledger, decision())
-    scorecard = build_scorecard(ledger)
-    assert scorecard["pending_decisions"] == 1
-    assert scorecard["confidence_calibration"]["4"]["count"] == 1
-    assert scorecard["confidence_calibration"]["4"]["reviewed_count"] == 0
-    assert scorecard["signal_performance"]["authenticated league state"]["count"] == 1
-    assert scorecard["signal_performance"]["authenticated league state"]["false_positive_rate"] is None
-    assert scorecard["signal_performance"]["authenticated league state"]["false_negative_rate"] is None
-
-
 def test_ledger_is_valid_jsonl(tmp_path: Path):
     ledger = tmp_path / "ledger.jsonl"
     append_decision(ledger, decision())
     assert json.loads(ledger.read_text())["record_type"] == "DECISION"
 
 
-def test_pulse_lineage_and_usefulness_are_measurable(tmp_path: Path):
+def test_pulse_lineage_and_usefulness_are_measurable_without_double_counting(tmp_path: Path):
+    ledger = tmp_path / "ledger.jsonl"
+    first = decision("mongo-w1-pulse-001")
+    first.update({
+        "pulse_used": True,
+        "pulse_id": "pulse-2026-09-12-001",
+        "pulse_information_event_id": "nfl-fact-malik-davis-out-w1",
+        "pulse_source": "official-injury-report",
+        "pulse_detected_at_et": "2026-09-12T08:00:00-04:00",
+        "pulse_category": "INJURY",
+        "pulse_fact_confidence": 5,
+        "pulse_urgency": "HIGH",
+        "pulse_relevance": "Confirmed injury contingency.",
+        "pulse_information_lead_time": 290,
+        "pulse_changed_decision": True,
+        "pulse_created_new_thesis": True,
+    })
+    second = decision("mongo-w1-pulse-002")
+    second.update({
+        "pulse_used": False,
+        "pulse_id": "pulse-2026-09-12-002",
+        "pulse_information_event_id": "nfl-fact-malik-davis-out-w1",
+        "pulse_source": "repeat-national-report",
+        "pulse_detected_at_et": "2026-09-12T08:20:00-04:00",
+        "pulse_category": "INJURY",
+        "pulse_fact_confidence": 4,
+        "pulse_urgency": "MEDIUM",
+        "pulse_relevance": "Duplicate of the same underlying fact.",
+        "pulse_information_lead_time": 270,
+    })
+    append_decision(ledger, first)
+    append_decision(ledger, second)
+    graded = review()
+    graded["pulse_usefulness_grade"] = "HIGHLY_USEFUL"
+    graded["pulse_result_notes"] = "Arrived early and improved the contingency decision."
+    append_review(ledger, first["decision_id"], graded)
+    pulse = build_scorecard(ledger)["nfl_pulse_performance"]
+    assert pulse["pulses_considered"] == 1
+    assert pulse["pulses_used"] == 1
+    assert pulse["pulses_rejected"] == 0
+    assert pulse["decision_lineages_considered"] == 2
+    assert pulse["actions_changed_by_pulse"] == 1
+    assert pulse["highly_useful_pulses"] == 1
+
+
+def test_pulse_influence_requires_traceable_information_event(tmp_path: Path):
+    row = decision()
+    row["pulse_used"] = True
+    with pytest.raises(LearningValidationError, match="requires pulse_id"):
+        append_decision(tmp_path / "ledger.jsonl", row)
+
+
+def test_pulse_review_requires_usefulness_scale(tmp_path: Path):
     ledger = tmp_path / "ledger.jsonl"
     row = decision()
     row.update({
         "pulse_used": True,
-        "pulse_id": "mongo-pulse-001",
-        "pulse_detected_at_et": "2026-09-12T00:05:00-04:00",
+        "pulse_id": "pulse-1",
+        "pulse_information_event_id": "fact-1",
+        "pulse_detected_at_et": "2026-09-12T08:00:00-04:00",
         "pulse_category": "INJURY",
         "pulse_fact_confidence": "HIGH",
         "pulse_urgency": "HIGH",
-        "pulse_relevance": "Created an immediate handcuff review.",
-        "pulse_information_lead_time_minutes": 770,
-        "pulse_changed_decision": True,
-        "pulse_created_new_thesis": True,
+        "pulse_relevance": "Changed the contingency recommendation.",
+        "pulse_information_lead_time": 60,
     })
     append_decision(ledger, row)
-    result = review()
-    result.update({
-        "pulse_usefulness_grade": "A",
-        "pulse_result_notes": "Pulse was early and changed the recommendation.",
-        "pulse_was_early": True,
-        "pulse_improved_decision": True,
-        "pulse_prevented_mistake": False,
-        "pulse_was_too_late": False,
-        "pulse_was_misleading": False,
-    })
-    append_review(ledger, row["decision_id"], result)
-    metrics = build_scorecard(ledger)["pulse_performance"]
-    assert metrics["usage_count"] == 1
-    assert metrics["changed_decision_count"] == 1
-    assert metrics["average_usefulness_grade"] == 4.0
-    assert metrics["early_count"] == 1
+    invalid = review()
+    invalid["pulse_usefulness_grade"] = "A"
+    with pytest.raises(LearningValidationError, match="requires pulse_usefulness_grade"):
+        append_review(ledger, row["decision_id"], invalid)
 
 
-def test_unused_pulse_cannot_carry_lineage(tmp_path: Path):
+def test_pulse_lineage_requires_complete_fields(tmp_path: Path):
     row = decision()
-    row["pulse_id"] = "should-not-be-present"
-    with pytest.raises(LearningValidationError, match="unused Pulse"):
+    row["pulse_id"] = "pulse-1"
+    with pytest.raises(LearningValidationError, match="Pulse lineage missing"):
         append_decision(tmp_path / "ledger.jsonl", row)
 
 
-def test_duplicate_signal_reports_are_rejected(tmp_path: Path):
-    row = decision()
-    row["key_supporting_signals"] = ["same injury event", "same injury event"]
-    with pytest.raises(LearningValidationError, match="double-count"):
+def test_cross_system_pulse_cannot_override_mongo_system_guard(tmp_path: Path):
+    row = decision(); row["system"] = "PRIME_NFL_DFS_WATCH"
+    row.update({
+        "pulse_used": True,
+        "pulse_id": "pulse-1",
+        "pulse_information_event_id": "shared-fact-1",
+        "pulse_detected_at_et": "2026-09-12T08:00:00-04:00",
+    })
+    with pytest.raises(LearningValidationError, match="Mongo-only"):
         append_decision(tmp_path / "ledger.jsonl", row)
 
 

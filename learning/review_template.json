@@ -3,11 +3,7 @@
   "final_pre_deadline_state": {},
   "outcome": {
     "actual_acquisition": null,
-    "recommended_faab": null,
     "actual_faab_cost": null,
-    "winning_faab": null,
-    "next_highest_bid": null,
-    "faab_saved_or_overspent": null,
     "points_added_above_replacement": null,
     "starter_bench_differential": null,
     "weeks_retained": null,
@@ -20,12 +16,7 @@
   "error_category": [],
   "lesson": null,
   "future_rule_adjustment": null,
-  "pulse_usefulness_grade": null,
-  "pulse_result_notes": null,
-  "pulse_was_early": null,
-  "pulse_improved_decision": null,
-  "pulse_prevented_mistake": null,
-  "pulse_was_too_late": null,
-  "pulse_was_misleading": null,
-  "reviewed_at": "2026-09-22T09:00:00-04:00"
+  "reviewed_at": "2026-09-22T09:00:00-04:00",
+  "pulse_usefulness_grade": "HIGHLY_USEFUL|USEFUL|ACCURATE_NOT_ACTIONABLE|DUPLICATIVE|TOO_LATE|MISLEADING|WRONG|UNRESOLVED|null",
+  "pulse_result_notes": null
 }
