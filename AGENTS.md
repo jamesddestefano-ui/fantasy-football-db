@@ -47,3 +47,6 @@ Prime Mongo Fantasy Watch uses the append-only learning layer under `learning/`.
 6. Rebuild cumulative metrics from the ledger and produce one weekly review after each NFL week.
 7. Adopt a learning-rule change only in a new versioned file under `learning/rules/`; preserve all earlier rule versions.
 8. Do not change signal weights because of one ordinary result. Require repeated evidence unless a clear structural defect is exposed.
+9. NFL Pulse is approved real-time intelligence, never an ownership or transaction authority. Before any Mongo action, validate authenticated ESPN roster, ownership, availability, waivers, FAAB, lineup and league settings.
+10. When Pulse materially informs a decision, preserve its lineage in the decision event. Keep Pulse fact confidence separate from Mongo decision confidence, collapse repeated coverage of one underlying NFL fact into one signal, and record `PULSE_CONFLICT` when credible evidence conflicts.
+11. After outcomes are known, grade Pulse usefulness and record whether it was early, improved the decision, prevented a mistake, arrived too late or was misleading.

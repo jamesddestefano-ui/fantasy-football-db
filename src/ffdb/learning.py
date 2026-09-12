@@ -31,12 +31,21 @@ DECISION_FIELDS = (
     "alternative_considered", "actual_user_action", "final_pre_deadline_state", "outcome",
     "outcome_grade", "process_grade", "result_notes", "error_category", "lesson",
     "future_rule_adjustment", "reviewed_at",
+    "pulse_used", "pulse_id", "pulse_detected_at_et", "pulse_category",
+    "pulse_fact_confidence", "pulse_urgency", "pulse_relevance",
+    "pulse_information_lead_time_minutes", "pulse_changed_decision",
+    "pulse_confirmed_existing_thesis", "pulse_created_new_thesis",
+    "pulse_conflicted_with_other_evidence", "pulse_usefulness_grade",
+    "pulse_result_notes",
 )
 
 REVIEW_FIELDS = {
     "actual_user_action", "final_pre_deadline_state", "outcome", "outcome_grade",
     "process_grade", "result_notes", "error_category", "lesson",
     "future_rule_adjustment", "reviewed_at",
+    "pulse_usefulness_grade", "pulse_result_notes", "pulse_was_early",
+    "pulse_improved_decision", "pulse_prevented_mistake", "pulse_was_too_late",
+    "pulse_was_misleading",
 }
 
 
@@ -75,6 +84,8 @@ def validate_decision(record: dict[str, Any]) -> None:
     _parse_et(record["decision_deadline"], "decision_deadline")
     if not isinstance(record["key_supporting_signals"], list):
         raise LearningValidationError("key_supporting_signals must be a list")
+    if len(record["key_supporting_signals"]) != len(set(record["key_supporting_signals"])):
+        raise LearningValidationError("key_supporting_signals must not double-count one information event")
     if not isinstance(record["key_risk_factors"], list):
         raise LearningValidationError("key_risk_factors must be a list")
     if record["outcome_grade"] is not None and record["outcome_grade"] not in GRADES:
@@ -85,6 +96,35 @@ def validate_decision(record: dict[str, Any]) -> None:
     if errors is not None:
         if not isinstance(errors, list) or not set(errors).issubset(ERROR_CATEGORIES):
             raise LearningValidationError("invalid error_category")
+    _validate_pulse_decision(record)
+
+
+def _validate_pulse_decision(record: dict[str, Any]) -> None:
+    boolean_fields = (
+        "pulse_used", "pulse_changed_decision", "pulse_confirmed_existing_thesis",
+        "pulse_created_new_thesis", "pulse_conflicted_with_other_evidence",
+    )
+    if any(not isinstance(record[field], bool) for field in boolean_fields):
+        raise LearningValidationError("Pulse decision flags must be boolean")
+    pulse_details = (
+        "pulse_id", "pulse_detected_at_et", "pulse_category", "pulse_fact_confidence",
+        "pulse_urgency", "pulse_relevance", "pulse_information_lead_time_minutes",
+    )
+    if record["pulse_used"]:
+        missing = [field for field in pulse_details if record[field] in {None, ""}]
+        if missing:
+            raise LearningValidationError("Pulse-used decision missing: " + ", ".join(missing))
+        _parse_et(record["pulse_detected_at_et"], "pulse_detected_at_et")
+        lead = record["pulse_information_lead_time_minutes"]
+        if not isinstance(lead, (int, float)) or isinstance(lead, bool) or lead < 0:
+            raise LearningValidationError("pulse_information_lead_time_minutes must be nonnegative")
+    else:
+        if any(record[field] is not None for field in pulse_details):
+            raise LearningValidationError("unused Pulse must not carry Pulse details")
+        if any(record[field] for field in boolean_fields[1:]):
+            raise LearningValidationError("unused Pulse must not carry positive Pulse flags")
+    if record["pulse_usefulness_grade"] is not None or record["pulse_result_notes"] is not None:
+        raise LearningValidationError("Pulse outcome fields must be null until REVIEW")
 
 
 def read_events(path: Path) -> list[dict[str, Any]]:
@@ -124,6 +164,21 @@ def append_review(path: Path, decision_id: str, review: dict[str, Any]) -> None:
     if not isinstance(review["error_category"], list) or not set(review["error_category"]).issubset(ERROR_CATEGORIES):
         raise LearningValidationError("invalid error_category")
     _parse_et(review["reviewed_at"], "reviewed_at")
+    pulse_used = bool(decisions[decision_id].get("pulse_used"))
+    pulse_review_fields = (
+        "pulse_was_early", "pulse_improved_decision", "pulse_prevented_mistake",
+        "pulse_was_too_late", "pulse_was_misleading",
+    )
+    if pulse_used:
+        if review["pulse_usefulness_grade"] not in GRADES:
+            raise LearningValidationError("Pulse-used review requires pulse_usefulness_grade")
+        if any(not isinstance(review[field], bool) for field in pulse_review_fields):
+            raise LearningValidationError("Pulse-used review requires boolean Pulse outcome flags")
+    else:
+        if review["pulse_usefulness_grade"] is not None or review["pulse_result_notes"] is not None:
+            raise LearningValidationError("non-Pulse review must not grade Pulse")
+        if any(review[field] is not None for field in pulse_review_fields):
+            raise LearningValidationError("non-Pulse review must leave Pulse outcome flags null")
     event = {"record_type": "REVIEW", "decision_id": decision_id, **review}
     with path.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(event, sort_keys=True) + "\n")
@@ -208,6 +263,29 @@ def build_scorecard(path: Path, season: int = 2026) -> dict[str, Any]:
         "data_quality_failures": errors["STALE_DATA"] + errors["OWNERSHIP_ERROR"] + errors["ROSTER_STATE_ERROR"],
         "user_action_performance": {key: _decision_bucket(value) for key, value in action_groups.items()},
         "mongo_outcome_metrics": _mongo_outcome_metrics(reviewed),
+        "pulse_performance": _pulse_performance(rows),
+    }
+
+
+def _pulse_performance(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    used = [row for row in rows if row.get("pulse_used")]
+    reviewed = [row for row in used if row.get("reviewed_at")]
+    return {
+        "usage_count": len(used),
+        "reviewed_count": len(reviewed),
+        "changed_decision_count": sum(bool(row.get("pulse_changed_decision")) for row in used),
+        "confirmed_thesis_count": sum(bool(row.get("pulse_confirmed_existing_thesis")) for row in used),
+        "created_thesis_count": sum(bool(row.get("pulse_created_new_thesis")) for row in used),
+        "conflict_count": sum(bool(row.get("pulse_conflicted_with_other_evidence")) for row in used),
+        "average_usefulness_grade": _average([
+            GRADE_POINTS[row["pulse_usefulness_grade"]]
+            for row in reviewed if row.get("pulse_usefulness_grade") in GRADES
+        ]),
+        "early_count": sum(bool(row.get("pulse_was_early")) for row in reviewed),
+        "improved_decision_count": sum(bool(row.get("pulse_improved_decision")) for row in reviewed),
+        "prevented_mistake_count": sum(bool(row.get("pulse_prevented_mistake")) for row in reviewed),
+        "too_late_count": sum(bool(row.get("pulse_was_too_late")) for row in reviewed),
+        "misleading_count": sum(bool(row.get("pulse_was_misleading")) for row in reviewed),
     }
 
 

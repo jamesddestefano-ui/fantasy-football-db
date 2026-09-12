@@ -53,5 +53,19 @@
       "weeks_retained": null,
       "roster_value_improvement": null
     }
+  },
+  "pulse_performance": {
+    "usage_count": 0,
+    "reviewed_count": 0,
+    "changed_decision_count": 0,
+    "confirmed_thesis_count": 0,
+    "created_thesis_count": 0,
+    "conflict_count": 0,
+    "average_usefulness_grade": null,
+    "early_count": 0,
+    "improved_decision_count": 0,
+    "prevented_mistake_count": 0,
+    "too_late_count": 0,
+    "misleading_count": 0
   }
 }

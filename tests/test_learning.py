@@ -23,6 +23,20 @@ def decision(decision_id="mongo-w1-001"):
         "key_supporting_signals": ["authenticated league state", "depth-chart promotion"],
         "key_risk_factors": ["small sample"],
         "alternative_considered": "Hold current roster",
+        "pulse_used": False,
+        "pulse_id": None,
+        "pulse_detected_at_et": None,
+        "pulse_category": None,
+        "pulse_fact_confidence": None,
+        "pulse_urgency": None,
+        "pulse_relevance": None,
+        "pulse_information_lead_time_minutes": None,
+        "pulse_changed_decision": False,
+        "pulse_confirmed_existing_thesis": False,
+        "pulse_created_new_thesis": False,
+        "pulse_conflicted_with_other_evidence": False,
+        "pulse_usefulness_grade": None,
+        "pulse_result_notes": None,
         "actual_user_action": None,
         "final_pre_deadline_state": None,
         "outcome": None,
@@ -47,6 +61,13 @@ def review():
         "error_category": [],
         "lesson": "Authenticated availability plus promotion was useful.",
         "future_rule_adjustment": None,
+        "pulse_usefulness_grade": None,
+        "pulse_result_notes": None,
+        "pulse_was_early": None,
+        "pulse_improved_decision": None,
+        "pulse_prevented_mistake": None,
+        "pulse_was_too_late": None,
+        "pulse_was_misleading": None,
         "reviewed_at": "2026-09-22T09:00:00-04:00",
     }
 
@@ -101,6 +122,54 @@ def test_ledger_is_valid_jsonl(tmp_path: Path):
     ledger = tmp_path / "ledger.jsonl"
     append_decision(ledger, decision())
     assert json.loads(ledger.read_text())["record_type"] == "DECISION"
+
+
+def test_pulse_lineage_and_usefulness_are_measurable(tmp_path: Path):
+    ledger = tmp_path / "ledger.jsonl"
+    row = decision()
+    row.update({
+        "pulse_used": True,
+        "pulse_id": "mongo-pulse-001",
+        "pulse_detected_at_et": "2026-09-12T00:05:00-04:00",
+        "pulse_category": "INJURY",
+        "pulse_fact_confidence": "HIGH",
+        "pulse_urgency": "HIGH",
+        "pulse_relevance": "Created an immediate handcuff review.",
+        "pulse_information_lead_time_minutes": 770,
+        "pulse_changed_decision": True,
+        "pulse_created_new_thesis": True,
+    })
+    append_decision(ledger, row)
+    result = review()
+    result.update({
+        "pulse_usefulness_grade": "A",
+        "pulse_result_notes": "Pulse was early and changed the recommendation.",
+        "pulse_was_early": True,
+        "pulse_improved_decision": True,
+        "pulse_prevented_mistake": False,
+        "pulse_was_too_late": False,
+        "pulse_was_misleading": False,
+    })
+    append_review(ledger, row["decision_id"], result)
+    metrics = build_scorecard(ledger)["pulse_performance"]
+    assert metrics["usage_count"] == 1
+    assert metrics["changed_decision_count"] == 1
+    assert metrics["average_usefulness_grade"] == 4.0
+    assert metrics["early_count"] == 1
+
+
+def test_unused_pulse_cannot_carry_lineage(tmp_path: Path):
+    row = decision()
+    row["pulse_id"] = "should-not-be-present"
+    with pytest.raises(LearningValidationError, match="unused Pulse"):
+        append_decision(tmp_path / "ledger.jsonl", row)
+
+
+def test_duplicate_signal_reports_are_rejected(tmp_path: Path):
+    row = decision()
+    row["key_supporting_signals"] = ["same injury event", "same injury event"]
+    with pytest.raises(LearningValidationError, match="double-count"):
+        append_decision(tmp_path / "ledger.jsonl", row)
 
 
 def test_repository_scorecard_matches_empty_ledger_baseline():
