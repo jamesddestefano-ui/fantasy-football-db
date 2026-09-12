@@ -3,12 +3,12 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-12T024800Z",
-  "generated_at": "2026-09-12T02:42:00Z",
-  "completed_at": "2026-09-12T02:48:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-12T030500Z",
+  "generated_at": "2026-09-12T03:00:00Z",
+  "completed_at": "2026-09-12T03:05:00Z",
   "week": 1,
   "season": 2026,
-  "run_type": "end_to_end_live_test",
+  "run_type": "hourly_refresh",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -62,16 +62,16 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Independent AP source (FOX Sports 9:30 PM ET Sep 11) corroborates Todd Archer: Davis needs hip surgery Saturday and is headed for NFL IR. Team has not yet announced the IR transaction. Surgery has not occurred as of this Pulse. RotoWire lists estimated return 10/8/2026; that date is projection, not a confirmed return window.",
-      "mongo_impact": "Davis is already OWNED and occupying the Mongo IR slot. NFL IR would lock four games minimum. Do not start. Do not drop. Do not treat AP corroboration as a completed ESPN IR transaction.",
+      "summary": "No new official team transaction since prior Pulse. Archer (source) and AP continue to report Saturday hip surgery and expected NFL IR placement. Fan accounts claim placement 'today' but no credentialed confirmation of completed IR transaction or surgery completion as of this run. RotoWire est. return remains projection only.",
+      "mongo_impact": "Davis remains OWNED and in the Mongo IR slot. Do not start. Do not drop. Await authenticated ESPN or official Cowboys IR announcement before treating as formal four-game lock.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "AP via FOX Sports updated 2026-09-11 9:30 PM ET",
         "Todd Archer @toddarcher 2026-09-12T00:55:31Z",
-        "RotoWire citing Archer",
+        "AP via FOX Sports",
+        "RotoWire",
         "Mongo data/imports/2026-09-11-malik-davis-ir.json"
       ]
     },
@@ -80,15 +80,15 @@
       "team": "DAL",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "With Davis out, Demercado is the only other RB on Dallas's active roster behind Javonte Williams. Nick Eatman/dallascowboys.com and Archer note Hunter Luepke and possible practice-squad call-up Israel Abanikanda as other options. Schottenheimer still calls Williams the bell cow.",
-      "mongo_impact": "Demercado is OWNED on the Mongo bench. Hold as the Javonte handcuff. Week 1 standalone value remains limited.",
+      "summary": "Unchanged: primary backup to Javonte Williams with Davis expected out extended. Luepke and possible Abanikanda elevation remain options.",
+      "mongo_impact": "OWNED on Mongo bench. Hold as handcuff. Limited Week 1 standalone upside.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "RotoWire citing Nick Eatman / Cowboys official site",
-        "Todd Archer X 2026-09-11T20:21:03Z",
+        "Todd Archer X",
+        "RotoWire / Cowboys site",
         "Mongo data/imports/2026-09-11-emari-demercado-free-add.json"
       ]
     },
@@ -97,15 +97,15 @@
       "team": "SF",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New vs prior Pulse: Kyle Shanahan said Christian McCaffrey played through cramps in the Melbourne win (Nick Wagoner via NBC/Rotoworld). That may explain part of the 14-10 carry split. Black's 14-65-1/5 receiving and Jordan James inactive remain confirmed Week 1 facts.",
-      "mongo_impact": "Black is OWNED on the Mongo bench. Cramp context modestly lowers confidence that the split repeats in Week 2 vs Miami, but he remains SF RB2. Not a drop.",
+      "summary": "Unchanged vs prior: Shanahan attributed part of Week 1 CMC under-usage to cramps. Black 14-65-1/5 and James inactive remain facts. No new practice or Week 2 role updates in this window.",
+      "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "Nick Wagoner via NBC Sports / Rotoworld CMC cramp note",
-        "49ers.com / PFF Week 1 usage recap",
+        "Nick Wagoner / NBC Rotoworld",
+        "49ers.com / PFF",
         "Mongo intelligence/news/2026-09-11-kaelon-black-week1-role.json"
       ]
     },
@@ -114,15 +114,16 @@
       "team": "NO",
       "signal_type": "role",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Unchanged vs prior Pulse: official Saints final report lists Kamara (knee) QUESTIONABLE after Friday full practice; Estime OUT. Underhill: Kamara will not have a huge role if active; Etienne leads, Miller next. No new Saturday designation yet.",
-      "mongo_impact": "Miller is OWNED on the bench. Watch for Sunday inactives. Not a start over Achane/Bijan.",
+      "summary": "New vs prior Pulse: Nick Underhill reports rookie RB CJ Donaldson expected to be elevated from practice squad for Sunday vs Lions. Kamara (knee) remains QUESTIONABLE after full Friday practice; Underhill still expects limited role if active. Estime OUT. Etienne leads, Miller next among healthy backs.",
+      "mongo_impact": "Miller OWNED on bench. Donaldson elevation is a modest dilution risk for pure volume but does not change Miller's RB2/3 path. Watch Sunday inactives. Not a start over Achane/Bijan.",
       "recommendation": "WATCH",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "Saints Wire / NewOrleansSaints.com final Week 1 injury report",
-        "Nick Underhill via NBC Sports Rotoworld"
+        "Nick Underhill @nick_underhill 2026-09-12T00:33:38Z",
+        "Saints Wire / NewOrleansSaints.com final injury report",
+        "CBS Sports Week 1 tracker"
       ]
     },
     {
@@ -130,17 +131,16 @@
       "team": "LV",
       "signal_type": "expert",
       "status": "EXPERT_OPINION",
-      "summary": "Bowers remains OUT Week 1 (official). New vs prior Pulse: Pat Fitzmaurice (FantasyPros) calls Tucker a sneaky-good start vs Miami; RotoBaller/Raiders Wire also boost him as a high-upside flex. LeagueLogs consensus updated 6:11 PM ET lists Josh Downs as Sit (#35) while Burden is Flex (#24).",
-      "mongo_impact": "Tucker is OWNED on the Mongo bench. Expert dissent vs Downs is louder, but Pulse does not independently change lineup. Leave Tucker on the bench unless a starter is ruled out.",
+      "summary": "Unchanged core: Bowers OUT. FantasyPros Fitzmaurice and others still flag Tucker as sneaky start/flex vs Miami. Downs remains C-grade flex with some consensus sit lean.",
+      "mongo_impact": "Tucker OWNED on bench. No Pulse-driven swap over Downs. Leave on bench unless starter ruled out.",
       "recommendation": "BENCH",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "FantasyPros Pat Fitzmaurice Week 1 start/sit Sep 11 2026",
-        "RotoBaller Tre Tucker Week 1 outlook 8:32 PM ET",
-        "LeagueLogs Week 1 consensus 6:11 PM ET",
-        "Official Raiders/CBS injury tracker (Bowers out)"
+        "FantasyPros Week 1 grades / Fitzmaurice",
+        "RotoBaller",
+        "Official Raiders/CBS (Bowers out)"
       ]
     },
     {
@@ -148,16 +148,15 @@
       "team": "IND",
       "signal_type": "expert",
       "status": "EXPERT_OPINION",
-      "summary": "Downs remains a locked Mongo FLEX. FantasyPros Week 1 WR grade is C. LeagueLogs consensus now leans Sit. CBS PPR cheat sheet still rates him 6.76 vs Ravens. No injury designation found.",
-      "mongo_impact": "Keep Downs in the current Mongo FLEX. Do not swap to Tucker from this Pulse. Watch only.",
+      "summary": "Locked Mongo FLEX. FantasyPros C grade; some consensus sit lean vs Ravens. No injury.",
+      "mongo_impact": "Keep in FLEX. Do not swap to Tucker from this Pulse.",
       "recommendation": "START",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "FantasyPros Week 1 player grades Sep 11 2026",
-        "LeagueLogs Week 1 start/sit consensus 6:11 PM ET",
-        "CBS Sports Week 1 PPR cheat sheet"
+        "FantasyPros Week 1 grades",
+        "CBS Sports PPR sheet"
       ]
     },
     {
@@ -165,15 +164,15 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Final Eagles Week 1 injury report lists Jonathan Greenard OUT and Eli Stowers QUESTIONABLE. Hurts and Mark Andrews are not on the report.",
-      "mongo_impact": "Locked Mongo QB start. Andrews remains the Mongo TE start. Eagles D/ST still start; Greenard absence is a modest DST note only.",
+      "summary": "No change. Final Eagles report clean for Hurts and Andrews. Greenard OUT.",
+      "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "CBS Sports Week 1 injury tracker",
-        "ClutchPoints Eagles final injury report Sep 11 8:33 PM ET"
+        "CBS Sports injury tracker",
+        "ClutchPoints Eagles final report"
       ]
     }
   ],
@@ -182,8 +181,8 @@
       "player": "generic_watch_only",
       "availability": "UNKNOWN",
       "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows in the repository. USA Today waiver chatter on Black is irrelevant because Black is already OWNED. Demercado is already OWNED. Pulse will not mark any player FREE_AGENT_CONFIRMED.",
-      "mongo_impact": "Do not spend FAAB from this Pulse. Authenticated ESPN remains the ownership authority.",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
@@ -196,7 +195,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR. Expert Tucker-vs-Downs dissent is louder but not a swap.",
+      "summary": "No Pulse-driven lineup change. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR. Donaldson elevation is a minor Miller watch note only.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -204,29 +203,26 @@
   ],
   "expert_signals": [
     {
-      "topic": "Week 1 start/sit consensus for JDD core plus Tucker/Downs dissent",
+      "topic": "Week 1 start/sit consensus for JDD core plus Tucker/Downs",
       "status": "EXPERT_OPINION",
-      "summary": "FantasyPros still supports starting Hurts (A-), McMillan (A-), Lamb, Achane, Bijan. New: Fitzmaurice and RotoBaller boost Tucker; LeagueLogs marks Downs Sit. Pulse holds the current starter set.",
-      "mongo_impact": "Current starter set remains aligned with core consensus. Only late Sunday inactives should reopen Downs/Tucker.",
+      "summary": "Core consensus (Hurts, Achane, Bijan, Lamb, McMillan) unchanged. Tucker vs Downs dissent persists but does not drive a swap.",
+      "mongo_impact": "Hold current starter set. Late inactives only reopen Downs/Tucker.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "sources": [
-        "FantasyPros Week 1 grades and Fitzmaurice article Sep 11 2026",
-        "LeagueLogs consensus 6:11 PM ET",
-        "RotoBaller Tucker outlook"
+        "FantasyPros Week 1 grades",
+        "LeagueLogs / RotoBaller prior notes"
       ]
     }
   ],
   "material_changes": [
-    "AP independent source corroborates Davis Saturday hip surgery and NFL IR plan; still not an official Cowboys IR transaction.",
-    "Shanahan said CMC played through cramps, modestly lowering confidence that Black's 14-carry split repeats.",
-    "Expert dissent on Tucker vs Downs is louder (Fitzmaurice/RotoBaller start Tucker; LeagueLogs sit Downs). Pulse still does not swap."
+    "Nick Underhill: CJ Donaldson expected elevated from Saints PS for Week 1; modest volume dilution risk for Miller but does not alter recommendation."
   ],
   "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-12T023000Z",
-    "completed_at": "2026-09-12T02:30:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-12T024800Z",
+    "completed_at": "2026-09-12T02:48:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -235,8 +231,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "End-to-end live test. Intelligence-only. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
-    "Sparta, NFL-DFS, and NFL-Prop-Bets were not read or written.",
-    "X direct: Archer posts retrieved. Underhill Kamara/Miller posts older than this window; beat notes used via NBC/Saints Wire."
+    "Hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Sparta, NFL-DFS, and prop-betting repos not read or written.",
+    "Davis IR still attributed/expected; no confirmed official transaction in this window. Surgery scheduled Saturday."
   ]
 }
