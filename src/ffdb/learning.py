@@ -139,6 +139,8 @@ def validate_decision(record: dict[str, Any]) -> None:
     grade = record["pulse_usefulness_grade"]
     if grade is not None and grade not in PULSE_USEFULNESS_GRADES:
         raise LearningValidationError("invalid pulse_usefulness_grade")
+    if grade is not None or record["pulse_result_notes"] is not None:
+        raise LearningValidationError("Pulse outcome fields must remain null until REVIEW")
 
 
 def read_events(path: Path) -> list[dict[str, Any]]:

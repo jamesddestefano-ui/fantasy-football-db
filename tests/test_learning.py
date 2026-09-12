@@ -189,6 +189,13 @@ def test_pulse_lineage_requires_complete_fields(tmp_path: Path):
         append_decision(tmp_path / "ledger.jsonl", row)
 
 
+def test_pulse_outcome_cannot_be_backfilled_into_decision(tmp_path: Path):
+    row = decision()
+    row["pulse_usefulness_grade"] = "USEFUL"
+    with pytest.raises(LearningValidationError, match="until REVIEW"):
+        append_decision(tmp_path / "ledger.jsonl", row)
+
+
 def test_cross_system_pulse_cannot_override_mongo_system_guard(tmp_path: Path):
     row = decision(); row["system"] = "PRIME_NFL_DFS_WATCH"
     row.update({
