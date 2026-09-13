@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T170500Z",
-  "generated_at": "2026-09-13T17:03:00Z",
-  "completed_at": "2026-09-13T17:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T180500Z",
+  "generated_at": "2026-09-13T18:03:00Z",
+  "completed_at": "2026-09-13T18:05:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -202,7 +202,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Kamara officially inactive (CONFIRMED) elevates Miller complementary role behind Etienne but does not force a start over Achane/Bijan. 1PM games underway; no late scratches altering owned players.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Kamara officially inactive (CONFIRMED) elevates Miller complementary role behind Etienne but does not force a start over Achane/Bijan. 1PM games underway; 4:25 PM Eagles/Commanders still ahead; no late owned-player scratches.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -229,8 +229,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T161500Z",
-    "completed_at": "2026-09-13T16:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T170500Z",
+    "completed_at": "2026-09-13T17:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -239,8 +239,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (1PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (2PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 16:15Z prior. Kamara inactive and Miller role already confirmed. Downs active per official Colts/NFL.com inactives. Myles Garrett IR (Rams) unrelated to Mongo roster. 1PM games underway; no late owned-player scratches."
+    "No material change vs 17:05Z prior. Kamara inactive and Miller role already confirmed. Downs active per official Colts/NFL.com inactives. 1PM games underway; 4:25PM Eagles still ahead; no late owned-player scratches or new signals."
   ]
 }
