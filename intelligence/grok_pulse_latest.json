@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T191500Z",
-  "generated_at": "2026-09-13T19:15:00Z",
-  "completed_at": "2026-09-13T19:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T200500Z",
+  "generated_at": "2026-09-13T20:05:00Z",
+  "completed_at": "2026-09-13T20:10:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -58,11 +58,30 @@
   },
   "player_signals": [
     {
+      "player": "Ja'Kobi Lane",
+      "team": "BAL",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) ruled out for remainder of Week 1 vs Colts with a wrist injury. Had limited production (1 catch for 11 yards) prior. Confirmed via Ian Rapoport / Adam Schefter / ESPN beat.",
+      "mongo_impact": "OWNED on bench. Monitor post-game severity for possible multi-week risk. No immediate lineup impact (already benched). Do not drop solely on single-game exit.",
+      "recommendation": "HOLD_MONITOR",
+      "urgency": "POST_GAME",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Ian Rapoport @RapSheet",
+        "Adam Schefter",
+        "Jamison Hensley / ESPN",
+        "FantasyPros / NBC Sports",
+        "CBS Sports live"
+      ]
+    },
+    {
       "player": "Dylan Sampson",
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) suffered a knee injury in the first quarter vs Jaguars, returned briefly to warm up, then ruled out for the remainder of Week 1. No offensive touches; 64 yards on two kickoff returns prior. Severity beyond game unknown; further evaluation pending.",
+      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) suffered a knee injury in the first quarter vs Jaguars, returned briefly to warm up, then ruled out for the remainder of Week 1. No offensive touches; 64 yards on two kickoff returns prior. Severity beyond game still unknown; further evaluation pending (no new post-game MRI/details in this window).",
       "mongo_impact": "OWNED on bench. Monitor post-game reports for possible multi-week or IR risk. Do not drop on single-game exit alone. No immediate lineup impact (already benched).",
       "recommendation": "HOLD_MONITOR",
       "urgency": "POST_GAME",
@@ -81,7 +100,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "With Kamara official inactive, Miller scored an 8-yard rushing TD in Q3 vs Lions (Saints first score of the game). Confirms elevated complementary/RB2 role behind Etienne. Live production validates prior Pulse watch.",
+      "summary": "With Kamara official inactive, Miller scored an 8-yard rushing TD in Q3 vs Lions (Saints first score of the game). Confirms elevated complementary/RB2 role behind Etienne. Live production validates prior Pulse watch. Full-game volume still developing as games conclude.",
       "mongo_impact": "OWNED on bench. Live TD reinforces hold value. Not a retroactive start recommendation over Achane/Bijan; monitor full-game volume for Week 2 outlook.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -152,7 +171,7 @@
       "team": "IND",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Colts/NFL.com inactives do not list Downs; active and playing vs Ravens. Prior calf cleared. One secondary source erroneously claimed inactive; official lists override.",
+      "summary": "Official Colts/NFL.com inactives do not list Downs; active and playing vs Ravens. Prior calf cleared. Official lists override any secondary claims.",
       "mongo_impact": "Keep in FLEX. Do not swap.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -185,7 +204,7 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Final Eagles report clean for Hurts and Andrews. 4:25 PM ET kickoff still ahead.",
+      "summary": "No change. Final Eagles report clean for Hurts and Andrews. 4:25 PM ET kickoff underway or imminent; no late scratches among owned starters.",
       "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -193,7 +212,8 @@
       "availability": "OWNED",
       "sources": [
         "CBS Sports injury tracker",
-        "ClutchPoints Eagles final report"
+        "Eagles official inactives",
+        "NBC Sports Philadelphia"
       ]
     }
   ],
@@ -216,7 +236,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller (live TD but already correctly benched), Tucker, Ray Davis, Sampson (now game-out knee), Lane. Davis stays in IR. 1PM games in progress/wrapping; 4:25 PM Eagles/Commanders still ahead; no late owned-player scratches among starters.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller (live TD but already correctly benched), Tucker, Ray Davis, Sampson (game-out knee), Lane (now game-out wrist). Davis stays in IR. 1PM games wrapping; 4:25 PM Eagles/Commanders underway or imminent; no late owned-player scratches among starters.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -224,10 +244,10 @@
   ],
   "expert_signals": [
     {
-      "topic": "Week 1 start/sit + live Miller/Sampson updates",
+      "topic": "Week 1 start/sit + live Lane/Sampson/Miller updates",
       "status": "EXPERT_OPINION",
-      "summary": "Core consensus unchanged. Miller live TD validates complementary role under Kamara inactive. Sampson knee exit is new owned-player signal requiring post-game monitoring only.",
-      "mongo_impact": "Hold current starter set. No mid-game swaps possible or warranted.",
+      "summary": "Core consensus unchanged. New owned-player signal: Lane wrist out for rest of game. Miller live TD and Sampson knee already captured in prior Pulse. No mid-game swaps warranted or possible.",
+      "mongo_impact": "Hold current starter set. Monitor post-game severity on Lane and Sampson only.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
@@ -235,26 +255,21 @@
         "FantasyPros",
         "Live X beat reporting",
         "Official inactives / NFL.com",
-        "ESPN / RotoWire Sampson"
+        "ESPN / Rapoport / Schefter"
       ]
     }
   ],
   "material_changes": [
     {
       "type": "injury_status",
-      "player": "Dylan Sampson",
-      "detail": "Ruled out for remainder of Week 1 vs Jaguars with knee injury (first-quarter onset). CONFIRMED_FACT via ESPN/beat. Severity TBD; post-game evaluation needed."
-    },
-    {
-      "type": "usage",
-      "player": "Kendre Miller",
-      "detail": "Scored 8-yard rushing TD in Q3 vs Lions while Kamara inactive. Confirms elevated RB2 role with live production."
+      "player": "Ja'Kobi Lane",
+      "detail": "Ruled out for remainder of Week 1 vs Colts with wrist injury. CONFIRMED_FACT via Rapoport/Schefter/ESPN. Severity TBD; post-game evaluation needed."
     }
   ],
   "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T180500Z",
-    "completed_at": "2026-09-13T18:05:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T191500Z",
+    "completed_at": "2026-09-13T19:20:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -263,8 +278,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (~3:15 PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (~4:05 PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Material changes: owned Dylan Sampson knee out for rest of game; Kendre Miller TD confirms elevated role. Downs active per official lists. 1PM games in progress; 4:25PM Eagles still ahead."
+    "Material change: owned Ja'Kobi Lane wrist out for rest of game (CONFIRMED_FACT). Sampson knee and Miller TD already in prior Pulse; no new severity on Sampson. 1PM games wrapping; 4:25PM Eagles underway."
   ]
 }
