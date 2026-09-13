@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T211500Z",
-  "generated_at": "2026-09-13T21:15:00Z",
-  "completed_at": "2026-09-13T21:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T221500Z",
+  "generated_at": "2026-09-13T22:15:00Z",
+  "completed_at": "2026-09-13T22:20:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -58,6 +58,25 @@
   },
   "player_signals": [
     {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) ruled out for remainder of Week 1 vs Jaguars with left knee injury (first-quarter onset). Post-game: seen on crutches with brace on left knee (Mary Kay Cabot). Further testing scheduled Monday to determine severity (Daniel Oyefusi / ESPN). No offensive touches; 64 yards on two kickoff returns prior.",
+      "mongo_impact": "OWNED on bench. Elevated multi-week / IR risk concern due to crutches + brace + Monday testing. Continue HOLD_MONITOR; do not drop solely on game exit. No immediate lineup impact (already benched).",
+      "recommendation": "HOLD_MONITOR",
+      "urgency": "POST_GAME",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Mary Kay Cabot / Cleveland Plain Dealer X",
+        "Daniel Oyefusi / ESPN",
+        "Chris Easterling / Akron Beacon Journal",
+        "RotoWire",
+        "Browns Wire / Andrew Harbaugh"
+      ]
+    },
+    {
       "player": "Ja'Kobi Lane",
       "team": "BAL",
       "signal_type": "injury",
@@ -77,30 +96,11 @@
       ]
     },
     {
-      "player": "Dylan Sampson",
-      "team": "CLE",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) suffered a knee injury in the first quarter vs Jaguars, returned briefly to warm up, then ruled out for the remainder of Week 1. No offensive touches; 64 yards on two kickoff returns prior. Severity beyond game still unknown; no new post-game MRI/details in this window.",
-      "mongo_impact": "OWNED on bench. Monitor post-game reports for possible multi-week or IR risk. Do not drop on single-game exit alone. No immediate lineup impact (already benched).",
-      "recommendation": "HOLD_MONITOR",
-      "urgency": "POST_GAME",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "Daniel Oyefusi / ESPN",
-        "Mary Kay Cabot / Cleveland Plain Dealer",
-        "Browns Wire / Andrew Harbaugh",
-        "RotoWire",
-        "CBS Sports live injury tracker"
-      ]
-    },
-    {
       "player": "Kendre Miller",
       "team": "NO",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "With Kamara official inactive, Miller scored an 8-yard rushing TD in Q3 vs Lions. Confirms elevated complementary/RB2 role behind Etienne. Saints lost in OT 31-30; full-game volume logged for Week 2 evaluation.",
+      "summary": "With Kamara official inactive, Miller scored an 8-yard rushing TD in Q3 vs Lions (9 carries, 30 yards). Confirms elevated complementary/RB2 role behind Etienne. Saints lost in OT 31-30; full-game volume logged for Week 2 evaluation.",
       "mongo_impact": "OWNED on bench. TD and role reinforce hold value. Not a retroactive start over Achane/Bijan; monitor Week 2 outlook with Kamara status.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -111,7 +111,7 @@
         "Nolan Bianchi / Detroit News X",
         "NFL TD Alerts",
         "Official Saints inactives / NFL.com",
-        "Prior Pulse Kamara inactive confirmation"
+        "StatMuse game log"
       ]
     },
     {
@@ -205,7 +205,7 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Final Eagles report clean for Hurts and Andrews. 4:25 PM ET game live vs Commanders; no late scratches among owned starters.",
+      "summary": "No change. Final Eagles report clean for Hurts and Andrews. 4:25 PM ET game vs Commanders in progress or recent; no late scratches among owned starters.",
       "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -237,7 +237,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson (game-out knee), Lane (game-out wrist). Davis stays in IR. 1PM games final; 4:25 PM Eagles/Commanders live; SNF still ahead. No late owned-player scratches among starters.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson (game-out knee, now crutches/brace + Monday testing), Lane (game-out wrist). Davis stays in IR. 1PM games final; 4:25 PM Eagles/Commanders in progress or recent; SNF still ahead. No late owned-player scratches among starters.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -247,8 +247,8 @@
     {
       "topic": "Week 1 start/sit + post-game Lane/Sampson monitor",
       "status": "EXPERT_OPINION",
-      "summary": "Core consensus unchanged. Owned-player signals (Lane wrist, Sampson knee, Miller TD/role) already logged in prior Pulses. Post-game Minter comments: no severity yet on Lane/Flowers. No mid-game or post swaps warranted.",
-      "mongo_impact": "Hold current starter set. Monitor post-game severity on Lane and Sampson only.",
+      "summary": "Core consensus unchanged. Owned-player signals (Lane wrist, Sampson knee elevated by crutches/brace/Monday tests, Miller TD/role) logged. Post-game Minter comments: no severity yet on Lane. No mid-game or post swaps warranted.",
+      "mongo_impact": "Hold current starter set. Monitor post-game severity on Lane and especially Sampson (further testing Monday).",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
@@ -257,15 +257,21 @@
         "Live X beat reporting",
         "Official inactives / NFL.com",
         "ESPN / Rapoport / Schefter",
-        "Brian Wacker / Sarah Ellison X"
+        "Mary Kay Cabot / Daniel Oyefusi"
       ]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "type": "injury_status",
+      "player": "Dylan Sampson",
+      "detail": "Post-game: seen on crutches with brace on left knee (Mary Kay Cabot). Further testing Monday to determine severity (Oyefusi/ESPN). Elevates multi-week risk concern beyond prior game-out confirmation. Status remains CONFIRMED_FACT with added severity indicators."
+    }
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T200500Z",
-    "completed_at": "2026-09-13T20:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T211500Z",
+    "completed_at": "2026-09-13T21:20:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -274,8 +280,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (~5:15 PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (~6:15 PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 20:10Z prior. Lane wrist and Sampson knee already confirmed out for rest of game; Minter post-game notes no severity update yet. Miller TD/role already logged. 1PM games final; Eagles live; SNF pending."
+    "Material change vs 21:20Z prior: Sampson post-game crutches + brace + Monday testing elevates injury concern. Lane wrist and Miller TD/role already logged. 1PM games final; Eagles live/recent; SNF pending."
   ]
 }
