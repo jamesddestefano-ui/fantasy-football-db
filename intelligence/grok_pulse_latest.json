@@ -3,12 +3,12 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T031000Z",
-  "generated_at": "2026-09-13T03:05:00Z",
-  "completed_at": "2026-09-13T03:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T042000Z",
+  "generated_at": "2026-09-13T04:15:00Z",
+  "completed_at": "2026-09-13T04:20:00Z",
   "week": 1,
   "season": 2026,
-  "run_type": "hourly_refresh",
+  "run_type": "overnight_refresh",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -117,7 +117,7 @@
       "team": "NO",
       "signal_type": "role",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Unchanged vs prior Pulse: Kamara (knee) QUESTIONABLE after full Friday practice; expects limited role if active. Estime OUT (now on IR per reports). Etienne leads, Miller next among healthy backs. No new confirmation this hour on final inactives.",
+      "summary": "Unchanged vs prior Pulse: Kamara (knee) QUESTIONABLE after full Friday practice; expects limited role if active. Estime OUT (now on IR per reports). Etienne leads, Miller next among healthy backs. No new confirmation this overnight window on final inactives (games later Sunday).",
       "mongo_impact": "Miller OWNED on bench. Watch Sunday inactives. Not a start over Achane/Bijan.",
       "recommendation": "WATCH",
       "urgency": "BEFORE_KICKOFF",
@@ -223,8 +223,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T021000Z",
-    "completed_at": "2026-09-13T02:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T031000Z",
+    "completed_at": "2026-09-13T03:10:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -233,8 +233,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (7AM-11PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Overnight intelligence-only refresh (12AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material new signals vs prior 02:10Z Pulse. Davis IR already confirmed; Kamara remains Q with limited expected role; Miller status unchanged; no final Sunday inactives yet altering Mongo signals."
+    "No material new signals vs prior 03:10Z Pulse. Davis IR already confirmed; Kamara remains Q with limited expected role; Miller status unchanged; no final Sunday inactives yet altering Mongo signals."
   ]
 }
