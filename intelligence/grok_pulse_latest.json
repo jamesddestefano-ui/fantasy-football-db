@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T080500Z",
-  "generated_at": "2026-09-13T08:00:00Z",
-  "completed_at": "2026-09-13T08:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T102000Z",
+  "generated_at": "2026-09-13T10:15:00Z",
+  "completed_at": "2026-09-13T10:20:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "overnight_refresh",
@@ -117,7 +117,7 @@
       "team": "NO",
       "signal_type": "role",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Unchanged vs prior Pulse: Kamara (knee) QUESTIONABLE after full Friday practice; expects limited role if active. Estime OUT (IR elevated reports). Etienne leads, Miller next among healthy backs. No new confirmation this overnight window on final inactives (Saints-Lions later Sunday).",
+      "summary": "Unchanged vs prior Pulse: Kamara (knee) QUESTIONABLE after full Friday practice; expects limited role if active. Estime OUT. Etienne leads, Miller next among healthy backs. Unverified fan X claims of Kamara inactive lack beat confirmation; treat as SPECULATION only. No final Sunday inactives altering Mongo signals yet.",
       "mongo_impact": "Miller OWNED on bench. Watch Sunday inactives. Not a start over Achane/Bijan.",
       "recommendation": "WATCH",
       "urgency": "BEFORE_KICKOFF",
@@ -199,7 +199,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed).",
+      "summary": "No Pulse-driven lineup change. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Unverified Kamara inactive claims do not alter Miller recommendation.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -210,7 +210,7 @@
       "topic": "Week 1 start/sit consensus for JDD core plus Tucker/Downs",
       "status": "EXPERT_OPINION",
       "summary": "Core consensus (Hurts, Achane, Bijan, Lamb, McMillan) unchanged. FantasyPros Who Should I Start shows 95% prefer Downs over Tucker. No swap driven.",
-      "mongo_impact": "Hold current starter set. Late inactives only reopen Downs/Tucker.",
+      "mongo_impact": "Hold current starter set. Late inactives only reopen Downs/Tucker or Miller if Kamara confirmed out by official sources.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
@@ -223,8 +223,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T061500Z",
-    "completed_at": "2026-09-13T06:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T080500Z",
+    "completed_at": "2026-09-13T08:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -233,8 +233,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Overnight intelligence-only refresh (4AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Overnight intelligence-only refresh (6AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material new signals vs prior 06:15Z Pulse. Davis IR already confirmed; Kamara remains Q with limited expected role; Miller status unchanged; no final Sunday inactives yet altering Mongo signals."
+    "No material new signals vs prior 08:05Z Pulse. Davis IR already confirmed; Kamara remains Q (unverified fan claims of inactive treated as SPECULATION); Miller status unchanged; no final Sunday inactives yet altering Mongo signals."
   ]
 }
