@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T180500Z",
-  "generated_at": "2026-09-13T18:03:00Z",
-  "completed_at": "2026-09-13T18:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T191500Z",
+  "generated_at": "2026-09-13T19:15:00Z",
+  "completed_at": "2026-09-13T19:20:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -58,23 +58,60 @@
   },
   "player_signals": [
     {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) suffered a knee injury in the first quarter vs Jaguars, returned briefly to warm up, then ruled out for the remainder of Week 1. No offensive touches; 64 yards on two kickoff returns prior. Severity beyond game unknown; further evaluation pending.",
+      "mongo_impact": "OWNED on bench. Monitor post-game reports for possible multi-week or IR risk. Do not drop on single-game exit alone. No immediate lineup impact (already benched).",
+      "recommendation": "HOLD_MONITOR",
+      "urgency": "POST_GAME",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Daniel Oyefusi / ESPN",
+        "Mary Kay Cabot / Cleveland Plain Dealer",
+        "Browns Wire / Andrew Harbaugh",
+        "RotoWire",
+        "CBS Sports live injury tracker"
+      ]
+    },
+    {
+      "player": "Kendre Miller",
+      "team": "NO",
+      "signal_type": "usage",
+      "status": "CONFIRMED_FACT",
+      "summary": "With Kamara official inactive, Miller scored an 8-yard rushing TD in Q3 vs Lions (Saints first score of the game). Confirms elevated complementary/RB2 role behind Etienne. Live production validates prior Pulse watch.",
+      "mongo_impact": "OWNED on bench. Live TD reinforces hold value. Not a retroactive start recommendation over Achane/Bijan; monitor full-game volume for Week 2 outlook.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Luke Johnson / Times-Picayune X",
+        "Nolan Bianchi / Detroit News X",
+        "NFL TD Alerts",
+        "Official Saints inactives / NFL.com",
+        "Prior Pulse Kamara inactive confirmation"
+      ]
+    },
+    {
       "player": "Malik Davis",
       "team": "DAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Cowboys officially placed Malik Davis on injured reserve after hip surgery. Season-ending; no return designation. Israel Abanikanda elevated from practice squad. Confirmed across official team, ESPN (Archer/Schefter), DMN, RotoWire, NFL transactions.",
-      "mongo_impact": "Davis remains OWNED in the Mongo IR slot. Formal NFL IR confirmed. Do not start. Do not drop. IR slot locked for at least four games; no free IR upgrade available from this Pulse.",
+      "summary": "Cowboys formally on IR after hip surgery. Season-ending; no return designation. Unchanged.",
+      "mongo_impact": "Davis remains OWNED in the Mongo IR slot. Formal NFL IR confirmed. Do not start. Do not drop.",
       "recommendation": "HOLD",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
         "Todd Archer @toddarcher (ESPN)",
-        "Dallas Morning News / Calvin Watkins",
+        "Dallas Morning News",
         "RotoWire (Adam Schefter)",
         "NFL.com reserve-list transactions",
-        "DallasCowboys.com / team announcement",
-        "Mongo data/imports/2026-09-11-malik-davis-ir.json"
+        "Mongo data/imports prior"
       ]
     },
     {
@@ -82,8 +119,8 @@
       "team": "DAL",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Primary backup to Javonte Williams with Davis on formal IR. Abanikanda elevated as RB3. No change to Week 1 role expectation ahead of SNF vs Giants.",
-      "mongo_impact": "OWNED on Mongo bench. Hold as handcuff. Limited Week 1 standalone upside behind Williams.",
+      "summary": "Primary backup to Javonte Williams with Davis on formal IR. Abanikanda elevated as RB3. No change ahead of SNF vs Giants.",
+      "mongo_impact": "OWNED on Mongo bench. Hold as handcuff.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH",
@@ -91,8 +128,7 @@
       "sources": [
         "Todd Archer X",
         "Dallas Morning News",
-        "RotoWire",
-        "Mongo data/imports/2026-09-11-emari-demercado-free-add.json"
+        "RotoWire"
       ]
     },
     {
@@ -100,7 +136,7 @@
       "team": "SF",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 1 (Thu Australia) complete: Black 14-65-1/5, CMC under-used (attributed partly to cramps/travel). No new practice or Week 2 role updates in this window.",
+      "summary": "Week 1 (Thu Australia) complete: solid production. No new practice or Week 2 role updates in this window.",
       "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -108,27 +144,24 @@
       "availability": "OWNED",
       "sources": [
         "Nick Wagoner / NBC Rotoworld",
-        "49ers.com / PFF",
-        "Mongo intelligence/news/2026-09-11-kaelon-black-week1-role.json"
+        "49ers.com / PFF"
       ]
     },
     {
-      "player": "Kendre Miller",
-      "team": "NO",
-      "signal_type": "role",
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Alvin Kamara officially inactive for Week 1 vs Lions (knee/MCL). Confirmed via official Saints inactives list, NFL.com, Nick Underhill, Ian Rapoport. Travis Etienne leads; Miller is primary complement / RB2 among healthy backs. C.J. Donaldson elevated from PS. Official inactives released ~90 min pre-kickoff. Games underway; no further role change reported.",
-      "mongo_impact": "Miller OWNED on bench. Elevated complementary role confirmed. Not a start over Achane/Bijan; monitor for flex only if a starter is ruled out late. Do not drop.",
-      "recommendation": "WATCH",
-      "urgency": "BEFORE_KICKOFF",
+      "summary": "Official Colts/NFL.com inactives do not list Downs; active and playing vs Ravens. Prior calf cleared. One secondary source erroneously claimed inactive; official lists override.",
+      "mongo_impact": "Keep in FLEX. Do not swap.",
+      "recommendation": "START",
+      "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "NewOrleansSaints.com official inactives",
-        "NFL.com Week 1 inactives",
-        "Nick Underhill / Saints Wire",
-        "Ian Rapoport @RapSheet",
-        "CBS Sports / RotoBaller"
+        "NFL.com Colts inactives",
+        "Colts.com official inactives announcement",
+        "CBS Sports"
       ]
     },
     {
@@ -136,34 +169,15 @@
       "team": "LV",
       "signal_type": "expert",
       "status": "EXPERT_OPINION",
-      "summary": "Unchanged core: Bowers OUT. FantasyPros consensus strongly favors Downs (95% of experts) over Tucker as start. Fitzmaurice and others still flag Tucker as sneaky start/flex vs Miami. Downs remains C-grade flex.",
-      "mongo_impact": "Tucker OWNED on bench. No Pulse-driven swap over Downs. Leave on bench unless starter ruled out.",
+      "summary": "Unchanged. Bowers OUT. Consensus prefers Downs over Tucker as start.",
+      "mongo_impact": "Tucker OWNED on bench. No Pulse-driven swap over Downs.",
       "recommendation": "BENCH",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "FantasyPros Week 1 grades / Fitzmaurice / Who Should I Start 95% Downs",
-        "RotoBaller",
+        "FantasyPros Week 1 grades",
         "Official Raiders/CBS (Bowers out)"
-      ]
-    },
-    {
-      "player": "Josh Downs",
-      "team": "IND",
-      "signal_type": "expert",
-      "status": "EXPERT_OPINION",
-      "summary": "Locked Mongo FLEX. FantasyPros C grade; consensus strongly prefers over Tucker. Official Colts inactives (NFL.com / CBS) do not list Downs; active. No injury concern (cleared prior calf).",
-      "mongo_impact": "Keep in FLEX. Do not swap to Tucker from this Pulse.",
-      "recommendation": "START",
-      "urgency": "MONITOR",
-      "confidence": "MEDIUM",
-      "availability": "OWNED",
-      "sources": [
-        "FantasyPros Week 1 grades / Who Should I Start",
-        "CBS Sports PPR sheet",
-        "NFL.com Colts inactives (Downs not listed)",
-        "RotoWire (cleared injury report)"
       ]
     },
     {
@@ -171,7 +185,7 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Final Eagles report clean for Hurts and Andrews. Greenard OUT. 4:25 PM ET kickoff still ahead.",
+      "summary": "No change. Final Eagles report clean for Hurts and Andrews. 4:25 PM ET kickoff still ahead.",
       "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -202,7 +216,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Kamara officially inactive (CONFIRMED) elevates Miller complementary role behind Etienne but does not force a start over Achane/Bijan. 1PM games underway; 4:25 PM Eagles/Commanders still ahead; no late owned-player scratches.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller (live TD but already correctly benched), Tucker, Ray Davis, Sampson (now game-out knee), Lane. Davis stays in IR. 1PM games in progress/wrapping; 4:25 PM Eagles/Commanders still ahead; no late owned-player scratches among starters.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -210,27 +224,37 @@
   ],
   "expert_signals": [
     {
-      "topic": "Week 1 start/sit consensus for JDD core plus Tucker/Downs + Miller watch",
+      "topic": "Week 1 start/sit + live Miller/Sampson updates",
       "status": "EXPERT_OPINION",
-      "summary": "Core consensus (Hurts, Achane, Bijan, Lamb, McMillan) unchanged. FantasyPros Who Should I Start shows 95% prefer Downs over Tucker. Kamara official inactive increases Miller complementary role behind Etienne but does not change start recommendation for owned RBs.",
-      "mongo_impact": "Hold current starter set. Monitor official inactives for any late Miller flex consideration only if a starter is ruled out.",
+      "summary": "Core consensus unchanged. Miller live TD validates complementary role under Kamara inactive. Sampson knee exit is new owned-player signal requiring post-game monitoring only.",
+      "mongo_impact": "Hold current starter set. No mid-game swaps possible or warranted.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "sources": [
-        "FantasyPros Week 1 grades / Who Should I Start",
-        "Ian Rapoport Kamara report",
-        "Nick Underhill",
-        "Official Saints/NFL.com inactives",
-        "LeagueLogs / RotoBaller prior notes"
+        "FantasyPros",
+        "Live X beat reporting",
+        "Official inactives / NFL.com",
+        "ESPN / RotoWire Sampson"
       ]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "type": "injury_status",
+      "player": "Dylan Sampson",
+      "detail": "Ruled out for remainder of Week 1 vs Jaguars with knee injury (first-quarter onset). CONFIRMED_FACT via ESPN/beat. Severity TBD; post-game evaluation needed."
+    },
+    {
+      "type": "usage",
+      "player": "Kendre Miller",
+      "detail": "Scored 8-yard rushing TD in Q3 vs Lions while Kamara inactive. Confirms elevated RB2 role with live production."
+    }
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T170500Z",
-    "completed_at": "2026-09-13T17:05:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T180500Z",
+    "completed_at": "2026-09-13T18:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -239,8 +263,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (2PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (~3:15 PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 17:05Z prior. Kamara inactive and Miller role already confirmed. Downs active per official Colts/NFL.com inactives. 1PM games underway; 4:25PM Eagles still ahead; no late owned-player scratches or new signals."
+    "Material changes: owned Dylan Sampson knee out for rest of game; Kendre Miller TD confirms elevated role. Downs active per official lists. 1PM games in progress; 4:25PM Eagles still ahead."
   ]
 }
