@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-13T20:03:49Z",
+  "generated_at": "2026-09-13T23:03:28Z",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 4,
+  "total_decisions": 5,
   "reviewed_decisions": 0,
-  "pending_decisions": 4,
+  "pending_decisions": 5,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
@@ -34,7 +34,7 @@
       "reviewed_count": 0
     },
     "4": {
-      "count": 3,
+      "count": 4,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -50,7 +50,7 @@
   },
   "decision_type_performance": {
     "INJURY_CONTINGENCY": {
-      "count": 4,
+      "count": 5,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -59,7 +59,7 @@
   },
   "signal_performance": {
     "authenticated league state": {
-      "count": 4,
+      "count": 5,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -139,7 +139,37 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Mongo Grok Pulse": {
-      "count": 2,
+      "count": 3,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "post-game injury evidence": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "credible beat reporting": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "scheduled medical testing": {
+      "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -202,40 +232,40 @@
     }
   },
   "nfl_pulse_performance": {
-    "pulses_considered": 4,
-    "pulses_used": 3,
+    "pulses_considered": 5,
+    "pulses_used": 4,
     "pulses_rejected": 1,
-    "decision_lineages_considered": 4,
-    "decision_lineages_used": 3,
-    "actions_changed_by_pulse": 3,
+    "decision_lineages_considered": 5,
+    "decision_lineages_used": 4,
+    "actions_changed_by_pulse": 4,
     "successful_actions_changed_by_pulse": 0,
     "unsuccessful_actions_changed_by_pulse": 0,
-    "average_information_lead_time_minutes": 130.33,
+    "average_information_lead_time_minutes": 108.5,
     "highly_useful_pulses": 0,
     "misleading_pulses": 0,
     "too_late_pulses": 0,
     "usefulness_grade_distribution": {},
     "pulse_category_performance": {
       "injury": {
-        "count": 4,
+        "count": 5,
         "success_rate": null,
         "average_outcome_grade": null,
         "average_process_grade": null,
         "reviewed_count": 0,
-        "used_count": 3,
-        "changed_decision_count": 3,
+        "used_count": 4,
+        "changed_decision_count": 4,
         "usefulness_grade_distribution": {}
       }
     },
     "pulse_source_performance": {
       "Mongo Grok Pulse": {
-        "count": 4,
+        "count": 5,
         "success_rate": null,
         "average_outcome_grade": null,
         "average_process_grade": null,
         "reviewed_count": 0,
-        "used_count": 3,
-        "changed_decision_count": 3,
+        "used_count": 4,
+        "changed_decision_count": 4,
         "usefulness_grade_distribution": {}
       }
     }
