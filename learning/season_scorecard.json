@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-12T14:59:29Z",
+  "generated_at": "2026-09-13T12:02:09Z",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 1,
+  "total_decisions": 2,
   "reviewed_decisions": 0,
-  "pending_decisions": 1,
+  "pending_decisions": 2,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
@@ -27,7 +27,7 @@
       "reviewed_count": 0
     },
     "3": {
-      "count": 0,
+      "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -50,7 +50,7 @@
   },
   "decision_type_performance": {
     "INJURY_CONTINGENCY": {
-      "count": 1,
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -59,7 +59,7 @@
   },
   "signal_performance": {
     "authenticated league state": {
-      "count": 1,
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -79,6 +79,36 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "official team report": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "high-confidence insider injury reporting": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "backfield vacancy/role contingency": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "current starter comparison": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -142,40 +172,40 @@
     }
   },
   "nfl_pulse_performance": {
-    "pulses_considered": 1,
-    "pulses_used": 0,
+    "pulses_considered": 2,
+    "pulses_used": 1,
     "pulses_rejected": 1,
-    "decision_lineages_considered": 1,
-    "decision_lineages_used": 0,
-    "actions_changed_by_pulse": 0,
+    "decision_lineages_considered": 2,
+    "decision_lineages_used": 1,
+    "actions_changed_by_pulse": 1,
     "successful_actions_changed_by_pulse": 0,
     "unsuccessful_actions_changed_by_pulse": 0,
-    "average_information_lead_time_minutes": null,
+    "average_information_lead_time_minutes": 350,
     "highly_useful_pulses": 0,
     "misleading_pulses": 0,
     "too_late_pulses": 0,
     "usefulness_grade_distribution": {},
     "pulse_category_performance": {
       "injury": {
-        "count": 1,
+        "count": 2,
         "success_rate": null,
         "average_outcome_grade": null,
         "average_process_grade": null,
         "reviewed_count": 0,
-        "used_count": 0,
-        "changed_decision_count": 0,
+        "used_count": 1,
+        "changed_decision_count": 1,
         "usefulness_grade_distribution": {}
       }
     },
     "pulse_source_performance": {
       "Mongo Grok Pulse": {
-        "count": 1,
+        "count": 2,
         "success_rate": null,
         "average_outcome_grade": null,
         "average_process_grade": null,
         "reviewed_count": 0,
-        "used_count": 0,
-        "changed_decision_count": 0,
+        "used_count": 1,
+        "changed_decision_count": 1,
         "usefulness_grade_distribution": {}
       }
     }
