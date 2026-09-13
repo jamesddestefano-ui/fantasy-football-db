@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T021000Z",
-  "generated_at": "2026-09-13T02:05:00Z",
-  "completed_at": "2026-09-13T02:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T031000Z",
+  "generated_at": "2026-09-13T03:05:00Z",
+  "completed_at": "2026-09-13T03:10:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -223,8 +223,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-12T222000Z",
-    "completed_at": "2026-09-12T22:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T021000Z",
+    "completed_at": "2026-09-13T02:10:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -235,6 +235,6 @@
   "notes": [
     "Hourly intelligence-only refresh (7AM-11PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material new signals vs prior 22:20Z Pulse. Davis IR already confirmed; Kamara remains Q with limited expected role; Miller status unchanged; no final Sunday inactives yet altering Mongo signals."
+    "No material new signals vs prior 02:10Z Pulse. Davis IR already confirmed; Kamara remains Q with limited expected role; Miller status unchanged; no final Sunday inactives yet altering Mongo signals."
   ]
 }
