@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-13T20:00:47Z",
+  "generated_at": "2026-09-13T20:03:49Z",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 3,
+  "total_decisions": 4,
   "reviewed_decisions": 0,
-  "pending_decisions": 3,
+  "pending_decisions": 4,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
@@ -34,7 +34,7 @@
       "reviewed_count": 0
     },
     "4": {
-      "count": 2,
+      "count": 3,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -50,7 +50,7 @@
   },
   "decision_type_performance": {
     "INJURY_CONTINGENCY": {
-      "count": 3,
+      "count": 4,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -59,7 +59,7 @@
   },
   "signal_performance": {
     "authenticated league state": {
-      "count": 3,
+      "count": 4,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -89,7 +89,7 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "high-confidence insider injury reporting": {
-      "count": 1,
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -119,7 +119,7 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "in-game injury exit": {
-      "count": 1,
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -139,7 +139,7 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Mongo Grok Pulse": {
-      "count": 1,
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -202,40 +202,40 @@
     }
   },
   "nfl_pulse_performance": {
-    "pulses_considered": 3,
-    "pulses_used": 2,
+    "pulses_considered": 4,
+    "pulses_used": 3,
     "pulses_rejected": 1,
-    "decision_lineages_considered": 3,
-    "decision_lineages_used": 2,
-    "actions_changed_by_pulse": 2,
+    "decision_lineages_considered": 4,
+    "decision_lineages_used": 3,
+    "actions_changed_by_pulse": 3,
     "successful_actions_changed_by_pulse": 0,
     "unsuccessful_actions_changed_by_pulse": 0,
-    "average_information_lead_time_minutes": 195.5,
+    "average_information_lead_time_minutes": 130.33,
     "highly_useful_pulses": 0,
     "misleading_pulses": 0,
     "too_late_pulses": 0,
     "usefulness_grade_distribution": {},
     "pulse_category_performance": {
       "injury": {
-        "count": 3,
+        "count": 4,
         "success_rate": null,
         "average_outcome_grade": null,
         "average_process_grade": null,
         "reviewed_count": 0,
-        "used_count": 2,
-        "changed_decision_count": 2,
+        "used_count": 3,
+        "changed_decision_count": 3,
         "usefulness_grade_distribution": {}
       }
     },
     "pulse_source_performance": {
       "Mongo Grok Pulse": {
-        "count": 3,
+        "count": 4,
         "success_rate": null,
         "average_outcome_grade": null,
         "average_process_grade": null,
         "reviewed_count": 0,
-        "used_count": 2,
-        "changed_decision_count": 2,
+        "used_count": 3,
+        "changed_decision_count": 3,
         "usefulness_grade_distribution": {}
       }
     }
