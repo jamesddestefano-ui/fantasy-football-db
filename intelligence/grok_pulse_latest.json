@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T143000Z",
-  "generated_at": "2026-09-13T14:25:00Z",
-  "completed_at": "2026-09-13T14:30:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T152500Z",
+  "generated_at": "2026-09-13T15:23:00Z",
+  "completed_at": "2026-09-13T15:25:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -117,7 +117,7 @@
       "team": "NO",
       "signal_type": "role",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new change since prior Pulse. Ian Rapoport (NFL Network/ESPN) and Nick Underhill report Alvin Kamara (knee/MCL) is not expected to play Sunday vs Lions despite full Friday practice; sources say not quite ready / game plan set for next week. Estime already OUT/IR. Etienne leads backfield; Miller next among healthy backs for complementary work. Official inactives still pending (released ~90 min before 1:00 PM ET kickoff).",
+      "summary": "No new change since prior Pulse. Ian Rapoport (NFL Network/ESPN) and Nick Underhill report Alvin Kamara (knee/MCL) is not expected to play Sunday vs Lions despite full Friday practice; sources say not quite ready / game plan set for next week. Estime already OUT/IR. Etienne leads backfield; Miller next among healthy backs for complementary work. Official inactives still pending (released ~90 min before 1:00 PM ET kickoff; current window ~11:25 AM ET).",
       "mongo_impact": "Miller OWNED on bench. Elevated watch for potential increased snaps if Kamara inactive confirmed. Not a start over Achane/Bijan; monitor for flex consideration only if other starters ruled out. Do not drop.",
       "recommendation": "WATCH",
       "urgency": "BEFORE_KICKOFF",
@@ -129,7 +129,8 @@
         "Sporting News summary of Rapoport",
         "Saints official injury report (Kamara Q, Estime OUT)",
         "CBS Sports Week 1 tracker",
-        "RotoWire (Underhill confirmation of not expected)"
+        "RotoWire (Underhill confirmation of not expected)",
+        "Saints Wire / Underhill confirmation"
       ]
     },
     {
@@ -228,8 +229,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T131200Z",
-    "completed_at": "2026-09-13T13:12:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T143000Z",
+    "completed_at": "2026-09-13T14:30:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -238,8 +239,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (10AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (11AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 13:12Z prior. Kamara remains ATTRIBUTED_REPORT not expected (Rapoport/Underhill); official inactives still open for 1pm games. Miller watch continues at same level. No other Mongo roster signals altered."
+    "No material change vs 14:30Z prior. Kamara remains ATTRIBUTED_REPORT not expected (Rapoport/Underhill); official inactives still open for 1pm games as of ~11:25 AM ET. Miller watch continues at same level. No other Mongo roster signals altered."
   ]
 }
