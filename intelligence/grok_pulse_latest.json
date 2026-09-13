@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T110500Z",
-  "generated_at": "2026-09-13T11:00:00Z",
-  "completed_at": "2026-09-13T11:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T121700Z",
+  "generated_at": "2026-09-13T12:15:00Z",
+  "completed_at": "2026-09-13T12:17:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -117,7 +117,7 @@
       "team": "NO",
       "signal_type": "role",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Material update: Ian Rapoport (NFL Network/ESPN) reports Alvin Kamara (knee/MCL) is not expected to play Sunday vs Lions despite full Friday practice; sources say not quite ready. Estime already OUT. Etienne leads backfield; Miller next among healthy backs for complementary work. Official inactives still pending (game-time window).",
+      "summary": "No new change since prior Pulse. Ian Rapoport (NFL Network/ESPN) reports Alvin Kamara (knee/MCL) is not expected to play Sunday vs Lions despite full Friday practice; sources say not quite ready. Estime already OUT. Etienne leads backfield; Miller next among healthy backs for complementary work. Official inactives still pending (game-time window ~11:30 AM ET).",
       "mongo_impact": "Miller OWNED on bench. Elevated watch for potential increased snaps if Kamara inactive confirmed. Not a start over Achane/Bijan; monitor for flex consideration only if other starters ruled out. Do not drop.",
       "recommendation": "WATCH",
       "urgency": "BEFORE_KICKOFF",
@@ -128,7 +128,8 @@
         "Sporting News summary of Rapoport",
         "Nick Underhill prior reports",
         "Saints official injury report (Kamara Q, Estime OUT)",
-        "CBS Sports Week 1 tracker"
+        "CBS Sports Week 1 tracker",
+        "RotoWire (Underhill confirmation of not expected)"
       ]
     },
     {
@@ -201,7 +202,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Kamara not expected (Rapoport) elevates Miller watch but does not force a start over Achane/Bijan; final inactives still pending.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Kamara not expected (Rapoport, still ATTRIBUTED) elevates Miller watch but does not force a start over Achane/Bijan; final inactives still pending (~11:30 AM ET).",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -223,17 +224,11 @@
       ]
     }
   ],
-  "material_changes": [
-    {
-      "type": "injury_status",
-      "player": "Alvin Kamara",
-      "detail": "Ian Rapoport reports Kamara (knee/MCL) not expected to play vs Lions despite full Friday practice. Elevates Kendre Miller complementary role expectation (ATTRIBUTED_REPORT). Official inactives still pending."
-    }
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T102000Z",
-    "completed_at": "2026-09-13T10:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T110500Z",
+    "completed_at": "2026-09-13T11:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -242,8 +237,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (7AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (8AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Material change: Rapoport sources say Kamara not expected today; Miller watch elevated. No other Mongo roster signals altered. Final Sunday inactives still open."
+    "No material change vs 11:05Z prior. Kamara remains ATTRIBUTED_REPORT not expected (Rapoport/Underhill); official inactives still open. Miller watch continues at same level. No other Mongo roster signals altered."
   ]
 }
