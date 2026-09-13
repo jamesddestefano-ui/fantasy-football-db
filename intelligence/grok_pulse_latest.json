@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-13T152500Z",
-  "generated_at": "2026-09-13T15:23:00Z",
-  "completed_at": "2026-09-13T15:25:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-13T161500Z",
+  "generated_at": "2026-09-13T16:13:00Z",
+  "completed_at": "2026-09-13T16:15:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -116,21 +116,19 @@
       "player": "Kendre Miller",
       "team": "NO",
       "signal_type": "role",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "No new change since prior Pulse. Ian Rapoport (NFL Network/ESPN) and Nick Underhill report Alvin Kamara (knee/MCL) is not expected to play Sunday vs Lions despite full Friday practice; sources say not quite ready / game plan set for next week. Estime already OUT/IR. Etienne leads backfield; Miller next among healthy backs for complementary work. Official inactives still pending (released ~90 min before 1:00 PM ET kickoff; current window ~11:25 AM ET).",
-      "mongo_impact": "Miller OWNED on bench. Elevated watch for potential increased snaps if Kamara inactive confirmed. Not a start over Achane/Bijan; monitor for flex consideration only if other starters ruled out. Do not drop.",
+      "status": "CONFIRMED_FACT",
+      "summary": "Alvin Kamara officially inactive for Week 1 vs Lions (knee/MCL). Confirmed via official Saints inactives list, NFL.com, Nick Underhill, Ian Rapoport. Travis Etienne leads; Miller is primary complement / RB2 among healthy backs. C.J. Donaldson elevated from PS. Official inactives released ~90 min pre-kickoff.",
+      "mongo_impact": "Miller OWNED on bench. Elevated complementary role confirmed. Not a start over Achane/Bijan; monitor for flex only if a starter is ruled out late. Do not drop.",
       "recommendation": "WATCH",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
+        "NewOrleansSaints.com official inactives",
+        "NFL.com Week 1 inactives",
+        "Nick Underhill / Saints Wire",
         "Ian Rapoport @RapSheet",
-        "Nick Underhill @nick_underhill",
-        "Sporting News summary of Rapoport",
-        "Saints official injury report (Kamara Q, Estime OUT)",
-        "CBS Sports Week 1 tracker",
-        "RotoWire (Underhill confirmation of not expected)",
-        "Saints Wire / Underhill confirmation"
+        "CBS Sports / RotoBaller"
       ]
     },
     {
@@ -155,7 +153,7 @@
       "team": "IND",
       "signal_type": "expert",
       "status": "EXPERT_OPINION",
-      "summary": "Locked Mongo FLEX. FantasyPros C grade; consensus strongly prefers over Tucker. No injury concern (cleared prior calf).",
+      "summary": "Locked Mongo FLEX. FantasyPros C grade; consensus strongly prefers over Tucker. Official Colts inactives do not list Downs; active. No injury concern (cleared prior calf).",
       "mongo_impact": "Keep in FLEX. Do not swap to Tucker from this Pulse.",
       "recommendation": "START",
       "urgency": "MONITOR",
@@ -164,6 +162,7 @@
       "sources": [
         "FantasyPros Week 1 grades / Who Should I Start",
         "CBS Sports PPR sheet",
+        "NFL.com Colts inactives (Downs not listed)",
         "RotoWire (cleared injury report)"
       ]
     },
@@ -203,7 +202,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Kamara not expected (Rapoport/Underhill, still ATTRIBUTED) elevates Miller watch but does not force a start over Achane/Bijan; final inactives still pending (~11:30 AM ET / 90 min pre-kick).",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Sampson, Lane. Davis stays in IR (formal NFL IR confirmed). Kamara officially inactive (CONFIRMED) elevates Miller complementary role behind Etienne but does not force a start over Achane/Bijan.",
       "recommendation": "HOLD",
       "urgency": "BEFORE_KICKOFF",
       "confidence": "HIGH"
@@ -213,7 +212,7 @@
     {
       "topic": "Week 1 start/sit consensus for JDD core plus Tucker/Downs + Miller watch",
       "status": "EXPERT_OPINION",
-      "summary": "Core consensus (Hurts, Achane, Bijan, Lamb, McMillan) unchanged. FantasyPros Who Should I Start shows 95% prefer Downs over Tucker. Kamara absence (attributed) increases Miller complementary role behind Etienne but does not change start recommendation for owned RBs.",
+      "summary": "Core consensus (Hurts, Achane, Bijan, Lamb, McMillan) unchanged. FantasyPros Who Should I Start shows 95% prefer Downs over Tucker. Kamara official inactive increases Miller complementary role behind Etienne but does not change start recommendation for owned RBs.",
       "mongo_impact": "Hold current starter set. Monitor official inactives for any late Miller flex consideration only if a starter is ruled out.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -222,15 +221,22 @@
         "FantasyPros Week 1 grades / Who Should I Start",
         "Ian Rapoport Kamara report",
         "Nick Underhill",
+        "Official Saints/NFL.com inactives",
         "LeagueLogs / RotoBaller prior notes"
       ]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "type": "injury_status",
+      "player": "Alvin Kamara",
+      "detail": "Officially inactive for Week 1 vs Lions (knee/MCL). Status upgraded from ATTRIBUTED_REPORT (Rapoport/Underhill not expected) to CONFIRMED_FACT via official Saints inactives list and NFL.com. Elevates Kendre Miller complementary/RB2 role behind Travis Etienne."
+    }
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-13T143000Z",
-    "completed_at": "2026-09-13T14:30:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-13T152500Z",
+    "completed_at": "2026-09-13T15:25:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -239,8 +245,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly intelligence-only refresh (11AM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly intelligence-only refresh (12PM ET window). Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 14:30Z prior. Kamara remains ATTRIBUTED_REPORT not expected (Rapoport/Underhill); official inactives still open for 1pm games as of ~11:25 AM ET. Miller watch continues at same level. No other Mongo roster signals altered."
+    "Material change vs 15:25Z prior: Kamara officially inactive (CONFIRMED_FACT). Miller watch elevated to confirmed complementary role. No other Mongo roster signals altered."
   ]
 }
