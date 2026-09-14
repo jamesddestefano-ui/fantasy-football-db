@@ -1,1 +1,209 @@
-{"league": "mongo", "espn_league_id": "1470431049", "espn_team_id": 2, "team": "Tom Brady of Ass / JDD", "pulse_id": "mongo-grok-pulse-2026-09-14T041000Z", "generated_at": "2026-09-14T04:05:00Z", "completed_at": "2026-09-14T04:10:00Z", "week": 1, "season": 2026, "run_type": "hourly_refresh", "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "OK", "experts": "OK", "analytics": "LIMITED"}, "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false}, "roster_context": {"source": "Mongo repository seed/current state as of 2026-09-11 Demercado add + Malik Davis IR confirmation", "faab_remaining": 94, "starters_week_1": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"], "bench": ["Kaelon Black", "Ray Davis", "Ja'Kobi Lane", "Kendre Miller", "Dylan Sampson", "Tre Tucker", "Emari Demercado"], "ir": ["Malik Davis"]}, "watchlist_status": {"repository_waiver_watch_rows": 0, "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."}, "player_signals": [{"player": "Ja'Kobi Lane", "team": "BAL", "signal_type": "injury", "status": "ATTRIBUTED_REPORT", "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) suffered a fractured wrist in Week 1 win over Colts. NFL Network Insiders Mike Garafolo and Ian Rapoport report he is expected to miss several weeks; further testing including MRI to determine full extent. 1 catch for 11 yards prior to exit. Concurrent Flowers hamstring aggravation thins Ravens WR room. No Monday MRI results yet in this overnight window.", "mongo_impact": "OWNED on bench. Several-weeks timeline elevates multi-week / potential IR risk. Continue HOLD_MONITOR pending MRI/official designation; do not drop solely on this report. No immediate lineup impact (already benched).", "recommendation": "HOLD_MONITOR", "urgency": "POST_GAME", "confidence": "HIGH", "availability": "OWNED", "sources": ["Mike Garafolo @MikeGarafolo (NFL Network)", "Ian Rapoport @RapSheet", "NFL.com", "RotoWire", "NBC Sports / PFT"]}, {"player": "Dylan Sampson", "team": "CLE", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Browns RB Dylan Sampson (owned on Mongo bench) ruled out for remainder of Week 1 vs Jaguars with left knee injury (first-quarter onset). Post-game: seen on crutches with brace on left knee (Mary Kay Cabot). Further testing scheduled Monday to determine severity (Daniel Oyefusi / ESPN). No offensive touches; 64 yards on two kickoff returns prior. No additional severity details or MRI results in this overnight window.", "mongo_impact": "OWNED on bench. Elevated multi-week / IR risk concern due to crutches + brace + Monday testing. Continue HOLD_MONITOR; do not drop solely on game exit. No immediate lineup impact (already benched).", "recommendation": "HOLD_MONITOR", "urgency": "POST_GAME", "confidence": "HIGH", "availability": "OWNED", "sources": ["Mary Kay Cabot / Cleveland Plain Dealer X", "Daniel Oyefusi / ESPN", "Chris Easterling / Akron Beacon Journal", "RotoWire", "Browns Wire / Andrew Harbaugh"]}, {"player": "Kendre Miller", "team": "NO", "signal_type": "usage", "status": "CONFIRMED_FACT", "summary": "With Kamara official inactive, Miller scored an 8-yard rushing TD in Q3 vs Lions (9 carries, 30 yards). Confirms elevated complementary/RB2 role behind Etienne. Saints lost in OT 31-30; full-game volume logged for Week 2 evaluation. Unchanged.", "mongo_impact": "OWNED on bench. TD and role reinforce hold value. Not a retroactive start over Achane/Bijan; monitor Week 2 outlook with Kamara status.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Luke Johnson / Times-Picayune X", "Nolan Bianchi / Detroit News X", "NFL TD Alerts", "Official Saints inactives / NFL.com", "StatMuse game log", "NBC Sports Rotoworld"]}, {"player": "Malik Davis", "team": "DAL", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Cowboys formally on IR after hip surgery. Season-ending; no return designation. Unchanged.", "mongo_impact": "Davis remains OWNED in the Mongo IR slot. Formal NFL IR confirmed. Do not start. Do not drop.", "recommendation": "HOLD", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["Todd Archer @toddarcher (ESPN)", "Dallas Morning News", "RotoWire (Adam Schefter)", "NFL.com reserve-list transactions", "Mongo data/imports prior"]}, {"player": "Emari Demercado", "team": "DAL", "signal_type": "role", "status": "CONFIRMED_FACT", "summary": "Primary backup to Javonte Williams with Davis on formal IR. Abanikanda inactive. Active as RB2 for SNF vs Giants; limited usage (2 carries, 7 yards per ESPN/box). Game final.", "mongo_impact": "OWNED on Mongo bench. Hold as handcuff. Limited touches consistent with pure backup role; continue monitor for any expanded opportunity if Williams workload shifts.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Todd Archer X", "Dallas Morning News", "Clarence Hill Jr X (inactives)", "ESPN box score", "RotoWire", "Covers.com game log"]}, {"player": "Kaelon Black", "team": "SF", "signal_type": "usage", "status": "CONFIRMED_FACT", "summary": "Week 1 (Thu Australia) complete: solid production (14 carries 65 yards). No new practice or Week 2 role updates in this window.", "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Nick Wagoner / NBC Rotoworld", "49ers.com / PFF", "CBS Sports"]}, {"player": "Josh Downs", "team": "IND", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Active and played vs Ravens. Prior calf cleared. Official lists confirmed. Game final.", "mongo_impact": "Keep in FLEX. Do not swap.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["NFL.com Colts inactives", "Colts.com official inactives announcement", "CBS Sports"]}, {"player": "Tre Tucker", "team": "LV", "signal_type": "expert", "status": "EXPERT_OPINION", "summary": "Unchanged. Bowers OUT. Consensus prefers Downs over Tucker as start. Raiders game final.", "mongo_impact": "Tucker OWNED on bench. No Pulse-driven swap over Downs.", "recommendation": "BENCH", "urgency": "MONITOR", "confidence": "MEDIUM", "availability": "OWNED", "sources": ["FantasyPros Week 1 grades", "Official Raiders/CBS (Bowers out)"]}, {"player": "Jalen Hurts", "team": "PHI", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "No change. Final Eagles report clean for Hurts and Andrews. 4:25 PM ET game vs Commanders complete; no late scratches among owned starters.", "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["CBS Sports injury tracker", "Eagles official inactives", "NBC Sports Philadelphia"]}], "waiver_signals": [{"player": "generic_watch_only", "availability": "UNKNOWN", "status": "SPECULATION", "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority.", "mongo_impact": "Do not spend FAAB from this Pulse.", "recommendation": "NONE", "urgency": "NONE", "confidence": "HIGH", "sources": ["AGENTS.md ownership rules", "Mongo repository waiver-watch empty"]}], "lineup_signals": [{"week": 1, "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado (limited SNF usage 2/7), Miller, Tucker, Ray Davis, Sampson (game-out knee, crutches/brace + Monday testing pending results), Lane (fractured wrist, several weeks expected, MRI pending). Davis stays in IR. All games final. No late owned-player scratches among starters.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH"}], "expert_signals": [{"topic": "Week 1 post-game Lane/Sampson monitor + SNF usage", "status": "EXPERT_OPINION", "summary": "Core consensus unchanged. Owned-player signals stable overnight: Lane fractured wrist with several-weeks expectation (Garafolo/Rapoport); Sampson knee elevated by crutches/brace/Monday tests (results still pending); Miller TD/role already logged; Demercado limited backup usage confirmed. No new MRI or official designations overnight.", "mongo_impact": "Hold current starter set. Monitor Monday MRI/testing results on Lane and Sampson.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "MEDIUM", "sources": ["FantasyPros", "Live X beat reporting", "Official inactives / NFL.com", "ESPN / Rapoport / Schefter / Garafolo", "Mary Kay Cabot / Daniel Oyefusi"]}], "material_changes": [], "no_material_change": true, "prior_pulse": {"pulse_id": "mongo-grok-pulse-2026-09-14T031000Z", "completed_at": "2026-09-14T03:10:00Z"}, "prime_watch_handoff": {"canonical_feed": "intelligence/grok_pulse_latest.json", "history": "intelligence/grok_pulse_history.jsonl", "consumer": "Prime Mongo Fantasy Watch", "duplicate_pulse_path": false}, "notes": ["Overnight ~12:00 AM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.", "Sparta, NFL-DFS, and prop-betting repos not read or written.", "No material change vs 03:10Z prior. Lane several-weeks fractured wrist and Sampson Monday testing already logged; MRI results not yet available in this window. All Week 1 games final."]}
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-09-14T061000Z",
+  "generated_at": "2026-09-14T06:05:00Z",
+  "completed_at": "2026-09-14T06:10:00Z",
+  "week": 1,
+  "season": 2026,
+  "run_type": "hourly_refresh",
+  "source_status": {
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
+    "x_direct": "OK",
+    "experts": "OK",
+    "analytics": "LIMITED"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Mongo repository seed/current state as of 2026-09-11 Demercado add + Malik Davis IR confirmation",
+    "faab_remaining": 94,
+    "starters_week_1": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
+    "bench": ["Kaelon Black", "Ray Davis", "Ja'Kobi Lane", "Kendre Miller", "Dylan Sampson", "Tre Tucker", "Emari Demercado"],
+    "ir": ["Malik Davis"]
+  },
+  "watchlist_status": {
+    "repository_waiver_watch_rows": 0,
+    "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."
+  },
+  "player_signals": [
+    {
+      "player": "Ja'Kobi Lane",
+      "team": "BAL",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) suffered a fractured wrist in Week 1 win over Colts. NFL Network Insiders Mike Garafolo and Ian Rapoport report he is expected to miss several weeks; further testing including MRI to determine full extent. 1 catch for 11 yards prior to exit. Concurrent Flowers hamstring aggravation thins Ravens WR room. No Monday MRI results yet in this overnight/early-Monday window.",
+      "mongo_impact": "OWNED on bench. Several-weeks timeline elevates multi-week / potential IR risk. Continue HOLD_MONITOR pending MRI/official designation; do not drop solely on this report. No immediate lineup impact (already benched).",
+      "recommendation": "HOLD_MONITOR",
+      "urgency": "POST_GAME",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Mike Garafolo @MikeGarafolo (NFL Network)", "Ian Rapoport @RapSheet", "NFL.com", "RotoWire", "NBC Sports / PFT"]
+    },
+    {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) ruled out for remainder of Week 1 vs Jaguars with left knee injury (first-quarter onset). Post-game: seen on crutches with brace on left knee (Mary Kay Cabot). Further testing scheduled Monday to determine severity (Daniel Oyefusi / ESPN). No offensive touches; 64 yards on two kickoff returns prior. No additional severity details or MRI results in this overnight/early-Monday window.",
+      "mongo_impact": "OWNED on bench. Elevated multi-week / IR risk concern due to crutches + brace + Monday testing. Continue HOLD_MONITOR; do not drop solely on game exit. No immediate lineup impact (already benched).",
+      "recommendation": "HOLD_MONITOR",
+      "urgency": "POST_GAME",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Mary Kay Cabot / Cleveland Plain Dealer X", "Daniel Oyefusi / ESPN", "Chris Easterling / Akron Beacon Journal", "RotoWire", "Browns Wire / Andrew Harbaugh"]
+    },
+    {
+      "player": "Kendre Miller",
+      "team": "NO",
+      "signal_type": "usage",
+      "status": "CONFIRMED_FACT",
+      "summary": "With Kamara official inactive, Miller scored an 8-yard rushing TD in Q3 vs Lions (9 carries, 30 yards). Confirms elevated complementary/RB2 role behind Etienne. Saints lost in OT 31-30; full-game volume logged for Week 2 evaluation. Unchanged.",
+      "mongo_impact": "OWNED on bench. TD and role reinforce hold value. Not a retroactive start over Achane/Bijan; monitor Week 2 outlook with Kamara status.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Luke Johnson / Times-Picayune X", "Nolan Bianchi / Detroit News X", "NFL TD Alerts", "Official Saints inactives / NFL.com", "StatMuse game log", "NBC Sports Rotoworld"]
+    },
+    {
+      "player": "Malik Davis",
+      "team": "DAL",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Cowboys formally on IR after hip surgery. Season-ending; no return designation. Unchanged.",
+      "mongo_impact": "Davis remains OWNED in the Mongo IR slot. Formal NFL IR confirmed. Do not start. Do not drop.",
+      "recommendation": "HOLD",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Todd Archer @toddarcher (ESPN)", "Dallas Morning News", "RotoWire (Adam Schefter)", "NFL.com reserve-list transactions", "Mongo data/imports prior"]
+    },
+    {
+      "player": "Emari Demercado",
+      "team": "DAL",
+      "signal_type": "role",
+      "status": "CONFIRMED_FACT",
+      "summary": "Primary backup to Javonte Williams with Davis on formal IR. Abanikanda inactive. Active as RB2 for SNF vs Giants; limited usage (2 carries, 7 yards per ESPN/box). Game final.",
+      "mongo_impact": "OWNED on Mongo bench. Hold as handcuff. Limited touches consistent with pure backup role; continue monitor for any expanded opportunity if Williams workload shifts.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Todd Archer X", "Dallas Morning News", "Clarence Hill Jr X (inactives)", "ESPN box score", "RotoWire", "Covers.com game log"]
+    },
+    {
+      "player": "Kaelon Black",
+      "team": "SF",
+      "signal_type": "usage",
+      "status": "CONFIRMED_FACT",
+      "summary": "Week 1 (Thu Australia) complete: solid production (14 carries 65 yards). No new practice or Week 2 role updates in this window.",
+      "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Nick Wagoner / NBC Rotoworld", "49ers.com / PFF", "CBS Sports"]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Active and played vs Ravens. Prior calf cleared. Official lists confirmed. Game final.",
+      "mongo_impact": "Keep in FLEX. Do not swap.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["NFL.com Colts inactives", "Colts.com official inactives announcement", "CBS Sports"]
+    },
+    {
+      "player": "Tre Tucker",
+      "team": "LV",
+      "signal_type": "expert",
+      "status": "EXPERT_OPINION",
+      "summary": "Unchanged. Bowers OUT. Consensus prefers Downs over Tucker as start. Raiders game final.",
+      "mongo_impact": "Tucker OWNED on bench. No Pulse-driven swap over Downs.",
+      "recommendation": "BENCH",
+      "urgency": "MONITOR",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": ["FantasyPros Week 1 grades", "Official Raiders/CBS (Bowers out)"]
+    },
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "No change. Final Eagles report clean for Hurts and Andrews. 4:25 PM ET game vs Commanders complete; no late scratches among owned starters.",
+      "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["CBS Sports injury tracker", "Eagles official inactives", "NBC Sports Philadelphia"]
+    }
+  ],
+  "waiver_signals": [
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": ["AGENTS.md ownership rules", "Mongo repository waiver-watch empty"]
+    }
+  ],
+  "lineup_signals": [
+    {
+      "week": 1,
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado (limited SNF usage 2/7), Miller, Tucker, Ray Davis, Sampson (game-out knee, crutches/brace + Monday testing pending results), Lane (fractured wrist, several weeks expected, MRI pending). Davis stays in IR. All games final. No late owned-player scratches among starters.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH"
+    }
+  ],
+  "expert_signals": [
+    {
+      "topic": "Week 1 post-game Lane/Sampson monitor + SNF usage",
+      "status": "EXPERT_OPINION",
+      "summary": "Core consensus unchanged. Owned-player signals stable overnight/early Monday: Lane fractured wrist with several-weeks expectation (Garafolo/Rapoport); Sampson knee elevated by crutches/brace/Monday tests (results still pending); Miller TD/role already logged; Demercado limited backup usage confirmed. No new MRI or official designations in this window.",
+      "mongo_impact": "Hold current starter set. Monitor Monday MRI/testing results on Lane and Sampson.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "MEDIUM",
+      "sources": ["FantasyPros", "Live X beat reporting", "Official inactives / NFL.com", "ESPN / Rapoport / Schefter / Garafolo", "Mary Kay Cabot / Daniel Oyefusi"]
+    }
+  ],
+  "material_changes": [],
+  "no_material_change": true,
+  "prior_pulse": {
+    "pulse_id": "mongo-grok-pulse-2026-09-14T041000Z",
+    "completed_at": "2026-09-14T04:10:00Z"
+  },
+  "prime_watch_handoff": {
+    "canonical_feed": "intelligence/grok_pulse_latest.json",
+    "history": "intelligence/grok_pulse_history.jsonl",
+    "consumer": "Prime Mongo Fantasy Watch",
+    "duplicate_pulse_path": false
+  },
+  "notes": [
+    "Overnight ~2:00 AM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Sparta, NFL-DFS, and prop-betting repos not read or written.",
+    "No material change vs 04:10Z prior. Lane several-weeks fractured wrist and Sampson Monday testing already logged; MRI results not yet available in this early-Monday window. All Week 1 games final."
+  ]
+}
