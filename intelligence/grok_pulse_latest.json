@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-14T121700Z",
-  "generated_at": "2026-09-14T12:15:00Z",
-  "completed_at": "2026-09-14T12:17:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-14T133500Z",
+  "generated_at": "2026-09-14T13:30:00Z",
+  "completed_at": "2026-09-14T13:35:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) suffered a fractured wrist in Week 1 win over Colts. NFL Network Insiders Mike Garafolo and Ian Rapoport report he is expected to miss several weeks; further testing including MRI to determine full extent. 1 catch for 11 yards prior to exit. Concurrent Flowers hamstring aggravation thins Ravens WR room. No Monday MRI results yet in this ~8AM ET hourly window.",
+      "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) suffered a fractured wrist in Week 1 win over Colts. NFL Network Insiders Mike Garafolo and Ian Rapoport report he is expected to miss several weeks; further testing including MRI to determine full extent. 1 catch for 11 yards prior to exit. Concurrent Flowers hamstring (reported not serious by Rapoport Monday). No Monday MRI results yet in this ~9:30 AM ET hourly window.",
       "mongo_impact": "OWNED on bench. Several-weeks timeline elevates multi-week / potential IR risk. Continue HOLD_MONITOR pending MRI/official designation; do not drop solely on this report. No immediate lineup impact (already benched).",
       "recommendation": "HOLD_MONITOR",
       "urgency": "POST_GAME",
@@ -55,7 +55,7 @@
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) ruled out for remainder of Week 1 vs Jaguars with left knee injury (first-quarter onset). Post-game: seen on crutches with brace on left knee (Mary Kay Cabot). Further testing scheduled Monday to determine severity (Daniel Oyefusi / ESPN). No offensive touches; 64 yards on two kickoff returns prior. No additional severity details or MRI results in this ~8AM ET hourly window.",
+      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) ruled out for remainder of Week 1 vs Jaguars with left knee injury (first-quarter onset). Post-game: seen on crutches with brace on left knee (Mary Kay Cabot). Further testing scheduled Monday to determine severity (Daniel Oyefusi / ESPN). No offensive touches; 64 yards on two kickoff returns prior. No additional severity details or MRI results in this ~9:30 AM ET hourly window.",
       "mongo_impact": "OWNED on bench. Elevated multi-week / IR risk concern due to crutches + brace + Monday testing. Continue HOLD_MONITOR; do not drop solely on game exit. No immediate lineup impact (already benched).",
       "recommendation": "HOLD_MONITOR",
       "urgency": "POST_GAME",
@@ -181,7 +181,7 @@
     {
       "topic": "Week 1 post-game Lane/Sampson monitor + SNF usage",
       "status": "EXPERT_OPINION",
-      "summary": "Core consensus unchanged. Owned-player signals stable in ~8AM ET Monday hourly window: Lane fractured wrist with several-weeks expectation (Garafolo/Rapoport); Sampson knee elevated by crutches/brace/Monday tests (results still pending); Miller TD/role already logged; Demercado limited backup usage confirmed. No new MRI or official designations in this window.",
+      "summary": "Core consensus unchanged. Owned-player signals stable in ~9:30 AM ET Monday hourly window: Lane fractured wrist with several-weeks expectation (Garafolo/Rapoport); Sampson knee elevated by crutches/brace/Monday tests (results still pending); Miller TD/role already logged; Demercado limited backup usage confirmed. No new MRI or official designations in this window.",
       "mongo_impact": "Hold current starter set. Monitor Monday MRI/testing results on Lane and Sampson.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-14T111000Z",
-    "completed_at": "2026-09-14T11:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-14T121700Z",
+    "completed_at": "2026-09-14T12:17:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly ~8:00–8:20 AM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly ~9:30 AM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 11:10Z prior. Lane several-weeks fractured wrist and Sampson Monday testing already logged; MRI/results still not yet available in this early-Monday window. All Week 1 games final."
+    "No material change vs 12:17Z prior. Lane several-weeks fractured wrist and Sampson Monday testing already logged; MRI/results still not yet available in this mid-morning Monday window. All Week 1 games final."
   ]
 }
