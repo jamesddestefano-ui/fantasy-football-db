@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-15T221500Z",
-  "generated_at": "2026-09-15T22:10:00Z",
-  "completed_at": "2026-09-15T22:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-15T231500Z",
+  "generated_at": "2026-09-15T23:10:00Z",
+  "completed_at": "2026-09-15T23:15:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,20 +42,20 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Multiple reports (Matt Zenitz / Yahoo Sports, Rotoworld, FantasyPros Ari Koslow, Baltimore Beatdown) state Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery in the coming days (possibly as early as Wednesday). Current hope is return in around one month. Prior: fractured wrist Week 1, Minter seeking second/third opinions, MRI results pending official designation. No official IR placement yet.",
+      "summary": "Multiple reports (Matt Zenitz / CBS Sports, Yahoo, Rotoworld, FantasyPros, Baltimore Beatdown, ClutchPoints) state Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery in the coming days (possibly as early as Wednesday). Current hope is return in around one month. No official IR placement or designation update in this window. Prior fracture confirmed Week 1.",
       "mongo_impact": "OWNED on Mongo bench. Surgery timeline (~4 weeks) raises IR candidacy probability. Continue HOLD_MONITOR; do not drop. Monitor for official designation or IR move.",
       "recommendation": "HOLD_MONITOR",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Matt Zenitz via Yahoo Sports @YahooSports", "Rotoworld Football @rotoworld_fb", "Ari Koslow / FantasyPros", "Baltimore Beatdown", "Jeff Mueller PT @jmthrivept"]
+      "sources": ["Matt Zenitz @mzenitz / CBS Sports", "Rotoworld", "Ari Koslow / FantasyPros", "Baltimore Beatdown", "ClutchPoints", "RotoWire"]
     },
     {
       "player": "Dylan Sampson",
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Browns officially placed RB Dylan Sampson (knee) on injured reserve (announced ~3:12 PM ET by team, confirmed ESPN Daniel Oyefusi et al.). Min 4 weeks, eligible Week 6 vs Ravens. No new updates in this window beyond prior confirmation.",
+      "summary": "Browns officially placed RB Dylan Sampson (knee) on injured reserve (team announcement + Schefter, Oyefusi / ESPN). Min 4 weeks, eligible Week 6 vs Ravens. No new updates beyond prior confirmation.",
       "mongo_impact": "OWNED on Mongo IR. Official NFL IR aligns. Continue HOLD; do not drop. No lineup impact.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -68,7 +68,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Tuesday practice left early but reported fine. Unchanged material status.",
+      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Left Tuesday practice early but reported fine / minor issue (Underhill). Kamara expected Week 2 return. Unchanged material status.",
       "mongo_impact": "OWNED on bench. TD and role reinforce hold value. Monitor Week 2 with Kamara status.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -81,20 +81,20 @@
       "team": "DAL",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Primary backup to Javonte Williams with Davis on IR. Limited usage Week 1 (2 carries, 7 yards). Unchanged.",
+      "summary": "Primary backup to Javonte Williams with Davis on IR. Limited usage Week 1 (2 carries, 7 yards). Cowboys signed Tyler Goodson; depth competition possible but no material change to Demercado role yet.",
       "mongo_impact": "OWNED on bench. Hold as handcuff.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Todd Archer", "ESPN box score"]
+      "sources": ["Todd Archer", "ESPN box score", "Aaron Wilson"]
     },
     {
       "player": "Kaelon Black",
       "team": "SF",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 1 solid production (14 carries 65 yards). Has trust of Shanahan. No new Week 2 role updates.",
+      "summary": "Week 1 solid production (14 carries 65 yards, ~43% snaps). Has trust of Shanahan. No new Week 2 role updates.",
       "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -107,7 +107,7 @@
       "team": "IND",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Active and played Week 1. Calf cleared. Game final.",
+      "summary": "Active and played Week 1. Calf/groin previously cleared. Game final. No new issues.",
       "mongo_impact": "Keep in FLEX.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -120,26 +120,26 @@
       "team": "LV",
       "signal_type": "expert",
       "status": "EXPERT_OPINION",
-      "summary": "Unchanged. Bowers OUT. Consensus prefers Downs over Tucker.",
+      "summary": "Unchanged. Bowers OUT (meniscus). Consensus prefers Downs over Tucker for Week 2.",
       "mongo_impact": "OWNED on bench. No swap over Downs.",
       "recommendation": "BENCH",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
-      "sources": ["FantasyPros"]
+      "sources": ["FantasyPros", "DraftSharks"]
     },
     {
       "player": "Jalen Hurts",
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Clean for Hurts and Andrews. Game complete.",
+      "summary": "No change. Clean for Hurts and Andrews. Game complete. Eagles OL Landon Dickerson to IR (knee) but no impact on QB/TE.",
       "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["CBS Sports injury tracker", "Eagles official inactives"]
+      "sources": ["CBS Sports injury tracker", "Eagles official", "FOX Sports"]
     }
   ],
   "waiver_signals": [
@@ -158,7 +158,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Lane (wrist surgery expected ~1 month). Sampson on NFL IR + Mongo IR. All Week 1 games final. No late owned-player scratches among starters.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Lane (wrist surgery expected ~1 month). Sampson on NFL IR + Mongo IR. All Week 1 games final. No late owned-player scratches among starters. Week 2 prep begins; monitor practice reports.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -166,29 +166,21 @@
   ],
   "expert_signals": [
     {
-      "topic": "Ja'Kobi Lane wrist surgery report",
+      "topic": "Ja'Kobi Lane wrist surgery report recirculation",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New material: Lane expected to undergo wrist surgery in coming days; hopeful return around one month (Zenitz / Yahoo, Rotoworld, FantasyPros). Raises likelihood of multi-week absence / potential IR. Sampson NFL IR already confirmed earlier. No other owned-player material shifts.",
+      "summary": "No new material beyond prior: Lane expected surgery in coming days; ~1-month return hope (Zenitz et al.). Sampson NFL IR confirmed. No other owned-player material shifts in this window. Kamara expected Week 2; Miller fine after early practice exit.",
       "mongo_impact": "Hold current starter set. Monitor Lane for official designation or IR. Official NFL IR on Sampson already reflected.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
       "confidence": "HIGH",
-      "sources": ["Matt Zenitz", "Yahoo Sports", "Rotoworld", "FantasyPros", "Baltimore Beatdown", "@Browns official", "Daniel Oyefusi / ESPN"]
+      "sources": ["Matt Zenitz", "CBS Sports", "Rotoworld", "FantasyPros", "Baltimore Beatdown", "@Browns official", "Daniel Oyefusi / ESPN", "Adam Schefter"]
     }
   ],
-  "material_changes": [
-    {
-      "player": "Ja'Kobi Lane",
-      "change": "Expected wrist surgery in coming days; ~1-month return hope",
-      "status": "ATTRIBUTED_REPORT",
-      "prior": "Fractured wrist, seeking opinions, MRI pending",
-      "impact": "Elevates absence timeline clarity and IR probability for owned bench player"
-    }
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-15T212000Z",
-    "completed_at": "2026-09-15T21:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-15T221500Z",
+    "completed_at": "2026-09-15T22:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -197,8 +189,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly ~6:10 PM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly ~7:10 PM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Material change: Ja'Kobi Lane surgery reports (ATTRIBUTED_REPORT). Sampson NFL IR already logged. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final."
+    "No material change vs prior 22:15Z. Lane surgery reports and Sampson IR already logged. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final. Week 2 injury reports beginning to form."
   ]
 }
