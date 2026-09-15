@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-15T212000Z",
-  "generated_at": "2026-09-15T21:15:00Z",
-  "completed_at": "2026-09-15T21:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-15T221500Z",
+  "generated_at": "2026-09-15T22:10:00Z",
+  "completed_at": "2026-09-15T22:15:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -38,30 +38,30 @@
   },
   "player_signals": [
     {
-      "player": "Dylan Sampson",
-      "team": "CLE",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Browns officially placed RB Dylan Sampson (knee) on injured reserve (announced ~3:12 PM ET / 19:12Z by @Browns, confirmed by Daniel Oyefusi/ESPN, Scott Petrak, Kelsey Russo, Adam Schefter, Mary Kay Cabot). Signed Jaleel McLaughlin from practice squad to active roster. Cabot: sprained knee, expected back at some point this season; min 4 weeks, eligible Week 6 vs Ravens. NFL IR designation confirms multi-week absence. No new updates in this window.",
-      "mongo_impact": "OWNED on Mongo IR. Official NFL IR aligns with prior. Continue HOLD; do not drop. No lineup impact (already IR).",
-      "recommendation": "HOLD",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": ["@Browns official announcement", "Daniel Oyefusi @DanielOyefusi (ESPN)", "Adam Schefter @AdamSchefter", "Mary Kay Cabot @MaryKayCabot", "Scott Petrak", "Kelsey Russo"]
-    },
-    {
       "player": "Ja'Kobi Lane",
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) fractured wrist Week 1. HC Jesse Minter: may be a little longer; seeking second and third medical opinions this week. MRI pending. No official designation or new timeline in this ~5:17 PM ET window. Unchanged.",
-      "mongo_impact": "OWNED on bench. Continue HOLD_MONITOR pending MRI/official designation; do not drop solely on reports.",
+      "summary": "Multiple reports (Matt Zenitz / Yahoo Sports, Rotoworld, FantasyPros Ari Koslow, Baltimore Beatdown) state Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery in the coming days (possibly as early as Wednesday). Current hope is return in around one month. Prior: fractured wrist Week 1, Minter seeking second/third opinions, MRI results pending official designation. No official IR placement yet.",
+      "mongo_impact": "OWNED on Mongo bench. Surgery timeline (~4 weeks) raises IR candidacy probability. Continue HOLD_MONITOR; do not drop. Monitor for official designation or IR move.",
       "recommendation": "HOLD_MONITOR",
-      "urgency": "POST_GAME",
+      "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Jesse Minter presser via Baltimore Sun / beat", "RotoWire (Sam Cohn)", "Ian Rapoport", "Mike Garafolo"]
+      "sources": ["Matt Zenitz via Yahoo Sports @YahooSports", "Rotoworld Football @rotoworld_fb", "Ari Koslow / FantasyPros", "Baltimore Beatdown", "Jeff Mueller PT @jmthrivept"]
+    },
+    {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Browns officially placed RB Dylan Sampson (knee) on injured reserve (announced ~3:12 PM ET by team, confirmed ESPN Daniel Oyefusi et al.). Min 4 weeks, eligible Week 6 vs Ravens. No new updates in this window beyond prior confirmation.",
+      "mongo_impact": "OWNED on Mongo IR. Official NFL IR aligns. Continue HOLD; do not drop. No lineup impact.",
+      "recommendation": "HOLD",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["@Browns official", "Daniel Oyefusi / ESPN", "Adam Schefter", "Mary Kay Cabot", "Scott Petrak"]
     },
     {
       "player": "Kendre Miller",
@@ -158,7 +158,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Lane (fractured wrist pending MRI/opinions). Sampson on NFL IR + Mongo IR. All Week 1 games final. No late owned-player scratches among starters.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Lane (wrist surgery expected ~1 month). Sampson on NFL IR + Mongo IR. All Week 1 games final. No late owned-player scratches among starters.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -166,21 +166,29 @@
   ],
   "expert_signals": [
     {
-      "topic": "Week 1 post-game Lane/Sampson updates — official NFL IR for Sampson",
-      "status": "CONFIRMED_FACT",
-      "summary": "No new material intelligence change in ~5:17 PM ET Tuesday hourly window vs prior 20:10Z. Browns official NFL IR for Dylan Sampson already logged (min 4 games). Lane — Minter multi-week lean + second/third opinions; MRI/results still pending. No new official designation for Lane.",
-      "mongo_impact": "Hold current starter set. Official NFL IR on Sampson confirms multi-week absence already reflected in Mongo IR slot. Monitor official designation/MRI on Lane.",
+      "topic": "Ja'Kobi Lane wrist surgery report",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "New material: Lane expected to undergo wrist surgery in coming days; hopeful return around one month (Zenitz / Yahoo, Rotoworld, FantasyPros). Raises likelihood of multi-week absence / potential IR. Sampson NFL IR already confirmed earlier. No other owned-player material shifts.",
+      "mongo_impact": "Hold current starter set. Monitor Lane for official designation or IR. Official NFL IR on Sampson already reflected.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
       "confidence": "HIGH",
-      "sources": ["@Browns official", "Daniel Oyefusi / ESPN", "Adam Schefter", "Mary Kay Cabot", "Jesse Minter presser / RotoWire", "Ian Rapoport", "Live X beat reporting"]
+      "sources": ["Matt Zenitz", "Yahoo Sports", "Rotoworld", "FantasyPros", "Baltimore Beatdown", "@Browns official", "Daniel Oyefusi / ESPN"]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "player": "Ja'Kobi Lane",
+      "change": "Expected wrist surgery in coming days; ~1-month return hope",
+      "status": "ATTRIBUTED_REPORT",
+      "prior": "Fractured wrist, seeking opinions, MRI pending",
+      "impact": "Elevates absence timeline clarity and IR probability for owned bench player"
+    }
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-15T201000Z",
-    "completed_at": "2026-09-15T20:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-15T212000Z",
+    "completed_at": "2026-09-15T21:20:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -189,8 +197,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly ~5:17 PM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly ~6:10 PM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 20:10Z prior. Official Browns NFL IR for Dylan Sampson already logged. Lane MRI/opinions still pending. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final."
+    "Material change: Ja'Kobi Lane surgery reports (ATTRIBUTED_REPORT). Sampson NFL IR already logged. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final."
   ]
 }
