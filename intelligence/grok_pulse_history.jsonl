@@ -1,1 +1,1 @@
-PLACEHOLDER_WILL_FAIL
+{"league": "mongo", "pulse_id": "mongo-grok-pulse-2026-09-15T212000Z", "generated_at": "2026-09-15T21:15:00Z", "completed_at": "2026-09-15T21:20:00Z", "run_type": "hourly_refresh", "no_material_change": true, "material_changes": [], "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "OK", "experts": "OK", "analytics": "LIMITED"}, "prior_pulse_id": "mongo-grok-pulse-2026-09-15T201000Z", "summary": "No material change vs prior 20:10Z. Sampson NFL IR and Lane wrist status unchanged. Intelligence-only hourly refresh."}
