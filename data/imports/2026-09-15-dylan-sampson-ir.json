@@ -1,0 +1,22 @@
+{
+  "event_type": "IR_MOVE",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Dylan Sampson",
+  "nfl_team": "CLE",
+  "position": "RB",
+  "from": {"slot": "BN", "placement": "BENCH"},
+  "to": {"slot": "IR", "placement": "IR"},
+  "ownership_changed": false,
+  "status": "completed",
+  "observed_at": "2026-09-15T12:10:00Z",
+  "espn_status_flag": "O",
+  "sources": [
+    {
+      "type": "CURRENT_ROSTER_SCREENSHOT",
+      "original_ref": "espn-shots/mongo-live-20260915-0810/roster.png",
+      "observation": "Dylan Sampson listed in IR with Out (O) after Malik Davis drop; Week 2 projections view."
+    }
+  ],
+  "notes": "ESPN roster placement BN→IR observed on authenticated Live Check. Exact MOVE timestamp not on activity filter; observed_at is Live Check capture time."
+}

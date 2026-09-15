@@ -17,6 +17,8 @@ SEP8_ET = datetime(2026, 9, 8, 16, 0, tzinfo=timezone.utc)
 FAAB_OPENING_AT = datetime(2026, 9, 1, 0, 0, tzinfo=timezone.utc)
 MALIK_DAVIS_IR_CONFIRMED_AT = datetime(2026, 9, 11, 21, 5, 15, tzinfo=timezone.utc)
 DEMERCADO_ADD_CONFIRMED_AT = datetime(2026, 9, 11, 21, 43, 0, tzinfo=timezone.utc)
+MALIK_DAVIS_DROP_AT = datetime(2026, 9, 15, 8, 46, 0, tzinfo=timezone.utc)  # Tue Sep 15, 4:46 am ET
+SAMPSON_IR_OBSERVED_AT = datetime(2026, 9, 15, 12, 10, 0, tzinfo=timezone.utc)  # Live Check capture ET→UTC
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -333,6 +335,77 @@ def seed_mongo(session: Session):
             slot="BN", placement="BENCH", effective_at=DEMERCADO_ADD_CONFIRMED_AT, source_id=add_source.id,
         ),
     ])
+
+
+    # --- 2026-09-15 ESPN Live Check: DROP Malik Davis; IR_MOVE Dylan Sampson ---
+    malik = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Malik Davis")))
+    davis_drop_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Dropped Malik Davis, DAL RB (Tue Sep 15, 4:46 am)",
+        original_ref="data/imports/2026-09-15-malik-davis-drop.json",
+        platform="ESPN",
+        observed_at=MALIK_DAVIS_DROP_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-09-15; FAAB remained $94; no paired add.",
+    )
+    session.add(davis_drop_source)
+    session.flush()
+    davis_drop_group = TransactionGroup(
+        id="malik-davis-drop-20260915-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=MALIK_DAVIS_DROP_AT, source_id=davis_drop_source.id,
+        notes="ESPN-authoritative DROP of Malik Davis; ownership ends (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(davis_drop_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=davis_drop_group.id, sequence=1, event_type="DROP", player_id=malik.id,
+            notes="Dropped from roster per ESPN activity Tue Sep 15, 4:46 am ET.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=malik.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=MALIK_DAVIS_DROP_AT, source_id=davis_drop_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=davis_drop_group.id,
+            notes="Drop proves departure from roster, not current free agency.",
+        ),
+    ])
+
+    sampson = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Dylan Sampson")))
+    sampson_ir_source = Source(
+        league_id=lg.id,
+        source_type="CURRENT_ROSTER_SCREENSHOT",
+        description="Authenticated ESPN roster: Dylan Sampson on IR with Out after Davis drop",
+        original_ref="data/imports/2026-09-15-dylan-sampson-ir.json",
+        platform="ESPN",
+        observed_at=SAMPSON_IR_OBSERVED_AT,
+        authority=Authority.ESPN_CURRENT,
+        notes="Exact ESPN MOVE timestamp not on activity filter; observed_at is Live Check capture.",
+    )
+    session.add(sampson_ir_source)
+    session.flush()
+    sampson_ir_group = TransactionGroup(
+        id="dylan-sampson-ir-20260915-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=SAMPSON_IR_OBSERVED_AT, source_id=sampson_ir_source.id,
+        notes="Dylan Sampson BN→IR; ownership unchanged.",
+    )
+    session.add(sampson_ir_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=sampson_ir_group.id, sequence=1, event_type="IR_MOVE", player_id=sampson.id,
+            notes="Moved from BN/BENCH to IR/IR per authenticated ESPN roster (Out).",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=sampson.id,
+            slot="IR", placement="IR", effective_at=SAMPSON_IR_OBSERVED_AT, source_id=sampson_ir_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("94"),
+        observed_at=SAMPSON_IR_OBSERVED_AT, source_id=davis_drop_source.id,
+    ))
+
 
     for name, pos in NOT_MINE_UNKNOWN:
         p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(name)))

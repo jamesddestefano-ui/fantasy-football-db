@@ -53,7 +53,7 @@ def test_player_aliases_seeded_for_known_gaps(session):
 
 def test_all_known_espn_events_classify_already_recorded(session):
     results = dry_run_classify(session, KNOWN_ESPN_EVENTS)
-    assert len(results) == 7
+    assert len(results) == 9
     for r, event in zip(results, KNOWN_ESPN_EVENTS):
         assert r.classification == Classification.ALREADY_RECORDED, (
             f"{event['description']} → {r.classification} {r.reasons}"
@@ -80,6 +80,8 @@ def test_six_espn_live_plus_ir_confirmation_match_expected_groups(session):
     assert by_desc[KNOWN_ESPN_EVENTS[4]["description"]].matched_group_id == "malik-add-saylors-drop-20260908-001"
     assert by_desc[KNOWN_ESPN_EVENTS[5]["description"]].matched_group_id == expected["Emari Demercado"]
     assert by_desc[KNOWN_ESPN_EVENTS[6]["description"]].matched_group_id == "malik-ir-20260911-confirmed-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[7]["description"]].matched_group_id == "malik-davis-drop-20260915-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[8]["description"]].matched_group_id == "dylan-sampson-ir-20260915-espn-001"
 
 
 def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):

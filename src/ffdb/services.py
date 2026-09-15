@@ -148,8 +148,9 @@ def validate(session: Session, league_slug: str) -> list[str]:
                     CurrentOwnership.state == OwnershipState.OWNED,
                 ))
         active_count = count - ir_count
-        if size is not None and tm.is_mine and active_count != size:
-            errors.append(f"{tm.name} active roster size {active_count}, expected {size}")
+        # Empty BN/IR-eligible slots are normal mid-waiver; only overfill is invalid.
+        if size is not None and tm.is_mine and active_count > size:
+            errors.append(f"{tm.name} active roster size {active_count}, limit {size}")
         if ir_count > ir_limit:
             errors.append(f"{tm.name} IR usage {ir_count}, limit {ir_limit}")
         if size is not None and count > size + ir_limit:

@@ -12,8 +12,11 @@ from ffdb.services import DomainError, add_drop, faab_balance, ownership, rebuil
 
 def test_seed_roster_is_exact(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    assert actual == {r[0] for r in ROSTER} | {"Emari Demercado"}
-    assert len(actual) == 17
+    expected = ({r[0] for r in ROSTER} | {"Emari Demercado"}) - {"Malik Davis"}
+    assert actual == expected
+    assert len(actual) == 16
+    assert "Malik Davis" not in actual
+    assert "Dylan Sampson" in actual
     assert faab_balance(session, "mongo") == Decimal("94.00")
     assert validate(session, "mongo") == []
 
@@ -52,7 +55,10 @@ def test_faab_history_explains_100_to_94_via_saylors_claim(session):
 def test_historical_transactions_are_seeded_without_changing_current_roster(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
     assert "Kaelon Black" in actual and "Tre Tucker" in actual
-    assert "Ja'Kobi Lane" in actual and "Malik Davis" in actual
+    assert "Ja'Kobi Lane" in actual and "Emari Demercado" in actual
+    assert "Malik Davis" not in actual
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "malik-davis-drop-20260915-espn-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "dylan-sampson-ir-20260915-espn-001"))
     assert "Jacob Saylors" not in actual and "Kayshon Boutte" not in actual
     assert "Nicholas Singleton" not in actual
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "black-add-lane-drop-20260903-001"))
@@ -75,9 +81,9 @@ def test_open_reconciliation_issues_are_draft_and_player_espn_ids(session):
     assert cats == {"MISSING_DRAFT_DATA", "MISSING_PLAYER_ESPN_IDS"}
     assert not any(i.category == "MISSING_TRANSACTION_HISTORY" for i in open_issues)
 
-def test_malik_davis_is_owned_and_in_ir(session):
+def test_malik_davis_was_ir_then_dropped_sep15(session):
     current = ownership(session, "mongo", "Malik Davis")
-    assert current.state == OwnershipState.OWNED
+    assert current.state == OwnershipState.UNKNOWN
     lg = session.scalar(select(League).where(League.slug == "mongo"))
     malik = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Malik Davis")))
     assignment = session.scalar(select(LineupAssignment).where(
@@ -91,6 +97,32 @@ def test_malik_davis_is_owned_and_in_ir(session):
     move = session.scalar(select(TransactionEvent).where(
         TransactionEvent.player_id == malik.id,
         TransactionEvent.event_type == "IR_MOVE",
+    ))
+    assert move is not None
+    drop = session.scalar(select(TransactionEvent).where(
+        TransactionEvent.player_id == malik.id,
+        TransactionEvent.event_type == "DROP",
+        TransactionEvent.group_id == "malik-davis-drop-20260915-espn-001",
+    ))
+    assert drop is not None
+
+def test_dylan_sampson_owned_on_ir_week2(session):
+    current = ownership(session, "mongo", "Dylan Sampson")
+    assert current.state == OwnershipState.OWNED
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    sampson = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Dylan Sampson")))
+    assignment = session.scalar(select(LineupAssignment).where(
+        LineupAssignment.league_id == lg.id,
+        LineupAssignment.player_id == sampson.id,
+        LineupAssignment.season == 2026,
+        LineupAssignment.week == 2,
+    ))
+    assert assignment.slot == "IR"
+    assert assignment.placement == "IR"
+    move = session.scalar(select(TransactionEvent).where(
+        TransactionEvent.player_id == sampson.id,
+        TransactionEvent.event_type == "IR_MOVE",
+        TransactionEvent.group_id == "dylan-sampson-ir-20260915-espn-001",
     ))
     assert move is not None
 
