@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-15T081000Z",
-  "generated_at": "2026-09-15T08:00:00Z",
-  "completed_at": "2026-09-15T08:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-15T101000Z",
+  "generated_at": "2026-09-15T10:00:00Z",
+  "completed_at": "2026-09-15T10:10:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "CLE",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) ruled out Week 1 vs Jaguars left knee (Q1). Post-game crutches + brace (Mary Kay Cabot). HC Todd Monken Monday: still evaluating, more info Wednesday. ESPN senior NFL reporter Jeremy Fowler reports Sampson is expected to miss significant time due to the knee injury, per sources (already logged prior Pulse). No official MRI results or formal designation (IR/PUP) released yet in this ~4:00 AM ET overnight window. Speculative secondary X posts continue to mention possible IR; not confirmed by Fowler or official sources. No offensive touches; 64 yards two KO returns.",
+      "summary": "Browns RB Dylan Sampson (owned on Mongo bench) ruled out Week 1 vs Jaguars left knee (Q1). Post-game crutches + brace (Mary Kay Cabot). HC Todd Monken Monday: still evaluating, more info Wednesday. ESPN senior NFL reporter Jeremy Fowler reports Sampson is expected to miss significant time due to the knee injury, per sources (already logged prior Pulse). No official MRI results or formal designation (IR/PUP) released yet in this ~6:00 AM ET overnight window. Speculative secondary X posts continue to mention possible IR; not confirmed by Fowler or official sources. No offensive touches; 64 yards two KO returns.",
       "mongo_impact": "OWNED on bench. Elevated multi-week / IR risk reinforced by Fowler 'significant time' report. Continue HOLD_MONITOR; do not drop solely on reports. No immediate lineup impact (already benched). Monitor for official designation or Wednesday update.",
       "recommendation": "HOLD_MONITOR",
       "urgency": "HIGH",
@@ -55,7 +55,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) fractured wrist Week 1 vs Colts. Prior Rapoport/Garafolo: several weeks / min 2-3 weeks could be longer; MRI Monday. HC Jesse Minter (presser): Zay Flowers (hamstring) day-to-day; Ja'Kobi 'may be a little longer' / still gathering info. RotoWire (Sam Cohn / Baltimore Sun): Minter said Lane will receive second and third medical opinions on the wrist this week before a timeline is established. No official MRI results or formal designation released in this ~4:00 AM ET overnight window. 1 catch 11 yards prior to exit.",
+      "summary": "Ravens rookie WR Ja'Kobi Lane (owned on Mongo bench) fractured wrist Week 1 vs Colts. Prior Rapoport/Garafolo: several weeks / min 2-3 weeks could be longer; MRI Monday. HC Jesse Minter (presser): Zay Flowers (hamstring) day-to-day; Ja'Kobi 'may be a little longer' / still gathering info. RotoWire (Sam Cohn / Baltimore Sun): Minter said Lane will receive second and third medical opinions on the wrist this week before a timeline is established. No official MRI results or formal designation released in this ~6:00 AM ET overnight window. 1 catch 11 yards prior to exit.",
       "mongo_impact": "OWNED on bench. Coach confirmation of multi-week risk + additional opinions aligns with prior Rapoport. Continue HOLD_MONITOR pending MRI/official designation; do not drop solely on reports. No immediate lineup impact (already benched).",
       "recommendation": "HOLD_MONITOR",
       "urgency": "POST_GAME",
@@ -181,7 +181,7 @@
     {
       "topic": "Week 1 post-game Lane/Sampson updates — no new official designations",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Owned-player signals in ~4:00 AM ET Tuesday overnight window: No material change. Jeremy Fowler (ESPN) 'significant time' for Dylan Sampson (knee) already logged prior Pulse; secondary X speculation of IR not elevated to ATTRIBUTED_REPORT or CONFIRMED. Lane — HC Jesse Minter multi-week lean + second/third medical opinions this week before timeline (RotoWire/Baltimore Sun); MRI/results still pending. Flowers day-to-day. No new official designations or MRI results released.",
+      "summary": "Owned-player signals in ~6:00 AM ET Tuesday overnight window: No material change. Jeremy Fowler (ESPN) 'significant time' for Dylan Sampson (knee) already logged prior Pulse; secondary X speculation of IR not elevated to ATTRIBUTED_REPORT or CONFIRMED. Lane — HC Jesse Minter multi-week lean + second/third medical opinions this week before timeline (RotoWire/Baltimore Sun); MRI/results still pending. Flowers day-to-day. No new official designations or MRI results released.",
       "mongo_impact": "Hold current starter set. Monitor official designation/MRI on Lane and Sampson; Fowler elevates Sampson multi-week / IR risk (already noted).",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-15T061500Z",
-    "completed_at": "2026-09-15T06:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-15T081000Z",
+    "completed_at": "2026-09-15T08:10:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Overnight ~4:00 AM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Overnight ~6:00 AM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 06:15Z prior. Fowler Sampson significant time and Lane pending MRI/opinions already logged. Speculative IR posts for Sampson not confirmed. All Week 1 games final."
+    "No material change vs 08:10Z prior. Fowler Sampson significant time and Lane pending MRI/opinions already logged. Speculative IR posts for Sampson not confirmed. All Week 1 games final."
   ]
 }
