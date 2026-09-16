@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-16T201000Z",
-  "generated_at": "2026-09-16T20:00:00Z",
-  "completed_at": "2026-09-16T20:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-16T211500Z",
+  "generated_at": "2026-09-16T21:10:00Z",
+  "completed_at": "2026-09-16T21:15:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Official: Ravens announced and @NFL / @ESPNNFL / coach Jesse Minter confirmed that rookie WR Ja'Kobi Lane underwent wrist surgery Wednesday and is placed on injured reserve. Min 4-game absence (eligible Week 6). Chris Moore signed/promoted to fill roster spot. No change since prior Pulse confirmation.",
+      "summary": "Official: Ravens announced and @NFL / @ESPNNFL / coach Jesse Minter confirmed that rookie WR Ja'Kobi Lane underwent wrist surgery Wednesday and is placed on injured reserve. Min 4-game absence (eligible Week 6). Chris Moore signed/promoted to fill roster spot. Status stable; no new timeline change.",
       "mongo_impact": "OWNED on Mongo bench. Official NFL IR confirmed. Continue HOLD; do not drop. Mongo IR slot remains occupied by Sampson; Lane stays on bench until Mongo roster action (intelligence-only). Monitor return eligibility.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -67,14 +67,14 @@
       "player": "Kendre Miller",
       "team": "NO",
       "signal_type": "usage",
-      "status": "CONFIRMED_FACT",
-      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Kamara expected Week 2 return (prior reports). Unchanged material status in this window; early Week 2 practice reports not yet material for owned players.",
-      "mongo_impact": "OWNED on bench. TD and role reinforce hold value. Monitor Week 2 with Kamara status.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Saints HC Kellen Moore said Kamara (knee) expected to play Week 2 vs Ravens (could have played Week 1 but limited prep). Role likely to shrink significantly with Kamara return.",
+      "mongo_impact": "OWNED on bench. TD and prior role reinforce hold value short-term, but monitor Week 2 snap share closely if Kamara active. Reduced standalone upside expected.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Nick Underhill", "NFL.com", "Rotowire"]
+      "sources": ["Kellen Moore via Jeff Nowak", "Nick Underhill", "Rotoworld", "NBC Sports"]
     },
     {
       "player": "Emari Demercado",
@@ -171,7 +171,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep underway; no new material signals on owned players.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep: Kamara expected active reduces Miller role expectation.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -179,21 +179,23 @@
   ],
   "expert_signals": [
     {
-      "topic": "Ja'Kobi Lane official IR after wrist surgery completed Wednesday — status stable",
-      "status": "CONFIRMED_FACT",
-      "summary": "Ravens placed rookie WR Ja'Kobi Lane on injured reserve after he underwent surgery on a fractured wrist Wednesday. Confirmed by official sources and coach Jesse Minter. Min 4-game absence. Chris Moore promoted. Sampson NFL IR unchanged. No other owned-player material shifts in this hourly window.",
-      "mongo_impact": "Hold current starter set. Lane official NFL IR (owned on Mongo bench). Official NFL IR on Sampson already reflected. Roster includes Bell and Sanders post-waiver. Intelligence-only; no ownership change.",
+      "topic": "Alvin Kamara expected Week 2 return (coach confirmation) — impacts Kendre Miller role",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Saints HC Kellen Moore indicated Alvin Kamara (knee) is expected to play Week 2 vs Ravens; could have played Week 1 but was held for prep. Ja'Kobi Lane official IR and Sampson IR remain stable. No other owned-player material shifts.",
+      "mongo_impact": "Hold current starter set. Lane official NFL IR (owned on Mongo bench). Official NFL IR on Sampson already reflected. Miller role likely compressed. Roster includes Bell and Sanders post-waiver. Intelligence-only; no ownership change.",
       "recommendation": "HOLD",
-      "urgency": "HIGH",
+      "urgency": "MONITOR",
       "confidence": "HIGH",
-      "sources": ["@NFL", "@ESPNNFL", "Ravens announcement", "Jesse Minter", "Adam Schefter", "Aaron Wilson"]
+      "sources": ["Kellen Moore", "Jeff Nowak", "Rotoworld", "NBC Sports", "@NFL", "Jesse Minter"]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    "Alvin Kamara expected to play Week 2 (Saints HC Kellen Moore confirmation via beat/experts); Kendre Miller role expected to shrink (ATTRIBUTED_REPORT)"
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-16T190500Z",
-    "completed_at": "2026-09-16T19:05:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-16T201000Z",
+    "completed_at": "2026-09-16T20:10:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +204,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~4:00-4:10 PM ET / 20:10Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~5:10-5:15 PM ET / 21:15Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 19:05Z. Lane IR confirmation and Sampson IR remain stable. No new injury/role signals on owned players (Black, Miller, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Early Week 2 practice reports forming but not material for Mongo owned roster."
+    "Material change vs prior 20:10Z: Kamara Week 2 expected return (coach). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports active."
   ]
 }
