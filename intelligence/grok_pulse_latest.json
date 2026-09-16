@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-16T080500Z",
-  "generated_at": "2026-09-16T08:00:00Z",
-  "completed_at": "2026-09-16T08:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-16T101500Z",
+  "generated_at": "2026-09-16T10:10:00Z",
+  "completed_at": "2026-09-16T10:15:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,8 +42,8 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continued reports (Matt Zenitz / CBS Sports, Ravens Wire, RotoWire, NBC Sports, FOX Sports, Baltimore Sun) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery (possibly Wednesday). Timeline refined in some reports to ~4-6 weeks (Baltimore Sun source); prior hope ~1 month. Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official designation change or confirmed surgery yet in this overnight window. Late recirculation of same reports on X and beats; no new confirmation. Speculative X posts on Flowers IR lack credible sourcing.",
-      "mongo_impact": "OWNED on Mongo bench. Surgery timeline (~4-6 weeks) raises IR candidacy. Continue HOLD_MONITOR; do not drop. Monitor for official IR or designation.",
+      "summary": "Continued reports (Matt Zenitz / CBS Sports, Baltimore Sun, Ravens Wire, RotoWire, NBC Sports, FOX Sports) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery (possibly as soon as Wednesday 9/16). Timeline remains ~1 month hope (Zenitz) or ~4-6 weeks (Baltimore Sun source). Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official confirmation of surgery completion, designation change, or IR in this overnight/early window. Recirculation of prior reports on X and beats; no new primary confirmation.",
+      "mongo_impact": "OWNED on Mongo bench. Surgery timeline (~4-6 weeks / ~1 month) raises IR candidacy. Continue HOLD_MONITOR; do not drop. Monitor for official IR or designation.",
       "recommendation": "HOLD_MONITOR",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -68,7 +68,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Kamara expected Week 2 return. Unchanged material status.",
+      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Kamara expected Week 2 return (prior reports). Unchanged material status in this window.",
       "mongo_impact": "OWNED on bench. TD and role reinforce hold value. Monitor Week 2 with Kamara status.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -158,7 +158,7 @@
   "lineup_signals": [
     {
       "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Lane (wrist surgery expected ~4-6 weeks). Sampson on NFL IR + Mongo IR. All Week 1 games final. No late owned-player scratches among starters. Week 2 prep; monitor practice reports and Lane IR decision.",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Tucker, Ray Davis, Lane (wrist surgery expected ~4-6 weeks / ~1 month). Sampson on NFL IR + Mongo IR. All Week 1 games final. No late owned-player scratches among starters. Week 2 prep; monitor practice reports and Lane IR decision.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -166,9 +166,9 @@
   ],
   "expert_signals": [
     {
-      "topic": "Ja'Kobi Lane wrist surgery report + 4-6 week timeline + potential Moore promotion",
+      "topic": "Ja'Kobi Lane wrist surgery report + 4-6 week / ~1 month timeline + potential Moore promotion",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Lane expected surgery in coming days; Baltimore Sun source cites ~4-6 weeks miss; prior reports ~1 month hope (Zenitz et al.). Ravens Wire notes possible Chris Moore promotion and IR for Lane. Sampson NFL IR confirmed. No other owned-player material shifts in this window. Kamara expected Week 2. Reports continue recirculating without new official confirmation. Low-credibility X speculation on Flowers IR ignored.",
+      "summary": "Lane expected surgery in coming days (possibly Wed 9/16); Baltimore Sun source cites ~4-6 weeks miss; Zenitz ~1 month hope. Ravens Wire notes possible Chris Moore promotion and IR for Lane. Sampson NFL IR confirmed prior. No other owned-player material shifts in this window. Kamara expected Week 2. Reports continue recirculating without new official confirmation of surgery or designation. Low-credibility X speculation ignored.",
       "mongo_impact": "Hold current starter set. Monitor Lane for official designation or IR. Official NFL IR on Sampson already reflected.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -179,8 +179,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-16T062500Z",
-    "completed_at": "2026-09-16T06:25:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-16T080500Z",
+    "completed_at": "2026-09-16T08:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -189,8 +189,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Overnight ~4:00 AM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~6:00 AM ET / 10:15Z overnight-to-morning intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 06:25Z. Lane surgery reports continue recirculating (4-6 weeks Baltimore Sun / ~1 month Zenitz); Sampson IR unchanged. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final. Early Week 2 injury reports forming; no new owned-player practice impacts or official designations."
+    "No material change vs prior 08:05Z. Lane surgery reports continue recirculating (4-6 weeks Baltimore Sun / ~1 month Zenitz); no confirmation of procedure completed or IR placement. Sampson IR unchanged. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final. Early Week 2 injury reports forming; no new owned-player practice impacts or official designations."
   ]
 }
