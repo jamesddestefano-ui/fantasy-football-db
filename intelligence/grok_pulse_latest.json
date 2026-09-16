@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-16T000500Z",
-  "generated_at": "2026-09-16T00:00:00Z",
-  "completed_at": "2026-09-16T00:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-16T012000Z",
+  "generated_at": "2026-09-16T01:15:00Z",
+  "completed_at": "2026-09-16T01:20:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,13 +42,13 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continued reports (Matt Zenitz / CBS Sports, Ravens Wire, RotoWire, NBC Sports) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery in the coming days (possibly Wednesday). Hope for return in around one month. Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official designation change in this window.",
+      "summary": "Continued reports (Matt Zenitz / CBS Sports, Ravens Wire, RotoWire, NBC Sports, FOX Sports) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery in the coming days (possibly Wednesday). Hope for return in around one month. Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official designation change or confirmed surgery yet in this window.",
       "mongo_impact": "OWNED on Mongo bench. Surgery timeline (~4 weeks) raises IR candidacy. Continue HOLD_MONITOR; do not drop. Monitor for official IR or designation.",
       "recommendation": "HOLD_MONITOR",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Matt Zenitz @mzenitz / CBS Sports", "Ravens Wire / Glenn Erby", "RotoWire", "NBC Sports", "Jeff Zrebiec / The Athletic"]
+      "sources": ["Matt Zenitz @mzenitz / CBS Sports", "Ravens Wire / Glenn Erby", "RotoWire", "NBC Sports", "Jeff Zrebiec / The Athletic", "FOX Sports"]
     },
     {
       "player": "Dylan Sampson",
@@ -179,8 +179,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-15T231500Z",
-    "completed_at": "2026-09-15T23:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-16T000500Z",
+    "completed_at": "2026-09-16T00:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -189,8 +189,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "Hourly ~8:00 PM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Hourly ~9:00 PM ET intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 23:15Z. Lane surgery reports recirculating (Moore promotion angle new detail but non-material to Mongo ownership). Sampson IR already logged. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final. Week 2 injury reports forming."
+    "No material change vs prior 00:05Z. Lane surgery reports recirculating (Moore promotion angle); Sampson IR unchanged. Roster context from Mongo Live Check imports (Davis drop, Sampson to fantasy IR). All Week 1 games final. Week 2 injury reports forming."
   ]
 }
