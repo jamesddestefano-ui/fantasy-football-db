@@ -1,0 +1,34 @@
+{
+  "event_type": "WAIVER_ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Chris Bell",
+  "nfl_team": "MIA",
+  "position": "WR",
+  "faab_amount": 2,
+  "dropped_player": "Tre Tucker",
+  "dropped_nfl_team": "LV",
+  "dropped_position": "WR",
+  "observed_at": "2026-09-16T04:23:00Z",
+  "espn_activity_display": "Wed Sep 16, 12:23 am",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "WAIVER_ADD_DROP",
+    "added": "Chris Bell",
+    "dropped": "Tre Tucker",
+    "calendar_day_ET": "2026-09-16",
+    "faab_amount": 2
+  },
+  "sources": [
+    {
+      "type": "ESPN_ACTIVITY",
+      "statement": "Authenticated ESPN recent activity for Tom Brady of Ass: Dropped Tre Tucker, LV WR; added Chris Bell, MIA WR from waivers for $2 (Wed Sep 16, 12:23 am)."
+    },
+    {
+      "type": "CURRENT_ROSTER_SCREENSHOT",
+      "observation": "Chris Bell on BN; Tre Tucker absent; FAAB $90 after both Wed claims."
+    }
+  ],
+  "notes": "ESPN-authoritative waiver ADD_DROP observed during Mongo Live Check 2026-09-16. Drop does not prove FREE_AGENT_CONFIRMED for Tucker."
+}

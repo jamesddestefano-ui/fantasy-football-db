@@ -12,12 +12,14 @@ from ffdb.services import DomainError, add_drop, faab_balance, ownership, rebuil
 
 def test_seed_roster_is_exact(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    expected = ({r[0] for r in ROSTER} | {"Emari Demercado"}) - {"Malik Davis"}
+    expected = ({r[0] for r in ROSTER} | {"Emari Demercado", "Chris Bell", "Raheim Sanders"}) - {"Malik Davis", "Tre Tucker"}
     assert actual == expected
-    assert len(actual) == 16
+    assert len(actual) == 17
     assert "Malik Davis" not in actual
+    assert "Tre Tucker" not in actual
+    assert "Chris Bell" in actual and "Raheim Sanders" in actual
     assert "Dylan Sampson" in actual
-    assert faab_balance(session, "mongo") == Decimal("94.00")
+    assert faab_balance(session, "mongo") == Decimal("90.00")
     assert validate(session, "mongo") == []
 
 def test_league_settings_include_espn_ids_scoring_and_faab_budget(session):
@@ -33,7 +35,7 @@ def test_league_settings_include_espn_ids_scoring_and_faab_budget(session):
         "QB": 1, "RB": 2, "WR": 2, "TE": 1, "FLEX": 2, "D/ST": 1, "BN": 7, "IR": 1,
     }
 
-def test_faab_history_explains_100_to_94_via_saylors_claim(session):
+def test_faab_history_explains_100_to_90_via_saylors_bell_sanders(session):
     lg = session.scalar(select(League).where(League.slug == "mongo"))
     tm = session.scalar(select(FantasyTeam).where(FantasyTeam.league_id == lg.id, FantasyTeam.is_mine.is_(True)))
     opening = session.scalar(select(FaabEntry).where(
@@ -50,15 +52,22 @@ def test_faab_history_explains_100_to_94_via_saylors_claim(session):
         FaabEntry.transaction_group_id == claim.group_id,
     ))
     assert debit.amount == Decimal("-6.00")
-    assert faab_balance(session, "mongo") == Decimal("94.00")
+    debits = session.scalars(select(FaabEntry).where(
+        FaabEntry.league_id == lg.id, FaabEntry.kind == "WAIVER_EXPENDITURE",
+    )).all()
+    assert sorted(abs(d.amount) for d in debits) == [Decimal("2.00"), Decimal("2.00"), Decimal("6.00")]
+    assert faab_balance(session, "mongo") == Decimal("90.00")
 
 def test_historical_transactions_are_seeded_without_changing_current_roster(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    assert "Kaelon Black" in actual and "Tre Tucker" in actual
+    assert "Kaelon Black" in actual and "Chris Bell" in actual and "Raheim Sanders" in actual
+    assert "Tre Tucker" not in actual
     assert "Ja'Kobi Lane" in actual and "Emari Demercado" in actual
     assert "Malik Davis" not in actual
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "malik-davis-drop-20260915-espn-001"))
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "dylan-sampson-ir-20260915-espn-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "chris-bell-waiver-tucker-drop-20260916-espn-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "raheim-sanders-waiver-20260916-espn-001"))
     assert "Jacob Saylors" not in actual and "Kayshon Boutte" not in actual
     assert "Nicholas Singleton" not in actual
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "black-add-lane-drop-20260903-001"))
@@ -144,7 +153,7 @@ def test_demercado_free_add_is_owned_on_bench_without_faab_debit(session):
         TransactionEvent.event_type == "FREE_AGENT_ADD",
     ))
     assert add.faab_amount == Decimal("0.00")
-    assert faab_balance(session, "mongo") == Decimal("94.00")
+    assert faab_balance(session, "mongo") == Decimal("90.00")
 
 def test_not_mine_is_unknown_not_free_agent(session):
     for name in ["Browns D/ST", "Nicholas Singleton", "Kayshon Boutte", "Jacob Saylors"]:
@@ -164,7 +173,7 @@ def test_atomic_add_drop_preserves_drop_as_unknown_and_debits_faab(session):
     add_drop(session, "mongo", "mine", "Kendre Miller", "Player X", Decimal("4"), src.id)
     assert ownership(session, "mongo", "Kendre Miller").state == OwnershipState.UNKNOWN
     assert ownership(session, "mongo", "Player X").state == OwnershipState.OWNED
-    assert faab_balance(session, "mongo") == Decimal("90.00")
+    assert faab_balance(session, "mongo") == Decimal("86.00")
     assert validate(session, "mongo") == []
 
 def test_add_owned_elsewhere_is_rejected_atomically(session):

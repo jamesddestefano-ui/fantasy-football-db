@@ -1,0 +1,32 @@
+{
+  "event_type": "WAIVER_ADD",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Raheim Sanders",
+  "nfl_team": "CLE",
+  "position": "RB",
+  "faab_amount": 2,
+  "dropped_player": null,
+  "observed_at": "2026-09-16T04:23:00Z",
+  "espn_activity_display": "Wed Sep 16, 12:23 am",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "WAIVER_ADD",
+    "added": "Raheim Sanders",
+    "dropped": null,
+    "calendar_day_ET": "2026-09-16",
+    "faab_amount": 2
+  },
+  "sources": [
+    {
+      "type": "ESPN_ACTIVITY",
+      "statement": "Authenticated ESPN recent activity for Tom Brady of Ass: Added Raheim Sanders, CLE RB from waivers for $2 (Wed Sep 16, 12:23 am). Filled previously empty BN."
+    },
+    {
+      "type": "CURRENT_ROSTER_SCREENSHOT",
+      "observation": "Raheim Sanders on BN; empty_bn_slots 0; FAAB $90."
+    }
+  ],
+  "notes": "ESPN-authoritative WAIVER_ADD observed during Mongo Live Check 2026-09-16."
+}
