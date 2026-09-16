@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-16T162000Z",
-  "generated_at": "2026-09-16T16:15:00Z",
-  "completed_at": "2026-09-16T16:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-16T170500Z",
+  "generated_at": "2026-09-16T17:00:00Z",
+  "completed_at": "2026-09-16T17:05:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continued reports (Matt Zenitz / CBS Sports, Baltimore Sun, Ravens Wire, RotoWire, NBC Sports, FOX Baltimore) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery this week (possibly Wednesday 9/16). Timeline remains ~1 month hope (Zenitz) or ~4-6 weeks (Baltimore Sun source). Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official confirmation of surgery completion, designation change, or IR as of this midday window. Recirculation of prior reports on X and beats; no new primary confirmation of procedure done.",
+      "summary": "Continued reports (Matt Zenitz / CBS Sports, Baltimore Sun, Ravens Wire, RotoWire, NBC Sports, FOX Baltimore) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery this week (possibly Wednesday 9/16). Timeline remains ~1 month hope (Zenitz) or ~4-6 weeks (Baltimore Sun source). Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official confirmation of surgery completion, designation change, or IR as of this early-afternoon window (~1 PM ET). Recirculation of prior reports on X and beats; no new primary confirmation of procedure done.",
       "mongo_impact": "OWNED on Mongo bench. Surgery timeline (~4-6 weeks / ~1 month) raises IR candidacy. Continue HOLD_MONITOR; do not drop. Monitor for official IR or designation.",
       "recommendation": "HOLD_MONITOR",
       "urgency": "HIGH",
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-16T151500Z",
-    "completed_at": "2026-09-16T15:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-16T162000Z",
+    "completed_at": "2026-09-16T16:20:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~12:15-12:20 PM ET / 16:20Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~1:00-1:05 PM ET / 17:05Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 15:15Z. Lane surgery reports continue recirculating (4-6 weeks Baltimore Sun / ~1 month Zenitz); no confirmation of procedure completed or IR placement as of midday Wednesday. Sampson IR unchanged. Owned players Bell/Sanders from authenticated waiver imports; no new NFL injury/role signals requiring action. All Week 1 games final. Early Week 2 reports forming but no new owned-player material impacts or official designations."
+    "No material change vs prior 16:20Z. Lane surgery reports continue recirculating (4-6 weeks Baltimore Sun / ~1 month Zenitz); no confirmation of procedure completed or IR placement as of early afternoon Wednesday. Sampson IR unchanged. Owned players Bell/Sanders from authenticated waiver imports; no new NFL injury/role signals requiring action. All Week 1 games final. Early Week 2 reports forming but no new owned-player material impacts or official designations."
   ]
 }
