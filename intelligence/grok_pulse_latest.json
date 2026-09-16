@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-16T143000Z",
-  "generated_at": "2026-09-16T14:25:00Z",
-  "completed_at": "2026-09-16T14:30:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-16T151500Z",
+  "generated_at": "2026-09-16T15:10:00Z",
+  "completed_at": "2026-09-16T15:15:00Z",
   "week": 1,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continued reports (Matt Zenitz / CBS Sports, Baltimore Sun, Ravens Wire, RotoWire, NBC Sports) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery (possibly Wednesday 9/16). Timeline remains ~1 month hope (Zenitz) or ~4-6 weeks (Baltimore Sun source). Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official confirmation of surgery completion, designation change, or IR as of this mid-morning window. Recirculation of prior reports on X and beats; no new primary confirmation of procedure done.",
+      "summary": "Continued reports (Matt Zenitz / CBS Sports, Baltimore Sun, Ravens Wire, RotoWire, NBC Sports) that Ravens rookie WR Ja'Kobi Lane is expected to undergo wrist surgery (possibly Wednesday 9/16). Timeline remains ~1 month hope (Zenitz) or ~4-6 weeks (Baltimore Sun source). Ravens may promote Chris Moore; IR placement remains a consideration (min 4 games). No official confirmation of surgery completion, designation change, or IR as of this late-morning window. Recirculation of prior reports on X and beats; no new primary confirmation of procedure done.",
       "mongo_impact": "OWNED on Mongo bench. Surgery timeline (~4-6 weeks / ~1 month) raises IR candidacy. Continue HOLD_MONITOR; do not drop. Monitor for official IR or designation.",
       "recommendation": "HOLD_MONITOR",
       "urgency": "HIGH",
@@ -189,13 +189,11 @@
       "sources": ["Baltimore Sun", "Matt Zenitz", "CBS Sports", "Ravens Wire", "RotoWire", "@Browns official", "Daniel Oyefusi / ESPN"]
     }
   ],
-  "material_changes": [
-    "Roster context synced to 2026-09-16 Mongo Live Check imports: Tre Tucker dropped, Chris Bell added ($2), Raheim Sanders added ($2), FAAB 90 (from 94)"
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-16T112000Z",
-    "completed_at": "2026-09-16T11:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-16T143000Z",
+    "completed_at": "2026-09-16T14:30:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -204,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~10:25-10:30 AM ET / 14:30Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~11:10-11:15 AM ET / 15:15Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Material change limited to roster_context accuracy vs prior 11:20Z (stale roster reflected 09-15 state). Lane surgery reports continue recirculating (4-6 weeks Baltimore Sun / ~1 month Zenitz); no confirmation of procedure completed or IR placement as of mid-morning Wednesday. Sampson IR unchanged. New owned players Bell/Sanders from authenticated waiver imports; no new NFL injury/role signals requiring action. All Week 1 games final. Early Week 2 reports forming but no new owned-player material impacts or official designations."
+    "No material change vs prior 14:30Z. Lane surgery reports continue recirculating (4-6 weeks Baltimore Sun / ~1 month Zenitz); no confirmation of procedure completed or IR placement as of late-morning Wednesday. Sampson IR unchanged. Owned players Bell/Sanders from authenticated waiver imports; no new NFL injury/role signals requiring action. All Week 1 games final. Early Week 2 reports forming but no new owned-player material impacts or official designations."
   ]
 }
