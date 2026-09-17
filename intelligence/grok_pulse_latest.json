@@ -3,10 +3,10 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-16T230500Z",
-  "generated_at": "2026-09-16T23:00:00Z",
-  "completed_at": "2026-09-16T23:05:00Z",
-  "week": 1,
+  "pulse_id": "mongo-grok-pulse-2026-09-17T001500Z",
+  "generated_at": "2026-09-17T00:10:00Z",
+  "completed_at": "2026-09-17T00:15:00Z",
+  "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
   "source_status": {
@@ -170,8 +170,8 @@
   ],
   "lineup_signals": [
     {
-      "week": 1,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters. Bench Black, Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep: Kamara full practice + expected active reduces Miller role expectation.",
+      "week": 2,
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters as baseline for Week 2 prep. Bench Black, Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep: Kamara full practice + expected active reduces Miller role expectation.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-16T222000Z",
-    "completed_at": "2026-09-16T22:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-16T230500Z",
+    "completed_at": "2026-09-16T23:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~7:00-7:05 PM ET / 23:05Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~8:00-8:15 PM ET / 00:15Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 22:20Z. Kamara full practice + expected Week 2 return is reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports active."
+    "No material change vs prior 23:05Z. Kamara full practice + expected Week 2 return is reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports active."
   ]
 }
