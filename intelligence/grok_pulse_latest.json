@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-17T082000Z",
-  "generated_at": "2026-09-17T08:15:00Z",
-  "completed_at": "2026-09-17T08:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-17T102000Z",
+  "generated_at": "2026-09-17T10:15:00Z",
+  "completed_at": "2026-09-17T10:20:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-17T061000Z",
-    "completed_at": "2026-09-17T06:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-17T082000Z",
+    "completed_at": "2026-09-17T08:20:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~4:00-4:20 AM ET / 08:20Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~6:00-6:20 AM ET / 10:20Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 06:10Z. Kamara full practice + expected Week 2 return remains reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports from Wednesday; no overnight/early morning developments."
+    "No material change vs prior 08:20Z. Kamara full practice + expected Week 2 return remains reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports from Wednesday; no overnight/early morning developments."
   ]
 }
