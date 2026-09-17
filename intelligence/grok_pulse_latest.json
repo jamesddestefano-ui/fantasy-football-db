@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-17T001500Z",
-  "generated_at": "2026-09-17T00:10:00Z",
-  "completed_at": "2026-09-17T00:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-17T011500Z",
+  "generated_at": "2026-09-17T01:10:00Z",
+  "completed_at": "2026-09-17T01:15:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -94,13 +94,13 @@
       "team": "SF",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 1 solid production (14 carries ~65-70 yards, significant snaps). Has trust of Shanahan. No new Week 2 role updates.",
+      "summary": "Week 1 solid production (14 carries ~65-70 yards, significant snaps). Has trust of Shanahan. No new Week 2 role updates; streamer mentions continue but no injury or role change.",
       "mongo_impact": "OWNED on bench. Remains SF RB2. Hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Matt Barrows / The Athletic", "Nick Wagoner"]
+      "sources": ["Matt Barrows / The Athletic", "Nick Wagoner", "SI Fantasy"]
     },
     {
       "player": "Josh Downs",
@@ -113,7 +113,7 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["NFL.com Colts inactives"]
+      "sources": ["NFL.com Colts inactives", "NBC Sports"]
     },
     {
       "player": "Raheim Sanders",
@@ -126,14 +126,14 @@
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Daniel Oyefusi / ESPN", "NBC Sports", "DraftSharks"]
+      "sources": ["Daniel Oyefusi / ESPN", "NBC Sports", "DraftSharks", "RotoWire"]
     },
     {
       "player": "Chris Bell",
       "team": "MIA",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 1: 1-25-0 on 2 targets, limited snaps. ACL recovery from prior year. Depth WR in Miami offense.",
+      "summary": "Week 1: 1-25-0 on 2 targets, limited snaps. ACL recovery from prior year. Depth WR in Miami offense. No new Week 2 role updates.",
       "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2 dropping Tucker). Speculative depth hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -181,7 +181,7 @@
     {
       "topic": "Alvin Kamara full practice + expected Week 2 return (coach + beat confirmation) — impacts Kendre Miller role",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Saints HC Kellen Moore indicated Alvin Kamara (knee) is expected to play Week 2 vs Ravens; Kamara was full participant in Wednesday practice (Katherine Terrell / ESPN). Could have played Week 1 but was held for prep. Ja'Kobi Lane official IR and Sampson IR remain stable. No other owned-player material shifts.",
+      "summary": "Saints HC Kellen Moore indicated Alvin Kamara (knee) is expected to play Week 2 vs Ravens; Kamara was full participant in Wednesday practice (Katherine Terrell / ESPN, NBC Sports, multiple beats). Could have played Week 1 but was held for prep. Ja'Kobi Lane official IR and Sampson IR remain stable. No other owned-player material shifts.",
       "mongo_impact": "Hold current starter set. Lane official NFL IR (owned on Mongo bench). Official NFL IR on Sampson already reflected. Miller role likely compressed. Roster includes Bell and Sanders post-waiver. Intelligence-only; no ownership change.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-16T230500Z",
-    "completed_at": "2026-09-16T23:05:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-17T001500Z",
+    "completed_at": "2026-09-17T00:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~8:00-8:15 PM ET / 00:15Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~9:00-9:15 PM ET / 01:15Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 23:05Z. Kamara full practice + expected Week 2 return is reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports active."
+    "No material change vs prior 00:15Z. Kamara full practice + expected Week 2 return is reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports active."
   ]
 }
