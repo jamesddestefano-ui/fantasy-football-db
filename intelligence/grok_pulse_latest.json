@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-17T040500Z",
-  "generated_at": "2026-09-17T04:00:00Z",
-  "completed_at": "2026-09-17T04:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-17T061000Z",
+  "generated_at": "2026-09-17T06:05:00Z",
+  "completed_at": "2026-09-17T06:10:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-17T031000Z",
-    "completed_at": "2026-09-17T03:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-17T040500Z",
+    "completed_at": "2026-09-17T04:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~12:00-12:05 AM ET / 04:05Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~2:00-2:10 AM ET / 06:10Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 03:10Z. Kamara full practice + expected Week 2 return remains reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports from Wednesday; no overnight developments."
+    "No material change vs prior 04:05Z. Kamara full practice + expected Week 2 return remains reinforcing prior coach confirmation (not new). Lane IR and Sampson IR remain stable. No new injury signals on other owned players (Black, Demercado, Downs, Bell, Sanders, Hurts). All Week 1 games final. Week 2 practice reports from Wednesday; no overnight developments."
   ]
 }
