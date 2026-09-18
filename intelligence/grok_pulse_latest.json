@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-18T101500Z",
-  "generated_at": "2026-09-18T10:10:00Z",
-  "completed_at": "2026-09-18T10:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-18T112000Z",
+  "generated_at": "2026-09-18T11:15:00Z",
+  "completed_at": "2026-09-18T11:20:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Official: Ravens announced and @NFL / @ESPNNFL / coach Jesse Minter confirmed that rookie WR Ja'Kobi Lane underwent wrist surgery Wednesday and is placed on injured reserve. Min 4-game absence (eligible Week 6). Chris Moore promoted to fill roster spot. Status stable; no new timeline change through 10:15Z Friday. Positive return outlook (eligible as soon as Week 6) unchanged.",
+      "summary": "Official: Ravens announced and @NFL / @ESPNNFL / coach Jesse Minter confirmed that rookie WR Ja'Kobi Lane underwent wrist surgery Wednesday and is placed on injured reserve. Min 4-game absence (eligible Week 6). Chris Moore promoted to fill roster spot. Status stable; no new timeline change through 11:20Z Friday. Positive return outlook (eligible as soon as Week 6) unchanged.",
       "mongo_impact": "OWNED on Mongo bench. Official NFL IR confirmed. Continue HOLD; do not drop. Mongo IR slot remains occupied by Sampson; Lane stays on bench until Mongo roster action (intelligence-only). Monitor return eligibility.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -55,7 +55,7 @@
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Browns officially placed RB Dylan Sampson (knee) on injured reserve (team announcement + ESPN). Min 4 weeks, eligible Week 6 vs Ravens. No new updates beyond prior confirmation through 10:15Z.",
+      "summary": "Browns officially placed RB Dylan Sampson (knee) on injured reserve (team announcement + ESPN). Min 4 weeks, eligible Week 6 vs Ravens. No new updates beyond prior confirmation through 11:20Z.",
       "mongo_impact": "OWNED on Mongo IR. Official NFL IR aligns. Continue HOLD; do not drop. No lineup impact.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -68,7 +68,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Saints HC Kellen Moore said Kamara (knee) expected to play Week 2 vs Ravens; Kamara full participant Wednesday and Thursday. Kamara said Thursday he 'feels great' with 'no limitations' (Katherine Terrell / ESPN) and will play. Role likely to shrink significantly with Kamara return. No new material change through 10:15Z; Kamara status remains reinforcing prior confirmation. Friday practice report not yet released.",
+      "summary": "With Kamara inactive Week 1, Miller scored TD (9 carries, 30 yards). Saints HC Kellen Moore said Kamara (knee) expected to play Week 2 vs Ravens; Kamara full participant Wednesday and Thursday. Kamara said Thursday he 'feels great' with 'no limitations' (Katherine Terrell / ESPN) and will play. Role likely to shrink significantly with Kamara return. No new material change through 11:20Z; Kamara status remains reinforcing prior confirmation. Friday practice report not yet released.",
       "mongo_impact": "OWNED on bench. TD and prior role reinforce hold value short-term, but monitor Week 2 snap share closely if Kamara active. Reduced standalone upside expected.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -81,7 +81,7 @@
       "team": "DAL",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Primary backup to Javonte Williams with Davis on IR. Limited usage Week 1. Cowboys signed Tyler Goodson; depth competition possible but no material change to Demercado role yet. No updates through 10:15Z.",
+      "summary": "Primary backup to Javonte Williams with Davis on IR. Limited usage Week 1. Cowboys signed Tyler Goodson; depth competition possible but no material change to Demercado role yet. No updates through 11:20Z.",
       "mongo_impact": "OWNED on bench. Hold as handcuff.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -94,7 +94,7 @@
       "team": "SF",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Thursday: 49ers listed RB Kaelon Black as limited participant with groin injury (first appearance on Week 2 injury report; not listed Wednesday). HC Kyle Shanahan (KNBR interview) said team is 'just being smart with him' after 'a little tight today' and does not expect the issue to impact Week 2 availability vs Miami. Positive but monitor Friday practice response. Week 1 production (14 carries ~65 yards) and Shanahan trust remain intact if active. No further update through 10:15Z Friday; Friday practice report not yet released (early Friday ET overnight/early morning).",
+      "summary": "Thursday: 49ers listed RB Kaelon Black as limited participant with groin injury (first appearance on Week 2 injury report; not listed Wednesday). HC Kyle Shanahan (KNBR interview) said team is 'just being smart with him' after 'a little tight today' and does not expect the issue to impact Week 2 availability vs Miami. Positive but monitor Friday practice response. Week 1 production (14 carries ~65 yards) and Shanahan trust remain intact if active. No further update through 11:20Z Friday; Friday practice report not yet released (early Friday ET ~7AM hourly refresh).",
       "mongo_impact": "OWNED on Mongo bench. Limited designation remains material signal from prior Pulse; HOLD pending Friday practice and final status. If limited/out, Jordan James could see more work behind McCaffrey. Intelligence-only; no ownership change.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -107,7 +107,7 @@
       "team": "IND",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Active and played Week 1. Calf/groin previously cleared. Game final. No new issues in Week 2 reports through 10:15Z.",
+      "summary": "Active and played Week 1. Calf/groin previously cleared. Game final. No new issues in Week 2 reports through 11:20Z.",
       "mongo_impact": "Keep in FLEX.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -120,7 +120,7 @@
       "team": "CLE",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Filled receiving-back role in Week 1 after Sampson exit (3 rec 25 yds, kick returns). Browns signed Jaleel McLaughlin to active roster after Sampson IR; Sanders remains depth option behind Judkins. No change through 10:15Z.",
+      "summary": "Filled receiving-back role in Week 1 after Sampson exit (3 rec 25 yds, kick returns). Browns signed Jaleel McLaughlin to active roster after Sampson IR; Sanders remains depth option behind Judkins. No change through 11:20Z.",
       "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2). Hold as CLE depth/handcuff.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -133,7 +133,7 @@
       "team": "MIA",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 1: 1-25-0 on 2 targets, limited snaps. ACL recovery from prior year. Depth WR in Miami offense. No new Week 2 role updates through 10:15Z.",
+      "summary": "Week 1: 1-25-0 on 2 targets, limited snaps. ACL recovery from prior year. Depth WR in Miami offense. No new Week 2 role updates through 11:20Z.",
       "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2 dropping Tucker). Speculative depth hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -146,7 +146,7 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Clean for Hurts and Andrews. Game complete. Eagles OL Landon Dickerson to IR (knee) but no impact on QB/TE. No issues through 10:15Z.",
+      "summary": "No change. Clean for Hurts and Andrews. Game complete. Eagles OL Landon Dickerson to IR (knee) but no impact on QB/TE. No issues through 11:20Z.",
       "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -171,7 +171,7 @@
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters as baseline for Week 2 prep. Bench Black (Thursday limited groin designation — Shanahan positive, still monitoring Friday practice report), Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep: Kamara full practice Wed + Thu and 'feels great / no limitations' + will play (Thu) further reinforces expected active status and reduces Miller role expectation. No new injury signals on Downs, Bell, Sanders, Hurts, Demercado, Ray Davis through 10:15Z. Friday practice reports not yet available (early Friday ET ~6AM overnight/early morning refresh).",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters as baseline for Week 2 prep. Bench Black (Thursday limited groin designation — Shanahan positive, still monitoring Friday practice report), Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep: Kamara full practice Wed + Thu and 'feels great / no limitations' + will play (Thu) further reinforces expected active status and reduces Miller role expectation. No new injury signals on Downs, Bell, Sanders, Hurts, Demercado, Ray Davis through 11:20Z. Friday practice reports not yet available (early Friday ET ~7AM hourly refresh).",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -181,7 +181,7 @@
     {
       "topic": "Kaelon Black limited Thursday (groin) + Shanahan positive (no Friday update yet); Alvin Kamara full practice + 'feels great / no limitations' + will play Week 2 — impacts Kendre Miller role; Lane IR stable; Flowers DNP Thursday",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Prior: 49ers listed Kaelon Black limited with groin (Thursday injury report); Shanahan said just being smart after tightness and does not expect Week 2 impact. No Friday practice report or further update through 10:15Z. Saints HC Kellen Moore indicated Alvin Kamara (knee) is expected to play Week 2 vs Ravens; Kamara was full participant Wednesday and Thursday and said he feels great with no limitations and will play (Katherine Terrell / ESPN, Saints.com). Ja'Kobi Lane official IR and Sampson IR remain stable. Ravens Thursday practice: Flowers (hamstring) DNP second straight day, Lane (IR) DNP as expected. Brandin Cooks worked out for Ravens. No other owned-player material shifts through 10:15Z.",
+      "summary": "Prior: 49ers listed Kaelon Black limited with groin (Thursday injury report); Shanahan said just being smart after tightness and does not expect Week 2 impact. No Friday practice report or further update through 11:20Z. Saints HC Kellen Moore indicated Alvin Kamara (knee) is expected to play Week 2 vs Ravens; Kamara was full participant Wednesday and Thursday and said he feels great with no limitations and will play (Katherine Terrell / ESPN, Saints.com). Ja'Kobi Lane official IR and Sampson IR remain stable. Ravens Thursday practice: Flowers (hamstring) DNP second straight day, Lane (IR) DNP as expected. Brandin Cooks worked out for Ravens. No other owned-player material shifts through 11:20Z.",
       "mongo_impact": "Hold current starter set. Black limited designation remains the open monitoring item (Friday report pending). Lane official NFL IR (owned on Mongo bench). Official NFL IR on Sampson already reflected. Miller role likely compressed. Roster includes Bell and Sanders post-waiver. Intelligence-only; no ownership change.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -192,8 +192,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-18T080500Z",
-    "completed_at": "2026-09-18T08:05:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-18T101500Z",
+    "completed_at": "2026-09-18T10:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -202,8 +202,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~6:10-6:15 AM ET / 10:15Z overnight/early morning intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~7:15-7:20 AM ET / 11:20Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 08:05Z. Kaelon Black (owned bench) limited Thursday with groin tightness + Shanahan positive remains the latest owned-player signal; Friday practice report not yet available. Lane IR and Sampson IR remain stable. Kamara full practice Thursday + self-report 'feels great / no limitations' + will play remains reinforcing prior coach confirmation. Thursday Ravens practice notes (Flowers DNP second day, Lane IR DNP expected) + Brandin Cooks workout add no other owned-player delta. No new injury signals on Demercado, Downs, Bell, Sanders, Hurts, Ray Davis. All Week 1 games final. Intelligence-only overnight/early morning refresh."
+    "No material change vs prior 10:15Z. Kaelon Black (owned bench) limited Thursday with groin tightness + Shanahan positive remains the latest owned-player signal; Friday practice report not yet available. Lane IR and Sampson IR remain stable. Kamara full practice Thursday + self-report 'feels great / no limitations' + will play remains reinforcing prior coach confirmation. No new injury signals on Demercado, Downs, Bell, Sanders, Hurts, Ray Davis. All Week 1 games final. Intelligence-only hourly refresh."
   ]
 }
