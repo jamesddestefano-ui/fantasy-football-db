@@ -619,4 +619,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-09-16",
         "faab_amount": 2,
     },
+    {
+        "description": "2026-09-17 ET ADD_DROP Rashod Bateman $0 + DROP Emari Demercado (ESPN activity 11:14 am)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "add",
+        "added_player": "Rashod Bateman",
+        "dropped_player": "Emari Demercado",
+        "calendar_day_ET": "2026-09-17",
+        "faab_amount": 0,
+    },
 ]

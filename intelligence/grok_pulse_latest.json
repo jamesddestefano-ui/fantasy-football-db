@@ -26,11 +26,31 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo repository current state as of 2026-09-16 Live Check imports (Chris Bell waiver add + Tre Tucker drop $2; Raheim Sanders waiver add $2; FAAB $90; prior Malik Davis drop + Dylan Sampson IR)",
+    "source": "Mongo repository current state as of 2026-09-18 Live Check (Rashod Bateman $0 free add + Emari Demercado drop; FAAB $90; prior Bell/Sanders Sep 16; Sampson IR)",
     "faab_remaining": 90,
-    "starters_week_1": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
-    "bench": ["Kaelon Black", "Ray Davis", "Ja'Kobi Lane", "Kendre Miller", "Emari Demercado", "Chris Bell", "Raheim Sanders"],
-    "ir": ["Dylan Sampson"]
+    "starters_week_1": [
+      "Jalen Hurts",
+      "De'Von Achane",
+      "Bijan Robinson",
+      "Luther Burden III",
+      "Tetairoa McMillan",
+      "Mark Andrews",
+      "Josh Downs",
+      "CeeDee Lamb",
+      "Eagles D/ST"
+    ],
+    "bench": [
+      "Kaelon Black",
+      "Ray Davis",
+      "Ja'Kobi Lane",
+      "Kendre Miller",
+      "Chris Bell",
+      "Raheim Sanders",
+      "Rashod Bateman"
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ]
   },
   "watchlist_status": {
     "repository_waiver_watch_rows": 0,
@@ -48,7 +68,17 @@
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["@NFL official", "@ESPNNFL", "Ravens team announcement", "Jesse Minter", "The Athletic", "Baltimore Sun", "ESPN", "Brian Wacker", "Jamison Hensley"]
+      "sources": [
+        "@NFL official",
+        "@ESPNNFL",
+        "Ravens team announcement",
+        "Jesse Minter",
+        "The Athletic",
+        "Baltimore Sun",
+        "ESPN",
+        "Brian Wacker",
+        "Jamison Hensley"
+      ]
     },
     {
       "player": "Dylan Sampson",
@@ -61,7 +91,12 @@
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["@Browns official", "Daniel Oyefusi / ESPN", "Adam Schefter", "Cleveland.com"]
+      "sources": [
+        "@Browns official",
+        "Daniel Oyefusi / ESPN",
+        "Adam Schefter",
+        "Cleveland.com"
+      ]
     },
     {
       "player": "Kendre Miller",
@@ -74,7 +109,15 @@
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Kellen Moore via Jeff Nowak", "Katherine Terrell / ESPN", "Nick Underhill", "Rotoworld", "NBC Sports", "DraftSharks", "Saints.com"]
+      "sources": [
+        "Kellen Moore via Jeff Nowak",
+        "Katherine Terrell / ESPN",
+        "Nick Underhill",
+        "Rotoworld",
+        "NBC Sports",
+        "DraftSharks",
+        "Saints.com"
+      ]
     },
     {
       "player": "Emari Demercado",
@@ -82,12 +125,16 @@
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
       "summary": "Primary backup to Javonte Williams with Davis on IR. Limited usage Week 1. Cowboys signed Tyler Goodson; depth competition possible but no material change to Demercado role yet. No updates through 11:20Z.",
-      "mongo_impact": "OWNED on bench. Hold as handcuff.",
-      "recommendation": "HOLD",
+      "mongo_impact": "DROPPED from Mongo roster Thu Sep 17 (Bateman free add). Do not infer FREE_AGENT_CONFIRMED. Prior handcuff thesis vacated for JDD.",
+      "recommendation": "N/A_DROPPED",
       "urgency": "MONITOR",
       "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": ["Todd Archer", "Aaron Wilson", "ESPN"]
+      "availability": "UNKNOWN",
+      "sources": [
+        "Todd Archer",
+        "Aaron Wilson",
+        "ESPN"
+      ]
     },
     {
       "player": "Kaelon Black",
@@ -100,7 +147,16 @@
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["49ers official injury report", "Kyle Shanahan via KNBR / Niners Wire", "Matt Barrows / The Athletic", "Nick Wagoner", "FantasyPros", "Niners Nation", "RotoWire", "DraftSharks"]
+      "sources": [
+        "49ers official injury report",
+        "Kyle Shanahan via KNBR / Niners Wire",
+        "Matt Barrows / The Athletic",
+        "Nick Wagoner",
+        "FantasyPros",
+        "Niners Nation",
+        "RotoWire",
+        "DraftSharks"
+      ]
     },
     {
       "player": "Josh Downs",
@@ -113,7 +169,10 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["NFL.com Colts inactives", "NBC Sports"]
+      "sources": [
+        "NFL.com Colts inactives",
+        "NBC Sports"
+      ]
     },
     {
       "player": "Raheim Sanders",
@@ -126,7 +185,12 @@
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Daniel Oyefusi / ESPN", "NBC Sports", "DraftSharks", "RotoWire"]
+      "sources": [
+        "Daniel Oyefusi / ESPN",
+        "NBC Sports",
+        "DraftSharks",
+        "RotoWire"
+      ]
     },
     {
       "player": "Chris Bell",
@@ -139,7 +203,10 @@
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
-      "sources": ["FantasyPros", "NBC Sports"]
+      "sources": [
+        "FantasyPros",
+        "NBC Sports"
+      ]
     },
     {
       "player": "Jalen Hurts",
@@ -152,7 +219,10 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["CBS Sports injury tracker", "Eagles official"]
+      "sources": [
+        "CBS Sports injury tracker",
+        "Eagles official"
+      ]
     }
   ],
   "waiver_signals": [
@@ -165,13 +235,16 @@
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
-      "sources": ["AGENTS.md ownership rules", "Mongo repository waiver-watch empty"]
+      "sources": [
+        "AGENTS.md ownership rules",
+        "Mongo repository waiver-watch empty"
+      ]
     }
   ],
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters as baseline for Week 2 prep. Bench Black (Thursday limited groin designation — Shanahan positive, still monitoring Friday practice report), Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep: Kamara full practice Wed + Thu and 'feels great / no limitations' + will play (Thu) further reinforces expected active status and reduces Miller role expectation. No new injury signals on Downs, Bell, Sanders, Hurts, Demercado, Ray Davis through 11:20Z. Friday practice reports not yet available (early Friday ET ~7AM hourly refresh).",
+      "summary": "No Pulse-driven lineup change required. Keep current Mongo Week 1 starters as baseline for Week 2 prep. Bench Black (Thursday limited groin designation \u2014 Shanahan positive, still monitoring Friday practice report), Demercado, Miller, Ray Davis, Lane (official NFL IR after wrist surgery Wed; min 4 games), Bell, Sanders. Sampson on NFL IR + Mongo IR. All Week 1 games final. Week 2 prep: Kamara full practice Wed + Thu and 'feels great / no limitations' + will play (Thu) further reinforces expected active status and reduces Miller role expectation. No new injury signals on Downs, Bell, Sanders, Hurts, Demercado, Ray Davis through 11:20Z. Friday practice reports not yet available (early Friday ET ~7AM hourly refresh).",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -179,14 +252,28 @@
   ],
   "expert_signals": [
     {
-      "topic": "Kaelon Black limited Thursday (groin) + Shanahan positive (no Friday update yet); Alvin Kamara full practice + 'feels great / no limitations' + will play Week 2 — impacts Kendre Miller role; Lane IR stable; Flowers DNP Thursday",
+      "topic": "Kaelon Black limited Thursday (groin) + Shanahan positive (no Friday update yet); Alvin Kamara full practice + 'feels great / no limitations' + will play Week 2 \u2014 impacts Kendre Miller role; Lane IR stable; Flowers DNP Thursday",
       "status": "ATTRIBUTED_REPORT",
       "summary": "Prior: 49ers listed Kaelon Black limited with groin (Thursday injury report); Shanahan said just being smart after tightness and does not expect Week 2 impact. No Friday practice report or further update through 11:20Z. Saints HC Kellen Moore indicated Alvin Kamara (knee) is expected to play Week 2 vs Ravens; Kamara was full participant Wednesday and Thursday and said he feels great with no limitations and will play (Katherine Terrell / ESPN, Saints.com). Ja'Kobi Lane official IR and Sampson IR remain stable. Ravens Thursday practice: Flowers (hamstring) DNP second straight day, Lane (IR) DNP as expected. Brandin Cooks worked out for Ravens. No other owned-player material shifts through 11:20Z.",
       "mongo_impact": "Hold current starter set. Black limited designation remains the open monitoring item (Friday report pending). Lane official NFL IR (owned on Mongo bench). Official NFL IR on Sampson already reflected. Miller role likely compressed. Roster includes Bell and Sanders post-waiver. Intelligence-only; no ownership change.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
-      "sources": ["49ers injury report", "Kyle Shanahan / KNBR / Niners Wire", "Kellen Moore", "Jeff Nowak", "Katherine Terrell / ESPN", "Rotoworld", "NBC Sports", "DraftSharks", "@NFL", "Jesse Minter", "Brian Wacker", "Jamison Hensley", "@MySportsUpdate"]
+      "sources": [
+        "49ers injury report",
+        "Kyle Shanahan / KNBR / Niners Wire",
+        "Kellen Moore",
+        "Jeff Nowak",
+        "Katherine Terrell / ESPN",
+        "Rotoworld",
+        "NBC Sports",
+        "DraftSharks",
+        "@NFL",
+        "Jesse Minter",
+        "Brian Wacker",
+        "Jamison Hensley",
+        "@MySportsUpdate"
+      ]
     }
   ],
   "material_changes": [],

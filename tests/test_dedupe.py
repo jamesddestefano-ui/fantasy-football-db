@@ -84,6 +84,7 @@ def test_six_espn_live_plus_ir_confirmation_match_expected_groups(session):
     assert by_desc[KNOWN_ESPN_EVENTS[8]["description"]].matched_group_id == "dylan-sampson-ir-20260915-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[9]["description"]].matched_group_id == "chris-bell-waiver-tucker-drop-20260916-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[10]["description"]].matched_group_id == "raheim-sanders-waiver-20260916-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[11]["description"]].matched_group_id == "rashod-bateman-add-demercado-drop-20260917-espn-001"
 
 
 def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):

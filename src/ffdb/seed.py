@@ -20,6 +20,7 @@ DEMERCADO_ADD_CONFIRMED_AT = datetime(2026, 9, 11, 21, 43, 0, tzinfo=timezone.ut
 MALIK_DAVIS_DROP_AT = datetime(2026, 9, 15, 8, 46, 0, tzinfo=timezone.utc)  # Tue Sep 15, 4:46 am ET
 SAMPSON_IR_OBSERVED_AT = datetime(2026, 9, 15, 12, 10, 0, tzinfo=timezone.utc)  # Live Check capture ET→UTC
 BELL_SANDERS_WAIVER_AT = datetime(2026, 9, 16, 4, 23, 0, tzinfo=timezone.utc)  # Wed Sep 16, 12:23 am ET
+BATEMAN_DEMERCADO_AT = datetime(2026, 9, 17, 15, 14, 0, tzinfo=timezone.utc)  # Thu Sep 17, 11:14 am ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -112,6 +113,7 @@ def seed_mongo(session: Session):
             league_id=lg.id, season=2026, week=1, fantasy_team_id=tm.id, player_id=p.id,
             slot=slot, placement=placement, effective_at=AS_OF, source_id=src.id,
         ))
+
 
     for name, pos in NOT_MINE_UNKNOWN:
         _player(session, name, pos)
@@ -505,6 +507,60 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("90"),
         observed_at=BELL_SANDERS_WAIVER_AT, source_id=bell_source.id,
+    ))
+
+
+    # --- 2026-09-17 ESPN: FREE_AGENT ADD Rashod Bateman $0 / DROP Emari Demercado ---
+    demercado_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Emari Demercado")))
+    bateman = _player(session, "Rashod Bateman", "WR", "BAL")
+    bateman_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Rashod Bateman for $0; dropped Emari Demercado (Thu Sep 17, 11:14 am)",
+        original_ref="data/imports/2026-09-17-rashod-bateman-add-demercado-drop.json",
+        platform="ESPN",
+        observed_at=BATEMAN_DEMERCADO_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-09-18; FAAB remained $90.",
+    )
+    session.add(bateman_source)
+    session.flush()
+    bateman_group = TransactionGroup(
+        id="rashod-bateman-add-demercado-drop-20260917-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=BATEMAN_DEMERCADO_AT, source_id=bateman_source.id,
+        notes="ESPN-authoritative ADD_DROP: Rashod Bateman $0 free add; Emari Demercado dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(bateman_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=bateman_group.id, sequence=1, event_type="DROP", player_id=demercado_drop.id,
+            notes="Dropped when adding Rashod Bateman.",
+        ),
+        TransactionEvent(
+            group_id=bateman_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=bateman.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=demercado_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=BATEMAN_DEMERCADO_AT, source_id=bateman_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=bateman_group.id,
+            notes="Drop proves departure from roster, not current free agency.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=bateman.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=BATEMAN_DEMERCADO_AT, source_id=bateman_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=bateman_group.id,
+            notes="ESPN free add $0 dropping Demercado.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=bateman.id,
+            slot="BN", placement="BENCH", effective_at=BATEMAN_DEMERCADO_AT, source_id=bateman_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("90"),
+        observed_at=BATEMAN_DEMERCADO_AT, source_id=bateman_source.id,
     ))
 
 
