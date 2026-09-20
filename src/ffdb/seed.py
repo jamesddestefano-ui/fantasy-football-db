@@ -117,60 +117,6 @@ def seed_mongo(session: Session):
 
 
 
-    # --- 2026-09-19 ESPN: FREE_AGENT ADD George Holani $0 / DROP Ja'Kobi Lane ---
-    lane_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Ja'Kobi Lane")))
-    holani = _player(session, "George Holani", "RB", "SEA")
-    holani_source = Source(
-        league_id=lg.id,
-        source_type="ESPN_ACTIVITY",
-        description="Authenticated ESPN activity: Added George Holani for $0; dropped Ja'Kobi Lane (Sat Sep 19, 8:28 pm)",
-        original_ref="data/imports/2026-09-19-george-holani-add-lane-drop.json",
-        platform="ESPN",
-        observed_at=HOLANI_LANE_AT,
-        authority=Authority.CONFIRMED_TRANSACTION,
-        notes="Mongo Live Check 2026-09-20; FAAB remained $90.",
-    )
-    session.add(holani_source)
-    session.flush()
-    holani_group = TransactionGroup(
-        id="george-holani-add-lane-drop-20260919-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
-        effective_at=HOLANI_LANE_AT, source_id=holani_source.id,
-        notes="ESPN-authoritative ADD_DROP: George Holani $0 free add; Ja'Kobi Lane dropped (not FREE_AGENT_CONFIRMED).",
-    )
-    session.add(holani_group)
-    session.flush()
-    session.add_all([
-        TransactionEvent(
-            group_id=holani_group.id, sequence=1, event_type="DROP", player_id=lane_drop.id,
-            notes="Dropped when adding George Holani.",
-        ),
-        TransactionEvent(
-            group_id=holani_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=holani.id,
-            faab_amount=Decimal("0"), notes="Free add $0.",
-        ),
-        OwnershipEvent(
-            league_id=lg.id, player_id=lane_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
-            effective_at=HOLANI_LANE_AT, source_id=holani_source.id,
-            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=holani_group.id,
-            notes="Drop proves departure from roster, not current free agency.",
-        ),
-        OwnershipEvent(
-            league_id=lg.id, player_id=holani.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
-            event_type="ADDED", effective_at=HOLANI_LANE_AT, source_id=holani_source.id,
-            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=holani_group.id,
-            notes="ESPN free add $0 dropping Lane.",
-        ),
-        LineupAssignment(
-            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=holani.id,
-            slot="BN", placement="BENCH", effective_at=HOLANI_LANE_AT, source_id=holani_source.id,
-        ),
-    ])
-    session.add(FaabBalanceObservation(
-        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("90"),
-        observed_at=HOLANI_LANE_AT, source_id=holani_source.id,
-    ))
-
-
     for name, pos in NOT_MINE_UNKNOWN:
         _player(session, name, pos)
 
