@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-20T182000Z",
-  "generated_at": "2026-09-20T18:15:00Z",
-  "completed_at": "2026-09-20T18:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-20T192000Z",
+  "generated_at": "2026-09-20T19:15:00Z",
+  "completed_at": "2026-09-20T19:20:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "No material change vs prior. Saints RB Kendre Miller was a healthy scratch / inactive for Week 2 vs Ravens (Kamara active). Confirmed via official inactives. Status stable through 18:20Z; game complete or near.",
+      "summary": "No material change vs prior. Saints RB Kendre Miller was a healthy scratch / inactive for Week 2 vs Ravens (Kamara active). Confirmed via official inactives. Status stable through 19:20Z; early game complete or near.",
       "mongo_impact": "OWNED on Mongo bench. Zero Week 2 production locked. Role uncertainty beyond Week 2; HOLD for now as depth but monitor post-game usage signals. Intelligence-only; no ownership change.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -54,21 +54,21 @@
       "player": "Kaelon Black",
       "team": "SF",
       "signal_type": "injury",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "No material change vs prior. 49ers RB Kaelon Black (groin) remains officially QUESTIONABLE; Adam Schefter + multiple sources continue EXPECTED TO PLAY vs Dolphins (4:25p ET). Inactives still pending (~90 min pre-kick). Status stable through 18:20Z.",
-      "mongo_impact": "OWNED on Mongo bench. Expected-to-play lean reaffirmed; HOLD. Intelligence-only; no ownership change.",
+      "status": "CONFIRMED_FACT",
+      "summary": "MATERIAL UPDATE: 49ers RB Kaelon Black (groin) officially ACTIVE for Week 2 vs Dolphins (4:25p ET). Confirmed via multiple official inactives reports and X (Niners Nation, Rotoworld, Nick Wagoner/ESPN). Upgraded from prior expected-to-play / Q designation.",
+      "mongo_impact": "OWNED on Mongo bench. Confirmed active; HOLD as depth behind CMC with positive game script potential. Intelligence-only; no ownership change.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Adam Schefter / ESPN", "Ian Rapoport", "Rotoworld", "DraftSharks", "49ers official injury report", "Kyle Shanahan", "X direct"]
+      "sources": ["Nick Wagoner / ESPN", "Rotoworld", "Niners Nation", "@49ersHQ_", "X direct official inactives"]
     },
     {
       "player": "George Holani",
       "team": "SEA",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Seahawks RB depth behind Jadarian Price with Zach Charbonnet on PUP. Limited projection role Week 2 vs Cardinals. No new material change through 18:20Z.",
+      "summary": "Seahawks RB depth behind Jadarian Price with Zach Charbonnet on PUP. Limited projection role Week 2 vs Cardinals. No new material change through 19:20Z.",
       "mongo_impact": "OWNED on Mongo bench (free add Sep 19, dropped Ja'Kobi Lane). Speculative depth hold. Intelligence-only.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -81,7 +81,7 @@
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Browns RB Dylan Sampson (knee) on injured reserve. Min 4 weeks, eligible Week 6. No new updates through 18:20Z.",
+      "summary": "Browns RB Dylan Sampson (knee) on injured reserve. Min 4 weeks, eligible Week 6. No new updates through 19:20Z.",
       "mongo_impact": "OWNED on Mongo IR. Continue HOLD; do not drop. No lineup impact.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -94,7 +94,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Official: Ravens WR Ja'Kobi Lane on injured reserve after wrist surgery. Min 4-game absence (eligible Week 6). Status stable; no timeline change through 18:20Z.",
+      "summary": "Official: Ravens WR Ja'Kobi Lane on injured reserve after wrist surgery. Min 4-game absence (eligible Week 6). Status stable; no timeline change through 19:20Z.",
       "mongo_impact": "DROPPED from Mongo roster Sat Sep 19 (Holani free add). Availability UNKNOWN (to waivers).",
       "recommendation": "N/A_DROPPED",
       "urgency": "NONE",
@@ -107,7 +107,7 @@
       "team": "IND",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Active Week 1. No new issues in Week 2 reports through 18:20Z.",
+      "summary": "Active Week 1. No new issues in Week 2 reports through 19:20Z.",
       "mongo_impact": "Keep in FLEX.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -120,7 +120,7 @@
       "team": "CLE",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Filled receiving-back role Week 1 after Sampson exit. Browns signed Jaleel McLaughlin; Sanders remains depth. No change through 18:20Z.",
+      "summary": "Filled receiving-back role Week 1 after Sampson exit. Browns signed Jaleel McLaughlin; Sanders remains depth. No change through 19:20Z.",
       "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2). Hold as CLE depth/handcuff.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -133,7 +133,7 @@
       "team": "MIA",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 1 limited snaps. Depth WR. No new Week 2 role updates through 18:20Z.",
+      "summary": "Week 1 limited snaps. Depth WR. No new Week 2 role updates through 19:20Z.",
       "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2). Speculative depth hold.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -146,7 +146,7 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Clean for Hurts and Andrews. No issues through 18:20Z.",
+      "summary": "Clean for Hurts and Andrews. No issues through 19:20Z.",
       "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -159,7 +159,7 @@
       "team": "BAL",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Zay Flowers (hamstring) officially OUT for Week 2 vs Saints. With Ja'Kobi Lane on IR, Bateman is clear primary outside WR. Status stable through 18:20Z; 1pm game in progress or complete.",
+      "summary": "Zay Flowers (hamstring) officially OUT for Week 2 vs Saints. With Ja'Kobi Lane on IR, Bateman is clear primary outside WR. Status stable through 19:20Z; 1pm game in progress or complete.",
       "mongo_impact": "OWNED on Mongo bench (free add Sep 17). Elevated FLEX/stream consideration confirmed. Intelligence-only; no ownership change.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "HIGH",
@@ -184,29 +184,35 @@
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "No material change vs prior 16:20Z. Kendre Miller inactive (healthy scratch) already captured — zero Week 2 value. Kaelon Black expected to play (Schefter) despite Q — inactives pending for 4:25p game. Zay Flowers OUT elevates Bateman (already captured). Keep current Mongo starters as baseline. Bench Black (expected), Miller (inactive), Ray Davis, Holani, Bell, Sanders. Sampson IR stable. No new injury signals through 18:20Z.",
-      "recommendation": "CONSIDER elevating Bateman to FLEX; HOLD Black (expected play); NOTE Miller inactive; MONITOR rest of current set",
+      "summary": "Material update: Kaelon Black officially ACTIVE (confirmed via official inactives). Kendre Miller inactive (healthy scratch) already captured — zero Week 2 value. Zay Flowers OUT elevates Bateman (already captured). Keep current Mongo starters as baseline. Bench Black (now confirmed active), Miller (inactive), Ray Davis, Holani, Bell, Sanders. Sampson IR stable. No other new injury signals on owned players through 19:20Z.",
+      "recommendation": "CONSIDER elevating Bateman to FLEX; HOLD Black (confirmed active); NOTE Miller inactive; MONITOR rest of current set",
       "urgency": "MONITOR",
       "confidence": "HIGH"
     }
   ],
   "expert_signals": [
     {
-      "topic": "No material change: Kendre Miller inactive already captured; Kaelon Black expected-to-play reaffirmed; Zay Flowers OUT (elevates Bateman) already captured; Lane IR + Sampson IR stable",
+      "topic": "Kaelon Black ACTIVE confirmed; Kendre Miller inactive already captured; Zay Flowers OUT elevates Bateman already captured; Lane IR + Sampson IR stable",
       "status": "CONFIRMED_FACT",
-      "summary": "No material owned-player shifts through 18:20Z vs prior Pulse. Miller inactive, Black expected, Bateman elevated role, IR statuses stable. Intelligence-only.",
-      "mongo_impact": "Miller (owned bench) zero Week 2. Black (owned bench) expected active. Bateman (owned bench) elevated. Intelligence-only; no ownership change.",
+      "summary": "Material owned-player update: Black officially active for 4:25p game (up from expected). Miller inactive, Bateman elevated role, IR statuses stable. Intelligence-only.",
+      "mongo_impact": "Miller (owned bench) zero Week 2. Black (owned bench) confirmed active. Bateman (owned bench) elevated. Intelligence-only; no ownership change.",
       "recommendation": "CONSIDER START Bateman in FLEX; HOLD Black; HOLD Miller (monitor post-game); MONITOR",
       "urgency": "MONITOR",
       "confidence": "HIGH",
-      "sources": ["nola.com", "CBS Sports", "Adam Schefter / ESPN", "Ian Rapoport", "Rotoworld", "DraftSharks", "Jamison Hensley / ESPN", "BaltimoreRavens.com", "X direct"]
+      "sources": ["nola.com", "CBS Sports", "Nick Wagoner / ESPN", "Rotoworld", "Niners Nation", "Jamison Hensley / ESPN", "BaltimoreRavens.com", "X direct"]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "player": "Kaelon Black",
+      "change": "Officially ACTIVE for Week 2 vs Dolphins (previously QUESTIONABLE / expected-to-play; inactives pending). Confirmed CONFIRMED_FACT via official sources.",
+      "impact": "Owned bench player now confirmed available; no lineup change recommended beyond HOLD."
+    }
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-20T162000Z",
-    "completed_at": "2026-09-20T16:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-20T182000Z",
+    "completed_at": "2026-09-20T18:20:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +221,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~2:20 PM ET / 18:20Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~3:20 PM ET / 19:20Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 16:20Z. Miller inactive, Black expected-to-play, Flowers OUT/Bateman elevated, Lane+Sampson IR already captured. Roster_context unchanged. Intelligence-only refresh."
+    "Material change: Kaelon Black confirmed ACTIVE. Miller inactive, Flowers OUT/Bateman elevated, Lane+Sampson IR already captured. Roster_context unchanged. Intelligence-only refresh."
   ]
 }
