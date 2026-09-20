@@ -629,4 +629,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-09-17",
         "faab_amount": 0,
     },
+    {
+        "description": "2026-09-19 ET ADD_DROP George Holani $0 + DROP Ja'Kobi Lane (ESPN activity 8:28 pm)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "add",
+        "added_player": "George Holani",
+        "dropped_player": "Ja'Kobi Lane",
+        "calendar_day_ET": "2026-09-19",
+        "faab_amount": 0,
+    },
 ]
