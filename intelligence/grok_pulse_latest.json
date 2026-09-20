@@ -1,1 +1,222 @@
-{"league": "mongo", "espn_league_id": "1470431049", "espn_team_id": 2, "team": "Tom Brady of Ass / JDD", "pulse_id": "mongo-grok-pulse-2026-09-20T143000Z", "generated_at": "2026-09-20T14:28:00Z", "completed_at": "2026-09-20T14:30:00Z", "week": 2, "season": 2026, "run_type": "hourly_refresh", "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "OK", "experts": "OK", "analytics": "LIMITED"}, "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false}, "roster_context": {"source": "Mongo repository current state as of 2026-09-18 Live Check (Rashod Bateman $0 free add + Emari Demercado drop; FAAB $90; prior Bell/Sanders Sep 16; Sampson IR)", "faab_remaining": 90, "starters_week_1": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"], "bench": ["Kaelon Black", "Ray Davis", "Ja'Kobi Lane", "Kendre Miller", "Chris Bell", "Raheim Sanders", "Rashod Bateman"], "ir": ["Dylan Sampson"]}, "watchlist_status": {"repository_waiver_watch_rows": 0, "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."}, "player_signals": [{"player": "Kaelon Black", "team": "SF", "signal_type": "injury", "status": "ATTRIBUTED_REPORT", "summary": "No material change vs prior. 49ers RB Kaelon Black (groin) remains officially QUESTIONABLE; Adam Schefter + multiple sources (Rotoworld, DraftSharks, X) continue EXPECTED TO PLAY vs Dolphins (4:25p ET). No inactive list yet (inactives ~90 min pre-kick). Status stable through 14:30Z.", "mongo_impact": "OWNED on Mongo bench. Expected-to-play lean reaffirmed; HOLD. Intelligence-only; no ownership change.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Adam Schefter / ESPN", "Tom Pelissero", "Ian Rapoport", "Rotoworld", "DraftSharks", "49ers official injury report", "Kyle Shanahan", "X direct"]}, {"player": "Ja'Kobi Lane", "team": "BAL", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Official: Ravens WR Ja'Kobi Lane on injured reserve after wrist surgery. Min 4-game absence (eligible Week 6). Status stable; no timeline change through 14:30Z.", "mongo_impact": "OWNED on Mongo bench. Official NFL IR confirmed. Continue HOLD; do not drop. Intelligence-only.", "recommendation": "HOLD", "urgency": "HIGH", "confidence": "HIGH", "availability": "OWNED", "sources": ["@NFL official", "@ESPNNFL", "Ravens team announcement", "Jesse Minter"]}, {"player": "Dylan Sampson", "team": "CLE", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Browns RB Dylan Sampson (knee) on injured reserve. Min 4 weeks, eligible Week 6. No new updates through 14:30Z.", "mongo_impact": "OWNED on Mongo IR. Continue HOLD; do not drop. No lineup impact.", "recommendation": "HOLD", "urgency": "HIGH", "confidence": "HIGH", "availability": "OWNED", "sources": ["@Browns official", "Daniel Oyefusi / ESPN", "Adam Schefter"]}, {"player": "Kendre Miller", "team": "NO", "signal_type": "usage", "status": "ATTRIBUTED_REPORT", "summary": "Alvin Kamara (knee) off injury report and will play Week 2 vs Ravens. Miller role expected to shrink. No new material change through 14:30Z.", "mongo_impact": "OWNED on bench. Monitor Week 2 snap share with Kamara active. Reduced standalone upside expected.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Kellen Moore", "Katherine Terrell / ESPN", "Ari Meirov", "NBC Sports"]}, {"player": "Emari Demercado", "team": "DAL", "signal_type": "role", "status": "CONFIRMED_FACT", "summary": "Primary backup to Javonte Williams with Davis on IR. Limited usage Week 1. No material change through 14:30Z.", "mongo_impact": "DROPPED from Mongo roster Thu Sep 17 (Bateman free add). Availability UNKNOWN.", "recommendation": "N/A_DROPPED", "urgency": "MONITOR", "confidence": "HIGH", "availability": "UNKNOWN", "sources": ["Todd Archer", "Aaron Wilson", "ESPN"]}, {"player": "Josh Downs", "team": "IND", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Active Week 1. No new issues in Week 2 reports through 14:30Z.", "mongo_impact": "Keep in FLEX.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["NFL.com Colts inactives", "NBC Sports"]}, {"player": "Raheim Sanders", "team": "CLE", "signal_type": "role", "status": "CONFIRMED_FACT", "summary": "Filled receiving-back role Week 1 after Sampson exit. Browns signed Jaleel McLaughlin; Sanders remains depth. No change through 14:30Z.", "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2). Hold as CLE depth/handcuff.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Daniel Oyefusi / ESPN", "NBC Sports", "DraftSharks"]}, {"player": "Chris Bell", "team": "MIA", "signal_type": "role", "status": "CONFIRMED_FACT", "summary": "Week 1 limited snaps. Depth WR. No new Week 2 role updates through 14:30Z.", "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2). Speculative depth hold.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "MEDIUM", "availability": "OWNED", "sources": ["FantasyPros", "NBC Sports"]}, {"player": "Jalen Hurts", "team": "PHI", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Clean for Hurts and Andrews. No issues through 14:30Z.", "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["CBS Sports injury tracker", "Eagles official"]}, {"player": "Rashod Bateman", "team": "BAL", "signal_type": "role", "status": "CONFIRMED_FACT", "summary": "Zay Flowers (hamstring) remains officially OUT for Week 2 vs Saints. With Ja'Kobi Lane on IR, Bateman is clear primary outside WR. Status stable through 14:30Z.", "mongo_impact": "OWNED on Mongo bench (free add Sep 17). Elevated FLEX/stream consideration confirmed. Intelligence-only; no ownership change.", "recommendation": "HOLD / CONSIDER START in FLEX", "urgency": "HIGH", "confidence": "HIGH", "availability": "OWNED", "sources": ["Jamison Hensley / ESPN", "Brian Wacker / Baltimore Sun", "BaltimoreRavens.com", "@ESPNNFL", "X direct"]}], "waiver_signals": [{"player": "generic_watch_only", "availability": "UNKNOWN", "status": "SPECULATION", "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority.", "mongo_impact": "Do not spend FAAB from this Pulse.", "recommendation": "NONE", "urgency": "NONE", "confidence": "HIGH", "sources": ["AGENTS.md ownership rules", "Mongo repository waiver-watch empty"]}], "lineup_signals": [{"week": 2, "summary": "No material change vs prior 13:15Z. Kaelon Black expected to play (Schefter et al.) despite official Q — positive for owned bench depth. Zay Flowers officially OUT elevates owned Bateman to primary Ravens outside WR. Consider Bateman for FLEX start. Keep current Mongo starters as baseline otherwise. Bench Black (expected active), Miller (Kamara will play), Ray Davis, Lane (official NFL IR), Bell, Sanders. Sampson on NFL IR + Mongo IR. No new injury signals on Downs, Bell, Sanders, Hurts through 14:30Z.", "recommendation": "CONSIDER elevating Bateman to FLEX; HOLD Black (expected play); MONITOR rest of current set", "urgency": "HIGH", "confidence": "HIGH"}], "expert_signals": [{"topic": "Kaelon Black expected to play reaffirmed; Zay Flowers official OUT (elevates Bateman); Lane IR + Sampson IR stable; Kamara will-play confirmed", "status": "ATTRIBUTED_REPORT", "summary": "No material change vs 13:15Z. 49ers RB Kaelon Black (groin) expected to play Sunday despite QUESTIONABLE (Schefter + Rotoworld/DraftSharks + X). Official designation remains Q; no inactive yet. Ravens WR Zay Flowers remains officially OUT. Lane official IR and Sampson IR stable. Saints: Kamara will play confirmed. No other owned-player material shifts through 14:30Z.", "mongo_impact": "Black (owned bench) expected active — positive depth signal. Bateman (owned bench) continues elevated role — consider for FLEX. Lane official NFL IR (owned on Mongo bench). Intelligence-only; no ownership change.", "recommendation": "CONSIDER START Bateman in FLEX; HOLD Black; MONITOR", "urgency": "HIGH", "confidence": "HIGH", "sources": ["Adam Schefter / ESPN", "Tom Pelissero", "Ian Rapoport", "Rotoworld", "DraftSharks", "Jamison Hensley / ESPN", "Brian Wacker / Baltimore Sun", "49ers official game status", "BaltimoreRavens.com"]}], "material_changes": [], "no_material_change": true, "prior_pulse": {"pulse_id": "mongo-grok-pulse-2026-09-20T131500Z", "completed_at": "2026-09-20T13:15:00Z"}, "prime_watch_handoff": {"canonical_feed": "intelligence/grok_pulse_latest.json", "history": "intelligence/grok_pulse_history.jsonl", "consumer": "Prime Mongo Fantasy Watch", "duplicate_pulse_path": false}, "notes": ["~10:30 AM ET / 14:30Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.", "Sparta, NFL-DFS, and prop-betting repos not read or written.", "No material change vs prior 13:15Z. Black expected-to-play lean reaffirmed; Flowers OUT (elevates Bateman) already captured; Lane IR + Sampson IR stable; Kamara will-play confirmed. Intelligence-only refresh."]}
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-09-20T152500Z",
+  "generated_at": "2026-09-20T15:23:00Z",
+  "completed_at": "2026-09-20T15:25:00Z",
+  "week": 2,
+  "season": 2026,
+  "run_type": "hourly_refresh",
+  "source_status": {
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
+    "x_direct": "OK",
+    "experts": "OK",
+    "analytics": "LIMITED"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Mongo repository current state as of 2026-09-20 Live Check (George Holani $0 free add + Ja'Kobi Lane drop Sat Sep 19; prior Bateman $0 free add + Emari Demercado drop; FAAB $90; prior Bell/Sanders Sep 16; Sampson IR)",
+    "faab_remaining": 90,
+    "starters_week_1": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
+    "bench": ["Kaelon Black", "Ray Davis", "George Holani", "Kendre Miller", "Chris Bell", "Raheim Sanders", "Rashod Bateman"],
+    "ir": ["Dylan Sampson"]
+  },
+  "watchlist_status": {
+    "repository_waiver_watch_rows": 0,
+    "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."
+  },
+  "player_signals": [
+    {
+      "player": "Kaelon Black",
+      "team": "SF",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "No material change vs prior. 49ers RB Kaelon Black (groin) remains officially QUESTIONABLE; Adam Schefter + multiple sources (Rotoworld, DraftSharks, X) continue EXPECTED TO PLAY vs Dolphins (4:25p ET). No inactive list yet (inactives ~90 min pre-kick). Status stable through 15:25Z.",
+      "mongo_impact": "OWNED on Mongo bench. Expected-to-play lean reaffirmed; HOLD. Intelligence-only; no ownership change.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Adam Schefter / ESPN", "Tom Pelissero", "Ian Rapoport", "Rotoworld", "DraftSharks", "49ers official injury report", "Kyle Shanahan", "X direct"]
+    },
+    {
+      "player": "George Holani",
+      "team": "SEA",
+      "signal_type": "role",
+      "status": "CONFIRMED_FACT",
+      "summary": "Seahawks RB depth behind Jadarian Price with Zach Charbonnet on PUP. Limited projection role Week 2 vs Cardinals (Drew Lock starting). No new material change through 15:25Z.",
+      "mongo_impact": "OWNED on Mongo bench (free add Sep 19, dropped Ja'Kobi Lane). Speculative depth hold. Intelligence-only.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": ["NBC Sports", "Footballguys", "X direct", "ESPN activity"]
+    },
+    {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Browns RB Dylan Sampson (knee) on injured reserve. Min 4 weeks, eligible Week 6. No new updates through 15:25Z.",
+      "mongo_impact": "OWNED on Mongo IR. Continue HOLD; do not drop. No lineup impact.",
+      "recommendation": "HOLD",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["@Browns official", "Daniel Oyefusi / ESPN", "Adam Schefter"]
+    },
+    {
+      "player": "Kendre Miller",
+      "team": "NO",
+      "signal_type": "usage",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Alvin Kamara (knee) off injury report and will play Week 2 vs Ravens. Miller role expected to shrink. No new material change through 15:25Z.",
+      "mongo_impact": "OWNED on bench. Monitor Week 2 snap share with Kamara active. Reduced standalone upside expected.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Kellen Moore", "Katherine Terrell / ESPN", "Ari Meirov", "NBC Sports"]
+    },
+    {
+      "player": "Ja'Kobi Lane",
+      "team": "BAL",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Official: Ravens WR Ja'Kobi Lane on injured reserve after wrist surgery. Min 4-game absence (eligible Week 6). Status stable; no timeline change through 15:25Z.",
+      "mongo_impact": "DROPPED from Mongo roster Sat Sep 19 (Holani free add). Availability UNKNOWN (to waivers).",
+      "recommendation": "N/A_DROPPED",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": ["@NFL official", "@ESPNNFL", "Ravens team announcement", "Jesse Minter"]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Active Week 1. No new issues in Week 2 reports through 15:25Z.",
+      "mongo_impact": "Keep in FLEX.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["NFL.com Colts inactives", "NBC Sports"]
+    },
+    {
+      "player": "Raheim Sanders",
+      "team": "CLE",
+      "signal_type": "role",
+      "status": "CONFIRMED_FACT",
+      "summary": "Filled receiving-back role Week 1 after Sampson exit. Browns signed Jaleel McLaughlin; Sanders remains depth. No change through 15:25Z.",
+      "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2). Hold as CLE depth/handcuff.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Daniel Oyefusi / ESPN", "NBC Sports", "DraftSharks"]
+    },
+    {
+      "player": "Chris Bell",
+      "team": "MIA",
+      "signal_type": "role",
+      "status": "CONFIRMED_FACT",
+      "summary": "Week 1 limited snaps. Depth WR. No new Week 2 role updates through 15:25Z.",
+      "mongo_impact": "OWNED on bench (2026-09-16 waiver add $2). Speculative depth hold.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": ["FantasyPros", "NBC Sports"]
+    },
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Clean for Hurts and Andrews. No issues through 15:25Z.",
+      "mongo_impact": "Locked QB and TE starts. Eagles D/ST start.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["CBS Sports injury tracker", "Eagles official"]
+    },
+    {
+      "player": "Rashod Bateman",
+      "team": "BAL",
+      "signal_type": "role",
+      "status": "CONFIRMED_FACT",
+      "summary": "Zay Flowers (hamstring) remains officially OUT for Week 2 vs Saints. With Ja'Kobi Lane on IR, Bateman is clear primary outside WR. Status stable through 15:25Z.",
+      "mongo_impact": "OWNED on Mongo bench (free add Sep 17). Elevated FLEX/stream consideration confirmed. Intelligence-only; no ownership change.",
+      "recommendation": "HOLD / CONSIDER START in FLEX",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["Jamison Hensley / ESPN", "Brian Wacker / Baltimore Sun", "BaltimoreRavens.com", "@ESPNNFL", "X direct"]
+    }
+  ],
+  "waiver_signals": [
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": ["AGENTS.md ownership rules", "Mongo repository waiver-watch empty"]
+    }
+  ],
+  "lineup_signals": [
+    {
+      "week": 2,
+      "summary": "No material change vs prior 14:30Z. Kaelon Black expected to play (Schefter et al.) despite official Q — positive for owned bench depth. Zay Flowers officially OUT elevates owned Bateman to primary Ravens outside WR. Consider Bateman for FLEX start. Keep current Mongo starters as baseline otherwise. Bench Black (expected active), Miller (Kamara will play), Ray Davis, Holani (SEA depth), Bell, Sanders. Sampson on NFL IR + Mongo IR. No new injury signals on Downs, Bell, Sanders, Hurts through 15:25Z.",
+      "recommendation": "CONSIDER elevating Bateman to FLEX; HOLD Black (expected play); MONITOR rest of current set",
+      "urgency": "HIGH",
+      "confidence": "HIGH"
+    }
+  ],
+  "expert_signals": [
+    {
+      "topic": "Kaelon Black expected to play reaffirmed; Zay Flowers official OUT (elevates Bateman); Lane IR + Sampson IR stable; Kamara will-play confirmed; Holani depth",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "No material change vs 14:30Z. 49ers RB Kaelon Black (groin) expected to play Sunday despite QUESTIONABLE (Schefter + Rotoworld/DraftSharks + X). Official designation remains Q; no inactive yet. Ravens WR Zay Flowers remains officially OUT. Lane official IR and Sampson IR stable. Saints: Kamara will play confirmed. Holani SEA depth with Lock starting. No other owned-player material shifts through 15:25Z.",
+      "mongo_impact": "Black (owned bench) expected active — positive depth signal. Bateman (owned bench) continues elevated role — consider for FLEX. Holani (owned bench) depth hold. Intelligence-only; no ownership change.",
+      "recommendation": "CONSIDER START Bateman in FLEX; HOLD Black; MONITOR",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "sources": ["Adam Schefter / ESPN", "Tom Pelissero", "Ian Rapoport", "Rotoworld", "DraftSharks", "Jamison Hensley / ESPN", "Brian Wacker / Baltimore Sun", "49ers official game status", "BaltimoreRavens.com"]
+    }
+  ],
+  "material_changes": [],
+  "no_material_change": true,
+  "prior_pulse": {
+    "pulse_id": "mongo-grok-pulse-2026-09-20T143000Z",
+    "completed_at": "2026-09-20T14:30:00Z"
+  },
+  "prime_watch_handoff": {
+    "canonical_feed": "intelligence/grok_pulse_latest.json",
+    "history": "intelligence/grok_pulse_history.jsonl",
+    "consumer": "Prime Mongo Fantasy Watch",
+    "duplicate_pulse_path": false
+  },
+  "notes": [
+    "~11:25 AM ET / 15:25Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "Sparta, NFL-DFS, and prop-betting repos not read or written.",
+    "No material change vs prior 14:30Z. Black expected-to-play lean reaffirmed; Flowers OUT (elevates Bateman) already captured; Lane IR + Sampson IR stable; Kamara will-play confirmed. Roster_context refreshed for Sep 19 Holani add / Lane drop. Intelligence-only refresh."
+  ]
+}
