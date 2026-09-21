@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T155000Z",
-  "generated_at": "2026-09-21T15:45:00Z",
-  "completed_at": "2026-09-21T15:50:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-21T164500Z",
+  "generated_at": "2026-09-21T16:40:00Z",
+  "completed_at": "2026-09-21T16:45:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "IND",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Already locked; no further early-Monday updates.",
+      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Already locked; no further mid-Monday updates.",
       "mongo_impact": "OWNED starter/FLEX. Positive Week 2 production confirms role.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -55,7 +55,7 @@
       "team": "BAL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Already captured. No further updates mid-Monday.",
+      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Already captured. No further updates mid-Monday; Flowers Week 3 status TBD (practice reports start mid-week).",
       "mongo_impact": "OWNED on Mongo bench. Strong production validates elevated role while Flowers sidelined. HOLD / FLEX candidate Week 3 if Flowers limited.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -192,9 +192,9 @@
   ],
   "expert_signals": [
     {
-      "topic": "Mid-Monday ~11:50 AM ET into MNF window; Nacua status unchanged; no new elevated roles for Mongo depth",
+      "topic": "Mid-Monday ~12:40 PM ET into MNF window; Nacua status unchanged; no new elevated roles for Mongo depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed with Monday testing optimism. Nacua (hip/groin) remains trending toward sit for MNF per Schefter/Rapoport; no mid-Monday status change as of ~11:50 AM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
+      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed with Monday testing optimism. Nacua (hip/groin) remains trending toward sit for MNF per Schefter/Rapoport; no mid-Monday status change as of ~12:40 PM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers) + MNF Nacua status",
       "urgency": "MONITOR",
@@ -205,8 +205,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T144500Z",
-    "completed_at": "2026-09-21T14:45:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T155000Z",
+    "completed_at": "2026-09-21T15:50:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~11:50 AM ET / 15:50Z mid-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~12:40 PM ET / 16:40Z mid-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 14:45Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
+    "No material change vs prior 15:50Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
   ]
 }
