@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T041500Z",
-  "generated_at": "2026-09-21T04:10:00Z",
-  "completed_at": "2026-09-21T04:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-21T061000Z",
+  "generated_at": "2026-09-21T06:05:00Z",
+  "completed_at": "2026-09-21T06:10:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,13 +42,13 @@
       "team": "IND",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Confirmed solid involvement after prior near-final ~5/61.",
-      "mongo_impact": "OWNED starter/FLEX. Positive Week 2 production confirms role; final box locked.",
+      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Already locked in prior pulse; no further updates overnight.",
+      "mongo_impact": "OWNED starter/FLEX. Positive Week 2 production confirms role.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["FOX Sports gamelog", "X direct", "CBS Sports"]
+      "sources": ["FOX Sports gamelog", "X direct", "CBS Sports", "RotoWire"]
     },
     {
       "player": "Rashod Bateman",
@@ -68,7 +68,7 @@
       "team": "SF",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final vs Dolphins: 7 carries for 25 yards (leading Niners rusher by yards). Active as expected; complementary role to CMC. Game final SF 35-13.",
+      "summary": "Week 2 final vs Dolphins: 7 carries for 25 yards (leading Niners rusher by yards). Active as expected; complementary role to CMC. Game final SF 35-13. Already logged.",
       "mongo_impact": "OWNED on Mongo bench. Confirmed limited but involved usage. HOLD as CMC handcuff/depth.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -81,20 +81,20 @@
       "team": "SEA",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final vs Cardinals (SEA 31-7): limited role ~4 carries 13 yards + 1 reception. Jadarian Price chest injury X-rays negative (reaffirmed); Holani not elevated to lead.",
+      "summary": "Week 2 final vs Cardinals (SEA 31-7): limited role ~4 carries 13 yards + 1 reception. Jadarian Price chest injury X-rays negative (reaffirmed); Holani not elevated to lead. Already logged.",
       "mongo_impact": "OWNED on Mongo bench (free add Sep 19). Speculative depth; monitor Week 3 Price status.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
-      "sources": ["ESPN recap", "Seattle Times", "X direct"]
+      "sources": ["ESPN recap", "Seattle Times", "X direct", "FantasyPros"]
     },
     {
       "player": "Chris Bell",
       "team": "MIA",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final vs 49ers: 0 receptions on 1 target. Limited snaps in loss.",
+      "summary": "Week 2 final vs 49ers: 0 receptions on 1 target. Limited snaps in loss. Already logged.",
       "mongo_impact": "OWNED on Mongo bench. Speculative depth hold; low usage continues.",
       "recommendation": "HOLD",
       "urgency": "LOW",
@@ -120,7 +120,7 @@
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "On IR (knee). Min 4 weeks, eligible Week 6. No new updates.",
+      "summary": "On IR (knee). Min 4 weeks, eligible Week 6. No new updates overnight.",
       "mongo_impact": "OWNED on Mongo IR. HOLD; do not drop.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -146,7 +146,7 @@
       "team": "CLE",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "Depth RB. No material Week 2 update beyond expected limited role.",
+      "summary": "Depth RB. No material Week 2 or overnight update beyond expected limited role.",
       "mongo_impact": "OWNED on bench. Hold as CLE depth.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -173,7 +173,7 @@
       "player": "generic_watch_only",
       "availability": "UNKNOWN",
       "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide injuries (Daniels dislocated elbow, Williams hamstring, Reed neck, Nacua hip/groin trending out for MNF) may create future waiver opportunities but none confirmed free agents for Mongo.",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide injuries (Daniels dislocated elbow, Williams hamstring, Reed neck, Nacua hip/groin still trending toward sit for MNF) may create future waiver opportunities but none confirmed free agents for Mongo.",
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -184,7 +184,7 @@
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "All Sunday games final including SNF (Downs 7/72 confirmed). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. MNF (Nacua trending out) pending. No lineup changes. Monitor Week 3: Price status for Holani, Flowers for Bateman.",
+      "summary": "All Sunday games final including SNF (Downs 7/72 confirmed). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. MNF (Nacua still trending out) pending ~8:15p ET. No lineup changes. Monitor Week 3: Price status for Holani, Flowers for Bateman.",
       "recommendation": "HOLD current; Bateman FLEX candidate Week 3 if Flowers out; Black/Holani/Ray Davis depth holds",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -192,9 +192,9 @@
   ],
   "expert_signals": [
     {
-      "topic": "Week 2 SNF final + MNF Nacua status; no new elevated roles for Mongo depth",
+      "topic": "Overnight post-SNF; MNF Nacua status unchanged; no new elevated roles for Mongo depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Downs final 7/72. Price X-rays negative reaffirmed. Nacua (hip/groin) trending toward sit for MNF per Schefter/Glazer. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
+      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed. Nacua (hip/groin) remains trending toward sit for MNF per prior Schefter/Glazer reporting; no overnight status change. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers) + MNF Nacua status",
       "urgency": "MONITOR",
@@ -202,11 +202,11 @@
       "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire", "Seattle Times"]
     }
   ],
-  "material_changes": ["Josh Downs Week 2 SNF final production confirmed 7 receptions, 72 yards (upgrade from prior near-final ~5/61)"],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T032000Z",
-    "completed_at": "2026-09-21T03:20:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T041500Z",
+    "completed_at": "2026-09-21T04:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~12:15 AM ET / 04:15Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~2:06 AM ET / 06:10Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "SNF final: Downs 7/72 confirmed (material upgrade). Price X-rays negative reaffirmed. MNF Nacua trending out (non-roster). All other owned production already logged."
+    "No material change vs prior 04:15Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
   ]
 }
