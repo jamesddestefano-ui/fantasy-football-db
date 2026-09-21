@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T201000Z",
-  "generated_at": "2026-09-21T20:05:00Z",
-  "completed_at": "2026-09-21T20:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-21T211500Z",
+  "generated_at": "2026-09-21T21:10:00Z",
+  "completed_at": "2026-09-21T21:15:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -107,13 +107,13 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Healthy scratch / inactive Week 2 vs Ravens with Kamara active. Zero production. Already captured.",
+      "summary": "Healthy scratch / inactive Week 2 vs Ravens with Kamara active. Zero production. Already captured. Monday coach explanation of RB usage non-material.",
       "mongo_impact": "OWNED on Mongo bench. Role uncertainty persists; HOLD as depth, monitor Week 3.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["nola.com", "CBS Sports", "Saints official"]
+      "sources": ["nola.com", "CBS Sports", "Saints official", "X direct"]
     },
     {
       "player": "Dylan Sampson",
@@ -173,7 +173,7 @@
       "player": "generic_watch_only",
       "availability": "UNKNOWN",
       "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide: Caleb Williams hamstring week-to-week (coach Monday: unlikely practice this week, not ruled out Week 3); Jayden Daniels dislocated elbow (Mariota to start Week 3); Nacua hip still trending toward sit for MNF (game-time, Schefter/Rapoport); Price shoulder 'nothing serious'. None confirmed free agents for Mongo.",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide: Caleb Williams hamstring week-to-week; Jayden Daniels dislocated elbow (Mariota Week 3); Nacua hip still trending toward sit for MNF (game-time, Schefter/Rapoport as of ~5 PM ET); Price shoulder 'nothing serious'. None confirmed free agents for Mongo.",
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -192,21 +192,21 @@
   ],
   "expert_signals": [
     {
-      "topic": "Late-Monday ~4:00 PM ET pre-MNF; Price shoulder clarification (positive, already logged); Flowers good shot Week 3; Nacua status unchanged; Williams coach update",
+      "topic": "~5:00–5:15 PM ET pre-MNF; no new material Mongo roster updates; Price/Flowers/Nacua status stable",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Downs final 7/72 already locked. Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua (hip/groin) remains trending toward sit for MNF per Schefter/Rapoport as of late afternoon ET. Caleb Williams HC Ben Johnson: unlikely practice this week, not ruled out for Week 3, 'somewhat encouraging' — non-roster intelligence only. No new expert upgrades material to Mongo roster.",
+      "summary": "Downs final 7/72 already locked. Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua (hip/groin) remains trending toward sit for MNF per Schefter/Rapoport. No new expert upgrades material to Mongo roster. Kendre Miller inactive explanation already captured.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers) + MNF Nacua status",
       "urgency": "MONITOR",
       "confidence": "HIGH",
-      "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire", "Tom Pelissero", "Adam Schefter", "Ian Rapoport", "Seattle Times", "Field Gulls", "Newsweek", "Courtney Cronin", "Ben Johnson"]
+      "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire", "Tom Pelissero", "Adam Schefter", "Ian Rapoport", "Seattle Times", "Field Gulls", "Newsweek", "nola.com"]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T191500Z",
-    "completed_at": "2026-09-21T19:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T201000Z",
+    "completed_at": "2026-09-21T20:10:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~4:10 PM ET / 20:10Z late-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~5:15 PM ET / 21:15Z late-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 19:15Z for Mongo-owned players. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Price/Flowers/Nacua/Williams updates non-material or non-roster."
+    "No material change vs prior 20:10Z for Mongo-owned players. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Price/Flowers/Nacua/Williams updates non-material or non-roster."
   ]
 }
