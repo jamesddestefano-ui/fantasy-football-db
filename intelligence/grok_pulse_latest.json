@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T111500Z",
-  "generated_at": "2026-09-21T11:10:00Z",
-  "completed_at": "2026-09-21T11:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-21T123500Z",
+  "generated_at": "2026-09-21T12:30:00Z",
+  "completed_at": "2026-09-21T12:35:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -192,21 +192,21 @@
   ],
   "expert_signals": [
     {
-      "topic": "Early Monday ~7 AM ET into MNF window; Nacua status unchanged; no new elevated roles for Mongo depth",
+      "topic": "Early Monday ~8:30 AM ET into MNF window; Nacua status unchanged; no new elevated roles for Mongo depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed with Monday testing optimism. Nacua (hip/groin) remains trending toward sit for MNF per prior Schefter reporting; no early-Monday status change as of ~7 AM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
+      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed with Monday testing optimism (Pelissero). Nacua (hip/groin) remains trending toward sit for MNF per prior Schefter reporting; no early-Monday status change as of ~8:30 AM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers) + MNF Nacua status",
       "urgency": "MONITOR",
       "confidence": "HIGH",
-      "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire", "Seattle Times", "Field Gulls"]
+      "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire", "Seattle Times", "Field Gulls", "The Ringer"]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T100500Z",
-    "completed_at": "2026-09-21T10:05:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T111500Z",
+    "completed_at": "2026-09-21T11:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~7:15 AM ET / 11:15Z early-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~8:35 AM ET / 12:35Z early-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 10:05Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
+    "No material change vs prior 11:15Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
   ]
 }
