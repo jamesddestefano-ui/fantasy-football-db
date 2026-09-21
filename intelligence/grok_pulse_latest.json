@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T080500Z",
-  "generated_at": "2026-09-21T08:00:00Z",
-  "completed_at": "2026-09-21T08:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-21T100500Z",
+  "generated_at": "2026-09-21T10:00:00Z",
+  "completed_at": "2026-09-21T10:05:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "IND",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Already locked; no further overnight updates.",
+      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Already locked; no further overnight or early-Monday updates.",
       "mongo_impact": "OWNED starter/FLEX. Positive Week 2 production confirms role.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -55,7 +55,7 @@
       "team": "BAL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Already captured. No further updates overnight.",
+      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Already captured. No further updates overnight/early Monday.",
       "mongo_impact": "OWNED on Mongo bench. Strong production validates elevated role while Flowers sidelined. HOLD / FLEX candidate Week 3 if Flowers limited.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -81,13 +81,13 @@
       "team": "SEA",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final vs Cardinals (SEA 31-7): limited role ~4 carries 13 yards + 1 reception. Jadarian Price chest injury X-rays negative (reaffirmed overnight); Holani not elevated to lead. Already logged.",
+      "summary": "Week 2 final vs Cardinals (SEA 31-7): limited role ~4 carries 13 yards + 1 reception. Jadarian Price chest injury X-rays negative (reaffirmed); Holani not elevated to lead. Already logged. Price further testing Monday per reports; optimism no significant injury.",
       "mongo_impact": "OWNED on Mongo bench (free add Sep 19). Speculative depth; monitor Week 3 Price status.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
-      "sources": ["ESPN recap", "Seattle Times", "X direct", "FantasyPros", "CBS Sports"]
+      "sources": ["ESPN recap", "Seattle Times", "X direct", "FantasyPros", "CBS Sports", "Field Gulls"]
     },
     {
       "player": "Chris Bell",
@@ -120,7 +120,7 @@
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "On IR (knee). Min 4 weeks, eligible Week 6. No new updates overnight.",
+      "summary": "On IR (knee). Min 4 weeks, eligible Week 6. No new updates overnight/early Monday.",
       "mongo_impact": "OWNED on Mongo IR. HOLD; do not drop.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -184,7 +184,7 @@
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "All Sunday games final including SNF (Downs 7/72 confirmed). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. MNF (Nacua still trending toward sit per Schefter) pending ~8:15p ET. No lineup changes. Monitor Week 3: Price status for Holani, Flowers for Bateman.",
+      "summary": "All Sunday games final including SNF (Downs 7/72 confirmed). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. MNF (Nacua still trending toward sit per Schefter, pre-game decision) pending ~8:15p ET. No lineup changes. Monitor Week 3: Price status for Holani, Flowers for Bateman.",
       "recommendation": "HOLD current; Bateman FLEX candidate Week 3 if Flowers out; Black/Holani/Ray Davis depth holds",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -192,21 +192,21 @@
   ],
   "expert_signals": [
     {
-      "topic": "Overnight post-SNF into early Monday; MNF Nacua status unchanged; no new elevated roles for Mongo depth",
+      "topic": "Early Monday post-overnight into MNF window; Nacua status unchanged; no new elevated roles for Mongo depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed. Nacua (hip/groin) remains trending toward sit for MNF per prior Schefter reporting; no overnight status change as of ~4 AM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
+      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed with Monday testing optimism. Nacua (hip/groin) remains trending toward sit for MNF per prior Schefter reporting; no overnight/early-Monday status change as of ~6 AM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers) + MNF Nacua status",
       "urgency": "MONITOR",
       "confidence": "HIGH",
-      "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire", "Seattle Times"]
+      "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire", "Seattle Times", "Field Gulls"]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T061000Z",
-    "completed_at": "2026-09-21T06:10:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T080500Z",
+    "completed_at": "2026-09-21T08:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~4:00 AM ET / 08:05Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~6:00 AM ET / 10:05Z overnight-to-early-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 06:10Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
+    "No material change vs prior 08:05Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
   ]
 }
