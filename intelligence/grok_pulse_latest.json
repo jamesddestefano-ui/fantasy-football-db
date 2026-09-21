@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T144500Z",
-  "generated_at": "2026-09-21T14:40:00Z",
-  "completed_at": "2026-09-21T14:45:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-21T155000Z",
+  "generated_at": "2026-09-21T15:45:00Z",
+  "completed_at": "2026-09-21T15:50:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -192,9 +192,9 @@
   ],
   "expert_signals": [
     {
-      "topic": "Mid-Monday ~10:40 AM ET into MNF window; Nacua status unchanged; no new elevated roles for Mongo depth",
+      "topic": "Mid-Monday ~11:50 AM ET into MNF window; Nacua status unchanged; no new elevated roles for Mongo depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed with Monday testing optimism. Nacua (hip/groin) remains trending toward sit for MNF per Schefter/Rapoport; no mid-Monday status change as of ~10:40 AM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
+      "summary": "Downs final 7/72 already locked. Price X-rays negative reaffirmed with Monday testing optimism. Nacua (hip/groin) remains trending toward sit for MNF per Schefter/Rapoport; no mid-Monday status change as of ~11:50 AM ET. Major non-roster injuries already noted. No new expert upgrades material to Mongo roster.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers) + MNF Nacua status",
       "urgency": "MONITOR",
@@ -205,8 +205,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T123500Z",
-    "completed_at": "2026-09-21T12:35:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T144500Z",
+    "completed_at": "2026-09-21T14:45:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~10:40 AM ET / 14:45Z mid-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~11:50 AM ET / 15:50Z mid-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 12:35Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
+    "No material change vs prior 14:45Z. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production and Price X-rays negative already logged. MNF Nacua status unchanged (non-roster)."
   ]
 }
