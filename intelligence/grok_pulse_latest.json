@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T013000Z",
-  "generated_at": "2026-09-21T01:25:00Z",
-  "completed_at": "2026-09-21T01:30:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-21T032000Z",
+  "generated_at": "2026-09-21T03:15:00Z",
+  "completed_at": "2026-09-21T03:20:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -37,6 +37,19 @@
     "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."
   },
   "player_signals": [
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "SNF vs Chiefs (ongoing/near-final as of pulse): at least 5 receptions for 61 yards on ~7 targets. Solid involvement in competitive game. Prior pulse had partial early ~2/25; production upgraded.",
+      "mongo_impact": "OWNED starter/FLEX. Positive Week 2 production confirms role; monitor final box for full stats.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["FOX Sports gamelog", "StatMuse live", "X direct @INDvsKC", "CBS Sports live"]
+    },
     {
       "player": "Rashod Bateman",
       "team": "BAL",
@@ -116,19 +129,6 @@
       "sources": ["@Browns official", "ESPN"]
     },
     {
-      "player": "Josh Downs",
-      "team": "IND",
-      "signal_type": "status",
-      "status": "CONFIRMED_FACT",
-      "summary": "Active for SNF vs Chiefs (ongoing as of pulse; mid-2nd quarter IND 13-KC 10). Partial early production ~2/25 noted in live box; no injury designation. Full game pending.",
-      "mongo_impact": "OWNED starter/FLEX. Monitor remaining SNF outcome for final production.",
-      "recommendation": "START",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": ["Colts inactives", "NFL.com", "ESPN live box", "X direct"]
-    },
-    {
       "player": "Jalen Hurts",
       "team": "PHI",
       "signal_type": "production",
@@ -173,18 +173,18 @@
       "player": "generic_watch_only",
       "availability": "UNKNOWN",
       "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority.",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide injuries (Daniels elbow, Williams hamstring, Reed neck, Nacua hip trending out) may create future waiver opportunities but none confirmed free agents for Mongo.",
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
-      "sources": ["AGENTS.md ownership rules", "Mongo repository waiver-watch empty"]
+      "sources": ["AGENTS.md ownership rules", "Mongo repository waiver-watch empty", "NFL.com injury roundup"]
     }
   ],
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "All early/afternoon games final: Black 7/25, Holani limited, Bell zero, Bateman 7/88/1 already noted, Miller inactive, Ray Davis minimal. SNF (Downs) ongoing mid-2nd (IND 13-KC 10, Downs partial ~2/25). No lineup changes recommended post-lock. Monitor Price chest for Holani Week 3 upside; Flowers hamstring for Bateman Week 3 role.",
+      "summary": "All early/afternoon games final: Black 7/25, Holani limited, Bell zero, Bateman 7/88/1, Miller inactive, Ray Davis minimal. SNF (Downs) near-final with upgraded production ~5/61. No lineup changes recommended post-lock. Monitor Price chest for Holani Week 3 upside; Flowers hamstring for Bateman Week 3 role; Nacua hip for MNF context only.",
       "recommendation": "HOLD current; Bateman FLEX candidate Week 3 if Flowers out; Black/Holani/Ray Davis depth holds",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -192,21 +192,21 @@
   ],
   "expert_signals": [
     {
-      "topic": "Week 2 afternoon finals + SNF ongoing; no new elevated roles for Mongo depth",
+      "topic": "Week 2 SNF production update + major non-roster injuries; no new elevated roles for Mongo depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Black, Holani, Bell, Ray Davis all limited as expected. Bateman spike already captured. Downs active and involved early in SNF. No new expert upgrades material to Mongo roster.",
+      "summary": "Downs solid involvement in SNF. Black, Holani, Bell, Ray Davis all limited as expected. Bateman spike already captured. Major injuries elsewhere (Daniels dislocated elbow OUT, Williams hamstring, Reed neck carted, Nacua hip trending toward sit for MNF) are league context only. No new expert upgrades material to Mongo roster.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
-      "recommendation": "HOLD all owned; MONITOR SNF final + Week 3 injury reports (Price, Flowers)",
+      "recommendation": "HOLD all owned; MONITOR SNF final box + Week 3 injury reports (Price, Flowers) + MNF Nacua status",
       "urgency": "MONITOR",
       "confidence": "HIGH",
-      "sources": ["NFL.com", "ESPN", "RotoWire", "X direct"]
+      "sources": ["NFL.com", "ESPN", "CBS Sports", "X direct", "RotoWire"]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": ["Josh Downs Week 2 SNF production upgrade (at least 5/61 vs prior partial ~2/25)"],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T001500Z",
-    "completed_at": "2026-09-21T00:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T013000Z",
+    "completed_at": "2026-09-21T01:30:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~9:25 PM ET / 01:30Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~11:20 PM ET / 03:20Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Afternoon games final with expected limited production for Black/Holani/Bell/Ray Davis. Bateman already logged prior. SNF ongoing (Downs active, partial early production). No material change vs 00:15Z pulse."
+    "SNF ongoing/near-final with Downs production update (material). Afternoon finals confirmed limited Black/Holani/Bell/Ray Davis; Bateman already logged. League injury context (Daniels, Williams, Reed, Nacua) noted but non-roster."
   ]
 }
