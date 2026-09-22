@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-22T061500Z",
-  "generated_at": "2026-09-22T06:10:00Z",
-  "completed_at": "2026-09-22T06:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-22T081500Z",
+  "generated_at": "2026-09-22T08:10:00Z",
+  "completed_at": "2026-09-22T08:15:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,13 +42,13 @@
       "team": "IND",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Pierce (heel) out several weeks (rehab over surgery lean). Already locked; no further overnight updates.",
+      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Pierce (heel) to miss several weeks, no surgery lean / rehab path (likely IR). Already locked; no further overnight updates.",
       "mongo_impact": "OWNED starter/FLEX. Positive Week 2 production + Pierce multi-week absence elevates role.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["FOX Sports gamelog", "X direct", "CBS Sports", "RotoWire", "IndyStar"]
+      "sources": ["FOX Sports gamelog", "X direct", "CBS Sports", "RotoWire", "IndyStar", "NFL.com", "ESPN"]
     },
     {
       "player": "Rashod Bateman",
@@ -192,9 +192,9 @@
   ],
   "expert_signals": [
     {
-      "topic": "Post-MNF final Rams 28-6; Nacua inactive confirmed; Pierce multi-week; no new material Mongo roster updates overnight",
+      "topic": "Post-MNF final Rams 28-6; Nacua inactive confirmed; Pierce multi-week confirmed no surgery lean; no new material Mongo roster updates overnight",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Downs final 7/72 already locked; Pierce expected multi-week heel rehab (no surgery lean). Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua (hip/groin) officially inactive for MNF (ESPN/The Athletic/NFL.com). MNF final Rams 28-6. No new expert upgrades material to Mongo roster overnight. Kendre Miller inactive explanation already captured.",
+      "summary": "Downs final 7/72 already locked; Pierce expected multi-week heel rehab (no surgery lean, likely IR). Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua (hip/groin) officially inactive for MNF (ESPN/The Athletic/NFL.com). MNF final Rams 28-6. No new expert upgrades material to Mongo roster overnight. Kendre Miller inactive explanation already captured.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers)",
       "urgency": "MONITOR",
@@ -205,8 +205,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-22T041500Z",
-    "completed_at": "2026-09-22T04:15:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-22T061500Z",
+    "completed_at": "2026-09-22T06:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~2:10 AM ET / 06:15Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~4:10 AM ET / 08:15Z overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 04:15Z for Mongo-owned players. Downs 7/72 + Pierce multi-week context, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Nacua inactive confirmed (non-roster). Price/Flowers updates non-material or already captured. MNF final Rams 28-6."
+    "No material change vs prior 06:15Z for Mongo-owned players. Downs 7/72 + Pierce multi-week context, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Nacua inactive confirmed (non-roster). Price/Flowers updates non-material or already captured. MNF final Rams 28-6."
   ]
 }
