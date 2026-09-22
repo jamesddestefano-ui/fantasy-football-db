@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-22T151500Z",
-  "generated_at": "2026-09-22T15:10:00Z",
-  "completed_at": "2026-09-22T15:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-22T164000Z",
+  "generated_at": "2026-09-22T16:30:00Z",
+  "completed_at": "2026-09-22T16:40:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -42,7 +42,7 @@
       "team": "IND",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Pierce (heel) expected multi-week absence, rehab path preferred over surgery (likely IR), hope return midseason. Already locked; no further Tuesday updates beyond prior Rapoport/Schefter confirmation.",
+      "summary": "Week 2 SNF final vs Chiefs (IND 30-33 OT): 7 receptions on 9 targets for 72 yards. Pierce (heel) multi-week absence reconfirmed (rehab preferred, midseason hope); Colts signed Darius Slayton. Already locked; no further Tuesday PM updates.",
       "mongo_impact": "OWNED starter/FLEX. Positive Week 2 production + Pierce multi-week absence elevates role.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -55,7 +55,7 @@
       "team": "BAL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Flowers has 'good shot' for Week 3 per coach Monday. No new Tuesday updates.",
+      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Flowers has 'good shot' for Week 3 per coach Monday. No new Tuesday PM practice reports (Week 3 practices begin Wednesday).",
       "mongo_impact": "OWNED on Mongo bench. Strong production validates elevated role while Flowers sidelined. HOLD / FLEX candidate Week 3 if Flowers limited.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -81,7 +81,7 @@
       "team": "SEA",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final vs Cardinals (SEA 31-7): limited role ~4 carries 13 yards + 1 reception. Jadarian Price: coach Monday clarified shoulder injury, 'intact and nothing serious' (X-rays negative prior). Holani not elevated to lead. Already logged. No Tuesday change.",
+      "summary": "Week 2 final vs Cardinals (SEA 31-7): limited role ~4 carries 13 yards + 1 reception. Jadarian Price: coach Monday clarified shoulder injury, 'intact and nothing serious'. Holani not elevated to lead. Already logged. No Tuesday change.",
       "mongo_impact": "OWNED on Mongo bench (free add Sep 19). Speculative depth; monitor Week 3 Price status (positive lean).",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -173,7 +173,7 @@
       "player": "generic_watch_only",
       "availability": "UNKNOWN",
       "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide: Caleb Williams hamstring week-to-week; Jayden Daniels dislocated elbow (Mariota Week 3); Nacua (hip/groin) inactive MNF confirmed; Price shoulder 'nothing serious'; Pierce heel multi-week (elevates Downs). MNF final Rams 28-6. None confirmed free agents for Mongo.",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide: Caleb Williams hamstring week-to-week; Jayden Daniels dislocated elbow (Mariota Week 3); Nacua (hip/groin) inactive MNF confirmed; Price shoulder 'nothing serious'; Pierce heel multi-week (elevates Downs, Slayton signed). MNF final Rams 28-6. None confirmed free agents for Mongo.",
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -184,7 +184,7 @@
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "All Week 2 games final including SNF (Downs 7/72) and MNF (Rams 28-6). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. No lineup changes. Monitor Week 3: Price status for Holani (positive Monday update), Flowers for Bateman ('good shot'), Pierce multi-week absence for Downs.",
+      "summary": "All Week 2 games final including SNF (Downs 7/72) and MNF (Rams 28-6). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. No lineup changes. Monitor Week 3: Price status for Holani (positive Monday update), Flowers for Bateman ('good shot'), Pierce multi-week absence for Downs. Week 3 practice reports pending Wednesday.",
       "recommendation": "HOLD current; Bateman FLEX candidate Week 3 if Flowers out; Black/Holani/Ray Davis depth holds; Downs elevated by Pierce absence",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -192,9 +192,9 @@
   ],
   "expert_signals": [
     {
-      "topic": "Tuesday mid-day post-MNF; Pierce multi-week reconfirmed; no new material Mongo roster updates",
+      "topic": "Tuesday PM post-MNF; Pierce multi-week + Slayton add reconfirmed; no new material Mongo roster updates",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Downs final 7/72 already locked; Pierce expected multi-week heel rehab (no surgery lean, likely IR) reconfirmed via Rapoport/Schefter full story. Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua inactive MNF confirmed. MNF final Rams 28-6. No new expert upgrades material to Mongo roster Tuesday. Kendre Miller inactive explanation already captured. Early Week 3 practice reports pending.",
+      "summary": "Downs final 7/72 already locked; Pierce expected multi-week heel rehab (no surgery lean) reconfirmed + Colts signed Darius Slayton. Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua inactive MNF confirmed. MNF final Rams 28-6. No new expert upgrades material to Mongo roster Tuesday PM. Early Week 3 practice reports pending Wednesday.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers)",
       "urgency": "MONITOR",
@@ -205,8 +205,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-22T135500Z",
-    "completed_at": "2026-09-22T13:55:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-22T151500Z",
+    "completed_at": "2026-09-22T15:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~11:15 AM ET / 15:15Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~12:40 PM ET / 16:40Z hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 13:55Z for Mongo-owned players. Downs 7/72 + Pierce multi-week context, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Nacua inactive confirmed (non-roster). Price/Flowers updates non-material or already captured. MNF final Rams 28-6. Early Week 3 practice reports not yet material."
+    "No material change vs prior 15:15Z for Mongo-owned players. Downs 7/72 + Pierce multi-week + Slayton context, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Nacua inactive confirmed (non-roster). Price/Flowers updates non-material or already captured. MNF final Rams 28-6. Early Week 3 practice reports not yet material."
   ]
 }
