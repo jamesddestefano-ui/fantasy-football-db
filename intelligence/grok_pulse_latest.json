@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-21T231500Z",
-  "generated_at": "2026-09-21T23:10:00Z",
-  "completed_at": "2026-09-21T23:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-22T001500Z",
+  "generated_at": "2026-09-22T00:10:00Z",
+  "completed_at": "2026-09-22T00:15:00Z",
   "week": 2,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -55,7 +55,7 @@
       "team": "BAL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Already captured. Flowers has 'good shot' for Week 3 per coach Monday (practice starts mid-week).",
+      "summary": "Week 2 final: 7 receptions on 9 targets for 88 yards and 1 TD vs Saints (Flowers OUT). Already captured. Flowers has 'good shot' for Week 3 per coach Monday (practice starts mid-week). No new Monday night updates.",
       "mongo_impact": "OWNED on Mongo bench. Strong production validates elevated role while Flowers sidelined. HOLD / FLEX candidate Week 3 if Flowers limited.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -173,7 +173,7 @@
       "player": "generic_watch_only",
       "availability": "UNKNOWN",
       "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide: Caleb Williams hamstring week-to-week; Jayden Daniels dislocated elbow (Mariota Week 3); Nacua (hip/groin) officially inactive for MNF vs Giants (confirmed ~6:37-6:51 PM ET); Price shoulder 'nothing serious'. None confirmed free agents for Mongo.",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED players. Authenticated ESPN is sole ownership authority. League-wide: Caleb Williams hamstring week-to-week; Jayden Daniels dislocated elbow (Mariota Week 3); Nacua (hip/groin) officially inactive for MNF vs Giants (confirmed earlier); Price shoulder 'nothing serious'. MNF Giants @ Rams kickoff ~8:15 PM ET. None confirmed free agents for Mongo.",
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -184,7 +184,7 @@
   "lineup_signals": [
     {
       "week": 2,
-      "summary": "All Sunday games final including SNF (Downs 7/72 confirmed). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. MNF Giants @ Rams underway/about to kick; Nacua officially inactive (non-roster). No lineup changes. Monitor Week 3: Price status for Holani (positive Monday update), Flowers for Bateman ('good shot').",
+      "summary": "All Sunday games final including SNF (Downs 7/72 confirmed). Afternoon limited production Black/Holani/Bell/Ray Davis; Bateman 7/88/1 already logged; Miller inactive. MNF Giants @ Rams kickoff window (~8:15 PM ET); Nacua officially inactive (non-roster). No lineup changes. Monitor Week 3: Price status for Holani (positive Monday update), Flowers for Bateman ('good shot').",
       "recommendation": "HOLD current; Bateman FLEX candidate Week 3 if Flowers out; Black/Holani/Ray Davis depth holds",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -192,9 +192,9 @@
   ],
   "expert_signals": [
     {
-      "topic": "~7:10 PM ET MNF window; Nacua inactive confirmed; no new material Mongo roster updates",
+      "topic": "~8:12 PM ET MNF kickoff window; Nacua inactive confirmed; no new material Mongo roster updates",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Downs final 7/72 already locked. Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua (hip/groin) officially inactive for MNF (ESPN/The Athletic/NFL.com ~6:37-6:51 PM ET). No new expert upgrades material to Mongo roster. Kendre Miller inactive explanation already captured.",
+      "summary": "Downs final 7/72 already locked. Price Monday update: shoulder injury, intact and nothing serious (already in prior). Flowers HC: good shot Week 3. Nacua (hip/groin) officially inactive for MNF (ESPN/The Athletic/NFL.com). No new expert upgrades material to Mongo roster. Kendre Miller inactive explanation already captured. MNF underway/pre-kick.",
       "mongo_impact": "Intelligence-only; no ownership or lineup mutation.",
       "recommendation": "HOLD all owned; MONITOR Week 3 injury reports (Price, Flowers)",
       "urgency": "MONITOR",
@@ -205,8 +205,8 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-21T222500Z",
-    "completed_at": "2026-09-21T22:25:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-21T231500Z",
+    "completed_at": "2026-09-21T23:15:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -215,8 +215,8 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "~7:15 PM ET / 23:15Z late-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "~8:15 PM ET / 00:15Z late-Monday intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs prior 22:25Z for Mongo-owned players. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Nacua inactive confirmed (non-roster). Price/Flowers updates non-material or already captured. MNF window."
+    "No material change vs prior 23:15Z for Mongo-owned players. Downs 7/72, Bateman 7/88/1, Black/Holani/Bell/Ray Davis/Miller production already logged. Nacua inactive confirmed (non-roster). Price/Flowers updates non-material or already captured. MNF kickoff window."
   ]
 }
