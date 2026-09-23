@@ -639,4 +639,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-09-19",
         "faab_amount": 0,
     },
+    {
+        "description": "2026-09-23 ET WAIVER_ADD_DROP Oronde Gadsden $8 + DROP Raheim Sanders (ESPN waivers 3:27 am)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "waiver",
+        "added_player": "Oronde Gadsden",
+        "dropped_player": "Raheim Sanders",
+        "calendar_day_ET": "2026-09-23",
+        "faab_amount": 8,
+    },
 ]
