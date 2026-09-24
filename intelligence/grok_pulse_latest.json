@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-24T221000Z",
-  "generated_at": "2026-09-24T22:05:00Z",
-  "completed_at": "2026-09-24T22:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-24T230500Z",
+  "generated_at": "2026-09-24T23:03:00Z",
+  "completed_at": "2026-09-24T23:05:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -13,7 +13,7 @@
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
     "x_direct": "LIMITED",
-    "experts": "OK",
+    "experts": "LIMITED",
     "analytics": "LIMITED"
   },
   "scope": {
@@ -65,15 +65,16 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 4:08 PM Pulse: Flowers still reported out of Thursday team practice (hamstring); no new official BAL Thursday designation located this hour that upgrades or downgrades that path.",
-      "mongo_impact": "OWNED bench. FLEX start case vs Downs still open pending official designation / travel list. No NEW material delta this hour.",
+      "summary": "Continuity vs 6:10 PM Pulse. Beat/team site still say Flowers not in Thursday team practice (hamstring); Ravens.com Ryan Mink 2:02 PM ET notes Flowers in street clothes then back inside; final designation after Friday Rio practice. No NEW official OUT/game-status this hour.",
+      "mongo_impact": "OWNED bench. FLEX path vs Downs still open; no NEW material delta this hour.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse 2026-09-24T200800Z",
-        "NBC Sports Myles Simmons"
+        "Baltimore Ravens.com Ryan Mink 2026-09-24 2:02 PM ET",
+        "NBC Sports Myles Simmons",
+        "Prior Pulse 221000Z"
       ]
     },
     {
@@ -97,15 +98,14 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No new official Thursday SEA sheet found this hour beyond Wed LP (knee).",
+      "summary": "No new official Thursday SEA participation sheet located this hour beyond Wed LP (knee).",
       "mongo_impact": "OWNED bench. HOLD.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse",
-        "Seahawks.com via RotoWire"
+        "Prior Pulse"
       ]
     },
     {
@@ -113,14 +113,14 @@
       "team": "LAC",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "No new official designation changing Gadsden role. Bowers LV LP is unrelated (not on JDD).",
+      "summary": "No new official designation. Bowers LV Thu LP remains unowned context only.",
       "mongo_impact": "OWNED bench behind Andrews.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Mongo repo ESPN import 2026-09-23"
+        "Prior Pulse"
       ]
     },
     {
@@ -128,14 +128,14 @@
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new CHI/PHI Thursday designation changing Week 3 start vs PHI Monday.",
+      "summary": "No new CHI/PHI designation changing Week 3 Monday start.",
       "mongo_impact": "OWNED starter. Hold.",
       "recommendation": "START",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "NFL.com injuries"
+        "Prior Pulse"
       ]
     },
     {
@@ -143,8 +143,8 @@
       "team": "SF",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "No new Thursday update beyond complementary role to CMC.",
-      "mongo_impact": "OWNED bench. HOLD handcuff.",
+      "summary": "No new Thursday update.",
+      "mongo_impact": "OWNED bench. HOLD CMC handcuff.",
       "recommendation": "HOLD",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -165,8 +165,7 @@
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Browns official",
-        "ESPN"
+        "Prior Pulse"
       ]
     },
     {
@@ -174,15 +173,14 @@
       "team": "PHI",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "No new injury. Locked Week 3 QB vs CHI Monday. Dart NYG IR does not affect Hurts.",
+      "summary": "No new injury. Locked Week 3 QB vs CHI Monday.",
       "mongo_impact": "Locked QB start.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "ESPN",
-        "Giants.com transactions"
+        "Prior Pulse"
       ]
     },
     {
@@ -190,29 +188,15 @@
       "team": "NYG",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Giants.com Week 3 injury report updated Sep 24 4:16 PM ET: Nabers (shoulder) FULL Thursday after LIMITED Wednesday. Game status column blank (Fri pending). Do not infer ACTIVE from FP alone.",
-      "mongo_impact": "Not on JDD roster. Intelligence-only; no lineup/FAAB action.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "Giants.com injury report 2026-09-24 4:16 PM ET"
-      ]
-    },
-    {
-      "player": "Andrew Thomas",
-      "team": "NYG",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Same Giants.com board: Wed LP \u2192 Thu DNP (groin). Continuity of MNF groin exit. OL \u2014 not a fantasy skill-position asset.",
+      "summary": "Continuity: Giants.com still lists Thu FP (shoulder) after Wed LP; game status blank. Do not infer ACTIVE. NFL Pulse 1823 DO_NOT_REEMIT.",
       "mongo_impact": "Not on JDD roster. Intelligence-only.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
-        "Giants.com injury report 2026-09-24"
+        "Giants.com",
+        "NFL Pulse digest 2026-09-24-1823"
       ]
     },
     {
@@ -220,15 +204,15 @@
       "team": "NYG",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Giants.com transactions 09/24: QB Jaxson Dart Reserve/Injured. PFT Josh Alper 4:53 PM ET confirms NFL daily txn report; surgery planned MCL/meniscus (not confirmed completed); Winston only active QB.",
-      "mongo_impact": "Not on JDD roster (Hurts QB1). Continuity of prior season-ending signal; no ADD without ESPN FA confirm + clear need.",
+      "summary": "Continuity: Giants Reserve/Injured 09/24 already logged; Pulse 1823 DO_NOT_REEMIT (no surgery completed / no 53 fill).",
+      "mongo_impact": "Not on JDD roster (Hurts QB1).",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
         "Giants.com transactions",
-        "PFT Josh Alper 2026-09-24"
+        "NFL Pulse digest 2026-09-24-1823"
       ]
     },
     {
@@ -236,14 +220,15 @@
       "team": "LV",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Raiders.com Thursday injury report: Bowers limited (knee) after Wednesday limited. Board first posted for Thu.",
-      "mongo_impact": "Not on JDD roster (Andrews TE / Gadsden BN). Intelligence-only.",
+      "summary": "Continuity: Raiders.com Thu LP (knee). Pulse 1823 DO_NOT_REEMIT.",
+      "mongo_impact": "Not on JDD roster.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
-        "Raiders.com injury report 2026-09-24"
+        "Raiders.com",
+        "NFL Pulse digest 2026-09-24-1823"
       ]
     }
   ],
@@ -266,33 +251,32 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "No NEW owned-player material vs 4:08 PM Pulse. Hold starters. Bateman FLEX still the open monitor from prior Flowers Thu absence (official BAL sheet still pending). New official NYG/LV facts (Nabers FP, Thomas DNP, Dart IR, Bowers LP) are unowned discovery signals only (availability UNKNOWN).",
-      "recommendation": "HOLD current lineup; continue MONITOR official BAL designation for Flowers before locking Bateman FLEX",
+      "summary": "No NEW owned-player material vs 6:10 PM Pulse. Hold starters. Bateman FLEX monitor continues on Flowers Thu absence (final designation after Fri Rio practice). Unowned NYG/LV facts unchanged.",
+      "recommendation": "HOLD current lineup; MONITOR Fri BAL designation / travel before locking Bateman FLEX",
       "urgency": "MONITOR",
       "confidence": "HIGH"
     }
   ],
   "expert_signals": [
     {
-      "topic": "NYG official Thursday facts + Dart IR",
-      "status": "CONFIRMED_FACT",
-      "summary": "Giants.com posted Nabers FP / Thomas DNP and Dart Reserve/Injured. PFT Alper corroborates Dart IR. None are on JDD roster.",
-      "mongo_impact": "Intelligence-only; no ownership mutation.",
+      "topic": "NFL Pulse evening delta quiet",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "PRIME NFL Pulse digest 2026-09-24-1823: 0 accepted NFL_FACT; analyst NO_NEW (ETR/Levitan/Berry/McFarland); FantasyPtsData PAYWALLED; WakeParent NO for Mongo.",
+      "mongo_impact": "Supports no_material_change this hour.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "sources": [
-        "Giants.com",
-        "PFT Josh Alper"
+        "prime-nfl-pulse digests/2026-09-24-1823.md"
       ]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-24T200800Z",
-    "completed_at": "2026-09-24T20:08:00Z",
-    "commit_note": "prior tip 25791fe / user blob ab21728f87f20ca826c231aa79b408390fec051d"
+    "pulse_id": "mongo-grok-pulse-2026-09-24T221000Z",
+    "completed_at": "2026-09-24T22:10:00Z",
+    "commit_sha": "38d9888f895340efd6e70df9576541dba71e590f"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -301,10 +285,10 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "6:10 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "7:05 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Incorporated CONFIRMED_FACT official-team deltas since 4:08 PM tip: Nabers FP, Thomas Thu DNP, Dart IR, Bowers Thu LP \u2014 all availability UNKNOWN (not on Mongo roster).",
-    "no_material_change=true: none change owned JDD decisions beyond continuity already logged at 4:08 PM (Bateman/Flowers).",
-    "x_direct LIMITED: official team pages + PFT used; no primary X scrape claimed."
+    "NFL Pulse 1823 quiet; no new accepted pulses after Dart/Nabers/Thomas/Bowers already in 6:10 tip.",
+    "Flowers Thu absence continuity only \u2014 final game designation still pending Fri Rio practice.",
+    "x_direct LIMITED; experts LIMITED (analyst NO_NEW); analytics LIMITED (FantasyPtsData paywalled)."
   ]
 }
