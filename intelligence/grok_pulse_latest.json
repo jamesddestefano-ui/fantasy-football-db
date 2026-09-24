@@ -3,14 +3,14 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-24T170500Z",
-  "generated_at": "2026-09-24T17:02:00Z",
-  "completed_at": "2026-09-24T17:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-24T200500Z",
+  "generated_at": "2026-09-24T20:03:00Z",
+  "completed_at": "2026-09-24T20:05:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly_refresh",
   "source_status": {
-    "official_nfl_team": "OK",
+    "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "OK",
@@ -26,12 +26,34 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
+    "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop. ESPN live check 2026-09-24 ~08:27 ET unchanged roster/FAAB.",
     "faab_remaining": 82,
-    "starters_week_3_hold": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
-    "bench": ["Kaelon Black", "Ray Davis", "George Holani", "Kendre Miller", "Chris Bell", "Rashod Bateman", "Oronde Gadsden"],
-    "ir": ["Dylan Sampson"],
-    "dropped_not_fa_confirmed": ["Raheim Sanders"]
+    "starters_week_3_hold": [
+      "Jalen Hurts",
+      "De'Von Achane",
+      "Bijan Robinson",
+      "Luther Burden III",
+      "Tetairoa McMillan",
+      "Mark Andrews",
+      "Josh Downs",
+      "CeeDee Lamb",
+      "Eagles D/ST"
+    ],
+    "bench": [
+      "Kaelon Black",
+      "Ray Davis",
+      "George Holani",
+      "Kendre Miller",
+      "Chris Bell",
+      "Rashod Bateman",
+      "Oronde Gadsden"
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ],
+    "dropped_not_fa_confirmed": [
+      "Raheim Sanders"
+    ]
   },
   "watchlist_status": {
     "repository_waiver_watch_rows": 0,
@@ -39,69 +61,85 @@
   },
   "player_signals": [
     {
-      "player": "Josh Downs",
-      "team": "IND",
-      "signal_type": "role",
-      "status": "CONFIRMED_FACT",
-      "summary": "No new Thursday-afternoon delta vs 9:14 AM Pulse. Steichen Wednesday: Alec Pierce (heel) being placed on IR; min 4 games. NFL.com Week 3 sheet still lists Pierce DNP / Taylor LP / Allen LP without a new Thursday participation change that alters Downs' role. Slayton signed; Mongo availability UNKNOWN.",
-      "mongo_impact": "OWNED starter/FLEX. Pierce IR still the multi-week target vacuum.",
-      "recommendation": "START",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": ["ESPN Stephen Holder / Steichen", "NFL.com injuries", "IndyStar"]
-    },
-    {
       "player": "Rashod Bateman",
       "team": "BAL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "No official Thursday Ravens practice report located as of 1:04 PM ET. Last official: Flowers (hamstring) DNP Wednesday (Hensley). Ravens on a normal Wed-Thu schedule then red-eye to Rio Friday. Thursday participation still pending.",
-      "mongo_impact": "OWNED bench. HOLD / FLEX candidate if Flowers sits again. Wait Thu-Fri practice.",
-      "recommendation": "HOLD / CONSIDER START in FLEX",
-      "urgency": "MONITOR",
+      "summary": "MATERIAL vs 1:05 PM Pulse: multiple on-scene beat reports say Zay Flowers (hamstring) did not practice again Thursday (NBC Sports Myles Simmons 1:36 PM ET; Fox Baltimore ~2:07 PM ET). Stanley (toe) also DNP Thu; Hendrickson returned. Official BAL Thursday injury sheet still pending later Thu before overnight Rio flight. Flowers second consecutive DNP this week after Wed DNP + Week 2 OUT.",
+      "mongo_impact": "OWNED bench. Bateman FLEX start case strengthened if Flowers sits again vs DAL in Rio. Monitor official Thu sheet + travel list.",
+      "recommendation": "CONSIDER START in FLEX (over Holani/Bell/Black); HOLD Andrews as TE",
+      "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Jamison Hensley ESPN", "RotoWire", "Baltimore Sun 2026-09-23"]
+      "sources": [
+        "NBC Sports Myles Simmons 2026-09-24",
+        "Fox Baltimore Morgan Adsit",
+        "Jamison Hensley ESPN Wed DNP"
+      ]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "role",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new Thursday delta vs 1:05 PM. Pierce IR / Steichen Wednesday still the multi-week vacuum. Downs remains healthy Week 3 WR/FLEX vs HOU.",
+      "mongo_impact": "OWNED starter/FLEX. Pierce IR still locks upgraded target share.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "ESPN Stephen Holder / Steichen",
+        "Colts.com",
+        "NFL.com injuries"
+      ]
     },
     {
       "player": "George Holani",
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No official Thursday SEA practice sheet found at 1:04 PM ET. Last official: Holani limited (knee) Wednesday; Price limited (chest). Wilson finished Week 2 as lead back.",
-      "mongo_impact": "OWNED bench. Not a start unless Price and Wilson both fade. Monitor Thu-Fri.",
+      "summary": "No official Thursday SEA practice sheet located as of ~4:05 PM ET. Last official: Holani limited (knee) Wednesday; Price limited (chest). Wilson finished Week 2 as lead back.",
+      "mongo_impact": "OWNED bench. Not a start unless Price and Wilson both fade. Prefer Bateman FLEX path over Holani tonight.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Seahawks.com John Boyle via RotoWire"]
+      "sources": [
+        "Seahawks.com John Boyle via RotoWire"
+      ]
     },
     {
       "player": "Oronde Gadsden",
       "team": "LAC",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "Wednesday Chargers sheet recycled in Thursday recaps (Kolar DNP/out Week 3, avoid IR). No new official Thursday designation that changes Gadsden's expected start vs BUF.",
+      "summary": "No new official Thursday designation that changes Gadsden's expected Week 3 TE role vs BUF. Kolar still out Week 3 context from Wed recycling.",
       "mongo_impact": "OWNED bench behind Andrews. Intelligence-only.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Mongo repo ESPN activity import 2026-09-23", "Kris Rhim / PFR", "Democrat and Chronicle 2026-09-24"]
+      "sources": [
+        "Mongo repo ESPN activity import 2026-09-23",
+        "Kris Rhim / PFR"
+      ]
     },
     {
       "player": "Luther Burden III",
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "NFL.com Monday slate still shows no CHI/PHI injury designations posted. Soft context already logged: Williams hamstring week-to-week / Bagent concussion protocol may cap Week 3 ceiling vs PHI. No new CONFIRMED_FACT this hour.",
+      "summary": "No new CONFIRMED_FACT Thursday CHI designations beyond soft context already logged (Williams hamstring week-to-week / Bagent concussion protocol may cap Week 3 ceiling vs PHI Monday).",
       "mongo_impact": "OWNED starter. Hold lineup; wait CHI designations.",
       "recommendation": "START",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
-      "sources": ["NFL.com injuries", "SI / Rapoport Williams hamstring"]
+      "sources": [
+        "NFL.com injuries",
+        "SI / Rapoport Williams hamstring"
+      ]
     },
     {
       "player": "Kaelon Black",
@@ -114,7 +152,10 @@
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["49ers.com box", "RotoWire"]
+      "sources": [
+        "49ers.com box",
+        "RotoWire"
+      ]
     },
     {
       "player": "Dylan Sampson",
@@ -127,7 +168,10 @@
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Browns official", "ESPN"]
+      "sources": [
+        "Browns official",
+        "ESPN"
+      ]
     },
     {
       "player": "Jalen Hurts",
@@ -140,7 +184,9 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["ESPN"]
+      "sources": [
+        "ESPN"
+      ]
     }
   ],
   "waiver_signals": [
@@ -153,35 +199,44 @@
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
-      "sources": ["AGENTS.md", "Mongo repo"]
+      "sources": [
+        "AGENTS.md",
+        "Mongo repo"
+      ]
     }
   ],
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "Hold current starters. No new official Thursday BAL/SEA practice sheets at 1:04 PM ET. Downs role still upgraded by Pierce IR. Bateman FLEX path still lives off Flowers Wed DNP pending Thu-Fri. Gadsden bench behind Andrews. Holani still Wed LP knee — not a start.",
-      "recommendation": "HOLD current lineup; MONITOR Flowers (Bateman) and SEA RB report (Holani/Price) when Thursday reports post",
-      "urgency": "MONITOR",
+      "summary": "MATERIAL: Flowers second DNP this week (Thu practice absence per beat) strengthens Bateman FLEX path vs DAL in Rio. Hold Downs (Pierce IR). Holani still Wed LP only \u2014 SEA Thu sheet not posted; do not start Holani over Bateman. Gadsden remains TE2 behind Andrews. Official BAL Thu injury/travel list still pending later today.",
+      "recommendation": "HOLD core starters; strongly CONSIDER Bateman in FLEX if Flowers confirmed out/DNP on official sheet or travel list",
+      "urgency": "HIGH",
       "confidence": "HIGH"
     }
   ],
   "expert_signals": [
     {
-      "topic": "No new expert board this hour vs 9:14 AM Pulse",
+      "topic": "Flowers Thursday DNP elevates Bateman Week 3 FLEX",
       "status": "EXPERT_OPINION",
-      "summary": "Thursday recaps restated Wednesday Downs/Bateman/Gadsden cases. No new official practice participation that changes owned Mongo priorities.",
-      "mongo_impact": "Intelligence-only; no ownership mutation.",
-      "recommendation": "HOLD owned; no new FAAB",
-      "urgency": "NONE",
+      "summary": "Beat consensus: Flowers not practicing Thursday after Wed DNP puts Sunday Rio availability in serious doubt; Bateman already produced 7/88/TD in Week 2 without Flowers.",
+      "mongo_impact": "Intelligence-only; no ownership mutation. Lineup decision only.",
+      "recommendation": "Prefer Bateman FLEX over Holani/Bell/Black if Flowers sits",
+      "urgency": "HIGH",
       "confidence": "MEDIUM",
-      "sources": ["NBC Sports Seahawks player news", "NFL.com injuries", "Democrat and Chronicle"]
+      "sources": [
+        "NBC Sports",
+        "Fox Baltimore",
+        "Baltimore Ravens.com Wed context"
+      ]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    "Zay Flowers DNP Thursday practice (hamstring) per NBC Sports / Fox Baltimore \u2014 second consecutive DNP this week; Bateman FLEX start case upgraded"
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-24T131400Z",
-    "completed_at": "2026-09-24T13:14:00Z"
+    "pulse_id": "mongo-grok-pulse-2026-09-24T170500Z",
+    "completed_at": "2026-09-24T17:05:00Z"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -190,9 +245,9 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "1:05 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "4:05 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "x_direct LIMITED: no verified Thursday BAL/SEA participation posts at run time.",
-    "Thursday practice reports for key owned monitors (Flowers/Holani) not posted at run time."
+    "official_nfl_team LIMITED: BAL official Thursday written injury report still pending later Thu; SEA Thursday sheet not located.",
+    "Material delta vs 1:05 PM: Flowers Thu practice absence confirmed by on-scene beat (not yet official sheet)."
   ]
 }
