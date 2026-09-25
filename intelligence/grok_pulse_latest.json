@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T170500Z",
-  "generated_at": "2026-09-25T17:03:00Z",
-  "completed_at": "2026-09-25T17:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T180700Z",
+  "generated_at": "2026-09-25T18:06:00Z",
+  "completed_at": "2026-09-25T18:07:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly",
@@ -28,45 +28,286 @@
   "roster_context": {
     "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
     "faab_remaining": 82,
-    "starters_week_3_hold": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
-    "bench": ["Kaelon Black", "Ray Davis", "George Holani", "Kendre Miller", "Chris Bell", "Rashod Bateman", "Oronde Gadsden"],
-    "ir": ["Dylan Sampson"],
-    "dropped_not_fa_confirmed": ["Raheim Sanders"]
+    "starters_week_3_hold": [
+      "Jalen Hurts",
+      "De'Von Achane",
+      "Bijan Robinson",
+      "Luther Burden III",
+      "Tetairoa McMillan",
+      "Mark Andrews",
+      "Josh Downs",
+      "CeeDee Lamb",
+      "Eagles D/ST"
+    ],
+    "bench": [
+      "Kaelon Black",
+      "Ray Davis",
+      "George Holani",
+      "Kendre Miller",
+      "Chris Bell",
+      "Rashod Bateman",
+      "Oronde Gadsden"
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ],
+    "dropped_not_fa_confirmed": [
+      "Raheim Sanders"
+    ]
   },
   "watchlist_status": {
     "repository_waiver_watch_rows": 0,
     "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."
   },
   "player_signals": [
-    {"player": "Bijan Robinson", "team": "ATL", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "Continuity: TNF FINAL ATL 35-GB 14 already logged (29-194-2 rush, 2-19 rec). No new postgame injury.", "mongo_impact": "OWNED starter. Week 3 points banked.", "recommendation": "START (locked, final)", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse 160500Z", "NBC Sports/PFT recap 9-24-2026"]},
-    {"player": "Rashod Bateman", "team": "BAL", "signal_type": "usage", "status": "CONFIRMED_FACT", "summary": "No official Friday Ravens game-status sheet as of 1:02 PM ET. Flowers remains official Thu DNP hamstring x2. Unofficial X medical account and travel chatter are ATTRIBUTED_REPORT/SPECULATION, not a designation.", "mongo_impact": "OWNED bench. FLEX vs Downs still waits on Fri Rio designation.", "recommendation": "HOLD / CONSIDER START in FLEX", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["footballdb Week 3", "Ravens Wire Thu DNP", "NFL.com injuries"]},
-    {"player": "George Holani", "team": "SEA", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Continuity: official Seahawks.com Thu FP (knee). Friday board still blank as of 1:02 PM ET.", "mongo_impact": "OWNED bench. HOLD.", "recommendation": "HOLD", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED", "sources": ["Seahawks.com Week 3 injury report", "Prior Pulse"]},
-    {"player": "Chris Bell", "team": "MIA", "signal_type": "injury", "status": "ATTRIBUTED_REPORT", "summary": "Official Thu LP (knee) unchanged; Friday board blank. Prior overnight attributed clearance is not official Friday designation.", "mongo_impact": "OWNED bench. Not a Week 3 start over current FLEX/starters.", "recommendation": "HOLD", "urgency": "LOW", "confidence": "MEDIUM", "availability": "OWNED", "sources": ["footballdb Week 3", "Prior Pulse"]},
-    {"player": "Josh Downs", "team": "IND", "signal_type": "role", "status": "CONFIRMED_FACT", "summary": "No new official Colts Friday participation. Pierce IR already logged. Aggregator Q tags remain unverified.", "mongo_impact": "OWNED starter/FLEX. Bateman FLEX debate continues if Flowers misses Brazil.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["NBC Sports Week 3 injury report", "Prior Pulse"]},
-    {"player": "Oronde Gadsden", "team": "LAC", "signal_type": "roster", "status": "CONFIRMED_FACT", "summary": "No new Chargers Friday board. Not on Thursday injury report in prior official sheets.", "mongo_impact": "OWNED bench behind Andrews. HOLD.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse", "Chargers.com Week 3 injury report"]},
-    {"player": "Luther Burden III", "team": "CHI", "signal_type": "usage", "status": "ATTRIBUTED_REPORT", "summary": "No new official CHI Friday designation this hour. Aggregator Q remains SPECULATION.", "mongo_impact": "OWNED starter. Hold.", "recommendation": "START", "urgency": "MONITOR", "confidence": "MEDIUM", "availability": "OWNED", "sources": ["Prior Pulse", "NBC Sports Burden news"]},
-    {"player": "Kaelon Black", "team": "SF", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "No new official 49ers Friday update this hour. Bosa calf news is unowned defensive context only.", "mongo_impact": "OWNED bench. HOLD.", "recommendation": "HOLD", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
-    {"player": "Dylan Sampson", "team": "CLE", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "On IR (knee). No new updates.", "mongo_impact": "OWNED IR. HOLD.", "recommendation": "HOLD", "urgency": "HIGH", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
-    {"player": "Jalen Hurts", "team": "PHI", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "No new injury. Locked Week 3 QB vs CHI Monday.", "mongo_impact": "Locked QB start.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
-    {"player": "Zay Flowers", "team": "BAL", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Official Thu DNP hamstring second straight day. Friday Rio game-status designation not posted as of 1:02 PM ET. Unofficial accounts remain ATTRIBUTED_REPORT and do not replace the official sheet.", "mongo_impact": "Not on JDD roster. Context for owned Bateman FLEX only. Availability UNKNOWN.", "recommendation": "NONE", "urgency": "NONE", "confidence": "HIGH", "availability": "UNKNOWN", "sources": ["NFL.com injuries", "Ravens Wire Thu DNP", "Baltimore Sun Thu report"]},
-    {"player": "Puka Nacua", "team": "LAR", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Continuity: Thu DNP hip/groin; Fri blank. DO_NOT_REEMIT as new material.", "mongo_impact": "Not on JDD roster. Availability UNKNOWN.", "recommendation": "NONE", "urgency": "NONE", "confidence": "HIGH", "availability": "UNKNOWN", "sources": ["Prior Pulse"]}
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "Continuity: TNF FINAL ATL 35-GB 14 already logged (29-194-2 rush, 2-19 rec). No new postgame injury.",
+      "mongo_impact": "OWNED starter. Week 3 points banked.",
+      "recommendation": "START (locked, final)",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Prior Pulse 160500Z",
+        "NBC Sports/PFT recap 9-24-2026"
+      ]
+    },
+    {
+      "player": "Rashod Bateman",
+      "team": "BAL",
+      "signal_type": "usage",
+      "status": "CONFIRMED_FACT",
+      "summary": "No official Friday Ravens game-status sheet as of 1:02 PM ET. Flowers remains official Thu DNP hamstring x2. Unofficial X medical account and travel chatter are ATTRIBUTED_REPORT/SPECULATION, not a designation.",
+      "mongo_impact": "OWNED bench. FLEX vs Downs still waits on Fri Rio designation.",
+      "recommendation": "HOLD / CONSIDER START in FLEX",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "footballdb Week 3",
+        "Ravens Wire Thu DNP",
+        "NFL.com injuries"
+      ]
+    },
+    {
+      "player": "George Holani",
+      "team": "SEA",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Continuity: official Seahawks.com Thu FP (knee). Friday board still blank as of 1:02 PM ET.",
+      "mongo_impact": "OWNED bench. HOLD.",
+      "recommendation": "HOLD",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Seahawks.com Week 3 injury report",
+        "Prior Pulse"
+      ]
+    },
+    {
+      "player": "Chris Bell",
+      "team": "MIA",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Official Thu LP (knee) unchanged; Friday board blank. Prior overnight attributed clearance is not official Friday designation.",
+      "mongo_impact": "OWNED bench. Not a Week 3 start over current FLEX/starters.",
+      "recommendation": "HOLD",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "footballdb Week 3",
+        "Prior Pulse"
+      ]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "role",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new official Colts Friday participation. Pierce IR already logged. Aggregator Q tags remain unverified.",
+      "mongo_impact": "OWNED starter/FLEX. Bateman FLEX debate continues if Flowers misses Brazil.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "NBC Sports Week 3 injury report",
+        "Prior Pulse"
+      ]
+    },
+    {
+      "player": "Oronde Gadsden",
+      "team": "LAC",
+      "signal_type": "roster",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new Chargers Friday board. Not on Thursday injury report in prior official sheets.",
+      "mongo_impact": "OWNED bench behind Andrews. HOLD.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Prior Pulse",
+        "Chargers.com Week 3 injury report"
+      ]
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "signal_type": "usage",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "No new official CHI Friday designation this hour. Aggregator Q remains SPECULATION.",
+      "mongo_impact": "OWNED starter. Hold.",
+      "recommendation": "START",
+      "urgency": "MONITOR",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "Prior Pulse",
+        "NBC Sports Burden news"
+      ]
+    },
+    {
+      "player": "Kaelon Black",
+      "team": "SF",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new official 49ers Friday update this hour. Bosa calf news is unowned defensive context only.",
+      "mongo_impact": "OWNED bench. HOLD.",
+      "recommendation": "HOLD",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Prior Pulse"
+      ]
+    },
+    {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "On IR (knee). No new updates.",
+      "mongo_impact": "OWNED IR. HOLD.",
+      "recommendation": "HOLD",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Prior Pulse"
+      ]
+    },
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new injury. Locked Week 3 QB vs CHI Monday.",
+      "mongo_impact": "Locked QB start.",
+      "recommendation": "START",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Prior Pulse"
+      ]
+    },
+    {
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Official Thu DNP hamstring second straight day. Friday Rio game-status designation not posted as of 1:02 PM ET. Unofficial accounts remain ATTRIBUTED_REPORT and do not replace the official sheet.",
+      "mongo_impact": "Not on JDD roster. Context for owned Bateman FLEX only. Availability UNKNOWN.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": [
+        "NFL.com injuries",
+        "Ravens Wire Thu DNP",
+        "Baltimore Sun Thu report"
+      ]
+    },
+    {
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Continuity: Thu DNP hip/groin; Fri blank. DO_NOT_REEMIT as new material.",
+      "mongo_impact": "Not on JDD roster. Availability UNKNOWN.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": [
+        "Prior Pulse"
+      ]
+    }
   ],
   "waiver_signals": [
-    {"player": "generic_watch_only", "availability": "UNKNOWN", "status": "SPECULATION", "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. Sanders drop does not prove current FA.", "mongo_impact": "Do not spend FAAB from this Pulse.", "recommendation": "NONE", "urgency": "NONE", "confidence": "HIGH", "sources": ["AGENTS.md", "Mongo repo"]}
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. Sanders drop does not prove current FA.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": [
+        "AGENTS.md",
+        "Mongo repo"
+      ]
+    }
   ],
   "lineup_signals": [
-    {"week": 3, "summary": "No new official owned-player facts since 12:05 PM ET Pulse. Friday reports still not posted; BAL Friday Rio designation for Flowers remains the lock point for Bateman vs Downs FLEX.", "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs", "urgency": "MONITOR", "confidence": "HIGH"}
+    {
+      "week": 3,
+      "summary": "No new official owned-player facts since 12:05 PM ET Pulse. Friday reports still not posted; BAL Friday Rio designation for Flowers remains the lock point for Bateman vs Downs FLEX.",
+      "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs",
+      "urgency": "MONITOR",
+      "confidence": "HIGH"
+    }
   ],
   "expert_signals": [
-    {"topic": "Flowers / Bateman / Andrews Week 3", "status": "EXPERT_OPINION", "summary": "Prior CBS Sports fantasy injury column expects Flowers to miss Week 3 and calls Bateman an upside WR2 if Flowers sits. Still not an official designation.", "mongo_impact": "Supports Bateman FLEX over Downs pending Friday BAL designation.", "recommendation": "MONITOR", "urgency": "MONITOR", "confidence": "MEDIUM", "sources": ["cbssports.com fantasy injury report Week 3 2026"]},
-    {"topic": "Aggregator Q tags on Downs/Burden", "status": "SPECULATION", "summary": "Third-party projected-lineups Q tags on Downs/Burden remain uncorroborated by official team reports.", "mongo_impact": "Verify against official Friday reports before any action.", "recommendation": "VERIFY", "urgency": "LOW", "confidence": "LOW", "sources": ["nflfantasyedge.com/starting-lineups"]}
+    {
+      "topic": "Flowers / Bateman / Andrews Week 3",
+      "status": "EXPERT_OPINION",
+      "summary": "Prior CBS Sports fantasy injury column expects Flowers to miss Week 3 and calls Bateman an upside WR2 if Flowers sits. Still not an official designation.",
+      "mongo_impact": "Supports Bateman FLEX over Downs pending Friday BAL designation.",
+      "recommendation": "MONITOR",
+      "urgency": "MONITOR",
+      "confidence": "MEDIUM",
+      "sources": [
+        "cbssports.com fantasy injury report Week 3 2026"
+      ]
+    },
+    {
+      "topic": "Aggregator Q tags on Downs/Burden",
+      "status": "SPECULATION",
+      "summary": "Third-party projected-lineups Q tags on Downs/Burden remain uncorroborated by official team reports.",
+      "mongo_impact": "Verify against official Friday reports before any action.",
+      "recommendation": "VERIFY",
+      "urgency": "LOW",
+      "confidence": "LOW",
+      "sources": [
+        "nflfantasyedge.com/starting-lineups"
+      ]
+    }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T160500Z",
-    "completed_at": "2026-09-25T16:05:00Z",
-    "commit": "fbe3a9912a17723df259620fda6a2c155f83a80d"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T170500Z",
+    "completed_at": "2026-09-25T17:05:00Z",
+    "commit": "4e5089ea773b8f091ddfb178be5c1dc75e1cb42e"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -74,5 +315,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "1 PM ET hourly: no material change vs 12:05 PM tip fbe3a991. Friday official boards not yet posted for owned players. Flowers (BAL, hamstring) Friday Rio practice/final designation still NOT_YET_POSTED; Wed/Thu DNP official (CONFIRMED_FACT). Unofficial X @RavensMed11 is not an official sheet. Aggregator Q on Downs/Burden remains SPECULATION. Intelligence only; no ESPN state changed."
+  "notes": "2 PM ET hourly: no material change vs 1:05 tip 4e5089e. NFL Pulse scan 1315 quiet (0 accepted, pulse_count 162). Flowers (BAL, hamstring) Friday Rio practice/final designation still NOT_YET_POSTED; Wed/Thu DNP official (CONFIRMED_FACT); Hensley 'looking like' out again = ATTRIBUTED_REPORT; 4for4 'doubtful side of questionable', Bateman top WR, Andrews volume upside = EXPERT_OPINION (not new). Friday official boards not yet posted for owned players; aggregator Q on Downs/Burden remains SPECULATION. No direct X scan; FPData paywalled. Intelligence only; no ESPN state changed."
 }
