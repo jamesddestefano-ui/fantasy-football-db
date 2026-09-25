@@ -3,16 +3,16 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T020500Z",
-  "generated_at": "2026-09-25T02:02:00Z",
-  "completed_at": "2026-09-25T02:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T030800Z",
+  "generated_at": "2026-09-25T03:05:00Z",
+  "completed_at": "2026-09-25T03:08:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly_refresh",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
-    "x_direct": "LIMITED",
+    "x_direct": "OK",
     "experts": "LIMITED",
     "analytics": "LIMITED"
   },
@@ -63,18 +63,18 @@
     {
       "player": "Bijan Robinson",
       "team": "ATL",
-      "signal_type": "injury",
+      "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Playing TNF at GB tonight (entered with no game designation per Falcons/Packers official reports). NFL Pulse 2119 live watch through 2nd quarter found no player leaving game / injury; no reported Bijan injury found at ~10:00 PM ET. Game in progress; final not yet recorded.",
-      "mongo_impact": "OWNED starter; Week 3 points accruing tonight. No action.",
+      "summary": "TNF vs GB late/near-final vs 10:05 PM Pulse (then midgame, no box). SI live box ATL 27 GB 7: Bijan 23 CAR 169 YDS 1 TD. NBC/Packers.com earlier Q3: 20-158-1 plus 2 REC 19. No reported exit/injury. Game late 4th or complete depending on feed.",
+      "mongo_impact": "OWNED starter. Week 3 scoring locked and large. No further lineup action.",
       "recommendation": "START (locked)",
       "urgency": "NONE",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Atlanta Falcons final injury report",
-        "Packers.com Week 3 injury report",
-        "NFL Pulse digest 2026-09-24-2119"
+        "SI Falcons-Packers live box 9-24-2026",
+        "packers.com in-game updates",
+        "NBC Sports rumor mill 10:28 PM ET"
       ]
     },
     {
@@ -82,16 +82,16 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 9:15 PM Pulse: official Ravens Thu DNP for Flowers already logged; no Friday designation yet (team flying to Rio overnight).",
-      "mongo_impact": "OWNED bench. FLEX vs Downs probability up now that Thu DNP is official, not only beat observation.",
+      "summary": "Continuity: official Ravens Thu DNP for Flowers already logged; Friday Rio designation still pending after overnight flight.",
+      "mongo_impact": "OWNED bench. FLEX vs Downs still the live Sunday decision after Fri designation.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Ravens Thursday injury report via Ravens Wire 4:18 PM ET",
-        "CBS/RotoWire official DNP listing",
-        "Prior Pulse 001000Z"
+        "Ravens Thursday injury report via Ravens Wire",
+        "BaltimoreRavens.com Ryan Mink",
+        "Prior Pulse 020500Z"
       ]
     },
     {
@@ -99,14 +99,15 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 9:15 PM Pulse: Thu FP (knee) already logged; no new SEA update.",
-      "mongo_impact": "OWNED bench. Health path improved; committee still Price/Wilson-led. HOLD.",
+      "summary": "Continuity: Thu FP (knee) already logged; no new SEA update this hour.",
+      "mongo_impact": "OWNED bench. HOLD.",
       "recommendation": "HOLD",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Seahawks.com Week 3 injury report (John Boyle, 4:40 PM ET Sep 24)"
+        "Seahawks.com Week 3 injury report",
+        "Prior Pulse"
       ]
     },
     {
@@ -114,16 +115,14 @@
       "team": "MIA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 9:15 PM Pulse: Thu LP (knee) already logged; no Friday board yet.",
-      "mongo_impact": "OWNED bench. Monitor Friday designation. Not a Week 3 start.",
+      "summary": "Continuity: Thu LP (knee) already logged; no Friday board yet.",
+      "mongo_impact": "OWNED bench. Not a Week 3 start.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Chiefs.com Week 3 injury report opponent listing",
-        "Miami Herald Barry Jackson",
-        "RotoWire"
+        "Prior Pulse"
       ]
     },
     {
@@ -132,7 +131,7 @@
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
       "summary": "No new official Colts participation change this hour. Pierce IR path unchanged.",
-      "mongo_impact": "OWNED starter/FLEX. Continuity. Bateman FLEX debate continues if Flowers misses Brazil.",
+      "mongo_impact": "OWNED starter/FLEX. Bateman FLEX debate continues if Flowers misses Brazil.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
@@ -146,14 +145,15 @@
       "team": "LAC",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on Chargers Thursday injury report. Kolar remains DNP forearm / not IR; Njoku IR path unchanged. Gadsden still the healthy TE on the 53.",
+      "summary": "Not on Chargers Thursday injury report. Njoku IR path unchanged. Gadsden still the healthy TE on the 53.",
       "mongo_impact": "OWNED bench behind Andrews. HOLD.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Chargers.com Week 3 injury report"
+        "Chargers.com Week 3 injury report",
+        "Prior Pulse"
       ]
     },
     {
@@ -221,7 +221,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: official Thu DNP already logged at 9:15 PM; Friday Rio designation pending.",
+      "summary": "Continuity: official Thu DNP hamstring; Friday Rio designation pending.",
       "mongo_impact": "Not on JDD roster. Context for owned Bateman FLEX only. Availability UNKNOWN.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -237,7 +237,7 @@
       "team": "LAR",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Thu DNP hip; Fri blank. Pulse DO_NOT_REEMIT.",
+      "summary": "Continuity: Thu DNP hip; Fri blank. Pulse DO_NOT_REEMIT as new material.",
       "mongo_impact": "Not on JDD roster. Availability UNKNOWN.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -245,7 +245,7 @@
       "availability": "UNKNOWN",
       "sources": [
         "Rams.com Week 3 injury report",
-        "Prior Pulse 001000Z"
+        "Prior Pulse"
       ]
     }
   ],
@@ -268,7 +268,7 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "No NEW owned-player material vs 9:15 PM Pulse. Bijan locked and playing TNF with no reported injury. Hold remaining starters. Friday BAL designation for Flowers remains the lock point for Bateman vs Downs FLEX.",
+      "summary": "Bijan TNF production now recorded at monster level; start already locked. Remaining Sunday/Monday starters hold. Friday BAL Flowers designation remains the lock point for Bateman vs Downs FLEX.",
       "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -276,25 +276,28 @@
   ],
   "expert_signals": [
     {
-      "topic": "NFL Pulse evening deltas 2023/2119",
+      "topic": "TNF live scoring vs prior midgame Pulse",
       "status": "CONFIRMED_FACT",
-      "summary": "PRIME NFL Pulse scans 2026-09-24-2023 and 2119 accepted 0 new NFL_FACT; TNF midgame NO_NEW injuries; Fri boards blank; analysts NO_NEW; FantasyPtsData paywalled.",
-      "mongo_impact": "Supports no_material_change.",
+      "summary": "Official/beat in-game updates plus SI live box replace the 10:05 PM midgame 'no final' note. No Friday practice boards posted yet for BAL/SEA/MIA/CHI.",
+      "mongo_impact": "Material production update for owned Bijan only.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "sources": [
-        "prime-nfl-pulse digests/2026-09-24-2023.md",
-        "prime-nfl-pulse digests/2026-09-24-2119.md"
+        "SI live box",
+        "packers.com",
+        "NBC Sports"
       ]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    "Owned Bijan Robinson TNF box updated from midgame no-final (10:05 PM Pulse) to late-game SI line 23-169-1 TD with ATL leading 27-7; no injury exit reported"
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T011500Z",
-    "completed_at": "2026-09-25T01:15:00Z",
-    "commit_sha": "983f7ac2e2f9686abffa2e586af8fec0134d2d28"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T020500Z",
+    "completed_at": "2026-09-25T02:05:00Z",
+    "commit_sha": "d798415fcdb2bd29a6f6a5ecdd1dfcd806f507c3"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -303,10 +306,9 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "10:05 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "11:08 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Prior tip 983f7ac (9:15 PM) already carried Flowers official DNP / Holani FP / Bell LP; not re-counted as material.",
-    "Bijan TNF: no reported injury found; game in progress, no final score recorded here.",
-    "x_direct LIMITED; experts LIMITED; analytics LIMITED."
+    "Prior tip d798415 (10:05 PM) already carried Flowers official DNP / Holani FP / Bell LP; not re-counted as material.",
+    "x_direct OK (TNF live posts); experts LIMITED; analytics LIMITED."
   ]
 }
