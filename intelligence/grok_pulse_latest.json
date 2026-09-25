@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T001000Z",
-  "generated_at": "2026-09-25T00:08:00Z",
-  "completed_at": "2026-09-25T00:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T011500Z",
+  "generated_at": "2026-09-25T01:12:00Z",
+  "completed_at": "2026-09-25T01:15:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -64,16 +64,49 @@
       "player": "Rashod Bateman",
       "team": "BAL",
       "signal_type": "usage",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 7:05 PM Pulse. Flowers still reported out of Thursday team practice; final designation after Friday Rio practice. No NEW official OUT this hour.",
-      "mongo_impact": "OWNED bench. FLEX monitor vs Downs unchanged this hour.",
+      "status": "CONFIRMED_FACT",
+      "summary": "NEW vs 8:10 Pulse: official Ravens Thursday injury report lists Zay Flowers (hamstring) DNP second straight day. Game designation still pending after Rio arrival / Friday work. Ian Rapoport Week-4 lean is EXPERT_OPINION only.",
+      "mongo_impact": "OWNED bench. FLEX vs Downs probability up now that Thu DNP is official, not only beat observation.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse 230500Z",
-        "Baltimore Ravens.com"
+        "Ravens Thursday injury report via Ravens Wire 4:18 PM ET",
+        "CBS/RotoWire official DNP listing",
+        "Prior Pulse 001000Z"
+      ]
+    },
+    {
+      "player": "George Holani",
+      "team": "SEA",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "NEW vs 8:10 Pulse: Seahawks.com official Thursday sheet upgrades Holani (knee) from Wednesday LP to Thursday FP. Price remains LP (chest).",
+      "mongo_impact": "OWNED bench. Health path improved; committee still Price/Wilson-led. HOLD.",
+      "recommendation": "HOLD",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Seahawks.com Week 3 injury report (John Boyle, 4:40 PM ET Sep 24)"
+      ]
+    },
+    {
+      "player": "Chris Bell",
+      "team": "MIA",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "NEW vs 8:10 Pulse: official Dolphins Thursday report lists Bell (knee) LP second straight day. Bell told Miami Herald he intends to play Sunday; that self-report is ATTRIBUTED_REPORT, not a game designation.",
+      "mongo_impact": "OWNED bench. Monitor Friday designation. Not a Week 3 start.",
+      "recommendation": "HOLD",
+      "urgency": "MONITOR",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Chiefs.com Week 3 injury report opponent listing",
+        "Miami Herald Barry Jackson",
+        "RotoWire"
       ]
     },
     {
@@ -82,24 +115,9 @@
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
       "summary": "No new official Colts participation change this hour. Pierce IR path unchanged.",
-      "mongo_impact": "OWNED starter/FLEX. Continuity.",
+      "mongo_impact": "OWNED starter/FLEX. Continuity. Bateman FLEX debate continues if Flowers misses Brazil.",
       "recommendation": "START",
       "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "Prior Pulse"
-      ]
-    },
-    {
-      "player": "George Holani",
-      "team": "SEA",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "No new official SEA Thursday sheet located this hour beyond Wed LP (knee).",
-      "mongo_impact": "OWNED bench. HOLD.",
-      "recommendation": "HOLD",
-      "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
@@ -111,14 +129,14 @@
       "team": "LAC",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "No new official designation this hour.",
-      "mongo_impact": "OWNED bench behind Andrews.",
+      "summary": "Not on Chargers Thursday injury report. Kolar remains DNP forearm / not IR; Njoku IR path unchanged. Gadsden still the healthy TE on the 53.",
+      "mongo_impact": "OWNED bench behind Andrews. HOLD.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse"
+        "Chargers.com Week 3 injury report"
       ]
     },
     {
@@ -126,15 +144,14 @@
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new CHI/PHI designation. Bagent Thu DNP concussion remains soft context only (Pulse DO_NOT_REEMIT).",
+      "summary": "No new CHI/PHI designation this hour.",
       "mongo_impact": "OWNED starter. Hold.",
       "recommendation": "START",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse",
-        "NFL Pulse digest 1920"
+        "Prior Pulse"
       ]
     },
     {
@@ -183,83 +200,35 @@
       ]
     },
     {
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Official Ravens Thursday report: DNP hamstring, second straight day. Not yet OUT. Friday/travel designation pending.",
+      "mongo_impact": "Not on JDD roster. Context for owned Bateman FLEX only. Availability UNKNOWN.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": [
+        "Ravens Thursday injury report",
+        "Ravens Wire"
+      ]
+    },
+    {
       "player": "Puka Nacua",
       "team": "LAR",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "NEW vs 7:05 tip: Official Rams.com Week 3 board first-posts Thursday column \u2014 Nacua (hip) Thu DNP after Wed DNP. No Fri game designation yet.",
-      "mongo_impact": "Not on JDD roster. Intelligence-only discovery; availability UNKNOWN.",
+      "summary": "Continuity: official Rams Thursday board Nacua (hip) DNP after Wed DNP. Pulse DO_NOT_REEMIT as new owned fact.",
+      "mongo_impact": "Not on JDD roster. Availability UNKNOWN.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
         "Rams.com Week 3 injury report",
-        "NFL Pulse 20260924-190000"
-      ]
-    },
-    {
-      "player": "Jayden Reed",
-      "team": "GB",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "NEW vs 7:05 tip: NFL.com TNF inactives (~6:45 PM ET) list Reed (neck) INACTIVE ATL@GB; confirms prior Packers.com OUT.",
-      "mongo_impact": "Not on JDD roster. Intelligence-only; availability UNKNOWN.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "NFL.com Week 3 TNF inactives",
-        "NFL Pulse 20260924-184500"
-      ]
-    },
-    {
-      "player": "Malik Nabers",
-      "team": "NYG",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Giants.com Thu FP (shoulder); game status blank. Pulse DO_NOT_REEMIT.",
-      "mongo_impact": "Not on JDD roster.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "Giants.com",
-        "NFL Pulse digest 1920"
-      ]
-    },
-    {
-      "player": "Jaxson Dart",
-      "team": "NYG",
-      "signal_type": "roster",
-      "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Reserve/Injured 09/24; no surgery completed / no 53 fill. Pulse DO_NOT_REEMIT.",
-      "mongo_impact": "Not on JDD roster (Hurts QB1).",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "Giants.com",
-        "NFL Pulse digest 1920"
-      ]
-    },
-    {
-      "player": "Brock Bowers",
-      "team": "LV",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Raiders Thu LP (knee). Pulse DO_NOT_REEMIT.",
-      "mongo_impact": "Not on JDD roster.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "Raiders.com",
-        "NFL Pulse digest 1920"
+        "Prior Pulse 001000Z"
       ]
     }
   ],
@@ -282,32 +251,36 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "No NEW owned-player material vs 7:05 PM Pulse. Hold starters. Bateman FLEX monitor continues on Flowers Thu absence. New official facts (Nacua Thu DNP; Reed TNF inactive; other TNF designations) are unowned discovery only.",
-      "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX",
+      "summary": "Hold locked starters. Material owned deltas vs 8:10: official Flowers Thu DNP (Bateman FLEX live) and official Holani Thu FP. Bell official Thu LP + intends-to-play self-report. Friday BAL designation still the lock point for Bateman vs Downs.",
+      "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs",
       "urgency": "MONITOR",
       "confidence": "HIGH"
     }
   ],
   "expert_signals": [
     {
-      "topic": "NFL Pulse 1920 evening delta",
-      "status": "CONFIRMED_FACT",
-      "summary": "PRIME NFL Pulse digest 2026-09-24-1920 accepted 5 MEDIUM store-only facts (Reed inactive, Campbell inactive, Hargrave active, Bowman active, Nacua Thu DNP). WakeParent NO for Mongo; analyst NO_NEW; FantasyPtsData PAYWALLED.",
-      "mongo_impact": "None owned on JDD \u2192 supports no_material_change.",
+      "topic": "Flowers Week 3 availability lean",
+      "status": "EXPERT_OPINION",
+      "summary": "Ian Rapoport (via Sporting News recap) leaned Week 4 return more likely than Sunday Brazil. Not an official OUT.",
+      "mongo_impact": "Supports Bateman FLEX monitor only.",
       "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
+      "urgency": "MONITOR",
+      "confidence": "MEDIUM",
       "sources": [
-        "prime-nfl-pulse digests/2026-09-24-1920.md"
+        "Sporting News citing NFL Network Ian Rapoport"
       ]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    "Official Ravens Thursday report lists Zay Flowers DNP (hamstring) second straight day; upgrades Bateman FLEX case from beat-only to official sheet.",
+    "Official Seahawks.com Thursday report upgrades owned George Holani (knee) Wednesday LP to Thursday FP.",
+    "Official Dolphins Thursday report lists owned Chris Bell (knee) LP; Bell ATTRIBUTED_REPORT intends to play Sunday."
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-24T230500Z",
-    "completed_at": "2026-09-24T23:05:00Z",
-    "commit_sha": "13edb0319e86e908ae75db6384213e99f627d48d"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T001000Z",
+    "completed_at": "2026-09-25T00:10:00Z",
+    "commit_sha": "37966ccdbad3694c3b19a80a2b63341c454db686"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -316,10 +289,9 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "8:10 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "9:15 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Logged NEW unowned CONFIRMED_FACT intel from Pulse 1920: Nacua Thu DNP hip; Reed TNF inactive (plus IDP TNF designations not fantasy-relevant to JDD).",
-    "no_material_change=true: none change owned JDD decisions vs 7:05 tip.",
+    "no_material_change=false due to official owned-relevant sheets (Holani FP; Flowers official DNP context for Bateman; Bell LP).",
     "x_direct LIMITED; experts LIMITED; analytics LIMITED."
   ]
 }
