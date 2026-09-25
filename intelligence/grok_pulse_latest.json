@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T220600Z",
-  "generated_at": "2026-09-25T22:04:00Z",
-  "completed_at": "2026-09-25T22:06:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T231000Z",
+  "generated_at": "2026-09-25T23:08:00Z",
+  "completed_at": "2026-09-25T23:10:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly",
@@ -115,7 +115,7 @@
       "team": "MIA",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Official Thu LP (knee) unchanged; Friday official board still blank.",
+      "summary": "NFL.com Week 3 board shows MIA WR Chris Bell Limited Participation; Dolphins game statuses not yet posted (CBS: TBA).",
       "mongo_impact": "OWNED bench. Not a Week 3 start over current FLEX/starters.",
       "recommendation": "HOLD",
       "urgency": "LOW",
@@ -123,7 +123,8 @@
       "availability": "OWNED",
       "sources": [
         "NFL.com Thursday sheets",
-        "Prior Pulse"
+        "Prior Pulse",
+        "https://www.nfl.com/injuries/league/2026/reg3"
       ]
     },
     {
@@ -131,7 +132,7 @@
       "team": "IND",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "No new official Colts Friday participation. Pierce IR already logged. Aggregator Q tags remain unverified.",
+      "summary": "Colts Friday game statuses still TBA per CBS; Downs not on NFL.com Week 3 board rows seen. Aggregator Q tags remain unverified SPECULATION.",
       "mongo_impact": "OWNED starter/FLEX. Bateman FLEX debate continues if Flowers misses Brazil.",
       "recommendation": "START",
       "urgency": "NONE",
@@ -163,14 +164,16 @@
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new official CHI Friday designation this hour. Aggregator Q remains SPECULATION.",
-      "mongo_impact": "OWNED starter. Hold.",
-      "recommendation": "START",
-      "urgency": "MONITOR",
+      "summary": "Bears QB Caleb Williams (hamstring) DNP all week; HC Ben Johnson said he expects Williams to miss some time (CBS). Backup Tyson Bagent in concussion protocol; Case Keenum could start MNF vs PHI. Burden own status: no official designation; Bears final game statuses due Saturday (Monday game). Aggregator Q remains SPECULATION.",
+      "mongo_impact": "Negative QB-environment downgrade for owned FLEX/WR Burden (MNF). Monitor Saturday statuses; Burden plays Monday so late-swap flexibility exists.",
+      "recommendation": "HOLD; no lineup change without James approval. Re-check Saturday Bears final report.",
+      "urgency": "MEDIUM",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse"
+        "Prior Pulse",
+        "https://www.cbssports.com/nfl/news/nfl-injury-report-for-week-3/",
+        "https://www.nfl.com/injuries/league/2026/reg3"
       ]
     },
     {
@@ -320,6 +323,13 @@
       "status": "EXPERT_OPINION",
       "summary": "Flowers officially QUESTIONABLE (not OUT). Keep Downs at FLEX for now; swap to Bateman only if Flowers inactive Sunday, with James approval.",
       "urgency": "HIGH"
+    },
+    {
+      "player": "Luther Burden III",
+      "slot": "WR/FLEX",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Bears QB uncertainty (Williams out-leaning, Keenum possible) lowers Burden outlook; Monday game allows late decision after Saturday statuses.",
+      "urgency": "MEDIUM"
     }
   ],
   "expert_signals": [
@@ -351,14 +361,13 @@
     }
   ],
   "material_changes": [
-    "Zay Flowers (BAL, unowned) official Friday designation posted: LP, QUESTIONABLE (hamstring) \u2014 previously undesignated/expected-out; directly affects owned Bateman FLEX decision, now deferred to Sunday inactives.",
-    "Ronnie Stanley (BAL LT) officially OUT (toe)."
+    "Owned WR Luther Burden III: Bears QB Caleb Williams (hamstring) DNP and expected to miss time per HC Ben Johnson (attributed via CBS); Bagent in concussion protocol, Case Keenum possible MNF starter. QB-environment downgrade; no lineup action without James approval."
   ],
   "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T210600Z",
-    "completed_at": "2026-09-25T21:06:00Z",
-    "commit": "8a4111ed1a1a40043c13100a61cece729528e41c"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T220600Z",
+    "completed_at": "2026-09-25T22:06:00Z",
+    "commit": "c13659025f43a5698fee8d927290b4f5798789e4"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -366,5 +375,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "6 PM ET hourly. Ravens.com final report verified directly. NFL Pulse scan 2026-09-25-1721 consumed: Darnold/Collins/Simmons/Love/Pollard/Broncos unowned, not imported beyond intel. No direct X scan. Pulse is intelligence-only; no ESPN changes."
+  "notes": "7 PM ET hourly. NFL Pulse scan 2026-09-25-1824 consumed (Nacua Doubtful official, Bosa, Dowdle OUT, Evans Q) \u2014 all unowned, availability UNKNOWN, not material. Flowers Q (official) unchanged since 6 PM. No direct X scan. Intelligence only; no ESPN changes."
 }
