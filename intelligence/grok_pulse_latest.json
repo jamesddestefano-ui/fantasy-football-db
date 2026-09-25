@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T110800Z",
-  "generated_at": "2026-09-25T11:05:00Z",
-  "completed_at": "2026-09-25T11:08:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T120600Z",
+  "generated_at": "2026-09-25T12:04:00Z",
+  "completed_at": "2026-09-25T12:06:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -304,14 +304,26 @@
       "sources": [
         "nflfantasyedge.com/starting-lineups"
       ]
+    },
+    {
+      "topic": "NFL Pulse 0715 overnight delta",
+      "status": "CONFIRMED_FACT",
+      "summary": "PRIME NFL Pulse scan 2026-09-25-0715 (8h overnight window) accepted 0 new NFL_FACT; Friday team boards still blank; Pierce/Iosivas IR still not on official transactions (CONFLICT); analysts quiet.",
+      "mongo_impact": "No owned-player change.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": [
+        "prime-nfl-pulse digests/2026-09-25-0715.md"
+      ]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T100800Z",
-    "completed_at": "2026-09-25T10:08:00Z",
-    "commit_sha": "2adba01"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T110800Z",
+    "completed_at": "2026-09-25T11:08:00Z",
+    "commit_sha": "8d8d641"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -320,9 +332,9 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "7:08 AM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "8:06 AM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No PRIME NFL Pulse scans since 2026-09-24 23:17 ET. Web results this hour were Thu-dated or older (Achane rib article is Week 2 history).",
-    "x_direct LIMITED (no direct X scan); experts LIMITED; analytics LIMITED (FantasyPtsData paywalled)."
+    "No material change vs 7:08 tip. Downs/Burden aggregator Q tags remain SPECULATION pending official Friday boards / ESPN badge.",
+    "x_direct LIMITED; experts LIMITED; analytics LIMITED."
   ]
 }
