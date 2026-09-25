@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T140600Z",
-  "generated_at": "2026-09-25T14:04:00Z",
-  "completed_at": "2026-09-25T14:06:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T151100Z",
+  "generated_at": "2026-09-25T15:09:00Z",
+  "completed_at": "2026-09-25T15:11:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly",
@@ -71,14 +71,14 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Prior Pulse 130500Z", "NBC Sports/PFT recap 9-24-2026"]
+      "sources": ["Prior Pulse 140600Z", "NBC Sports/PFT recap 9-24-2026"]
     },
     {
       "player": "Rashod Bateman",
       "team": "BAL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "No official Friday Ravens game-status sheet as of 10 AM ET. Flowers remains official Thu DNP hamstring x2. Travel/play notes stay ATTRIBUTED_REPORT.",
+      "summary": "No official Friday Ravens game-status sheet as of 11:11 AM ET. Flowers remains official Thu DNP hamstring x2. Unofficial travel chatter is ATTRIBUTED_REPORT, not a designation.",
       "mongo_impact": "OWNED bench. FLEX vs Downs still waits on Fri Rio designation.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -91,7 +91,7 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: official Seahawks.com Thu FP (knee). Friday board still blank as of 10 AM ET.",
+      "summary": "Continuity: official Seahawks.com Thu FP (knee). Friday board still blank as of 11:11 AM ET.",
       "mongo_impact": "OWNED bench. HOLD.",
       "recommendation": "HOLD",
       "urgency": "LOW",
@@ -195,7 +195,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Thu DNP hamstring second straight day. Friday Rio game-status designation not posted as of 10 AM ET. Unofficial accounts calling him unlikely remain ATTRIBUTED_REPORT/SPECULATION.",
+      "summary": "Official Thu DNP hamstring second straight day. Friday Rio game-status designation not posted as of 11:11 AM ET. Unofficial accounts saying Flowers is traveling remain ATTRIBUTED_REPORT and do not replace the official sheet.",
       "mongo_impact": "Not on JDD roster. Context for owned Bateman FLEX only. Availability UNKNOWN.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -233,7 +233,7 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "No new official owned-player facts since 9:05 AM ET Pulse. Friday reports still not posted; BAL Friday Rio designation for Flowers remains the lock point for Bateman vs Downs FLEX.",
+      "summary": "No new official owned-player facts since 10:06 AM ET Pulse. Friday reports still not posted; BAL Friday Rio designation for Flowers remains the lock point for Bateman vs Downs FLEX.",
       "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -264,9 +264,9 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T130500Z",
-    "completed_at": "2026-09-25T13:05:00Z",
-    "commit": "bccecf0d47aa22b757a20ebd659b27d3c96cf339"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T140600Z",
+    "completed_at": "2026-09-25T14:06:00Z",
+    "commit": "b44bf4a19b505d7df79c554d4697789f3053b216"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -274,5 +274,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "10 AM ET hourly: no material change vs 9:05 tip bccecf0. Friday official boards still not posted for owned players. Flowers (BAL, hamstring) Friday Rio practice/final designation NOT_YET_POSTED; Wed/Thu DNP official (CONFIRMED_FACT). Intelligence only; no ESPN state changed.\n"
+  "notes": "11:11 AM ET hourly: no material change vs 10:06 tip b44bf4a. Friday official boards still not posted for owned players. Flowers (BAL, hamstring) Friday Rio practice/final designation NOT_YET_POSTED; Wed/Thu DNP official (CONFIRMED_FACT). Unofficial travel posts are ATTRIBUTED_REPORT. Intelligence only; no ESPN state changed.\n"
 }
