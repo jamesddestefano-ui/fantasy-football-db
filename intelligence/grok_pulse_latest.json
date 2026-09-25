@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T180700Z",
-  "generated_at": "2026-09-25T18:06:00Z",
-  "completed_at": "2026-09-25T18:07:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T190900Z",
+  "generated_at": "2026-09-25T19:08:00Z",
+  "completed_at": "2026-09-25T19:09:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly",
@@ -249,6 +249,30 @@
       "sources": [
         "Prior Pulse"
       ]
+    },
+    {
+      "player": "Andrew Thomas",
+      "team": "NYG",
+      "position": "OT",
+      "owned_by_jdd": false,
+      "availability": "UNKNOWN",
+      "status": "CONFIRMED_FACT",
+      "signal": "Full participant Friday (groin), upgrade from Thu DNP per HC Harbaugh (Giants.com tracker). Game status pending.",
+      "source": "https://www.giants.com/news/week-3-tracker-latest-news-notes-roster-moves-tennessee-titans-nfl",
+      "observed_at": "2026-09-25T14:21:00-04:00",
+      "mongo_impact": "none_direct (offensive lineman; not a fantasy asset)"
+    },
+    {
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "position": "WR",
+      "owned_by_jdd": false,
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "signal": "McVay via PFT (Alper, 2:15 PM ET): missed Friday practice, will be listed Doubtful vs DEN (hip). Rams.com Friday game status not yet stamped.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/puka-nacua-doubtful-to-play-on-sunday",
+      "observed_at": "2026-09-25T14:21:00-04:00",
+      "mongo_impact": "none_direct (not rostered by JDD; opponent/league-wide intel only)"
     }
   ],
   "waiver_signals": [
@@ -305,9 +329,9 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T170500Z",
-    "completed_at": "2026-09-25T17:05:00Z",
-    "commit": "4e5089ea773b8f091ddfb178be5c1dc75e1cb42e"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T180700Z",
+    "completed_at": "2026-09-25T18:07:00Z",
+    "commit": "3f7737f930c68870c7c553e98f24d3fabdd6eddd"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -315,5 +339,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "2 PM ET hourly: no material change vs 1:05 tip 4e5089e. NFL Pulse scan 1315 quiet (0 accepted, pulse_count 162). Flowers (BAL, hamstring) Friday Rio practice/final designation still NOT_YET_POSTED; Wed/Thu DNP official (CONFIRMED_FACT); Hensley 'looking like' out again = ATTRIBUTED_REPORT; 4for4 'doubtful side of questionable', Bateman top WR, Andrews volume upside = EXPERT_OPINION (not new). Friday official boards not yet posted for owned players; aggregator Q on Downs/Burden remains SPECULATION. No direct X scan; FPData paywalled. Intelligence only; no ESPN state changed."
+  "notes": "3 PM ET hourly: no material change for JDD-owned players vs 2:07 tip 3f7737f. NFL Pulse scan 1421 accepted 2 (pulse_count 164): Andrew Thomas NYG OT Fri FP (CONFIRMED_FACT) and Puka Nacua LAR WR Doubtful per McVay/PFT (ATTRIBUTED_REPORT, pending Rams.com stamp) \u2014 both unowned by JDD, availability UNKNOWN, logged as intel only. Flowers (BAL, hamstring) Friday Rio designation still NOT_YET_POSTED; traveled to Brazil (Garafolo via DraftSharks, ATTRIBUTED_REPORT); experts expect out. Friday official boards not yet posted for owned players; aggregator Q on Downs/Burden remains SPECULATION. No direct X scan; FPData paywalled. Intelligence only; no ESPN state changed."
 }
