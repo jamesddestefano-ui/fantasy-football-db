@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T210600Z",
-  "generated_at": "2026-09-25T21:05:00Z",
-  "completed_at": "2026-09-25T21:06:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T220600Z",
+  "generated_at": "2026-09-25T22:04:00Z",
+  "completed_at": "2026-09-25T22:06:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly",
@@ -81,7 +81,7 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Bateman FLEX still live. Flowers returned to some Friday individual work (Jonas Shaffer via NBC Sports) after official Wed/Thu DNP. Ravens.com Friday column and game-status still blank at scan; aggregators listing Flowers Questionable are not the official sheet.",
+      "summary": "Owned BAL WR (bench). Flowers officially QUESTIONABLE (Fri LP) per Ravens.com; Bateman role upside hinges on Sunday inactives. LT Ronnie Stanley OUT (toe) is a mild BAL offense negative.",
       "mongo_impact": "OWNED bench. FLEX vs Downs still waits on official BAL Friday/Rio designation.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -90,7 +90,8 @@
       "sources": [
         "NBC Sports Flowers Friday practice",
         "Ravens.com Week 3 injury report",
-        "X aggregator Q tags 20:08Z"
+        "X aggregator Q tags 20:08Z",
+        "https://www.baltimoreravens.com/team/injury-report/"
       ]
     },
     {
@@ -220,17 +221,16 @@
     {
       "player": "Zay Flowers",
       "team": "BAL",
-      "signal_type": "injury",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "MATERIAL vs 15:09 ET Pulse: beat reporting (Jonas Shaffer / NBC Sports) says Flowers returned to Friday individual drills after official Wed/Thu DNP hamstring. Ravens.com Friday participation and game-status columns still UNSPECIFIED/blank at scan. Aggregator Questionable tags are not the official Friday stamp. Shaffer still says Week 3 play seems unlikely.",
-      "mongo_impact": "Not on JDD roster. Context for owned Bateman FLEX only. Availability UNKNOWN.",
-      "recommendation": "NONE",
-      "urgency": "MONITOR",
-      "confidence": "MEDIUM",
+      "signal_type": "injury_designation",
+      "status": "CONFIRMED_FACT",
+      "summary": "Official Ravens final Week 3 report: Hamstring DNP/DNP/LP (Fri limited), game status QUESTIONABLE vs DAL (Rio). Supersedes attributed Fri individual-drills report.",
+      "mongo_impact": "Unowned BAL WR1; if inactive, JDD-owned Rashod Bateman projects as BAL WR1 and is the FLEX alternative to Josh Downs. Decision deferred to Sunday inactives.",
+      "recommendation": "HOLD lineup; re-check Sunday inactives; Bateman-over-Downs FLEX only if Flowers inactive and James approves.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
-        "NBC Sports Flowers news",
-        "Ravens.com Week 3 injury report"
+        "https://www.baltimoreravens.com/team/injury-report/"
       ]
     },
     {
@@ -280,6 +280,21 @@
         "https://www.giants.com/news/injury-report-nfl-week-3-titans-jaxson-dart-brian-burns-malik-nabers-andrew-thomas"
       ],
       "position": "WR"
+    },
+    {
+      "player": "Ronnie Stanley",
+      "team": "BAL",
+      "signal_type": "injury_designation",
+      "status": "CONFIRMED_FACT",
+      "summary": "Official Ravens final report: Toe DNP x3, OUT vs DAL; Carson Vinson expected at LT.",
+      "mongo_impact": "Mild negative for BAL passing game (owned Andrews, Bateman). No roster action.",
+      "recommendation": "No action.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": [
+        "https://www.baltimoreravens.com/team/injury-report/"
+      ]
     }
   ],
   "waiver_signals": [
@@ -300,11 +315,11 @@
   ],
   "lineup_signals": [
     {
-      "week": 3,
-      "summary": "Material beat update: Flowers in Friday individuals but official BAL Friday/Rio designation still not on Ravens.com. Bateman vs Downs FLEX remains the only live owned lineup fork.",
-      "recommendation": "HOLD current lineup; MONITOR official BAL Friday designation before locking Bateman FLEX over Downs",
-      "urgency": "MONITOR",
-      "confidence": "HIGH"
+      "player": "Rashod Bateman / Josh Downs",
+      "slot": "FLEX",
+      "status": "EXPERT_OPINION",
+      "summary": "Flowers officially QUESTIONABLE (not OUT). Keep Downs at FLEX for now; swap to Bateman only if Flowers inactive Sunday, with James approval.",
+      "urgency": "HIGH"
     }
   ],
   "expert_signals": [
@@ -335,12 +350,15 @@
       ]
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    "Zay Flowers (BAL, unowned) official Friday designation posted: LP, QUESTIONABLE (hamstring) \u2014 previously undesignated/expected-out; directly affects owned Bateman FLEX decision, now deferred to Sunday inactives.",
+    "Ronnie Stanley (BAL LT) officially OUT (toe)."
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T201000Z",
-    "completed_at": "2026-09-25T20:10:00Z",
-    "commit": "e361f66b0c9bb94fa927aeafe006b1c625e71543"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T210600Z",
+    "completed_at": "2026-09-25T21:06:00Z",
+    "commit": "8a4111ed1a1a40043c13100a61cece729528e41c"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -348,5 +366,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "5 PM ET hourly: no material change for JDD-owned players vs 4:10 tip e361f66. NFL Pulse scans 1525/1624 (pulse_count 170) all unowned: Bowers LV TE Questionable (official), Nabers NYG no designation (official), Burns/Banks/Nubin NYG Q; Andrew Thomas corrected to official Fri LP, no designation (supersedes 3 PM tracker FP). All availability UNKNOWN. Flowers (BAL, hamstring): official Ravens Friday column/game status still NOT_YET_POSTED in sources checked; Friday individual-drills report (Shaffer/NBC, logged 4:10) stands as ATTRIBUTED_REPORT; a search-engine summary claiming Minter said Flowers 'expected to play' was NOT supported by its cited source and is rejected. Bateman FLEX decision still pending official designation. No direct X scan; FPData paywalled. Intelligence only; no ESPN state changed."
+  "notes": "6 PM ET hourly. Ravens.com final report verified directly. NFL Pulse scan 2026-09-25-1721 consumed: Darnold/Collins/Simmons/Love/Pollard/Broncos unowned, not imported beyond intel. No direct X scan. Pulse is intelligence-only; no ESPN changes."
 }
