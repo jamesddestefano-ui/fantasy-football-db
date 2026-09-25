@@ -3,12 +3,12 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T100800Z",
-  "generated_at": "2026-09-25T10:05:00Z",
-  "completed_at": "2026-09-25T10:08:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T110800Z",
+  "generated_at": "2026-09-25T11:05:00Z",
+  "completed_at": "2026-09-25T11:08:00Z",
   "week": 3,
   "season": 2026,
-  "run_type": "overnight_refresh_6am",
+  "run_type": "hourly_refresh",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -274,7 +274,7 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "No new owned-player facts overnight. Bijan final banked. Flowers (hamstring) still DNP Wed/Thu; Ravens landed in Rio Friday morning, Friday practice there produces the final report and game designation. SI Ravens beat opinion (Thu) says it would be 'shocking' to see Flowers Sunday: EXPERT_OPINION, not a designation.",
+      "summary": "No new official owned-player facts since 6:08 AM. Friday reports not yet posted; BAL Friday Rio designation for Flowers remains the lock point for Bateman vs Downs FLEX.",
       "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -282,37 +282,36 @@
   ],
   "expert_signals": [
     {
-      "topic": "Flowers Week 3 outlook",
+      "topic": "Flowers / Bateman / Andrews Week 3",
       "status": "EXPERT_OPINION",
-      "summary": "SI Ravens OnSI (Thu) considers Flowers and Stanley unlikely for Sunday given no practice all week and Rio field conditions; Minter: 'we will figure out what is best' for Flowers. Not an official status.",
-      "mongo_impact": "Supports Bateman FLEX case pending Friday designation.",
+      "summary": "CBS Sports fantasy injury column (Thu) expects Flowers to miss Week 3, calls Bateman an upside WR2 and Andrews a low-end TE2 if Flowers sits. Not an official designation.",
+      "mongo_impact": "Supports Bateman FLEX over Downs pending Friday BAL designation; Andrews TE ceiling lowered in that case (Gadsden alternative on bench).",
       "recommendation": "MONITOR",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "sources": [
-        "si.com Ravens OnSI 9-24-2026",
-        "baltimoreravens.com 9-24-2026"
+        "cbssports.com fantasy injury report Week 3 2026"
       ]
     },
     {
-      "topic": "NFL Pulse overnight",
-      "status": "CONFIRMED_FACT",
-      "summary": "No PRIME NFL Pulse scans after 2026-09-24 23:17 ET (last: quiet, 0 accepted). No new owned-player pulses.",
-      "mongo_impact": "None.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
+      "topic": "Aggregator Q tags on Downs/Burden",
+      "status": "SPECULATION",
+      "summary": "A third-party projected-lineups page (nflfantasyedge.com) shows 'Q' next to Josh Downs and Luther Burden. Not corroborated by any official team report seen in Pulse; prior official-source signals show no Downs/Burden designation. Treated as unverified.",
+      "mongo_impact": "Verify against official Friday reports / ESPN badge at the noon Live Check before any action.",
+      "recommendation": "VERIFY",
+      "urgency": "LOW",
+      "confidence": "LOW",
       "sources": [
-        "prime-nfl-pulse state.json"
+        "nflfantasyedge.com/starting-lineups"
       ]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T080500Z",
-    "completed_at": "2026-09-25T08:05:00Z",
-    "commit_sha": "219be86"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T100800Z",
+    "completed_at": "2026-09-25T10:08:00Z",
+    "commit_sha": "2adba01"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -321,9 +320,9 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "6:08 AM ET overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "7:08 AM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 4 AM tip 219be86. Friday injury boards not yet posted.",
-    "x_direct LIMITED (no direct X scan this run); experts LIMITED; analytics LIMITED (FantasyPtsData paywalled)."
+    "No PRIME NFL Pulse scans since 2026-09-24 23:17 ET. Web results this hour were Thu-dated or older (Achane rib article is Week 2 history).",
+    "x_direct LIMITED (no direct X scan); experts LIMITED; analytics LIMITED (FantasyPtsData paywalled)."
   ]
 }
