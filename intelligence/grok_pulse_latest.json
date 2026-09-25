@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-24T230500Z",
-  "generated_at": "2026-09-24T23:03:00Z",
-  "completed_at": "2026-09-24T23:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T001000Z",
+  "generated_at": "2026-09-25T00:08:00Z",
+  "completed_at": "2026-09-25T00:10:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -65,16 +65,15 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 6:10 PM Pulse. Beat/team site still say Flowers not in Thursday team practice (hamstring); Ravens.com Ryan Mink 2:02 PM ET notes Flowers in street clothes then back inside; final designation after Friday Rio practice. No NEW official OUT/game-status this hour.",
-      "mongo_impact": "OWNED bench. FLEX path vs Downs still open; no NEW material delta this hour.",
+      "summary": "Continuity vs 7:05 PM Pulse. Flowers still reported out of Thursday team practice; final designation after Friday Rio practice. No NEW official OUT this hour.",
+      "mongo_impact": "OWNED bench. FLEX monitor vs Downs unchanged this hour.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Baltimore Ravens.com Ryan Mink 2026-09-24 2:02 PM ET",
-        "NBC Sports Myles Simmons",
-        "Prior Pulse 221000Z"
+        "Prior Pulse 230500Z",
+        "Baltimore Ravens.com"
       ]
     },
     {
@@ -89,8 +88,7 @@
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse",
-        "NFL.com injuries"
+        "Prior Pulse"
       ]
     },
     {
@@ -98,7 +96,7 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "No new official Thursday SEA participation sheet located this hour beyond Wed LP (knee).",
+      "summary": "No new official SEA Thursday sheet located this hour beyond Wed LP (knee).",
       "mongo_impact": "OWNED bench. HOLD.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -113,7 +111,7 @@
       "team": "LAC",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "No new official designation. Bowers LV Thu LP remains unowned context only.",
+      "summary": "No new official designation this hour.",
       "mongo_impact": "OWNED bench behind Andrews.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -128,14 +126,15 @@
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new CHI/PHI designation changing Week 3 Monday start.",
+      "summary": "No new CHI/PHI designation. Bagent Thu DNP concussion remains soft context only (Pulse DO_NOT_REEMIT).",
       "mongo_impact": "OWNED starter. Hold.",
       "recommendation": "START",
       "urgency": "MONITOR",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse"
+        "Prior Pulse",
+        "NFL Pulse digest 1920"
       ]
     },
     {
@@ -143,8 +142,8 @@
       "team": "SF",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "No new Thursday update.",
-      "mongo_impact": "OWNED bench. HOLD CMC handcuff.",
+      "summary": "No new update this hour.",
+      "mongo_impact": "OWNED bench. HOLD.",
       "recommendation": "HOLD",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -158,7 +157,7 @@
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "On IR (knee). No new updates this hour.",
+      "summary": "On IR (knee). No new updates.",
       "mongo_impact": "OWNED IR. HOLD.",
       "recommendation": "HOLD",
       "urgency": "HIGH",
@@ -184,19 +183,51 @@
       ]
     },
     {
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "NEW vs 7:05 tip: Official Rams.com Week 3 board first-posts Thursday column \u2014 Nacua (hip) Thu DNP after Wed DNP. No Fri game designation yet.",
+      "mongo_impact": "Not on JDD roster. Intelligence-only discovery; availability UNKNOWN.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": [
+        "Rams.com Week 3 injury report",
+        "NFL Pulse 20260924-190000"
+      ]
+    },
+    {
+      "player": "Jayden Reed",
+      "team": "GB",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "NEW vs 7:05 tip: NFL.com TNF inactives (~6:45 PM ET) list Reed (neck) INACTIVE ATL@GB; confirms prior Packers.com OUT.",
+      "mongo_impact": "Not on JDD roster. Intelligence-only; availability UNKNOWN.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": [
+        "NFL.com Week 3 TNF inactives",
+        "NFL Pulse 20260924-184500"
+      ]
+    },
+    {
       "player": "Malik Nabers",
       "team": "NYG",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Giants.com still lists Thu FP (shoulder) after Wed LP; game status blank. Do not infer ACTIVE. NFL Pulse 1823 DO_NOT_REEMIT.",
-      "mongo_impact": "Not on JDD roster. Intelligence-only.",
+      "summary": "Continuity: Giants.com Thu FP (shoulder); game status blank. Pulse DO_NOT_REEMIT.",
+      "mongo_impact": "Not on JDD roster.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
         "Giants.com",
-        "NFL Pulse digest 2026-09-24-1823"
+        "NFL Pulse digest 1920"
       ]
     },
     {
@@ -204,15 +235,15 @@
       "team": "NYG",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Giants Reserve/Injured 09/24 already logged; Pulse 1823 DO_NOT_REEMIT (no surgery completed / no 53 fill).",
+      "summary": "Continuity: Reserve/Injured 09/24; no surgery completed / no 53 fill. Pulse DO_NOT_REEMIT.",
       "mongo_impact": "Not on JDD roster (Hurts QB1).",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
-        "Giants.com transactions",
-        "NFL Pulse digest 2026-09-24-1823"
+        "Giants.com",
+        "NFL Pulse digest 1920"
       ]
     },
     {
@@ -220,7 +251,7 @@
       "team": "LV",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Raiders.com Thu LP (knee). Pulse 1823 DO_NOT_REEMIT.",
+      "summary": "Continuity: Raiders Thu LP (knee). Pulse DO_NOT_REEMIT.",
       "mongo_impact": "Not on JDD roster.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -228,7 +259,7 @@
       "availability": "UNKNOWN",
       "sources": [
         "Raiders.com",
-        "NFL Pulse digest 2026-09-24-1823"
+        "NFL Pulse digest 1920"
       ]
     }
   ],
@@ -251,32 +282,32 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "No NEW owned-player material vs 6:10 PM Pulse. Hold starters. Bateman FLEX monitor continues on Flowers Thu absence (final designation after Fri Rio practice). Unowned NYG/LV facts unchanged.",
-      "recommendation": "HOLD current lineup; MONITOR Fri BAL designation / travel before locking Bateman FLEX",
+      "summary": "No NEW owned-player material vs 7:05 PM Pulse. Hold starters. Bateman FLEX monitor continues on Flowers Thu absence. New official facts (Nacua Thu DNP; Reed TNF inactive; other TNF designations) are unowned discovery only.",
+      "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX",
       "urgency": "MONITOR",
       "confidence": "HIGH"
     }
   ],
   "expert_signals": [
     {
-      "topic": "NFL Pulse evening delta quiet",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "PRIME NFL Pulse digest 2026-09-24-1823: 0 accepted NFL_FACT; analyst NO_NEW (ETR/Levitan/Berry/McFarland); FantasyPtsData PAYWALLED; WakeParent NO for Mongo.",
-      "mongo_impact": "Supports no_material_change this hour.",
+      "topic": "NFL Pulse 1920 evening delta",
+      "status": "CONFIRMED_FACT",
+      "summary": "PRIME NFL Pulse digest 2026-09-24-1920 accepted 5 MEDIUM store-only facts (Reed inactive, Campbell inactive, Hargrave active, Bowman active, Nacua Thu DNP). WakeParent NO for Mongo; analyst NO_NEW; FantasyPtsData PAYWALLED.",
+      "mongo_impact": "None owned on JDD \u2192 supports no_material_change.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "sources": [
-        "prime-nfl-pulse digests/2026-09-24-1823.md"
+        "prime-nfl-pulse digests/2026-09-24-1920.md"
       ]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-24T221000Z",
-    "completed_at": "2026-09-24T22:10:00Z",
-    "commit_sha": "38d9888f895340efd6e70df9576541dba71e590f"
+    "pulse_id": "mongo-grok-pulse-2026-09-24T230500Z",
+    "completed_at": "2026-09-24T23:05:00Z",
+    "commit_sha": "13edb0319e86e908ae75db6384213e99f627d48d"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -285,10 +316,10 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "7:05 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "8:10 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "NFL Pulse 1823 quiet; no new accepted pulses after Dart/Nabers/Thomas/Bowers already in 6:10 tip.",
-    "Flowers Thu absence continuity only \u2014 final game designation still pending Fri Rio practice.",
-    "x_direct LIMITED; experts LIMITED (analyst NO_NEW); analytics LIMITED (FantasyPtsData paywalled)."
+    "Logged NEW unowned CONFIRMED_FACT intel from Pulse 1920: Nacua Thu DNP hip; Reed TNF inactive (plus IDP TNF designations not fantasy-relevant to JDD).",
+    "no_material_change=true: none change owned JDD decisions vs 7:05 tip.",
+    "x_direct LIMITED; experts LIMITED; analytics LIMITED."
   ]
 }
