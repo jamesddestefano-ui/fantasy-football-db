@@ -3,12 +3,12 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T120600Z",
-  "generated_at": "2026-09-25T12:04:00Z",
-  "completed_at": "2026-09-25T12:06:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T130500Z",
+  "generated_at": "2026-09-25T13:04:00Z",
+  "completed_at": "2026-09-25T13:05:00Z",
   "week": 3,
   "season": 2026,
-  "run_type": "hourly_refresh",
+  "run_type": "hourly",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -321,9 +321,9 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T110800Z",
-    "completed_at": "2026-09-25T11:08:00Z",
-    "commit_sha": "8d8d641"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T120600Z",
+    "completed_at": "2026-09-25T12:06:00Z",
+    "commit": "e9d9099b09f1ad22818f5da9e1f02512130e71f9"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -331,10 +331,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": [
-    "8:06 AM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
-    "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "No material change vs 7:08 tip. Downs/Burden aggregator Q tags remain SPECULATION pending official Friday boards / ESPN badge.",
-    "x_direct LIMITED; experts LIMITED; analytics LIMITED."
-  ]
+  "notes": "9 AM ET hourly: no material change vs 8:06 tip e9d9099. NFL Pulse scan 0819 quiet (0 accepted, pulse_count 162). Flowers (BAL, hamstring) Friday Rio practice/final designation NOT_YET_POSTED; Wed/Thu DNP official (CONFIRMED_FACT). Friday official boards not yet posted for owned players; aggregator Q on Downs/Burden remains SPECULATION pending noon Live Check. No direct X scan performed; FPData paywalled. Intelligence only; no ESPN state changed."
 }
