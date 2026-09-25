@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T011500Z",
-  "generated_at": "2026-09-25T01:12:00Z",
-  "completed_at": "2026-09-25T01:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T020500Z",
+  "generated_at": "2026-09-25T02:02:00Z",
+  "completed_at": "2026-09-25T02:05:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly_refresh",
@@ -61,11 +61,28 @@
   },
   "player_signals": [
     {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Playing TNF at GB tonight (entered with no game designation per Falcons/Packers official reports). NFL Pulse 2119 live watch through 2nd quarter found no player leaving game / injury; no reported Bijan injury found at ~10:00 PM ET. Game in progress; final not yet recorded.",
+      "mongo_impact": "OWNED starter; Week 3 points accruing tonight. No action.",
+      "recommendation": "START (locked)",
+      "urgency": "NONE",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "Atlanta Falcons final injury report",
+        "Packers.com Week 3 injury report",
+        "NFL Pulse digest 2026-09-24-2119"
+      ]
+    },
+    {
       "player": "Rashod Bateman",
       "team": "BAL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "NEW vs 8:10 Pulse: official Ravens Thursday injury report lists Zay Flowers (hamstring) DNP second straight day. Game designation still pending after Rio arrival / Friday work. Ian Rapoport Week-4 lean is EXPERT_OPINION only.",
+      "summary": "Continuity vs 9:15 PM Pulse: official Ravens Thu DNP for Flowers already logged; no Friday designation yet (team flying to Rio overnight).",
       "mongo_impact": "OWNED bench. FLEX vs Downs probability up now that Thu DNP is official, not only beat observation.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -82,7 +99,7 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "NEW vs 8:10 Pulse: Seahawks.com official Thursday sheet upgrades Holani (knee) from Wednesday LP to Thursday FP. Price remains LP (chest).",
+      "summary": "Continuity vs 9:15 PM Pulse: Thu FP (knee) already logged; no new SEA update.",
       "mongo_impact": "OWNED bench. Health path improved; committee still Price/Wilson-led. HOLD.",
       "recommendation": "HOLD",
       "urgency": "LOW",
@@ -97,7 +114,7 @@
       "team": "MIA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "NEW vs 8:10 Pulse: official Dolphins Thursday report lists Bell (knee) LP second straight day. Bell told Miami Herald he intends to play Sunday; that self-report is ATTRIBUTED_REPORT, not a game designation.",
+      "summary": "Continuity vs 9:15 PM Pulse: Thu LP (knee) already logged; no Friday board yet.",
       "mongo_impact": "OWNED bench. Monitor Friday designation. Not a Week 3 start.",
       "recommendation": "HOLD",
       "urgency": "MONITOR",
@@ -204,7 +221,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Ravens Thursday report: DNP hamstring, second straight day. Not yet OUT. Friday/travel designation pending.",
+      "summary": "Continuity: official Thu DNP already logged at 9:15 PM; Friday Rio designation pending.",
       "mongo_impact": "Not on JDD roster. Context for owned Bateman FLEX only. Availability UNKNOWN.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -220,7 +237,7 @@
       "team": "LAR",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: official Rams Thursday board Nacua (hip) DNP after Wed DNP. Pulse DO_NOT_REEMIT as new owned fact.",
+      "summary": "Continuity: Thu DNP hip; Fri blank. Pulse DO_NOT_REEMIT.",
       "mongo_impact": "Not on JDD roster. Availability UNKNOWN.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -251,7 +268,7 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "Hold locked starters. Material owned deltas vs 8:10: official Flowers Thu DNP (Bateman FLEX live) and official Holani Thu FP. Bell official Thu LP + intends-to-play self-report. Friday BAL designation still the lock point for Bateman vs Downs.",
+      "summary": "No NEW owned-player material vs 9:15 PM Pulse. Bijan locked and playing TNF with no reported injury. Hold remaining starters. Friday BAL designation for Flowers remains the lock point for Bateman vs Downs FLEX.",
       "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -259,28 +276,25 @@
   ],
   "expert_signals": [
     {
-      "topic": "Flowers Week 3 availability lean",
-      "status": "EXPERT_OPINION",
-      "summary": "Ian Rapoport (via Sporting News recap) leaned Week 4 return more likely than Sunday Brazil. Not an official OUT.",
-      "mongo_impact": "Supports Bateman FLEX monitor only.",
+      "topic": "NFL Pulse evening deltas 2023/2119",
+      "status": "CONFIRMED_FACT",
+      "summary": "PRIME NFL Pulse scans 2026-09-24-2023 and 2119 accepted 0 new NFL_FACT; TNF midgame NO_NEW injuries; Fri boards blank; analysts NO_NEW; FantasyPtsData paywalled.",
+      "mongo_impact": "Supports no_material_change.",
       "recommendation": "NONE",
-      "urgency": "MONITOR",
-      "confidence": "MEDIUM",
+      "urgency": "NONE",
+      "confidence": "HIGH",
       "sources": [
-        "Sporting News citing NFL Network Ian Rapoport"
+        "prime-nfl-pulse digests/2026-09-24-2023.md",
+        "prime-nfl-pulse digests/2026-09-24-2119.md"
       ]
     }
   ],
-  "material_changes": [
-    "Official Ravens Thursday report lists Zay Flowers DNP (hamstring) second straight day; upgrades Bateman FLEX case from beat-only to official sheet.",
-    "Official Seahawks.com Thursday report upgrades owned George Holani (knee) Wednesday LP to Thursday FP.",
-    "Official Dolphins Thursday report lists owned Chris Bell (knee) LP; Bell ATTRIBUTED_REPORT intends to play Sunday."
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T001000Z",
-    "completed_at": "2026-09-25T00:10:00Z",
-    "commit_sha": "37966ccdbad3694c3b19a80a2b63341c454db686"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T011500Z",
+    "completed_at": "2026-09-25T01:15:00Z",
+    "commit_sha": "983f7ac2e2f9686abffa2e586af8fec0134d2d28"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -289,9 +303,10 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "9:15 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "10:05 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "no_material_change=false due to official owned-relevant sheets (Holani FP; Flowers official DNP context for Bateman; Bell LP).",
+    "Prior tip 983f7ac (9:15 PM) already carried Flowers official DNP / Holani FP / Bell LP; not re-counted as material.",
+    "Bijan TNF: no reported injury found; game in progress, no final score recorded here.",
     "x_direct LIMITED; experts LIMITED; analytics LIMITED."
   ]
 }
