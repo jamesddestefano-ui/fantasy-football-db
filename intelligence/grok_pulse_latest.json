@@ -3,16 +3,16 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-25T030800Z",
-  "generated_at": "2026-09-25T03:05:00Z",
-  "completed_at": "2026-09-25T03:08:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-25T040500Z",
+  "generated_at": "2026-09-25T04:02:00Z",
+  "completed_at": "2026-09-25T04:05:00Z",
   "week": 3,
   "season": 2026,
-  "run_type": "hourly_refresh",
+  "run_type": "overnight_refresh_12am",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
-    "x_direct": "OK",
+    "x_direct": "LIMITED",
     "experts": "LIMITED",
     "analytics": "LIMITED"
   },
@@ -65,16 +65,16 @@
       "team": "ATL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "TNF vs GB late/near-final vs 10:05 PM Pulse (then midgame, no box). SI live box ATL 27 GB 7: Bijan 23 CAR 169 YDS 1 TD. NBC/Packers.com earlier Q3: 20-158-1 plus 2 REC 19. No reported exit/injury. Game late 4th or complete depending on feed.",
-      "mongo_impact": "OWNED starter. Week 3 scoring locked and large. No further lineup action.",
-      "recommendation": "START (locked)",
+      "summary": "TNF FINAL ATL 35-GB 14. Bijan 29 CAR 194 YDS 2 TD, 2 REC 19 YDS (219 scrimmage). No injury exit reported. Computed PPR about 35.3 under league scoring; ESPN official score not read in this run.",
+      "mongo_impact": "OWNED starter. Week 3 points banked vs T.N.T.",
+      "recommendation": "START (locked, final)",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "SI Falcons-Packers live box 9-24-2026",
-        "packers.com in-game updates",
-        "NBC Sports rumor mill 10:28 PM ET"
+        "NBC Sports/PFT recap 11:25 PM ET 9-24-2026",
+        "AP via theScore",
+        "FOX 5 Atlanta"
       ]
     },
     {
@@ -268,7 +268,7 @@
   "lineup_signals": [
     {
       "week": 3,
-      "summary": "Bijan TNF production now recorded at monster level; start already locked. Remaining Sunday/Monday starters hold. Friday BAL Flowers designation remains the lock point for Bateman vs Downs FLEX.",
+      "summary": "Bijan final banked. Remaining Sunday/Monday starters hold. Friday BAL Flowers designation (Rio game) remains the lock point for Bateman vs Downs FLEX. No Friday boards posted yet.",
       "recommendation": "HOLD current lineup; MONITOR Fri BAL designation before locking Bateman FLEX over Downs",
       "urgency": "MONITOR",
       "confidence": "HIGH"
@@ -276,28 +276,27 @@
   ],
   "expert_signals": [
     {
-      "topic": "TNF live scoring vs prior midgame Pulse",
+      "topic": "NFL Pulse late-evening deltas 2218/2317",
       "status": "CONFIRMED_FACT",
-      "summary": "Official/beat in-game updates plus SI live box replace the 10:05 PM midgame 'no final' note. No Friday practice boards posted yet for BAL/SEA/MIA/CHI.",
-      "mongo_impact": "Material production update for owned Bijan only.",
+      "summary": "PRIME NFL Pulse 2218 and 2317 accepted 0 new NFL_FACT; TNF postgame no lasting exits (Bates returned); Fri boards blank; Pierce/Iosivas IR still unconfirmed on official transactions (CONFLICT); analysts quiet; FantasyPtsData paywalled.",
+      "mongo_impact": "No owned-player change beyond Bijan final.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
       "sources": [
-        "SI live box",
-        "packers.com",
-        "NBC Sports"
+        "prime-nfl-pulse digests/2026-09-24-2218.md",
+        "prime-nfl-pulse digests/2026-09-24-2317.md"
       ]
     }
   ],
   "material_changes": [
-    "Owned Bijan Robinson TNF box updated from midgame no-final (10:05 PM Pulse) to late-game SI line 23-169-1 TD with ATL leading 27-7; no injury exit reported"
+    "Owned Bijan Robinson TNF now FINAL (ATL 35, GB 14): 29 carries, 194 rush yds, 2 TD; 2 rec, 19 yds. Upgrades the 11:08 PM late-game line (23-169-1). No injury exit reported. Computed league PPR about 35.3 points (not ESPN-official)."
   ],
   "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-25T020500Z",
-    "completed_at": "2026-09-25T02:05:00Z",
-    "commit_sha": "d798415fcdb2bd29a6f6a5ecdd1dfcd806f507c3"
+    "pulse_id": "mongo-grok-pulse-2026-09-25T030800Z",
+    "completed_at": "2026-09-25T03:08:00Z",
+    "commit_sha": "3b9f00c"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -306,9 +305,9 @@
     "duplicate_pulse_path": false
   },
   "notes": [
-    "11:08 PM ET hourly intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
+    "12:05 AM ET overnight intelligence-only refresh. Did not mutate roster, ownership, FAAB, transactions, IR, lineup, or ESPN state.",
     "Sparta, NFL-DFS, and prop-betting repos not read or written.",
-    "Prior tip d798415 (10:05 PM) already carried Flowers official DNP / Holani FP / Bell LP; not re-counted as material.",
-    "x_direct OK (TNF live posts); experts LIMITED; analytics LIMITED."
+    "Pierce IR not officially transacted yet; Downs signal unchanged.",
+    "x_direct LIMITED (no direct X scan this run); experts LIMITED; analytics LIMITED."
   ]
 }
