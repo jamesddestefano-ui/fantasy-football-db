@@ -3,12 +3,12 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-26T030800Z",
-  "generated_at": "2026-09-26T03:05:00Z",
-  "completed_at": "2026-09-26T03:08:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-26T040600Z",
+  "generated_at": "2026-09-26T04:04:00Z",
+  "completed_at": "2026-09-26T04:06:00Z",
   "week": 3,
   "season": 2026,
-  "run_type": "hourly",
+  "run_type": "overnight_12am",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -90,7 +90,8 @@
       "sources": [
         "https://www.baltimoreravens.com/team/injury-report/",
         "Ravens Wire 2026-09-25 4:20 PM ET",
-        "Prior Pulse 010600Z"
+        "Prior Pulse 010600Z",
+        "Ravens.com game preview 2026-09-25 (Cowboys CB Cobie Durant ruled out; DAL pass D ranked 29th)"
       ]
     },
     {
@@ -407,9 +408,9 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-26T020600Z",
-    "completed_at": "2026-09-26T02:06:00Z",
-    "commit": "8751990f859b3e3434dd2e54d58186f985747e0b"
+    "pulse_id": "mongo-grok-pulse-2026-09-26T030800Z",
+    "completed_at": "2026-09-26T03:08:00Z",
+    "commit": "142eade704bbe2e1b622e538ae2c0d6b62069045"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -417,5 +418,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "11 PM ET hourly. No material change vs 020600Z. Flowers still officially QUESTIONABLE (Friday participation was a walkthrough estimate); HOLD Downs at FLEX, Bateman only if Flowers inactive (~2:55 PM ET Sunday inactives, Rio 4:25 PM ET), with James approval. Burden: Rapoport-attributed report Williams not expected to play reinforces existing downgrade (same direction, not new). Eagles D/ST faces likely Keenum-led Bears MNF (supports existing start). NFL Pulse last scan 2026-09-25 22:21 ET QUIET. X not directly scanned (LIMITED). No ESPN writes; ownership/roster/FAAB untouched."
+  "notes": "12 AM ET overnight. No material change vs 030800Z. Continuity: Flowers officially QUESTIONABLE (walkthrough estimate); Stanley OUT (Carson Vinson to start at LT per EbonyBird). Ravens.com notes Dallas ruled out CB Cobie Durant, supporting Bateman IF Flowers inactive. HOLD Downs at FLEX; Bateman swap only if Flowers inactive (~2:55 PM ET Sun, Rio 4:25 PM ET) with James approval. Burden: Williams unlikely per Rapoport (Yahoo/NBC); Bears Saturday statuses pending. Colts/Dolphins final statuses still not found. Alec Pierce status remains QUARANTINED (conflicting reports; not used). NFL Pulse last scan 2026-09-25 23:16 ET QUIET. X not directly scanned (LIMITED). No ESPN writes; ownership/roster/FAAB untouched."
 }
