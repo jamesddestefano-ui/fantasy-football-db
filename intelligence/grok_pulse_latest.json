@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-26T110331Z",
-  "generated_at": "2026-09-26T11:03:31Z",
-  "completed_at": "2026-09-26T11:03:31Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-26T120752Z",
+  "generated_at": "2026-09-26T12:07:52Z",
+  "completed_at": "2026-09-26T12:07:52Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly",
@@ -319,14 +319,23 @@
       "signal": "Flowers questionable (hamstring), traveled to Rio; field-condition concerns at Maracana; advises not counting on Flowers in Week 3.",
       "impact": "Supports existing contingency: Bateman over Downs at FLEX only if Flowers inactive (~2:55 PM ET Sun) and James approves.",
       "availability": "OWNED"
+    },
+    {
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "status": "EXPERT_OPINION",
+      "source": "NBC Sports/Rotoworld (Rivers McCown), 2026-09-25",
+      "signal": "Flowers \"probably still on the pessimistic side of questionable\"; monitor Sunday.",
+      "impact": "Consistent with existing contingency (Bateman over Downs only if Flowers inactive ~2:55 PM ET Sun, with James approval).",
+      "availability": "OWNED"
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-26T100800Z",
-    "completed_at": "2026-09-26T10:08:00Z",
-    "commit": "f916f06f2f29eac7097faca31d45a3ad8468f665"
+    "pulse_id": "mongo-grok-pulse-2026-09-26T110331Z",
+    "completed_at": "2026-09-26T11:03:31Z",
+    "commit": "a673c0488d201b8780c455d268c0ff0d34ec9aaa"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -334,5 +343,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "7 AM ET hourly: no Saturday official designations yet (Bears final report pending; Ravens Q stands). Keenum still projected MNF starter per AP/NBC/Shaw Local (attributed). Added Draft Sharks expert opinion on Flowers. Intelligence only; no ESPN changes."
+  "notes": "8 AM ET hourly: no Saturday official designations yet (Bears final statuses due today; Ravens Q stands). SI Saturday roundup: Keenum favorite to start MNF (attributed). Added Rotoworld expert opinion on Flowers. Intelligence only; no ESPN changes."
 }
