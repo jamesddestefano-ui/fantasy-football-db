@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-26T020600Z",
-  "generated_at": "2026-09-26T02:04:00Z",
-  "completed_at": "2026-09-26T02:06:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-26T030800Z",
+  "generated_at": "2026-09-26T03:05:00Z",
+  "completed_at": "2026-09-26T03:08:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "hourly",
@@ -13,7 +13,7 @@
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
     "x_direct": "LIMITED",
-    "experts": "OK",
+    "experts": "LIMITED",
     "analytics": "LIMITED"
   },
   "scope": {
@@ -160,7 +160,7 @@
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity: Williams (hamstring) DNP Fri; Bagent concussion protocol DNP Fri. Official Bears Saturday game statuses still not posted (MNF). Beat: Bears proceeding with Case Keenum as likely starter. Aggregator Doubtful tags are not official Saturday stamps.",
+      "summary": "Continuity: Williams (hamstring) DNP Fri; Bagent concussion protocol DNP Fri. NBC Sports/Rotoworld attributes to NFL Network's Ian Rapoport that Williams is not expected to play MNF vs PHI; Bears have NOT officially ruled him out (Saturday statuses pending). Keenum in line to start; practice-squad rookie Moss Miller possible QB2 elevation (Bleeding Green Nation).",
       "mongo_impact": "Negative QB-environment for owned WR Burden (MNF). Late-swap flexibility after Saturday statuses.",
       "recommendation": "HOLD; no lineup change without James approval. Re-check Saturday Bears final report.",
       "urgency": "MEDIUM",
@@ -170,7 +170,10 @@
         "Prior Pulse 010600Z",
         "Chicago Sun-Times 2026-09-25",
         "BearsPR Friday injury report",
-        "NBC Sports / Josh Alper 3:58 PM ET"
+        "NBC Sports / Josh Alper 3:58 PM ET",
+        "Prior Pulse 020600Z",
+        "NBC Sports player news 2026-09-25 (Rapoport attribution)",
+        "Bleeding Green Nation Eagles/Bears Friday report"
       ]
     },
     {
@@ -232,7 +235,9 @@
       "sources": [
         "https://www.baltimoreravens.com/team/injury-report/",
         "Ravens Wire 2026-09-25",
-        "NBC Sports / Charean Williams 4:51 PM ET"
+        "NBC Sports / Charean Williams 4:51 PM ET",
+        "CBS/RotoWire 4:14 PM ET",
+        "FantasyPros 5:53 PM ET"
       ]
     },
     {
@@ -402,9 +407,9 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-26T010600Z",
-    "completed_at": "2026-09-26T01:06:00Z",
-    "commit": "c950ef9518e9facf4cda6e6a4bb458072cf72bd7"
+    "pulse_id": "mongo-grok-pulse-2026-09-26T020600Z",
+    "completed_at": "2026-09-26T02:06:00Z",
+    "commit": "8751990f859b3e3434dd2e54d58186f985747e0b"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -412,5 +417,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "10 PM ET hourly. Official designations unchanged vs 9 PM Pulse: Flowers Q, Stanley OUT, Nacua Doubtful, Bears Saturday statuses not posted. Beat continuity on Keenum-likely vs PHI. No FREE_AGENT_CONFIRMED. Intelligence only; no ESPN changes."
+  "notes": "11 PM ET hourly. No material change vs 020600Z. Flowers still officially QUESTIONABLE (Friday participation was a walkthrough estimate); HOLD Downs at FLEX, Bateman only if Flowers inactive (~2:55 PM ET Sunday inactives, Rio 4:25 PM ET), with James approval. Burden: Rapoport-attributed report Williams not expected to play reinforces existing downgrade (same direction, not new). Eagles D/ST faces likely Keenum-led Bears MNF (supports existing start). NFL Pulse last scan 2026-09-25 22:21 ET QUIET. X not directly scanned (LIMITED). No ESPN writes; ownership/roster/FAAB untouched."
 }
