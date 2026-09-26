@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-26T211438Z",
- "generated_at": "2026-09-26T21:14:38Z",
- "completed_at": "2026-09-26T21:14:38Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-26T221435Z",
+ "generated_at": "2026-09-26T22:14:35Z",
+ "completed_at": "2026-09-26T22:14:35Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -323,19 +323,12 @@
    ]
   }
  ],
- "material_changes": [
-  {
-   "topic": "Eagles final Saturday injury report",
-   "status": "CONFIRMED_FACT",
-   "vs_prior": "200207Z: Eagles Saturday designations still UNSPECIFIED.",
-   "summary": "Hurts no designation; Goedert, Hollywood Brown, Fred Johnson OUT; Greenard Q. Bears QB downgrade logged as positive for owned Eagles D/ST."
-  }
- ],
- "no_material_change": false,
+ "material_changes": [],
+ "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-26T200207Z",
-  "completed_at": "2026-09-26T20:02:07Z",
-  "commit": "b3120937fac72b5d85fb993c0b419f80b3dd8a37"
+  "pulse_id": "mongo-grok-pulse-2026-09-26T211438Z",
+  "completed_at": "2026-09-26T21:14:38Z",
+  "commit": "265ab0608d4aec077bfa7a504b24ed2302e89d7c"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -343,5 +336,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "5 PM ET hourly. Eagles final report logged (Hurts clear; Goedert/Brown/F. Johnson OUT). Bears unchanged (Williams OUT; Bagent Q, has not formally cleared protocol per Schefter/team clarification). Flowers unchanged (Q, pregame test, pitch count if active). Plan unchanged: Downs FLEX; Bateman only if Flowers inactive ~2:55 PM ET Sunday with James approval. Intelligence only."
+ "notes": "6 PM ET hourly re-scan. No material change for owned players. Flowers still Q (hamstring), testing pregame, pitch count if active per ESPN Fowler (ATTRIBUTED_REPORT); inactives ~2:55 PM ET Sun; plan unchanged (Downs FLEX, Bateman only if Flowers inactive, with approval). Bagent: reports conflict on whether he has fully cleared concussion protocol (Fishbain/4for4/NBCSP say cleared; CBS says still in protocol); Ben Johnson has not named a starter vs PHI Monday. Keeps Burden/Eagles D/ST read as already logged at 200207Z. Unowned: Demarcus Robinson (SF) placed on IR (official) - no Mongo impact; availability UNKNOWN. x_direct not scanned directly."
 }
