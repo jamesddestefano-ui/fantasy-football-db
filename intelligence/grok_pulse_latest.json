@@ -1,1 +1,81 @@
-PLACEHOLDER
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-09-26T141500Z",
+  "generated_at": "2026-09-26T14:13:00Z",
+  "completed_at": "2026-09-26T14:15:00Z",
+  "week": 3,
+  "season": 2026,
+  "run_type": "hourly",
+  "source_status": {
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
+    "x_direct": "OK",
+    "experts": "LIMITED",
+    "analytics": "LIMITED"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
+    "faab_remaining": 82,
+    "starters_week_3_hold": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
+    "bench": ["Kaelon Black", "Ray Davis", "George Holani", "Kendre Miller", "Chris Bell", "Rashod Bateman", "Oronde Gadsden"],
+    "ir": ["Dylan Sampson"],
+    "dropped_not_fa_confirmed": ["Raheim Sanders"]
+  },
+  "watchlist_status": {
+    "repository_waiver_watch_rows": 0,
+    "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."
+  },
+  "player_signals": [
+    {"player": "Chris Bell", "team": "MIA", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Official Dolphins Friday sheet unchanged at 10 AM ET Saturday: WR Chris Bell (knee) FP, no game-status designation.", "mongo_impact": "OWNED bench. HOLD.", "recommendation": "HOLD", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED", "sources": ["https://www.chiefs.com/news/week-3-injury-report-chiefs-vs-dolphins-2026", "Prior Pulse 130800Z"]},
+    {"player": "Zay Flowers", "team": "BAL", "signal_type": "injury_designation", "status": "CONFIRMED_FACT", "summary": "Official Ravens board unchanged at 10 AM ET Saturday: hamstring Fri LP after Wed/Thu DNP, game status QUESTIONABLE vs DAL in Rio.", "mongo_impact": "Unowned. Bateman FLEX only if Flowers inactive Sunday.", "recommendation": "HOLD lineup; Bateman-over-Downs only if Flowers inactive and James approves.", "urgency": "HIGH", "confidence": "HIGH", "availability": "UNKNOWN", "sources": ["https://www.baltimoreravens.com/team/injury-report/"]},
+    {"player": "Zay Flowers", "team": "BAL", "signal_type": "usage", "status": "ATTRIBUTED_REPORT", "summary": "ESPN Jeremy Fowler Sat morning: Flowers expected to test hamstring before Sunday; if active, likely restricted snap count. Does not change official QUESTIONABLE.", "mongo_impact": "Do not swap Downs to Bateman on snap-count report alone. Wait Sunday inactives.", "recommendation": "HOLD FLEX plan pending official inactive list.", "urgency": "MONITOR", "confidence": "MEDIUM", "availability": "UNKNOWN", "sources": ["Jeremy Fowler / ESPN X 2026-09-26 ~9:45 AM ET"]},
+    {"player": "Rashod Bateman", "team": "BAL", "signal_type": "usage", "status": "ATTRIBUTED_REPORT", "summary": "Owned bench. Flowers still official Q; Stanley OUT. Fowler snap-count does not authorize FLEX swap.", "mongo_impact": "FLEX vs Downs waits on Sunday inactives.", "recommendation": "HOLD / CONSIDER START in FLEX", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Ravens.com", "Jeremy Fowler / ESPN"]},
+    {"player": "Josh Downs", "team": "IND", "signal_type": "role", "status": "CONFIRMED_FACT", "summary": "No new Colts Saturday stamp. Prior: Pierce OUT, Dulin OUT. Keep FLEX.", "mongo_impact": "OWNED starter/FLEX.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse 130800Z"]},
+    {"player": "Luther Burden III", "team": "CHI", "signal_type": "usage", "status": "ATTRIBUTED_REPORT", "summary": "Official Bears Saturday practice column and game designations still blank/UNSPECIFIED as of 10 AM ET. Friday Williams and Bagent DNP. Rapoport: Williams not expected to play MNF.", "mongo_impact": "Negative QB environment. No lineup change without James approval.", "recommendation": "HOLD", "urgency": "MEDIUM", "confidence": "MEDIUM", "availability": "OWNED", "sources": ["https://www.chicagobears.com/team/injury-report/", "NBC Sports / Rapoport"]},
+    {"player": "Bijan Robinson", "team": "ATL", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "TNF final already logged. No new injury.", "mongo_impact": "OWNED starter. Week 3 points banked.", "recommendation": "START (locked, final)", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
+    {"player": "Jalen Hurts", "team": "PHI", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "No new injury. Locked QB vs CHI Monday.", "mongo_impact": "Locked QB start.", "recommendation": "START", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
+    {"player": "Dylan Sampson", "team": "CLE", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "On IR (knee). No new updates.", "mongo_impact": "OWNED IR. HOLD.", "recommendation": "HOLD", "urgency": "HIGH", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
+    {"player": "George Holani", "team": "SEA", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "Official Thu FP (knee). No new stamp Saturday morning.", "mongo_impact": "OWNED bench. HOLD.", "recommendation": "HOLD", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED", "sources": ["Seahawks.com"]},
+    {"player": "Oronde Gadsden", "team": "LAC", "signal_type": "roster", "status": "CONFIRMED_FACT", "summary": "No new Chargers board Saturday morning. Do not treat as FA.", "mongo_impact": "OWNED bench behind Andrews.", "recommendation": "HOLD", "urgency": "MONITOR", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
+    {"player": "Kaelon Black", "team": "SF", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "No new official 49ers update Saturday morning.", "mongo_impact": "OWNED bench. HOLD.", "recommendation": "HOLD", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED", "sources": ["Prior Pulse"]},
+    {"player": "Ronnie Stanley", "team": "BAL", "signal_type": "injury_designation", "status": "CONFIRMED_FACT", "summary": "Official OUT (toe) vs DAL unchanged Saturday morning.", "mongo_impact": "Mild negative for BAL passing (Andrews, Bateman).", "recommendation": "No action.", "urgency": "LOW", "confidence": "HIGH", "availability": "UNKNOWN", "sources": ["https://www.baltimoreravens.com/team/injury-report/"]},
+    {"player": "De'Von Achane", "team": "MIA", "signal_type": "usage", "status": "ATTRIBUTED_REPORT", "summary": "Official Miami Friday sheet: Jaylen Wright DNP/Doubtful; Caleb Douglas OUT. Not a new Saturday stamp.", "mongo_impact": "OWNED starter.", "recommendation": "START Achane (unchanged). HOLD Bell on bench.", "urgency": "LOW", "confidence": "MEDIUM", "availability": "OWNED", "sources": ["https://www.chiefs.com/news/week-3-injury-report-chiefs-vs-dolphins-2026"]}
+  ],
+  "waiver_signals": [
+    {"player": "generic_watch_only", "availability": "UNKNOWN", "status": "SPECULATION", "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. Sanders drop does not prove current FA.", "mongo_impact": "Do not spend FAAB from this Pulse.", "recommendation": "NONE", "urgency": "NONE", "confidence": "HIGH", "sources": ["AGENTS.md", "Mongo repo"]}
+  ],
+  "lineup_signals": [
+    {"player": "Rashod Bateman / Josh Downs", "slot": "FLEX", "status": "EXPERT_OPINION", "summary": "Flowers officially QUESTIONABLE. Keep Downs at FLEX; swap to Bateman only if Flowers inactive Sunday, with James approval.", "urgency": "HIGH"},
+    {"player": "Luther Burden III", "slot": "WR/FLEX", "status": "ATTRIBUTED_REPORT", "summary": "Bears official Saturday designations still unspecified; Williams/Bagent Friday DNP.", "urgency": "MEDIUM"}
+  ],
+  "expert_signals": [
+    {"topic": "No new Saturday official designations as of 10 AM ET", "status": "CONFIRMED_FACT", "summary": "Ravens/Dolphins Friday finals unchanged; Bears/Eagles Saturday columns still blank and game status UNSPECIFIED on chicagobears.com.", "mongo_impact": "Continuity vs 9:08 AM ET Pulse.", "recommendation": "HOLD prior plan", "urgency": "LOW", "confidence": "HIGH", "sources": ["https://www.baltimoreravens.com/team/injury-report/", "https://www.chicagobears.com/team/injury-report/"]},
+    {"player": "Zay Flowers", "team": "BAL", "status": "ATTRIBUTED_REPORT", "source": "Jeremy Fowler / ESPN, 2026-09-26 ~9:45 AM ET", "signal": "Flowers expected to test hamstring pregame; if he plays, restricted snap count.", "impact": "Does not replace official Q. Wait Sunday inactives before Bateman-over-Downs.", "availability": "UNKNOWN"}
+  ],
+  "material_changes": [],
+  "no_material_change": true,
+  "prior_pulse": {
+    "pulse_id": "mongo-grok-pulse-2026-09-26T130800Z",
+    "completed_at": "2026-09-26T13:08:00Z",
+    "commit": "250a1aacb0b87fb338efabcebfcc7463408b7a8d"
+  },
+  "prime_watch_handoff": {
+    "canonical_feed": "intelligence/grok_pulse_latest.json",
+    "history": "intelligence/grok_pulse_history.jsonl",
+    "consumer": "Prime Mongo Fantasy Watch",
+    "duplicate_pulse_path": false
+  },
+  "notes": "10 AM ET hourly: official Saturday designations still not posted for Bears MNF. Fowler snap-count is ATTRIBUTED_REPORT only; official Flowers Q unchanged. Intelligence only; no ESPN changes."
+}
