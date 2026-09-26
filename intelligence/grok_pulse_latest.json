@@ -3,12 +3,12 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-26T100800Z",
-  "generated_at": "2026-09-26T10:06:00Z",
-  "completed_at": "2026-09-26T10:08:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-26T110331Z",
+  "generated_at": "2026-09-26T11:03:31Z",
+  "completed_at": "2026-09-26T11:03:31Z",
   "week": 3,
   "season": 2026,
-  "run_type": "overnight_6am",
+  "run_type": "hourly",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -310,14 +310,23 @@
         "https://www.chiefs.com/news/week-3-injury-report-chiefs-vs-dolphins-2026",
         "NBC Chicago"
       ]
+    },
+    {
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "status": "EXPERT_OPINION",
+      "source": "Draft Sharks (Jared Smola), 2026-09-25 8:09 PM ET",
+      "signal": "Flowers questionable (hamstring), traveled to Rio; field-condition concerns at Maracana; advises not counting on Flowers in Week 3.",
+      "impact": "Supports existing contingency: Bateman over Downs at FLEX only if Flowers inactive (~2:55 PM ET Sun) and James approves.",
+      "availability": "OWNED"
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-26T080500Z",
-    "completed_at": "2026-09-26T08:05:00Z",
-    "commit": "c46497c07a45499aa0a2c0734d8cdcd216dc3b60"
+    "pulse_id": "mongo-grok-pulse-2026-09-26T100800Z",
+    "completed_at": "2026-09-26T10:08:00Z",
+    "commit": "f916f06f2f29eac7097faca31d45a3ad8468f665"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -325,5 +334,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "6 AM ET overnight. No material change vs 080500Z. Flowers still official Q (RotoWire: truly questionable, start if active; Bateman beneficiary if out). HOLD Downs at FLEX; Bateman only if Flowers inactive (~2:55 PM ET Sun, 4:25 PM ET kickoff) with James approval. Burden: Keenum first-team reps Fri; Bears Saturday designations pending. Miami: RotoWire lists Jaylen Wright and Caleb Douglas out (attributed; slight positive Achane/Bell). No new Saturday official stamps found yet. NFL Pulse last scan 2026-09-25 23:16 ET QUIET. X not directly scanned (LIMITED). History note: 2AM pulse 060800Z (commit 6c41ca5) is absent from history per user-supplied restore; not re-inserted. No ESPN writes; ownership/roster/FAAB untouched."
+  "notes": "7 AM ET hourly: no Saturday official designations yet (Bears final report pending; Ravens Q stands). Keenum still projected MNF starter per AP/NBC/Shaw Local (attributed). Added Draft Sharks expert opinion on Flowers. Intelligence only; no ESPN changes."
 }
