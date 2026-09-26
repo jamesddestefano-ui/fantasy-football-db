@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-26T221435Z",
- "generated_at": "2026-09-26T22:14:35Z",
- "completed_at": "2026-09-26T22:14:35Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-26T231435Z",
+ "generated_at": "2026-09-26T23:14:35Z",
+ "completed_at": "2026-09-26T23:14:35Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -326,9 +326,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-26T211438Z",
-  "completed_at": "2026-09-26T21:14:38Z",
-  "commit": "265ab0608d4aec077bfa7a504b24ed2302e89d7c"
+  "pulse_id": "mongo-grok-pulse-2026-09-26T221435Z",
+  "completed_at": "2026-09-26T22:14:35Z",
+  "commit": "bfd25f5d50612db33ecafe9c8f503b444d59fdbe"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -336,5 +336,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "6 PM ET hourly re-scan. No material change for owned players. Flowers still Q (hamstring), testing pregame, pitch count if active per ESPN Fowler (ATTRIBUTED_REPORT); inactives ~2:55 PM ET Sun; plan unchanged (Downs FLEX, Bateman only if Flowers inactive, with approval). Bagent: reports conflict on whether he has fully cleared concussion protocol (Fishbain/4for4/NBCSP say cleared; CBS says still in protocol); Ben Johnson has not named a starter vs PHI Monday. Keeps Burden/Eagles D/ST read as already logged at 200207Z. Unowned: Demarcus Robinson (SF) placed on IR (official) - no Mongo impact; availability UNKNOWN. x_direct not scanned directly."
+ "notes": "7 PM ET hourly re-scan. No material change for owned players. Bagent conflict from 221435Z resolved by official chicagobears.com (CONFIRMED_FACT): Williams OUT; Bagent cleared steps to practice without limits Saturday but REMAINS in concussion protocol and is QUESTIONABLE; starter vs PHI Monday may be a game-time decision between Bagent and Keenum. Same status as already logged; Burden/Eagles D/ST read unchanged. Flowers still Q (hamstring), pregame test, pitch count if active (ATTRIBUTED_REPORT, ESPN Fowler); Baltimore Banner's Shaffer said Friday it 'still seems unlikely' he plays (ATTRIBUTED_REPORT). Inactives ~2:55 PM ET Sun; plan unchanged (Downs FLEX, Bateman only if Flowers inactive, with approval). x_direct not scanned directly."
 }
