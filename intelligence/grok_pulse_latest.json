@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-27T141857Z",
- "generated_at": "2026-09-27T14:18:57Z",
- "completed_at": "2026-09-27T14:18:57Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-27T151630Z",
+ "generated_at": "2026-09-27T15:16:30Z",
+ "completed_at": "2026-09-27T15:16:30Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -98,7 +98,7 @@
    "team": "CHI",
    "signal_type": "injury_designation",
    "status": "CONFIRMED_FACT",
-   "summary": "Official Bears Saturday report unchanged at 9 AM ET: Bagent QUESTIONABLE (concussion). Case Keenum starts if Bagent is not cleared. Decision can wait until Monday afternoon. No new Sunday official clearance.",
+   "summary": "Official Bears Saturday report unchanged at 11 AM ET Sunday: Bagent QUESTIONABLE (concussion). Case Keenum starts if Bagent is not cleared. Decision can wait until Monday afternoon. No new Sunday official clearance posted.",
    "mongo_impact": "If Bagent is cleared he is a candidate MNF starter; else Case Keenum. Not an ESPN ownership fact.",
    "recommendation": "MONITOR Monday inactives",
    "urgency": "MEDIUM",
@@ -114,7 +114,7 @@
    "team": "CHI",
    "signal_type": "usage",
    "status": "CONFIRMED_FACT",
-   "summary": "Williams officially OUT for MNF vs PHI; Bagent (Q) or Keenum will start. No new official change since 122000Z Pulse.",
+   "summary": "Williams officially OUT for MNF vs PHI; Bagent (Q) or Keenum will start. No new official change since 141857Z Pulse.",
    "mongo_impact": "OWNED starter. Hold; do not bench without James approval.",
    "recommendation": "HOLD / START as planned",
    "urgency": "MEDIUM",
@@ -129,7 +129,7 @@
    "team": "BAL",
    "signal_type": "injury_designation",
    "status": "CONFIRMED_FACT",
-   "summary": "Official Ravens board unchanged at 9 AM ET Sunday: hamstring QUESTIONABLE vs DAL in Rio. Inactives still pending (~2:55 PM ET for 4:25 PM ET kick). Schefter/Rapoport/Garafolo and ETR still describe a true pregame GTD with low team optimism and possible pitch count if active (ATTRIBUTED_REPORT, not a new official OUT).",
+   "summary": "Official Ravens board unchanged at 11 AM ET Sunday: hamstring QUESTIONABLE vs DAL in Rio. Inactives still pending (~2:55 PM ET for 4:25 PM ET kick). Schefter/Rapoport/Garafolo and ETR still describe a true pregame GTD with low team optimism and possible pitch count if active (ATTRIBUTED_REPORT, not a new official OUT).",
    "mongo_impact": "Unowned. Bateman FLEX only if Flowers inactive Sunday.",
    "recommendation": "HOLD lineup; Bateman-over-Downs only if Flowers inactive and James approves.",
    "urgency": "HIGH",
@@ -146,7 +146,7 @@
    "team": "BAL",
    "signal_type": "usage",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Owned bench. Flowers still official Q. No Sunday inactive list at 9 AM ET. Beat/expert layer still says Bateman is WR1 if Flowers sits.",
+   "summary": "Owned bench. Flowers still official Q. No Sunday inactive list at 11 AM ET. Beat/expert layer still says Bateman is WR1 if Flowers sits.",
    "mongo_impact": "FLEX vs Downs waits on Sunday inactives ~2:55 PM ET.",
    "recommendation": "HOLD / CONSIDER START in FLEX",
    "urgency": "MONITOR",
@@ -345,21 +345,12 @@
    ]
   }
  ],
- "material_changes": [
-  {
-   "type": "SEVERITY_TIMELINE",
-   "player": "Caleb Williams",
-   "team": "CHI",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Williams Grade 2 hamstring, 3-4 week estimate (Schefter/Rapoport). Multi-week downgrade for owned WR Luther Burden III; Week 3 plan unchanged.",
-   "owned_player_affected": "Luther Burden III"
-  }
- ],
- "no_material_change": false,
+ "material_changes": [],
+ "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-27T132500Z",
-  "completed_at": "2026-09-27T13:25:00Z",
-  "commit": "4d6d3e78f4d58cbff4b37d6dc988df18cec3af0d"
+  "pulse_id": "mongo-grok-pulse-2026-09-27T141857Z",
+  "completed_at": "2026-09-27T14:18:57Z",
+  "commit": "1b2b12f10386103f27c61e200144810cac379c8e"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -367,5 +358,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "10 AM ET Sunday hourly refresh. Material: Caleb Williams Grade 2 hamstring, 3-4 weeks (attributed report, Schefter/Rapoport), not on IR; multi-week Burden downgrade. Bagent still QUESTIONABLE; NBC reports he needs independent neurologist clearance Sunday; Keenum starts if not. Flowers still QUESTIONABLE, pregame test, likely pitch count if active; inactives ~2:55 PM ET. Plan unchanged: Downs FLEX; Bateman only if Flowers inactive and James approves. Intelligence only; no ESPN state changed."
+ "notes": "11 AM ET Sunday hourly refresh. No material change vs 141857Z Pulse. Williams Grade 2 hamstring 3-4 week timeline already logged; still official OUT Week 3, not on IR. Bagent remains official QUESTIONABLE (concussion); no new Sunday independent-neurologist clearance reported by 11:15 AM ET. Flowers remains official QUESTIONABLE; Ravens-Cowboys inactives still pending ~2:55 PM ET for 4:25 PM ET Rio kick. Early 1 PM ET inactives (SEA/WAS/HOU/IND etc.) do not change owned Mongo Week 3 plan. Keep Downs FLEX; Bateman only if Flowers inactive and James approves. Intelligence only; no ESPN state changed."
 }
