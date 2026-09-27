@@ -1,364 +1,352 @@
 {
-  "league": "mongo",
-  "espn_league_id": "1470431049",
-  "espn_team_id": 2,
-  "team": "Tom Brady of Ass / JDD",
+ "league": "mongo",
+ "espn_league_id": "1470431049",
+ "espn_team_id": 2,
+ "team": "Tom Brady of Ass / JDD",
+ "pulse_id": "mongo-grok-pulse-2026-09-27T231452Z",
+ "generated_at": "2026-09-27T23:14:52Z",
+ "completed_at": "2026-09-27T23:14:52Z",
+ "week": 3,
+ "season": 2026,
+ "run_type": "hourly",
+ "source_status": {
+  "official_nfl_team": "OK",
+  "beat_reporting": "OK",
+  "x_direct": "LIMITED",
+  "experts": "LIMITED",
+  "analytics": "LIMITED"
+ },
+ "scope": {
+  "repository": "jamesddestefano-ui/fantasy-football-db",
+  "branch": "main",
+  "internal_league_id": "mongo",
+  "intelligence_only": true,
+  "sparta_touched": false,
+  "dfs_touched": false,
+  "props_touched": false
+ },
+ "roster_context": {
+  "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
+  "faab_remaining": 82,
+  "starters_week_3_hold": [
+   "Jalen Hurts",
+   "De'Von Achane",
+   "Bijan Robinson",
+   "Luther Burden III",
+   "Tetairoa McMillan",
+   "Mark Andrews",
+   "Josh Downs",
+   "CeeDee Lamb",
+   "Eagles D/ST"
+  ],
+  "bench": [
+   "Kaelon Black",
+   "Ray Davis",
+   "George Holani",
+   "Kendre Miller",
+   "Chris Bell",
+   "Rashod Bateman",
+   "Oronde Gadsden"
+  ],
+  "ir": [
+   "Dylan Sampson"
+  ],
+  "dropped_not_fa_confirmed": [
+   "Raheim Sanders"
+  ]
+ },
+ "watchlist_status": {
+  "repository_waiver_watch_rows": 0,
+  "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."
+ },
+ "player_signals": [
+  {
+   "player": "De'Von Achane",
+   "team": "MIA",
+   "signal_type": "injury_severity",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "OUT vs KC (left knee), did not return; KC 24-10 final. Hafley: 'does not sound very optimistic.' Rapoport: fear is a major knee injury. MRI Monday. Official diagnosis pending. Week 4+ availability likely impacted; multi-week or season-ending outcome possible (unconfirmed).",
+   "mongo_impact": "OWNED Week 3 starter. Scoring locked. Week 4 hold vs IR vs next-up watch now leans toward missed time if Hafley tone holds, but official grade is still pending. Do not change ESPN roster from this Pulse.",
+   "recommendation": "MONITOR official Monday tests. Intelligence only. No IR/lineup/FAAB action without James approval.",
+   "urgency": "CRITICAL",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317051710.html",
+    "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/",
+    "https://www.rotowire.com/betting/nfl/player/devon-achane-odds-16661"
+   ]
+  },
+  {
+   "player": "Ollie Gordon II",
+   "team": "MIA",
+   "signal_type": "usage",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Lead remaining Dolphins RB after Achane OUT and Wright INACTIVE. RotoWire: 20 touches, 55 total yards, 1 TD. Not on James roster. Availability UNKNOWN.",
+   "mongo_impact": "Discovery only. Never FREE_AGENT_CONFIRMED from articles. First name to check on ESPN ownership if Achane misses Week 4.",
+   "recommendation": "WATCH only. Do not spend FAAB from this Pulse.",
+   "urgency": "HIGH",
+   "confidence": "MEDIUM",
+   "availability": "UNKNOWN",
+   "sources": [
+    "https://www.rotowire.com/betting/nfl/player/devon-achane-odds-16661"
+   ]
+  },
+  {
+   "player": "Jaylen Wright",
+   "team": "MIA",
+   "signal_type": "inactive",
+   "status": "CONFIRMED_FACT",
+   "summary": "INACTIVE vs KC (stinger/foot). Unchanged.",
+   "mongo_impact": "Confirms Gordon was the only remaining dressed RB after Achane OUT.",
+   "recommendation": "No Mongo action. Availability UNKNOWN for waivers.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN",
+   "sources": [
+    "https://www.nfl.com/news/nfl-week-3-inactives-players-ruled-out-sunday-14-games-2026"
+   ]
+  },
+  {
+   "player": "Josh Downs",
+   "team": "IND",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "IND 19-17 FINAL vs HOU. Downs 5 rec, 77 yards, 11 targets. No Downs injury reported.",
+   "mongo_impact": "OWNED FLEX. Week 3 points banked.",
+   "recommendation": "START locked / HOLD",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.foxsports.com/nfl/week-3-houston-texans-vs-indianapolis-colts-sep-27-2026-game-boxscore-11202?tab=boxscore"
+   ]
+  },
+  {
+   "player": "Zay Flowers",
+   "team": "BAL",
+   "signal_type": "in_game_usage",
+   "status": "CONFIRMED_FACT",
+   "summary": "ACTIVE vs DAL in Rio. Official Ravens box at halftime: 2 rec, 29 yards. BAL 17 DAL 13 at half.",
+   "mongo_impact": "Owned Bateman not WR1 this week. FLEX contingency not triggered.",
+   "recommendation": "HOLD Downs FLEX. No swap.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN",
+   "sources": [
+    "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
+   ]
+  },
+  {
+   "player": "Rashod Bateman",
+   "team": "BAL",
+   "signal_type": "usage",
+   "status": "CONFIRMED_FACT",
+   "summary": "Owned bench. Official Ravens half box: 1 rec, 6 yards. Flowers active.",
+   "mongo_impact": "Keep on bench.",
+   "recommendation": "HOLD bench.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
+   ]
+  },
+  {
+   "player": "CeeDee Lamb",
+   "team": "DAL",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "OWNED starter. Official half box: 3 rec, 29 yards. Game still live in Rio.",
+   "mongo_impact": "Week 3 production in progress. No injury designation.",
+   "recommendation": "START (in progress)",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
+   ]
+  },
+  {
+   "player": "Mark Andrews",
+   "team": "BAL",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "OWNED starter. Official half box: 1 rec, 9 yards. Game live.",
+   "mongo_impact": "No injury. Production in progress.",
+   "recommendation": "START (in progress)",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
+   ]
+  },
+  {
+   "player": "Caleb Williams",
+   "team": "CHI",
+   "signal_type": "injury_severity_timeline",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3 MNF vs PHI. Unchanged.",
+   "mongo_impact": "Backup-QB environment for owned Luther Burden III. Eagles D/ST benefits Week 3.",
+   "recommendation": "HOLD Burden. No ESPN change without James approval.",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN",
+   "sources": [
+    "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"
+   ]
+  },
+  {
+   "player": "Luther Burden III",
+   "team": "CHI",
+   "signal_type": "usage",
+   "status": "CONFIRMED_FACT",
+   "summary": "Williams officially OUT MNF vs PHI; Keenum attributed starter. Unchanged this hour.",
+   "mongo_impact": "OWNED starter. Hold.",
+   "recommendation": "HOLD / START as planned",
+   "urgency": "MEDIUM",
+   "confidence": "MEDIUM",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"
+   ]
+  },
+  {
+   "player": "Jalen Hurts",
+   "team": "PHI",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "No designation for MNF at CHI. Eagles OUT Goedert, Hollywood Brown, Fred Johnson.",
+   "mongo_impact": "Locked QB start.",
+   "recommendation": "START",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.nfl.com/injuries/"
+   ]
+  },
+  {
+   "player": "Dylan Sampson",
+   "team": "CLE",
+   "signal_type": "injury",
+   "status": "CONFIRMED_FACT",
+   "summary": "On IR (knee). No new updates.",
+   "mongo_impact": "OWNED IR. HOLD.",
+   "recommendation": "HOLD",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "Prior Pulse"
+   ]
+  },
+  {
+   "player": "Eagles D/ST",
+   "team": "PHI",
+   "signal_type": "matchup",
+   "status": "CONFIRMED_FACT",
+   "summary": "Williams OUT; Keenum attributed MNF starter. Unchanged.",
+   "mongo_impact": "Positive matchup for owned starter Eagles D/ST.",
+   "recommendation": "HOLD (already starting)",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED",
+   "sources": [
+    "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"
+   ]
+  }
+ ],
+ "waiver_signals": [
+  {
+   "player": "Ollie Gordon II",
+   "availability": "UNKNOWN",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Immediate Dolphins RB next-up if Achane misses time. Finished ~20 touches / 55 yards / 1 TD. Not confirmed free agent in Mongo. No FREE_AGENT_CONFIRMED.",
+   "mongo_impact": "Watch only until ESPN ownership is checked. FAAB remaining $82.",
+   "recommendation": "Prepare contingency; verify Mongo ownership on ESPN and wait for Monday MRI before any FAAB action (James approval required).",
+   "urgency": "HIGH",
+   "confidence": "MEDIUM",
+   "sources": [
+    "AGENTS.md",
+    "https://www.rotowire.com/betting/nfl/player/devon-achane-odds-16661"
+   ]
+  },
+  {
+   "player": "generic_watch_only",
+   "availability": "UNKNOWN",
+   "status": "SPECULATION",
+   "summary": "No Mongo waiver-watch rows. Sanders drop does not prove current FA.",
+   "mongo_impact": "Do not spend FAAB from this Pulse.",
+   "recommendation": "NONE",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "sources": [
+    "AGENTS.md",
+    "Mongo repo"
+   ]
+  }
+ ],
+ "lineup_signals": [
+  {
+   "player": "De'Von Achane",
+   "slot": "RB",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Week 3 already started and OUT. Week 4 waits on Monday tests. Hafley postgame not optimistic; still no official grade.",
+   "urgency": "CRITICAL",
+   "source": "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/"
+  },
+  {
+   "player": "Rashod Bateman / Josh Downs",
+   "slot": "FLEX",
+   "status": "CONFIRMED_FACT",
+   "summary": "Flowers ACTIVE and 2-29 at half. Downs finished 5-77 in IND win. Contingency not triggered.",
+   "urgency": "NONE",
+   "source": "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
+  },
+  {
+   "player": "Luther Burden III",
+   "slot": "WR/FLEX",
+   "status": "CONFIRMED_FACT",
+   "summary": "Williams OUT; Keenum attributed starter MNF. No lineup change without James approval.",
+   "urgency": "MEDIUM"
+  }
+ ],
+ "expert_signals": [
+  {
+   "topic": "Hafley postgame: Achane knee does not sound very optimistic; tests pending",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Hafley declined details until tests complete but said it does not sound optimistic. Social-media PCL/meniscus reads remain SPECULATION. No official MRI result.",
+   "mongo_impact": "Highest-urgency owned-player event. Still ungraded.",
+   "recommendation": "Wait for official Monday report before any roster recommendation.",
+   "urgency": "CRITICAL",
+   "confidence": "HIGH",
+   "sources": [
+    "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317051710.html",
+    "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/"
+   ]
+  }
+ ],
+ "material_changes": [
+  {
+   "topic": "Achane: Rapoport says fear is a major (left) knee injury; MRI Monday",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "New vs 221600Z (Hafley quote only): Ian Rapoport reported \"the fear is a major knee injury\" (left knee); PFT reports MRI Monday to confirm diagnosis and raises possible season-ending outcome. No official diagnosis yet. Meniscus speculation from a social-media PT is SPECULATION, not recorded as fact.",
+   "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-not-optimistic-about-devon-achanes-knee-injury ; https://www.foxsports.com/stories/nfl/dolphins-devon-achance-knee-injury-update"
+  }
+ ],
+ "no_material_change": false,
+ "prior_pulse": {
   "pulse_id": "mongo-grok-pulse-2026-09-27T221600Z",
-  "generated_at": "2026-09-27T22:16:00Z",
   "completed_at": "2026-09-27T22:16:00Z",
-  "week": 3,
-  "season": 2026,
-  "run_type": "hourly",
-  "source_status": {
-    "official_nfl_team": "OK",
-    "beat_reporting": "OK",
-    "x_direct": "LIMITED",
-    "experts": "OK",
-    "analytics": "LIMITED"
-  },
-  "scope": {
-    "repository": "jamesddestefano-ui/fantasy-football-db",
-    "branch": "main",
-    "internal_league_id": "mongo",
-    "intelligence_only": true,
-    "sparta_touched": false,
-    "dfs_touched": false,
-    "props_touched": false
-  },
-  "roster_context": {
-    "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
-    "faab_remaining": 82,
-    "starters_week_3_hold": [
-      "Jalen Hurts",
-      "De'Von Achane",
-      "Bijan Robinson",
-      "Luther Burden III",
-      "Tetairoa McMillan",
-      "Mark Andrews",
-      "Josh Downs",
-      "CeeDee Lamb",
-      "Eagles D/ST"
-    ],
-    "bench": [
-      "Kaelon Black",
-      "Ray Davis",
-      "George Holani",
-      "Kendre Miller",
-      "Chris Bell",
-      "Rashod Bateman",
-      "Oronde Gadsden"
-    ],
-    "ir": [
-      "Dylan Sampson"
-    ],
-    "dropped_not_fa_confirmed": [
-      "Raheim Sanders"
-    ]
-  },
-  "watchlist_status": {
-    "repository_waiver_watch_rows": 0,
-    "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN."
-  },
-  "player_signals": [
-    {
-      "player": "De'Von Achane",
-      "team": "MIA",
-      "signal_type": "injury_severity",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Officially OUT Week 3 vs KC (knee, opening-drive non-contact cut; 3-17 before exit). Postgame Jeff Hafley (Miami Herald / CBS / Rapoport): still gathering information, tests pending, 'it does not sound very optimistic at this moment.' No MRI/structural grade released. Diagnosis remains unknown until Monday tests.",
-      "mongo_impact": "OWNED Week 3 starter. Scoring locked. Week 4 hold vs IR vs next-up watch now leans toward missed time if Hafley tone holds, but official grade is still pending. Do not change ESPN roster from this Pulse.",
-      "recommendation": "MONITOR official Monday tests. Intelligence only. No IR/lineup/FAAB action without James approval.",
-      "urgency": "CRITICAL",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317051710.html",
-        "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/",
-        "https://www.rotowire.com/betting/nfl/player/devon-achane-odds-16661"
-      ]
-    },
-    {
-      "player": "Ollie Gordon II",
-      "team": "MIA",
-      "signal_type": "usage",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Lead remaining Dolphins RB after Achane OUT and Wright INACTIVE. RotoWire: 20 touches, 55 total yards, 1 TD. Not on James roster. Availability UNKNOWN.",
-      "mongo_impact": "Discovery only. Never FREE_AGENT_CONFIRMED from articles. First name to check on ESPN ownership if Achane misses Week 4.",
-      "recommendation": "WATCH only. Do not spend FAAB from this Pulse.",
-      "urgency": "HIGH",
-      "confidence": "MEDIUM",
-      "availability": "UNKNOWN",
-      "sources": [
-        "https://www.rotowire.com/betting/nfl/player/devon-achane-odds-16661"
-      ]
-    },
-    {
-      "player": "Jaylen Wright",
-      "team": "MIA",
-      "signal_type": "inactive",
-      "status": "CONFIRMED_FACT",
-      "summary": "INACTIVE vs KC (stinger/foot). Unchanged.",
-      "mongo_impact": "Confirms Gordon was the only remaining dressed RB after Achane OUT.",
-      "recommendation": "No Mongo action. Availability UNKNOWN for waivers.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "https://www.nfl.com/news/nfl-week-3-inactives-players-ruled-out-sunday-14-games-2026"
-      ]
-    },
-    {
-      "player": "Josh Downs",
-      "team": "IND",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "IND 19-17 FINAL vs HOU. Downs 5 rec, 77 yards, 11 targets. No Downs injury reported.",
-      "mongo_impact": "OWNED FLEX. Week 3 points banked.",
-      "recommendation": "START locked / HOLD",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.foxsports.com/nfl/week-3-houston-texans-vs-indianapolis-colts-sep-27-2026-game-boxscore-11202?tab=boxscore"
-      ]
-    },
-    {
-      "player": "Zay Flowers",
-      "team": "BAL",
-      "signal_type": "in_game_usage",
-      "status": "CONFIRMED_FACT",
-      "summary": "ACTIVE vs DAL in Rio. Official Ravens box at halftime: 2 rec, 29 yards. BAL 17 DAL 13 at half.",
-      "mongo_impact": "Owned Bateman not WR1 this week. FLEX contingency not triggered.",
-      "recommendation": "HOLD Downs FLEX. No swap.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
-      ]
-    },
-    {
-      "player": "Rashod Bateman",
-      "team": "BAL",
-      "signal_type": "usage",
-      "status": "CONFIRMED_FACT",
-      "summary": "Owned bench. Official Ravens half box: 1 rec, 6 yards. Flowers active.",
-      "mongo_impact": "Keep on bench.",
-      "recommendation": "HOLD bench.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
-      ]
-    },
-    {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "OWNED starter. Official half box: 3 rec, 29 yards. Game still live in Rio.",
-      "mongo_impact": "Week 3 production in progress. No injury designation.",
-      "recommendation": "START (in progress)",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
-      ]
-    },
-    {
-      "player": "Mark Andrews",
-      "team": "BAL",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "OWNED starter. Official half box: 1 rec, 9 yards. Game live.",
-      "mongo_impact": "No injury. Production in progress.",
-      "recommendation": "START (in progress)",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
-      ]
-    },
-    {
-      "player": "Caleb Williams",
-      "team": "CHI",
-      "signal_type": "injury_severity_timeline",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3 MNF vs PHI. Unchanged.",
-      "mongo_impact": "Backup-QB environment for owned Luther Burden III. Eagles D/ST benefits Week 3.",
-      "recommendation": "HOLD Burden. No ESPN change without James approval.",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN",
-      "sources": [
-        "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"
-      ]
-    },
-    {
-      "player": "Luther Burden III",
-      "team": "CHI",
-      "signal_type": "usage",
-      "status": "CONFIRMED_FACT",
-      "summary": "Williams officially OUT MNF vs PHI; Keenum attributed starter. Unchanged this hour.",
-      "mongo_impact": "OWNED starter. Hold.",
-      "recommendation": "HOLD / START as planned",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"
-      ]
-    },
-    {
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "No designation for MNF at CHI. Eagles OUT Goedert, Hollywood Brown, Fred Johnson.",
-      "mongo_impact": "Locked QB start.",
-      "recommendation": "START",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.nfl.com/injuries/"
-      ]
-    },
-    {
-      "player": "Dylan Sampson",
-      "team": "CLE",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "On IR (knee). No new updates.",
-      "mongo_impact": "OWNED IR. HOLD.",
-      "recommendation": "HOLD",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "Prior Pulse"
-      ]
-    },
-    {
-      "player": "Eagles D/ST",
-      "team": "PHI",
-      "signal_type": "matchup",
-      "status": "CONFIRMED_FACT",
-      "summary": "Williams OUT; Keenum attributed MNF starter. Unchanged.",
-      "mongo_impact": "Positive matchup for owned starter Eagles D/ST.",
-      "recommendation": "HOLD (already starting)",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"
-      ]
-    }
-  ],
-  "waiver_signals": [
-    {
-      "player": "Ollie Gordon II",
-      "availability": "UNKNOWN",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Immediate Dolphins RB next-up if Achane misses time. Finished ~20 touches / 55 yards / 1 TD. Not confirmed free agent in Mongo. No FREE_AGENT_CONFIRMED.",
-      "mongo_impact": "Watch only until ESPN ownership is checked. FAAB remaining $82.",
-      "recommendation": "NONE this hour. Recheck after official Achane Monday tests and ESPN ownership.",
-      "urgency": "HIGH",
-      "confidence": "MEDIUM",
-      "sources": [
-        "AGENTS.md",
-        "https://www.rotowire.com/betting/nfl/player/devon-achane-odds-16661"
-      ]
-    },
-    {
-      "player": "generic_watch_only",
-      "availability": "UNKNOWN",
-      "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. Sanders drop does not prove current FA.",
-      "mongo_impact": "Do not spend FAAB from this Pulse.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "sources": [
-        "AGENTS.md",
-        "Mongo repo"
-      ]
-    }
-  ],
-  "lineup_signals": [
-    {
-      "player": "De'Von Achane",
-      "slot": "RB",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Week 3 already started and OUT. Week 4 waits on Monday tests. Hafley postgame not optimistic; still no official grade.",
-      "urgency": "CRITICAL",
-      "source": "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/"
-    },
-    {
-      "player": "Rashod Bateman / Josh Downs",
-      "slot": "FLEX",
-      "status": "CONFIRMED_FACT",
-      "summary": "Flowers ACTIVE and 2-29 at half. Downs finished 5-77 in IND win. Contingency not triggered.",
-      "urgency": "NONE",
-      "source": "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
-    },
-    {
-      "player": "Luther Burden III",
-      "slot": "WR/FLEX",
-      "status": "CONFIRMED_FACT",
-      "summary": "Williams OUT; Keenum attributed starter MNF. No lineup change without James approval.",
-      "urgency": "MEDIUM"
-    }
-  ],
-  "expert_signals": [
-    {
-      "topic": "Hafley postgame: Achane knee does not sound very optimistic; tests pending",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Hafley declined details until tests complete but said it does not sound optimistic. Social-media PCL/meniscus reads remain SPECULATION. No official MRI result.",
-      "mongo_impact": "Highest-urgency owned-player event. Still ungraded.",
-      "recommendation": "Wait for official Monday report before any roster recommendation.",
-      "urgency": "CRITICAL",
-      "confidence": "HIGH",
-      "sources": [
-        "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317051710.html",
-        "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/"
-      ]
-    }
-  ],
-  "material_changes": [
-    {
-      "topic": "Hafley postgame: Achane knee does not sound optimistic; tests still pending",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Prior 211540Z Pulse had final score and no severity. New this hour: Hafley said it does not sound very optimistic. No MRI/grade published.",
-      "source": "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317051710.html"
-    },
-    {
-      "topic": "Josh Downs final: 5-77 in Colts 19-17 win",
-      "status": "CONFIRMED_FACT",
-      "summary": "IND 19-17 FINAL over HOU. Downs 5-77-0 on 11 targets. Week 3 FLEX production locked.",
-      "source": "https://www.foxsports.com/nfl/week-3-houston-texans-vs-indianapolis-colts-sep-27-2026-game-boxscore-11202?tab=boxscore"
-    },
-    {
-      "topic": "Rio BAL-DAL live at half; Flowers 2-29, Bateman 1-6, Lamb 3-29, Andrews 1-9",
-      "status": "CONFIRMED_FACT",
-      "summary": "Official Ravens game center at halftime: BAL 17 DAL 13. Flowers playing. Confirms Downs FLEX hold.",
-      "source": "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
-    }
-  ],
-  "no_material_change": false,
-  "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-27T211540Z",
-    "completed_at": "2026-09-27T21:15:40Z",
-    "commit": "5dfb7620f151e801f3e30fb32c051895b2485814"
-  },
-  "prime_watch_handoff": {
-    "canonical_feed": "intelligence/grok_pulse_latest.json",
-    "history": "intelligence/grok_pulse_history.jsonl",
-    "consumer": "Prime Mongo Fantasy Watch",
-    "duplicate_pulse_path": false
-  },
-  "notes": "6:16 PM ET Sunday hourly refresh. Material vs 211540Z: Hafley postgame Achane knee does not sound very optimistic with tests pending (no MRI yet); Downs 5-77 in IND 19-17 final; Rio half box Flowers/Bateman/Lamb/Andrews. Intelligence only; no ESPN state changed."
+  "commit": "6f199478798ee217cd9bf56c09cad6b779c42a32"
+ },
+ "prime_watch_handoff": {
+  "canonical_feed": "intelligence/grok_pulse_latest.json",
+  "history": "intelligence/grok_pulse_history.jsonl",
+  "consumer": "Prime Mongo Fantasy Watch",
+  "duplicate_pulse_path": false
+ },
+ "notes": "7:14 PM ET Sunday hourly refresh. Material vs 221600Z: Rapoport reports fear of a major Achane knee injury, MRI Monday. BAL-DAL Rio game still in progress (Flowers, Lamb, Andrews, Bateman live). MNF PHI-CHI pending (Hurts, Burden, Eagles D/ST). Intelligence only; no ESPN state changed."
 }
