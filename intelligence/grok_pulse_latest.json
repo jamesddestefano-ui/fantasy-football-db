@@ -3,16 +3,16 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-27T162000Z",
- "generated_at": "2026-09-27T16:20:00Z",
- "completed_at": "2026-09-27T16:20:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-27T171436Z",
+ "generated_at": "2026-09-27T17:14:36Z",
+ "completed_at": "2026-09-27T17:14:36Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
  "source_status": {
   "official_nfl_team": "OK",
   "beat_reporting": "OK",
-  "x_direct": "OK",
+  "x_direct": "LIMITED",
   "experts": "LIMITED",
   "analytics": "LIMITED"
  },
@@ -130,8 +130,8 @@
    "player": "Tyson Bagent",
    "team": "CHI",
    "signal_type": "injury_designation",
-   "status": "CONFIRMED_FACT",
-   "summary": "Official Bears Saturday report still QUESTIONABLE (concussion). Case Keenum starts if Bagent is not cleared. No new Sunday official clearance by noon ET.",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Cleared concussion protocol; backup, not starting MNF vs PHI (Glazer via PFT 12:33 PM ET). Supersedes Q tag.",
    "mongo_impact": "MNF starter still Bagent or Keenum.",
    "recommendation": "MONITOR Monday inactives",
    "urgency": "MEDIUM",
@@ -140,7 +140,8 @@
    "sources": [
     "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles",
     "https://www.nfl.com/injuries/"
-   ]
+   ],
+   "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyson-bagent-clears-concussion-protocol-but-case-keenum-will-start"
   },
   {
    "player": "Luther Burden III",
@@ -294,6 +295,14 @@
    "sources": [
     "https://www.nfl.com/injuries/"
    ]
+  },
+  {
+   "player": "Case Keenum",
+   "team": "CHI",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Starting MNF vs PHI (Glazer via PFT 12:33 PM ET). Downgrade for owned WR Burden; plus for owned Eagles D/ST.",
+   "availability": "UNKNOWN",
+   "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyson-bagent-clears-concussion-protocol-but-case-keenum-will-start"
   }
  ],
  "waiver_signals": [
@@ -324,7 +333,7 @@
    "player": "Luther Burden III",
    "slot": "WR/FLEX",
    "status": "CONFIRMED_FACT",
-   "summary": "Williams officially OUT for MNF vs PHI; Bagent (Q) or Keenum will start. Downgrade for owned WR Burden QB environment; no lineup change without James approval.",
+   "summary": "Williams OUT; Keenum confirmed starter MNF vs PHI (attributed, Glazer 12:33 PM ET), Bagent backup. Downgrade for Burden QB environment; no lineup change without James approval.",
    "urgency": "MEDIUM"
   }
  ],
@@ -345,16 +354,17 @@
  ],
  "material_changes": [
   {
-   "topic": "Zay Flowers pregame warmup optics",
+   "topic": "Bears MNF QB resolved: Keenum starts, Bagent cleared as backup",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "New since 151630Z: Flowers on-field testing hamstring with reported final sprint and trainer thumbs-up. Official designation still QUESTIONABLE; not an inactive list. Conflicts with earlier low-optimism Schefter layer without resolving it."
+   "summary": "Glazer via PFT (12:33 PM ET): Case Keenum will start MNF vs PHI; Tyson Bagent cleared concussion protocol and is backup, not starting. Williams still OUT (Grade 2 hamstring). Confirms Burden downgrade (owned) and plus for Eagles D/ST. No lineup change.",
+   "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyson-bagent-clears-concussion-protocol-but-case-keenum-will-start"
   }
  ],
  "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-27T151630Z",
-  "completed_at": "2026-09-27T15:16:30Z",
-  "commit": "c9192a47ca9b8aeff37f0fa5c35ba34e68af5e1b"
+  "pulse_id": "mongo-grok-pulse-2026-09-27T162000Z",
+  "completed_at": "2026-09-27T16:20:00Z",
+  "commit": "b93b0875e359ef3b13f6432b80436ca7ec066b3a"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -362,5 +372,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "12:20 PM ET Sunday hourly refresh. Material change vs 151630Z is Flowers pregame warmup optimism (ATTRIBUTED_REPORT), not an official active. Official NFL.com still: Flowers Q, Wright Doubtful (do not treat aggregator OUT as official), Bagent Q, Williams OUT Week 3 with 3-4 week attributed timeline already logged. Keep Downs FLEX until ~2:55 PM ET Ravens inactives. Intelligence only; no ESPN state changed.\n"
+ "notes": "1:14 PM ET Sunday hourly refresh. Material change vs 162000Z: Keenum starting MNF, Bagent cleared as backup (ATTRIBUTED_REPORT, Glazer via PFT). Flowers unchanged: official QUESTIONABLE, true pregame decision (Schefter), snap count if active; Ravens inactives ~2:55 PM ET. Keep Downs FLEX; Bateman only if Flowers inactive and James approves. Intelligence only; no ESPN state changed."
 }
