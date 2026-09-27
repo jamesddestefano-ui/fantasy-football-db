@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-27T201600Z",
- "generated_at": "2026-09-27T20:16:00Z",
- "completed_at": "2026-09-27T20:16:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-27T211540Z",
+ "generated_at": "2026-09-27T21:15:40Z",
+ "completed_at": "2026-09-27T21:15:40Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -65,7 +65,7 @@
    "team": "MIA",
    "signal_type": "in_game_injury",
    "status": "CONFIRMED_FACT",
-   "summary": "Officially OUT (knee) vs KC after Q1 non-contact/awkward plant. Will not return. CBS sideline (Melanie Collins) later said he returned to the sideline in uniform and appeared in good spirits — ATTRIBUTED, not an official Week 4 clearance. No official postgame MRI/grade yet. 1:00 window games still in Q4; no Monday report.",
+   "summary": "Officially OUT (knee) vs KC after opening-drive injury; did not return. Final: KC 24-10. No official postgame MRI/grade yet; Week 4 status unknown pending postgame/Monday report.",
    "mongo_impact": "OWNED Week 3 starter. Scoring for today is done. Week 4 hold vs IR vs next-up watch waits on official postgame/Monday severity. Do not change ESPN roster from this Pulse.",
    "recommendation": "MONITOR official postgame/Monday update. Intelligence only. No IR/lineup/FAAB action without James approval.",
    "urgency": "CRITICAL",
@@ -377,23 +377,23 @@
  ],
  "material_changes": [
   {
-   "topic": "Ollie Gordon II in-game cramps QTR then returned; elevated usage with Achane OUT",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "CBS Week 3 live tracker: Gordon headed to locker room (cramps, questionable to return) then UPDATE returned. Miami Herald: 10 carries 27 yards 1 TD through about 2.5 quarters. New vs 191447Z Gordon-as-only-dressed-RB note.",
-   "source": "https://www.cbssports.com/nfl/news/nfl-week-3-inactives-injury-tracker-updates/live/"
+   "topic": "Chiefs beat Dolphins 24-10 final; Achane did not return, no postgame severity yet",
+   "status": "CONFIRMED_FACT",
+   "summary": "AP final: KC 24, MIA 10. Achane left on the opening drive (knee, 11-yard run) and did not return. No MRI/grade or long-term severity released as of about 5:15 PM ET. Ollie Gordon (third-stringer; Jaylen Wright inactive with stinger) scored a 3-yard TD, left late Q3 with cramping and returned.",
+   "source": "https://www.kctv5.com/2026/09/27/kansas-city-chiefs-defeat-miami-dolphins-sunday-afternoon-showdown/"
   },
   {
-   "topic": "Achane sideline return in uniform / good spirits (not a medical clearance)",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "CBS: after being ruled OUT, Achane returned to the sideline in uniform and appeared in good spirits (Melanie Collins). Does not change official OUT or Week 4 unknown severity.",
-   "source": "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/"
+   "topic": "Name disambiguation: Jalen McMillan (TB) OUT knee is NOT the Mongo-owned McMillan",
+   "status": "CONFIRMED_FACT",
+   "summary": "NFL Pulse Bot flagged Jalen McMillan TB WR OUT (knee) vs MIN. JDD owns Tetairoa McMillan (CAR). No Mongo roster impact; recorded to prevent entity confusion.",
+   "source": "NFL Pulse Bot scan 2026-09-27-1656 (CBS/PFT)"
   }
  ],
  "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-27T191447Z",
-  "completed_at": "2026-09-27T19:14:47Z",
-  "commit": "55b7038e95544a72e9819effdf7605b94a316738"
+  "pulse_id": "mongo-grok-pulse-2026-09-27T201600Z",
+  "completed_at": "2026-09-27T20:16:00Z",
+  "commit": "b5e6fd6a72ff5edf2ae43af615fcf0c633ed4d78"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -401,5 +401,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "4:16 PM ET Sunday hourly refresh. Material vs 191447Z: Gordon cramp QTR then returned plus elevated rushing TD usage; Achane OUT unchanged but attributed sideline-in-uniform note. Flowers ACTIVE already known; Downs FLEX hold. Intelligence only; no ESPN state changed."
+ "notes": "5:14 PM ET Sunday hourly refresh. Material vs 201600Z: KC-MIA final 24-10 with Achane never returning and no severity update yet; Jalen McMillan (TB, not owned) disambiguated from owned Tetairoa McMillan. Flowers ACTIVE in 4:25 Rio game; Downs FLEX hold. Intelligence only; no ESPN state changed."
 }
