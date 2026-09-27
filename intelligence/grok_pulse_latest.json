@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-27T081800Z",
-  "generated_at": "2026-09-27T08:18:00Z",
-  "completed_at": "2026-09-27T08:18:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-27T100500Z",
+  "generated_at": "2026-09-27T10:05:00Z",
+  "completed_at": "2026-09-27T10:05:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "overnight",
@@ -65,7 +65,7 @@
       "team": "CHI",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Bears Saturday final report still holds at 4 AM ET Sunday: Williams OUT (hamstring) vs PHI Monday night; DNP all week.",
+      "summary": "Official Bears Saturday final report still holds at 6 AM ET Sunday: Williams OUT (hamstring) vs PHI Monday night; DNP all week.",
       "mongo_impact": "Negative QB environment for owned WR Luther Burden III on MNF. No lineup change without James approval.",
       "recommendation": "HOLD Burden; environment downgrade vs Williams",
       "urgency": "MEDIUM",
@@ -81,7 +81,7 @@
       "team": "CHI",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Bears Saturday report unchanged overnight: Bagent QUESTIONABLE (concussion) after Saturday full practice. Consecutive symptom-free days still required. Case Keenum starts if Bagent is not cleared.",
+      "summary": "Official Bears Saturday report unchanged overnight: Bagent QUESTIONABLE (concussion) after Saturday full practice. Consecutive symptom-free days still required. Case Keenum starts if Bagent is not cleared. Earliest full clearance window is Sunday; decision can wait until Monday afternoon.",
       "mongo_impact": "If Bagent is cleared he is a candidate MNF starter; else Case Keenum. Not an ESPN ownership fact.",
       "recommendation": "MONITOR Monday inactives",
       "urgency": "MEDIUM",
@@ -89,7 +89,7 @@
       "availability": "UNKNOWN",
       "sources": [
         "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles",
-        "https://www.nfl.com/news/bears-qb-tyson-bagent-clears-concussion-protocol-ahead-of-monday-s-game-vs-eagles"
+        "https://chicago.suntimes.com/bears/2026/09/26/bears-qb-tyson-bagent-clears-concussion-protocol-start-eagles-case-keenum-ben-johnson"
       ]
     },
     {
@@ -97,7 +97,7 @@
       "team": "CHI",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Williams officially OUT for MNF vs PHI; Bagent (Q) or Keenum will start. No new official change since 060955Z Pulse.",
+      "summary": "Williams officially OUT for MNF vs PHI; Bagent (Q) or Keenum will start. No new official change since 081800Z Pulse.",
       "mongo_impact": "OWNED starter. Hold; do not bench without James approval.",
       "recommendation": "HOLD / START as planned",
       "urgency": "MEDIUM",
@@ -112,7 +112,7 @@
       "team": "BAL",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Ravens board unchanged overnight Sunday 4 AM ET: hamstring QUESTIONABLE vs DAL in Rio; Stanley OUT (toe). Fowler: tests pregame and likely pitch count if active. Inactives still pending (~2:55 PM ET).",
+      "summary": "Official Ravens board unchanged at 6 AM ET Sunday: hamstring QUESTIONABLE vs DAL in Rio; Stanley OUT (toe). Beat/X still: pregame test and likely pitch count if active. Inactives still pending (~2:55 PM ET).",
       "mongo_impact": "Unowned. Bateman FLEX only if Flowers inactive Sunday.",
       "recommendation": "HOLD lineup; Bateman-over-Downs only if Flowers inactive and James approves.",
       "urgency": "HIGH",
@@ -128,7 +128,7 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Owned bench. Flowers still official Q; Fowler pitch-count if active still in force. No Sunday inactive list at 4 AM ET.",
+      "summary": "Owned bench. Flowers still official Q; Fowler pitch-count if active still in force. No Sunday inactive list at 6 AM ET.",
       "mongo_impact": "FLEX vs Downs waits on Sunday inactives ~2:55 PM ET.",
       "recommendation": "HOLD / CONSIDER START in FLEX",
       "urgency": "MONITOR",
@@ -143,14 +143,15 @@
       "team": "IND",
       "signal_type": "role",
       "status": "CONFIRMED_FACT",
-      "summary": "No new Colts official change vs prior Pulse. Keep FLEX until Ravens inactives.",
+      "summary": "No new Colts official change vs prior Pulse. Keep FLEX until Ravens inactives. Alec Pierce remains OUT (heel).",
       "mongo_impact": "OWNED starter/FLEX.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse 060955Z"
+        "Prior Pulse 081800Z",
+        "https://apnews.com/article/dadrion-taylor-demerson-dallas-goedert-athlete-injuries-464065c8115a0a918bd58543962e373d"
       ]
     },
     {
@@ -158,15 +159,15 @@
       "team": "MIA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Practice log still Limited/Limited/Full (knee) with no game designation on overnight rescan. Not a new official OUT/Q.",
+      "summary": "No new official Miami game designation overnight for Bell. Wright remains Doubtful; Douglas OUT on last official board.",
       "mongo_impact": "OWNED bench. HOLD.",
       "recommendation": "HOLD",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.footballdb.com/teams/nfl/kansas-city-chiefs/injuries",
-        "Prior Pulse 060955Z"
+        "https://apnews.com/article/dadrion-taylor-demerson-dallas-goedert-athlete-injuries-464065c8115a0a918bd58543962e373d",
+        "Prior Pulse 081800Z"
       ]
     },
     {
@@ -189,14 +190,14 @@
       "team": "PHI",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Hurts no designation for MNF at CHI. Eagles OUT Goedert, Hollywood Brown; Greenard Q. Unchanged vs 060955Z.",
+      "summary": "Hurts no designation for MNF at CHI. Eagles OUT Goedert, Hollywood Brown, Fred Johnson; Greenard Q. Unchanged vs 081800Z.",
       "mongo_impact": "Locked QB start.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.cbssports.com/nfl/news/nfl-injury-report-for-week-3/"
+        "https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/09/26/eagles-bears-final-injury-report-barkley-smith-brown-goedert/91960687007/"
       ]
     },
     {
@@ -211,6 +212,7 @@
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
+        "https://www.cbssports.com/nfl/injuries/",
         "Prior Pulse"
       ]
     },
@@ -227,7 +229,8 @@
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Prior Pulse 060955Z"
+        "https://apnews.com/article/dadrion-taylor-demerson-dallas-goedert-athlete-injuries-464065c8115a0a918bd58543962e373d",
+        "Prior Pulse 081800Z"
       ]
     },
     {
@@ -250,7 +253,7 @@
       "team": "PHI",
       "signal_type": "matchup",
       "status": "CONFIRMED_FACT",
-      "summary": "Williams OUT, Bagent Q pending protocol, Keenum otherwise. Opponent QB downgrade for owned Eagles D/ST. Unchanged vs 060955Z.",
+      "summary": "Williams OUT, Bagent Q pending protocol, Keenum otherwise. Opponent QB downgrade for owned Eagles D/ST. Unchanged vs 081800Z.",
       "mongo_impact": "Positive matchup for owned starter Eagles D/ST.",
       "recommendation": "HOLD (already starting)",
       "urgency": "LOW",
@@ -265,14 +268,14 @@
       "team": "SEA",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "Official NFL.com Week 3 board lists Holani full participation with no game designation vs WAS.",
+      "summary": "Official boards still list no game designation for Holani vs WAS. Seahawks OUT Love and Okada only on AP Sunday list.",
       "mongo_impact": "OWNED bench. No action.",
       "recommendation": "HOLD",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.nfl.com/injuries/"
+        "https://apnews.com/article/dadrion-taylor-demerson-dallas-goedert-athlete-injuries-464065c8115a0a918bd58543962e373d"
       ]
     }
   ],
@@ -310,25 +313,25 @@
   ],
   "expert_signals": [
     {
-      "topic": "Bears Saturday official designations hold through 4 AM ET Sunday",
+      "topic": "Bears Saturday official designations hold through 6 AM ET Sunday",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Official team + ESPN + NFL.com still: Williams OUT; Bagent Saturday FP and QUESTIONABLE, protocol not fully cleared. No Sunday inactive lists yet.",
+      "summary": "Official team + ESPN + NFL.com still: Williams OUT; Bagent Saturday FP and QUESTIONABLE, protocol not fully cleared for game. No Sunday inactive lists yet.",
       "mongo_impact": "Burden environment is backup-QB. No ownership or lineup mutation from Pulse.",
       "recommendation": "HOLD prior lineup; Williams OUT remains confirmed official designation",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
       "sources": [
         "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles",
-        "https://www.espn.com/nfl/story/_/id/50034949/bears-qb-williams-mnf-backup-bagent-back-practice"
+        "https://chicago.suntimes.com/bears/2026/09/26/bears-qb-tyson-bagent-clears-concussion-protocol-start-eagles-case-keenum-ben-johnson"
       ]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-27T060955Z",
-    "completed_at": "2026-09-27T06:09:55Z",
-    "commit": "97f2bbf7c6ac36c50342247c084c2aaa0c7a11d0"
+    "pulse_id": "mongo-grok-pulse-2026-09-27T081800Z",
+    "completed_at": "2026-09-27T08:18:00Z",
+    "commit": "2ef297d65f0eb31d341c804cf23936b6e0fdabfc"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -336,5 +339,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "4 AM ET overnight refresh. No new official designations or Sunday inactives since 2 AM ET pulse. Flowers still Q (hamstring), pregame test, likely pitch count if active; inactives ~2:55 PM ET. Bears: Williams OUT, Bagent QUESTIONABLE, starter vs Keenum undecided. Lineup plan unchanged: Downs FLEX, Bateman only if Flowers inactive and James approves. Intelligence only; no ESPN state changed."
+  "notes": "6 AM ET overnight refresh. No new official designations or Sunday inactives since 4 AM ET pulse. Flowers still Q (hamstring), pregame test, likely pitch count if active; inactives ~2:55 PM ET. Bears: Williams OUT, Bagent QUESTIONABLE, starter vs Keenum undecided. Lineup plan unchanged: Downs FLEX, Bateman only if Flowers inactive and James approves. Intelligence only; no ESPN state changed."
 }
