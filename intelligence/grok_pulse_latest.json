@@ -28,8 +28,8 @@
  "roster_context": {
   "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
   "faab_remaining": 82,
-  "starters_week_3_hold": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
-  "bench": ["Kaelon Black", "Ray Davis", "George Holani", "Kendre Miller", "Chris Bell", "Rashod Bateman", "Oronde Gadsden"],
+  "starters_week_3_hold": ["Jalen Hurts","De'Von Achane","Bijan Robinson","Luther Burden III","Tetairoa McMillan","Mark Andrews","Josh Downs","CeeDee Lamb","Eagles D/ST"],
+  "bench": ["Kaelon Black","Ray Davis","George Holani","Kendre Miller","Chris Bell","Rashod Bateman","Oronde Gadsden"],
   "ir": ["Dylan Sampson"],
   "dropped_not_fa_confirmed": ["Raheim Sanders"]
  },
@@ -37,58 +37,13 @@
   "repository_waiver_watch_rows": 0,
   "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN unless a prior authenticated ESPN snapshot already classified them."
  },
- "player_signals": [{
-  "player": "De'Von Achane",
-  "team": "MIA",
-  "signal_type": "injury_severity",
-  "status": "ATTRIBUTED_REPORT",
-  "summary": "8:21 AM ET hourly scan: still no official MRI/grade. OUT Week 3 vs KC (left knee, non-contact cut). Hafley: does not sound very optimistic; more Monday. Official diagnosis pending Monday tests. Unverified X posts claiming an ACL tear remain SPECULATION and are not adopted as fact.",
-  "mongo_impact": "OWNED Week 3 starter. Scoring locked. Week 4 hold vs IR vs next-up still pending official Monday tests. Do not change ESPN roster from this Pulse.",
-  "recommendation": "MONITOR official Monday tests. Intelligence only. No IR/lineup/FAAB action without James approval.",
-  "urgency": "CRITICAL",
-  "confidence": "HIGH",
-  "availability": "OWNED",
-  "sources": ["https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/", "https://www.espn.co.uk/nfl/story/_/id/50044229/dolphins-rb-devon-achane-suffers-knee-injury-vs-chiefs", "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-not-optimistic-about-devon-achanes-knee-injury"]
- }],
- "waiver_signals": [{
-  "player": "Ollie Gordon II",
-  "availability": "WAIVERS_CONFIRMED",
-  "status": "CONFIRMED_FACT",
-  "summary": "Prior authenticated ESPN snapshot (2026-09-27 7:49 PM ET) classified Gordon as on waivers in Mongo. Not re-verified this hour. Immediate Dolphins RB next-up if Achane misses time. No FREE_AGENT_CONFIRMED.",
-  "mongo_impact": "Watch only until ESPN ownership is re-checked. FAAB remaining $82.",
-  "recommendation": "Contingency only: revisit after Monday MRI; no FAAB action without James approval.",
-  "urgency": "HIGH",
-  "confidence": "MEDIUM",
-  "sources": ["Prior Pulse ESPN snapshot 7:49 PM ET", "AGENTS.md"]
- }],
- "lineup_signals": [{
-  "player": "De'Von Achane",
-  "slot": "RB",
-  "status": "ATTRIBUTED_REPORT",
-  "summary": "Week 3 already started and OUT. Week 4 waits on Monday tests. No official grade since prior Pulse.",
-  "urgency": "CRITICAL"
- }],
- "expert_signals": [{
-  "topic": "Hafley postgame: Achane knee does not sound very optimistic; tests pending",
-  "status": "ATTRIBUTED_REPORT",
-  "summary": "Hafley declined details until tests complete. This hour scan found no official MRI result. Social-media ACL claims remain SPECULATION.",
-  "mongo_impact": "Highest-urgency owned-player event. Still ungraded.",
-  "recommendation": "Wait for official Monday report before any roster recommendation.",
-  "urgency": "CRITICAL",
-  "confidence": "HIGH"
- }],
+ "player_signals": [{"player":"De'Von Achane","team":"MIA","signal_type":"injury_severity","status":"ATTRIBUTED_REPORT","summary":"8:21 AM ET hourly scan: still no official MRI/grade. OUT Week 3 vs KC (left knee). Hafley not optimistic; tests Monday. ACL social claims remain SPECULATION.","mongo_impact":"OWNED Week 3 starter. Scoring locked. Do not change ESPN roster from this Pulse.","recommendation":"MONITOR official Monday tests. Intelligence only.","urgency":"CRITICAL","confidence":"HIGH","availability":"OWNED"},{"player":"Ollie Gordon II","team":"MIA","signal_type":"usage","status":"CONFIRMED_FACT","summary":"Week 3 box vs KC unchanged: 17 rush, 41 yards, 1 TD; 3 rec, 14 yards. Wright INACTIVE.","mongo_impact":"Discovery only. No FREE_AGENT_CONFIRMED from articles.","recommendation":"WATCH only. Do not spend FAAB from this Pulse.","urgency":"HIGH","confidence":"HIGH","availability":"UNKNOWN"},{"player":"Jaylen Wright","team":"MIA","signal_type":"inactive","status":"CONFIRMED_FACT","summary":"INACTIVE vs KC (stinger/foot). Unchanged.","mongo_impact":"Confirms Gordon was only dressed RB after Achane OUT.","recommendation":"No Mongo action.","urgency":"LOW","confidence":"HIGH","availability":"UNKNOWN"},{"player":"CeeDee Lamb","team":"DAL","signal_type":"production","status":"CONFIRMED_FACT","summary":"BAL 34 DAL 31 FINAL unchanged. Lamb 7-112 plus 2PC. No injury designation.","mongo_impact":"OWNED starter. Week 3 banked.","recommendation":"START locked / HOLD","urgency":"NONE","confidence":"HIGH","availability":"OWNED"},{"player":"Mark Andrews","team":"BAL","signal_type":"production_injury","status":"ATTRIBUTED_REPORT","summary":"FINAL box 3-24. Hand injury, returned after halftime. No official Week-4 designation this hour.","mongo_impact":"OWNED starter. Watch-only.","recommendation":"HOLD. Monitor official IR.","urgency":"MEDIUM","confidence":"MEDIUM","availability":"OWNED"},{"player":"Josh Downs","team":"IND","signal_type":"production","status":"CONFIRMED_FACT","summary":"IND 19-17 FINAL vs HOU unchanged. Downs 5-77, 11 targets.","mongo_impact":"OWNED FLEX. Banked.","recommendation":"START locked / HOLD","urgency":"NONE","confidence":"HIGH","availability":"OWNED"},{"player":"Caleb Williams","team":"CHI","signal_type":"injury_severity_timeline","status":"ATTRIBUTED_REPORT","summary":"Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3 MNF vs PHI.","mongo_impact":"Backup-QB environment for owned Burden and Eagles D/ST.","recommendation":"HOLD Burden.","urgency":"HIGH","confidence":"HIGH","availability":"UNKNOWN"},{"player":"Luther Burden III","team":"CHI","signal_type":"usage","status":"ATTRIBUTED_REPORT","summary":"Williams OUT; Keenum attributed starter by Glazer/Rapoport; Bagent cleared protocol. Kickoff 8:15 PM ET tonight.","mongo_impact":"OWNED starter.","recommendation":"HOLD / START as planned","urgency":"MEDIUM","confidence":"MEDIUM","availability":"OWNED"},{"player":"Jalen Hurts","team":"PHI","signal_type":"production","status":"CONFIRMED_FACT","summary":"No designation for MNF at CHI 8:15 PM ET. Goedert, Hollywood Brown, Fred Johnson OUT.","mongo_impact":"Locked QB start.","recommendation":"START","urgency":"NONE","confidence":"HIGH","availability":"OWNED"},{"player":"Dylan Sampson","team":"CLE","signal_type":"injury","status":"CONFIRMED_FACT","summary":"On IR (knee). No new updates.","mongo_impact":"OWNED IR. HOLD.","recommendation":"HOLD","urgency":"HIGH","confidence":"HIGH","availability":"OWNED"},{"player":"Eagles D/ST","team":"PHI","signal_type":"matchup","status":"ATTRIBUTED_REPORT","summary":"Williams OUT; Keenum attributed MNF starter. Kickoff 8:15 PM ET tonight.","mongo_impact":"Positive matchup for owned DST.","recommendation":"HOLD (already starting)","urgency":"LOW","confidence":"HIGH","availability":"OWNED"},{"player":"Rashod Bateman","team":"BAL","signal_type":"usage","status":"CONFIRMED_FACT","summary":"Owned bench. FINAL 2-37. Flowers 5-84.","mongo_impact":"Keep on bench.","recommendation":"HOLD bench.","urgency":"LOW","confidence":"HIGH","availability":"OWNED"}],
+ "waiver_signals": [{"player":"Ollie Gordon II","availability":"WAIVERS_CONFIRMED","status":"CONFIRMED_FACT","summary":"Prior authenticated ESPN snapshot 2026-09-27 7:49 PM ET classified Gordon on waivers. Not re-verified this hour. No FREE_AGENT_CONFIRMED.","mongo_impact":"Watch only. FAAB $82.","recommendation":"No FAAB action without James approval.","urgency":"HIGH","confidence":"MEDIUM"}],
+ "lineup_signals": [{"player":"De'Von Achane","slot":"RB","status":"ATTRIBUTED_REPORT","summary":"Week 3 OUT. Week 4 waits on Monday tests.","urgency":"CRITICAL"},{"player":"Luther Burden III","slot":"WR/FLEX","status":"ATTRIBUTED_REPORT","summary":"Keenum attributed MNF starter. No lineup change without approval.","urgency":"MEDIUM"},{"player":"Jalen Hurts / Eagles D/ST","slot":"QB / DST","status":"CONFIRMED_FACT","summary":"MNF tonight 8:15 PM ET. Hurts undesignated.","urgency":"LOW"}],
+ "expert_signals": [{"topic":"Hafley postgame Achane knee","status":"ATTRIBUTED_REPORT","summary":"Does not sound very optimistic; tests pending. No official MRI this hour. ACL claims SPECULATION.","urgency":"CRITICAL","confidence":"HIGH"}],
  "material_changes": [],
  "no_material_change": true,
- "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-28T111800Z",
-  "completed_at": "2026-09-28T11:18:00Z",
-  "commit": "cfeb0f78d248a15d2f2aff2c0902234332eb3a5e"
- },
- "prime_watch_handoff": {
-  "canonical_feed": "intelligence/grok_pulse_latest.json",
-  "history": "intelligence/grok_pulse_history.jsonl",
-  "consumer": "Prime Mongo Fantasy Watch",
-  "duplicate_pulse_path": false
- },
- "notes": "8:21 AM ET hourly: no material change vs 7:18 AM ET Pulse. Achane still undiagnosed pending Monday tests. Keenum MNF start remains ATTRIBUTED_REPORT. No ESPN roster/FAAB/lineup/IR action."
+ "prior_pulse": {"pulse_id":"mongo-grok-pulse-2026-09-28T111800Z","completed_at":"2026-09-28T11:18:00Z","commit":"cfeb0f78d248a15d2f2aff2c0902234332eb3a5e"},
+ "prime_watch_handoff": {"canonical_feed":"intelligence/grok_pulse_latest.json","history":"intelligence/grok_pulse_history.jsonl","consumer":"Prime Mongo Fantasy Watch","duplicate_pulse_path":false},
+ "notes": "8:21 AM ET hourly: no material change vs 7:18 AM ET Pulse. Achane still undiagnosed pending Monday tests. Keenum MNF start ATTRIBUTED_REPORT. Gordon WAIVERS_CONFIRMED only from Sunday 7:49 PM ET ESPN snapshot. No ESPN roster/FAAB/lineup/IR action."
 }
