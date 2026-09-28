@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-28T132800Z",
- "generated_at": "2026-09-28T13:28:00Z",
- "completed_at": "2026-09-28T13:28:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-28T141900Z",
+ "generated_at": "2026-09-28T14:19:00Z",
+ "completed_at": "2026-09-28T14:19:00Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -252,9 +252,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-28T122100Z",
-  "completed_at": "2026-09-28T12:21:00Z",
-  "commit": "9f371901bd6c2eb7e0daa3e636f76d21731dc8ff"
+  "pulse_id": "mongo-grok-pulse-2026-09-28T132800Z",
+  "completed_at": "2026-09-28T13:28:00Z",
+  "commit": "67fbffd51350559445cb0a529165583027b92af3"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -262,5 +262,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "9:28 AM ET hourly: no material change vs 8:21 AM ET Pulse. Achane (left knee) still undiagnosed as of this scan; MRI Monday; Hafley 'does not sound very optimistic' (CONFIRMED_FACT quote); ACL/meniscus claims remain SPECULATION. MNF tonight 8:15 PM ET PHI at CHI: Keenum starter is ATTRIBUTED_REPORT (Glazer); Bagent cleared protocol, no designation; Hurts no designation. Mongo Live Check ~8:12 AM ET ESPN re-check: Gordon still WAIVERS_CONFIRMED, FAAB $82, roster unchanged. Repaired history: 8:21 AM ET 122100Z latest had not been appended to history. No ESPN roster/FAAB/lineup/IR action."
+ "notes": "10:19 AM ET hourly: no material change vs 9:28 AM ET Pulse. Achane (left knee) still undiagnosed as of this scan; MRI Monday results not yet released; Hafley 'does not sound very optimistic' (CONFIRMED_FACT quote); ACL/meniscus/season-ending claims remain SPECULATION. MNF tonight 8:15 PM ET PHI at CHI: Keenum starter remains ATTRIBUTED_REPORT (Glazer/Fox); Bagent cleared protocol and available as backup; Caleb Williams OUT Grade 2 hamstring 3-4 weeks (ATTRIBUTED_REPORT sources via ESPN/NFL Network); Hurts no designation. Gordon/Wright remain WAIVERS_CONFIRMED only from Sunday 7:49 PM ET ESPN snapshot (Live Check ~8:12 AM ET re-confirmed Gordon/FAAB $82/roster unchanged). No ESPN roster/FAAB/lineup/IR action."
 }
