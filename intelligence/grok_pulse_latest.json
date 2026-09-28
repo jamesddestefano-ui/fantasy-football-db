@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-28T060700Z",
-  "generated_at": "2026-09-28T06:07:00Z",
-  "completed_at": "2026-09-28T06:07:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-28T082000Z",
+  "generated_at": "2026-09-28T08:20:00Z",
+  "completed_at": "2026-09-28T08:20:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "overnight",
@@ -65,7 +65,7 @@
       "team": "MIA",
       "signal_type": "injury_severity",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Still no official MRI/grade overnight after 2:00 AM ET scan. OUT Week 3 vs KC (left knee, non-contact cut). Hafley: does not sound very optimistic; more tomorrow. Official diagnosis pending Monday tests. Unverified X posts claiming an ACL tear are SPECULATION and are not adopted as fact.",
+      "summary": "4:00 AM ET overnight scan: still no official MRI/grade. OUT Week 3 vs KC (left knee, non-contact cut). Hafley: does not sound very optimistic; more Monday. Official diagnosis pending Monday tests. Unverified X posts claiming an ACL tear remain SPECULATION and are not adopted as fact.",
       "mongo_impact": "OWNED Week 3 starter. Scoring locked. Week 4 hold vs IR vs next-up still pending official Monday tests. Do not change ESPN roster from this Pulse.",
       "recommendation": "MONITOR official Monday tests. Intelligence only. No IR/lineup/FAAB action without James approval.",
       "urgency": "CRITICAL",
@@ -73,7 +73,8 @@
       "availability": "OWNED",
       "sources": [
         "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/",
-        "https://www.espn.co.uk/nfl/story/_/id/50044229/dolphins-rb-devon-achane-suffers-knee-injury-vs-chiefs"
+        "https://www.espn.co.uk/nfl/story/_/id/50044229/dolphins-rb-devon-achane-suffers-knee-injury-vs-chiefs",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-not-optimistic-about-devon-achanes-knee-injury"
       ]
     },
     {
@@ -81,7 +82,7 @@
       "team": "MIA",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Week 3 box vs KC unchanged: 17 rush, 41 yards, 1 TD; 3 rec, 14 yards. Wright INACTIVE. No new official role announcement overnight.",
+      "summary": "Official Week 3 box vs KC unchanged overnight: 17 rush, 41 yards, 1 TD; 3 rec, 14 yards. Wright INACTIVE. No new official role announcement after 2:07 AM ET Pulse.",
       "mongo_impact": "Discovery / waiver watch only. Not on James roster. No FREE_AGENT_CONFIRMED from articles.",
       "recommendation": "WATCH only. Do not spend FAAB from this Pulse.",
       "urgency": "HIGH",
@@ -102,7 +103,9 @@
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
-      "sources": ["https://www.nfl.com/news/nfl-week-3-inactives-players-ruled-out-sunday-14-games-2026"]
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-3-inactives-players-ruled-out-sunday-14-games-2026"
+      ]
     },
     {
       "player": "CeeDee Lamb",
@@ -115,7 +118,9 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["https://www.dallascowboys.com/news/game-recap-cowboys-lose-in-rio-34-31"]
+      "sources": [
+        "https://www.dallascowboys.com/news/game-recap-cowboys-lose-in-rio-34-31"
+      ]
     },
     {
       "player": "Mark Andrews",
@@ -144,7 +149,9 @@
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"]
+      "sources": [
+        "https://www.baltimoreravens.com/game-day/2026/reg-week3/ravens-at-cowboys/"
+      ]
     },
     {
       "player": "Josh Downs",
@@ -157,7 +164,9 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["https://www.foxsports.com/nfl/week-3-houston-texans-vs-indianapolis-colts-sep-27-2026-game-boxscore-11202?tab=boxscore"]
+      "sources": [
+        "https://www.foxsports.com/nfl/week-3-houston-texans-vs-indianapolis-colts-sep-27-2026-game-boxscore-11202?tab=boxscore"
+      ]
     },
     {
       "player": "Caleb Williams",
@@ -170,14 +179,16 @@
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "UNKNOWN",
-      "sources": ["https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"]
+      "sources": [
+        "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles"
+      ]
     },
     {
       "player": "Luther Burden III",
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Williams officially OUT MNF vs PHI; Jay Glazer / beat reports attribute Case Keenum as starter with Bagent backup after Bagent cleared protocol. Game not yet kicked (8:15 PM ET).",
+      "summary": "Williams officially OUT MNF vs PHI; Jay Glazer / beat reports attribute Case Keenum as starter with Bagent backup after Bagent cleared protocol. Official Bears preview still lists Bagent or Keenum. Game not yet kicked (8:15 PM ET).",
       "mongo_impact": "OWNED starter. Hold planned start.",
       "recommendation": "HOLD / START as planned",
       "urgency": "MEDIUM",
@@ -185,7 +196,7 @@
       "availability": "OWNED",
       "sources": [
         "https://www.chicagotribune.com/2026/09/27/chicago-bears-case-keenum-start-week-3/",
-        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/report-case-keenum-to-start-vs-eagles-on-monday-night-football/754134/"
+        "https://www.chicagobears.com/news/game-preview-eagles-vs-bears-2026-week-3"
       ]
     },
     {
@@ -199,7 +210,9 @@
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/09/26/eagles-bears-final-injury-report-barkley-smith-brown-goedert/91960687007/"]
+      "sources": [
+        "https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/09/26/eagles-bears-final-injury-report-barkley-smith-brown-goedert/91960687007/"
+      ]
     },
     {
       "player": "Dylan Sampson",
@@ -212,20 +225,26 @@
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["Prior Pulse", "Mongo repo"]
+      "sources": [
+        "Prior Pulse",
+        "Mongo repo"
+      ]
     },
     {
       "player": "Eagles D/ST",
       "team": "PHI",
       "signal_type": "matchup",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Williams OUT; Keenum attributed MNF starter by Glazer/beat. Kickoff still ahead 8:15 PM ET.",
+      "summary": "Williams OUT; Keenum attributed MNF starter by Glazer/beat. Official Bears preview still Bagent or Keenum. Kickoff still ahead 8:15 PM ET.",
       "mongo_impact": "Positive matchup for owned starter Eagles D/ST.",
       "recommendation": "HOLD (already starting)",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
-      "sources": ["https://www.thescore.com/nfl/news/3610125/report-bears-to-start-keenum-on-mnf-vs-eagles"]
+      "sources": [
+        "https://www.thescore.com/nfl/news/3610125/report-bears-to-start-keenum-on-mnf-vs-eagles",
+        "https://www.chicagobears.com/news/game-preview-eagles-vs-bears-2026-week-3"
+      ]
     }
   ],
   "waiver_signals": [
@@ -233,7 +252,7 @@
       "player": "Ollie Gordon II",
       "availability": "WAIVERS_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "Prior authenticated ESPN snapshot (2026-09-27 7:49 PM ET) classified Gordon as on waivers in Mongo. Not re-verified at 2:00 AM ET. Immediate Dolphins RB next-up if Achane misses time. No FREE_AGENT_CONFIRMED.",
+      "summary": "Prior authenticated ESPN snapshot (2026-09-27 7:49 PM ET) classified Gordon as on waivers in Mongo. Not re-verified at 4:00 AM ET. Immediate Dolphins RB next-up if Achane misses time. No FREE_AGENT_CONFIRMED.",
       "mongo_impact": "Watch only until ESPN ownership is re-checked. FAAB remaining $82.",
       "recommendation": "Contingency only: revisit after Monday MRI; no FAAB action without James approval.",
       "urgency": "HIGH",
@@ -252,7 +271,10 @@
       "recommendation": "NONE",
       "urgency": "NONE",
       "confidence": "HIGH",
-      "sources": ["AGENTS.md", "Mongo repo"]
+      "sources": [
+        "AGENTS.md",
+        "Mongo repo"
+      ]
     }
   ],
   "lineup_signals": [
@@ -268,7 +290,7 @@
       "player": "Luther Burden III",
       "slot": "WR/FLEX",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Williams OUT; Keenum attributed starter MNF (not yet kicked). No lineup change without James approval.",
+      "summary": "Williams OUT; Keenum attributed starter MNF (not yet kicked). Official preview still Bagent or Keenum. No lineup change without James approval.",
       "urgency": "MEDIUM"
     },
     {
@@ -283,14 +305,14 @@
     {
       "topic": "Hafley postgame: Achane knee does not sound very optimistic; tests pending",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Hafley declined details until tests complete. 2:00 AM ET scan found no official MRI result. Social-media ACL claims remain SPECULATION.",
+      "summary": "Hafley declined details until tests complete. 4:00 AM ET scan found no official MRI result. Social-media ACL claims remain SPECULATION.",
       "mongo_impact": "Highest-urgency owned-player event. Still ungraded.",
       "recommendation": "Wait for official Monday report before any roster recommendation.",
       "urgency": "CRITICAL",
       "confidence": "HIGH",
       "sources": [
         "https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/",
-        "https://www.espn.co.uk/nfl/story/_/id/50044229/dolphins-rb-devon-achane-suffers-knee-injury-vs-chiefs"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-not-optimistic-about-devon-achanes-knee-injury"
       ]
     },
     {
@@ -298,16 +320,16 @@
       "team": "MIA",
       "status": "SPECULATION",
       "summary": "Unverified X account claimed Achane tore his ACL and is done for the season. Not an official team, beat, or named-insider report. MRI still pending. Do not treat as confirmed.",
-      "source": "X scan 2026-09-28T06:00Z",
+      "source": "X scan 2026-09-28T08:00Z",
       "observed_at": "2026-09-28T04:51:47Z"
     }
   ],
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-28T041600Z",
-    "completed_at": "2026-09-28T04:16:00Z",
-    "commit": "c63fd5ff735c20c72877a12907b3af24979b6ad2"
+    "pulse_id": "mongo-grok-pulse-2026-09-28T060700Z",
+    "completed_at": "2026-09-28T06:07:00Z",
+    "commit": "38c42ab99656be87817007e8487fea396d44fc21"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -315,5 +337,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "2:00 AM ET overnight: no material official change vs 12:16 AM ET Pulse. Achane still undiagnosed; MRI Monday; unverified X ACL claim logged as SPECULATION only. Rio FINAL and Gordon box unchanged. MNF still ahead: Keenum attributed CHI starter. Gordon remains WAIVERS_CONFIRMED only from prior 7:49 PM ET ESPN snapshot, not re-checked. No ESPN roster/FAAB/lineup action."
+  "notes": "4:00 AM ET overnight: no material official change vs 2:07 AM ET Pulse. Achane still undiagnosed; MRI Monday; unverified X ACL claim remains SPECULATION only. Rio FINAL and Gordon box unchanged. MNF still ahead: Keenum attributed CHI starter; official Bears preview still Bagent or Keenum. Gordon remains WAIVERS_CONFIRMED only from prior 7:49 PM ET ESPN snapshot, not re-checked. No ESPN roster/FAAB/lineup action."
 }
