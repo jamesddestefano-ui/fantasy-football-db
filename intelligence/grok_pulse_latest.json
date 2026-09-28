@@ -1,1 +1,94 @@
-PLACEHOLDER
+{
+ "league": "mongo",
+ "espn_league_id": "1470431049",
+ "espn_team_id": 2,
+ "team": "Tom Brady of Ass / JDD",
+ "pulse_id": "mongo-grok-pulse-2026-09-28T122100Z",
+ "generated_at": "2026-09-28T12:21:00Z",
+ "completed_at": "2026-09-28T12:21:00Z",
+ "week": 3,
+ "season": 2026,
+ "run_type": "hourly",
+ "source_status": {
+  "official_nfl_team": "OK",
+  "beat_reporting": "OK",
+  "x_direct": "LIMITED",
+  "experts": "LIMITED",
+  "analytics": "LIMITED"
+ },
+ "scope": {
+  "repository": "jamesddestefano-ui/fantasy-football-db",
+  "branch": "main",
+  "internal_league_id": "mongo",
+  "intelligence_only": true,
+  "sparta_touched": false,
+  "dfs_touched": false,
+  "props_touched": false
+ },
+ "roster_context": {
+  "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
+  "faab_remaining": 82,
+  "starters_week_3_hold": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
+  "bench": ["Kaelon Black", "Ray Davis", "George Holani", "Kendre Miller", "Chris Bell", "Rashod Bateman", "Oronde Gadsden"],
+  "ir": ["Dylan Sampson"],
+  "dropped_not_fa_confirmed": ["Raheim Sanders"]
+ },
+ "watchlist_status": {
+  "repository_waiver_watch_rows": 0,
+  "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN unless a prior authenticated ESPN snapshot already classified them."
+ },
+ "player_signals": [{
+  "player": "De'Von Achane",
+  "team": "MIA",
+  "signal_type": "injury_severity",
+  "status": "ATTRIBUTED_REPORT",
+  "summary": "8:21 AM ET hourly scan: still no official MRI/grade. OUT Week 3 vs KC (left knee, non-contact cut). Hafley: does not sound very optimistic; more Monday. Official diagnosis pending Monday tests. Unverified X posts claiming an ACL tear remain SPECULATION and are not adopted as fact.",
+  "mongo_impact": "OWNED Week 3 starter. Scoring locked. Week 4 hold vs IR vs next-up still pending official Monday tests. Do not change ESPN roster from this Pulse.",
+  "recommendation": "MONITOR official Monday tests. Intelligence only. No IR/lineup/FAAB action without James approval.",
+  "urgency": "CRITICAL",
+  "confidence": "HIGH",
+  "availability": "OWNED",
+  "sources": ["https://www.cbssports.com/nfl/news/devon-achane-knee-injury-dolphins-chiefs-2026/", "https://www.espn.co.uk/nfl/story/_/id/50044229/dolphins-rb-devon-achane-suffers-knee-injury-vs-chiefs", "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-not-optimistic-about-devon-achanes-knee-injury"]
+ }],
+ "waiver_signals": [{
+  "player": "Ollie Gordon II",
+  "availability": "WAIVERS_CONFIRMED",
+  "status": "CONFIRMED_FACT",
+  "summary": "Prior authenticated ESPN snapshot (2026-09-27 7:49 PM ET) classified Gordon as on waivers in Mongo. Not re-verified this hour. Immediate Dolphins RB next-up if Achane misses time. No FREE_AGENT_CONFIRMED.",
+  "mongo_impact": "Watch only until ESPN ownership is re-checked. FAAB remaining $82.",
+  "recommendation": "Contingency only: revisit after Monday MRI; no FAAB action without James approval.",
+  "urgency": "HIGH",
+  "confidence": "MEDIUM",
+  "sources": ["Prior Pulse ESPN snapshot 7:49 PM ET", "AGENTS.md"]
+ }],
+ "lineup_signals": [{
+  "player": "De'Von Achane",
+  "slot": "RB",
+  "status": "ATTRIBUTED_REPORT",
+  "summary": "Week 3 already started and OUT. Week 4 waits on Monday tests. No official grade since prior Pulse.",
+  "urgency": "CRITICAL"
+ }],
+ "expert_signals": [{
+  "topic": "Hafley postgame: Achane knee does not sound very optimistic; tests pending",
+  "status": "ATTRIBUTED_REPORT",
+  "summary": "Hafley declined details until tests complete. This hour scan found no official MRI result. Social-media ACL claims remain SPECULATION.",
+  "mongo_impact": "Highest-urgency owned-player event. Still ungraded.",
+  "recommendation": "Wait for official Monday report before any roster recommendation.",
+  "urgency": "CRITICAL",
+  "confidence": "HIGH"
+ }],
+ "material_changes": [],
+ "no_material_change": true,
+ "prior_pulse": {
+  "pulse_id": "mongo-grok-pulse-2026-09-28T111800Z",
+  "completed_at": "2026-09-28T11:18:00Z",
+  "commit": "cfeb0f78d248a15d2f2aff2c0902234332eb3a5e"
+ },
+ "prime_watch_handoff": {
+  "canonical_feed": "intelligence/grok_pulse_latest.json",
+  "history": "intelligence/grok_pulse_history.jsonl",
+  "consumer": "Prime Mongo Fantasy Watch",
+  "duplicate_pulse_path": false
+ },
+ "notes": "8:21 AM ET hourly: no material change vs 7:18 AM ET Pulse. Achane still undiagnosed pending Monday tests. Keenum MNF start remains ATTRIBUTED_REPORT. No ESPN roster/FAAB/lineup/IR action."
+}
