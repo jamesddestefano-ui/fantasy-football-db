@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-28T001728Z",
- "generated_at": "2026-09-28T00:17:28Z",
- "completed_at": "2026-09-28T00:17:28Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-28T011619Z",
+ "generated_at": "2026-09-28T01:16:19Z",
+ "completed_at": "2026-09-28T01:16:19Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -328,25 +328,12 @@
    ]
   }
  ],
- "material_changes": [
-  {
-   "topic": "Rio final: Ravens 34, Cowboys 31",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Scores aggregator citing ESPN game 401872960 lists BAL 34-31 FINAL. Flowers, Lamb, Andrews, Bateman Week 3 production now locked. Individual box lines in search snippets were inconsistent with the 7:49 PM ESPN in-progress snapshot, so exact player stat lines are not recorded here pending an ESPN re-read.",
-   "source": "https://www.espn.com/nfl/game/_/gameId/401872960/ravens-cowboys"
-  },
-  {
-   "topic": "Ollie Gordon II availability now WAIVERS_CONFIRMED from authenticated ESPN (7:49 PM ET Sunday Night Check)",
-   "status": "CONFIRMED_FACT",
-   "summary": "Read-only authenticated ESPN snapshot shows Gordon on waivers in Mongo (Jaylen Wright also on waivers). Supersedes UNKNOWN. No bid placed; FAAB $82; James approval required. Contingent on Monday Achane MRI.",
-   "source": "/workspace/mongo-ff-bot-state/espn_live_20260927_1949.json"
-  }
- ],
- "no_material_change": false,
+ "material_changes": [],
+ "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-27T231452Z",
-  "completed_at": "2026-09-27T23:14:52Z",
-  "commit": "5bc14ae4dc065f889eac90e00bbb293ab4f7688f"
+  "pulse_id": "mongo-grok-pulse-2026-09-28T001728Z",
+  "completed_at": "2026-09-28T00:17:28Z",
+  "commit": "a0feae779c4d001f566298d5b5307c4ec58c3a58"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -354,5 +341,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "8:17 PM ET Sunday hourly refresh. Material vs 231452Z: Rio final BAL 34-31 (attributed); Ollie Gordon II WAIVERS_CONFIRMED via 7:49 PM authenticated ESPN read. ESPN 7:49 matchup: JDD 83.0 vs T.N.T. 101.76, proj ~127-111 with Hurts/Burden/Eagles D/ST on MNF. Achane MRI Monday. Intelligence only; no ESPN state changed."
+ "notes": "9 PM ET hourly: no material change. Achane still no diagnosis; MRI Monday (Hafley \"does not sound very optimistic\", PFT/FOX). Keenum confirmed MNF starter (Glazer), Bagent backup; Williams Grade 2 hamstring 3-4 wks. Eagles out: Goedert, Hollywood Brown, Fred Johnson; Hurts no designation. Gordon/Wright remain WAIVERS_CONFIRMED per 7:49 PM ESPN snapshot; no bid without James approval. Mongo Live Check 8 PM run did not fire (last run 8:13 AM). No ESPN changes."
 }
