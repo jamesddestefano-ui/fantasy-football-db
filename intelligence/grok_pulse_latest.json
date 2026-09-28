@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-09-28T082000Z",
-  "generated_at": "2026-09-28T08:20:00Z",
-  "completed_at": "2026-09-28T08:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-09-28T100500Z",
+  "generated_at": "2026-09-28T10:05:00Z",
+  "completed_at": "2026-09-28T10:05:00Z",
   "week": 3,
   "season": 2026,
   "run_type": "overnight",
@@ -65,7 +65,7 @@
       "team": "MIA",
       "signal_type": "injury_severity",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "4:00 AM ET overnight scan: still no official MRI/grade. OUT Week 3 vs KC (left knee, non-contact cut). Hafley: does not sound very optimistic; more Monday. Official diagnosis pending Monday tests. Unverified X posts claiming an ACL tear remain SPECULATION and are not adopted as fact.",
+      "summary": "6:00 AM ET overnight scan: still no official MRI/grade. OUT Week 3 vs KC (left knee, non-contact cut). Hafley: does not sound very optimistic; more Monday. Official diagnosis pending Monday tests. Unverified X posts claiming an ACL tear remain SPECULATION and are not adopted as fact.",
       "mongo_impact": "OWNED Week 3 starter. Scoring locked. Week 4 hold vs IR vs next-up still pending official Monday tests. Do not change ESPN roster from this Pulse.",
       "recommendation": "MONITOR official Monday tests. Intelligence only. No IR/lineup/FAAB action without James approval.",
       "urgency": "CRITICAL",
@@ -82,7 +82,7 @@
       "team": "MIA",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Week 3 box vs KC unchanged overnight: 17 rush, 41 yards, 1 TD; 3 rec, 14 yards. Wright INACTIVE. No new official role announcement after 2:07 AM ET Pulse.",
+      "summary": "Official Week 3 box vs KC unchanged overnight: 17 rush, 41 yards, 1 TD; 3 rec, 14 yards. Wright INACTIVE. No new official role announcement after 4:20 AM ET Pulse. RotoWire notes Gordon cramped and returned Sunday; not a new Week 4 role announcement.",
       "mongo_impact": "Discovery / waiver watch only. Not on James roster. No FREE_AGENT_CONFIRMED from articles.",
       "recommendation": "WATCH only. Do not spend FAAB from this Pulse.",
       "urgency": "HIGH",
@@ -188,7 +188,7 @@
       "team": "CHI",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Williams officially OUT MNF vs PHI; Jay Glazer / beat reports attribute Case Keenum as starter with Bagent backup after Bagent cleared protocol. Official Bears preview still lists Bagent or Keenum. Game not yet kicked (8:15 PM ET).",
+      "summary": "Williams officially OUT MNF vs PHI; Jay Glazer / beat reports attribute Case Keenum as starter with Bagent backup after Bagent cleared protocol. Official Bears preview refreshed 8:33 AM ET Sep 28 still lists Bagent or Keenum. Kickoff 8:15 PM ET tonight.",
       "mongo_impact": "OWNED starter. Hold planned start.",
       "recommendation": "HOLD / START as planned",
       "urgency": "MEDIUM",
@@ -204,13 +204,14 @@
       "team": "PHI",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "No designation for MNF at CHI. Eagles OUT Goedert, Hollywood Brown, Fred Johnson. Barkley and DeVonta Smith undesignated.",
+      "summary": "No designation for MNF at CHI (8:15 PM ET tonight). Eagles OUT Goedert, Hollywood Brown, Fred Johnson. Barkley and DeVonta Smith undesignated. Official NFL.com Week 3 injury board unchanged overnight.",
       "mongo_impact": "Locked QB start.",
       "recommendation": "START",
       "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
+        "https://www.nfl.com/injuries/",
         "https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/09/26/eagles-bears-final-injury-report-barkley-smith-brown-goedert/91960687007/"
       ]
     },
@@ -235,7 +236,7 @@
       "team": "PHI",
       "signal_type": "matchup",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Williams OUT; Keenum attributed MNF starter by Glazer/beat. Official Bears preview still Bagent or Keenum. Kickoff still ahead 8:15 PM ET.",
+      "summary": "Williams OUT; Keenum attributed MNF starter by Glazer/beat. Official Bears preview (updated 8:33 AM ET) still Bagent or Keenum. Kickoff 8:15 PM ET tonight.",
       "mongo_impact": "Positive matchup for owned starter Eagles D/ST.",
       "recommendation": "HOLD (already starting)",
       "urgency": "LOW",
@@ -252,7 +253,7 @@
       "player": "Ollie Gordon II",
       "availability": "WAIVERS_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "Prior authenticated ESPN snapshot (2026-09-27 7:49 PM ET) classified Gordon as on waivers in Mongo. Not re-verified at 4:00 AM ET. Immediate Dolphins RB next-up if Achane misses time. No FREE_AGENT_CONFIRMED.",
+      "summary": "Prior authenticated ESPN snapshot (2026-09-27 7:49 PM ET) classified Gordon as on waivers in Mongo. Not re-verified at 6:00 AM ET. Immediate Dolphins RB next-up if Achane misses time. No FREE_AGENT_CONFIRMED.",
       "mongo_impact": "Watch only until ESPN ownership is re-checked. FAAB remaining $82.",
       "recommendation": "Contingency only: revisit after Monday MRI; no FAAB action without James approval.",
       "urgency": "HIGH",
@@ -290,14 +291,14 @@
       "player": "Luther Burden III",
       "slot": "WR/FLEX",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Williams OUT; Keenum attributed starter MNF (not yet kicked). Official preview still Bagent or Keenum. No lineup change without James approval.",
+      "summary": "Williams OUT; Keenum attributed starter MNF (kickoff 8:15 PM ET tonight). Official preview still Bagent or Keenum. No lineup change without James approval.",
       "urgency": "MEDIUM"
     },
     {
       "player": "Jalen Hurts / Eagles D/ST",
       "slot": "QB / DST",
       "status": "CONFIRMED_FACT",
-      "summary": "MNF still ahead. Hurts undesignated. Goedert/Hollywood/Fred Johnson OUT.",
+      "summary": "MNF tonight 8:15 PM ET. Hurts undesignated. Goedert/Hollywood/Fred Johnson OUT.",
       "urgency": "LOW"
     }
   ],
@@ -305,7 +306,7 @@
     {
       "topic": "Hafley postgame: Achane knee does not sound very optimistic; tests pending",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Hafley declined details until tests complete. 4:00 AM ET scan found no official MRI result. Social-media ACL claims remain SPECULATION.",
+      "summary": "Hafley declined details until tests complete. 6:00 AM ET scan found no official MRI result. Social-media ACL claims remain SPECULATION.",
       "mongo_impact": "Highest-urgency owned-player event. Still ungraded.",
       "recommendation": "Wait for official Monday report before any roster recommendation.",
       "urgency": "CRITICAL",
@@ -327,9 +328,9 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-28T060700Z",
-    "completed_at": "2026-09-28T06:07:00Z",
-    "commit": "38c42ab99656be87817007e8487fea396d44fc21"
+    "pulse_id": "mongo-grok-pulse-2026-09-28T082000Z",
+    "completed_at": "2026-09-28T08:20:00Z",
+    "commit": "e9b21728a730581a6de85c56968987cb6d86542b"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -337,5 +338,5 @@
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false
   },
-  "notes": "4:00 AM ET overnight: no material official change vs 2:07 AM ET Pulse. Achane still undiagnosed; MRI Monday; unverified X ACL claim remains SPECULATION only. Rio FINAL and Gordon box unchanged. MNF still ahead: Keenum attributed CHI starter; official Bears preview still Bagent or Keenum. Gordon remains WAIVERS_CONFIRMED only from prior 7:49 PM ET ESPN snapshot, not re-checked. No ESPN roster/FAAB/lineup action."
+  "notes": "6:00 AM ET overnight: no material official change vs 4:20 AM ET Pulse. Achane still undiagnosed; MRI Monday; unverified X ACL claim remains SPECULATION only. Rio FINAL and Gordon box unchanged. MNF tonight 8:15 PM ET: Keenum attributed CHI starter; official Bears preview refreshed 8:33 AM ET still Bagent or Keenum. Gordon remains WAIVERS_CONFIRMED only from prior 7:49 PM ET ESPN snapshot, not re-checked. No ESPN roster/FAAB/lineup action."
 }
