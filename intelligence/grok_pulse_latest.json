@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-28T021442Z",
- "generated_at": "2026-09-28T02:14:42Z",
- "completed_at": "2026-09-28T02:14:42Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-28T031449Z",
+ "generated_at": "2026-09-28T03:14:49Z",
+ "completed_at": "2026-09-28T03:14:49Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -339,9 +339,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-28T011619Z",
-  "completed_at": "2026-09-28T01:16:19Z",
-  "commit": "382d2064cf3504554594bf3f25415f463ee2fe53"
+  "pulse_id": "mongo-grok-pulse-2026-09-28T021442Z",
+  "completed_at": "2026-09-28T02:14:42Z",
+  "commit": "4c92839100ed978efa1a67823f85c816b2c76002"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -349,5 +349,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "10 PM ET hourly: no material change. Achane: no diagnosis; MRI Monday; team outlook \"not very optimistic\". New SPECULATION only: sports physician video read flags possible ACL (not a report). CBS noted Gordon left briefly with cramps (questionable to return) in Week 3; no ongoing injury reported. MNF: Keenum starts (Glazer), Hurts no designation. Gordon/Wright WAIVERS_CONFIRMED per 7:49 PM ESPN snapshot; no bid without James approval. Mongo Live Check 8 PM run did not fire. No ESPN changes."
+ "notes": "11 PM ET hourly (final hourly of day): no material change. Achane: no diagnosis or new insider report since Rapoport \"fear is a major knee injury\"; MRI Monday. Social-media clinician speculation conflicts (ACL vs meniscus; right vs left knee; ESPN/Heavy say left) and remains SPECULATION. MNF Monday: Keenum starts for CHI; Hurts no designation; Burden/Eagles D/ST outlook unchanged. Gordon/Wright WAIVERS_CONFIRMED per 7:49 PM ESPN snapshot; no bid without James approval. No ESPN changes."
 }
