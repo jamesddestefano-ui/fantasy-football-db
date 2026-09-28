@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-27T231452Z",
- "generated_at": "2026-09-27T23:14:52Z",
- "completed_at": "2026-09-27T23:14:52Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-28T001728Z",
+ "generated_at": "2026-09-28T00:17:28Z",
+ "completed_at": "2026-09-28T00:17:28Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
@@ -261,11 +261,11 @@
  "waiver_signals": [
   {
    "player": "Ollie Gordon II",
-   "availability": "UNKNOWN",
-   "status": "ATTRIBUTED_REPORT",
+   "availability": "WAIVERS_CONFIRMED",
+   "status": "CONFIRMED_FACT",
    "summary": "Immediate Dolphins RB next-up if Achane misses time. Finished ~20 touches / 55 yards / 1 TD. Not confirmed free agent in Mongo. No FREE_AGENT_CONFIRMED.",
    "mongo_impact": "Watch only until ESPN ownership is checked. FAAB remaining $82.",
-   "recommendation": "Prepare contingency; verify Mongo ownership on ESPN and wait for Monday MRI before any FAAB action (James approval required).",
+   "recommendation": "Contingency only: revisit after Monday MRI; no FAAB action without James approval.",
    "urgency": "HIGH",
    "confidence": "MEDIUM",
    "sources": [
@@ -330,17 +330,23 @@
  ],
  "material_changes": [
   {
-   "topic": "Achane: Rapoport says fear is a major (left) knee injury; MRI Monday",
+   "topic": "Rio final: Ravens 34, Cowboys 31",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "New vs 221600Z (Hafley quote only): Ian Rapoport reported \"the fear is a major knee injury\" (left knee); PFT reports MRI Monday to confirm diagnosis and raises possible season-ending outcome. No official diagnosis yet. Meniscus speculation from a social-media PT is SPECULATION, not recorded as fact.",
-   "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-not-optimistic-about-devon-achanes-knee-injury ; https://www.foxsports.com/stories/nfl/dolphins-devon-achance-knee-injury-update"
+   "summary": "Scores aggregator citing ESPN game 401872960 lists BAL 34-31 FINAL. Flowers, Lamb, Andrews, Bateman Week 3 production now locked. Individual box lines in search snippets were inconsistent with the 7:49 PM ESPN in-progress snapshot, so exact player stat lines are not recorded here pending an ESPN re-read.",
+   "source": "https://www.espn.com/nfl/game/_/gameId/401872960/ravens-cowboys"
+  },
+  {
+   "topic": "Ollie Gordon II availability now WAIVERS_CONFIRMED from authenticated ESPN (7:49 PM ET Sunday Night Check)",
+   "status": "CONFIRMED_FACT",
+   "summary": "Read-only authenticated ESPN snapshot shows Gordon on waivers in Mongo (Jaylen Wright also on waivers). Supersedes UNKNOWN. No bid placed; FAAB $82; James approval required. Contingent on Monday Achane MRI.",
+   "source": "/workspace/mongo-ff-bot-state/espn_live_20260927_1949.json"
   }
  ],
  "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-27T221600Z",
-  "completed_at": "2026-09-27T22:16:00Z",
-  "commit": "6f199478798ee217cd9bf56c09cad6b779c42a32"
+  "pulse_id": "mongo-grok-pulse-2026-09-27T231452Z",
+  "completed_at": "2026-09-27T23:14:52Z",
+  "commit": "5bc14ae4dc065f889eac90e00bbb293ab4f7688f"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -348,5 +354,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "7:14 PM ET Sunday hourly refresh. Material vs 221600Z: Rapoport reports fear of a major Achane knee injury, MRI Monday. BAL-DAL Rio game still in progress (Flowers, Lamb, Andrews, Bateman live). MNF PHI-CHI pending (Hurts, Burden, Eagles D/ST). Intelligence only; no ESPN state changed."
+ "notes": "8:17 PM ET Sunday hourly refresh. Material vs 231452Z: Rio final BAL 34-31 (attributed); Ollie Gordon II WAIVERS_CONFIRMED via 7:49 PM authenticated ESPN read. ESPN 7:49 matchup: JDD 83.0 vs T.N.T. 101.76, proj ~127-111 with Hurts/Burden/Eagles D/ST on MNF. Achane MRI Monday. Intelligence only; no ESPN state changed."
 }
