@@ -3,17 +3,17 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-28T181600Z",
- "generated_at": "2026-09-28T18:16:00Z",
- "completed_at": "2026-09-28T18:16:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-28T221440Z",
+ "generated_at": "2026-09-28T22:14:40Z",
+ "completed_at": "2026-09-28T22:14:40Z",
  "week": 3,
  "season": 2026,
  "run_type": "hourly",
  "source_status": {
-  "official_nfl_team": "LIMITED",
+  "official_nfl_team": "OK",
   "beat_reporting": "OK",
-  "x_direct": "OK",
-  "experts": "OK",
+  "x_direct": "LIMITED",
+  "experts": "LIMITED",
   "analytics": "LIMITED"
  },
  "scope": {
@@ -63,12 +63,12 @@
   {
    "player": "De'Von Achane",
    "team": "MIA",
-   "signal_type": "injury_severity",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Schefter + Rapoport + Marcel Louis-Jacques (ESPN, ~10:36 AM ET): torn ACL vs KC; out remainder of 2026. No official Dolphins medical release seen this hour. Prior Pulse still treated ACL as SPECULATION.",
-   "mongo_impact": "OWNED Week 3 starter. Season-ending if diagnosis holds. Intelligence only. Do not change ESPN roster/IR from this Pulse.",
-   "recommendation": "MONITOR official team confirmation. Week 4+ replacement is a Prime Watch decision, not a Pulse mutation.",
-   "urgency": "CRITICAL",
+   "signal_type": "injury_ir",
+   "status": "CONFIRMED_FACT",
+   "summary": "Torn ACL, out for 2026 season: joint ESPN/NFL Network report 10:49 AM ET (Schefter, Rapoport; PFT). Dolphins formally placed Achane on IR Mon 9/28 (Dolphins.com transactions; NFLTR ~4:04 PM ET; PFT 4:24 PM ET). Dolphins also waived DT Keith Cooper Jr.; Gordon and Wright remain on 53 with two open roster spots.",
+   "mongo_impact": "OWNED Week 3 starter; season over. JDD IR slot is occupied by Dylan Sampson, so an ESPN IR move requires resolving Sampson first. Intelligence only; no ESPN roster/IR change from Pulse.",
+   "recommendation": "Week 4+ RB replacement is a James decision (approval required). Re-verify ESPN availability/deadline before any bid.",
+   "urgency": "HIGH",
    "confidence": "HIGH",
    "availability": "OWNED"
   },
@@ -77,9 +77,9 @@
    "team": "MIA",
    "signal_type": "usage",
    "status": "CONFIRMED_FACT",
-   "summary": "Week 3 box vs KC unchanged: 17 rush, 41 yards, 1 TD; 3 rec, 14 yards. Wright INACTIVE. Experts treat Gordon as likely lead back if Achane is season-ending.",
+   "summary": "Week 3 vs KC: 17 rush, 41 yds, 1 TD; 3 rec, 14 yds as only active RB after Achane exit. Beat reports (SI, Miami Herald) expect Gordon/Wright committee; Miami may promote PS RB Jarquez Hunter or Carlos Washington Jr. to open spots.",
    "mongo_impact": "Discovery/waiver watch only. No FREE_AGENT_CONFIRMED from articles.",
-   "recommendation": "WATCH only. Do not spend FAAB from this Pulse.",
+   "recommendation": "WATCH. Last authenticated ESPN check 8:12 AM ET showed WAIVERS_CONFIRMED; re-verify before any bid. No FAAB from Pulse.",
    "urgency": "HIGH",
    "confidence": "HIGH",
    "availability": "UNKNOWN"
@@ -89,7 +89,7 @@
    "team": "MIA",
    "signal_type": "inactive",
    "status": "CONFIRMED_FACT",
-   "summary": "INACTIVE vs KC (stinger/foot). Unchanged this hour.",
+   "summary": "Inactive W3 (stinger/foot). Remains on 53 after Achane IR; expected to share backfield with Gordon when healthy (SI, Miami Herald).",
    "mongo_impact": "Confirms Gordon was only dressed RB after Achane OUT.",
    "recommendation": "No Mongo action.",
    "urgency": "LOW",
@@ -252,15 +252,20 @@
  "material_changes": [
   {
    "player": "De'Von Achane",
-   "change": "Diagnosis upgraded from undiagnosed left-knee / ACL SPECULATION to ATTRIBUTED_REPORT torn ACL, out remainder of 2026 (Schefter/Rapoport/Louis-Jacques).",
-   "status": "ATTRIBUTED_REPORT"
+   "change": "Formal IR placement confirmed by Dolphins transactions; ACL season-ending status upgraded from ATTRIBUTED_REPORT to CONFIRMED_FACT.",
+   "status": "CONFIRMED_FACT",
+   "sources": [
+    "https://www.miamidolphins.com/team/transactions",
+    "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-put-devon-achane-on-injured-reserve",
+    "https://www.nfl.com/news/dolphins-rb-devon-achane-miss-2026-season-acl-tear"
+   ]
   }
  ],
  "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-28T151500Z",
-  "completed_at": "2026-09-28T15:15:00Z",
-  "commit": "1dd6c9859e06e1237fa43ebf1f404114fab5b729"
+  "pulse_id": "mongo-grok-pulse-2026-09-28T181600Z",
+  "completed_at": "2026-09-28T18:16:00Z",
+  "commit": "be6cd576ba6bcea76ebee733311a51a5db220e91"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -268,5 +273,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "2:16 PM ET hourly vs 11:15 AM ET Pulse. MATERIAL: Achane ACL season-ending is now multi-insider ATTRIBUTED_REPORT (Schefter/Rapoport ~10:36 AM ET; ESPN player page; UPI/AP secondary). Official Dolphins release still LIMITED. MNF 8:15 PM ET PHI at CHI unchanged (Keenum ATTRIBUTED starter; Williams OUT Grade 2 hamstring). Gordon remains WAIVERS_CONFIRMED from Sunday 7:49 PM ET ESPN snapshot only; availability not re-verified; no FREE_AGENT_CONFIRMED. No ESPN roster/FAAB/lineup/IR action from Pulse.\n"
+ "notes": "Hourly 6 PM ET pulse. Material: Achane formal IR (CONFIRMED_FACT). MNF PHI@CHI 8:15 PM ET unchanged: Keenum expected to start (NFL Network via CBS), Bagent cleared backup, Caleb Williams OUT; Hurts no designation; Eagles OUT Goedert, Hollywood Brown, Fred Johnson; Greenard questionable. Inactives pending ~6:45 PM ET. No direct X scan performed this run; x_direct LIMITED. Intelligence only; no roster/FAAB/lineup/IR mutation."
 }
