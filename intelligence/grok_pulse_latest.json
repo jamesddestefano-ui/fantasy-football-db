@@ -3,17 +3,17 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-29T100500Z",
- "generated_at": "2026-09-29T10:05:00Z",
- "completed_at": "2026-09-29T10:05:00Z",
- "week": 3,
+ "pulse_id": "mongo-grok-pulse-2026-09-29T161634Z",
+ "generated_at": "2026-09-29T16:16:34Z",
+ "completed_at": "2026-09-29T16:16:34Z",
+ "week": 4,
  "season": 2026,
- "run_type": "overnight",
+ "run_type": "hourly",
  "source_status": {
   "official_nfl_team": "OK",
   "beat_reporting": "OK",
-  "x_direct": "OK",
-  "experts": "OK",
+  "x_direct": "UNAVAILABLE",
+  "experts": "LIMITED",
   "analytics": "LIMITED"
  },
  "scope": {
@@ -26,49 +26,267 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop. No ESPN re-auth this hour.",
+  "source": "Mongo repository + authenticated ESPN Live Check 2026-09-29 08:23 ET (cookie-seeded API). FAAB $82; record 2-1-0; Week 3 FINAL WIN JDD 116.42 vs T.N.T 112.46. Achane ESPN injuryStatus now INJURY_RESERVE (was DOUBTFUL at 9/28 08:12). Sampson still fantasy IR slot. Scoring period 4; Week 4 vs You're a JaGoff. No ESPN roster/FAAB/txn/IR_MOVE since prior check.",
   "faab_remaining": 82,
-  "starters_week_3_hold": ["Jalen Hurts", "De'Von Achane", "Bijan Robinson", "Luther Burden III", "Tetairoa McMillan", "Mark Andrews", "Josh Downs", "CeeDee Lamb", "Eagles D/ST"],
-  "bench": ["Kaelon Black", "Ray Davis", "George Holani", "Kendre Miller", "Chris Bell", "Rashod Bateman", "Oronde Gadsden"],
-  "ir": ["Dylan Sampson"],
-  "dropped_not_fa_confirmed": ["Raheim Sanders"]
+  "starters_week_3_hold": [
+   "Jalen Hurts",
+   "De'Von Achane",
+   "Bijan Robinson",
+   "Luther Burden III",
+   "Tetairoa McMillan",
+   "Mark Andrews",
+   "Josh Downs",
+   "CeeDee Lamb",
+   "Eagles D/ST"
+  ],
+  "bench": [
+   "Kaelon Black",
+   "Ray Davis",
+   "George Holani",
+   "Kendre Miller",
+   "Chris Bell",
+   "Rashod Bateman",
+   "Oronde Gadsden"
+  ],
+  "ir": [
+   "Dylan Sampson"
+  ],
+  "dropped_not_fa_confirmed": [
+   "Raheim Sanders"
+  ]
  },
  "watchlist_status": {
   "repository_waiver_watch_rows": 0,
   "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN unless a prior authenticated ESPN snapshot already classified them."
  },
  "player_signals": [
-  {"player": "Luther Burden III", "team": "CHI", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "Unchanged vs 060713Z: FINAL MNF CHI 27 PHI 7. Burden 7/11, 61 rec yds, 1 TD + 1-7 rush. No new medical or official designation overnight.", "mongo_impact": "OWNED Week 3 starter. Banked.", "recommendation": "HOLD. Week 4 vs Jets. NBC Rotoworld recap (Mark Garcia) frames as upside WR2 vs NYJ \u2014 EXPERT_OPINION only.", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED"},
-  {"player": "Jalen Hurts", "team": "PHI", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "Unchanged: 16/25, 153 pass yds, 1 INT, rush TD. Finished MNF. No new official injury designation overnight.", "mongo_impact": "OWNED QB. Weak Week 3 line banked.", "recommendation": "HOLD. Week 4 vs LAR.", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED"},
-  {"player": "Eagles D/ST", "team": "PHI", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "Unchanged: allowed 27 in MNF loss. Week 4 vs LAR; McVay Mon: Puka Nacua (groin/hip) status TBD \u2014 already in prior NFL.com roundup, not a new overnight fact.", "mongo_impact": "OWNED D/ST. Weak banked score.", "recommendation": "HOLD pending Week 4 official IR.", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED"},
-  {"player": "De'Von Achane", "team": "MIA", "signal_type": "injury_ir", "status": "CONFIRMED_FACT", "summary": "Torn ACL, remainder of 2026; Dolphins IR formal Mon 9/28. No new medical note in 6 AM ET scan.", "mongo_impact": "OWNED; season over. JDD IR slot occupied by Dylan Sampson.", "recommendation": "Week 4+ RB replacement is a James decision. Intelligence only.", "urgency": "HIGH", "confidence": "HIGH", "availability": "OWNED"},
-  {"player": "Ollie Gordon II", "team": "MIA", "signal_type": "usage", "status": "CONFIRMED_FACT", "summary": "No new usage or roster fact overnight. Prior: W3 17-41-1 + 3-14; Hafley committee language unchanged.", "mongo_impact": "Discovery/waiver watch only.", "recommendation": "WATCH. Do not claim FREE_AGENT_CONFIRMED from articles.", "urgency": "HIGH", "confidence": "HIGH", "availability": "UNKNOWN"},
-  {"player": "Jaylen Wright", "team": "MIA", "signal_type": "inactive", "status": "CONFIRMED_FACT", "summary": "Inactive W3 (stinger/foot/neck listings across trackers). Remains on 53 in last team notes. No new overnight confirmation.", "mongo_impact": "Limits Gordon monopoly narrative.", "recommendation": "No Mongo action.", "urgency": "LOW", "confidence": "HIGH", "availability": "UNKNOWN"},
-  {"player": "CeeDee Lamb", "team": "DAL", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "BAL 34 DAL 31 FINAL unchanged. Lamb 7-112 plus 2PC.", "mongo_impact": "OWNED starter. Week 3 banked.", "recommendation": "START locked / HOLD", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED"},
-  {"player": "Mark Andrews", "team": "BAL", "signal_type": "production_injury", "status": "ATTRIBUTED_REPORT", "summary": "FINAL box 3-24. Hand injury, returned after halftime (prior Rotoworld/The Athletic). No official Week-4 designation; clubs have not filed Wed-Fri Week 4 IR yet.", "mongo_impact": "OWNED starter. Watch-only.", "recommendation": "HOLD. Monitor official IR.", "urgency": "MEDIUM", "confidence": "MEDIUM", "availability": "OWNED"},
-  {"player": "Josh Downs", "team": "IND", "signal_type": "production", "status": "CONFIRMED_FACT", "summary": "IND 19-17 FINAL vs HOU unchanged. Downs 5-77, 11 targets.", "mongo_impact": "OWNED FLEX. Banked.", "recommendation": "START locked / HOLD", "urgency": "NONE", "confidence": "HIGH", "availability": "OWNED"},
-  {"player": "Caleb Williams", "team": "CHI", "signal_type": "injury_severity_timeline", "status": "ATTRIBUTED_REPORT", "summary": "Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3. No new overnight timeline.", "mongo_impact": "Backup-QB environment for owned Burden.", "recommendation": "HOLD Burden.", "urgency": "MEDIUM", "confidence": "HIGH", "availability": "UNKNOWN"},
-  {"player": "Dylan Sampson", "team": "CLE", "signal_type": "injury", "status": "CONFIRMED_FACT", "summary": "On IR (knee). No new updates.", "mongo_impact": "OWNED IR. Occupies only IR slot vs Achane need.", "recommendation": "HOLD", "urgency": "HIGH", "confidence": "HIGH", "availability": "OWNED"},
-  {"player": "Rashod Bateman", "team": "BAL", "signal_type": "usage", "status": "CONFIRMED_FACT", "summary": "Owned bench. FINAL 2-37 unchanged.", "mongo_impact": "Keep on bench.", "recommendation": "HOLD bench.", "urgency": "LOW", "confidence": "HIGH", "availability": "OWNED"}
+  {
+   "player": "Luther Burden III",
+   "team": "CHI",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "FINAL MNF CHI 27 PHI 7 unchanged: 7/11, 61 yds, 1 TD + 1-7 rush (banked ~19.8 fantasy). Week 4 vs Jets. No new medical.",
+   "mongo_impact": "OWNED Week 3 starter. Banked.",
+   "recommendation": "HOLD. Week 4 vs Jets. NBC Rotoworld recap (Mark Garcia) frames as upside WR2 vs NYJ — EXPERT_OPINION only.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Jalen Hurts",
+   "team": "PHI",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "FINAL MNF unchanged: 16/25 153 1 INT + rush TD (~12.62 fantasy). Week 4 vs LAR. No new official designation.",
+   "mongo_impact": "OWNED QB. Weak Week 3 line banked.",
+   "recommendation": "HOLD. Week 4 vs LAR.",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Eagles D/ST",
+   "team": "PHI",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "FINAL MNF allowed 27 (~1.0 fantasy). Week 4 vs LAR. No new designation.",
+   "mongo_impact": "OWNED D/ST. Weak banked score.",
+   "recommendation": "HOLD pending Week 4 official IR.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "De'Von Achane",
+   "team": "MIA",
+   "signal_type": "injury_ir",
+   "status": "CONFIRMED_FACT",
+   "summary": "Torn ACL, out remainder of 2026; Dolphins formal IR Mon 9/28. Authenticated ESPN Live Check 08:23 ET: fantasy injuryStatus upgraded DOUBTFUL→INJURY_RESERVE. Still listed in JDD RB starter slot; Dylan Sampson occupies only fantasy IR.",
+   "mongo_impact": "OWNED; season over. Free Sampson IR slot before any ESPN IR move for Achane. Intelligence only; no mutation from Pulse.",
+   "recommendation": "Hold owned until James approves IR/stash plan. Week 4+ RB replacement needs explicit approval.",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Ollie Gordon II",
+   "team": "MIA",
+   "signal_type": "usage",
+   "status": "CONFIRMED_FACT",
+   "summary": "W3: 17-41-1 + 3-14. Authenticated ESPN 08:23 ET: WAIVERS_CONFIRMED. Waivers process Wed 2026-09-30 03:00 ET. Hafley committee language; Wright also on waivers but OUT.",
+   "mongo_impact": "Discovery/waiver watch only.",
+   "recommendation": "WATCH. No FAAB without James approval. Re-verify before any bid.",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "WAIVERS_CONFIRMED"
+  },
+  {
+   "player": "Jaylen Wright",
+   "team": "MIA",
+   "signal_type": "inactive",
+   "status": "CONFIRMED_FACT",
+   "summary": "Authenticated ESPN 08:23 ET: WAIVERS_CONFIRMED and OUT. Remains MIA depth after Achane IR.",
+   "mongo_impact": "Limits Gordon monopoly narrative.",
+   "recommendation": "No Mongo action.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "WAIVERS_CONFIRMED"
+  },
+  {
+   "player": "CeeDee Lamb",
+   "team": "DAL",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "BAL 34 DAL 31 FINAL unchanged. Lamb 7-112 plus 2PC.",
+   "mongo_impact": "OWNED starter. Week 3 banked.",
+   "recommendation": "START locked / HOLD",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Mark Andrews",
+   "team": "BAL",
+   "signal_type": "production_injury",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "W3 hand injury returned after HT; FINAL 3-24. Officials have not filed Wed-Fri Week 4 IR yet (as of this scan).",
+   "mongo_impact": "OWNED starter. Watch-only.",
+   "recommendation": "HOLD. Monitor official IR.",
+   "urgency": "MEDIUM",
+   "confidence": "MEDIUM",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Josh Downs",
+   "team": "IND",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "IND 19-17 FINAL vs HOU unchanged. Downs 5-77, 11 targets.",
+   "mongo_impact": "OWNED FLEX. Banked.",
+   "recommendation": "START locked / HOLD",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Caleb Williams",
+   "team": "CHI",
+   "signal_type": "injury_severity_timeline",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3. No new overnight timeline.",
+   "mongo_impact": "Backup-QB environment for owned Burden.",
+   "recommendation": "HOLD Burden.",
+   "urgency": "MEDIUM",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN"
+  },
+  {
+   "player": "Dylan Sampson",
+   "team": "CLE",
+   "signal_type": "injury",
+   "status": "CONFIRMED_FACT",
+   "summary": "On IR (knee). No new updates.",
+   "mongo_impact": "OWNED IR. Occupies only IR slot vs Achane need.",
+   "recommendation": "HOLD",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Rashod Bateman",
+   "team": "BAL",
+   "signal_type": "usage",
+   "status": "CONFIRMED_FACT",
+   "summary": "Owned bench. FINAL 2-37 unchanged.",
+   "mongo_impact": "Keep on bench.",
+   "recommendation": "HOLD bench.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  }
  ],
  "waiver_signals": [
-  {"player": "Ollie Gordon II", "availability": "WAIVERS_CONFIRMED", "status": "CONFIRMED_FACT", "summary": "Prior authenticated ESPN snapshot 2026-09-27 7:49 PM ET classified Gordon on waivers. Not re-verified this hour. No FREE_AGENT_CONFIRMED.", "mongo_impact": "Watch only. FAAB $82.", "recommendation": "No FAAB action without James approval.", "urgency": "HIGH", "confidence": "MEDIUM"}
+  {
+   "player": "Ollie Gordon II",
+   "availability": "WAIVERS_CONFIRMED",
+   "status": "CONFIRMED_FACT",
+   "summary": "Authenticated ESPN Live Check 2026-09-29 08:23 ET: WAIVERS_CONFIRMED. Processes Wed 2026-09-30 03:00 ET. No FREE_AGENT_CONFIRMED.",
+   "mongo_impact": "Watch only. FAAB $82.",
+   "recommendation": "No FAAB without James approval. FAAB $82.",
+   "urgency": "HIGH",
+   "confidence": "HIGH"
+  }
  ],
  "lineup_signals": [
-  {"player": "De'Von Achane", "slot": "RB", "status": "CONFIRMED_FACT", "summary": "Season-ending ACL + team IR. Official ESPN IR/lineup move is user action, not Pulse.", "urgency": "CRITICAL"},
-  {"player": "Luther Burden III", "slot": "WR/FLEX", "status": "CONFIRMED_FACT", "summary": "MNF final banked. Leave in future Week 4 consideration; no new status.", "urgency": "LOW"},
-  {"player": "Jalen Hurts / Eagles D/ST", "slot": "QB / DST", "status": "CONFIRMED_FACT", "summary": "MNF complete. No new injury designation overnight.", "urgency": "LOW"}
+  {
+   "player": "De'Von Achane",
+   "slot": "RB",
+   "status": "CONFIRMED_FACT",
+   "summary": "Season-ending ACL + team IR. Official ESPN IR/lineup move is user action, not Pulse.",
+   "urgency": "CRITICAL"
+  },
+  {
+   "player": "Luther Burden III",
+   "slot": "WR/FLEX",
+   "status": "CONFIRMED_FACT",
+   "summary": "MNF final banked. Leave in future Week 4 consideration; no new status.",
+   "urgency": "LOW"
+  },
+  {
+   "player": "Jalen Hurts / Eagles D/ST",
+   "slot": "QB / DST",
+   "status": "CONFIRMED_FACT",
+   "summary": "MNF complete. No new injury designation overnight.",
+   "urgency": "LOW"
+  }
  ],
  "expert_signals": [
-  {"topic": "Burden Week 4 vs Jets", "status": "EXPERT_OPINION", "summary": "NBC Rotoworld (Mark Garcia) post-MNF recap: treat Burden as upside WR2 vs Jets while Keenum starts; improve further when Williams returns.", "urgency": "LOW", "confidence": "MEDIUM"},
-  {"topic": "Miami RB committee after Achane IR", "status": "EXPERT_OPINION", "summary": "Unchanged: Gordon priority waiver but committee with Wright likely; Hafley all-RBs-have-roles.", "urgency": "HIGH", "confidence": "MEDIUM"}
+  {
+   "topic": "Burden Week 4 vs Jets",
+   "status": "EXPERT_OPINION",
+   "summary": "NBC Rotoworld (Mark Garcia) post-MNF recap: treat Burden as upside WR2 vs Jets while Keenum starts; improve further when Williams returns.",
+   "urgency": "LOW",
+   "confidence": "MEDIUM"
+  },
+  {
+   "topic": "Miami RB committee after Achane IR",
+   "status": "EXPERT_OPINION",
+   "summary": "Unchanged: Gordon priority waiver but committee with Wright likely; Hafley all-RBs-have-roles.",
+   "urgency": "HIGH",
+   "confidence": "MEDIUM"
+  }
  ],
- "material_changes": [],
- "no_material_change": true,
+ "material_changes": [
+  {
+   "player": "De'Von Achane",
+   "change": "Authenticated ESPN 08:23 ET: fantasy injuryStatus DOUBTFUL→INJURY_RESERVE (badge). Still starter-slot on JDD roster; Sampson holds only fantasy IR. Not an ESPN IR_MOVE txn.",
+   "status": "CONFIRMED_FACT",
+   "sources": [
+    "ESPN Live Check 2026-09-29 08:23 ET authenticated API"
+   ]
+  },
+  {
+   "player": "Ollie Gordon II",
+   "change": "ESPN reconfirm WAIVERS_CONFIRMED; waiver process Wed 2026-09-30 03:00 ET. Jaylen Wright also WAIVERS_CONFIRMED OUT.",
+   "status": "CONFIRMED_FACT",
+   "sources": [
+    "ESPN Live Check 2026-09-29 08:23 ET"
+   ]
+  },
+  {
+   "player": "Week 3 matchup",
+   "change": "FINAL WIN JDD 116.42 vs T.N.T 112.46; record 2-1-0. MNF banked Burden 19.8 / Hurts 12.62 / Eagles D/ST 1.0.",
+   "status": "CONFIRMED_FACT",
+   "sources": [
+    "ESPN Live Check 2026-09-29 08:23 ET"
+   ]
+  }
+ ],
+ "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-09-29T060713Z",
-  "completed_at": "2026-09-29T06:07:13Z",
-  "commit": "4b9fecdb115848aaa79fd1f2cf177ace9aa0303d"
+  "pulse_id": "mongo-grok-pulse-2026-09-29T100500Z",
+  "completed_at": "2026-09-29T10:05:00Z",
+  "commit": "6b6c72cb6c07c4ebe4169919653ccf78eb607383"
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -76,5 +294,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "6 AM ET overnight refresh. Scan: official Week 4 IR not filed (Wed-Fri window). MNF boxes, Achane ACL+IR, Andrews hand watch unchanged. X scan was reaction/noise on Hurts/Keenum, no new beat fact. Expert Burden WR2 vs NYJ is opinion only. Intelligence only; no roster/FAAB/lineup/IR mutation."
+ "notes": "Hourly ~12:15 PM ET. Material from ESPN Live Check 08:23: Achane ESPN IR badge, Gordon/Wright WAIVERS_CONFIRMED + Wed 3 AM ET process, Week 3 final win 116.42-112.46. No new beat medical beyond prior Achane ACL/IR and Andrews hand watch. Util LIMITED (X unavailable; FPD/McFarland pre-window). Intelligence only; no roster/FAAB/lineup/IR mutation."
 }
