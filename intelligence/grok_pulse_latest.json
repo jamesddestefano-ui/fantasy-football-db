@@ -1,277 +1,277 @@
 {
-  "league": "mongo",
-  "espn_league_id": "1470431049",
-  "espn_team_id": 2,
-  "team": "Tom Brady of Ass / JDD",
+ "league": "mongo",
+ "espn_league_id": "1470431049",
+ "espn_team_id": 2,
+ "team": "Tom Brady of Ass / JDD",
+ "pulse_id": "mongo-grok-pulse-2026-09-29T060713Z",
+ "generated_at": "2026-09-29T06:07:13Z",
+ "completed_at": "2026-09-29T06:07:13Z",
+ "week": 3,
+ "season": 2026,
+ "run_type": "overnight",
+ "source_status": {
+  "official_nfl_team": "OK",
+  "beat_reporting": "OK",
+  "x_direct": "LIMITED",
+  "experts": "OK",
+  "analytics": "LIMITED"
+ },
+ "scope": {
+  "repository": "jamesddestefano-ui/fantasy-football-db",
+  "branch": "main",
+  "internal_league_id": "mongo",
+  "intelligence_only": true,
+  "sparta_touched": false,
+  "dfs_touched": false,
+  "props_touched": false
+ },
+ "roster_context": {
+  "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
+  "faab_remaining": 82,
+  "starters_week_3_hold": [
+   "Jalen Hurts",
+   "De'Von Achane",
+   "Bijan Robinson",
+   "Luther Burden III",
+   "Tetairoa McMillan",
+   "Mark Andrews",
+   "Josh Downs",
+   "CeeDee Lamb",
+   "Eagles D/ST"
+  ],
+  "bench": [
+   "Kaelon Black",
+   "Ray Davis",
+   "George Holani",
+   "Kendre Miller",
+   "Chris Bell",
+   "Rashod Bateman",
+   "Oronde Gadsden"
+  ],
+  "ir": [
+   "Dylan Sampson"
+  ],
+  "dropped_not_fa_confirmed": [
+   "Raheim Sanders"
+  ]
+ },
+ "watchlist_status": {
+  "repository_waiver_watch_rows": 0,
+  "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN unless a prior authenticated ESPN snapshot already classified them."
+ },
+ "player_signals": [
+  {
+   "player": "Luther Burden III",
+   "team": "CHI",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "FINAL MNF: CHI 27, PHI 7. Burden 7-of-11 targets, 61 receiving yards, 1 TD (8-yd shovel from Keenum, 1Q) plus 1 rush for 7 yards (NBC Sports / CBS box). Keenum started with Caleb Williams OUT.",
+   "mongo_impact": "OWNED Week 3 starter. Banked receiving TD + solid volume under Keenum.",
+   "recommendation": "HOLD. Week 4 vs Jets next",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Jalen Hurts",
+   "team": "PHI",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "FINAL MNF: Hurts 16-of-25, 153 pass yards, 1 INT; rushing TD; Eagles lost 27-7 (OutKick / CBS). Mid-game X tent/Dalton chatter remains SPECULATION only and was not confirmed; Hurts finished the game.",
+   "mongo_impact": "OWNED QB. Weak Week 3 line banked.",
+   "recommendation": "HOLD. Week 4 vs LAR",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Eagles D/ST",
+   "team": "PHI",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "FINAL MNF: allowed 27 points and Keenum 247 pass / 2 pass TD + rush TD. Poor Week 3 D/ST night.",
+   "mongo_impact": "OWNED D/ST. Weak banked score.",
+   "recommendation": "HOLD pending Week 4 vs LAR",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "De'Von Achane",
+   "team": "MIA",
+   "signal_type": "injury_ir",
+   "status": "CONFIRMED_FACT",
+   "summary": "Torn ACL, out remainder of 2026; Dolphins IR formal Mon 9/28 (ESPN/NFL.com/PFT). Unchanged overnight; no new medical or roster note.",
+   "mongo_impact": "OWNED Week 3 starter; season over. JDD IR slot occupied by Dylan Sampson.",
+   "recommendation": "Week 4+ RB replacement is a James decision. Intelligence only.",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Ollie Gordon II",
+   "team": "MIA",
+   "signal_type": "usage",
+   "status": "CONFIRMED_FACT",
+   "summary": "Week 3 vs KC: 17-41-1 rush, 3-14 rec. Hafley: committee / all RBs will have roles (NBC Sports). Wright remains on 53 after Achane IR.",
+   "mongo_impact": "Discovery/waiver watch only. No FREE_AGENT_CONFIRMED from articles.",
+   "recommendation": "WATCH. Last authenticated ESPN check 8:12 AM Mon ET showed WAIVERS_CONFIRMED; do not claim FREE_AGENT_CONFIRMED from articles. No FAAB from Pulse.",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN"
+  },
+  {
+   "player": "Jaylen Wright",
+   "team": "MIA",
+   "signal_type": "inactive",
+   "status": "CONFIRMED_FACT",
+   "summary": "Inactive W3 (stinger/foot). Remains on 53; expected committee with Gordon when healthy.",
+   "mongo_impact": "Limits Gordon monopoly narrative.",
+   "recommendation": "No Mongo action.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN"
+  },
+  {
+   "player": "CeeDee Lamb",
+   "team": "DAL",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "BAL 34 DAL 31 FINAL unchanged. Lamb 7-112 plus 2PC.",
+   "mongo_impact": "OWNED starter. Week 3 banked.",
+   "recommendation": "START locked / HOLD",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Mark Andrews",
+   "team": "BAL",
+   "signal_type": "production_injury",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "FINAL box 3-24. Hand injury, returned after halftime (Rotoworld/The Athletic). No official Week-4 designation this hour.",
+   "mongo_impact": "OWNED starter. Watch-only.",
+   "recommendation": "HOLD. Monitor official IR.",
+   "urgency": "MEDIUM",
+   "confidence": "MEDIUM",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Josh Downs",
+   "team": "IND",
+   "signal_type": "production",
+   "status": "CONFIRMED_FACT",
+   "summary": "IND 19-17 FINAL vs HOU unchanged. Downs 5-77, 11 targets.",
+   "mongo_impact": "OWNED FLEX. Banked.",
+   "recommendation": "START locked / HOLD",
+   "urgency": "NONE",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Caleb Williams",
+   "team": "CHI",
+   "signal_type": "injury_severity_timeline",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3. Keenum started and threw Burden TD.",
+   "mongo_impact": "Backup-QB environment for owned Burden and Eagles D/ST.",
+   "recommendation": "HOLD Burden.",
+   "urgency": "MEDIUM",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN"
+  },
+  {
+   "player": "Dylan Sampson",
+   "team": "CLE",
+   "signal_type": "injury",
+   "status": "CONFIRMED_FACT",
+   "summary": "On IR (knee). No new updates.",
+   "mongo_impact": "OWNED IR. HOLD. Occupies only IR slot vs Achane need.",
+   "recommendation": "HOLD",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
+   "player": "Rashod Bateman",
+   "team": "BAL",
+   "signal_type": "usage",
+   "status": "CONFIRMED_FACT",
+   "summary": "Owned bench. FINAL 2-37. Flowers 5-84.",
+   "mongo_impact": "Keep on bench.",
+   "recommendation": "HOLD bench.",
+   "urgency": "LOW",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  }
+ ],
+ "waiver_signals": [
+  {
+   "player": "Ollie Gordon II",
+   "availability": "WAIVERS_CONFIRMED",
+   "status": "CONFIRMED_FACT",
+   "summary": "Prior authenticated ESPN snapshot 2026-09-27 7:49 PM ET classified Gordon on waivers. Not re-verified this hour. No FREE_AGENT_CONFIRMED. Expert/waiver columns list Gordon as a Week 4 add (NBC/FTN) — EXPERT_OPINION only.",
+   "mongo_impact": "Watch only. FAAB $82.",
+   "recommendation": "No FAAB action without James approval.",
+   "urgency": "HIGH",
+   "confidence": "MEDIUM"
+  }
+ ],
+ "lineup_signals": [
+  {
+   "player": "De'Von Achane",
+   "slot": "RB",
+   "status": "CONFIRMED_FACT",
+   "summary": "Season-ending ACL + team IR. Official ESPN IR/lineup move is user action, not Pulse.",
+   "urgency": "CRITICAL"
+  },
+  {
+   "player": "Luther Burden III",
+   "slot": "WR/FLEX",
+   "status": "CONFIRMED_FACT",
+   "summary": "Live MNF TD from Keenum. Leave in lineup.",
+   "urgency": "LOW"
+  },
+  {
+   "player": "Jalen Hurts / Eagles D/ST",
+   "slot": "QB / DST",
+   "status": "CONFIRMED_FACT",
+   "summary": "MNF in progress. Hurts still in official play-by-play; tent chatter unconfirmed.",
+   "urgency": "MEDIUM"
+  }
+ ],
+ "expert_signals": [
+  {
+   "topic": "Miami RB committee after Achane IR",
+   "status": "EXPERT_OPINION",
+   "summary": "NBC Rotoworld/Daugherty: Gordon priority waiver but committee with Wright likely; Hafley said all RBs will have roles. FTN waiver video lists Gordon among Week 4 names.",
+   "urgency": "HIGH",
+   "confidence": "MEDIUM"
+  }
+ ],
+ "material_changes": [
+  {
+   "player": "Luther Burden III / Jalen Hurts / Eagles D/ST",
+   "change": "MNF FINAL CHI 27 PHI 7. Burden final line 7-61-1 (11 targets) + 1-7 rush. Hurts 16/25 153 1 INT + rush TD. Eagles D/ST allowed 27. Supersedes mid-game 011500Z live TD snapshot.",
+   "status": "CONFIRMED_FACT",
+   "sources": [
+    "https://www.nbcsports.com/fantasy/football/player-news/2026-09-29/luther-burden-targeted-11-times-in-week-3-win",
+    "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20260928_PHI@CHI/",
+    "https://www.chicagobears.com/video/highlights-bears-27-7-week-3-win-over-eagles"
+   ]
+  }
+ ],
+ "no_material_change": false,
+ "prior_pulse": {
   "pulse_id": "mongo-grok-pulse-2026-09-29T011500Z",
-  "generated_at": "2026-09-29T01:15:00Z",
   "completed_at": "2026-09-29T01:15:00Z",
-  "week": 3,
-  "season": 2026,
-  "run_type": "hourly",
-  "source_status": {
-    "official_nfl_team": "OK",
-    "beat_reporting": "OK",
-    "x_direct": "LIMITED",
-    "experts": "LIMITED",
-    "analytics": "LIMITED"
-  },
-  "scope": {
-    "repository": "jamesddestefano-ui/fantasy-football-db",
-    "branch": "main",
-    "internal_league_id": "mongo",
-    "intelligence_only": true,
-    "sparta_touched": false,
-    "dfs_touched": false,
-    "props_touched": false
-  },
-  "roster_context": {
-    "source": "Mongo repository current state including ESPN-authoritative WAIVER_ADD_DROP 2026-09-23: Oronde Gadsden $8 add, Raheim Sanders drop; FAAB $82; Sampson IR. Prior Holani $0 / Lane drop Sep 19; Bateman $0 / Demercado drop.",
-    "faab_remaining": 82,
-    "starters_week_3_hold": [
-      "Jalen Hurts",
-      "De'Von Achane",
-      "Bijan Robinson",
-      "Luther Burden III",
-      "Tetairoa McMillan",
-      "Mark Andrews",
-      "Josh Downs",
-      "CeeDee Lamb",
-      "Eagles D/ST"
-    ],
-    "bench": [
-      "Kaelon Black",
-      "Ray Davis",
-      "George Holani",
-      "Kendre Miller",
-      "Chris Bell",
-      "Rashod Bateman",
-      "Oronde Gadsden"
-    ],
-    "ir": [
-      "Dylan Sampson"
-    ],
-    "dropped_not_fa_confirmed": [
-      "Raheim Sanders"
-    ]
-  },
-  "watchlist_status": {
-    "repository_waiver_watch_rows": 0,
-    "note": "ffdb waiver-watch has no seeded Mongo entries. Pulse treats unowned names as discovery only with availability UNKNOWN unless a prior authenticated ESPN snapshot already classified them."
-  },
-  "player_signals": [
-    {
-      "player": "Luther Burden III",
-      "team": "CHI",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "MNF PHI@CHI in progress. Burden 8-yd TD reception from Case Keenum at 8:47 1st (ESPN/CBS box). Mid-game receiving line also listed ~4-34-1 (FOX). Keenum starting with Caleb Williams OUT (Grade 2 hamstring).",
-      "mongo_impact": "OWNED Week 3 starter. Live production banked while game unfinished.",
-      "recommendation": "START locked / HOLD. Do not change lineup mid-game.",
-      "urgency": "MEDIUM",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "signal_type": "live_status",
-      "status": "SPECULATION",
-      "summary": "Official ESPN play-by-play still shows Hurts in the game in Q2 (scramble at CHI 13 ~8:37 2nd). Unofficial X posts claimed a sideline hit, medical tent, and Andy Dalton in; no Schefter/Rapoport/Eagles confirmation found this hour.",
-      "mongo_impact": "OWNED locked QB. Watch only until official designation.",
-      "recommendation": "Do not treat tent chatter as CONFIRMED. No Pulse lineup action.",
-      "urgency": "MEDIUM",
-      "confidence": "LOW",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Eagles D/ST",
-      "team": "PHI",
-      "signal_type": "matchup_live",
-      "status": "CONFIRMED_FACT",
-      "summary": "Live score around PHI 0 CHI 7 early Q2 (ESPN/CBS/FOX snapshots differed by a few minutes). Burden TD allowed. Game unfinished.",
-      "mongo_impact": "OWNED DST start in progress.",
-      "recommendation": "HOLD. Final not in.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "De'Von Achane",
-      "team": "MIA",
-      "signal_type": "injury_ir",
-      "status": "CONFIRMED_FACT",
-      "summary": "Torn ACL, out remainder of 2026. Dolphins placed Achane on IR Monday (NFL.com; PFT; Dolphins transactions). No new severity change this hour.",
-      "mongo_impact": "OWNED Week 3 starter; season over. JDD IR slot occupied by Dylan Sampson.",
-      "recommendation": "Week 4+ RB replacement is a James decision. Intelligence only.",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Ollie Gordon II",
-      "team": "MIA",
-      "signal_type": "usage",
-      "status": "CONFIRMED_FACT",
-      "summary": "Week 3 vs KC: 17-41-1 rush, 3-14 rec. Hafley: committee / all RBs will have roles (NBC Sports). Wright remains on 53 after Achane IR.",
-      "mongo_impact": "Discovery/waiver watch only. No FREE_AGENT_CONFIRMED from articles.",
-      "recommendation": "WATCH. Last authenticated ESPN snapshot classified WAIVERS_CONFIRMED; re-verify before any bid.",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN"
-    },
-    {
-      "player": "Jaylen Wright",
-      "team": "MIA",
-      "signal_type": "inactive",
-      "status": "CONFIRMED_FACT",
-      "summary": "Inactive W3 (stinger/foot). Remains on 53; expected committee with Gordon when healthy.",
-      "mongo_impact": "Limits Gordon monopoly narrative.",
-      "recommendation": "No Mongo action.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN"
-    },
-    {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "BAL 34 DAL 31 FINAL unchanged. Lamb 7-112 plus 2PC.",
-      "mongo_impact": "OWNED starter. Week 3 banked.",
-      "recommendation": "START locked / HOLD",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Mark Andrews",
-      "team": "BAL",
-      "signal_type": "production_injury",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "FINAL box 3-24. Hand injury, returned after halftime (Rotoworld/The Athletic). No official Week-4 designation this hour.",
-      "mongo_impact": "OWNED starter. Watch-only.",
-      "recommendation": "HOLD. Monitor official IR.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Josh Downs",
-      "team": "IND",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "IND 19-17 FINAL vs HOU unchanged. Downs 5-77, 11 targets.",
-      "mongo_impact": "OWNED FLEX. Banked.",
-      "recommendation": "START locked / HOLD",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Caleb Williams",
-      "team": "CHI",
-      "signal_type": "injury_severity_timeline",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3. Keenum started and threw Burden TD.",
-      "mongo_impact": "Backup-QB environment for owned Burden and Eagles D/ST.",
-      "recommendation": "HOLD Burden.",
-      "urgency": "MEDIUM",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN"
-    },
-    {
-      "player": "Dylan Sampson",
-      "team": "CLE",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "On IR (knee). No new updates.",
-      "mongo_impact": "OWNED IR. HOLD. Occupies only IR slot vs Achane need.",
-      "recommendation": "HOLD",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Rashod Bateman",
-      "team": "BAL",
-      "signal_type": "usage",
-      "status": "CONFIRMED_FACT",
-      "summary": "Owned bench. FINAL 2-37. Flowers 5-84.",
-      "mongo_impact": "Keep on bench.",
-      "recommendation": "HOLD bench.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    }
-  ],
-  "waiver_signals": [
-    {
-      "player": "Ollie Gordon II",
-      "availability": "WAIVERS_CONFIRMED",
-      "status": "CONFIRMED_FACT",
-      "summary": "Prior authenticated ESPN snapshot 2026-09-27 7:49 PM ET classified Gordon on waivers. Not re-verified this hour. No FREE_AGENT_CONFIRMED. Expert/waiver columns list Gordon as a Week 4 add (NBC/FTN) \u2014 EXPERT_OPINION only.",
-      "mongo_impact": "Watch only. FAAB $82.",
-      "recommendation": "No FAAB action without James approval.",
-      "urgency": "HIGH",
-      "confidence": "MEDIUM"
-    }
-  ],
-  "lineup_signals": [
-    {
-      "player": "De'Von Achane",
-      "slot": "RB",
-      "status": "CONFIRMED_FACT",
-      "summary": "Season-ending ACL + team IR. Official ESPN IR/lineup move is user action, not Pulse.",
-      "urgency": "CRITICAL"
-    },
-    {
-      "player": "Luther Burden III",
-      "slot": "WR/FLEX",
-      "status": "CONFIRMED_FACT",
-      "summary": "Live MNF TD from Keenum. Leave in lineup.",
-      "urgency": "LOW"
-    },
-    {
-      "player": "Jalen Hurts / Eagles D/ST",
-      "slot": "QB / DST",
-      "status": "CONFIRMED_FACT",
-      "summary": "MNF in progress. Hurts still in official play-by-play; tent chatter unconfirmed.",
-      "urgency": "MEDIUM"
-    }
-  ],
-  "expert_signals": [
-    {
-      "topic": "Miami RB committee after Achane IR",
-      "status": "EXPERT_OPINION",
-      "summary": "NBC Rotoworld/Daugherty: Gordon priority waiver but committee with Wright likely; Hafley said all RBs will have roles. FTN waiver video lists Gordon among Week 4 names.",
-      "urgency": "HIGH",
-      "confidence": "MEDIUM"
-    }
-  ],
-  "material_changes": [
-    {
-      "player": "Luther Burden III",
-      "change": "MNF live: 8-yard TD reception from Case Keenum (8:47 1Q). Score snapshots PHI 0 CHI 7 early Q2.",
-      "status": "CONFIRMED_FACT",
-      "sources": [
-        "https://www.espn.com/nfl/game?gameId=401872963",
-        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20260928_PHI@CHI/",
-        "https://www.foxsports.com/nfl/week-3-philadelphia-eagles-vs-chicago-bears-sep-28-2026-game-boxscore-11209"
-      ]
-    }
-  ],
-  "no_material_change": false,
-  "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-09-28T221440Z",
-    "completed_at": "2026-09-28T22:14:40Z",
-    "commit": "6140e1a14e3adcb6b830495871627dd725655420"
-  },
-  "prime_watch_handoff": {
-    "canonical_feed": "intelligence/grok_pulse_latest.json",
-    "history": "intelligence/grok_pulse_history.jsonl",
-    "consumer": "Prime Mongo Fantasy Watch",
-    "duplicate_pulse_path": false
-  },
-  "notes": "Hourly ~9:15 PM ET pulse. Material: Burden live MNF TD (CONFIRMED_FACT). Achane IR/ACL unchanged CONFIRMED_FACT. Unofficial X Hurts-tent chatter logged as SPECULATION only; official PBP still has Hurts. Gordon waiver availability not re-verified on ESPN this hour. Intelligence only; no roster/FAAB/lineup/IR mutation."
+  "commit": "e95d93fd927bbe81c2a9be90142eda57bc99f9a7"
+ },
+ "prime_watch_handoff": {
+  "canonical_feed": "intelligence/grok_pulse_latest.json",
+  "history": "intelligence/grok_pulse_history.jsonl",
+  "consumer": "Prime Mongo Fantasy Watch",
+  "duplicate_pulse_path": false
+ },
+ "notes": "Overnight 2 AM ET pulse. Material: MNF FINAL box for owned Burden/Hurts/Eagles D/ST (CONFIRMED_FACT). Achane ACL+IR unchanged CONFIRMED_FACT. Gordon/Wright availability UNKNOWN (no ESPN re-check this hour). No direct X scan; x_direct LIMITED. Intelligence only; no roster/FAAB/lineup/IR mutation."
 }
