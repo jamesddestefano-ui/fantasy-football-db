@@ -3,16 +3,16 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-09-30T031606Z",
- "generated_at": "2026-09-30T03:16:06Z",
- "completed_at": "2026-09-30T03:16:06Z",
+ "pulse_id": "mongo-grok-pulse-2026-09-30T031645Z",
+ "generated_at": "2026-09-30T03:16:45Z",
+ "completed_at": "2026-09-30T03:16:45Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
  "source_status": {
   "official_nfl_team": "OK",
   "beat_reporting": "OK",
-  "x_direct": "LIMITED",
+  "x_direct": "OK",
   "experts": "LIMITED",
   "analytics": "LIMITED"
  },
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Mongo repository + authenticated ESPN Live Check 2026-09-29 08:23 ET (cookie-seeded API). FAAB $82; record 2-1-0; Week 3 FINAL WIN JDD 116.42 vs T.N.T 112.46. Achane ESPN injuryStatus INJURY_RESERVE. Sampson still fantasy IR slot. Scoring period 4; Week 4 vs You're a JaGoff. No new ESPN roster/FAAB/txn/IR_MOVE snapshot since 08:23 ET check. Waiver process still ahead: Wed 2026-09-30 03:00 ET (not yet run at this ~11:16 PM ET pulse).",
+  "source": "Mongo repository + authenticated ESPN Live Check 2026-09-29 08:23 ET (cookie-seeded API). FAAB $82; record 2-1-0; Week 3 FINAL WIN JDD 116.42 vs T.N.T 112.46. Achane ESPN injuryStatus INJURY_RESERVE. Sampson still fantasy IR slot. Scoring period 4; Week 4 vs You're a JaGoff. No new ESPN roster/FAAB/txn/IR_MOVE snapshot since 08:23 ET check.",
   "faab_remaining": 82,
   "starters_week_3_hold": [
    "Jalen Hurts",
@@ -101,7 +101,7 @@
    "team": "MIA",
    "signal_type": "injury_ir",
    "status": "CONFIRMED_FACT",
-   "summary": "Torn ACL, out remainder of 2026; Dolphins IR formal Mon 9/28 (team site roster move); ESPN fantasy injuryStatus INJURY_RESERVE (Live Check 08:23 ET). Unchanged this hour. Still in JDD RB starter slot; Sampson holds only fantasy IR. No Wednesday practice report applies (season IR).",
+   "summary": "Torn ACL, out remainder of 2026; Dolphins IR formal Mon 9/28; ESPN fantasy injuryStatus INJURY_RESERVE (Live Check 08:23 ET). Unchanged this hour. Still in JDD RB starter slot; Sampson holds only fantasy IR.",
    "mongo_impact": "OWNED; season over. Free Sampson IR slot before any ESPN IR move for Achane. Intelligence only; no mutation from Pulse.",
    "recommendation": "Hold owned until James approves IR/stash plan. Week 4+ RB replacement needs explicit approval.",
    "urgency": "HIGH",
@@ -113,7 +113,7 @@
    "team": "MIA",
    "signal_type": "usage",
    "status": "CONFIRMED_FACT",
-   "summary": "W3: 17-41-1 + 3-14. ESPN WAIVERS_CONFIRMED (08:23 ET); process Wed 2026-09-30 03:00 ET, still future at this pulse. No new usage/roster fact this hour. Committee expected with Wright when healthy. Not FREE_AGENT_CONFIRMED.",
+   "summary": "W3: 17-41-1 + 3-14. ESPN WAIVERS_CONFIRMED (08:23 ET); process Wed 2026-09-30 03:00 ET. No new usage/roster fact this hour. Committee expected with Wright when healthy.",
    "mongo_impact": "Discovery/waiver watch only.",
    "recommendation": "WATCH. No FAAB without James approval. Re-verify before any bid.",
    "urgency": "HIGH",
@@ -125,7 +125,7 @@
    "team": "MIA",
    "signal_type": "inactive",
    "status": "CONFIRMED_FACT",
-   "summary": "ESPN WAIVERS_CONFIRMED OUT (08:23 ET). Hafley Mon: day-to-day (stinger/foot); Wednesday practice is the next indicator — not filed yet. DK Week 4 injury compilation last updated Tue 2026-09-29 7:15 PM ET still lists Day-to-Day; no newer official designation this scan.",
+   "summary": "ESPN WAIVERS_CONFIRMED OUT (08:23 ET). Hafley Mon: day-to-day (stinger/foot); could practice Wed — attributed. No Wed practice report filed as of 11:16 PM ET Tue scan.",
    "mongo_impact": "Limits Gordon monopoly narrative.",
    "recommendation": "No Mongo action.",
    "urgency": "LOW",
@@ -149,7 +149,7 @@
    "team": "BAL",
    "signal_type": "production_injury",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "W3 hand injury returned after HT; FINAL 3-24. No official Week 4 designation in this scan. Tue 7:15 PM ET compiled injury report lists Flowers (hamstring) and Stanley (toe) for BAL, not a new Andrews designation.",
+   "summary": "W3 hand injury returned after HT; FINAL 3-24. No official Week 4 Wed designation in this scan.",
    "mongo_impact": "OWNED starter. Watch-only.",
    "recommendation": "HOLD. Monitor official IR.",
    "urgency": "MEDIUM",
@@ -173,7 +173,7 @@
    "team": "CHI",
    "signal_type": "injury_severity_timeline",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Grade 2 hamstring; 3-4 weeks attributed (Schefter/Rapoport). Officially OUT Week 3; compiled Tue report still lists Out for Week 4. No new Wednesday practice designation this hour.",
+   "summary": "Grade 2 hamstring; 3-4 weeks attributed. Officially OUT Week 3. No new official Week 4 practice designation this hour. Sideline video chatter is SPECULATION only.",
    "mongo_impact": "Backup-QB environment for owned Burden.",
    "recommendation": "HOLD Burden.",
    "urgency": "MEDIUM",
@@ -185,7 +185,7 @@
    "team": "CLE",
    "signal_type": "injury",
    "status": "CONFIRMED_FACT",
-   "summary": "On IR (knee). Compiled Tue report still lists Week 5 eligible. No new updates this hour. Occupies the only fantasy IR slot.",
+   "summary": "On IR (knee). No new updates.",
    "mongo_impact": "OWNED IR. Occupies only IR slot vs Achane need.",
    "recommendation": "HOLD",
    "urgency": "HIGH",
@@ -210,7 +210,7 @@
    "player": "Ollie Gordon II",
    "availability": "WAIVERS_CONFIRMED",
    "status": "CONFIRMED_FACT",
-   "summary": "Authenticated ESPN Live Check 2026-09-29 08:23 ET: WAIVERS_CONFIRMED. Processes Wed 2026-09-30 03:00 ET; that window has not opened yet. No FREE_AGENT_CONFIRMED.",
+   "summary": "Authenticated ESPN Live Check 2026-09-29 08:23 ET: WAIVERS_CONFIRMED. Processes Wed 2026-09-30 03:00 ET. No FREE_AGENT_CONFIRMED.",
    "mongo_impact": "Watch only. FAAB $82.",
    "recommendation": "No FAAB without James approval. FAAB $82.",
    "urgency": "HIGH",
@@ -236,7 +236,7 @@
    "player": "Jalen Hurts / Eagles D/ST",
    "slot": "QB / DST",
    "status": "CONFIRMED_FACT",
-   "summary": "MNF complete. No new injury designation this hour.",
+   "summary": "MNF complete. No new injury designation this afternoon.",
    "urgency": "LOW"
   }
  ],
@@ -244,14 +244,14 @@
   {
    "topic": "Burden Week 4 vs Jets",
    "status": "EXPERT_OPINION",
-   "summary": "NBC Rotoworld (Mark Garcia) post-MNF recap unchanged: treat Burden as upside WR2 vs Jets while Keenum starts; improve further when Williams returns. No new expert note this hour.",
+   "summary": "NBC Rotoworld (Mark Garcia) post-MNF recap: treat Burden as upside WR2 vs Jets while Keenum starts; improve further when Williams returns.",
    "urgency": "LOW",
    "confidence": "MEDIUM"
   },
   {
    "topic": "Miami RB committee after Achane IR",
    "status": "EXPERT_OPINION",
-   "summary": "Unchanged committee framing: Gordon volume last week; Wright day-to-day reclaim risk still the Monday Hafley/Schad report. Not ownership. No new expert fact after 00:15Z.",
+   "summary": "Unchanged committee framing: Gordon volume last week; Athletic/FantasyLife still warn Wright reclaim risk; SI skeptical of Gordon Week 4 vs MIN. Not ownership.",
    "urgency": "HIGH",
    "confidence": "MEDIUM"
   }
@@ -269,5 +269,5 @@
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false
  },
- "notes": "Hourly ~11:16 PM ET Tue 2026-09-29 (early Wed UTC). Scan after 001533Z: no new official Wednesday Week 4 practice/injury designations (DK compilation last updated Tue 7:15 PM ET, before prior pulse). Achane ACL+team IR / ESPN IR badge unchanged; Gordon/Wright still WAIVERS_CONFIRMED with process Wed 2026-09-30 03:00 ET not yet run; Week 3 FINAL JDD 116.42-112.46 unchanged. No direct X scan this hour; x_direct LIMITED. Analytics not re-run; analytics LIMITED. Intelligence only; no roster/FAAB/lineup/IR mutation."
+ "notes": "Hourly ~11:16 PM ET Tue. Scan after 001533Z: still no official Wednesday Week 4 practice designations for Mongo-owned names. TNF Tue reports (PIT/CLE) show Rico Dowdle DNP toe — not Mongo-owned. Achane ACL+team IR / ESPN IR badge unchanged; Gordon/Wright WAIVERS_CONFIRMED process Wed 2026-09-30 03:00 ET unchanged; Week 3 FINAL JDD 116.42-112.46 unchanged. X scan: RotoBaller staff WW list still centers Gordon/Wright (EXPERT_OPINION); Kendre Miller chatter is moot because Miller is already OWNED on JDD bench. No FREE_AGENT_CONFIRMED. Intelligence only; no roster/FAAB/lineup/IR mutation."
 }
