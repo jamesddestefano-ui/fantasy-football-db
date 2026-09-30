@@ -1,1 +1,366 @@
-PLACEHOLDER
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-09-30T211609Z",
+  "generated_at": "2026-09-30T21:16:09Z",
+  "completed_at": "2026-09-30T21:16:09Z",
+  "week": 4,
+  "season": 2026,
+  "run_type": "hourly",
+  "source_status": {
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
+    "x_direct": "LIMITED",
+    "experts": "OK",
+    "analytics": "LIMITED"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Authenticated ESPN Live Check 2026-09-30 08:11 ET (cookie-seeded API; mutation_performed=false) + Mongo repo. FAAB $82; record 2-1-0; Week 3 FINAL WIN JDD 116.42 vs T.N.T 112.46. Week 4 vs You're a JaGoff UNDECIDED. Achane ESPN injuryStatus INJURY_RESERVE on BENCH; Kendre Miller now RB starter (James lineup 2026-09-29 19:20 ET). Sampson still sole fantasy IR. GitHub tip ALREADY_RECORDED at 33a6241 (no ownership ingest). Hourly ~5:14 PM ET (~21:16 UTC Wed).",
+    "faab_remaining": 82,
+    "record": "2-1-0",
+    "starters_week_4": [
+      "Jalen Hurts",
+      "Bijan Robinson",
+      "Kendre Miller",
+      "Luther Burden III",
+      "Tetairoa McMillan",
+      "Mark Andrews",
+      "Josh Downs",
+      "CeeDee Lamb",
+      "Eagles D/ST"
+    ],
+    "bench": [
+      "De'Von Achane",
+      "Ray Davis",
+      "Kaelon Black",
+      "Chris Bell",
+      "Rashod Bateman",
+      "George Holani",
+      "Oronde Gadsden"
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ],
+    "dropped_not_fa_confirmed": [
+      "Raheim Sanders"
+    ],
+    "live_check_ref": "espn_live_20260930_0811 / live-check-2026-09-30-0811-github.json status=ALREADY_RECORDED tip=33a6241"
+  },
+  "watchlist_status": {
+    "repository_waiver_watch_rows": 0,
+    "note": "Gordon/Wright watches CLOSED after Wed 03:20 ET waiver process (CLAIMED_ELSEWHERE). ffdb waiver-watch has no seeded Mongo entries. Pulse treats other unowned names as discovery only with availability UNKNOWN unless authenticated ESPN classifies them."
+  },
+  "player_signals": [
+    {
+      "player": "De'Von Achane",
+      "team": "MIA",
+      "signal_type": "injury_ir",
+      "status": "CONFIRMED_FACT",
+      "summary": "Torn ACL, out remainder of 2026; Dolphins IR formal Mon 9/28; ESPN fantasy injuryStatus INJURY_RESERVE. Live Check 08:11 ET: still OWNED on BENCH (James moved Miller into RB starter 2026-09-29 19:20 ET). Sampson holds only fantasy IR. Hafley Wed 9/30: Achane attitude good; no new medical detail. Unchanged severity.",
+      "mongo_impact": "OWNED; season over. Intelligence only — no IR_MOVE without James approval.",
+      "recommendation": "Hold owned until James approves IR/stash plan.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Kendre Miller",
+      "team": "NO",
+      "signal_type": "lineup",
+      "status": "CONFIRMED_FACT",
+      "summary": "ESPN Live Check 2026-09-30 08:11 ET: Miller BENCH→RB starter; Achane RB→BENCH (James ROSTER_LINEUP EXECUTED 2026-09-29 19:20 ET). Etienne hamstring miss-time context (NBC W4 IR) frames Saints committee with Kamara; Miller proj_w4 ~9.05. Not a new ownership event.",
+      "mongo_impact": "OWNED now in RB starter slot over Achane.",
+      "recommendation": "HOLD start pending James lineup review; intelligence only.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Ollie Gordon II",
+      "team": "MIA",
+      "signal_type": "waiver_closed",
+      "status": "CONFIRMED_FACT",
+      "summary": "Watch CLOSED. ESPN Live Check 08:11 ET: OWNED by T.N.T (FFT) after $21 FAAB at Wed 03:20 ET process. Availability CLAIMED_ELSEWHERE (not FREE_AGENT). JDD claim ADD Gordon DROP Achane FAILED_INVALIDPLAYERSOURCE (processed bid $15; FAAB unchanged $82; Achane still OWNED). Hafley Wed: Ollie mentioned in OL/TD context; Wright limited practice.",
+      "mongo_impact": "Watch closed. No FAAB path.",
+      "recommendation": "CLOSE watch. No Mongo action.",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "CLAIMED_ELSEWHERE"
+    },
+    {
+      "player": "Jaylen Wright",
+      "team": "MIA",
+      "signal_type": "waiver_closed",
+      "status": "CONFIRMED_FACT",
+      "summary": "Watch CLOSED. ESPN Live Check 08:11 ET: OWNED by You're a JaGoff (PbP) after $23 FAAB at Wed 03:20 ET. Availability CLAIMED_ELSEWHERE (not FREE_AGENT). Hafley official Wed: Wright will practice limited as worked back; day-to-day. Aggregators Questionable. Not a JDD claim target.",
+      "mongo_impact": "Watch closed. Committee risk stays on other rosters.",
+      "recommendation": "CLOSE watch. No Mongo action.",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "CLAIMED_ELSEWHERE"
+    },
+    {
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "signal_type": "production_injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "W3 hand, returned; FINAL 3-24. Ravens.com Wed practice notes (Mink ~2:12 PM ET): Andrews not among absentees (Jackson rest-day optics; Flowers present; Stanley returns). No official Wed IR sheet designation for Andrews in sources checked this hour.",
+      "mongo_impact": "OWNED starter.",
+      "recommendation": "HOLD.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "FINAL MNF CHI 27 PHI 7: 7/11, 61 yds, 1 TD + 1-7 rush. Week 4 vs Jets. Caleb Williams Grade 2 hamstring multi-week still frames backup-QB environment.",
+      "mongo_impact": "OWNED.",
+      "recommendation": "HOLD.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "FINAL MNF 16/25 153 1 INT + rush TD. Week 4 vs LAR. No new injury.",
+      "mongo_impact": "OWNED QB.",
+      "recommendation": "HOLD.",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Eagles D/ST",
+      "team": "PHI",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "FINAL MNF allowed 27. Week 4 vs LAR.",
+      "mongo_impact": "OWNED D/ST.",
+      "recommendation": "HOLD.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "BAL 34 DAL 31 FINAL. Lamb 7-112 plus 2PC. No new injury.",
+      "mongo_impact": "OWNED.",
+      "recommendation": "HOLD",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "production",
+      "status": "CONFIRMED_FACT",
+      "summary": "IND 19-17 FINAL vs HOU. Downs 5-77, 11 targets. No new Colts designation this hour.",
+      "mongo_impact": "OWNED FLEX.",
+      "recommendation": "HOLD",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "signal_type": "injury_opportunity_timeline",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Grade 2 hamstring; 3-4 weeks attributed. Backup-QB environment for owned Burden unchanged this hour.",
+      "mongo_impact": "Backup-QB environment for owned Burden.",
+      "recommendation": "HOLD Burden.",
+      "urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN"
+    },
+    {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "On IR (knee). TNF CLE@PIT; DFF/context lists OUT. NFL Pulse: Rico Dowdle PIT OUT toe TNF (unowned) — no Mongo ownership implication; Sampson IR slot unchanged vs Achane need.",
+      "mongo_impact": "OWNED IR; only IR slot vs Achane need.",
+      "recommendation": "HOLD",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Rashod Bateman",
+      "team": "BAL",
+      "signal_type": "usage",
+      "status": "CONFIRMED_FACT",
+      "summary": "Owned bench. FINAL 2-37. Ravens Wed practice: Flowers present per team site; Bateman not flagged absent in open practice notes.",
+      "mongo_impact": "Bench.",
+      "recommendation": "HOLD bench.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Jalen McMillan",
+      "team": "TB",
+      "signal_type": "name_disambiguation",
+      "status": "CONFIRMED_FACT",
+      "summary": "NFL Pulse Bot: TB WR Jalen McMillan formal IR (knee/PCL). NOT the Mongo-owned Tetairoa McMillan (CAR). Unowned; no waiver FREE_AGENT_CONFIRMED inference.",
+      "mongo_impact": "NONE actionable — name collision only.",
+      "recommendation": "IGNORE for Mongo txn.",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN"
+    },
+    {
+      "player": "Chris Bell",
+      "team": "MIA",
+      "signal_type": "usage",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Owned bench. Hafley Wed highlighted Bell 44-yard catch-and-run effort clip; no new injury designation this hour.",
+      "mongo_impact": "OWNED bench.",
+      "recommendation": "HOLD.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED"
+    }
+  ],
+  "waiver_signals": [
+    {
+      "player": "Ollie Gordon II",
+      "availability": "CLAIMED_ELSEWHERE",
+      "status": "CONFIRMED_FACT",
+      "summary": "ESPN Live Check 2026-09-30 08:11 ET: OWNED by T.N.T (FFT) $21 FAAB after Wed 03:20 ET process. Watch CLOSED. JDD claim FAILED. Not FREE_AGENT.",
+      "mongo_impact": "Watch closed. FAAB $82 unchanged.",
+      "recommendation": "CLOSE watch. No FAAB.",
+      "urgency": "NONE",
+      "confidence": "HIGH"
+    },
+    {
+      "player": "Jaylen Wright",
+      "availability": "CLAIMED_ELSEWHERE",
+      "status": "CONFIRMED_FACT",
+      "summary": "ESPN Live Check 08:11 ET: OWNED by You're a JaGoff (PbP) $23 FAAB. Watch CLOSED. Not FREE_AGENT.",
+      "mongo_impact": "Watch closed.",
+      "recommendation": "CLOSE watch. No FAAB.",
+      "urgency": "NONE",
+      "confidence": "HIGH"
+    },
+    {
+      "player": "Austin Ekeler",
+      "availability": "FREE_AGENT_CONFIRMED",
+      "status": "CONFIRMED_FACT",
+      "summary": "ESPN Live Check 08:11 ET: FREEAGENT onTeamId=0 percentOwned~1.32 after Pulse formal WAS re-sign. Low-priority deep stash only; no txn without James approval.",
+      "mongo_impact": "Discovery only; not a Gordon/Wright replacement priority.",
+      "recommendation": "NO ADD without James approval.",
+      "urgency": "LOW",
+      "confidence": "HIGH"
+    }
+  ],
+  "lineup_signals": [
+    {
+      "player": "Kendre Miller",
+      "slot": "RB",
+      "status": "CONFIRMED_FACT",
+      "summary": "Live Check 08:11 ET CONFIRMED: Miller started over Achane (James lineup 2026-09-29 19:20 ET). Achane BN + IR badge; Sampson still fantasy IR.",
+      "urgency": "HIGH"
+    },
+    {
+      "player": "De'Von Achane",
+      "slot": "BENCH",
+      "status": "CONFIRMED_FACT",
+      "summary": "Season-ending ACL + team IR; now BENCH not starter slot. Sampson still occupies fantasy IR.",
+      "urgency": "CRITICAL"
+    },
+    {
+      "player": "Luther Burden III",
+      "slot": "WR/FLEX",
+      "status": "CONFIRMED_FACT",
+      "summary": "MNF final banked. No new status hourly.",
+      "urgency": "LOW"
+    },
+    {
+      "player": "Mark Andrews",
+      "slot": "TE",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Hand watch cooling; not listed among Wed practice absentees on Ravens.com notes. Official sheet still pending full stamp.",
+      "urgency": "LOW"
+    }
+  ],
+  "expert_signals": [
+    {
+      "topic": "Miami RB committee after Achane IR — watches closed",
+      "status": "EXPERT_OPINION",
+      "summary": "Experts still discuss Gordon/Wright committee (Fowler/NBC: Wright limited Wed, expected back; share load). Mongo league: both CLAIMED_ELSEWHERE — expert WW no longer actionable for JDD.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM"
+    },
+    {
+      "topic": "Saints RB with Etienne missing time",
+      "status": "EXPERT_OPINION",
+      "summary": "NBC W4 IR: Etienne miss some time; Kamara/Miller split framing. Relevant to owned Miller starter slot — committee risk, not ownership.",
+      "urgency": "MEDIUM",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "material_changes": [
+    {
+      "type": "waiver_watch_closed",
+      "players": [
+        "Ollie Gordon II",
+        "Jaylen Wright"
+      ],
+      "status": "CONFIRMED_FACT",
+      "availability": "CLAIMED_ELSEWHERE",
+      "summary": "ESPN Live Check 2026-09-30 08:11 ET (post Wed 03:20 ET waiver process): Gordon OWNED by T.N.T (FFT) $21; Wright OWNED by You're a JaGoff (PbP) $23. Prior pulse listed availability UNKNOWN. Watches CLOSED as CLAIMED_ELSEWHERE (not FREE_AGENT). JDD Gordon claim FAILED_INVALIDPLAYERSOURCE; FAAB still $82; Achane still OWNED."
+    },
+    {
+      "type": "lineup_confirmed",
+      "players": [
+        "Kendre Miller",
+        "De'Von Achane"
+      ],
+      "status": "CONFIRMED_FACT",
+      "summary": "ESPN Live Check 08:11 ET CONFIRMED_FACT: James lineup 2026-09-29 19:20 ET moved Miller BENCH→RB starter and Achane RB→BENCH (IR badge). Prior pulse roster_context still listed Achane under starters_week_3_hold and Miller on bench."
+    },
+    {
+      "type": "injury_continuity",
+      "players": [
+        "De'Von Achane"
+      ],
+      "status": "CONFIRMED_FACT",
+      "summary": "Achane still IR/ACL season-ending; ESPN INJURY_RESERVE unchanged. Sampson remains sole fantasy IR slot."
+    }
+  ],
+  "no_material_change": false,
+  "prior_pulse": {
+    "pulse_id": "mongo-grok-pulse-2026-09-30T141800Z",
+    "completed_at": "2026-09-30T14:18:00Z",
+    "commit": "bdaa9a206c506c86bc6f6e590cf7e00eeeb5fd22"
+  },
+  "prime_watch_handoff": {
+    "canonical_feed": "intelligence/grok_pulse_latest.json",
+    "history": "intelligence/grok_pulse_history.jsonl",
+    "consumer": "Prime Mongo Fantasy Watch",
+    "duplicate_pulse_path": false
+  },
+  "notes": "Hourly ~5:14 PM ET (2026-09-30T21:16:09Z Wed 2026-09-30). run_type=hourly. MATERIAL vs 14:18Z: ESPN Live Check 08:11 ET not yet reflected in prior latest — close Gordon/Wright watches CLAIMED_ELSEWHERE; Miller RB start over Achane CONFIRMED_FACT; Achane still IR/ACL on BENCH; FAAB $82; JDD Gordon claim FAILED; GitHub ALREADY_RECORDED tip 33a6241. History damaged on origin (FILE:// placeholder at bdaa9a2) — restored 96 lines from a8743f0 + backfilled missing 14:18Z line, then appended this hourly. NFL Pulse Bot: Jalen McMillan TB IR = name disambiguation only (owned Tetairoa McMillan CAR); Jayden Reed GB season-ending neck unowned; Rico Dowdle PIT OUT TNF unowned (Sampson IR context only). x_direct LIMITED (no X scan). Hafley Wed: Wright limited practice. Intelligence only; no ownership/FAAB mutation."
+}
