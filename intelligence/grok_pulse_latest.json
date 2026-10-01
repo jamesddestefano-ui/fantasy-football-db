@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-01T211800Z",
-  "generated_at": "2026-10-01T21:18:00Z",
-  "completed_at": "2026-10-01T21:18:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-01T221600Z",
+  "generated_at": "2026-10-01T22:16:00Z",
+  "completed_at": "2026-10-01T22:16:00Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
@@ -26,7 +26,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-01 ~08:10 ET (cookie-seeded API; mutation_performed=false) + ingest tip 989df45 Packers D/ST + Keaton Mitchell ADD_DROPs. FAAB $82; record 2-1-0; Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST D/ST starter; Keaton Mitchell BN QUESTIONABLE (ankle Wed LIMITED). Achane WAIVERS_CONFIRMED ACL IR — do NOT reclaim; never FREE_AGENT_CONFIRMED without ESPN proof. Eagles D/ST WAIVERS_CONFIRMED. Sampson sole fantasy IR. Hourly ~5:18 PM ET Thu Oct 1 / 21:18 UTC.",
+    "source": "Authenticated ESPN Live Check 2026-10-01 ~08:10 ET (cookie-seeded API; mutation_performed=false) + ingest tip 989df45 Packers D/ST + Keaton Mitchell ADD_DROPs. FAAB $82; record 2-1-0; Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN QUESTIONABLE (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim; never FREE_AGENT_CONFIRMED without ESPN proof. Eagles D/ST WAIVERS_CONFIRMED. Sampson sole fantasy IR. Hourly ~6:16 PM ET Thu Oct 1 / 22:16 UTC.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -65,26 +65,74 @@
   },
   "player_signals": [
     {
-      "player": "Zach Charbonnet",
-      "team": "SEA",
-      "signal_type": "injury_pup_return_window",
+      "player": "Keaton Mitchell",
+      "team": "LAC",
+      "signal_type": "injury_practice",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "NEW vs 211800Z: RotoWire NFL (@RotoWireNFL, 21:56 UTC / ~5:56 PM ET) citing @chargers \u2014 Keaton Mitchell (ankle) remained a limited participant on Thursday's practice report. Parlae Fantasy Desk (21:59 UTC) independently relayed the same via Underdog NFL. Prior hourly had no confirmed Thu designation as of 21:18Z. Still BN QUESTIONABLE from Live Check; walking-boot context from Wed unchanged. Not a game-status downgrade yet.",
+      "mongo_impact": "OWNED bench Q \u2014 Thursday still LIMITED; hold, watch Friday designation.",
+      "recommendation": "HOLD bench; do not drop. Intelligence only.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Chris Bell",
+      "team": "MIA",
+      "signal_type": "injury_practice",
       "status": "CONFIRMED_FACT",
-      "summary": "NEW vs 172100Z: Seahawks.com John Boyle Oct 1 09:29 AM PT (~12:29 PM ET) — RB Zach Charbonnet designated to return to practice from reserve/PUP, opening 21-day window. Must miss W4 vs LAC (PUP min games); earliest eligible W5 vs SF Oct 11 (or later within window vs DEN/KC). Unowned — availability UNKNOWN for Mongo txn; no FREE_AGENT_CONFIRMED. Material for owned bench Holani role watch (committee compression when activated).",
-      "mongo_impact": "UNOWned discovery with owned Holani bench role watch — W5+ SEA RB committee risk rises when Charbonnet activates.",
-      "recommendation": "HOLD Holani bench; monitor activation timeline. No Mongo ADD of Charbonnet without ESPN ownership proof + James approval.",
+      "summary": "NEW vs 211800Z: NFL.com Thursday Oct 1 roundup \u2014 WR Chris Bell (knee) limited in Thursday practice (Jaylen Wright upgraded limited\u2192full same sheet; Wright is CLAIMED_ELSEWHERE, not a JDD target). Prior hourly had no confirmed Thu MIA sheet. ESPN BN QUESTIONABLE continuity. ACL rehab management.",
+      "mongo_impact": "OWNED bench Q \u2014 still limited Thursday; not a drop.",
+      "recommendation": "HOLD bench; watch Friday designation.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
-      "availability": "UNKNOWN"
+      "availability": "OWNED"
+    },
+    {
+      "player": "Kendre Miller",
+      "team": "NO",
+      "signal_type": "lineup",
+      "status": "CONFIRMED_FACT",
+      "summary": "UPDATE vs 211800Z: NFL.com Thursday roundup \u2014 Saints placed RB Travis Etienne on injured reserve (hamstring, Week 3 vs LV). Minimum four games. Prior pulse only had OUT/miss-time framing. Miller remains ESPN RB starter in Kamara + Donaldson committee vs ATL MNF; Etienne absence now extends through at least Week 7. No new Miller designation found.",
+      "mongo_impact": "OWNED RB starter; committee risk remains, but Etienne volume is off the table for at least four games.",
+      "recommendation": "HOLD start pending James lineup review; intelligence only.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED"
     },
     {
       "player": "George Holani",
       "team": "SEA",
       "signal_type": "injury_practice_role_watch",
       "status": "CONFIRMED_FACT",
-      "summary": "MATERIAL UPDATE vs 172100Z via Charbonnet PUP designate-to-return (Boyle Seahawks.com ~12:29 PM ET): Holani still Wed ribs LIMITED / ESPN BN Q; Thursday 10/01 SEA IR column not yet confirming upgrade/downgrade in sources checked ~5:18 PM ET. Short-term W4 vs LAC Holani role intact (Charbonnet ineligible W4); medium-term W5+ committee risk rises when Charbonnet ramps.",
-      "mongo_impact": "OWNED bench Q — HOLD; role watch elevated by Charbonnet window.",
-      "recommendation": "HOLD bench; watch Thu/Fri Holani participation + Charbonnet practice ramp.",
+      "summary": "Continuity vs 211800Z: Charbonnet PUP designate-to-return window already logged (Seahawks.com / NFL.com). NFL.com Thursday SEA column lists Charbonnet PUP return only \u2014 no new Holani Thu participation upgrade/downgrade in sources checked ~6:16 PM ET. W4 vs LAC role intact (Charbonnet ineligible W4); W5+ committee risk when activated.",
+      "mongo_impact": "OWNED bench Q \u2014 HOLD; role watch elevated by Charbonnet window.",
+      "recommendation": "HOLD bench; watch Friday Holani participation + Charbonnet ramp.",
       "urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Zach Charbonnet",
+      "team": "SEA",
+      "signal_type": "injury_pup_return_window",
+      "status": "CONFIRMED_FACT",
+      "summary": "Continuity vs 211800Z: NFL.com Thursday roundup restates designation to return from PUP (knee/ACL); must sit one more game; 21-day window to activate or stay PUP. Unowned \u2014 availability UNKNOWN. Not FREE_AGENT_CONFIRMED. X posts after 21:18Z (DraftUncut) are EXPERT_OPINION/SPECULATION on adding him; ignore for Mongo txn.",
+      "mongo_impact": "UNOWNED discovery; owned Holani bench role watch only.",
+      "recommendation": "No Mongo ADD without ESPN ownership proof + James approval.",
+      "urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN"
+    },
+    {
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "signal_type": "injury_practice",
+      "status": "CONFIRMED_FACT",
+      "summary": "Continuity vs 211800Z: hand remained FULL Thursday (already logged NBC/PFT). NFL.com Thursday Ravens note is Lamar Jackson back upgraded to full (Wed limited). No new Andrews downgrade. Still TE start vs TEN.",
+      "mongo_impact": "OWNED starter \u2014 hand watch cooling.",
+      "recommendation": "HOLD start.",
+      "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED"
     },
@@ -93,8 +141,8 @@
       "team": "GB",
       "signal_type": "roster_transaction",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 172100Z: Live Check 08:10 ET + ESPN activity Tue Sep 30 ADD Packers D/ST / DROP Eagles D/ST $0 (ingest 989df45). Packers D/ST remains D/ST starter. No new Packers injury IR material for DST slot hourly ~5:18 PM ET.",
-      "mongo_impact": "OWNED starter D/ST after free-agent ADD_DROP.",
+      "summary": "Continuity vs 211800Z: Live Check 08:10 ET + ESPN activity Tue Sep 30 ADD Packers D/ST / DROP Eagles D/ST $0 (ingest 989df45). Remains D/ST starter. No new Packers injury IR material for DST slot hourly ~6:16 PM ET.",
+      "mongo_impact": "OWNED starter D/ST.",
       "recommendation": "HOLD start Packers D/ST.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -105,7 +153,7 @@
       "team": "PHI",
       "signal_type": "roster_transaction",
       "status": "CONFIRMED_FACT",
-      "summary": "Dropped Tue Sep 30 11:58 ET for Packers D/ST $0. ESPN status WAIVERS_CONFIRMED per Live Check. Drop does not prove FREE_AGENT_CONFIRMED.",
+      "summary": "Dropped Tue Sep 30 11:58 ET for Packers D/ST $0. ESPN status WAIVERS_CONFIRMED per Live Check. Drop does not prove FREE_AGENT_CONFIRMED. Eagles Thursday sheet (NFL.com / Berman): Smith/Goedert/Brown DNP \u2014 not a DST status change.",
       "mongo_impact": "No longer owned. Do not treat as FA without ESPN proof.",
       "recommendation": "IGNORE reclaim; WAIVERS_CONFIRMED only.",
       "urgency": "LOW",
@@ -113,23 +161,11 @@
       "availability": "WAIVERS_CONFIRMED"
     },
     {
-      "player": "Keaton Mitchell",
-      "team": "LAC",
-      "signal_type": "roster_transaction_injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 172100Z: Live Check 08:10 ET ADD Keaton Mitchell LAC RB / DROP Achane $0 (ingest 989df45). BN QUESTIONABLE. Chargers Wed Week 4 IR: Mitchell (ankle) LIMITED — late add; walking boot left foot but said ok (Chargers.com / Chargers Wire / FantasyPros). Thursday 10/01 Chargers IR column still blank / no new Thu designation found in sources checked ~5:18 PM ET. Change-of-pace behind Hampton; Vidal RB2 if Mitchell sits vs SEA.",
-      "mongo_impact": "OWNED bench Q — ankle watch Thu/Fri; not a drop yet.",
-      "recommendation": "HOLD bench; watch later Thu/Fri participation and designation.",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
       "player": "De'Von Achane",
       "team": "MIA",
       "signal_type": "roster_transaction_injury_ir",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 172100Z: Dropped Tue Sep 30 11:59 ET for Keaton Mitchell $0. ESPN Live Check: WAIVERS + INJURY_RESERVE; torn ACL remainder of 2026. WAIVERS_CONFIRMED — do NOT reclaim. Never mark FREE_AGENT_CONFIRMED without ESPN FA proof.",
+      "summary": "Continuity vs 211800Z: Dropped Tue Sep 30 11:59 ET for Keaton Mitchell $0. ESPN Live Check: WAIVERS + INJURY_RESERVE; torn ACL remainder of 2026. WAIVERS_CONFIRMED \u2014 do NOT reclaim.",
       "mongo_impact": "No longer owned. Season over ACL; do not reclaim.",
       "recommendation": "DO NOT RECLAIM. Intelligence only.",
       "urgency": "HIGH",
@@ -137,86 +173,26 @@
       "availability": "WAIVERS_CONFIRMED"
     },
     {
-      "player": "Chris Bell",
-      "team": "MIA",
-      "signal_type": "injury_practice",
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 172100Z: WR Chris Bell (knee) LIMITED Wednesday first Week 4 MIA IR (NFL.com / CBS / Dolphins Wire). ESPN BN QUESTIONABLE. No confirmed Thu MIA sheet upgrade/downgrade in sources checked ~5:18 PM ET. ACL rehab management.",
-      "mongo_impact": "OWNED bench Q — monitor Thu/Fri sheets; not a drop.",
-      "recommendation": "HOLD bench; watch designation progression.",
-      "urgency": "MEDIUM",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Mark Andrews",
-      "team": "BAL",
-      "signal_type": "injury_practice",
-      "status": "CONFIRMED_FACT",
-      "summary": "UPDATE vs 172100Z: NBC Sports / PFT — Andrews (hand) remained FULL Thursday Week 4 practice (Wed was already FULL). Flowers upgraded LIMITED→FULL Thu. Hand should not sideline; still TE start vs TEN.",
-      "mongo_impact": "OWNED starter — hand watch cooling; Thu FULL confirmed.",
-      "recommendation": "HOLD start.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Kendre Miller",
-      "team": "NO",
-      "signal_type": "lineup",
-      "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 172100Z: ESPN Live Check 08:10 ET Miller remains RB starter. Etienne hamstring miss-time / OUT framing for W4 vs ATL keeps Saints committee with Kamara + Donaldson — Miller share not monopoly. No new Miller Week 4 designation in sources checked hourly ~5:18 PM ET.",
-      "mongo_impact": "OWNED RB starter; committee risk.",
-      "recommendation": "HOLD start pending James lineup review; intelligence only.",
-      "urgency": "HIGH",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Ollie Gordon II",
-      "team": "MIA",
-      "signal_type": "waiver_closed",
-      "status": "CONFIRMED_FACT",
-      "summary": "Watch CLOSED. ESPN Live Check: OWNED by T.N.T (FFT) after $21 FAAB at Wed 03:20 ET. CLAIMED_ELSEWHERE. JDD claim FAILED_INVALIDPLAYERSOURCE (bid $15; FAAB $82). Continuity hourly.",
-      "mongo_impact": "Watch closed. No FAAB path.",
-      "recommendation": "CLOSE watch. No Mongo action.",
+      "summary": "Continuity. FINAL MNF 16/25 153 1 INT + rush TD. Week 4 vs LAR. Not listed on Thursday Eagles injury report (Smith/Goedert/Brown DNP). No new Hurts injury.",
+      "mongo_impact": "OWNED QB.",
+      "recommendation": "HOLD.",
       "urgency": "NONE",
       "confidence": "HIGH",
-      "availability": "CLAIMED_ELSEWHERE"
-    },
-    {
-      "player": "Jaylen Wright",
-      "team": "MIA",
-      "signal_type": "waiver_closed",
-      "status": "CONFIRMED_FACT",
-      "summary": "Watch CLOSED. OWNED by You're a JaGoff (PbP) $23 FAAB. Wed IR: Wright (foot/stinger) LIMITED — continuity. Not a JDD claim target. Hourly.",
-      "mongo_impact": "Watch closed.",
-      "recommendation": "CLOSE watch. No Mongo action.",
-      "urgency": "NONE",
-      "confidence": "HIGH",
-      "availability": "CLAIMED_ELSEWHERE"
+      "availability": "OWNED"
     },
     {
       "player": "Luther Burden III",
       "team": "CHI",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "FINAL MNF CHI 27 PHI 7: 7/11, 61 yds, 1 TD + 1-7 rush. Week 4 vs Jets. Caleb Williams still not practicing (estimated Wed report restated). No new Burden designation hourly ~5:18 PM ET.",
+      "summary": "Continuity. FINAL MNF CHI 27 PHI 7: 7/11, 61 yds, 1 TD. Week 4 vs Jets. Caleb Williams still attributed DNP/grade-2 hamstring; Breece Hall DNP Thursday (unowned). No new Burden designation hourly.",
       "mongo_impact": "OWNED.",
       "recommendation": "HOLD.",
       "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED"
-    },
-    {
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "signal_type": "production",
-      "status": "CONFIRMED_FACT",
-      "summary": "FINAL MNF 16/25 153 1 INT + rush TD. Week 4 vs LAR. NFL.com Eagles: no injuries reported. No new Hurts injury hourly.",
-      "mongo_impact": "OWNED QB.",
-      "recommendation": "HOLD.",
-      "urgency": "NONE",
       "confidence": "HIGH",
       "availability": "OWNED"
     },
@@ -225,7 +201,7 @@
       "team": "DAL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "BAL 34 DAL 31 FINAL. Lamb 7-112 plus 2PC. No new injury hourly.",
+      "summary": "Continuity. BAL 34 DAL 31 FINAL. Lamb 7-112 plus 2PC. Joey Porter Jr. trade to Dallas (NFL.com) is not a Lamb status change. No new injury hourly.",
       "mongo_impact": "OWNED.",
       "recommendation": "HOLD",
       "urgency": "NONE",
@@ -237,7 +213,7 @@
       "team": "IND",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "IND 19-17 FINAL vs HOU. Downs 5-77, 11 targets. Continuity hourly. London vs WAS Sun 9:30 AM ET — no new Downs designation in sources checked.",
+      "summary": "Continuity. IND 19-17 FINAL vs HOU. Downs 5-77, 11 targets. London vs WAS Sun 9:30 AM ET. Daniels limited Thursday (elbow) is opponent QB news, not a Downs designation. No new Downs injury found.",
       "mongo_impact": "OWNED FLEX.",
       "recommendation": "HOLD",
       "urgency": "NONE",
@@ -249,7 +225,7 @@
       "team": "CAR",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Owned starter. Quiet W3; Panthers discussing better positioning. Not on Wed injury report in sources checked. Do NOT confuse with unowned TB WR Jalen McMillan (IR).",
+      "summary": "Owned starter. No new Week 4 designation in sources checked ~6:16 PM ET. Do NOT confuse with unowned TB WR Jalen McMillan, whom NFL.com Thursday roundup says was placed on IR (knee) \u2014 name collision only.",
       "mongo_impact": "OWNED starter.",
       "recommendation": "HOLD.",
       "urgency": "LOW",
@@ -257,24 +233,12 @@
       "availability": "OWNED"
     },
     {
-      "player": "Caleb Williams",
-      "team": "CHI",
-      "signal_type": "injury_opportunity_timeline",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Grade 2 hamstring; 3-4 weeks attributed. Estimated Wednesday report — Williams DNP (no actual Wednesday practice). Backup-QB environment for owned Burden unchanged hourly.",
-      "mongo_impact": "Backup-QB environment for owned Burden.",
-      "recommendation": "HOLD Burden.",
-      "urgency": "MEDIUM",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN"
-    },
-    {
       "player": "Dylan Sampson",
       "team": "CLE",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "On IR (knee). TNF CLE@PIT 8:15 PM ET official game statuses posted (NFL.com): Browns OUT Wallace (knee), Teven Jenkins (back), Elgton Jenkins (concussion). Sampson not a TNF active; fantasy IR slot unchanged — Achane no longer competing for IR slot after drop.",
-      "mongo_impact": "OWNED IR; sole fantasy IR slot free of Achane conflict.",
+      "summary": "On IR (knee). TNF CLE@PIT 8:15 PM ET statuses continuity (Dowdle OUT toe; Jenkins/Wallace OUT). Sampson not a TNF active; fantasy IR slot unchanged.",
+      "mongo_impact": "OWNED IR; sole fantasy IR slot.",
       "recommendation": "HOLD",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -285,7 +249,7 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Owned bench. FINAL 2-37. Flowers (hamstring) upgraded LIMITED→FULL Thu (NBC/PFT) — may trim Bateman short-term target bump. Continuity hourly otherwise.",
+      "summary": "Owned bench. Flowers already FULL Thursday (prior pulse). No new Bateman designation hourly.",
       "mongo_impact": "Bench.",
       "recommendation": "HOLD bench.",
       "urgency": "LOW",
@@ -297,7 +261,7 @@
       "team": "ATL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Owned RB1. No injury designation in Week 4 sources checked hourly. Saints host ATL MNF — run-D context for opposing Miller/Kamara only.",
+      "summary": "Owned RB1. No injury designation in Week 4 sources checked hourly. Saints host ATL MNF.",
       "mongo_impact": "OWNED starter.",
       "recommendation": "HOLD.",
       "urgency": "NONE",
@@ -305,24 +269,48 @@
       "availability": "OWNED"
     },
     {
-      "player": "Jalen McMillan",
-      "team": "TB",
-      "signal_type": "name_disambiguation",
+      "player": "Ollie Gordon II",
+      "team": "MIA",
+      "signal_type": "waiver_closed",
       "status": "CONFIRMED_FACT",
-      "summary": "NFL Pulse / Live Check YES_HIGH: TB WR Jalen McMillan formal IR (knee/PCL). NOT Mongo-owned Tetairoa McMillan (CAR). Unowned; no FREE_AGENT_CONFIRMED inference; no fake Mongo ownership.",
-      "mongo_impact": "NONE actionable — name collision only.",
-      "recommendation": "IGNORE for Mongo txn.",
+      "summary": "Watch CLOSED. ESPN Live Check: OWNED by T.N.T (FFT) after $21 FAAB. CLAIMED_ELSEWHERE. Continuity hourly.",
+      "mongo_impact": "Watch closed. No FAAB path.",
+      "recommendation": "CLOSE watch. No Mongo action.",
       "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "CLAIMED_ELSEWHERE"
+    },
+    {
+      "player": "Jaylen Wright",
+      "team": "MIA",
+      "signal_type": "waiver_closed",
+      "status": "CONFIRMED_FACT",
+      "summary": "Watch CLOSED. OWNED by You're a JaGoff $23 FAAB. NFL.com Thursday: Wright (foot) upgraded to full after Wednesday limited. Not a JDD claim target.",
+      "mongo_impact": "Watch closed.",
+      "recommendation": "CLOSE watch. No Mongo action.",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "availability": "CLAIMED_ELSEWHERE"
+    },
+    {
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "signal_type": "injury_opportunity_timeline",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Grade 2 hamstring; 3-4 weeks attributed. Estimated Wednesday DNP restated in Thursday coverage. Backup-QB environment for owned Burden unchanged hourly.",
+      "mongo_impact": "Backup-QB environment for owned Burden.",
+      "recommendation": "HOLD Burden.",
+      "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "UNKNOWN"
     },
     {
-      "player": "Jayden Reed",
-      "team": "GB",
-      "signal_type": "injury_ir_unowned",
+      "player": "Jalen McMillan",
+      "team": "TB",
+      "signal_type": "name_disambiguation",
       "status": "CONFIRMED_FACT",
-      "summary": "Unowned NFL Pulse / Live Check YES_HIGH: Packers WR Jayden Reed season-ending neck; formal IR on Packers.com. No Mongo ownership invent; not FREE_AGENT_CONFIRMED for txn.",
-      "mongo_impact": "NONE — unowned discovery only.",
+      "summary": "NFL.com Thursday roundup: TB WR Jalen McMillan (knee) placed on injured reserve. NOT Mongo-owned Tetairoa McMillan (CAR). Unowned; no FREE_AGENT_CONFIRMED inference.",
+      "mongo_impact": "NONE actionable \u2014 name collision only.",
       "recommendation": "IGNORE for Mongo txn.",
       "urgency": "NONE",
       "confidence": "HIGH",
@@ -333,7 +321,7 @@
       "team": "PIT",
       "signal_type": "injury_out_unowned",
       "status": "CONFIRMED_FACT",
-      "summary": "Unowned Pulse / Live Check: Steelers RB Rico Dowdle (toe) OUT TNF Week 4 vs CLE. ESPN Live Check: OWNED by Justmyluck3 — not JDD. No fake Mongo ownership; FA opportunists UNKNOWN without ESPN FA proof.",
+      "summary": "Continuity: Steelers RB Rico Dowdle (toe) OUT TNF Week 4 vs CLE. ESPN Live Check: OWNED by Justmyluck3 \u2014 not JDD. FA opportunists UNKNOWN without ESPN FA proof.",
       "mongo_impact": "NONE actionable on JDD roster.",
       "recommendation": "IGNORE for Mongo txn.",
       "urgency": "NONE",
@@ -346,7 +334,7 @@
       "player": "Ollie Gordon II",
       "availability": "CLAIMED_ELSEWHERE",
       "status": "CONFIRMED_FACT",
-      "summary": "ESPN Live Check: OWNED by T.N.T (FFT) $21 FAAB. Watch CLOSED. JDD claim FAILED. Not FREE_AGENT.",
+      "summary": "ESPN Live Check: OWNED by T.N.T (FFT) $21 FAAB. Watch CLOSED. Not FREE_AGENT.",
       "mongo_impact": "Watch closed. FAAB $82 unchanged.",
       "recommendation": "CLOSE watch. No FAAB.",
       "urgency": "NONE",
@@ -356,7 +344,7 @@
       "player": "Jaylen Wright",
       "availability": "CLAIMED_ELSEWHERE",
       "status": "CONFIRMED_FACT",
-      "summary": "ESPN Live Check: OWNED by You're a JaGoff (PbP) $23 FAAB. Watch CLOSED. Wed limited (foot) continuity. Not FREE_AGENT.",
+      "summary": "ESPN Live Check: OWNED by You're a JaGoff $23 FAAB. Watch CLOSED. Thursday full (foot) is not a JDD path.",
       "mongo_impact": "Watch closed.",
       "recommendation": "CLOSE watch. No FAAB.",
       "urgency": "NONE",
@@ -367,7 +355,7 @@
       "availability": "WAIVERS_CONFIRMED",
       "status": "CONFIRMED_FACT",
       "summary": "Dropped by JDD Tue 11:59 ET; ESPN WAIVERS + ACL IR. Do NOT reclaim. Never FREE_AGENT_CONFIRMED without ESPN FA proof.",
-      "mongo_impact": "No reclaim path; FAAB $82 preserved for real targets.",
+      "mongo_impact": "No reclaim path; FAAB $82 preserved.",
       "recommendation": "DO NOT RECLAIM.",
       "urgency": "HIGH",
       "confidence": "HIGH"
@@ -376,7 +364,7 @@
       "player": "Austin Ekeler",
       "availability": "FREE_AGENT_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "ESPN Live Check 08:10 ET: FREEAGENT onTeamId=0 percentOwned~1.32 after Pulse formal WAS re-sign. Low-priority deep stash only; no txn without James approval. Continuity hourly.",
+      "summary": "ESPN Live Check 08:10 ET: FREEAGENT onTeamId=0 percentOwned~1.32. Low-priority deep stash only; no txn without James approval. Continuity hourly.",
       "mongo_impact": "Discovery only; not a priority with Mitchell already added.",
       "recommendation": "NO ADD without James approval.",
       "urgency": "LOW",
@@ -386,146 +374,129 @@
       "player": "Zach Charbonnet",
       "availability": "UNKNOWN",
       "status": "CONFIRMED_FACT",
-      "summary": "PUP designate-to-return window opened (Seahawks.com Boyle ~12:29 PM ET). Unowned discovery only — never FREE_AGENT_CONFIRMED without ESPN FA proof. Not a same-day FAAB target while still on PUP / ineligible W4.",
-      "mongo_impact": "No FAAB action this pulse; Holani role watch only.",
-      "recommendation": "NO ADD without ESPN ownership proof + James approval.",
-      "urgency": "LOW",
+      "summary": "PUP return window open. Not FREE_AGENT_CONFIRMED. X add-hype is not ESPN ownership.",
+      "mongo_impact": "Discovery only.",
+      "recommendation": "NO ADD without ESPN proof + James approval.",
+      "urgency": "MEDIUM",
       "confidence": "HIGH"
     }
   ],
   "lineup_signals": [
     {
-      "player": "Zach Charbonnet",
-      "slot": "UNOWNED_ROLE_WATCH",
-      "status": "CONFIRMED_FACT",
-      "summary": "NEW: SEA designated Charbonnet return from PUP — 21-day window; miss W4 vs LAC; eligible W5+. Compresses owned Holani medium-term role.",
-      "urgency": "MEDIUM"
-    },
-    {
-      "player": "George Holani",
-      "slot": "BENCH",
-      "status": "CONFIRMED_FACT",
-      "summary": "Ribs LIMITED Wed SEA IR; BN Q; Charbonnet PUP window now OPEN — W4 role intact, W5+ committee risk up.",
-      "urgency": "MEDIUM"
-    },
-    {
-      "player": "Packers D/ST",
-      "slot": "D/ST",
-      "status": "CONFIRMED_FACT",
-      "summary": "Live Check 08:10 ET: Packers D/ST in D/ST starter slot after Tue ADD; Eagles dropped.",
-      "urgency": "HIGH"
-    },
-    {
       "player": "Keaton Mitchell",
       "slot": "BENCH",
-      "status": "CONFIRMED_FACT",
-      "summary": "BN QUESTIONABLE (ankle Wed LIMITED + boot). No new Thu designation found ~5:18 PM ET — watch later Thu/Fri.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Thursday practice remained LIMITED (ankle) per RotoWire citing Chargers after 21:18Z. Still Q. Not a start over Miller/Bijan.",
       "urgency": "HIGH"
     },
     {
       "player": "Kendre Miller",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Remains RB starter. Etienne OUT/miss-time frames Kamara/Miller/Donaldson committee vs ATL MNF.",
+      "summary": "Etienne now IR (min 4 games, NFL.com). Miller remains RB starter in Kamara/Donaldson committee vs ATL MNF.",
+      "urgency": "HIGH"
+    },
+    {
+      "player": "Chris Bell",
+      "slot": "BENCH",
+      "status": "CONFIRMED_FACT",
+      "summary": "Knee still limited Thursday (NFL.com). BN Q. Not a start.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "George Holani",
+      "slot": "BENCH",
+      "status": "CONFIRMED_FACT",
+      "summary": "Charbonnet PUP window open; W4 Holani role intact; no new Thu Holani sheet found ~6:16 PM ET.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Packers D/ST",
+      "slot": "D/ST",
+      "status": "CONFIRMED_FACT",
+      "summary": "Starter slot after Tue ADD. No new DST injury material.",
       "urgency": "HIGH"
     },
     {
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Hand: FULL Wed + remained FULL Thu (NBC/PFT) — start holds.",
-      "urgency": "LOW"
-    },
-    {
-      "player": "Chris Bell",
-      "slot": "BENCH",
-      "status": "CONFIRMED_FACT",
-      "summary": "Knee LIMITED Wed first Week 4 MIA IR; BN Q; no confirmed Thu upgrade/downgrade ~5:18 PM ET.",
-      "urgency": "MEDIUM"
-    },
-    {
-      "player": "Luther Burden III",
-      "slot": "WR/FLEX",
-      "status": "CONFIRMED_FACT",
-      "summary": "MNF final banked. Williams estimated DNP restated; no new Burden status.",
+      "summary": "Hand FULL Thu already logged. Start holds.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [
     {
-      "topic": "Charbonnet PUP return window — Holani role watch",
-      "status": "EXPERT_OPINION",
-      "summary": "CBS/NBC/Seattle Times: Charbonnet designated return opens 21-day window; miss W4; could return W5 vs SF. NBC: once back, at least takes Holani/Wilson roles. Owned Holani deep-bench stash risk rises medium-term; W4 still intact.",
-      "urgency": "MEDIUM",
-      "confidence": "HIGH"
-    },
-    {
-      "topic": "Keaton Mitchell ankle — newly owned watch",
-      "status": "EXPERT_OPINION",
-      "summary": "Chargers Wire/FantasyPros/DraftSharks: Mitchell ankle limited Wed; boot but said ok; still projected change-of-pace behind Hampton if active vs SEA. Vidal path if sits. Owned bench Q — no new Thu sheet found ~5:18 PM ET; priority later Thu/Fri sheet watch.",
+      "topic": "Keaton Mitchell Thursday limited \u2014 owned bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "RotoWire citing Chargers and Parlae citing Underdog: ankle remained limited Thursday. Not yet a game-status ruling. HOLD bench.",
       "urgency": "HIGH",
       "confidence": "HIGH"
     },
     {
-      "topic": "Miami RB committee after Achane IR — watches closed; Achane dropped",
+      "topic": "Etienne IR \u2014 Miller committee floor",
       "status": "EXPERT_OPINION",
-      "summary": "Experts/X still discuss Gordon/Wright split. Mongo: both CLAIMED_ELSEWHERE; Achane WAIVERS_CONFIRMED dropped — expert WW not actionable for JDD reclaim.",
-      "urgency": "LOW",
-      "confidence": "MEDIUM"
-    },
-    {
-      "topic": "Saints RB with Etienne missing time",
-      "status": "EXPERT_OPINION",
-      "summary": "SI/NBC: Etienne OUT/miss-time hamstring W4 vs ATL; Kamara favored share; Miller/Donaldson in mix. Relevant to owned Miller starter — committee risk, not ownership.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM"
-    },
-    {
-      "topic": "Bell knee limited — ACL rehab management",
-      "status": "EXPERT_OPINION",
-      "summary": "CBS/RotoWire: Bell knee limited precautionary post-ACL. Owned bench watch only. No confirmed Thu sheet upgrade ~5:18 PM ET.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM"
-    },
-    {
-      "topic": "Andrews hand FULL Thu confirmed",
-      "status": "EXPERT_OPINION",
-      "summary": "NBC/PFT: Andrews remained FULL Thursday; Flowers FULL upgrade. TE start holds vs TEN.",
-      "urgency": "LOW",
+      "summary": "NFL.com IR placement (min 4) removes Etienne from the Saints backfield through at least Week 7. Miller still shares with Kamara and Donaldson; not a monopoly.",
+      "urgency": "HIGH",
       "confidence": "HIGH"
     },
     {
-      "topic": "TNF CLE@PIT official statuses — no Mongo starters",
+      "topic": "Charbonnet add-hype on X",
+      "status": "SPECULATION",
+      "summary": "DraftUncut X posts after 21:18Z urge adding Charbonnet before activation. Not ESPN Mongo ownership. Availability UNKNOWN. Do not treat as FREE_AGENT_CONFIRMED.",
+      "urgency": "LOW",
+      "confidence": "LOW"
+    },
+    {
+      "topic": "TNF CLE@PIT \u2014 no Mongo starters",
       "status": "EXPERT_OPINION",
-      "summary": "NFL.com game statuses: PIT Dowdle OUT (toe); CLE Wallace OUT (knee). Sampson already IR. No JDD lineup decision tonight.",
+      "summary": "Dowdle OUT; Sampson already IR. No JDD lineup decision tonight.",
       "urgency": "NONE",
       "confidence": "HIGH"
     }
   ],
   "material_changes": [
     {
-      "player": "Zach Charbonnet",
-      "change_type": "pup_designate_to_return",
+      "player": "Keaton Mitchell",
+      "change_type": "thursday_practice_still_limited",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "NEW vs 211800Z (prior: no confirmed Thu designation ~5:18 PM ET): RotoWire 21:56 UTC citing @chargers \u2014 ankle remained limited Thursday. Owned bench Q. Not a designation to OUT.",
+      "mongo_impact": "lineup_signal / bench hold only; no ownership mutation.",
+      "urgency": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "player": "Chris Bell",
+      "change_type": "thursday_practice_still_limited",
       "status": "CONFIRMED_FACT",
-      "summary": "NEW vs 172100Z (prior only attributed chance / not confirmed opened): Seahawks.com John Boyle Oct 1 ~12:29 PM ET designated Charbonnet return from PUP — 21-day practice window; miss W4 vs LAC; eligible W5+. Affects owned bench Holani medium-term role watch. Unowned; availability UNKNOWN.",
-      "mongo_impact": "lineup_signal / Holani role watch only; no ownership mutation.",
+      "summary": "NEW vs 211800Z: NFL.com Thursday roundup lists WR Chris Bell (knee) limited. Owned bench Q.",
+      "mongo_impact": "bench hold only; no ownership mutation.",
       "urgency": "MEDIUM",
+      "confidence": "HIGH"
+    },
+    {
+      "player": "Travis Etienne",
+      "change_type": "placed_on_ir",
+      "status": "CONFIRMED_FACT",
+      "summary": "NEW vs 211800Z (prior OUT/miss-time framing only): NFL.com Thursday \u2014 Saints placed Etienne on IR (hamstring), minimum four games. Affects owned starter Kendre Miller committee through at least Week 7. Etienne not Mongo-owned.",
+      "mongo_impact": "lineup_signal for Miller; no ownership mutation.",
+      "urgency": "HIGH",
       "confidence": "HIGH"
     }
   ],
   "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-01T172100Z",
-    "completed_at": "2026-10-01T17:21:00Z",
-    "commit": "c5fa2b1471492b36861747698b7d29422d091545"
+    "pulse_id": "mongo-grok-pulse-2026-10-01T211800Z",
+    "completed_at": "2026-10-01T21:18:00Z",
+    "commit": "b23c7833b8db724f9278f693a89431258f56c869"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
     "history": "intelligence/grok_pulse_history.jsonl",
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false,
-    "as_of": "2026-10-01T21:18:00Z",
-    "pulse_id": "mongo-grok-pulse-2026-10-01T211800Z"
+    "as_of": "2026-10-01T22:16:00Z",
+    "pulse_id": "mongo-grok-pulse-2026-10-01T221600Z"
   },
-  "notes": "Hourly ~5:18 PM ET Thu Oct 1 / 2026-10-01T21:18:00Z. run_type=hourly. MATERIAL vs 172100Z: Zach Charbonnet (SEA) designated return from PUP — Seahawks.com John Boyle Oct 1 09:29 AM PT (~12:29 PM ET); 21-day window; miss W4 vs LAC; eligible W5. Logged CONFIRMED_FACT + lineup_signal (Holani role watch). Prior pulse only had attributed chance / not confirmed opened. Secondary: Andrews hand remained FULL Thu (NBC/PFT). Mitchell/Holani/Bell still Wed LIMITED with no confirmed Thu sheet upgrades found ~5:18 PM ET. Roster continuity: Packers D/ST starter; Achane/Eagles WAIVERS_CONFIRMED (do NOT reclaim Achane); FAAB $82; W4 vs You're a JaGoff undecided; Live Check 08:10 ET tip 989df45. TNF CLE@PIT statuses continuity — no JDD starters. Unowned Pulse continuity (Jalen McMillan IR, Reed IR) — no fake Mongo ownership. x_direct LIMITED. History 105→106 append-only. Restore N (latest was not PLACEHOLDER). Intelligence only; no roster/FAAB/lineup mutation this pulse."
+  "notes": "Hourly ~6:16 PM ET Thu Oct 1 / 2026-10-01T22:16:00Z. run_type=hourly. MATERIAL vs 211800Z: (1) Keaton Mitchell ankle remained LIMITED Thursday \u2014 RotoWire citing Chargers 21:56 UTC; (2) Chris Bell knee limited Thursday \u2014 NFL.com; (3) Travis Etienne placed on IR min 4 games \u2014 NFL.com, Miller committee through at least W7. Charbonnet PUP window continuity. Wright upgraded to full but CLAIMED_ELSEWHERE. Roster continuity: Packers D/ST starter; Achane/Eagles WAIVERS_CONFIRMED (do NOT reclaim Achane); FAAB $82; W4 vs You're a JaGoff undecided; Live Check 08:10 ET tip 989df45. TNF no JDD starters. x_direct LIMITED. analytics LIMITED. History 106\u2192107 append-only. Intelligence only; no roster/FAAB/lineup mutation this pulse."
 }
