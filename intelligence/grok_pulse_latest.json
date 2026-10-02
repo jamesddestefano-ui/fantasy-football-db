@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-02T221830Z",
- "generated_at": "2026-10-02T22:18:30Z",
- "completed_at": "2026-10-02T22:18:30Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-02T231855Z",
+ "generated_at": "2026-10-02T23:18:55Z",
+ "completed_at": "2026-10-02T23:18:55Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "No new authenticated ESPN ownership this hour. Roster context carried from Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly ~6:18 PM ET Fri Oct 2 / 22:18 UTC.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly ~7:18 PM ET Fri Oct 2 / 23:18 UTC. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -494,17 +494,12 @@
    "confidence": "MEDIUM"
   }
  ],
- "material_changes": [
-  "Caleb Williams officially Out for Week 4 (ChicagoBears.com Larry Mayer 3:13 PM ET; Jets.com Friday report DNP/DNP/DNP Out). New to Pulse vs 211645Z. Owned Luther Burden III start holds; starter is unnamed Bagent or Keenum.",
-  "DeVonta Smith (hamstring) and Dallas Goedert (knee) Out vs LAR per Rams.com Friday table and NBC Sports. New to Pulse. Owned Hurts start holds.",
-  "Keenan Allen questionable (Friday DNP, groin) per Colts.com via NBC/USA Today. Downs start holds; possible target boost only.",
-  "George Holani Friday LP with no game designation in secondary Friday reports (prior pulse lacked Friday designation). Still bench; Price Out and Charbonnet ineligible already logged."
- ],
- "no_material_change": false,
+ "material_changes": [],
+ "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T211645Z",
-  "completed_at": "2026-10-02T21:16:45Z",
-  "commit": "5dc3a230f612c82de4e14c136f8c543496e0880a",
+  "pulse_id": "mongo-grok-pulse-2026-10-02T221830Z",
+  "completed_at": "2026-10-02T22:18:30Z",
+  "commit": "8d73b0418afffcadeb9989b641f922427f436418",
   "no_material_change": false
  },
  "prime_watch_handoff": {
@@ -516,10 +511,9 @@
   "pulse_id": "mongo-grok-pulse-2026-10-02T221830Z"
  },
  "notes": [
-  "Hourly 6 PM ET Fri Oct 2 (2026-10-02T22:18:30Z). Intelligence only. No ownership, FAAB, lineup, or transaction mutation.",
-  "Mongo only. Sparta, DFS, and prop repos not touched.",
-  "FREE_AGENT_CONFIRMED used only for Austin Ekeler from prior authenticated ESPN Live Check. Wilson/Charbonnet/Price availability UNKNOWN.",
-  "Lineup unchanged: Burden start holds despite Williams Out; Hurts start holds despite Smith/Goedert Out; Miller RB start holds; Packers D/ST start holds; Mitchell, Bell, Holani, Davis remain bench.",
-  "Williams Out was official before the 21:16Z pulse but was not in that record; this run logs it as new Pulse intelligence."
+  "Hourly 7 PM ET Fri Oct 2 (2026-10-02T23:18:55Z). Delta vs tip 8d73b04 / 22:18:30Z.",
+  "No new Mongo-owned CONFIRMED_FACT. Prior already logged Williams Out (Burden start holds), Smith/Goedert Out (Hurts holds), Keenan Allen Q (Downs holds), Holani Friday LP no designation, Mitchell Friday Full off report, Ray Davis Q, Mayfield Out.",
+  "Unowned later items (PHI Brown, LAR Ferguson IR) not material. Achane reclaim forbidden. Gordon/Wright CLOSED.",
+  "x_direct LIMITED. Intelligence only \u2014 no roster/FAAB/lineup mutations."
  ]
 }
