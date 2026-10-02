@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-02T081600Z",
- "generated_at": "2026-10-02T08:16:00Z",
- "completed_at": "2026-10-02T08:16:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-02T100000Z",
+ "generated_at": "2026-10-02T10:00:00Z",
+ "completed_at": "2026-10-02T10:00:00Z",
  "week": 4,
  "season": 2026,
  "run_type": "overnight",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-01 ~08:10 ET (cookie-seeded API; mutation_performed=false) + ingest tip 989df45 Packers D/ST + Keaton Mitchell ADD_DROPs. FAAB $82; record 2-1-0; Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN QUESTIONABLE (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim; never FREE_AGENT_CONFIRMED without ESPN proof. Eagles D/ST WAIVERS_CONFIRMED. Sampson sole fantasy IR. Overnight 4:00 AM ET Fri Oct 2 / 08:16 UTC. No new ESPN ownership proof this run.",
+  "source": "Authenticated ESPN Live Check 2026-10-01 ~08:10 ET (cookie-seeded API; mutation_performed=false) + ingest tip 989df45 Packers D/ST + Keaton Mitchell ADD_DROPs. FAAB $82; record 2-1-0; Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN QUESTIONABLE (ankle). Achane WAIVERS_CONFIRMED ACL IR — do NOT reclaim; never FREE_AGENT_CONFIRMED without ESPN proof. Eagles D/ST WAIVERS_CONFIRMED. Sampson sole fantasy IR. Overnight 6:00 AM ET Fri Oct 2 / 10:00 UTC. No new ESPN ownership proof this run.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -69,7 +69,7 @@
    "team": "LAC",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 060940Z: Chargers.com Week 4 table still Keaton Mitchell (ankle) Limited Wed + Limited Thu; Friday and game status blank as of ~4:16 AM ET. NFL.com injuries page still lists limited participation, no Friday designation. RotoWire restates Thursday LP (expected return window Sunday if Friday does not regress) \u2014 opinion, not a new fact. Owned bench Q. Not OUT.",
+   "summary": "Continuity vs 081600Z: Chargers.com Week 4 table still Keaton Mitchell (ankle) Limited Wed + Limited Thu; Friday and game status blank as of ~6:00 AM ET. RotoWire still lists Thu Practice Limited and an estimated return of 10/4/2026 — opinion, not a Friday designation. Owned bench Q. Not OUT.",
    "mongo_impact": "bench hold; no ownership mutation.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -80,7 +80,7 @@
    "team": "MIA",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 060940Z: Dolphins Wire / Sun Sentinel Thursday report still Chris Bell (knee) limited; USA TODAY player-update restates Thursday LP (published ~7:29 PM ET Oct 1). No Friday sheet overnight. Owned bench Q. Not a start.",
+   "summary": "Continuity vs 081600Z: Dolphins Wire Thursday report still Chris Bell (knee) limited; no Friday sheet posted by ~6:00 AM ET. Owned bench Q. Not a start.",
    "mongo_impact": "bench hold; no ownership mutation.",
    "urgency": "MEDIUM",
    "confidence": "HIGH",
@@ -113,7 +113,7 @@
    "team": "SEA",
    "signal_type": "injury_pup_return_window",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 060940Z: Seahawks.com and Chargers.com still Thursday Limited (knee) after PUP window open; Friday blank. Ineligible Week 4; earliest Week 5 vs SF. X/RotoBaller overnight posts restate Thursday LP. Not FREE_AGENT_CONFIRMED. Unowned discovery; Holani role watch only.",
+   "summary": "Continuity vs 081600Z: Chargers.com Seahawks table still Thursday Limited (knee) after PUP window open; Friday blank. Ineligible Week 4; earliest Week 5 vs SF. USA TODAY / Seattle Times items restate Thursday LP, not a new Friday fact. Not FREE_AGENT_CONFIRMED. Unowned discovery; Holani role watch only.",
    "mongo_impact": "discovery only; Holani watch. No new delta vs tip.",
    "recommendation": "No Mongo ADD without ESPN ownership proof + James approval.",
    "urgency": "MEDIUM",
@@ -125,7 +125,7 @@
    "team": "SEA",
    "signal_type": "injury_practice_role_watch",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 060940Z: Chargers.com Seahawks table Holani (rib) Limited Wed + Limited Thu; Friday blank. Price (chest) DNP Thursday still unowned context. Charbonnet ineligible W4. Owned bench Q \u2014 not a start over Miller/Bijan.",
+   "summary": "Continuity vs 081600Z: Chargers.com Seahawks table Holani (rib) Limited Wed + Limited Thu; Friday blank ~6:00 AM ET. Price (chest) DNP Thursday still unowned context. Charbonnet ineligible W4. Owned bench Q — not a start over Miller/Bijan.",
    "mongo_impact": "bench hold / role watch.",
    "recommendation": "HOLD bench; watch Friday participation + Charbonnet ramp.",
    "urgency": "MEDIUM",
@@ -137,7 +137,7 @@
    "team": "BAL",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 060940Z: NFL.com still Mark Andrews full participation; Friday and game status blank ~4:16 AM ET. Start holds.",
+   "summary": "Continuity vs 081600Z: no Friday designation posted ~6:00 AM ET. Prior full participation still the last logged official practice status. Start holds.",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -148,7 +148,7 @@
    "team": "GB",
    "signal_type": "roster_transaction",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 060940Z: Live Check 08:10 ET + ESPN Tue ADD Packers D/ST. Starter slot. Buccaneers.com Thursday: Mayfield (thumb) DNP again; Banks/Monk/Campbell still DNP, Brooks LP, Van Ness/Cooper limited. No Friday sheet. Opponent QB absence is context, not a drop signal.",
+   "summary": "Continuity vs 081600Z: Live Check 08:10 ET + ESPN Tue ADD Packers D/ST. Starter slot. Packers.com Oct 1 report still Friday blank: Mayfield (thumb) DNP Wed+Thu; Banks/Monk/Campbell DNP Thursday. No Friday sheet by ~6:00 AM ET. Opponent QB absence is context, not a drop signal.",
    "mongo_impact": "start holds.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -376,7 +376,7 @@
    "player": "Keaton Mitchell",
    "slot": "BENCH",
    "status": "CONFIRMED_FACT",
-   "summary": "Thu LIMITED (ankle) already logged; Chargers.com Friday still blank ~4:16 AM ET. Still Q. Not a start over Miller/Bijan. Watch Friday.",
+   "summary": "Thu LIMITED (ankle) already logged; Chargers.com Friday still blank ~6:00 AM ET. Still Q. Not a start over Miller/Bijan. Watch Friday.",
    "urgency": "HIGH"
   },
   {
@@ -390,62 +390,62 @@
    "player": "Chris Bell",
    "slot": "BENCH",
    "status": "CONFIRMED_FACT",
-   "summary": "Knee still limited on Thursday Dolphins report; no Friday designation. BN Q. Not a start.",
+   "summary": "Knee still limited on Thursday Dolphins report; no Friday designation by ~6:00 AM ET. BN Q. Not a start.",
    "urgency": "MEDIUM"
   },
   {
    "player": "George Holani",
    "slot": "BENCH",
    "status": "CONFIRMED_FACT",
-   "summary": "Ribs LP Thu official Chargers.com Seahawks table continuity; Charbonnet Thu LP already in tip; W4 Holani not a start; W5+ watch.",
+   "summary": "Ribs LP Thu official Chargers.com Seahawks table continuity; Friday blank. Charbonnet Thu LP already in tip; W4 Holani not a start; W5+ watch.",
    "urgency": "MEDIUM"
   },
   {
    "player": "Packers D/ST",
    "slot": "D/ST",
    "status": "CONFIRMED_FACT",
-   "summary": "Starter slot after Tue ADD. Thursday Packers DL depth and Bucs Mayfield DNP already logged; start holds vs TB. No Friday sheet.",
+   "summary": "Starter slot after Tue ADD. Thursday Packers DL depth and Bucs Mayfield DNP already logged; start holds vs TB. No Friday sheet by ~6:00 AM ET.",
    "urgency": "HIGH"
   },
   {
    "player": "Mark Andrews",
    "slot": "TE",
    "status": "CONFIRMED_FACT",
-   "summary": "Full participation already logged. Start holds. No Friday designation yet.",
+   "summary": "Full participation already logged. Start holds. No Friday designation yet (~6:00 AM ET).",
    "urgency": "LOW"
   }
  ],
  "expert_signals": [
   {
-   "topic": "Charbonnet Thu LP restated overnight \u2014 already in tip",
+   "topic": "Friday practice sheets still blank — no new designation",
    "status": "CONFIRMED_FACT",
-   "summary": "Seahawks.com Thursday report and Chargers.com table still Charbonnet Limited, Friday blank. RotoBaller/PFT/X posts after 06:09Z restate the same Thursday fact. No Friday participation. Unowned; owned Holani role watch only.",
-   "urgency": "MEDIUM",
+   "summary": "Chargers.com Week 4 table and Packers.com Oct 1 report still have Friday and game-status columns blank as of the 6:00 AM ET scan. No new official Friday participation for Mitchell, Holani, Charbonnet, Andrews, or Mayfield.",
+   "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
    "topic": "Mitchell/Bell Thursday limited continuity",
    "status": "CONFIRMED_FACT",
-   "summary": "Both Thu LIMITED already logged. Chargers.com Friday column blank; Dolphins Wire/USA TODAY restate Bell Thursday limited. No Friday designations yet.",
+   "summary": "Both Thu LIMITED already logged. RotoWire restates Mitchell Thursday limited with an estimated Sunday return — EXPERT_OPINION attached to a confirmed Thursday fact, not a Friday upgrade. Dolphins Wire Thursday Bell limited unchanged.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
-   "topic": "Etienne IR \u2014 Miller committee",
+   "topic": "Etienne IR — Miller committee",
    "status": "CONFIRMED_FACT",
    "summary": "Already logged since 221600Z. No NEW Mongo-material. Miller still shares with Kamara/Donaldson.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
-   "topic": "Charbonnet add-hype and viral practice clip on X",
+   "topic": "Charbonnet add-hype restated",
    "status": "SPECULATION",
-   "summary": "NBC fantasy blurb still says add Charbonnet after Thursday LP. X overnight posts restate practice return. Not ESPN Mongo ownership. Availability UNKNOWN. Do not treat as FREE_AGENT_CONFIRMED.",
+   "summary": "USA TODAY/AOL and prior expert blurbs still describe Thursday limited practice as a return step. Not ESPN Mongo ownership. Availability UNKNOWN. Do not treat as FREE_AGENT_CONFIRMED. Ineligible Week 4.",
    "urgency": "LOW",
    "confidence": "LOW"
   },
   {
-   "topic": "TNF CLE 27 PIT 24 FINAL \u2014 no Mongo starters",
+   "topic": "TNF CLE 27 PIT 24 FINAL — no Mongo starters",
    "status": "CONFIRMED_FACT",
    "summary": "Already logged. Browns 27, Steelers 24. Sampson already IR. No JDD lineup decision from the result.",
    "urgency": "NONE",
@@ -455,9 +455,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T060940Z",
-  "completed_at": "2026-10-02T06:09:40Z",
-  "commit": "7bda4e2f5ee0e1295ba1b84230c71bd2c29be991",
+  "pulse_id": "mongo-grok-pulse-2026-10-02T081600Z",
+  "completed_at": "2026-10-02T08:16:00Z",
+  "commit": "0a1d471fa9ea6ea183552016db1602ae714e4fdf",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -465,13 +465,13 @@
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-02T08:16:00Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-02T081600Z"
+  "as_of": "2026-10-02T10:00:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-02T100000Z"
  },
  "notes": [
-  "Overnight 4:00 AM ET Fri Oct 2 (2026-10-02T08:16:00Z). Delta scan vs 7bda4e2f / 06:09:40Z.",
-  "No Friday practice designations posted yet (Chargers.com Friday column blank; NFL.com still Thursday participation; Dolphins/Bucs Thursday reports unchanged).",
-  "Owned watches carry; Gordon/Wright CLOSED; Achane reclaim forbidden. Overnight X/expert items restate Thursday Charbonnet/Bell/Mitchell facts. No Mongo-material CONFIRMED_FACT delta.",
-  "x_direct LIMITED (keyword scan only). analytics LIMITED. Intelligence only \u2014 no roster/FAAB/lineup mutations."
+  "Overnight 6:00 AM ET Fri Oct 2 (2026-10-02T10:00:00Z). Delta scan vs 0a1d471 / 08:16:00Z.",
+  "No Friday practice designations posted yet (Chargers.com Friday column blank; Packers.com Oct 1 Friday column blank; Dolphins Wire Thursday Bell report unchanged).",
+  "Owned watches carry; Gordon/Wright CLOSED; Achane reclaim forbidden. Overnight expert items restate Thursday Charbonnet/Bell/Mitchell facts. No Mongo-material CONFIRMED_FACT delta.",
+  "x_direct LIMITED (no relevant player posts after 08:16Z). analytics LIMITED. Intelligence only — no roster/FAAB/lineup mutations."
  ]
 }
