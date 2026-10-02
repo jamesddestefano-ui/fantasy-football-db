@@ -3,16 +3,16 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-02T191540Z",
- "generated_at": "2026-10-02T19:15:40Z",
- "completed_at": "2026-10-02T19:15:40Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-02T201630Z",
+ "generated_at": "2026-10-02T20:16:30Z",
+ "completed_at": "2026-10-02T20:16:30Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
  "source_status": {
   "official_nfl_team": "OK",
   "beat_reporting": "OK",
-  "x_direct": "OK",
+  "x_direct": "LIMITED",
   "experts": "OK",
   "analytics": "LIMITED"
  },
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter. Keaton Mitchell BN Q (ankle). Ray Davis newly listed questionable (hamstring) this hour. Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim. Sampson sole fantasy IR. Hourly ~3:15 PM ET Fri Oct 2 / 19:15 UTC.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter (Mayfield OUT logged). Ray Davis BN QUESTIONABLE (hamstring) per Bills Fri designation (logged 3:15 PM pulse). Keaton Mitchell BN Q (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim. Sampson sole fantasy IR. Hourly ~4:16 PM ET Fri Oct 2 / 20:16 UTC.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -473,20 +473,13 @@
    "confidence": "HIGH"
   }
  ],
- "material_changes": [
-  {
-   "type": "injury_designation",
-   "player": "Ray Davis",
-   "summary": "Joe Brady listed owned bench RB Ray Davis (hamstring) questionable for Sunday vs NE. Official Bills post. Lineup unchanged.",
-   "status": "CONFIRMED_FACT"
-  }
- ],
- "no_material_change": false,
+ "material_changes": [],
+ "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T181627Z",
-  "completed_at": "2026-10-02T18:16:27Z",
-  "commit": "bf8b078f102bb3c713dcfbe3d02f01508fd44f64",
-  "no_material_change": true
+  "pulse_id": "mongo-grok-pulse-2026-10-02T191540Z",
+  "completed_at": "2026-10-02T19:15:40Z",
+  "commit": "8d1b392f41a743b7d1195120ed580423983c3e9b",
+  "no_material_change": false
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -497,9 +490,9 @@
   "pulse_id": "mongo-grok-pulse-2026-10-02T181627Z"
  },
  "notes": [
-  "Hourly 3 PM ET Fri Oct 2 (2026-10-02T19:15:40Z). Delta vs tip bf8b078 / 18:16:27Z.",
-  "Material: owned bench Ray Davis newly questionable (hamstring) per Joe Brady / Bills official. Not a starter change.",
-  "Mayfield OUT already logged. Mitchell/Holani/Bell/Andrews Friday sheets still unpublished. Unowned Fri OUTs ignored.",
-  "Gordon/Wright CLOSED; Achane reclaim forbidden. Intelligence only \u2014 no roster/FAAB/lineup mutations."
+  "Hourly 4 PM ET Fri Oct 2 (2026-10-02T20:16:30Z). Delta vs tip 8d1b392 / 19:15:40Z.",
+  "No new Mongo-owned CONFIRMED_FACT since Ray Davis Q (already logged). Mayfield OUT already logged. Unowned Fri OUTs (incl. Jefferson) not material.",
+  "Owned watches carry: Mitchell LP ankle; Holani LP ribs; Bell LP knee; Charbonnet PUP miss W4; Etienne IR / Miller; Andrews FULL. Gordon/Wright CLOSED; Achane reclaim forbidden.",
+  "x_direct LIMITED. Intelligence only \u2014 no roster/FAAB/lineup mutations."
  ]
 }
