@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-02T122630Z",
- "generated_at": "2026-10-02T12:26:30Z",
- "completed_at": "2026-10-02T12:26:30Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-02T132632Z",
+ "generated_at": "2026-10-02T13:26:32Z",
+ "completed_at": "2026-10-02T13:26:32Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-01 ~08:10 ET (cookie-seeded API; mutation_performed=false) + ingest tip 989df45 Packers D/ST + Keaton Mitchell ADD_DROPs. FAAB 82; record 2-1-0; Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN QUESTIONABLE (ankle). Achane WAIVERS_CONFIRMED ACL IR — do NOT reclaim; never FREE_AGENT_CONFIRMED without ESPN proof. Eagles D/ST WAIVERS_CONFIRMED. Sampson sole fantasy IR. Hourly ~8:26 AM ET Fri Oct 2 / 12:26 UTC.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB 2; roster 9/7/1; no new txs) + prior ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN Q (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim. Sampson sole fantasy IR. Hourly ~9:26 AM ET Fri Oct 2 / 13:26 UTC. Live Check Pulse cursor noted rico-dowdle TNF inactive (unowned \u2014 no Mongo roster impact).",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -69,7 +69,7 @@
    "team": "LAC",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 112142Z: Chargers.com Week 4 table (updated Oct 1, 2:55 PM) still Keaton Mitchell (ankle) Limited Wed + Limited Thu; Friday and game status blank as of ~8:26 AM ET. No Friday sheet posted. RotoWire still lists Thu Practice Limited and estimated return 10/4/2026 — opinion, not a Friday designation. Owned bench Q. Not OUT.",
+   "summary": "Continuity vs 112142Z: Chargers.com Week 4 table (updated Oct 1, 2:55 PM) still Keaton Mitchell (ankle) Limited Wed + Limited Thu; Friday and game status blank as of ~8:26 AM ET. No Friday sheet posted. RotoWire still lists Thu Practice Limited and estimated return 10/4/2026 \u2014 opinion, not a Friday designation. Owned bench Q. Not OUT.",
    "mongo_impact": "bench hold; no ownership mutation.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -125,7 +125,7 @@
    "team": "SEA",
    "signal_type": "injury_practice_role_watch",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 112142Z: Chargers.com Seahawks table Holani (rib) Limited Wed + Limited Thu; Friday blank ~8:26 AM ET. Price (chest) DNP Thursday still unowned context. Charbonnet ineligible W4. Owned bench Q — not a start over Miller/Bijan.",
+   "summary": "Continuity vs 112142Z: Chargers.com Seahawks table Holani (rib) Limited Wed + Limited Thu; Friday blank ~8:26 AM ET. Price (chest) DNP Thursday still unowned context. Charbonnet ineligible W4. Owned bench Q \u2014 not a start over Miller/Bijan.",
    "mongo_impact": "bench hold / role watch.",
    "recommendation": "HOLD bench; watch Friday participation + Charbonnet ramp.",
    "urgency": "MEDIUM",
@@ -417,7 +417,7 @@
  ],
  "expert_signals": [
   {
-   "topic": "Friday practice sheets still blank — no new designation",
+   "topic": "Friday practice sheets still blank \u2014 no new designation",
    "status": "CONFIRMED_FACT",
    "summary": "Chargers.com Week 4 table and Buccaneers.com Oct 1 report still have Friday and game-status columns blank as of the 8:26 AM ET scan. FootballDB also blank for Friday on Andrews. No new official Friday participation for Mitchell, Holani, Charbonnet, Andrews, or Mayfield.",
    "urgency": "HIGH",
@@ -426,12 +426,12 @@
   {
    "topic": "Mitchell/Bell Thursday limited continuity",
    "status": "CONFIRMED_FACT",
-   "summary": "Both Thu LIMITED already logged. RotoWire restates Mitchell and Bell Thursday limited with estimated Sunday return — EXPERT_OPINION attached to a confirmed Thursday fact, not a Friday upgrade.",
+   "summary": "Both Thu LIMITED already logged. RotoWire restates Mitchell and Bell Thursday limited with estimated Sunday return \u2014 EXPERT_OPINION attached to a confirmed Thursday fact, not a Friday upgrade.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
-   "topic": "Etienne IR — Miller committee",
+   "topic": "Etienne IR \u2014 Miller committee",
    "status": "CONFIRMED_FACT",
    "summary": "Already logged. NFL.com Oct 1 roundup restates Saints IR placement. No NEW Mongo-material. Miller still shares with Kamara/Donaldson.",
    "urgency": "HIGH",
@@ -445,7 +445,7 @@
    "confidence": "LOW"
   },
   {
-   "topic": "TNF CLE 27 PIT 24 FINAL — no Mongo starters",
+   "topic": "TNF CLE 27 PIT 24 FINAL \u2014 no Mongo starters",
    "status": "CONFIRMED_FACT",
    "summary": "Already logged. Browns 27, Steelers 24. Sampson already IR. No JDD lineup decision from the result.",
    "urgency": "NONE",
@@ -455,9 +455,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T112142Z",
-  "completed_at": "2026-10-02T11:21:42Z",
-  "commit": "565f23edda88cb8704a6f169fd237e205f0f81f8",
+  "pulse_id": "mongo-grok-pulse-2026-10-02T122630Z",
+  "completed_at": "2026-10-02T12:26:30Z",
+  "commit": "6cee3eeab45df2ebd0bad5864d14755e0afeacc9",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -469,9 +469,9 @@
   "pulse_id": "mongo-grok-pulse-2026-10-02T122630Z"
  },
  "notes": [
-  "Hourly 8 AM ET Fri Oct 2 (2026-10-02T12:26:30Z). Delta vs 7:21 AM tip 565f23ed / 11:21:42Z.",
-  "Friday practice sheets still blank in public official sources; Thursday stamps carry (Mitchell LP ankle; Holani LP ribs; Charbonnet LP PUP miss W4; Etienne IR / Miller role; Andrews FULL hand; Mayfield DNP thumb).",
-  "X Charbonnet viral quad clip is a restatement of Thursday practice, not a new Friday fact. Availability remains UNKNOWN. No ownership, FAAB, lineup, or transaction mutation.",
-  "no_material_change=true. Intelligence only."
+  "Hourly 9 AM ET Fri Oct 2 (2026-10-02T13:26:32Z). Delta vs tip 6cee3ee / 12:26:30Z.",
+  "Mongo Live Check 08:14 ET: NO_MATERIAL_CHANGE; FAAB 2; no new txs. Friday public practice sheets still incomplete vs Thursday stamps.",
+  "Owned watches carry: Mitchell LP ankle; Holani LP ribs / Charbonnet PUP miss W4; Etienne IR / Miller role; Andrews FULL hand. Gordon/Wright CLOSED; Achane reclaim forbidden.",
+  "x_direct LIMITED. Intelligence only \u2014 no roster/FAAB/lineup mutations."
  ]
 }
