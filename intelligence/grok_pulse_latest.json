@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-02T132632Z",
- "generated_at": "2026-10-02T13:26:32Z",
- "completed_at": "2026-10-02T13:26:32Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-02T142301Z",
+ "generated_at": "2026-10-02T14:23:01Z",
+ "completed_at": "2026-10-02T14:23:01Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB 2; roster 9/7/1; no new txs) + prior ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN Q (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim. Sampson sole fantasy IR. Hourly ~9:26 AM ET Fri Oct 2 / 13:26 UTC. Live Check Pulse cursor noted rico-dowdle TNF inactive (unowned \u2014 no Mongo roster impact).",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN Q (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim. Sampson sole fantasy IR. Hourly ~10:23 AM ET Fri Oct 2 / 14:23 UTC.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -455,9 +455,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T122630Z",
-  "completed_at": "2026-10-02T12:26:30Z",
-  "commit": "6cee3eeab45df2ebd0bad5864d14755e0afeacc9",
+  "pulse_id": "mongo-grok-pulse-2026-10-02T132632Z",
+  "completed_at": "2026-10-02T13:26:32Z",
+  "commit": "54d574dc7614d0a64568d9cfe671b9f5492029dc",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -469,9 +469,9 @@
   "pulse_id": "mongo-grok-pulse-2026-10-02T122630Z"
  },
  "notes": [
-  "Hourly 9 AM ET Fri Oct 2 (2026-10-02T13:26:32Z). Delta vs tip 6cee3ee / 12:26:30Z.",
-  "Mongo Live Check 08:14 ET: NO_MATERIAL_CHANGE; FAAB 2; no new txs. Friday public practice sheets still incomplete vs Thursday stamps.",
-  "Owned watches carry: Mitchell LP ankle; Holani LP ribs / Charbonnet PUP miss W4; Etienne IR / Miller role; Andrews FULL hand. Gordon/Wright CLOSED; Achane reclaim forbidden.",
+  "Hourly 10 AM ET Fri Oct 2 (2026-10-02T14:23:01Z). Delta vs tip 54d574d / 13:26:32Z.",
+  "Public Friday final designations still incomplete; Thursday stamps carry for owned watches (Mitchell LP ankle; Holani LP ribs; Charbonnet PUP miss W4; Etienne IR / Miller; Andrews FULL).",
+  "No new Mongo-owned CONFIRMED_FACT role/availability shifts. Gordon/Wright CLOSED; Achane reclaim forbidden.",
   "x_direct LIMITED. Intelligence only \u2014 no roster/FAAB/lineup mutations."
  ]
 }
