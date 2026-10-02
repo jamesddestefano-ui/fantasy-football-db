@@ -3,16 +3,16 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-02T181627Z",
- "generated_at": "2026-10-02T18:16:27Z",
- "completed_at": "2026-10-02T18:16:27Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-02T191540Z",
+ "generated_at": "2026-10-02T19:15:40Z",
+ "completed_at": "2026-10-02T19:15:40Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
  "source_status": {
   "official_nfl_team": "OK",
   "beat_reporting": "OK",
-  "x_direct": "LIMITED",
+  "x_direct": "OK",
   "experts": "OK",
   "analytics": "LIMITED"
  },
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter (Mayfield OUT vs GB already logged 1 PM pulse). Keaton Mitchell BN Q (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim. Sampson sole fantasy IR. Hourly ~2:16 PM ET Fri Oct 2 / 18:16 UTC.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter. Keaton Mitchell BN Q (ankle). Ray Davis newly listed questionable (hamstring) this hour. Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim. Sampson sole fantasy IR. Hourly ~3:15 PM ET Fri Oct 2 / 19:15 UTC.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -65,12 +65,23 @@
  },
  "player_signals": [
   {
+   "player": "Ray Davis",
+   "team": "BUF",
+   "signal_type": "injury_designation",
+   "status": "CONFIRMED_FACT",
+   "summary": "NEW vs 181627Z: Buffalo Bills official (Oct 2, 2:18 PM ET) and Chris Brown (Bills radio) report HC Joe Brady listed RB Ray Davis (hamstring) questionable for Sunday vs NE, with Christian Benford questionable and TJ Sanders doubtful. FantasyPros attributes the same listing to Jay Skurski. RotoWire: Thursday full participant, then questionable. Owned bench only. Not a start over Bijan/Miller. Not OUT.",
+   "mongo_impact": "bench hold; new designation does not change the Week 4 lineup.",
+   "urgency": "MEDIUM",
+   "confidence": "HIGH",
+   "availability": "OWNED"
+  },
+  {
    "player": "Packers D/ST",
    "team": "GB",
    "signal_type": "opponent_game_status",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "NEW vs 161740Z: Buccaneers.com (Oct 2 updates, after Friday practice) quotes Todd Bowles that Baker Mayfield (right thumb) will be ruled out on Friday's injury report, with Rueben Bain Jr., Ko Kieft, and Benjamin Morrison (quad, Thursday practice) also out. River Wells and Greg Auman (via SleeperBucs) report the same coach ruling. Jalon Daniels remains the Week 4 starter. Official Friday injury-report grid not yet posted on FootballDB as of this scan. Start holds vs TB.",
-   "mongo_impact": "start holds; opponent QB absence now coach-confirmed, not only expected.",
+   "summary": "Continuity vs 181627Z: Todd Bowles, via Buccaneers.com after Friday practice, said Baker Mayfield (right thumb) will be ruled out, with Rueben Bain Jr., Ko Kieft, and Benjamin Morrison also out. Jalon Daniels remains the Week 4 starter. Heavy.com restates the same four outs. Start holds vs TB.",
+   "mongo_impact": "start holds; opponent QB absence already logged.",
    "urgency": "HIGH",
    "confidence": "HIGH",
    "availability": "OWNED"
@@ -80,7 +91,7 @@
    "team": "LAC",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: no Friday Chargers participation or game designation published by ~1:16 PM ET. Thursday still Limited (ankle). Chargers.com Week 4 table still blank Friday/game status. Rotoworld restates Thursday limited only. Owned bench Q. Not OUT.",
+   "summary": "Continuity vs 181627Z: no Friday Chargers participation or game designation found by ~3:15 PM ET. Chargers.com Week 4 table still blank Friday/game status (Thu Limited ankle). Rotoworld still Thursday limited only. Owned bench Q. Not OUT.",
    "mongo_impact": "bench hold; no ownership mutation.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -91,7 +102,7 @@
    "team": "MIA",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: Thursday limited (knee) still the last practice stamp. X restates Thursday limited only. No new Friday game designation. Owned bench Q. Not a start.",
+   "summary": "Continuity vs 181627Z: Thursday limited (knee) still the last practice stamp. RotoWire and X restate Thursday limited only. No new Friday game designation by ~3:15 PM ET. Owned bench Q. Not a start.",
    "mongo_impact": "bench hold; no ownership mutation.",
    "urgency": "MEDIUM",
    "confidence": "HIGH",
@@ -102,7 +113,7 @@
    "team": "IND",
    "signal_type": "matchup_context",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: Jayden Daniels OUT, Marcus Mariota starts in London. No new Downs designation. Start holds.",
+   "summary": "Continuity vs 181627Z: Jayden Daniels OUT, Marcus Mariota starts in London. No new Downs designation. Start holds.",
    "mongo_impact": "start holds; matchup context only.",
    "urgency": "MEDIUM",
    "confidence": "HIGH",
@@ -113,7 +124,7 @@
    "team": "CHI",
    "signal_type": "matchup_context",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: Breece Hall, Adonai Mitchell, Mason Taylor, Dylan Parham out vs CHI. Burden start holds. Opponent absences are script context, not a lineup change.",
+   "summary": "Continuity vs 181627Z: Breece Hall, Adonai Mitchell, Mason Taylor, Dylan Parham out vs CHI. Burden start holds. Opponent absences are script context, not a lineup change.",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -124,7 +135,7 @@
    "team": "NO",
    "signal_type": "roster_transaction_injury_ir",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: Saints IR (hamstring), min 4 games. Not Mongo-owned.",
+   "summary": "Continuity vs 181627Z: Saints IR (hamstring), min 4 games. Not Mongo-owned.",
    "mongo_impact": "lineup_signal for Miller only; no ownership mutation.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -135,7 +146,7 @@
    "team": "NO",
    "signal_type": "lineup",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: Etienne IR already logged. Miller remains owned Week 4 RB starter in Kamara/Donaldson committee vs ATL MNF. No new Miller designation.",
+   "summary": "Continuity vs 181627Z: Etienne IR already logged. Miller remains owned Week 4 RB starter in Kamara/Donaldson committee vs ATL MNF. No new Miller designation.",
    "mongo_impact": "start holds; monitor MNF usage share.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -146,7 +157,7 @@
    "team": "SEA",
    "signal_type": "injury_pup_return_window",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: Thursday Limited after PUP window open; Friday sheet still blank ~1:16 PM ET on Chargers.com Week 4 table. Ineligible Week 4; earliest Week 5 vs SF. Not FREE_AGENT_CONFIRMED.",
+   "summary": "Continuity vs 181627Z: Thursday Limited after PUP window open; Friday sheet still blank on Chargers.com Week 4 table as of this scan. Ineligible Week 4; earliest Week 5 vs SF. Not FREE_AGENT_CONFIRMED.",
    "mongo_impact": "discovery only; Holani watch.",
    "recommendation": "No Mongo ADD without ESPN ownership proof + James approval.",
    "urgency": "MEDIUM",
@@ -158,7 +169,7 @@
    "team": "SEA",
    "signal_type": "injury_practice_role_watch",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: Thursday Limited (rib); Friday blank ~1:16 PM ET. RotoWire still Thursday limited. Charbonnet ineligible W4. Owned bench Q \u2014 not a start over Miller/Bijan.",
+   "summary": "Continuity vs 181627Z: Thursday Limited (rib); Friday blank as of ~3:15 PM ET. Charbonnet ineligible W4. Owned bench Q \u2014 not a start over Miller/Bijan.",
    "mongo_impact": "bench hold / role watch.",
    "recommendation": "HOLD bench; watch Friday participation + Charbonnet ramp.",
    "urgency": "MEDIUM",
@@ -170,7 +181,7 @@
    "team": "BAL",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 161740Z: FootballDB Week 4 table still Andrews (hand) Full Wed + Full Thu; Friday and game status blank ~1:16 PM ET. Start holds.",
+   "summary": "Continuity vs 181627Z: FootballDB Week 4 table still Andrews (hand) Full Wed + Full Thu; Friday and game status blank as of ~3:15 PM ET. Start holds.",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -203,7 +214,7 @@
    "team": "PHI",
    "signal_type": "production",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity. Week 4 vs LAR. No new Hurts designation ~1:16 PM ET.",
+   "summary": "Continuity. Week 4 vs LAR. No new Hurts designation ~3:15 PM ET.",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -225,7 +236,7 @@
    "team": "CAR",
    "signal_type": "usage",
    "status": "CONFIRMED_FACT",
-   "summary": "Owned starter. No new Week 4 designation ~1:16 PM ET. Do NOT confuse with unowned TB WR Jalen McMillan (IR).",
+   "summary": "Owned starter. No new Week 4 designation ~3:15 PM ET. Do NOT confuse with unowned TB WR Jalen McMillan (IR).",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -247,19 +258,8 @@
    "team": "ATL",
    "signal_type": "usage",
    "status": "CONFIRMED_FACT",
-   "summary": "Owned RB1 starter. MNF vs NO. No new injury material ~1:16 PM ET. Continuity.",
+   "summary": "Owned RB1 starter. MNF vs NO. No new injury material ~3:15 PM ET. Continuity.",
    "mongo_impact": "start holds.",
-   "urgency": "LOW",
-   "confidence": "HIGH",
-   "availability": "OWNED"
-  },
-  {
-   "player": "Ray Davis",
-   "team": "BUF",
-   "signal_type": "depth",
-   "status": "CONFIRMED_FACT",
-   "summary": "Owned bench. No new game designation. Not a start-over signal vs Bijan/Miller.",
-   "mongo_impact": "bench hold.",
    "urgency": "LOW",
    "confidence": "HIGH",
    "availability": "OWNED"
@@ -373,17 +373,24 @@
  ],
  "lineup_signals": [
   {
+   "player": "Ray Davis",
+   "slot": "BENCH",
+   "status": "CONFIRMED_FACT",
+   "summary": "NEW: Joe Brady listed Davis (hamstring) questionable for Sunday vs NE. Official Bills post. Bench only. Not a start over Miller/Bijan.",
+   "urgency": "MEDIUM"
+  },
+  {
    "player": "Packers D/ST",
    "slot": "D/ST",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Starter slot holds. NEW: Bowles, via Buccaneers.com after Friday practice, said Mayfield will be ruled out on the Friday injury report. Daniels starts. Morrison/Bain/Kieft also out. Not a sit.",
+   "summary": "Starter slot holds. Mayfield OUT already logged at 171640Z; continuity this hour. Daniels starts. Not a sit.",
    "urgency": "HIGH"
   },
   {
    "player": "Keaton Mitchell",
    "slot": "BENCH",
    "status": "CONFIRMED_FACT",
-   "summary": "Thu LIMITED (ankle) already logged; Friday still blank ~1:16 PM ET. Still Q. Not a start over Miller/Bijan.",
+   "summary": "Thu LIMITED (ankle) already logged; Friday still blank ~3:15 PM ET. Still Q. Not a start over Miller/Bijan.",
    "urgency": "HIGH"
   },
   {
@@ -397,7 +404,7 @@
    "player": "Chris Bell",
    "slot": "BENCH",
    "status": "CONFIRMED_FACT",
-   "summary": "Knee still limited on Thursday report; no Friday designation by ~1:16 PM ET. BN Q.",
+   "summary": "Knee still limited on Thursday report; no Friday designation by ~3:15 PM ET. BN Q.",
    "urgency": "MEDIUM"
   },
   {
@@ -411,7 +418,7 @@
    "player": "Mark Andrews",
    "slot": "TE",
    "status": "CONFIRMED_FACT",
-   "summary": "Full participation Wed+Thu already logged. Start holds. No Friday designation yet (~1:16 PM ET).",
+   "summary": "Full participation Wed+Thu already logged. Start holds. No Friday designation yet (~3:15 PM ET).",
    "urgency": "LOW"
   },
   {
@@ -431,61 +438,68 @@
  ],
  "expert_signals": [
   {
+   "topic": "Ray Davis questionable \u2014 Joe Brady / Bills official",
+   "status": "CONFIRMED_FACT",
+   "summary": "Buffalo Bills official account and Chris Brown: Joe Brady listed Ray Davis (hamstring) questionable for Sunday vs Patriots. FantasyPros/Jay Skurski agree. Owned bench designation only; does not change starters.",
+   "urgency": "MEDIUM",
+   "confidence": "HIGH"
+  },
+  {
    "topic": "Mayfield ruled out by Bowles for Sunday",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Buccaneers.com Oct 2 updates: after Friday's final practice, Todd Bowles said Mayfield (right thumb), Bain, Kieft, and Morrison will be ruled out on Friday's injury report later in the afternoon. FantasyPros and beat restatements agree. Official grid not yet on FootballDB. James Palmer earlier may-push-return line remains SPECULATION and does not override the coach ruling.",
+   "summary": "Already logged at 171640Z and carried at 181627Z. Buccaneers.com / Bowles: Mayfield, Bain, Kieft, Morrison out. Jalon Daniels starts. Continuity for owned Packers D/ST. Palmer two-game push line remains SPECULATION and does not override the coach ruling.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
    "topic": "Friday practice sheets still blank for owned injury watches",
    "status": "CONFIRMED_FACT",
-   "summary": "FootballDB and Chargers.com Week 4 Friday columns still blank for Andrews, Mitchell, Holani, and Charbonnet as of the ~1:16 PM ET scan. No new official Friday participation for those names.",
+   "summary": "Chargers.com Week 4 Friday columns still blank for Mitchell, Holani, and Charbonnet as of the ~3:15 PM ET scan. No new official Friday participation for Andrews or Bell either.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
    "topic": "Daniels OUT London \u2014 Mariota start",
    "status": "CONFIRMED_FACT",
-   "summary": "Already logged at 161740Z. Continuity for owned Josh Downs only.",
+   "summary": "Already logged. Continuity for owned Josh Downs only.",
    "urgency": "MEDIUM",
    "confidence": "HIGH"
   },
   {
    "topic": "Breece Hall OUT vs Bears",
    "status": "CONFIRMED_FACT",
-   "summary": "Already logged at 161740Z. Continuity for owned Burden.",
+   "summary": "Already logged. Continuity for owned Burden.",
    "urgency": "LOW",
    "confidence": "HIGH"
-  },
-  {
-   "topic": "Packers DT Warren Brinson significant absence",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Matt LaFleur said Friday Brinson will miss a significant amount of time (SI / Packers Friday practice). Not a Mongo skill-player change. Context only for owned Packers D/ST.",
-   "urgency": "LOW",
-   "confidence": "MEDIUM"
   }
  ],
- "material_changes": [],
- "no_material_change": true,
+ "material_changes": [
+  {
+   "type": "injury_designation",
+   "player": "Ray Davis",
+   "summary": "Joe Brady listed owned bench RB Ray Davis (hamstring) questionable for Sunday vs NE. Official Bills post. Lineup unchanged.",
+   "status": "CONFIRMED_FACT"
+  }
+ ],
+ "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T171640Z",
-  "completed_at": "2026-10-02T17:16:40Z",
-  "commit": "83bc8022a6b803a2dc81f6fb9061f1ce0c15eac9",
-  "no_material_change": false
+  "pulse_id": "mongo-grok-pulse-2026-10-02T181627Z",
+  "completed_at": "2026-10-02T18:16:27Z",
+  "commit": "bf8b078f102bb3c713dcfbe3d02f01508fd44f64",
+  "no_material_change": true
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-02T17:16:40Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-02T171640Z"
+  "as_of": "2026-10-02T18:16:27Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-02T181627Z"
  },
  "notes": [
-  "Hourly 2 PM ET Fri Oct 2 (2026-10-02T18:16:27Z). Delta vs tip 83bc802 / 17:16:40Z.",
-  "No new Mongo-owned CONFIRMED_FACT since Mayfield OUT / Packers D/ST note already in prior pulse. Unowned Fri OUTs (Hall, A.Mitchell, M.Taylor, Daniels, Legette, R.White) ignored for material_changes.",
-  "Owned watches carry: Mitchell LP ankle; Holani LP ribs; Bell LP knee; Charbonnet PUP miss W4; Etienne IR / Miller; Andrews FULL. Gordon/Wright CLOSED; Achane reclaim forbidden.",
-  "x_direct LIMITED. Intelligence only \u2014 no roster/FAAB/lineup mutations."
+  "Hourly 3 PM ET Fri Oct 2 (2026-10-02T19:15:40Z). Delta vs tip bf8b078 / 18:16:27Z.",
+  "Material: owned bench Ray Davis newly questionable (hamstring) per Joe Brady / Bills official. Not a starter change.",
+  "Mayfield OUT already logged. Mitchell/Holani/Bell/Andrews Friday sheets still unpublished. Unowned Fri OUTs ignored.",
+  "Gordon/Wright CLOSED; Achane reclaim forbidden. Intelligence only \u2014 no roster/FAAB/lineup mutations."
  ]
 }
