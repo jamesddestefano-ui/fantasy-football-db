@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-02T021731Z",
- "generated_at": "2026-10-02T02:17:31Z",
- "completed_at": "2026-10-02T02:17:31Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-02T031541Z",
+ "generated_at": "2026-10-02T03:15:41Z",
+ "completed_at": "2026-10-02T03:15:41Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-01 ~08:10 ET (cookie-seeded API; mutation_performed=false) + ingest tip 989df45 Packers D/ST + Keaton Mitchell ADD_DROPs. FAAB $82; record 2-1-0; Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN QUESTIONABLE (ankle). Achane WAIVERS_CONFIRMED ACL IR — do NOT reclaim; never FREE_AGENT_CONFIRMED without ESPN proof. Eagles D/ST WAIVERS_CONFIRMED. Sampson sole fantasy IR. Hourly ~9:19 PM ET Thu Oct 1 / 01:19 UTC Oct 2.",
+  "source": "Authenticated ESPN Live Check 2026-10-01 ~08:10 ET (cookie-seeded API; mutation_performed=false) + ingest tip 989df45 Packers D/ST + Keaton Mitchell ADD_DROPs. FAAB $82; record 2-1-0; Week 4 vs You're a JaGoff UNDECIDED. Packers D/ST starter; Keaton Mitchell BN QUESTIONABLE (ankle). Achane WAIVERS_CONFIRMED ACL IR \u2014 do NOT reclaim; never FREE_AGENT_CONFIRMED without ESPN proof. Eagles D/ST WAIVERS_CONFIRMED. Sampson sole fantasy IR. Hourly ~11:15 PM ET Thu Oct 1 / 03:15 UTC Oct 2.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -113,7 +113,7 @@
    "team": "SEA",
    "signal_type": "injury_pup_return_window",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 002200Z (Thu LP already in tip): Official Seahawks.com IR — Charbonnet (knee) Wed (-) / Thu LP; Fri blank. First practice after PUP designate-to-return already logged at 002200Z. Must miss W4; earliest W5 vs SF. Not FREE_AGENT_CONFIRMED. Unowned discovery; Holani role watch only.",
+   "summary": "Continuity vs 002200Z (Thu LP already in tip): Official Seahawks.com IR \u2014 Charbonnet (knee) Wed (-) / Thu LP; Fri blank. First practice after PUP designate-to-return already logged at 002200Z. Must miss W4; earliest W5 vs SF. Not FREE_AGENT_CONFIRMED. Unowned discovery; Holani role watch only.",
    "mongo_impact": "discovery only; Holani watch. No new delta vs tip.",
    "recommendation": "No Mongo ADD without ESPN ownership proof + James approval.",
    "urgency": "MEDIUM",
@@ -125,7 +125,7 @@
    "team": "SEA",
    "signal_type": "injury_practice_role_watch",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 002200Z: Official Seahawks.com IR — Holani (rib) LP Wed + LP Thu; Fri blank. Remained limited Thursday already logged. Price (chest) DNP unowned context. Charbonnet ineligible W4; W5+ committee risk when activated. Owned bench Q — not a start over Miller/Bijan.",
+   "summary": "Continuity vs 002200Z: Official Seahawks.com IR \u2014 Holani (rib) LP Wed + LP Thu; Fri blank. Remained limited Thursday already logged. Price (chest) DNP unowned context. Charbonnet ineligible W4; W5+ committee risk when activated. Owned bench Q \u2014 not a start over Miller/Bijan.",
    "mongo_impact": "bench hold / role watch.",
    "recommendation": "HOLD bench; watch Friday participation + Charbonnet ramp.",
    "urgency": "MEDIUM",
@@ -417,9 +417,9 @@
  ],
  "expert_signals": [
   {
-   "topic": "Charbonnet Thu LP — already in tip; Holani watch continuity",
+   "topic": "Charbonnet Thu LP \u2014 already in tip; Holani watch continuity",
    "status": "CONFIRMED_FACT",
-   "summary": "Official Seahawks.com IR reconfirm: Charbonnet Thu LP after PUP; Holani LP. Candidate was material vs 231900Z but already absorbed in 002200Z player_signals — no NEW Mongo-material vs tip. NBC/PFT/CBS corroborate. Unowned Charbonnet; owned Holani role watch only.",
+   "summary": "Official Seahawks.com IR reconfirm: Charbonnet Thu LP after PUP; Holani LP. Candidate was material vs 231900Z but already absorbed in 002200Z player_signals \u2014 no NEW Mongo-material vs tip. NBC/PFT/CBS corroborate. Unowned Charbonnet; owned Holani role watch only.",
    "urgency": "MEDIUM",
    "confidence": "HIGH"
   },
@@ -431,7 +431,7 @@
    "confidence": "HIGH"
   },
   {
-   "topic": "Etienne IR — Miller committee",
+   "topic": "Etienne IR \u2014 Miller committee",
    "status": "CONFIRMED_FACT",
    "summary": "Already logged since 221600Z. No NEW Mongo-material. Miller still shares with Kamara/Donaldson.",
    "urgency": "HIGH",
@@ -445,7 +445,7 @@
    "confidence": "LOW"
   },
   {
-   "topic": "TNF CLE@PIT — no Mongo starters",
+   "topic": "TNF CLE@PIT \u2014 no Mongo starters",
    "status": "EXPERT_OPINION",
    "summary": "Sampson already IR. No JDD lineup decision tonight. Continuity.",
    "urgency": "NONE",
@@ -455,9 +455,10 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T002200Z",
-  "completed_at": "2026-10-02T00:22:00Z",
-  "commit": "3ffeb40adf0d92cb5706b5faabab1719f0479e09"
+  "pulse_id": "mongo-grok-pulse-2026-10-02T021731Z",
+  "completed_at": "2026-10-02T02:17:31Z",
+  "commit": "efe6c262116590d0aaefcadbafe8155a153594c7",
+  "no_material_change": true
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -467,5 +468,10 @@
   "as_of": "2026-10-02T01:19:00Z",
   "pulse_id": "mongo-grok-pulse-2026-10-02T011900Z"
  },
- "notes": "Hourly ~9:19 PM ET Thu Oct 1 / 2026-10-02T01:19:00Z. run_type=hourly. NO MATERIAL CHANGE vs 002200Z: Charbonnet first Thu LP after PUP already present in tip player_signals (Seahawks.com IR reconfirm Thu LP / Fri blank; Boyle Week-4 IR article; NBC/PFT). Holani LP Thu continuity. Mitchell Thu LP + Bell Thu LP + Etienne IR already logged (since 221600Z). Continuity: Packers D/ST starter; Achane/Eagles WAIVERS_CONFIRMED (do NOT reclaim Achane); Mitchell/Holani/Bell Q; Charbonnet cannot play Week 4; FAAB $82; W4 vs You're a JaGoff undecided; Live Check 08:10 ET tip 989df45. TNF no JDD starters. x_direct LIMITED. analytics LIMITED. History 109→110 append-only. Restore N (tip was not PLACEHOLDER). Intelligence only; no roster/FAAB/lineup mutation this pulse."
+ "notes": [
+  "Hourly 11 PM ET Thu Oct 1 (2026-10-02T03:15:41Z). Delta scan vs efe6c26 / 02:17:31Z.",
+  "Owned watches unchanged at material threshold: Charbonnet first Thu LP / designated return (Holani W5+ committee risk already logged); Keaton Mitchell second W4 LP (ankle) ATTRIBUTED_REPORT NBC; Etienne formal IR / Miller role watch already logged; Andrews hand FULL prior.",
+  "No new Mongo-owned CONFIRMED_FACT role/availability shifts since 10 PM pulse. Gordon/Wright watches remain CLOSED. Achane reclaim forbidden.",
+  "x_direct LIMITED (no live X scan this run). Intelligence only \u2014 no roster/FAAB/lineup mutations."
+ ]
 }
