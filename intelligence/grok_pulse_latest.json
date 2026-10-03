@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T011840Z",
- "generated_at": "2026-10-03T01:18:20Z",
- "completed_at": "2026-10-03T01:18:40Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T021640Z",
+ "generated_at": "2026-10-03T02:16:10Z",
+ "completed_at": "2026-10-03T02:16:40Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly ~9:18 PM ET Fri Oct 2 / 01:18 UTC Oct 3. Intelligence only.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly ~10:16 PM ET Fri Oct 2 / 02:16 UTC Oct 3. Intelligence only. No new ESPN ownership pull this hour.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -68,20 +68,20 @@
    "player": "Luther Burden III",
    "team": "CHI",
    "signal_type": "qb_absence",
-   "status": "CONFIRMED_FACT",
-   "summary": "NEW vs 211645Z: ChicagoBears.com (Larry Mayer, Oct 2, 3:13 PM ET) and the Jets.com Friday Week 4 injury report list Caleb Williams (hamstring) DNP Wed/Thu/Fri and Out for Sunday vs NYJ. Ben Johnson has not named the starter; Tyson Bagent or Case Keenum. Burden is not on the Bears out/questionable list. Start holds, but volume/efficiency is backup-QB dependent. Hall/Mitchell/Taylor/Parham already logged out for NYJ.",
-   "mongo_impact": "start holds with a new QB-absence caveat; not a sit.",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "NEW vs 011840Z: Ian Rapoport (NFL Network), via ProFootballRumors (6:18 PM ET) and RotoWire (Oct 2), says Tyson Bagent took the majority of first-team reps and is expected to start Sunday vs NYJ. Ben Johnson has not confirmed it; Bears.com (Larry Mayer, 3:13 PM ET) still has Williams (hamstring) Out and Johnson saying 'We'll find out on Sunday.' Burden is not on the Bears out/questionable list. Start holds; QB environment is attributed Bagent, not a sit.",
+   "mongo_impact": "start holds; attributed Bagent start is context, not a lineup change.",
    "urgency": "HIGH",
-   "confidence": "HIGH",
+   "confidence": "MEDIUM",
    "availability": "OWNED"
   },
   {
    "player": "Jalen Hurts",
    "team": "PHI",
    "signal_type": "supporting_cast",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "NEW vs 211645Z: Rams.com Friday injury table and NBC Sports (Myles Simmons, Oct 2 ~3:58 PM ET) list DeVonta Smith (hamstring) and Dallas Goedert (knee) Out, plus Hollywood Brown, Zack Baun, Marcus Epps, Fred Johnson Out. Puka Nacua cleared to play for LAR (Rams.com). Hurts not listed out. Start holds; target concentration to AJ Brown and Hurts rushing is the environment, not a sit.",
-   "mongo_impact": "start holds; skill-position absences are context only.",
+   "status": "CONFIRMED_FACT",
+   "summary": "Continuity vs 011840Z: Smith (hamstring) and Goedert (knee) Out on Rams.com Friday table / NFL.com Week 4 grid, plus Hollywood Brown, Zack Baun, Marcus Epps, Fred Johnson Out. Official Rams.com Friday report also lists Aaron Donald (back) Out and Puka Nacua cleared (no designation). Hurts not listed out. Start holds; Donald out is opponent-defense context, not a sit.",
+   "mongo_impact": "start holds; skill-position absences and Donald out are context only.",
    "urgency": "MEDIUM",
    "confidence": "HIGH",
    "availability": "OWNED"
@@ -396,15 +396,15 @@
   {
    "player": "Luther Burden III",
    "slot": "WR",
-   "status": "CONFIRMED_FACT",
-   "summary": "NEW: Caleb Williams officially Out (Bears.com / Jets.com Friday report). Starter still unnamed (Bagent or Keenum). Burden start holds; do not sit solely on the QB absence.",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "NEW vs 011840Z: Rapoport/NFL Network (PFR, RotoWire) expects Bagent to start with Williams Out. Johnson has not named the starter (Bears.com). Burden start holds; do not sit on the attributed QB change.",
    "urgency": "HIGH"
   },
   {
    "player": "Jalen Hurts",
    "slot": "QB",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "NEW: Smith and Goedert Out (Rams.com table / NBC). Hurts start holds vs LAR with Nacua expected back.",
+   "status": "CONFIRMED_FACT",
+   "summary": "Continuity: Smith and Goedert Out (Rams.com / NFL.com). Nacua cleared; Aaron Donald Out on Rams.com. Hurts start holds vs LAR.",
    "urgency": "MEDIUM"
   },
   {
@@ -466,11 +466,11 @@
  ],
  "expert_signals": [
   {
-   "topic": "Caleb Williams officially out \u2014 Burden QB environment",
-   "status": "CONFIRMED_FACT",
-   "summary": "ChicagoBears.com and Jets.com Friday report: Williams (hamstring) Out. Johnson has not named Bagent or Keenum. Owned Burden start holds with a backup-QB caveat. Not a waiver or ownership change.",
+   "topic": "Bagent expected to start \u2014 Burden QB environment",
+   "status": "ATTRIBUTED_REPORT",
+   "summary": "Ian Rapoport (NFL Network) via ProFootballRumors and RotoWire: Bagent expected to start vs Jets after majority first-team reps. Johnson has not confirmed (Bears.com: 'We'll find out on Sunday'). Williams remains Out (Bears.com). Owned Burden start holds. Not a waiver or ownership change.",
    "urgency": "HIGH",
-   "confidence": "HIGH"
+   "confidence": "MEDIUM"
   },
   {
    "topic": "Eagles Smith and Goedert out \u2014 Hurts context",
@@ -494,12 +494,19 @@
    "confidence": "MEDIUM"
   }
  ],
- "material_changes": [],
- "no_material_change": true,
+ "material_changes": [
+  {
+   "player": "Luther Burden III",
+   "change": "Attributed Week 4 QB: Rapoport/NFL Network expects Tyson Bagent to start vs NYJ. Prior pulse had starter unnamed. Williams Out unchanged (Bears.com). Johnson has not confirmed. Burden remains a start.",
+   "status": "ATTRIBUTED_REPORT",
+   "availability": "OWNED"
+  }
+ ],
+ "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T002255Z",
-  "completed_at": "2026-10-03T00:22:55Z",
-  "commit": "9bab25ead6a2c8ccfc6619fa6988c5663a4c62dd",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T011840Z",
+  "completed_at": "2026-10-03T01:18:40Z",
+  "commit": "ec5bbb2d935cbe2d930e7267e229e8749beb59eb",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -507,13 +514,13 @@
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T01:18:40Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T011840Z"
+  "as_of": "2026-10-03T02:16:40Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T021640Z"
  },
  "notes": [
-  "Hourly 9 PM ET Fri Oct 2 (2026-10-03T01:18:40Z). Delta vs tip 9bab25e / 00:22:55Z.",
-  "Rechecked Bills.com (Davis still questionable, Joe Brady), ChicagoBears.com (Williams Out; Johnson has not named Bagent or Keenum, 'We'll find out on Sunday'), and NFL.com current injury grid (Holani LP, Bell LP, Allen limited, Davis Friday full, Williams DNP). No new Mongo-owned designation.",
-  "nfl.com/injuries/league/2026/reg3 is an older week page and was not used. Burden/Hurts/Downs starts hold. Holani stays bench. Achane reclaim forbidden. Gordon/Wright CLOSED.",
-  "x_direct LIMITED (no live X read). Intelligence only \u2014 no roster/FAAB/lineup mutations."
+  "Hourly ~10:16 PM ET Fri Oct 2 (2026-10-03T02:16:40Z). Delta vs tip ec5bbb2 / 01:18:40Z.",
+  "Material: Ian Rapoport (NFL Network), reported by ProFootballRumors (6:18 PM ET) and RotoWire, says Tyson Bagent is expected to start vs the Jets after first-team reps. ChicagoBears.com still has Caleb Williams Out and Ben Johnson not naming the starter. Treated as ATTRIBUTED_REPORT, not CONFIRMED_FACT.",
+  "Continuity rechecked: Patriots.com Friday page still lists Ray Davis (hamstring) questionable; Buccaneers.com Friday report still has Mayfield Out; Rams.com lists Smith/Goedert Out, Nacua cleared, Aaron Donald Out. No new Mongo-owned designation. No ESPN ownership pull; no FREE_AGENT_CONFIRMED added. FAAB $82 unchanged. Intelligence only.",
+  "X direct LIMITED: aggregator posts echoed the Rapoport Bagent expectation; not used as confirmation."
  ]
 }
