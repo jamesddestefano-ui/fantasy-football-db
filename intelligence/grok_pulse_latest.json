@@ -3,12 +3,12 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T100000Z",
- "generated_at": "2026-10-03T10:00:00Z",
- "completed_at": "2026-10-03T10:02:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T112100Z",
+ "generated_at": "2026-10-03T11:20:30Z",
+ "completed_at": "2026-10-03T11:21:00Z",
  "week": 4,
  "season": 2026,
- "run_type": "overnight",
+ "run_type": "hourly",
  "source_status": {
   "official_nfl_team": "OK",
   "beat_reporting": "OK",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Overnight 6:00 AM ET Sat Oct 3 / 10:00 UTC. Intelligence only. No new ESPN ownership pull this hour.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly 7:21 AM ET Sat Oct 3 / 11:21 UTC. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -490,9 +490,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T081600Z",
-  "completed_at": "2026-10-03T08:16:20Z",
-  "commit": "e8ec47128280289371e70f44ae34621574ee26e8",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T100000Z",
+  "completed_at": "2026-10-03T10:02:00Z",
+  "commit": "e2a33454adac15b0b8d4e51264994fd02a4b409b",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -500,13 +500,13 @@
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T10:02:00Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T100000Z"
+  "as_of": "2026-10-03T11:21:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T112100Z"
  },
  "notes": [
-  "Overnight 6:00 AM ET Sat Oct 3 (2026-10-03T10:02:00Z). Delta vs tip e8ec471 / 08:16:20Z.",
-  "No new Mongo-owned designation. NFL.com Week 4 grid unchanged: Williams Out, Allen questionable, Ray Davis questionable, Mayfield Out, Price Out. Sunday/London inactives are not posted.",
-  "Bagent remains ATTRIBUTED_REPORT. Saturday Athlon/Yardbarker and X aggregators repeat Rapoport's expectation; Johnson has not named the starter. Burden start holds. Downs start holds. Holani stays bench.",
-  "x_direct LIMITED. analytics LIMITED. No ESPN ownership pull. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only. No FAAB, lineup, IR, or transaction mutation."
+  "Hourly 7:21 AM ET Sat Oct 3 (2026-10-03T11:21:00Z). Delta vs tip e2a3345 / 10:02:00Z. Did not rewrite the 6 AM overnight pulse.",
+  "No new Mongo-owned designation. USA Today (Brian Polking, 1:39 AM UTC Sat) repeats Rapoport: Bagent expected, Johnson has not named the starter. Still ATTRIBUTED_REPORT. Fantasy Guru and CBS still have Ray Davis questionable and Keenan Allen questionable. Week 4 Sunday inactives are not posted; an NFL.com Week 3 inactives page was ignored.",
+  "Burden start holds. Downs start holds. Holani stays bench. Davis stays bench.",
+  "x_direct LIMITED. No ESPN ownership pull. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
  ]
 }
