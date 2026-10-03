@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T061000Z",
- "generated_at": "2026-10-03T06:09:00Z",
- "completed_at": "2026-10-03T06:10:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T081600Z",
+ "generated_at": "2026-10-03T08:15:40Z",
+ "completed_at": "2026-10-03T08:16:20Z",
  "week": 4,
  "season": 2026,
  "run_type": "overnight",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Overnight 2:00 AM ET Sat Oct 3 / 06:10 UTC. Intelligence only.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Overnight 4:16 AM ET Sat Oct 3 / 08:16 UTC. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -497,9 +497,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T041400Z",
-  "completed_at": "2026-10-03T04:14:00Z",
-  "commit": "8041772ee607f6bacb18cedfe13701b65e6b66e5",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T061000Z",
+  "completed_at": "2026-10-03T06:10:00Z",
+  "commit": "33644894807812e6324018bd9abb1043373ca17c",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -507,13 +507,13 @@
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T06:10:00Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T061000Z"
+  "as_of": "2026-10-03T08:16:20Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T081600Z"
  },
  "notes": [
-  "Overnight 2:00 AM ET Sat Oct 3 (2026-10-03T06:10:00Z). Delta vs prior pulse 04:14:00Z.",
-  "No new official Saturday designations or inactives. Sunday inactives are not posted. NFL.com Week 4 grid still has Ray Davis (hamstring) questionable and Keenan Allen (groin) questionable. Holani still no game designation with Price out and Charbonnet ineligible Week 4.",
-  "Bagent remains ATTRIBUTED_REPORT only. NFL.com / Rapoport (Oct 2, 8:15 PM ET) still says Johnson has not named the starter. Bears.com Friday still has Williams Out and Johnson: We'll find out on Sunday. Burden start holds. Not upgraded to CONFIRMED_FACT.",
-  "x_direct LIMITED (no beat confirmation of a starter or new Mongo injury). No ESPN ownership pull. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only. No lineup, FAAB, or ownership mutation."
+  "Overnight 4:16 AM ET Sat Oct 3 (2026-10-03T08:16:20Z). Delta vs tip 3364489 / 06:10:00Z. The 2 AM pulse was already on main; not rewritten.",
+  "No new Mongo-owned designation. Sharp Football Week 4 grid (stamp 2026-10-03 01:01 UTC, before the 2 AM pulse) still has Ray Davis questionable (Thu FP, Fri LP, hamstring) and Keenan Allen questionable (Fri DNP, rest/groin). Sunday inactives are not posted.",
+  "Bagent remains ATTRIBUTED_REPORT. NFL.com still quotes Rapoport that Johnson has not named the starter. Burden start holds. Downs start holds. Holani stays bench.",
+  "x_direct LIMITED. No ESPN ownership pull. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
  ]
 }
