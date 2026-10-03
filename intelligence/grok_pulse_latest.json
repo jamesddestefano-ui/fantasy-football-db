@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T122630Z",
- "generated_at": "2026-10-03T12:25:40Z",
- "completed_at": "2026-10-03T12:26:30Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T132600Z",
+ "generated_at": "2026-10-03T13:25:20Z",
+ "completed_at": "2026-10-03T13:26:00Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly 8:25 AM ET Sat Oct 3 / 12:26 UTC. Intelligence only. No new ESPN ownership pull this hour.",
+  "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 9:26 AM ET Sat Oct 3 / 13:26 UTC. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -490,9 +490,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T112100Z",
-  "completed_at": "2026-10-03T11:21:00Z",
-  "commit": "eb985b0a4eb43169b0a75090a1fe4def11c148b2",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T122630Z",
+  "completed_at": "2026-10-03T12:26:30Z",
+  "commit": "9d4835a12a8677b7c43a658894a883ce1679d861",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -500,15 +500,13 @@
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T12:26:30Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T122630Z"
+  "as_of": "2026-10-03T13:26:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T132600Z"
  },
  "notes": [
-  "Hourly 8:25 AM ET Sat Oct 3 (2026-10-03T12:26:30Z). Delta vs prior pulse mongo-grok-pulse-2026-10-03T112100Z completed 11:21:00Z. Did not rewrite the 7:21 AM hourly pulse.",
-  "No Mongo-material change. NFL.com Week 4 grid still has Caleb Williams Out, Baker Mayfield Out, Ray Davis questionable, Keenan Allen questionable, Jadarian Price Out, DeVonta Smith Out, Dallas Goedert Out. Sunday inactives not posted.",
-  "Bucs Nation (Gil Arcia, Oct 3, 12:38 AM UTC) repeats the Friday final report: Mayfield (right thumb) Out, Jalon Daniels in line for first start; Packers Out Aaron Banks, Jacob Monk, Warren Brinson, Anthony Campbell. Packers D/ST start holds. Not a new designation.",
-  "Yahoo recap (Sami Haider, Sat Oct 3, 1:50 AM UTC) cites Adam Schefter expecting Bagent; Ben Johnson still has not named the starter. Rapoport expectation unchanged. X this hour is aggregator repeats only (x_direct LIMITED). Burden start holds. Not a club announcement.",
-  "Xavier Legette Out (knee) is CAR context for owned Tetairoa McMillan only; McMillan has no new designation. No lineup change.",
-  "No ESPN ownership pull. Achane/Eagles remain WAIVERS_CONFIRMED, not FREE_AGENT_CONFIRMED. Gordon/Wright CLOSED. FAAB $82 unchanged. Intelligence only. No ownership, FAAB, lineup, IR, or trade mutation."
+  "Hourly 9:26 AM ET Sat Oct 3 (2026-10-03T13:26:00Z). Delta vs tip 9d4835a / 12:26:30Z.",
+  "ESPN Live Check 08:14 ET: roster unchanged, FAAB $82, no new JDD transaction. Soft ESPN tag Ray Davis bench questionable matches the designation already logged. Not a new material change.",
+  "No new Saturday designation. Bills.com and Buffalo Rumblings still have Ray Davis questionable. Bears.com still has Williams Out and Johnson unnamed (We'll find out on Sunday). Bagent stays ATTRIBUTED_REPORT. Week 4 inactives not posted.",
+  "Burden start holds. Downs start holds. Packers D/ST start holds. Holani stays bench. x_direct LIMITED. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
  ]
 }
