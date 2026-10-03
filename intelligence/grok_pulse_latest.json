@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T002255Z",
- "generated_at": "2026-10-03T00:22:10Z",
- "completed_at": "2026-10-03T00:22:55Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T011840Z",
+ "generated_at": "2026-10-03T01:18:20Z",
+ "completed_at": "2026-10-03T01:18:40Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly ~8:22 PM ET Fri Oct 2 / 00:22 UTC Oct 3. Intelligence only.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly ~9:18 PM ET Fri Oct 2 / 01:18 UTC Oct 3. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -497,9 +497,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-02T231855Z",
-  "completed_at": "2026-10-02T23:18:55Z",
-  "commit": "2e563a6682a3ed47290d68d05ad8a749dc22344e",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T002255Z",
+  "completed_at": "2026-10-03T00:22:55Z",
+  "commit": "9bab25ead6a2c8ccfc6619fa6988c5663a4c62dd",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -507,13 +507,13 @@
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T00:22:55Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T002255Z"
+  "as_of": "2026-10-03T01:18:40Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T011840Z"
  },
  "notes": [
-  "Hourly 8 PM ET Fri Oct 2 (2026-10-03T00:22:55Z). Delta vs tip 2e563a6 / 23:18:55Z.",
-  "No new Mongo-owned designation. Bills.com (Alec White, Oct 2) and CBS Week 4 report still list Ray Davis (hamstring) questionable; NFL.com practice grid shows Friday full participation, game status unchanged. Holani Friday LP no designation, Chris Bell Friday LP no designation, Williams Out, Smith/Goedert Out, Keenan Allen Q, Mitchell off the report already logged.",
-  "Burden start holds. Hurts start holds. Downs start holds. Holani stays bench. Achane reclaim forbidden. Gordon/Wright CLOSED.",
+  "Hourly 9 PM ET Fri Oct 2 (2026-10-03T01:18:40Z). Delta vs tip 9bab25e / 00:22:55Z.",
+  "Rechecked Bills.com (Davis still questionable, Joe Brady), ChicagoBears.com (Williams Out; Johnson has not named Bagent or Keenum, 'We'll find out on Sunday'), and NFL.com current injury grid (Holani LP, Bell LP, Allen limited, Davis Friday full, Williams DNP). No new Mongo-owned designation.",
+  "nfl.com/injuries/league/2026/reg3 is an older week page and was not used. Burden/Hurts/Downs starts hold. Holani stays bench. Achane reclaim forbidden. Gordon/Wright CLOSED.",
   "x_direct LIMITED (no live X read). Intelligence only \u2014 no roster/FAAB/lineup mutations."
  ]
 }
