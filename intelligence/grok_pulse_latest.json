@@ -3,12 +3,12 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T031530Z",
- "generated_at": "2026-10-03T03:15:00Z",
- "completed_at": "2026-10-03T03:15:30Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T041400Z",
+ "generated_at": "2026-10-03T04:13:30Z",
+ "completed_at": "2026-10-03T04:14:00Z",
  "week": 4,
  "season": 2026,
- "run_type": "hourly",
+ "run_type": "overnight",
  "source_status": {
   "official_nfl_team": "OK",
   "beat_reporting": "OK",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Hourly ~11:15 PM ET Fri Oct 2 / 03:15 UTC Oct 3. Intelligence only.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Overnight 12:13 AM ET Sat Oct 3 / 04:14 UTC. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -497,23 +497,23 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T021640Z",
-  "completed_at": "2026-10-03T02:16:40Z",
-  "commit": "5e8224191afd4053e4c142373a83cea6bc8ee368",
-  "no_material_change": false
+  "pulse_id": "mongo-grok-pulse-2026-10-03T031530Z",
+  "completed_at": "2026-10-03T03:15:30Z",
+  "commit": "d4013bb695cd754181c48b64374b53d9addceb83",
+  "no_material_change": true
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T03:15:30Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T031530Z"
+  "as_of": "2026-10-03T04:14:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T041400Z"
  },
  "notes": [
-  "Hourly 11 PM ET Fri Oct 2 (2026-10-03T03:15:30Z). Delta vs tip 5e82241 / 02:16:40Z.",
-  "No new Mongo-owned designation. Bagent expected start (Rapoport, NFL.com) already logged at 10:16 PM as ATTRIBUTED_REPORT. CBS Chicago (8:34 PM CDT) and ESPN (Courtney Cronin) still have Ben Johnson refusing to name the starter until Sunday. Not upgraded to CONFIRMED_FACT.",
-  "NFL.com Friday roundup still has Ray Davis (hamstring) questionable and Keenan Allen (groin) questionable. Holani LP rib and Chris Bell LP knee unchanged on the current NFL.com grid. Burden start holds. Downs start holds. Davis stays bench.",
+  "Overnight 12 AM ET Sat Oct 3 (2026-10-03T04:14:00Z). Delta vs tip d4013bb / 03:15:30Z.",
+  "No new Mongo-owned designation. NFL.com Friday grid still lists Ray Davis (hamstring) questionable and Keenan Allen (groin, also rest) questionable. George Holani remains limited with no game designation. Chris Bell Friday full / off the report was already a no-designation bench hold (USA Today 5:33 PM ET); not a new lineup change.",
+  "Bagent remains ATTRIBUTED_REPORT only. NFL.com still quotes Rapoport that Johnson has not named the starter. Burden start holds. Not upgraded to CONFIRMED_FACT.",
   "x_direct LIMITED. No ESPN ownership pull. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
  ]
 }
