@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T171400Z",
- "generated_at": "2026-10-03T17:13:00Z",
- "completed_at": "2026-10-03T17:14:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T182200Z",
+ "generated_at": "2026-10-03T18:20:00Z",
+ "completed_at": "2026-10-03T18:22:00Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 1:14 PM ET Sat Oct 3 / 17:14 UTC. Intelligence only. No new ESPN pull this hour.",
+  "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 2:22 PM ET Sat Oct 3 / 18:22 UTC. Intelligence only. No new ESPN pull this hour.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -69,8 +69,8 @@
    "team": "CHI",
    "signal_type": "qb_absence",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 162800Z. NFL.com Week 4 grid still lists Caleb Williams (hamstring) Out. Rapoport (ESPN/NFLN) and Dan Wiederer (The Athletic, NBC) still expect Tyson Bagent; Ben Johnson has not publicly named the starter. Bagent stays ATTRIBUTED_REPORT, not CONFIRMED_FACT. Burden not on Bears out/questionable list. Start holds.",
-   "mongo_impact": "start holds; second attributed Bagent report is continuity, not a lineup change.",
+   "summary": "Continuity vs 171400Z. NFL.com Week 4 grid still lists Caleb Williams (hamstring) Out. Rapoport/Wiederer still expect Tyson Bagent. Yahoo injury tracker (Oct 3, ~2:06 PM ET) attributes Ben Johnson: starter decision Sunday ('We'll find out on Sunday'). Not coach-confirmed. Burden not on Bears out/questionable list. Start holds.",
+   "mongo_impact": "start holds; Sunday deferral is continuity on an already-logged attributed Bagent report, not a lineup change.",
    "urgency": "HIGH",
    "confidence": "MEDIUM",
    "availability": "OWNED"
@@ -408,7 +408,7 @@
    "player": "Luther Burden III",
    "slot": "WR",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 162800Z. Rapoport and Wiederer expect Bagent; Johnson has not publicly named the starter. Williams Out. Burden start holds.",
+   "summary": "Continuity vs 171400Z. Johnson attributed as deferring the starter call to Sunday. Williams Out. Bagent still ATTRIBUTED_REPORT, not CONFIRMED_FACT. Burden start holds.",
    "urgency": "HIGH"
   },
   {
@@ -479,7 +479,7 @@
   {
    "topic": "Bagent expected to start \u2014 Burden QB environment",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 162800Z. Rapoport and Dan Wiederer (The Athletic) expect Bagent; Johnson has not confirmed publicly. Williams remains Out on NFL.com. Owned Burden start holds. Not a waiver or ownership change.",
+   "summary": "Continuity vs 171400Z. Rapoport and Wiederer expect Bagent. Yahoo tracker attributes Johnson deferring the public starter call to Sunday. Williams remains Out on NFL.com. Owned Burden start holds. Not a waiver or ownership change.",
    "urgency": "HIGH",
    "confidence": "MEDIUM"
   },
@@ -499,9 +499,9 @@
   }
  ],
  "material_changes": [
-  "Hourly 1:14 PM ET Sat Oct 3 (2026-10-03T17:14:00Z). Delta vs tip pulse 162800Z / completed_at 2026-10-03T16:28:00Z.",
-  "NO MATERIAL CHANGE. Allen OUT already logged; NFL.com grid now matches that Out and is not a new designation. No Mongo-owned designation moved. Davis still Questionable. Bagent still not coach-confirmed (Wiederer/Rapoport attributed only). Holani still no designation. Mayfield Out. Williams Out. McConkey still Questionable, not Out \u2014 Gadsden stays bench.",
-  "Week 4 Sunday/London inactives not posted. x_direct LIMITED. No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
+  "Hourly 2:22 PM ET Sat Oct 3 (2026-10-03T18:22:00Z). Delta vs tip pulse 171400Z / completed_at 2026-10-03T17:14:00Z.",
+  "NO MATERIAL CHANGE. Allen remains OUT (Colts team post and NFL.com). Davis still questionable. Mayfield still Out. Bagent still not coach-confirmed; newer attributed Johnson quote defers the starter announcement to Sunday, which does not change the Burden start.",
+  "Sunday/London inactives not posted. No ESPN ownership pull this hour. FAAB $82 unchanged. Intelligence only."
  ],
  "no_material_change": true,
  "prior_pulse": {
@@ -522,5 +522,10 @@
   "Hourly 1:14 PM ET Sat Oct 3 (2026-10-03T17:14:00Z). Delta vs completed_at 2026-10-03T16:28:00Z.",
   "NO MATERIAL CHANGE. Allen OUT already logged; NFL.com grid now matches. No Mongo-owned designation moved. Davis still Questionable. Bagent still not coach-confirmed. Holani still no designation. Mayfield Out. Williams Out. McConkey still Questionable, not Out \u2014 Gadsden stays bench.",
   "Week 4 Sunday/London inactives not posted. x_direct LIMITED. No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
- ]
+ ],
+ "verification": {
+  "prior_commit": "30adcbe00f7f2ba177dd77c7da226f3847ba832d",
+  "prior_completed_at": "2026-10-03T17:14:00Z",
+  "summary": "No material change vs 17:14Z. Allen remains OUT. Downs start holds. Davis still Q. Bagent still attributed only; Johnson attributed as deferring the starter call to Sunday. McConkey still Q, not Out. Sunday/London inactives not posted. Intelligence only."
+ }
 }
