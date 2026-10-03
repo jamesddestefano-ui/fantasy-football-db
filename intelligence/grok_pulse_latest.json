@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T152200Z",
- "generated_at": "2026-10-03T15:21:30Z",
- "completed_at": "2026-10-03T15:22:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T162800Z",
+ "generated_at": "2026-10-03T16:27:00Z",
+ "completed_at": "2026-10-03T16:28:00Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 11:20 AM ET Sat Oct 3 / 15:20 UTC. Intelligence only.",
+  "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 12:28 PM ET Sat Oct 3 / 16:28 UTC. Intelligence only. No new ESPN pull this hour.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -91,8 +91,8 @@
    "team": "IND",
    "signal_type": "matchup_context",
    "status": "CONFIRMED_FACT",
-   "summary": "MATERIAL vs 142130Z. Colts.com injury report now lists Keenan Allen (groin) OUT for London vs WAS (was Questionable on Friday final / prior pulse). ESPN Colts beat Stephen Holder (Oct 3, 11:02 AM ET) confirms Allen ruled out; Colts also elevated Nick Westbrook-Ikhine from the practice squad (colts.com, 10:36 AM ET). NFL.com Week 4 grid still lagged Questionable at scan time — team site is authoritative for this downgrade. Ashton Dulin remains Questionable. Downs has no designation. London inactives not posted. Start holds with upgraded WR1 target share.",
-   "mongo_impact": "start holds; Allen Out upgrades Downs target context for London 9:30 AM ET kick.",
+   "summary": "Continuity vs 152200Z. Keenan Allen (groin) remains OUT for London on Colts.com / ESPN Holder / PFT. No newer designation change this hour. Downs has no designation. London inactives not posted. Start holds.",
+   "mongo_impact": "start holds; Allen Out already logged at 15:22Z. Not a new material change.",
    "urgency": "HIGH",
    "confidence": "HIGH",
    "availability": "OWNED"
@@ -102,8 +102,8 @@
    "team": "IND",
    "signal_type": "injury_designation",
    "status": "CONFIRMED_FACT",
-   "summary": "MATERIAL vs 142130Z. Colts.com injury report updated Allen (groin) from Questionable to OUT for Week 4 London. ESPN Stephen Holder (11:02 AM ET) and RotoWire corroborate. Not Mongo-owned. Context for owned Josh Downs only. NFL.com grid still lagged Q at scan — prefer team site + beat.",
-   "mongo_impact": "lineup_signal context for Downs; no ownership mutation.",
+   "summary": "Continuity vs 152200Z. Allen (groin) remains OUT for Week 4 London. No status reversal on Colts beat or X this hour. Not Mongo-owned. Context for owned Josh Downs only.",
+   "mongo_impact": "already pulsed; no new lineup change.",
    "urgency": "HIGH",
    "confidence": "HIGH",
    "availability": "UNKNOWN"
@@ -289,9 +289,9 @@
   {
    "player": "Oronde Gadsden",
    "team": "LAC",
-   "signal_type": "depth",
+   "signal_type": "matchup_context",
    "status": "CONFIRMED_FACT",
-   "summary": "Owned bench TE depth. Continuity.",
+   "summary": "Owned bench TE. Ladd McConkey (foot) remains Questionable (NFL.com Week 4 / FFToday). Not a new downgrade to Out. Gadsden is not a start over Andrews. Availability of McConkey is opponent context only.",
    "mongo_impact": "bench hold.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -477,41 +477,38 @@
  ],
  "expert_signals": [
   {
-   "topic": "Bagent expected to start — Burden QB environment",
+   "topic": "Bagent expected to start \u2014 Burden QB environment",
    "status": "ATTRIBUTED_REPORT",
    "summary": "Continuity vs 142130Z. Rapoport expects Bagent; Johnson has not confirmed (find out Sunday). Williams remains Out on NFL.com. Owned Burden start holds. Not a waiver or ownership change.",
    "urgency": "HIGH",
    "confidence": "MEDIUM"
   },
   {
-   "topic": "Mayfield out — Packers D/ST opponent QB",
+   "topic": "Mayfield out \u2014 Packers D/ST opponent QB",
    "status": "CONFIRMED_FACT",
    "summary": "NFL.com Week 4 still lists Baker Mayfield (thumb) Out. Continuity. Packers D/ST start holds.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
-   "topic": "Keenan Allen OUT — Downs target context",
+   "topic": "Keenan Allen OUT \u2014 Downs target context",
    "status": "CONFIRMED_FACT",
-   "summary": "MATERIAL vs 142130Z. Colts.com now lists Allen (groin) OUT for London (was Questionable). ESPN Holder 11:02 AM ET and RotoWire agree. Owned Downs start holds with upgraded WR1 share. NFL.com grid lagged Q — team site governs.",
+   "summary": "MATERIAL vs 142130Z. Colts.com now lists Allen (groin) OUT for London (was Questionable). ESPN Holder 11:02 AM ET and RotoWire agree. Owned Downs start holds with upgraded WR1 share. NFL.com grid lagged Q \u2014 team site governs.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   }
  ],
  "material_changes": [
-  {
-   "topic": "Keenan Allen OUT — Josh Downs target upgrade",
-   "status": "CONFIRMED_FACT",
-   "vs_prior": "142130Z and the 15:18Z hourly still had Allen Questionable on the NFL.com grid. Saturday team/beat designation is Out.",
-   "summary": "PFT (Josh Alper, Oct 3, 11:03 AM ET), RotoWire, and Colts Wire report the Colts ruled Keenan Allen (groin) out for Week 4 London vs WAS and elevated Nick Westbrook-Ikhine from the practice squad. Owned Josh Downs start already holds; this is a target-share upgrade, not a lineup swap. NFL.com Week 4 grid still lagged Questionable at the 15:18Z scan."
-  }
+  "Hourly 12:28 PM ET Sat Oct 3 (2026-10-03T16:28:00Z). Delta vs tip 7b35d50 / completed_at 2026-10-03T15:22:00Z.",
+  "NO MATERIAL CHANGE. Allen OUT already logged. No Mongo-owned designation moved. Davis still Questionable. Bagent still not coach-confirmed (find out Sunday). Holani still no designation. Mayfield Out. Williams Out. McConkey still Questionable, not Out \u2014 Gadsden stays bench.",
+  "Week 4 Sunday/London inactives not posted. x_direct LIMITED (fan reposts of Allen OUT only). No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
  ],
- "no_material_change": false,
+ "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T151800Z",
-  "completed_at": "2026-10-03T15:18:00Z",
-  "commit": "cf1723cc20cc23a2a9b6a22e7059aa74beaf3644",
-  "note": "15:18Z hourly incorrectly set no_material_change because NFL.com Week 4 grid still said Allen questionable. Team/beat designation is OUT. This record supersedes that call."
+  "pulse_id": "mongo-grok-pulse-2026-10-03T152200Z",
+  "completed_at": "2026-10-03T15:22:00Z",
+  "commit": "7b35d50e2bf556172da9f5332458c359bc30fa97",
+  "note": "Prior hourly logged Keenan Allen OUT as material for owned Josh Downs. This noon run finds no newer designation change."
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -522,10 +519,8 @@
   "pulse_id": "mongo-grok-pulse-2026-10-03T152030Z"
  },
  "notes": [
-  "Correction vs cf1723c. Keenan Allen (groin) ruled OUT Saturday. PFT Josh Alper 11:03 AM ET, RotoWire Oct 3, Colts Wire/Paul Bretl. NFL.com grid lagged Questionable. Owned Josh Downs start holds with a target-share upgrade. Westbrook-Ikhine elevated (PFT). Not a roster transaction.",
-  "Hourly 11:20 AM ET Sat Oct 3 (2026-10-03T15:20:30Z). Delta vs tip 397da04 / 14:21:30Z.",
-  "MATERIAL: Colts.com lists Keenan Allen (groin) OUT for London (was Q). ESPN Holder 11:02 AM ET + RotoWire agree; Westbrook-Ikhine elevated. Owned Downs start holds with upgraded WR1 context. NFL.com grid lagged Q.",
-  "No other Mongo-owned designation change. Davis still Q. Bagent still not coach-confirmed. Holani LP no designation. Mayfield Out. Williams Out. Week 4 Sunday inactives not posted.",
-  "x_direct LIMITED. No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
+  "Hourly 12:28 PM ET Sat Oct 3 (2026-10-03T16:28:00Z). Delta vs tip 7b35d50 / completed_at 2026-10-03T15:22:00Z.",
+  "NO MATERIAL CHANGE. Allen OUT already logged. No Mongo-owned designation moved. Davis still Questionable. Bagent still not coach-confirmed (find out Sunday). Holani still no designation. Mayfield Out. Williams Out. McConkey still Questionable, not Out \u2014 Gadsden stays bench.",
+  "Week 4 Sunday/London inactives not posted. x_direct LIMITED (fan reposts of Allen OUT only). No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
  ]
 }
