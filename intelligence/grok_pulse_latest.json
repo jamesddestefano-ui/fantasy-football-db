@@ -3,15 +3,15 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T211907Z",
-  "generated_at": "2026-10-03T21:17:00Z",
-  "completed_at": "2026-10-03T21:19:07Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T213211Z",
+  "generated_at": "2026-10-03T21:31:11Z",
+  "completed_at": "2026-10-03T21:32:11Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
   "source_status": {
     "official_nfl_team": "OK",
-    "beat_reporting": "LIMITED",
+    "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "OK",
     "analytics": "LIMITED"
@@ -26,7 +26,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 5:15 PM ET Sat Oct 3 / 2026-10-03T21:19:07Z. Intelligence only. No new ESPN pull this hour. Legette not rostered.",
+    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly Price-IR Holani context 2026-10-03T21:32:11Z. Intelligence only. No new ESPN pull this hour. Price not rostered. Holani remains bench.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -69,7 +69,7 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4 Bears report still lists Caleb Williams (hamstring) Out and does not list Tyson Bagent or Case Keenum. ESPN (Ian Rapoport) still says Ben Johnson has not publicly named the starter. No Bears or Ben Johnson announcement found this hour. Remains ATTRIBUTED_REPORT, not CONFIRMED_FACT. Burden not on the out/questionable list. Start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. NFL.com Week 4 Bears report still lists Caleb Williams (hamstring) Out and does not list Tyson Bagent or Case Keenum. ESPN (Ian Rapoport) still says Ben Johnson has not publicly named the starter. No Bears or Ben Johnson announcement found this hour. Remains ATTRIBUTED_REPORT, not CONFIRMED_FACT. Burden not on the out/questionable list. Start holds.",
       "mongo_impact": "start holds; same attributed Bagent report, not a new lineup change.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
@@ -80,7 +80,7 @@
       "team": "PHI",
       "signal_type": "supporting_cast",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4 report still lists DeVonta Smith (hamstring) and Dallas Goedert (knee) Out. Aaron Donald Out. Puka Nacua has no game designation. Hurts is not listed out or questionable. Sunday inactives not posted. Start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. NFL.com Week 4 report still lists DeVonta Smith (hamstring) and Dallas Goedert (knee) Out. Aaron Donald Out. Puka Nacua has no game designation. Hurts is not listed out or questionable. Sunday inactives not posted. Start holds.",
       "mongo_impact": "start holds; skill-position absences and Donald out are context only.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -91,7 +91,7 @@
       "team": "IND",
       "signal_type": "matchup_context",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Allen OUT for London remains the logged team/ESPN fact and is not re-logged. Downs is not on the Colts out/questionable list. NFL.com still shows Allen as questionable, treated as page lag behind the logged OUT, not a reversal. London inactives not posted. Start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Allen OUT for London remains the logged team/ESPN fact and is not re-logged. Downs is not on the Colts out/questionable list. NFL.com still shows Allen as questionable, treated as page lag behind the logged OUT, not a reversal. London inactives not posted. Start holds.",
       "mongo_impact": "start holds; Allen OUT already logged.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -102,7 +102,7 @@
       "team": "IND",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. OUT for Week 4 London already logged (ESPN/Holder 11:02 AM ET). Not re-logged. NFL.com Week 4 page still shows him questionable (DNP, groin) as of this read; that lag is not a new designation and not a reversal. Not Mongo-owned. Context for Josh Downs only.",
+      "summary": "Carried from 211907Z; not re-opened this hour. OUT for Week 4 London already logged (ESPN/Holder 11:02 AM ET). Not re-logged. NFL.com Week 4 page still shows him questionable (DNP, groin) as of this read; that lag is not a new designation and not a reversal. Not Mongo-owned. Context for Josh Downs only.",
       "mongo_impact": "already pulsed; no new lineup change.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -112,12 +112,12 @@
       "player": "George Holani",
       "team": "SEA",
       "signal_type": "injury_practice_role_watch",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4: Holani limited, no game designation. Jadarian Price (chest) Out. Zach Charbonnet (knee) Out. Owned bench. Not a start over Miller/Bijan.",
-      "mongo_impact": "role watch only; expected-to-play does not change the Week 4 lineup.",
+      "status": "CONFIRMED_FACT",
+      "summary": "Owned bench. Sources opened this hour (Seahawks.com roster-moves note and ESPN) do not give Holani a new game designation. Jadarian Price (chest) is on IR for a minimum of four games, superseding the Friday OUT already logged. Opportunity context only. Holani stays bench unless a new game designation says otherwise. Not a start over Miller or Bijan.",
+      "mongo_impact": "opportunity context only; bench holds; not a Week 4 start.",
       "recommendation": "HOLD bench; do not start over Miller/Bijan.",
       "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "availability": "OWNED"
     },
     {
@@ -125,7 +125,7 @@
       "team": "LAC",
       "signal_type": "injury_practice",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4: not on the Chargers out/questionable list (full, no designation). Ladd McConkey (foot) still Questionable, not Out. Owned bench.",
+      "summary": "Carried from 211907Z; not re-opened this hour. NFL.com Week 4: not on the Chargers out/questionable list (full, no designation). Ladd McConkey (foot) still Questionable, not Out. Owned bench.",
       "mongo_impact": "bench hold; not a lineup change.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -136,7 +136,7 @@
       "team": "MIA",
       "signal_type": "injury_practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4: full participation, no game designation. No new designation this hour. Owned bench.",
+      "summary": "Carried from 211907Z; not re-opened this hour. NFL.com Week 4: full participation, no game designation. No new designation this hour. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -147,7 +147,7 @@
       "team": "BUF",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4 injury report still lists Ray Davis (hamstring) questionable after limited practice. Owned bench. Not a start over Bijan/Miller. Sunday inactives not posted.",
+      "summary": "Carried from 211907Z; not re-opened this hour. NFL.com Week 4 injury report still lists Ray Davis (hamstring) questionable after limited practice. Owned bench. Not a start over Bijan/Miller. Sunday inactives not posted.",
       "mongo_impact": "bench hold.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -158,7 +158,7 @@
       "team": "GB",
       "signal_type": "opponent_game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4 still lists Baker Mayfield (thumb) Out. Cooper clearance and Brinson IR were already logged from Packers.com Oct 3 and are not re-logged. NFL.com still shows Cooper questionable and Brinson out, which is page lag, not a reversal and not a start change. Packers D/ST start holds vs TB.",
+      "summary": "Carried from 211907Z; not re-opened this hour. NFL.com Week 4 still lists Baker Mayfield (thumb) Out. Cooper clearance and Brinson IR were already logged from Packers.com Oct 3 and are not re-logged. NFL.com still shows Cooper questionable and Brinson out, which is page lag, not a reversal and not a start change. Packers D/ST start holds vs TB.",
       "mongo_impact": "start holds. Cooper/Brinson notes are non-material context.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -169,7 +169,7 @@
       "team": "NO",
       "signal_type": "lineup",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Not on the Saints Week 4 out/questionable list. Etienne IR already logged. Miller remains owned Week 4 RB starter in the Kamara committee vs ATL MNF.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Not on the Saints Week 4 out/questionable list. Etienne IR already logged. Miller remains owned Week 4 RB starter in the Kamara committee vs ATL MNF.",
       "mongo_impact": "start holds; monitor MNF usage share.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -180,7 +180,7 @@
       "team": "BAL",
       "signal_type": "injury_practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4: Andrews full, no game designation. Zay Flowers still Questionable, not owned. Start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. NFL.com Week 4: Andrews full, no game designation. Zay Flowers still Questionable, not owned. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -191,7 +191,7 @@
       "team": "SEA",
       "signal_type": "injury_pup_return_window",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity: Week 4 Out / ineligible already logged; earliest Week 5. NFL.com still lists him Out (knee). Not FREE_AGENT_CONFIRMED.",
+      "summary": "Not re-logged. ESPN (Henderson, Oct 3, 2026, 04:38 PM ET) says he was designated to return to practice Thursday and must miss at least one more game. That matches the already-logged Week 4 ineligibility (earliest Week 5). Window status unchanged. Not FREE_AGENT_CONFIRMED.",
       "mongo_impact": "discovery only; Holani watch.",
       "recommendation": "No Mongo ADD without ESPN ownership proof + James approval.",
       "urgency": "MEDIUM",
@@ -201,11 +201,11 @@
     {
       "player": "Jadarian Price",
       "team": "SEA",
-      "signal_type": "injury_designation",
+      "signal_type": "roster_transaction_injury_ir",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. NFL.com Week 4: Price (chest) Out. Not Mongo-owned. Availability UNKNOWN. Context for owned Holani only.",
-      "mongo_impact": "lineup_signal context for Holani; no ownership mutation.",
-      "urgency": "LOW",
+      "summary": "Seahawks.com (John Boyle; page timestamp Oct 03, 2026 at 01:14 PM, no timezone printed) says Price was placed on injured reserve to make room on the 53-man roster. He was ruled out Friday due to a chest injury and must miss a minimum of four games before he is eligible to return. ESPN (Brady Henderson, Oct 3, 2026, 04:38 PM ET) says the team announced Saturday that it is placing him on injured reserve with a chest injury and he will miss at least the next four games. Neither article names Week 8. Week 4 is current, so the earliest return week is Week 8. Supersedes the Friday OUT already logged. Not Mongo-owned. Availability UNKNOWN. Not FREE_AGENT_CONFIRMED. Context for owned Holani only.",
+      "mongo_impact": "opportunity context for owned Holani only; no start; no ownership mutation.",
+      "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "UNKNOWN"
     },
@@ -214,7 +214,7 @@
       "team": "NO",
       "signal_type": "roster_transaction_injury_ir",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Saints IR (hamstring), min 4 games. Not Mongo-owned. Not re-logged.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Saints IR (hamstring), min 4 games. Not Mongo-owned. Not re-logged.",
       "mongo_impact": "lineup_signal for Miller only; no ownership mutation.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -225,7 +225,7 @@
       "team": "DAL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Not on the Cowboys Week 4 out/questionable list. Start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Not on the Cowboys Week 4 out/questionable list. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -258,7 +258,7 @@
       "team": "ATL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Not on the Falcons Week 4 out/questionable list. Start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Not on the Falcons Week 4 out/questionable list. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -269,7 +269,7 @@
       "team": "BAL",
       "signal_type": "depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Not on the Ravens Week 4 out/questionable list. Owned bench.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Not on the Ravens Week 4 out/questionable list. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -280,7 +280,7 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Not on the Ravens Week 4 out/questionable list. Owned bench.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Not on the Ravens Week 4 out/questionable list. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -291,7 +291,7 @@
       "team": "LAC",
       "signal_type": "matchup_context",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Not on the Chargers out/questionable list. Ladd McConkey (foot) remains Questionable, not Out. Not a start over Andrews. Owned bench.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Not on the Chargers out/questionable list. Ladd McConkey (foot) remains Questionable, not Out. Not a start over Andrews. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -366,7 +366,7 @@
       "player": "Austin Ekeler",
       "availability": "FREE_AGENT_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "ESPN Live Check 08:10 ET Oct 1: FREEAGENT onTeamId=0 percentOwned~1.32. No new ESPN ownership proof this hour. Low-priority deep stash only; no txn without James approval.",
+      "summary": "ESPN Live Check 08:10 ET Oct 1: FREEAGENT onTeamId=0 percentOwned~1.32. Carried from 211907Z; no new ESPN ownership pull. Low-priority deep stash only; no txn without James approval.",
       "mongo_impact": "Discovery only; not a priority with Mitchell already added.",
       "recommendation": "NO ADD without James approval.",
       "urgency": "LOW",
@@ -376,7 +376,7 @@
       "player": "Zach Charbonnet",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Still ineligible Week 4. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Still ineligible Week 4 (ESPN: must miss at least one more game). Already logged. Not re-logged. Not FREE_AGENT_CONFIRMED.",
       "mongo_impact": "Discovery only.",
       "recommendation": "NO ADD without ESPN proof + James approval.",
       "urgency": "MEDIUM",
@@ -396,7 +396,7 @@
       "player": "Emanuel Wilson",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Price OUT and Charbonnet ineligible put Wilson in the SEA committee with owned Holani. Not FREE_AGENT_CONFIRMED. No add.",
+      "summary": "ESPN names Emanuel Wilson with owned Holani as Seattle's top available backs after Price's IR move. The Seahawks.com news prose on the roster-moves page does not assign the backfield. Not a Mongo decision. Not FREE_AGENT_CONFIRMED. No add.",
       "mongo_impact": "Discovery only.",
       "recommendation": "NO ADD without ESPN proof + James approval.",
       "urgency": "LOW",
@@ -408,14 +408,14 @@
       "player": "Luther Burden III",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 202400Z. Williams Out. Bagent still not listed and not coach-confirmed. ATTRIBUTED_REPORT only. Burden start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Williams Out. Bagent still not listed and not coach-confirmed. ATTRIBUTED_REPORT only. Burden start holds.",
       "urgency": "HIGH"
     },
     {
       "player": "Jalen Hurts",
       "slot": "QB",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Smith and Goedert Out. Nacua no designation; Donald Out. Hurts start holds vs LAR. Inactives not posted.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Smith and Goedert Out. Nacua no designation; Donald Out. Hurts start holds vs LAR. Inactives not posted.",
       "urgency": "MEDIUM"
     },
     {
@@ -428,8 +428,8 @@
     {
       "player": "George Holani",
       "slot": "BENCH",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "No new designation. Limited, no game status. Price OUT. Charbonnet still Week 4 Out. Remains BN; not a start over Miller/Bijan.",
+      "status": "CONFIRMED_FACT",
+      "summary": "Price IR (chest), minimum four games, verified this hour on Seahawks.com and ESPN. No new Holani game designation in those sources. Remains BN. Not a start over Miller/Bijan.",
       "urgency": "MEDIUM"
     },
     {
@@ -486,7 +486,7 @@
     {
       "topic": "Bagent expected to start — Burden QB environment",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 202400Z. ESPN (Rapoport) and earlier Athletic/Wiederer reporting still say Bagent is expected, and that Ben Johnson has not publicly named him. NFL.com Week 4 Bears report lists Williams Out and does not list Bagent or Keenum. Not CONFIRMED_FACT. Owned Burden start holds.",
+      "summary": "Carried from 211907Z; not re-opened this hour. ESPN (Rapoport) and earlier Athletic/Wiederer reporting still say Bagent is expected, and that Ben Johnson has not publicly named him. NFL.com Week 4 Bears report lists Williams Out and does not list Bagent or Keenum. Not CONFIRMED_FACT. Owned Burden start holds.",
       "urgency": "HIGH",
       "confidence": "MEDIUM"
     },
@@ -500,57 +500,64 @@
     {
       "topic": "Keenan Allen OUT — Downs target context",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 202400Z. Allen remains the logged OUT (ESPN/Holder 11:02 AM ET) and is not re-logged. NFL.com still showing questionable is treated as lag, not a reversal. Owned Downs start holds. London inactives not posted.",
+      "summary": "Carried from 211907Z; not re-opened this hour. Allen remains the logged OUT (ESPN/Holder 11:02 AM ET) and is not re-logged. NFL.com still showing questionable is treated as lag, not a reversal. Owned Downs start holds. London inactives not posted.",
       "urgency": "HIGH",
+      "confidence": "HIGH"
+    },
+    {
+      "topic": "Jadarian Price IR (chest) — Holani opportunity context",
+      "status": "CONFIRMED_FACT",
+      "summary": "Seahawks.com (John Boyle; page timestamp Oct 03, 2026 at 01:14 PM, no timezone printed) and ESPN (Brady Henderson, Oct 3, 2026, 04:38 PM ET) both say Price is going on injured reserve with the chest injury, minimum four games. Context only for owned bench RB George Holani. Not a start. Price availability UNKNOWN.",
+      "urgency": "MEDIUM",
       "confidence": "HIGH"
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "topic": "Jadarian Price IR (chest) is Holani opportunity context",
+      "status": "CONFIRMED_FACT",
+      "vs_prior": "211907Z / completed_at 2026-10-03T21:19:07Z / commit e7bb00e7d67b62333ded6e989f8dcb7f39254d86 still had Jadarian Price (chest) OUT for Week 4 as SEA context only. IR and a multi-week absence were not logged.",
+      "summary": "Seahawks.com (John Boyle; page timestamp Oct 03, 2026 at 01:14 PM, no timezone printed) says Price was placed on injured reserve, was ruled out Friday due to a chest injury, and will be required to miss a minimum of four games before being eligible to return. ESPN (Brady Henderson, Oct 3, 2026, 04:38 PM ET) says the team is placing him on injured reserve with a chest injury and he will miss at least the next four games. Neither article names Week 8. From Week 4, four games is through Week 7, earliest Week 8. Owned Seahawks RB is George Holani (bench). Opportunity context only. Holani stays bench. Not a start. Price is not rostered. Availability UNKNOWN. Not FREE_AGENT_CONFIRMED."
+    }
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-03T202400Z",
-    "completed_at": "2026-10-03T20:24:00Z",
-    "commit": "a97fc41cbe386605c0fd8ad1eb7424ebed2e17cb",
-    "note": "Prior hourly logged Legette IR as McMillan context only. This 5:15 PM ET run finds no new owned-player designation."
+    "pulse_id": "mongo-grok-pulse-2026-10-03T211907Z",
+    "completed_at": "2026-10-03T21:19:07Z",
+    "commit": "e7bb00e7d67b62333ded6e989f8dcb7f39254d86",
+    "note": "Prior hourly 5:19 PM ET had Price (chest) OUT as Week 4 SEA context only. This run adds the verified Saturday IR / minimum four games as Holani context. Holani stays bench."
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
     "history": "intelligence/grok_pulse_history.jsonl",
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false,
-    "as_of": "2026-10-03T21:19:07Z",
-    "pulse_id": "mongo-grok-pulse-2026-10-03T211907Z"
+    "as_of": "2026-10-03T21:32:11Z",
+    "pulse_id": "mongo-grok-pulse-2026-10-03T213211Z"
   },
   "notes": [
-    "Hourly ~5:15 PM ET Sat Oct 3 (completed_at 2026-10-03T21:19:07Z). Delta vs tip pulse 202400Z / completed_at 2026-10-03T20:24:00Z / commit a97fc41cbe386605c0fd8ad1eb7424ebed2e17cb.",
-    "NO MATERIAL CHANGE. NFL.com Week 4 injury report read this hour (https://www.nfl.com/injuries/, Sunday Oct 4 slate). No new out/questionable designation for an owned player.",
-    "Not re-logged: Legette IR (Panthers.com Darin Gantt 4:00 PM ET, already logged; McMillan context only; availability UNKNOWN). Allen OUT. Davis Q. Mayfield OUT. Williams OUT. Bagent not coach-confirmed. Holani undesignated. McConkey Q. Downs start holds. Cooper cleared / Brinson IR already logged from Packers.com and not re-logged.",
-    "NFL.com still shows Legette Out (not IR), Allen Questionable, Cooper Questionable, and Brinson Out. Those are treated as page lag behind already-logged team notes, not reversals and not new facts.",
-    "x_direct LIMITED (X not opened). analytics LIMITED (no analytics pull). beat_reporting LIMITED (search plus NFL.com; team sites not re-opened this hour). experts OK via ESPN Rapoport, CBS Dajani 12:17 PM ET, and Pro Football Rumors recap of the same Bagent expectation. A PFT Josh Alper Legette IR note was still not found and is not cited. No ESPN ownership pull. Intelligence only. No roster/FAAB/lineup/IR/trade write."
+    "Hourly ~5:32 PM ET Sat Oct 3 (completed_at 2026-10-03T21:32:11Z). Delta vs tip pulse 211907Z / completed_at 2026-10-03T21:19:07Z / commit e7bb00e7d67b62333ded6e989f8dcb7f39254d86.",
+    "MATERIAL: Jadarian Price (SEA RB, not rostered) placed on IR Saturday. Seahawks.com John Boyle (page timestamp Oct 03, 2026 at 01:14 PM, no timezone printed): injured reserve, Friday chest OUT, minimum of four games. ESPN Brady Henderson, Oct 3, 2026, 04:38 PM ET: chest, at least the next four games. Articles do not name Week 8; from Week 4 the earliest return week is Week 8. Owned Seahawks RB is George Holani (bench). Opportunity context only. Holani stays bench. Not a start over Miller or Bijan.",
+    "Not re-logged: Charbonnet Week 4 ineligible (ESPN 'must miss at least one more game' matches the logged window; not a status change). Legette IR (McMillan context). Allen OUT. Davis Q. Mayfield OUT. Williams OUT. Bagent not coach-confirmed. Holani's own game designation (none new in sources opened). McConkey Q. NFL.com was not re-opened this hour.",
+    "Not adopted as decisions: Velus Jones Jr. practice-squad signing (on Seahawks.com, not a Mongo action). ESPN's line that Emanuel Wilson and George Holani are the top available backs (team-site news prose does not assign the backfield; Wilson stays UNKNOWN; no add). PFT Charean Williams was not opened and is not cited. x_direct LIMITED (X not opened). analytics LIMITED. No ESPN ownership pull. Intelligence only. No roster, FAAB, lineup, IR, or trade write. Achane reclaim forbidden."
   ],
   "verification": {
-    "prior_commit": "a97fc41cbe386605c0fd8ad1eb7424ebed2e17cb",
-    "prior_completed_at": "2026-10-03T20:24:00Z",
-    "prior_pulse_id": "mongo-grok-pulse-2026-10-03T202400Z",
-    "summary": "No material change vs the 202400Z hourly pulse. NFL.com Week 4 injury report (Sunday Oct 4 slate, read ~5:17 PM ET) shows the same owned-player designations already logged: Ray Davis questionable (hamstring), Mayfield out, Williams out, Holani limited with no game status, McConkey questionable, Andrews full with no designation, and Hurts, Bijan, Miller, Burden, McMillan, Downs, Lamb, Bell, Bateman, Black, Gadsden, and Mitchell not newly listed out or questionable. Bagent remains ATTRIBUTED_REPORT only; the Bears report does not name him and no Ben Johnson announcement was found. Legette IR (Panthers.com, already logged) is not re-logged; NFL.com still shows him out, which is page lag, not a reversal. Allen remains the logged OUT; NFL.com still shows him questionable, also treated as lag, not a reversal. London and Sunday inactives are not posted. No roster, FAAB, lineup, IR, or trade write.",
-    "legette_ir_status": "ALREADY_LOGGED_NOT_RELOGGED",
-    "bagent_status": "ATTRIBUTED_REPORT",
+    "prior_commit": "e7bb00e7d67b62333ded6e989f8dcb7f39254d86",
+    "prior_completed_at": "2026-10-03T21:19:07Z",
+    "prior_pulse_id": "mongo-grok-pulse-2026-10-03T211907Z",
+    "summary": "CONFIRMED on Seahawks.com (John Boyle; page timestamp Oct 03, 2026 at 01:14 PM, no timezone printed on the page) and ESPN (Brady Henderson, Oct 3, 2026, 04:38 PM ET): Seattle placed Jadarian Price on injured reserve Saturday. The team site says he was ruled out Friday with a chest injury and must miss a minimum of four games before he is eligible to return. ESPN says a chest injury and at least the next four games. Neither article names Week 8. Week 4 is the current week, so four games runs through Week 7 and the earliest return week is Week 8. That supersedes the already-logged Friday OUT and is opportunity context only for owned bench RB George Holani. Holani has no new game designation in the sources opened. He stays bench. Not a start over Miller or Bijan. Price is not on this roster. Availability UNKNOWN. Not FREE_AGENT_CONFIRMED. PFT was not opened and is not cited. No roster, FAAB, lineup, IR, or trade write.",
+    "price_ir_status": "CONFIRMED_FACT",
     "sources_opened": [
-      "https://www.nfl.com/injuries/"
+      "https://www.seahawks.com/news/seahawks-make-roster-moves-ahead-of-week-4-game-vs-chargers",
+      "https://www.espn.com/nfl/story/_/id/50093007/seahawks-place-rb-jadarian-price-chest-ir"
     ],
-    "sources_reviewed_via_search": [
-      "https://www.espn.com/nfl/story/_/id/50090746/source-bears-expected-start-qb-tyson-bagent-vs-jets",
-      "https://www.cbssports.com/nfl/news/bears-make-starting-qb-decision-week-4-matchup-jets/",
-      "https://www.profootballrumors.com/2026/10/bears-qb-tyson-bagent-likely-to-start-in-week-4",
-      "https://www.chicagobears.com/news/injury-update-caleb-williams-officially-ruled-out-for-sunday-s-game-vs-jets"
+    "sources_not_opened": [
+      "PFT Charean Williams item cited by the scan as ~4:36 PM ET Oct 3, 2026. Not opened. Not cited."
     ],
-    "sources_not_found": [
-      "PFT Josh Alper Legette IR item. Still not found this hour. Not cited."
-    ],
-    "not_adopted": "Did not upgrade Bagent to CONFIRMED_FACT. Did not treat NFL.com lag (Allen Q, Legette OUT, Cooper Q, Brinson OUT) as a reversal of already-logged team notes."
+    "not_adopted": "Did not treat the Velus Jones Jr. practice-squad signing as a Mongo decision. Did not adopt a near-term backfield hierarchy or a Holani start. ESPN names Emanuel Wilson and George Holani; the Seahawks.com news prose does not. Wilson remains UNKNOWN. Did not re-log Charbonnet. Did not cite PFT. No Week 8 sentence appears in either opened article; Week 8 is inferred from a four-game minimum during Week 4."
   },
-  "summary": "No material change vs the 202400Z hourly pulse. NFL.com Week 4 injury report (Sunday Oct 4 slate, read ~5:17 PM ET) shows the same owned-player designations already logged: Ray Davis questionable (hamstring), Mayfield out, Williams out, Holani limited with no game status, McConkey questionable, Andrews full with no designation, and Hurts, Bijan, Miller, Burden, McMillan, Downs, Lamb, Bell, Bateman, Black, Gadsden, and Mitchell not newly listed out or questionable. Bagent remains ATTRIBUTED_REPORT only; the Bears report does not name him and no Ben Johnson announcement was found. Legette IR (Panthers.com, already logged) is not re-logged; NFL.com still shows him out, which is page lag, not a reversal. Allen remains the logged OUT; NFL.com still shows him questionable, also treated as lag, not a reversal. London and Sunday inactives are not posted. No roster, FAAB, lineup, IR, or trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-03T202400Z",
-  "prior_completed_at": "2026-10-03T20:24:00Z",
-  "prior_commit": "a97fc41cbe386605c0fd8ad1eb7424ebed2e17cb"
+  "summary": "CONFIRMED on Seahawks.com (John Boyle; page timestamp Oct 03, 2026 at 01:14 PM, no timezone printed on the page) and ESPN (Brady Henderson, Oct 3, 2026, 04:38 PM ET): Seattle placed Jadarian Price on injured reserve Saturday. The team site says he was ruled out Friday with a chest injury and must miss a minimum of four games before he is eligible to return. ESPN says a chest injury and at least the next four games. Neither article names Week 8. Week 4 is the current week, so four games runs through Week 7 and the earliest return week is Week 8. That supersedes the already-logged Friday OUT and is opportunity context only for owned bench RB George Holani. Holani has no new game designation in the sources opened. He stays bench. Not a start over Miller or Bijan. Price is not on this roster. Availability UNKNOWN. Not FREE_AGENT_CONFIRMED. PFT was not opened and is not cited. No roster, FAAB, lineup, IR, or trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-03T211907Z",
+  "prior_completed_at": "2026-10-03T21:19:07Z",
+  "prior_commit": "e7bb00e7d67b62333ded6e989f8dcb7f39254d86"
 }
