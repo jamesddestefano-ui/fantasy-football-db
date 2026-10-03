@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T192000Z",
-  "generated_at": "2026-10-03T19:18:00Z",
-  "completed_at": "2026-10-03T19:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T201600Z",
+  "generated_at": "2026-10-03T20:14:00Z",
+  "completed_at": "2026-10-03T20:16:00Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
@@ -26,7 +26,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 3:20 PM ET Sat Oct 3 / 19:20 UTC. Intelligence only. No new ESPN pull this hour.",
+    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 4:16 PM ET Sat Oct 3 / 20:16 UTC. Intelligence only. No new ESPN pull this hour.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -69,8 +69,8 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 182200Z. Bears.com and live NFL.com still list Caleb Williams (hamstring) Out and do not list Tyson Bagent or Case Keenum. No new Ben Johnson or Bears naming found after 18:22Z; starter call remains deferred (ATTRIBUTED_REPORT, not CONFIRMED_FACT). Burden not on the Bears out/questionable list. Start holds.",
-      "mongo_impact": "start holds; Sunday deferral is continuity on an already-logged attributed Bagent report, not a lineup change.",
+      "summary": "Continuity vs 192000Z. Williams still Out. CBS (12:17 PM ET) and SI citing Dan Wiederer / The Athletic still report Bagent over Keenum. No new Ben Johnson announcement found after 19:20Z naming Bagent. Remains ATTRIBUTED_REPORT, not CONFIRMED_FACT. Burden not on the Bears out/questionable list. Start holds.",
+      "mongo_impact": "start holds; same attributed Bagent report, not a new lineup change.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
       "availability": "OWNED"
@@ -80,7 +80,7 @@
       "team": "PHI",
       "signal_type": "supporting_cast",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Live NFL.com still lists Smith (hamstring) and Goedert (knee) Out; Aaron Donald Out; Puka Nacua full with no designation. Hurts not listed out. Sunday inactives not posted. Start holds.",
+      "summary": "Continuity vs 192000Z. Smith (hamstring) and Goedert (knee) still Out on NFL.com Week 4 report. Aaron Donald Out; Puka Nacua no designation. Hurts not listed out. Sunday inactives not posted. Start holds.",
       "mongo_impact": "start holds; skill-position absences and Donald out are context only.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -91,8 +91,8 @@
       "team": "IND",
       "signal_type": "matchup_context",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Allen OUT for London remains the logged team/ESPN fact (Holder, 11:02 AM ET). Downs is not on the Colts out/questionable list. London inactives not posted. Start holds.",
-      "mongo_impact": "start holds; Allen OUT already logged. NFL.com catch-up is not a new material change.",
+      "summary": "Continuity vs 192000Z. Allen OUT for London remains the logged team/ESPN fact (Holder, 11:02 AM ET). Downs is not on the Colts out/questionable list. London inactives not posted. Start holds.",
+      "mongo_impact": "start holds; Allen OUT already logged.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED"
@@ -102,7 +102,7 @@
       "team": "IND",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. OUT for Week 4 London already logged (ESPN/Holder 11:02 AM ET; AP/FOX). A live ~3:17 PM ET read of NFL.com and the Colts.com injury table still displays Questionable. That lag is not a reversal and is not re-logged. Not Mongo-owned. Context for Josh Downs only.",
+      "summary": "Continuity vs 192000Z. OUT for Week 4 London already logged (ESPN/Holder 11:02 AM ET). Not re-logged. Not Mongo-owned. Context for Josh Downs only.",
       "mongo_impact": "already pulsed; no new lineup change.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -113,7 +113,7 @@
       "team": "SEA",
       "signal_type": "injury_practice_role_watch",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 182200Z. Seahawks.com lists Holani (rib) LP Wed/Thu/Fri with no game designation. NFL.com lists him limited with a blank game status. Price remains Out. Charbonnet remains Week 4 Out/ineligible on the Seahawks report. Owned bench. Not a start over Miller/Bijan.",
+      "summary": "Continuity vs 192000Z. Holani (rib) limited with no game designation. Price remains Out. Charbonnet remains Week 4 Out. Owned bench. Not a start over Miller/Bijan.",
       "mongo_impact": "role watch only; expected-to-play does not change the Week 4 lineup.",
       "recommendation": "HOLD bench; do not start over Miller/Bijan.",
       "urgency": "MEDIUM",
@@ -125,7 +125,7 @@
       "team": "LAC",
       "signal_type": "injury_practice",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Chargers report on Seahawks.com: Friday full, no game designation. NFL.com lists full participation and no game status. Owned bench.",
+      "summary": "Continuity vs 192000Z. Not on the Chargers out/questionable list. McConkey (foot) still Questionable, not Out. Owned bench.",
       "mongo_impact": "bench hold; not a lineup change.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -136,7 +136,7 @@
       "team": "MIA",
       "signal_type": "injury_practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 182200Z. NFL.com lists full participation and no game designation. No new designation this hour. Owned bench.",
+      "summary": "Continuity vs 192000Z. No new designation this hour. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -147,7 +147,7 @@
       "team": "BUF",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. NFL.com still lists Ray Davis (hamstring) limited, questionable. Owned bench. Not a start over Bijan/Miller. Sunday inactives not posted.",
+      "summary": "Continuity vs 192000Z. NFL.com Week 4 injury report still lists Ray Davis (hamstring) questionable. Owned bench. Not a start over Bijan/Miller. Sunday inactives not posted.",
       "mongo_impact": "bench hold.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -158,8 +158,8 @@
       "team": "GB",
       "signal_type": "opponent_game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. NFL.com still lists Baker Mayfield (thumb) Out. Packers D/ST start holds vs TB. No reversal.",
-      "mongo_impact": "start holds.",
+      "summary": "Continuity vs 192000Z. NFL.com and Bucs final report still list Baker Mayfield (thumb) Out; Jalon Daniels expected to start (attributed). Packers.com Oct 3: Cooper cleared concussion protocol and removed from the report; Brinson placed on IR (already Out). Neither changes the start. Packers D/ST start holds vs TB.",
+      "mongo_impact": "start holds. Cooper/Brinson notes are non-material context.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED"
@@ -169,7 +169,7 @@
       "team": "NO",
       "signal_type": "lineup",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Not on the Saints Week 4 out/questionable list. Etienne IR already logged. Miller remains owned Week 4 RB starter in the Kamara committee vs ATL MNF.",
+      "summary": "Continuity vs 192000Z. Not on the Saints Week 4 out/questionable list. Etienne IR already logged. Miller remains owned Week 4 RB starter in the Kamara committee vs ATL MNF.",
       "mongo_impact": "start holds; monitor MNF usage share.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -180,7 +180,7 @@
       "team": "BAL",
       "signal_type": "injury_practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 182200Z. Seahawks-side Ravens table and NFL.com list Andrews full with no game designation. Flowers still Questionable, not owned. Start holds.",
+      "summary": "Continuity vs 192000Z. Andrews full / no game designation. Flowers still Questionable, not owned. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -191,7 +191,7 @@
       "team": "SEA",
       "signal_type": "injury_pup_return_window",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity: Seahawks.com game status OUT (knee, LP Thu/Fri) and NFL.com lists Out. Same Week 4 ineligibility already logged; earliest Week 5. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Continuity: Week 4 Out / ineligible already logged; earliest Week 5. Not FREE_AGENT_CONFIRMED.",
       "mongo_impact": "discovery only; Holani watch.",
       "recommendation": "No Mongo ADD without ESPN ownership proof + James approval.",
       "urgency": "MEDIUM",
@@ -203,7 +203,7 @@
       "team": "SEA",
       "signal_type": "injury_designation",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Price (chest) Out on Seahawks.com and NFL.com. Not Mongo-owned. Availability UNKNOWN. Context for owned Holani only.",
+      "summary": "Continuity vs 192000Z. Price (chest) Out. Not Mongo-owned. Availability UNKNOWN. Context for owned Holani only.",
       "mongo_impact": "lineup_signal context for Holani; no ownership mutation.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -225,7 +225,7 @@
       "team": "DAL",
       "signal_type": "production",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Not on the Cowboys NFL.com out/questionable list. No new material this hour. Start holds.",
+      "summary": "Continuity vs 192000Z. Not on the Cowboys out/questionable list. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -236,7 +236,7 @@
       "team": "CAR",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Owned starter. Continuity vs 182200Z. Not on the Panthers out/questionable list. Xavier Legette (knee) Out remains CAR context only. Start holds.",
+      "summary": "Owned starter. Continuity vs 192000Z. Not on the Panthers out/questionable list. Xavier Legette (knee) Out remains CAR context only. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -258,7 +258,7 @@
       "team": "ATL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Not on the Falcons Week 4 out/questionable list. No new material this hour. Start holds.",
+      "summary": "Continuity vs 192000Z. Not on the Falcons Week 4 out/questionable list. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -269,7 +269,7 @@
       "team": "BAL",
       "signal_type": "depth",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. No new designation this hour. Owned bench.",
+      "summary": "Continuity vs 192000Z. No new designation this hour. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -280,7 +280,7 @@
       "team": "BAL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. No new designation this hour. Owned bench.",
+      "summary": "Continuity vs 192000Z. No new designation this hour. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -291,7 +291,7 @@
       "team": "LAC",
       "signal_type": "matchup_context",
       "status": "CONFIRMED_FACT",
-      "summary": "Owned bench TE. Ladd McConkey (foot) remains Questionable on NFL.com and the Chargers report, not Out. Gadsden is not a start over Andrews.",
+      "summary": "Owned bench TE. Ladd McConkey (foot) remains Questionable, not Out. Gadsden is not a start over Andrews.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -408,21 +408,21 @@
       "player": "Luther Burden III",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 182200Z. No new official starter naming. Williams Out. Bagent still ATTRIBUTED_REPORT, not CONFIRMED_FACT. Burden start holds.",
+      "summary": "Continuity vs 192000Z. Williams Out. Bagent still ATTRIBUTED_REPORT via Athletic/Wiederer (CBS 12:17 PM ET; SI recap). Not coach-confirmed this hour. Burden start holds.",
       "urgency": "HIGH"
     },
     {
       "player": "Jalen Hurts",
       "slot": "QB",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity: Smith and Goedert Out (NFL.com). Nacua cleared; Donald Out. Hurts start holds vs LAR.",
+      "summary": "Continuity: Smith and Goedert Out. Nacua cleared; Donald Out. Hurts start holds vs LAR.",
       "urgency": "MEDIUM"
     },
     {
       "player": "Josh Downs",
       "slot": "WR",
       "status": "CONFIRMED_FACT",
-      "summary": "Start holds. Allen OUT already logged. Live NFL.com/Colts.com tables still show Allen Questionable; not treated as a reversal. Inactives not posted.",
+      "summary": "Start holds. Allen OUT already logged. London inactives not posted.",
       "urgency": "HIGH"
     },
     {
@@ -450,21 +450,21 @@
       "player": "Ray Davis",
       "slot": "BENCH",
       "status": "CONFIRMED_FACT",
-      "summary": "Still questionable (hamstring) on NFL.com. Bench only. Inactives not posted.",
+      "summary": "Still questionable (hamstring) on NFL.com Week 4 report. Bench only.",
       "urgency": "MEDIUM"
     },
     {
       "player": "Packers D/ST",
       "slot": "D/ST",
       "status": "CONFIRMED_FACT",
-      "summary": "Starter slot holds. Mayfield OUT reconfirmed on NFL.com. Not a sit.",
+      "summary": "Mayfield still Out. Cooper cleared protocol (Packers.com Oct 3) and Brinson to IR do not change the start. Start holds.",
       "urgency": "HIGH"
     },
     {
       "player": "Kendre Miller",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on Saints Week 4 out list. Etienne IR already logged. Miller remains RB starter vs ATL MNF.",
+      "summary": "Not on Saints out list. Etienne IR already logged. Miller remains RB starter vs ATL MNF.",
       "urgency": "HIGH"
     },
     {
@@ -477,23 +477,23 @@
   ],
   "expert_signals": [
     {
-      "topic": "Bagent expected to start — Burden QB environment",
+      "topic": "Bagent expected to start \u2014 Burden QB environment",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Continuity vs 182200Z. No post-18:22Z Ben Johnson or Bears announcement naming Bagent or Keenum. Rapoport expectation remains ATTRIBUTED_REPORT. Williams remains Out on Bears.com and NFL.com. Owned Burden start holds.",
+      "summary": "Continuity vs 192000Z. Same Athletic report (Dan Wiederer) recycled by CBS at 12:17 PM ET and SI. No post-19:20Z Ben Johnson announcement naming Bagent. Williams remains Out. Owned Burden start holds.",
       "urgency": "HIGH",
       "confidence": "MEDIUM"
     },
     {
-      "topic": "Mayfield out — Packers D/ST opponent QB",
+      "topic": "Mayfield out \u2014 Packers D/ST opponent QB",
       "status": "CONFIRMED_FACT",
-      "summary": "NFL.com Week 4 still lists Baker Mayfield (thumb) Out. Continuity. Packers D/ST start holds.",
+      "summary": "NFL.com Week 4 and Bucs final report still list Baker Mayfield (thumb) Out. Continuity. Packers D/ST start holds.",
       "urgency": "HIGH",
       "confidence": "HIGH"
     },
     {
-      "topic": "Keenan Allen OUT — Downs target context",
+      "topic": "Keenan Allen OUT \u2014 Downs target context",
       "status": "CONFIRMED_FACT",
-      "summary": "Continuity vs 182200Z. Allen (groin) remains the logged OUT (ESPN 11:02 AM ET). Live NFL.com and Colts.com injury tables still display Questionable; not a new material change and not a reversal. Owned Downs start holds.",
+      "summary": "Continuity vs 192000Z. Allen (groin) remains the logged OUT (ESPN 11:02 AM ET). Owned Downs start holds. London inactives not posted.",
       "urgency": "HIGH",
       "confidence": "HIGH"
     }
@@ -501,27 +501,28 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-03T182200Z",
-    "completed_at": "2026-10-03T18:22:00Z",
-    "commit": "e0f50c0195a74d0c80cc4606610eea747e287a6c",
-    "note": "Prior hourly 2:22 PM ET found no designation change. This 3:20 PM ET run finds the same."
+    "pulse_id": "mongo-grok-pulse-2026-10-03T192000Z",
+    "completed_at": "2026-10-03T19:20:00Z",
+    "commit": "9442bc9e416551cc0fe8cc8f1793c4402429b1fc",
+    "note": "Prior hourly 3:20 PM ET found no designation change. This 4:16 PM ET run finds the same."
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
     "history": "intelligence/grok_pulse_history.jsonl",
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false,
-    "as_of": "2026-10-03T19:20:00Z",
-    "pulse_id": "mongo-grok-pulse-2026-10-03T192000Z"
+    "as_of": "2026-10-03T20:16:00Z",
+    "pulse_id": "mongo-grok-pulse-2026-10-03T201600Z"
   },
   "notes": [
-    "Hourly 3:20 PM ET Sat Oct 3 (2026-10-03T19:20:00Z). Delta vs tip pulse 182200Z / completed_at 2026-10-03T18:22:00Z / commit e0f50c0195a74d0c80cc4606610eea747e287a6c.",
-    "NO MATERIAL CHANGE. Allen remains the logged OUT (not re-logged). Live NFL.com and Colts.com injury tables still show him Questionable; not treated as a reversal. Davis still questionable. Mayfield still Out. Williams still Out. Bagent still not coach-confirmed. Holani still no designation. McConkey still Questionable, not Out — Gadsden stays bench. Downs start holds.",
-    "Week 4 Sunday/London inactives not posted as of ~3:17 PM ET. x_direct LIMITED (X not read). analytics LIMITED. No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
+    "Hourly 4:16 PM ET Sat Oct 3 (2026-10-03T20:16:00Z). Delta vs tip pulse 192000Z / completed_at 2026-10-03T19:20:00Z / commit 9442bc9e416551cc0fe8cc8f1793c4402429b1fc.",
+    "NO MATERIAL CHANGE. Allen remains the logged OUT (not re-logged). Davis still questionable. Mayfield still Out. Williams still Out. Bagent still Athletic-attributed only, not coach-confirmed. Holani still no designation. McConkey still Questionable, not Out \u2014 Gadsden stays bench. Downs start holds.",
+    "Packers.com Oct 3 update: Edgerrin Cooper cleared concussion protocol and was removed from the report; Warren Brinson placed on IR (already Out). Non-material for the Packers D/ST start.",
+    "Week 4 Sunday/London inactives not posted as of ~4:14 PM ET. x_direct LIMITED (no new primary beat post after 19:20Z). analytics LIMITED. No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
   ],
   "verification": {
-    "prior_commit": "e0f50c0195a74d0c80cc4606610eea747e287a6c",
-    "prior_completed_at": "2026-10-03T18:22:00Z",
-    "summary": "No material change vs 18:22Z. Allen remains OUT for London (already logged). Davis still Q. Mayfield still Out. Williams still Out. Bagent still attributed only, not coach-confirmed. Holani still no designation. McConkey still Q, not Out. Downs start holds. Week 4 inactives not posted. Intelligence only."
+    "prior_commit": "9442bc9e416551cc0fe8cc8f1793c4402429b1fc",
+    "prior_completed_at": "2026-10-03T19:20:00Z",
+    "summary": "No material change vs 19:20Z. Allen remains OUT for London (already logged). Davis still Q. Mayfield still Out. Williams still Out. Bagent still attributed only, not coach-confirmed. Holani still no designation. McConkey still Q, not Out. Cooper cleared / Brinson IR are non-material Packers context. Downs start holds. Week 4 inactives not posted. Intelligence only."
   }
 }
