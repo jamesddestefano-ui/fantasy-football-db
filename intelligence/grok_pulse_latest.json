@@ -3,15 +3,15 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T201600Z",
-  "generated_at": "2026-10-03T20:14:00Z",
-  "completed_at": "2026-10-03T20:16:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T202400Z",
+  "generated_at": "2026-10-03T20:22:00Z",
+  "completed_at": "2026-10-03T20:24:00Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
   "source_status": {
     "official_nfl_team": "OK",
-    "beat_reporting": "OK",
+    "beat_reporting": "LIMITED",
     "x_direct": "LIMITED",
     "experts": "OK",
     "analytics": "LIMITED"
@@ -26,7 +26,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 4:16 PM ET Sat Oct 3 / 20:16 UTC. Intelligence only. No new ESPN pull this hour.",
+    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly Legette-IR context 2026-10-03T20:24:00Z. Intelligence only. No new ESPN pull this hour. Legette not rostered.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -236,9 +236,9 @@
       "team": "CAR",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Owned starter. Continuity vs 192000Z. Not on the Panthers out/questionable list. Xavier Legette (knee) Out remains CAR context only. Start holds.",
-      "mongo_impact": "start holds.",
-      "urgency": "LOW",
+      "summary": "Owned starter. No new McMillan designation. Panthers.com (Darin Gantt, Oct 3, 2026, 4:00 PM ET) placed Xavier Legette on injured reserve Saturday and said Carolina will be without him for at least the next four weeks. That supersedes Friday's Week 4 OUT (knee), already logged as CAR context. Legette is not on this roster. Target-environment context only. McMillan start holds. Not a lineup swap. Legette availability UNKNOWN.",
+      "mongo_impact": "start holds. No lineup swap. No roster, FAAB, or IR write.",
+      "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "OWNED"
     },
@@ -473,6 +473,13 @@
       "status": "ATTRIBUTED_REPORT",
       "summary": "No new designation. Start holds.",
       "urgency": "LOW"
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "slot": "WR",
+      "status": "CONFIRMED_FACT",
+      "summary": "Start holds. Legette IR is CAR target-environment context only. McMillan has no new designation. Not a lineup swap.",
+      "urgency": "MEDIUM"
     }
   ],
   "expert_signals": [
@@ -498,31 +505,53 @@
       "confidence": "HIGH"
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "topic": "Xavier Legette IR (knee) is McMillan target-environment context",
+      "status": "CONFIRMED_FACT",
+      "vs_prior": "201600Z / completed_at 2026-10-03T20:16:00Z still had Legette (knee) OUT for Week 4 vs DET as CAR context only. IR and a multi-week absence were not logged.",
+      "summary": "Panthers.com (Darin Gantt, Oct 3, 2026, 4:00 PM ET) says the Panthers placed Legette on injured reserve Saturday and will be without him for at least the next four weeks. Same injury already logged Friday as a knee; the Saturday team note does not restate the body part. Pro Football Rumors (Connor Byrne, ~4:06 PM ET) attributes a minimum of four games to Jonathan Jones; that X/Athletic post was not opened. The team article does not name Week 8. McMillan has no new designation. Start holds. Not a lineup swap. Legette availability UNKNOWN."
+    }
+  ],
+  "no_material_change": false,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-03T192000Z",
-    "completed_at": "2026-10-03T19:20:00Z",
-    "commit": "9442bc9e416551cc0fe8cc8f1793c4402429b1fc",
-    "note": "Prior hourly 3:20 PM ET found no designation change. This 4:16 PM ET run finds the same."
+    "pulse_id": "mongo-grok-pulse-2026-10-03T201600Z",
+    "completed_at": "2026-10-03T20:16:00Z",
+    "commit": "380ff1cf7366d5af338a9fd516b6c2f5dd418f03",
+    "note": "Prior hourly 4:16 PM ET had Legette (knee) OUT as Week 4 CAR context only. This run adds the verified Saturday IR / at least four weeks."
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
     "history": "intelligence/grok_pulse_history.jsonl",
     "consumer": "Prime Mongo Fantasy Watch",
     "duplicate_pulse_path": false,
-    "as_of": "2026-10-03T20:16:00Z",
-    "pulse_id": "mongo-grok-pulse-2026-10-03T201600Z"
+    "as_of": "2026-10-03T20:24:00Z",
+    "pulse_id": "mongo-grok-pulse-2026-10-03T202400Z"
   },
   "notes": [
-    "Hourly 4:16 PM ET Sat Oct 3 (2026-10-03T20:16:00Z). Delta vs tip pulse 192000Z / completed_at 2026-10-03T19:20:00Z / commit 9442bc9e416551cc0fe8cc8f1793c4402429b1fc.",
-    "NO MATERIAL CHANGE. Allen remains the logged OUT (not re-logged). Davis still questionable. Mayfield still Out. Williams still Out. Bagent still Athletic-attributed only, not coach-confirmed. Holani still no designation. McConkey still Questionable, not Out \u2014 Gadsden stays bench. Downs start holds.",
-    "Packers.com Oct 3 update: Edgerrin Cooper cleared concussion protocol and was removed from the report; Warren Brinson placed on IR (already Out). Non-material for the Packers D/ST start.",
-    "Week 4 Sunday/London inactives not posted as of ~4:14 PM ET. x_direct LIMITED (no new primary beat post after 19:20Z). analytics LIMITED. No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
+    "Hourly 4:24 pm et Sat Oct 3 (2026-10-03T20:24:00Z). Delta vs tip pulse 201600Z / completed_at 2026-10-03T20:16:00Z / commit 380ff1cf7366d5af338a9fd516b6c2f5dd418f03.",
+    "MATERIAL: Xavier Legette (CAR WR, not rostered) placed on IR Saturday. Panthers.com Darin Gantt, Oct 3, 2026, 4:00 PM ET: without him for at least the next four weeks. Supersedes Friday OUT already logged as CAR context. Owned Panthers WR is Tetairoa McMillan. No new McMillan designation. Start holds. Not a lineup swap.",
+    "PFT Josh Alper ~4:10 PM ET IR item was not found, so it is not cited. Pro Football Rumors was opened and attributes a four-game minimum to Jonathan Jones of The Athletic; that post was not opened (x_direct LIMITED). analytics LIMITED.",
+    "Not re-logged: Allen OUT, Davis Q, Mayfield OUT, Williams OUT, Bagent not coach-confirmed, Holani undesignated, McConkey Q, Downs start holds. Achane reclaim forbidden. Gordon/Wright CLOSED. No ESPN ownership pull. Intelligence only. No roster/FAAB/lineup/IR/trade write."
   ],
   "verification": {
-    "prior_commit": "9442bc9e416551cc0fe8cc8f1793c4402429b1fc",
-    "prior_completed_at": "2026-10-03T19:20:00Z",
-    "summary": "No material change vs 19:20Z. Allen remains OUT for London (already logged). Davis still Q. Mayfield still Out. Williams still Out. Bagent still attributed only, not coach-confirmed. Holani still no designation. McConkey still Q, not Out. Cooper cleared / Brinson IR are non-material Packers context. Downs start holds. Week 4 inactives not posted. Intelligence only."
-  }
+    "prior_commit": "380ff1cf7366d5af338a9fd516b6c2f5dd418f03",
+    "prior_completed_at": "2026-10-03T20:16:00Z",
+    "prior_pulse_id": "mongo-grok-pulse-2026-10-03T201600Z",
+    "summary": "CONFIRMED on Panthers.com (Darin Gantt, Oct 3, 2026, 4:00 PM ET): Carolina placed Xavier Legette on injured reserve Saturday and will be without him for at least the next four weeks. That supersedes the already-logged Friday Week 4 OUT (knee) and is target-environment context only for owned starter Tetairoa McMillan. McMillan has no new designation; his start holds. Not a lineup swap. Legette is not on this roster and availability stays UNKNOWN. A claimed PFT Josh Alper IR note was not found. No roster, FAAB, lineup, IR, or trade write.",
+    "legette_ir_status": "CONFIRMED_FACT",
+    "sources_opened": [
+      "https://www.panthers.com/news/panthers-place-wide-receiver-xavier-legette-on-injured-reserve-lions-sunday-night-football-jalen-coker-status",
+      "https://www.profootballrumors.com/2026/10/panthers-place-wr-xavier-legette-on-ir",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-10-03/xavier-legette-hits-ir-with-knee-injury"
+    ],
+    "sources_not_found": [
+      "PFT Josh Alper IR item cited by NFL Pulse Bot as ~4:10 PM ET Oct 3, 2026. Searches did not return that article. Not cited as a URL."
+    ],
+    "not_adopted": "NBC Sports fantasy (Mark Garcia) says four IR games plus Week 3 equals five games minimum. Not used. Team wording is at least the next four weeks. No Week 8 quote on Panthers.com."
+  },
+  "summary": "CONFIRMED on Panthers.com (Darin Gantt, Oct 3, 2026, 4:00 PM ET): Carolina placed Xavier Legette on injured reserve Saturday and will be without him for at least the next four weeks. That supersedes the already-logged Friday Week 4 OUT (knee) and is target-environment context only for owned starter Tetairoa McMillan. McMillan has no new designation; his start holds. Not a lineup swap. Legette is not on this roster and availability stays UNKNOWN. A claimed PFT Josh Alper IR note was not found. No roster, FAAB, lineup, IR, or trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-03T201600Z",
+  "prior_completed_at": "2026-10-03T20:16:00Z",
+  "prior_commit": "380ff1cf7366d5af338a9fd516b6c2f5dd418f03"
 }
