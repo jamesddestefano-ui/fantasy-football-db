@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T041400Z",
- "generated_at": "2026-10-03T04:13:30Z",
- "completed_at": "2026-10-03T04:14:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T061000Z",
+ "generated_at": "2026-10-03T06:09:00Z",
+ "completed_at": "2026-10-03T06:10:00Z",
  "week": 4,
  "season": 2026,
  "run_type": "overnight",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Overnight 12:13 AM ET Sat Oct 3 / 04:14 UTC. Intelligence only.",
+  "source": "Authenticated ESPN Live Check 2026-10-02 ~08:14 ET NO_MATERIAL_CHANGE (FAAB $82; roster 9/7/1; no new txs) + ingest tip 989df45. Week 4 vs You're a JaGoff UNDECIDED. Overnight 2:00 AM ET Sat Oct 3 / 06:10 UTC. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -69,8 +69,8 @@
    "team": "CHI",
    "signal_type": "qb_absence",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "NEW vs 011840Z: Ian Rapoport (NFL Network), via ProFootballRumors (6:18 PM ET) and RotoWire (Oct 2), says Tyson Bagent took the majority of first-team reps and is expected to start Sunday vs NYJ. Ben Johnson has not confirmed it; Bears.com (Larry Mayer, 3:13 PM ET) still has Williams (hamstring) Out and Johnson saying 'We'll find out on Sunday.' Burden is not on the Bears out/questionable list. Start holds; QB environment is attributed Bagent, not a sit.",
-   "mongo_impact": "start holds; attributed Bagent start is context, not a lineup change.",
+   "summary": "Continuity vs 041400Z: Ian Rapoport (NFL Network) still expects Tyson Bagent to start Sunday vs NYJ after majority first-team reps. Ben Johnson has not confirmed it; Bears.com Friday still has Williams (hamstring) Out and Johnson saying 'We'll find out on Sunday.' No Saturday naming. Burden not on the Bears out/questionable list. Start holds; QB environment remains attributed Bagent, not a sit.",
+   "mongo_impact": "start holds; attributed Bagent start is continuity, not a lineup change.",
    "urgency": "HIGH",
    "confidence": "MEDIUM",
    "availability": "OWNED"
@@ -397,7 +397,7 @@
    "player": "Luther Burden III",
    "slot": "WR",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "NEW vs 011840Z: Rapoport/NFL Network (PFR, RotoWire) expects Bagent to start with Williams Out. Johnson has not named the starter (Bears.com). Burden start holds; do not sit on the attributed QB change.",
+   "summary": "Continuity vs 041400Z: Rapoport/NFL Network expects Bagent to start with Williams Out. Johnson has not named the starter (Bears.com). No Saturday confirmation. Burden start holds.",
    "urgency": "HIGH"
   },
   {
@@ -468,7 +468,7 @@
   {
    "topic": "Bagent expected to start \u2014 Burden QB environment",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Ian Rapoport (NFL Network) via ProFootballRumors and RotoWire: Bagent expected to start vs Jets after majority first-team reps. Johnson has not confirmed (Bears.com: 'We'll find out on Sunday'). Williams remains Out (Bears.com). Owned Burden start holds. Not a waiver or ownership change.",
+   "summary": "Continuity vs 041400Z. Ian Rapoport (NFL Network) via NFL.com (Oct 2, 8:15 PM ET): Bagent expected to start vs Jets after majority first-team reps. Johnson has not confirmed (Bears.com: 'We'll find out on Sunday'). Williams remains Out. Owned Burden start holds. Not a waiver or ownership change.",
    "urgency": "HIGH",
    "confidence": "MEDIUM"
   },
@@ -497,9 +497,9 @@
  "material_changes": [],
  "no_material_change": true,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T031530Z",
-  "completed_at": "2026-10-03T03:15:30Z",
-  "commit": "d4013bb695cd754181c48b64374b53d9addceb83",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T041400Z",
+  "completed_at": "2026-10-03T04:14:00Z",
+  "commit": "8041772ee607f6bacb18cedfe13701b65e6b66e5",
   "no_material_change": true
  },
  "prime_watch_handoff": {
@@ -507,13 +507,13 @@
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T04:14:00Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T041400Z"
+  "as_of": "2026-10-03T06:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T061000Z"
  },
  "notes": [
-  "Overnight 12 AM ET Sat Oct 3 (2026-10-03T04:14:00Z). Delta vs tip d4013bb / 03:15:30Z.",
-  "No new Mongo-owned designation. NFL.com Friday grid still lists Ray Davis (hamstring) questionable and Keenan Allen (groin, also rest) questionable. George Holani remains limited with no game designation. Chris Bell Friday full / off the report was already a no-designation bench hold (USA Today 5:33 PM ET); not a new lineup change.",
-  "Bagent remains ATTRIBUTED_REPORT only. NFL.com still quotes Rapoport that Johnson has not named the starter. Burden start holds. Not upgraded to CONFIRMED_FACT.",
-  "x_direct LIMITED. No ESPN ownership pull. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
+  "Overnight 2:00 AM ET Sat Oct 3 (2026-10-03T06:10:00Z). Delta vs prior pulse 04:14:00Z.",
+  "No new official Saturday designations or inactives. Sunday inactives are not posted. NFL.com Week 4 grid still has Ray Davis (hamstring) questionable and Keenan Allen (groin) questionable. Holani still no game designation with Price out and Charbonnet ineligible Week 4.",
+  "Bagent remains ATTRIBUTED_REPORT only. NFL.com / Rapoport (Oct 2, 8:15 PM ET) still says Johnson has not named the starter. Bears.com Friday still has Williams Out and Johnson: We'll find out on Sunday. Burden start holds. Not upgraded to CONFIRMED_FACT.",
+  "x_direct LIMITED (no beat confirmation of a starter or new Mongo injury). No ESPN ownership pull. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only. No lineup, FAAB, or ownership mutation."
  ]
 }
