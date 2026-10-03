@@ -3,9 +3,9 @@
  "espn_league_id": "1470431049",
  "espn_team_id": 2,
  "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-03T151800Z",
- "generated_at": "2026-10-03T15:17:30Z",
- "completed_at": "2026-10-03T15:18:00Z",
+ "pulse_id": "mongo-grok-pulse-2026-10-03T152200Z",
+ "generated_at": "2026-10-03T15:21:30Z",
+ "completed_at": "2026-10-03T15:22:00Z",
  "week": 4,
  "season": 2026,
  "run_type": "hourly",
@@ -26,7 +26,7 @@
   "props_touched": false
  },
  "roster_context": {
-  "source": "Prior authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). No new ESPN ownership pull this hour. Week 4 vs You're a JaGoff. Hourly 11:18 AM ET Sat Oct 3 / 15:18 UTC. Intelligence only.",
+  "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Hourly 11:20 AM ET Sat Oct 3 / 15:20 UTC. Intelligence only.",
   "faab_remaining": 82,
   "record": "2-1-0",
   "starters_week_4": [
@@ -69,7 +69,7 @@
    "team": "CHI",
    "signal_type": "qb_absence",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 142130Z. NFL.com Week 4 grid still lists Caleb Williams (hamstring) Out. Ben Johnson has not named the starter; Bagent expectation remains ATTRIBUTED_REPORT from Rapoport/Schefter, not newly confirmed this hour. Burden not on the Bears out/questionable list. Start holds.",
+   "summary": "Continuity vs 142130Z. NFL.com Week 4 grid still lists Caleb Williams (hamstring) Out. Rapoport expects Tyson Bagent; Ben Johnson still has not named the starter (CBS/NBC: find out Sunday). Bagent stays ATTRIBUTED_REPORT. Burden not on Bears out/questionable list. Start holds.",
    "mongo_impact": "start holds; attributed Bagent start is continuity, not a lineup change.",
    "urgency": "HIGH",
    "confidence": "MEDIUM",
@@ -80,7 +80,7 @@
    "team": "PHI",
    "signal_type": "supporting_cast",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 011840Z. Smith (hamstring) and Goedert (knee) remain Out on the NFL.com Week 4 grid, with Hollywood Brown, Zack Baun, Marcus Epps, Fred Johnson Out. Rams.com Friday report still has Aaron Donald (back) Out and Puka Nacua cleared. Hurts not listed out. Sunday inactives not posted. Start holds.",
+   "summary": "Continuity vs 142130Z. Smith (hamstring) and Goedert (knee) remain Out on NFL.com Week 4 grid; Aaron Donald Out; Puka Nacua cleared. Hurts not listed out. Sunday inactives not posted. Start holds.",
    "mongo_impact": "start holds; skill-position absences and Donald out are context only.",
    "urgency": "MEDIUM",
    "confidence": "HIGH",
@@ -90,19 +90,30 @@
    "player": "Josh Downs",
    "team": "IND",
    "signal_type": "matchup_context",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 142130Z. NFL.com Week 4 grid re-read this hour still lists Keenan Allen (groin) and Ashton Dulin (ankle) QUESTIONABLE, not Out. A search snippet that said Allen Out was incorrect against the page. Downs has no designation. London inactives not posted. Start holds.",
-   "mongo_impact": "start holds.",
-   "urgency": "MEDIUM",
-   "confidence": "MEDIUM",
+   "status": "CONFIRMED_FACT",
+   "summary": "MATERIAL vs 142130Z. Colts.com injury report now lists Keenan Allen (groin) OUT for London vs WAS (was Questionable on Friday final / prior pulse). ESPN Colts beat Stephen Holder (Oct 3, 11:02 AM ET) confirms Allen ruled out; Colts also elevated Nick Westbrook-Ikhine from the practice squad (colts.com, 10:36 AM ET). NFL.com Week 4 grid still lagged Questionable at scan time — team site is authoritative for this downgrade. Ashton Dulin remains Questionable. Downs has no designation. London inactives not posted. Start holds with upgraded WR1 target share.",
+   "mongo_impact": "start holds; Allen Out upgrades Downs target context for London 9:30 AM ET kick.",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
    "availability": "OWNED"
+  },
+  {
+   "player": "Keenan Allen",
+   "team": "IND",
+   "signal_type": "injury_designation",
+   "status": "CONFIRMED_FACT",
+   "summary": "MATERIAL vs 142130Z. Colts.com injury report updated Allen (groin) from Questionable to OUT for Week 4 London. ESPN Stephen Holder (11:02 AM ET) and RotoWire corroborate. Not Mongo-owned. Context for owned Josh Downs only. NFL.com grid still lagged Q at scan — prefer team site + beat.",
+   "mongo_impact": "lineup_signal context for Downs; no ownership mutation.",
+   "urgency": "HIGH",
+   "confidence": "HIGH",
+   "availability": "UNKNOWN"
   },
   {
    "player": "George Holani",
    "team": "SEA",
    "signal_type": "injury_practice_role_watch",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 112100Z. No Saturday designation change found. Prior Friday report: Holani (rib) limited, no game designation; Price Out; Charbonnet out/ineligible Week 4. Owned bench. Not a start over Miller/Bijan. Wilson availability UNKNOWN.",
+   "summary": "Continuity vs 142130Z. NFL.com/Seahawks: Holani (rib) Friday limited, no game designation; Price Out; Charbonnet Out/ineligible Week 4. Owned bench. Not a start over Miller/Bijan.",
    "mongo_impact": "role watch only; expected-to-play does not change the Week 4 lineup.",
    "recommendation": "HOLD bench; do not start over Miller/Bijan.",
    "urgency": "MEDIUM",
@@ -114,7 +125,7 @@
    "team": "LAC",
    "signal_type": "injury_practice",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 211645Z. Chargers.com Friday report had Mitchell (ankle) Friday Full and off the report. NFL.com Week 4 Chargers questionable/out group does not include him. Owned bench. Cleared does not jump him over Bijan/Miller.",
+   "summary": "Continuity vs 142130Z. NFL.com Chargers: Mitchell Full, not in out/questionable group. Owned bench.",
    "mongo_impact": "bench hold; not a lineup change.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -125,7 +136,7 @@
    "team": "MIA",
    "signal_type": "injury_practice",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 211645Z. RotoWire/Furones full Friday, no Sunday designation. No Saturday update found. Owned bench. Not a start over Downs/McMillan/Lamb/Burden.",
+   "summary": "Continuity vs 142130Z. NFL.com: Bell Friday Full, no game designation. Owned bench.",
    "mongo_impact": "bench hold.",
    "urgency": "LOW",
    "confidence": "MEDIUM",
@@ -136,7 +147,7 @@
    "team": "BUF",
    "signal_type": "injury_designation",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 142130Z. NFL.com Week 4 grid still lists Ray Davis (hamstring) questionable. X aggregator @FP_BuffaloBills 15:00 UTC repeats questionable, not a new designation. Owned bench. Sunday inactives not posted.",
+   "summary": "Continuity vs 142130Z. NFL.com Week 4 still lists Ray Davis (hamstring) questionable, Friday limited. Owned bench. Not a start over Bijan/Miller. Sunday inactives not posted.",
    "mongo_impact": "bench hold.",
    "urgency": "MEDIUM",
    "confidence": "HIGH",
@@ -147,7 +158,7 @@
    "team": "GB",
    "signal_type": "opponent_game_status",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 142130Z. NFL.com Week 4 grid still has Baker Mayfield (right thumb) Out. No reversal this hour. Start holds vs TB. Inactives not posted.",
+   "summary": "Continuity vs 142130Z. NFL.com Week 4 still has Baker Mayfield (thumb) Out. Packers D/ST start holds vs TB. No reversal.",
    "mongo_impact": "start holds.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -158,7 +169,7 @@
    "team": "NO",
    "signal_type": "lineup",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity vs 211645Z. Saints.com Friday injury report does not list Miller. Etienne IR already logged. Miller remains owned Week 4 RB starter in the Kamara/Donaldson committee vs ATL MNF. Bijan not on the Falcons Friday list. No Saturday inactive list (MNF).",
+   "summary": "Continuity vs 142130Z. Saints Week 4 table does not list Miller. Etienne IR already logged. Miller remains owned Week 4 RB starter in Kamara/Donaldson committee vs ATL MNF.",
    "mongo_impact": "start holds; monitor MNF usage share.",
    "urgency": "HIGH",
    "confidence": "HIGH",
@@ -169,7 +180,7 @@
    "team": "BAL",
    "signal_type": "injury_practice",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 211645Z. Not on the Ravens questionable list in the prior NBC Sports final-report note. No new Andrews designation this hour. Start holds.",
+   "summary": "Continuity vs 142130Z. NFL.com Ravens: Andrews Full, no designation. Start holds.",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "MEDIUM",
@@ -225,7 +236,7 @@
    "team": "CAR",
    "signal_type": "usage",
    "status": "CONFIRMED_FACT",
-   "summary": "Owned starter. No new Week 4 designation this hour. Teammate Xavier Legette (knee) Out on Saturday injury rolls is context only. Do NOT confuse with unowned TB WR Jalen McMillan (IR).",
+   "summary": "Owned starter. Continuity. Xavier Legette (knee) Out on NFL.com is CAR context only. Start holds.",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -247,7 +258,7 @@
    "team": "ATL",
    "signal_type": "usage",
    "status": "CONFIRMED_FACT",
-   "summary": "Owned RB1 starter. MNF vs NO. Not on the Saints.com Friday Falcons injury table. Continuity.",
+   "summary": "Owned RB1 starter. MNF vs NO. Not on Falcons injury designations of concern. Continuity.",
    "mongo_impact": "start holds.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -280,7 +291,7 @@
    "team": "LAC",
    "signal_type": "depth",
    "status": "CONFIRMED_FACT",
-   "summary": "Owned bench TE depth. Not in the NFL.com Chargers out group. Continuity.",
+   "summary": "Owned bench TE depth. Continuity.",
    "mongo_impact": "bench hold.",
    "urgency": "LOW",
    "confidence": "HIGH",
@@ -397,35 +408,35 @@
    "player": "Luther Burden III",
    "slot": "WR",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 112100Z. Rapoport/Schefter expect Bagent; Johnson has not named the starter. Williams remains Out. Burden start holds.",
+   "summary": "Continuity vs 142130Z. Rapoport expects Bagent; Johnson has not named starter. Williams Out. Burden start holds.",
    "urgency": "HIGH"
   },
   {
    "player": "Jalen Hurts",
    "slot": "QB",
    "status": "CONFIRMED_FACT",
-   "summary": "Continuity: Smith and Goedert Out (NFL.com). Nacua cleared; Aaron Donald Out on Rams.com. Hurts start holds vs LAR.",
+   "summary": "Continuity: Smith and Goedert Out (NFL.com). Nacua cleared; Donald Out. Hurts start holds vs LAR.",
    "urgency": "MEDIUM"
   },
   {
    "player": "Josh Downs",
    "slot": "WR",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Start holds. Allen still questionable on the NFL.com Week 4 grid. No Saturday designation change. London inactives not posted.",
-   "urgency": "MEDIUM"
+   "status": "CONFIRMED_FACT",
+   "summary": "Start holds. MATERIAL: Allen now OUT on Colts.com (was Q). Downs is Colts WR1 for London with Pierce on IR. Inactives not posted.",
+   "urgency": "HIGH"
   },
   {
    "player": "George Holani",
    "slot": "BENCH",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "No Saturday designation change. Price OUT and Charbonnet out Week 4. Remains BN; not a start over Miller/Bijan.",
+   "summary": "No Saturday designation change. Price OUT and Charbonnet Out Week 4. Remains BN; not a start over Miller/Bijan.",
    "urgency": "MEDIUM"
   },
   {
    "player": "Keaton Mitchell",
    "slot": "BENCH",
    "status": "CONFIRMED_FACT",
-   "summary": "Already cleared (Chargers Friday Full, off report). Still not a start over Miller/Bijan.",
+   "summary": "Already cleared (Full, off report). Still not a start over Miller/Bijan.",
    "urgency": "LOW"
   },
   {
@@ -439,28 +450,28 @@
    "player": "Ray Davis",
    "slot": "BENCH",
    "status": "CONFIRMED_FACT",
-   "summary": "Still questionable (hamstring) on NFL.com / Patriots.com. Bench only. Inactives not posted.",
+   "summary": "Still questionable (hamstring) on NFL.com. Bench only. Inactives not posted.",
    "urgency": "MEDIUM"
   },
   {
    "player": "Packers D/ST",
    "slot": "D/ST",
    "status": "CONFIRMED_FACT",
-   "summary": "Starter slot holds. Mayfield OUT reconfirmed on NFL.com and Bucs Nation Saturday recap. Not a sit.",
+   "summary": "Starter slot holds. Mayfield OUT reconfirmed on NFL.com. Not a sit.",
    "urgency": "HIGH"
   },
   {
    "player": "Kendre Miller",
    "slot": "RB",
    "status": "CONFIRMED_FACT",
-   "summary": "Not on Saints.com Friday report. Etienne IR already logged. Miller remains RB starter vs ATL MNF.",
+   "summary": "Not on Saints Week 4 out list. Etienne IR already logged. Miller remains RB starter vs ATL MNF.",
    "urgency": "HIGH"
   },
   {
    "player": "Mark Andrews",
    "slot": "TE",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "No new designation this hour. Start holds.",
+   "summary": "No new designation. Start holds.",
    "urgency": "LOW"
   }
  ],
@@ -468,45 +479,53 @@
   {
    "topic": "Bagent expected to start — Burden QB environment",
    "status": "ATTRIBUTED_REPORT",
-   "summary": "Continuity vs 112100Z. Ian Rapoport (NFL Network, Oct 2 ~8:15 PM ET) expects Bagent after majority first-team reps. Yahoo recap (Sami Haider, Sat Oct 3, 1:50 AM UTC) cites Adam Schefter with the same expectation. Ben Johnson has not confirmed. X aggregators this hour repeat the report only. Williams remains Out on the NFL.com Week 4 grid. Owned Burden start holds. Not a waiver or ownership change.",
+   "summary": "Continuity vs 142130Z. Rapoport expects Bagent; Johnson has not confirmed (find out Sunday). Williams remains Out on NFL.com. Owned Burden start holds. Not a waiver or ownership change.",
    "urgency": "HIGH",
    "confidence": "MEDIUM"
   },
   {
    "topic": "Mayfield out — Packers D/ST opponent QB",
    "status": "CONFIRMED_FACT",
-   "summary": "NFL.com Week 4 grid and Bucs Nation (Gil Arcia, Oct 3, 12:38 AM UTC) still list Baker Mayfield (right thumb) Out. Jalon Daniels in line for first start. Continuity, not a new designation. Packers D/ST start holds.",
+   "summary": "NFL.com Week 4 still lists Baker Mayfield (thumb) Out. Continuity. Packers D/ST start holds.",
    "urgency": "HIGH",
    "confidence": "HIGH"
   },
   {
-   "topic": "Keenan Allen questionable — Downs target context",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "NFL.com Week 4 grid still has Allen (groin) questionable for London. No Saturday designation change this hour. Downs start holds.",
-   "urgency": "MEDIUM",
-   "confidence": "MEDIUM"
+   "topic": "Keenan Allen OUT — Downs target context",
+   "status": "CONFIRMED_FACT",
+   "summary": "MATERIAL vs 142130Z. Colts.com now lists Allen (groin) OUT for London (was Questionable). ESPN Holder 11:02 AM ET and RotoWire agree. Owned Downs start holds with upgraded WR1 share. NFL.com grid lagged Q — team site governs.",
+   "urgency": "HIGH",
+   "confidence": "HIGH"
   }
  ],
- "material_changes": [],
- "no_material_change": true,
+ "material_changes": [
+  {
+   "topic": "Keenan Allen OUT — Josh Downs target upgrade",
+   "status": "CONFIRMED_FACT",
+   "vs_prior": "142130Z and the 15:18Z hourly still had Allen Questionable on the NFL.com grid. Saturday team/beat designation is Out.",
+   "summary": "PFT (Josh Alper, Oct 3, 11:03 AM ET), RotoWire, and Colts Wire report the Colts ruled Keenan Allen (groin) out for Week 4 London vs WAS and elevated Nick Westbrook-Ikhine from the practice squad. Owned Josh Downs start already holds; this is a target-share upgrade, not a lineup swap. NFL.com Week 4 grid still lagged Questionable at the 15:18Z scan."
+  }
+ ],
+ "no_material_change": false,
  "prior_pulse": {
-  "pulse_id": "mongo-grok-pulse-2026-10-03T142130Z",
-  "completed_at": "2026-10-03T14:21:30Z",
-  "commit": "397da04ba4ddd0f89b7b6c80172aa1347c22c6c5"
+  "pulse_id": "mongo-grok-pulse-2026-10-03T151800Z",
+  "completed_at": "2026-10-03T15:18:00Z",
+  "commit": "cf1723cc20cc23a2a9b6a22e7059aa74beaf3644",
+  "note": "15:18Z hourly incorrectly set no_material_change because NFL.com Week 4 grid still said Allen questionable. Team/beat designation is OUT. This record supersedes that call."
  },
  "prime_watch_handoff": {
   "canonical_feed": "intelligence/grok_pulse_latest.json",
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-03T14:21:30Z",
-  "pulse_id": "mongo-grok-pulse-2026-10-03T142130Z"
+  "as_of": "2026-10-03T15:20:30Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-03T152030Z"
  },
  "notes": [
-  "11:18 AM ET Sat Oct 3 scan. NFL.com Week 4 grid reconfirmed: Keenan Allen (groin) still QUESTIONABLE (search snippet saying Out was wrong), Ray Davis (hamstring) still QUESTIONABLE, Caleb Williams (hamstring) still OUT, Baker Mayfield (right thumb) still OUT, Zay Flowers (hamstring) still QUESTIONABLE. Sunday inactives not posted. X: aggregator repeats only (FP_BuffaloBills 15:00 UTC Ray Davis questionable). No ESPN ownership pull. No lineup or waiver action.",
-  "Hourly 10:21 AM ET Sat Oct 3 (2026-10-03T14:21:30Z). Delta vs tip 7753b84 / 13:26:00Z.",
-  "No new Mongo-owned designation. USA Today (Nick Wojton, 11:45 AM UTC, before the 9:26 AM pulse) still lists Ray Davis questionable on the final Bills report. CBS still has Keenan Allen questionable. Bears.com / Wire Report: Williams Out, Johnson has not named Bagent or Keenum. Bagent stays ATTRIBUTED_REPORT.",
-  "An ESPN Week 4 inactives page is a preview, not a posted inactive list. Sunday inactives are not out. Burden, Hurts, Downs, and Packers D/ST starts hold. Holani and Davis stay bench.",
+  "Correction vs cf1723c. Keenan Allen (groin) ruled OUT Saturday. PFT Josh Alper 11:03 AM ET, RotoWire Oct 3, Colts Wire/Paul Bretl. NFL.com grid lagged Questionable. Owned Josh Downs start holds with a target-share upgrade. Westbrook-Ikhine elevated (PFT). Not a roster transaction.",
+  "Hourly 11:20 AM ET Sat Oct 3 (2026-10-03T15:20:30Z). Delta vs tip 397da04 / 14:21:30Z.",
+  "MATERIAL: Colts.com lists Keenan Allen (groin) OUT for London (was Q). ESPN Holder 11:02 AM ET + RotoWire agree; Westbrook-Ikhine elevated. Owned Downs start holds with upgraded WR1 context. NFL.com grid lagged Q.",
+  "No other Mongo-owned designation change. Davis still Q. Bagent still not coach-confirmed. Holani LP no designation. Mayfield Out. Williams Out. Week 4 Sunday inactives not posted.",
   "x_direct LIMITED. No ESPN ownership pull this hour. Achane reclaim forbidden. Gordon/Wright CLOSED. Intelligence only."
  ]
 }
