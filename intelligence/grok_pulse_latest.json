@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-04T181621Z",
-  "generated_at": "2026-10-04T18:16:21Z",
-  "completed_at": "2026-10-04T18:16:21Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-04T182500Z",
+  "generated_at": "2026-10-04T18:25:00Z",
+  "completed_at": "2026-10-04T18:25:00Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
@@ -26,7 +26,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-04 08:11 ET NO_MATERIAL_MONGO_CHANGE and Sunday Game-Day Check ~12:48 ET (tip 6386b53: Ray Davis active bench, roster/lineup unchanged, FAAB $82, record 2-1, Week 4 vs You're a JaGoff). Hourly re-read 2026-10-04T18:16:21Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
+    "source": "Authenticated ESPN Live Check 2026-10-04 08:11 ET NO_MATERIAL_MONGO_CHANGE (ESPN auth OK, JDD 2-1-0, FAAB $82, roster/IR unchanged, no tx since 2026-10-01). Hourly re-read 2026-10-04T18:25:00Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -90,10 +90,10 @@
       "player": "Jalen Hurts",
       "team": "PHI",
       "signal_type": "supporting_cast",
-      "status": "CONFIRMED_FACT",
-      "summary": "2:16 PM ET NFL.com Eagles inactive list still does not include Hurts. Smith and Goedert already logged. Lane Johnson remains absent from the NFL.com inactives list; the prior PULSE_CONFLICT is not closed and is not re-logged. Saquon Barkley questionable to return is unowned and not a Hurts designation change. Start holds.",
-      "mongo_impact": "start holds. No lineup change.",
-      "urgency": "MEDIUM",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Hurts designation unchanged and not inactive. New versus the 18:16Z pulse, which left Barkley unlogged as questionable to return: Eagles beat reporter Jeff McLane posted 2:15 PM ET that the Eagles downgraded Saquon Barkley (hamstring) to out. NFL.com notable injuries had listed him questionable to return after a first-quarter exit; Tank Bigsby entered. Not an official NFL.com inactives-page ruling. Start holds. No swap.",
+      "mongo_impact": "start holds. Barkley is not rostered. Supporting-cast only. No lineup change.",
+      "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED"
     },
@@ -371,9 +371,9 @@
     {
       "player": "Jalen Hurts",
       "slot": "QB",
-      "status": "CONFIRMED_FACT",
-      "summary": "Start holds. Not inactive. Barkley hamstring and Parkinson inactive are unowned and not a Hurts change. Lane Johnson conflict not re-logged.",
-      "urgency": "MEDIUM"
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Active. Barkley downgraded to out midgame by Eagles beat (Jeff McLane, 2:15 PM ET) after the 18:16Z pulse left him unlogged as questionable to return. Start holds.",
+      "urgency": "HIGH"
     },
     {
       "player": "Josh Downs",
@@ -455,6 +455,12 @@
   ],
   "expert_signals": [
     {
+      "player": "Saquon Barkley",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Not owned. Eagles beat Jeff McLane (@Jeff_McLane) 2:15 PM ET: downgraded to out (hamstring) for the rest of Week 4 vs LAR. Prior pulse recorded only the NFL.com questionable-to-return listing and did not log it. Hurts context only. Availability UNKNOWN. Not FREE_AGENT_CONFIRMED.",
+      "urgency": "HIGH"
+    },
+    {
       "player": "Tyson Bagent",
       "status": "ATTRIBUTED_REPORT",
       "summary": "In-game observation from Bears beat reporter Nicholas Moreano: Bagent handed off to Swift for the first TD. Not a Mongo add. Not an official team announcement.",
@@ -473,23 +479,25 @@
       "urgency": "LOW"
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    "Saquon Barkley (PHI RB, not owned) downgraded to out for the rest of Week 4 vs LAR, right hamstring, per Eagles beat Jeff McLane at 2:15 PM ET. The 18:16Z pulse left him unlogged as questionable to return (NFL.com notable injuries; Tank Bigsby entered). ATTRIBUTED_REPORT, not an official NFL.com inactives-page ruling. Hurts start holds. Availability UNKNOWN."
+  ],
+  "no_material_change": false,
   "canonical_feed": "intelligence/grok_pulse_latest.json",
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-04T17:16:00Z",
-  "notes": "Intelligence only. no_material_change=true. Hourly 2 PM ET slot. Same files only. Sparta/DFS/props not touched.",
+  "as_of": "2026-10-04T18:25:00Z",
+  "notes": "Intelligence only. no_material_change=false. Follow-up to the 18:16Z hourly after the Barkley out downgrade. Same files only. Sparta/DFS/props not touched. No ownership, FAAB, lineup, IR, or trade write.",
   "verification": {
     "status": "pending_commit",
-    "note": "official_nfl_team OK (NFL.com Week 4 inactives HTML opened this run). x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED (Bears.com dateModified still 2026-10-02T20:33:51Z; Bagent not officially named). No roster, FAAB, lineup, IR, or trade write.",
+    "note": "official_nfl_team OK (NFL.com notable injuries QTR listing already on file). beat_reporting LIMITED (Jeff McLane OUT downgrade). x_direct LIMITED (Jeff McLane post). experts LIMITED. analytics LIMITED. No roster, FAAB, lineup, IR, or trade write.",
     "read_back": "pending commit"
   },
-  "summary": "Hourly 2:16 PM ET re-read. No material change vs the 171600Z hourly pulse (completed_at 2026-10-04T17:16:00Z, commit e67416a4282d54d64ddc18ff911bffe42be41007). NFL.com Week 4 inactives HTML opened this run still has 1 p.m. lists already logged (Davis not inactive, Lamb not inactive, Andrews/Bateman/Black not inactive, Mayfield inactive, Hurts not inactive, Downs not inactive) and no new owned designation. LATE GAMES and SNF sections have places and kickoff times only: no 4:05 Dolphins-Vikings, 4:25 Chiefs-Raiders, Chargers-Seahawks, or Broncos-49ers inactive names, and no SNF inactive names. Holani, Mitchell, Gadsden, McConkey, Bell, and McMillan are not on an inactive list. Those lists were not invented. Bagent stays ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z; Johnson did not name him. The in-game observation was already logged and is not re-logged. Lane Johnson is still absent from the NFL.com inactives list; prior PULSE_CONFLICT not closed and not re-logged. Not logged: Mariota out (unowned, not a Downs change), Zay Flowers active (unowned), Colby Parkinson inactive (unowned), Saquon Barkley questionable to return (unowned, Hurts designation unchanged). Game-Day Check ~12:48 ET already cleared Ray Davis to active bench; not re-logged. No roster, FAAB, lineup, or IR write. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T171600Z",
-  "prior_completed_at": "2026-10-04T17:16:00Z",
-  "prior_commit": "e67416a4282d54d64ddc18ff911bffe42be41007",
+  "summary": "Hourly follow-up 18:25Z. Material versus 18:16Z: Barkley downgraded to out by Eagles beat (ATTRIBUTED_REPORT). Hurts start holds. Barkley not rostered. No lineup swap. ESPN Live Check 08:11 ET remains NO_MATERIAL_MONGO_CHANGE. No roster, FAAB, lineup, or IR write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T181621Z",
+  "prior_completed_at": "2026-10-04T18:16:21Z",
+  "prior_commit": "6db845a950d06f9b2a81493061791f0978fcc4cd",
   "prior_pulse": {
     "pulse_id": "mongo-grok-pulse-2026-10-04T171600Z",
     "completed_at": "2026-10-04T17:16:00Z",
