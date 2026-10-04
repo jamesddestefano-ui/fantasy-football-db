@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-04T162200Z",
-  "generated_at": "2026-10-04T16:22:00Z",
-  "completed_at": "2026-10-04T16:22:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-04T171600Z",
+  "generated_at": "2026-10-04T17:16:00Z",
+  "completed_at": "2026-10-04T17:16:00Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
@@ -26,7 +26,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-04 08:11 ET NO_MATERIAL_MONGO_CHANGE (ESPN auth OK, JDD 2-1-0, FAAB $82, roster/IR unchanged, no tx since 2026-10-01, Week 4 vs You're a JaGoff 0.0-11.7). Hourly re-read 2026-10-04T16:22:00Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
+    "source": "Authenticated ESPN Live Check 2026-10-04 08:11 ET NO_MATERIAL_MONGO_CHANGE (ESPN auth OK, JDD 2-1-0, FAAB $82, roster/IR unchanged, no tx since 2026-10-01, Week 4 vs You're a JaGoff 0.0-11.7). Hourly re-read 2026-10-04T17:16:00Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -69,8 +69,8 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "CONFIRMED_FACT",
-      "summary": "NFL.com Week 4 inactives page opened 12:22 PM ET lists Bears inactives: QB Caleb Williams, OL Ozzy Trapilo, DB Cam Lewis, DL Jayden Loving, DL Jamree Kromah, DL James Lynch. Burden is not inactive. Williams OUT is now on the official inactive list (previously injury-report Out). Starter identity is not on the NFL.com inactive list.",
-      "mongo_impact": "start holds; Williams inactive confirmed; QB starter still not official.",
+      "summary": "NFL.com Week 4 inactives page re-opened this run still does not list Burden. Caleb Williams remains inactive. Bagent is the observed in-game QB via Bears beat (ATTRIBUTED_REPORT), not an official starter announcement. 1 p.m. window already underway. Start holds.",
+      "mongo_impact": "start holds; game underway; no swap.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED"
@@ -80,10 +80,10 @@
       "team": "CHI",
       "signal_type": "qb_start",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Not upgraded to CONFIRMED_FACT. NFL.com inactive list names Williams out and does not name the starter. FOX Chicago anchor Cassie Carlson posted 12:16 PM ET that Bagent will start. SI.com Bears inactives writeup says the Bears will start Bagent instead of Case Keenum. ProFootballTalk says Bagent is expected to start. Bears.com was not re-opened; prior dateModified remains 2026-10-02T20:33:51Z with Johnson not naming a starter. X search also returned a fan post expecting Bagent; that is not evidence.",
-      "mongo_impact": "Burden start holds under an attributed Bagent report, not a confirmed team announcement.",
+      "summary": "In-game upgrade from pregame expectation, not a team release. Bears beat reporter Nicholas Moreano (@NicholasMoreano) posted 1:14 PM ET that Tyson Bagent handed off to D'Andre Swift for the game's first touchdown. Fan posts reacting to Bagent are not evidence. NFL.com inactives still list Caleb Williams out and do not name the starter. Prior FOX Chicago / SI / PFT expected-starter reports are superseded operationally by the in-game observation, still ATTRIBUTED_REPORT.",
+      "mongo_impact": "Burden start already locked. Bagent is the observed Bears QB. No add.",
       "urgency": "HIGH",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "availability": "UNKNOWN"
     },
     {
@@ -91,8 +91,8 @@
       "team": "PHI",
       "signal_type": "supporting_cast",
       "status": "CONFIRMED_FACT",
-      "summary": "NFL.com Eagles inactives: WR Hollywood Brown, WR DeVonta Smith, QB Cole Payton, S Marcus Epps, LB Zack Baun, OT Fred Johnson, TE Dallas Goedert. Hurts is not inactive. Smith and Goedert already logged. New official inactives vs prior pulse: Hollywood Brown, Zack Baun, Marcus Epps, Fred Johnson. Lane Johnson is not on this NFL.com list.",
-      "mongo_impact": "start holds. Official skill-position absences already known; new OL/LB/S inactives are context only.",
+      "summary": "NFL.com Eagles inactive list re-opened this run still does not include Hurts. Smith and Goedert already logged. Lane Johnson remains a beat/NFL.com-news vs NFL.com-inactives-list conflict, not CONFIRMED_FACT. 1 p.m. window underway. Start holds.",
+      "mongo_impact": "start holds. No lineup change.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "OWNED"
@@ -102,8 +102,8 @@
       "team": "PHI",
       "signal_type": "pulse_conflict",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "PULSE_CONFLICT. NBC Sports Philadelphia (Dave Zangaro) and PhillyVoice (Jimmy Kempski) report Lane Johnson inactive for personal reasons and Markel Bell expected to start at RT. NFL.com Week 4 inactives page opened this run does not list Lane Johnson. Not treated as CONFIRMED_FACT.",
-      "mongo_impact": "Hurts context only if later confirmed. No lineup change.",
+      "summary": "PULSE_CONFLICT narrowed, not closed. NFL.com 'injuries to monitor' article states RT Lane Johnson (personal) is inactive against the Rams. PhillyVoice (Jimmy Kempski) and Bleeding Green Nation (Brandon Lee Gowton) report the Eagles announced Lane Johnson inactive for personal reasons, with Markel Bell expected at RT. NFL.com Week 4 inactives page re-opened this run still lists Hollywood Brown, DeVonta Smith, Cole Payton, Marcus Epps, Zack Baun, Fred Johnson, and Dallas Goedert, and does not name Lane Johnson. Not treated as CONFIRMED_FACT.",
+      "mongo_impact": "Hurts context only. Game underway. No lineup change.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN"
@@ -213,7 +213,7 @@
       "team": "CAR",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "SNF inactives not posted on the NFL.com Week 4 inactives page. McMillan not newly ruled out. Legette IR already logged. Start holds.",
+      "summary": "SNF inactives still not posted on the NFL.com Week 4 inactives page. McMillan not newly ruled out. Legette IR already logged. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -224,7 +224,7 @@
       "team": "SEA",
       "signal_type": "injury_practice_role_watch",
       "status": "CONFIRMED_FACT",
-      "summary": "4:25 p.m. ET inactives not posted. Prior NFL.com status unchanged: limited, no game designation. Price IR already logged. Bench holds.",
+      "summary": "4:25 p.m. ET inactives still not posted on the NFL.com Week 4 inactives page (late-game sections empty). Prior NFL.com status unchanged: limited, no game designation. Price IR already logged. Bench holds.",
       "mongo_impact": "bench hold; not a Week 4 start.",
       "recommendation": "HOLD bench; do not start over Miller/Bijan.",
       "urgency": "MEDIUM",
@@ -236,7 +236,7 @@
       "team": "LAC",
       "signal_type": "injury_practice",
       "status": "CONFIRMED_FACT",
-      "summary": "4:25 p.m. inactives not posted. Prior full, no designation. McConkey questionable already logged, not re-logged. Owned bench.",
+      "summary": "4:25 p.m. inactives still not posted. Prior full, no designation. McConkey questionable / Rapoport likely-to-play already logged, not re-logged. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -247,7 +247,7 @@
       "team": "LAC",
       "signal_type": "matchup_context",
       "status": "CONFIRMED_FACT",
-      "summary": "4:25 p.m. inactives not posted. Not newly listed out. Owned bench.",
+      "summary": "4:25 p.m. inactives still not posted. Not newly listed out. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -258,7 +258,7 @@
       "team": "MIA",
       "signal_type": "injury_practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "4:05 p.m. inactives not posted. No new designation. Owned bench.",
+      "summary": "4:05 p.m. inactives still not posted. No new designation. Owned bench.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -365,14 +365,14 @@
       "player": "Luther Burden III",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Active on NFL.com inactives page. Williams inactive confirmed. Bagent start still ATTRIBUTED_REPORT. Start holds.",
+      "summary": "Active on NFL.com inactives page. Williams inactive confirmed. Bagent observed in-game by Bears beat, still ATTRIBUTED_REPORT. Start holds; game underway.",
       "urgency": "HIGH"
     },
     {
       "player": "Jalen Hurts",
       "slot": "QB",
       "status": "CONFIRMED_FACT",
-      "summary": "Active. Smith and Goedert inactive already logged. Lane Johnson is a beat/NFL.com conflict, not confirmed. Start holds.",
+      "summary": "Active. Smith and Goedert inactive already logged. Lane Johnson still beat/NFL.com conflict, not confirmed. Start holds; game underway.",
       "urgency": "MEDIUM"
     },
     {
@@ -435,60 +435,63 @@
       "player": "George Holani",
       "slot": "BENCH",
       "status": "CONFIRMED_FACT",
-      "summary": "4:25 inactives not posted. Bench holds.",
+      "summary": "4:25 inactives still not posted. Bench holds.",
       "urgency": "MEDIUM"
     },
     {
       "player": "Keaton Mitchell",
       "slot": "BENCH",
       "status": "CONFIRMED_FACT",
-      "summary": "4:25 inactives not posted. Bench holds.",
+      "summary": "4:25 inactives still not posted. Bench holds.",
       "urgency": "LOW"
     },
     {
       "player": "Chris Bell",
       "slot": "BENCH",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "4:05 inactives not posted. Bench holds.",
+      "summary": "4:05 inactives still not posted. Bench holds.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [
     {
       "player": "Tyson Bagent",
-      "status": "EXPERT_OPINION",
-      "summary": "SI.com and ProFootballTalk treat Bagent as the expected Bears starter with Williams inactive. Not a team announcement. Not a Mongo add.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "In-game observation from Bears beat reporter Nicholas Moreano: Bagent handed off to Swift for the first TD. Not a Mongo add. Not an official team announcement.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Lane Johnson",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "NFL.com injuries-to-monitor says Lane Johnson is inactive. PhillyVoice and Bleeding Green Nation say the Eagles announced him inactive. Official NFL.com inactives list still omits him. PULSE_CONFLICT. Hurts context only.",
       "urgency": "MEDIUM"
     },
     {
       "player": "Ladd McConkey",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "NFL.com pregame injuries note says Rapoport reports McConkey (foot) likely to play. Already logged as questionable. Not re-logged. Unowned. 4:25 inactives not posted. Gadsden/Mitchell context only.",
+      "summary": "Already logged. NFL.com injuries-to-monitor still says Rapoport reports McConkey (foot) likely to play. Not re-logged as new. Unowned. 4:25 inactives not posted. Gadsden/Mitchell context only.",
       "urgency": "LOW"
     }
   ],
   "material_changes": [
-    "NFL.com Week 4 inactives page now lists 1 p.m. ET games. Prior 15:19Z pulse had London only.",
-    "Ray Davis not on Bills inactive list after a questionable hamstring tag. Active. Bench holds.",
-    "Caleb Williams on official Bears inactive list. Luther Burden III not inactive. Bagent starter remains ATTRIBUTED_REPORT.",
-    "CeeDee Lamb, Mark Andrews, Rashod Bateman, and Kaelon Black not on their NFL.com inactive lists.",
-    "Baker Mayfield on official Buccaneers inactive list. Packers D/ST start holds.",
-    "PULSE_CONFLICT: beat reports Lane Johnson inactive; NFL.com Eagles inactive list opened this run does not name him."
+    "Tyson Bagent observed in-game as the Bears QB by beat reporter Nicholas Moreano (handoff TD). Upgrades prior ATTRIBUTED expected-starter reports. Still not an official team announcement. Burden start already locked.",
+    "PULSE_CONFLICT narrowed: NFL.com injuries-to-monitor and Eagles beat (Kempski, Bleeding Green Nation) say Lane Johnson is inactive (personal). NFL.com Week 4 inactives page re-opened this run still does not list him. Not CONFIRMED_FACT.",
+    "4:05, 4:25, and SNF inactive lists still not posted. Holani, Mitchell, Gadsden, Bell, and McMillan unchanged."
   ],
   "no_material_change": false,
   "canonical_feed": "intelligence/grok_pulse_latest.json",
   "history": "intelligence/grok_pulse_history.jsonl",
   "consumer": "Prime Mongo Fantasy Watch",
   "duplicate_pulse_path": false,
-  "as_of": "2026-10-04T16:22:00Z",
-  "notes": "Intelligence only. no_material_change=false. Hourly 12 PM ET slot. Same files only. Sparta/DFS/props not touched. No ownership, FAAB, lineup, IR, or trade write.",
+  "as_of": "2026-10-04T17:16:00Z",
+  "notes": "Intelligence only. no_material_change=false. Hourly 1 PM ET slot. Same files only. Sparta/DFS/props not touched. No ownership, FAAB, lineup, IR, or trade write.",
   "verification": {
     "status": "pending_commit",
-    "note": "official_nfl_team OK (NFL.com Week 4 inactives page opened this run). x_direct LIMITED (X keyword search, not a team account). experts LIMITED. analytics LIMITED. beat_reporting LIMITED (NBC Sports Philadelphia / PhillyVoice Lane Johnson vs NFL.com list). No roster, FAAB, lineup, IR, or trade write.",
+    "note": "official_nfl_team OK (NFL.com Week 4 inactives page re-opened; Lane Johnson still omitted). beat_reporting LIMITED (PhillyVoice, Bleeding Green Nation, NFL.com injuries-to-monitor). x_direct LIMITED (Nicholas Moreano in-game Bagent observation). experts LIMITED. analytics LIMITED. No roster, FAAB, lineup, IR, or trade write.",
     "read_back": "pending commit"
   },
-  "summary": "Hourly 12:22 PM ET. Material vs 15:19Z pulse: NFL.com now has 1 p.m. inactive lists. Owned actives not listed inactive: Burden, Hurts, Lamb, Andrews, Bateman, Black, Ray Davis (questionable cleared). Williams and Mayfield are on the official inactive lists (statuses already known). Bagent start remains ATTRIBUTED_REPORT from FOX Chicago, SI, and PFT, not CONFIRMED_FACT. Lane Johnson is a beat/NFL.com conflict, not confirmed. Late-window and SNF inactives not posted. No lineup swap. ESPN Live Check 08:11 ET remains NO_MATERIAL_MONGO_CHANGE. No roster, FAAB, lineup, or IR write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T151917Z",
-  "prior_completed_at": "2026-10-04T15:19:17Z",
-  "prior_commit": "9f5cf65512ce70255559b60925549a7c12b34635"
+  "summary": "Hourly 17:16Z. Material: Bagent observed in-game (ATTRIBUTED_REPORT, beat). Lane Johnson inactive in NFL.com news and Eagles beat, still absent from NFL.com inactives list (PULSE_CONFLICT). Late-window and SNF inactives not posted. No lineup swap. ESPN Live Check 08:11 ET remains NO_MATERIAL_MONGO_CHANGE. No roster, FAAB, lineup, or IR write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T162200Z",
+  "prior_completed_at": "2026-10-04T16:22:00Z",
+  "prior_commit": "6386b5301d81cf097387aca4d89175370891c62f"
 }
