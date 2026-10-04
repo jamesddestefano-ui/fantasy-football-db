@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-04T081648Z",
-  "generated_at": "2026-10-04T08:16:48Z",
-  "completed_at": "2026-10-04T08:16:48Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-04T100600Z",
+  "generated_at": "2026-10-04T10:06:00Z",
+  "completed_at": "2026-10-04T10:06:00Z",
   "week": 4,
   "season": 2026,
   "run_type": "overnight",
@@ -26,7 +26,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Overnight no-material re-read 2026-10-04T08:16:48Z. Intelligence only. No new ESPN ownership pull this run. Price IR already logged; Holani remains bench.",
+    "source": "Authenticated ESPN Live Check 2026-10-03 ~08:14 ET NO_MATERIAL_CHANGE (roster 17 unchanged, FAAB $82, no JDD tx since 2026-10-01). Week 4 vs You're a JaGoff. Overnight no-material re-read 2026-10-04T10:06:00Z. Intelligence only. No new ESPN ownership pull this run. Price IR already logged; Holani remains bench.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -69,7 +69,7 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Overnight NFL.com injuries re-read ~4:14 AM ET still lists Caleb Williams (hamstring) Out and does not list Tyson Bagent or Case Keenum. Bears.com page opened this run is still the Oct 2 Larry Mayer note (datePublished 2026-10-02T20:13:47Z, dateModified 2026-10-02T20:33:51Z). Ben Johnson is still quoted \"We'll find out on Sunday\" and does not name a starter. Not upgraded to CONFIRMED_FACT. X not opened. Burden is not on the out/questionable list. Start holds.",
+      "summary": "6:00 AM ET NFL.com injuries re-read still lists Caleb Williams (hamstring) Out and does not list Tyson Bagent or Case Keenum. Burden is not on the Bears out/questionable list. X opened this run: non-beat accounts still say Bagent is expected to start; not a team announcement and not upgraded to CONFIRMED_FACT. Start holds.",
       "mongo_impact": "start holds; same attributed Bagent report, not a new lineup change.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
@@ -80,7 +80,7 @@
       "team": "PHI",
       "signal_type": "supporting_cast",
       "status": "CONFIRMED_FACT",
-      "summary": "NFL.com Week 4 re-read ~4:14 AM ET still lists DeVonta Smith (hamstring) and Dallas Goedert (knee) Out. Aaron Donald Out. Puka Nacua has no game designation. Hurts is not listed out or questionable. Sunday inactives not posted (1 PM ET kickoff; 90-minute window not open). Smith/Goedert Out already logged and not re-logged. Start holds.",
+      "summary": "NFL.com Week 4 re-read ~6:00 AM ET still lists DeVonta Smith (hamstring) and Dallas Goedert (knee) Out. Aaron Donald Out. Puka Nacua has no game designation. Hurts is not listed out or questionable. Sunday inactives not posted. Smith/Goedert Out already logged and not re-logged. Start holds.",
       "mongo_impact": "start holds; skill-position absences and Donald out are context only.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -91,7 +91,7 @@
       "team": "IND",
       "signal_type": "matchup_context",
       "status": "CONFIRMED_FACT",
-      "summary": "Overnight NFL.com injuries re-read ~4:14 AM ET: Downs is not on the Colts out/questionable list. Allen OUT remains the logged fact and is not re-logged. NFL.com still shows Allen questionable, treated as page lag, not a reversal. London kickoff is 9:30 AM ET Sunday; the 90-minute inactive window is not open at ~4:14 AM ET. RotoWire lists Colts inactives as none reported yet. Start holds.",
+      "summary": "6:00 AM ET NFL.com injuries re-read: Downs is not on the Colts out/questionable list. Allen OUT remains the logged fact and is not re-logged. NFL.com still shows Allen questionable, treated as page lag, not a reversal. London kickoff 9:30 AM ET; 90-minute inactive window opens 8:00 AM ET and is not open. Start holds.",
       "mongo_impact": "start holds; Allen OUT already logged.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -113,7 +113,7 @@
       "team": "SEA",
       "signal_type": "injury_practice_role_watch",
       "status": "CONFIRMED_FACT",
-      "summary": "NFL.com Week 4 re-read ~4:14 AM ET: Holani limited participation, no game designation. Same as the 211907Z read. Price IR (chest, minimum four games) already logged at 213211Z and is not re-logged. NFL.com still listing Price out is page lag, not a reversal. Holani stays bench. Not a start over Miller or Bijan.",
+      "summary": "NFL.com Week 4 re-read ~6:00 AM ET: Holani limited participation, no game designation. Price still listed Out on NFL.com; IR already logged and that listing is page lag, not a reversal. Holani stays bench. Not a start over Miller or Bijan.",
       "mongo_impact": "opportunity context only; bench holds; not a Week 4 start.",
       "recommendation": "HOLD bench; do not start over Miller/Bijan.",
       "urgency": "MEDIUM",
@@ -158,7 +158,7 @@
       "team": "GB",
       "signal_type": "opponent_game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "Overnight NFL.com injuries re-read ~4:14 AM ET still lists Baker Mayfield (thumb) Out. Already logged, not re-logged. Cooper clearance and Brinson IR were already logged from Packers.com and are not re-logged. NFL.com still shows Cooper questionable and Brinson out, which is page lag, not a reversal and not a start change. Packers D/ST start holds vs TB.",
+      "summary": "NFL.com injuries re-read ~6:00 AM ET still lists Baker Mayfield (thumb) Out. Already logged, not re-logged. Cooper still Questionable and Brinson still Out on NFL.com; prior Packers.com clearance/IR notes are not re-logged and page lag is not a reversal. Packers D/ST start holds vs TB.",
       "mongo_impact": "start holds. Cooper/Brinson notes are non-material context.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -486,7 +486,7 @@
     {
       "topic": "Bagent expected to start \u2014 Burden QB environment",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Overnight NFL.com injuries re-read ~4:14 AM ET lists Williams Out and does not list Bagent or Keenum. Bears.com opened this run is still the Oct 2 note; Johnson still says \"We'll find out on Sunday\" and does not name a starter. Prior ESPN (Rapoport) and Wiederer attributed expectations are not re-opened as a new fact and are not upgraded to CONFIRMED_FACT. Burden start holds.",
+      "summary": "6:00 AM ET NFL.com injuries re-read lists Williams Out and does not list Bagent or Keenum. X opened this run shows only non-beat accounts saying Bagent is expected to start. Prior ESPN (Rapoport) and Wiederer attributed expectations are not re-opened as a new fact and are not upgraded to CONFIRMED_FACT. Burden start holds.",
       "urgency": "HIGH",
       "confidence": "MEDIUM"
     },
@@ -515,10 +515,9 @@
   "material_changes": [],
   "no_material_change": true,
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-04T061249Z",
-    "completed_at": "2026-10-04T06:12:49Z",
-    "commit": "562b6dce162be5d781ee2fb85ae8d03f42a55033",
-    "note": "Prior overnight 2:12 AM ET was no material change. This 4 AM slot re-read NFL.com injuries, the Colts-Commanders game center (HTML has no inactive string), and the Oct 2 Bears.com Williams-out note (dateModified still 2026-10-02T20:33:51Z). No inactive list posted. London kickoff verified 9:30 AM EDT Sunday, October 4; 90-minute window opens 8:00 AM ET and was not open at ~4:14 AM ET. No new owned designation. Bagent still not named by Johnson or the Bears."
+    "pulse_id": "mongo-grok-pulse-2026-10-04T081648Z",
+    "completed_at": "2026-10-04T08:16:48Z",
+    "commit": "11d7ad68d370f611760b75beec2d586df6005019"
   },
   "prime_watch_handoff": {
     "canonical_feed": "intelligence/grok_pulse_latest.json",
@@ -528,16 +527,14 @@
     "as_of": "2026-10-04T08:16:48Z",
     "pulse_id": "mongo-grok-pulse-2026-10-04T081648Z"
   },
-  "notes": "Intelligence only. Same files. No ownership, FAAB, lineup, IR, or trade mutation. no_material_change=true.",
+  "notes": "Intelligence only. no_material_change=true. Same files only. Sparta/DFS/props not touched.",
   "verification": {
-    "prior_commit": "562b6dce162be5d781ee2fb85ae8d03f42a55033",
-    "prior_completed_at": "2026-10-04T06:12:49Z",
-    "prior_pulse_id": "mongo-grok-pulse-2026-10-04T061249Z",
-    "summary": "Overnight 4:14 AM ET re-read. No material change vs the 061249Z overnight pulse (completed_at 2026-10-04T06:12:49Z, commit 562b6dce162be5d781ee2fb85ae8d03f42a55033). NFL.com injuries page opened this run still shows the same owned designations already logged: Ray Davis questionable (hamstring), Baker Mayfield out, Caleb Williams out, George Holani limited with no game status. Josh Downs, Jalen Hurts, Bijan Robinson, Kendre Miller, Luther Burden III, Tetairoa McMillan, Mark Andrews, CeeDee Lamb, Rashod Bateman, Kaelon Black, Oronde Gadsden, Chris Bell, and Keaton Mitchell are not newly listed out or questionable. Bagent remains ATTRIBUTED_REPORT only. NFL.com Bears report lists Williams Out and does not name Tyson Bagent or Case Keenum. Bears.com injury update opened this run is still dated Oct 2, 2026 (Larry Mayer; schema datePublished 2026-10-02T20:13:47Z, dateModified 2026-10-02T20:33:51Z) and quotes Ben Johnson: \"We'll find out on Sunday.\" Johnson did not name a starter. Not upgraded to CONFIRMED_FACT. Not re-logged: Price IR (Holani stays bench; NFL.com still showing Price out is page lag, not a reversal), Legette IR (McMillan start holds; NFL.com still out is lag), Allen OUT (NFL.com still questionable is lag), Davis Q, Mayfield OUT, Williams OUT, McConkey Q, Smith/Goedert Out, Cooper/Brinson notes, Achane WAIVERS_CONFIRMED ACL, do not reclaim. Official inactives are not posted. NFL.com Colts-Commanders game center HTML opened this run contains no inactive string. London kickoff verified 9:30 AM EDT Sunday, October 4 (NFL.com injuries header, Colts at Commanders). The 90-minute inactive window opens at 8:00 AM ET and is not open at ~4:14 AM ET; it was not adopted. Unowned London context on the same injuries page (Jayden Daniels Out, Terry McLaurin Questionable, Ashton Dulin Questionable) is not a Downs designation change and is not a material change. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED (Oct 2 Bears.com note only). No ESPN ownership pull. No roster, FAAB, lineup, IR, or trade write.",
+    "status": "pending_commit",
+    "note": "official_nfl_team OK (NFL.com injuries opened ~6:00 AM ET). x_direct LIMITED. analytics LIMITED. experts LIMITED. beat_reporting LIMITED. No ESPN ownership pull. No roster, FAAB, lineup, IR, or trade write.",
     "read_back": "pending commit"
   },
-  "summary": "Overnight 4:14 AM ET re-read. No material change vs the 061249Z overnight pulse (completed_at 2026-10-04T06:12:49Z, commit 562b6dce162be5d781ee2fb85ae8d03f42a55033). NFL.com injuries page opened this run still shows the same owned designations already logged: Ray Davis questionable (hamstring), Baker Mayfield out, Caleb Williams out, George Holani limited with no game status. Josh Downs, Jalen Hurts, Bijan Robinson, Kendre Miller, Luther Burden III, Tetairoa McMillan, Mark Andrews, CeeDee Lamb, Rashod Bateman, Kaelon Black, Oronde Gadsden, Chris Bell, and Keaton Mitchell are not newly listed out or questionable. Bagent remains ATTRIBUTED_REPORT only. NFL.com Bears report lists Williams Out and does not name Tyson Bagent or Case Keenum. Bears.com injury update opened this run is still dated Oct 2, 2026 (Larry Mayer; schema datePublished 2026-10-02T20:13:47Z, dateModified 2026-10-02T20:33:51Z) and quotes Ben Johnson: \"We'll find out on Sunday.\" Johnson did not name a starter. Not upgraded to CONFIRMED_FACT. Not re-logged: Price IR (Holani stays bench; NFL.com still showing Price out is page lag, not a reversal), Legette IR (McMillan start holds; NFL.com still out is lag), Allen OUT (NFL.com still questionable is lag), Davis Q, Mayfield OUT, Williams OUT, McConkey Q, Smith/Goedert Out, Cooper/Brinson notes, Achane WAIVERS_CONFIRMED ACL, do not reclaim. Official inactives are not posted. NFL.com Colts-Commanders game center HTML opened this run contains no inactive string. London kickoff verified 9:30 AM EDT Sunday, October 4 (NFL.com injuries header, Colts at Commanders). The 90-minute inactive window opens at 8:00 AM ET and is not open at ~4:14 AM ET; it was not adopted. Unowned London context on the same injuries page (Jayden Daniels Out, Terry McLaurin Questionable, Ashton Dulin Questionable) is not a Downs designation change and is not a material change. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED (Oct 2 Bears.com note only). No ESPN ownership pull. No roster, FAAB, lineup, IR, or trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T061249Z",
-  "prior_completed_at": "2026-10-04T06:12:49Z",
-  "prior_commit": "562b6dce162be5d781ee2fb85ae8d03f42a55033"
+  "summary": "Overnight 6:00 AM ET re-read. No material change vs the 081648Z overnight pulse (completed_at 2026-10-04T08:16:48Z, commit 11d7ad68d370f611760b75beec2d586df6005019). NFL.com injuries page opened this run still shows the same owned designations already logged: Ray Davis questionable (hamstring), Baker Mayfield out, Caleb Williams out, George Holani limited with no game status. Josh Downs, Jalen Hurts, Bijan Robinson, Kendre Miller, Luther Burden III, Tetairoa McMillan, Mark Andrews, CeeDee Lamb, Rashod Bateman, Kaelon Black, Oronde Gadsden, Chris Bell, and Keaton Mitchell are not newly listed out or questionable. Bagent remains ATTRIBUTED_REPORT only. NFL.com Bears report lists Williams Out and does not name Tyson Bagent or Case Keenum. X opened this run (Latest) only returned non-beat accounts repeating an expected Bagent start; not upgraded to CONFIRMED_FACT. Not re-logged: Price IR (Holani stays bench; NFL.com still showing Price out is page lag), Legette IR (McMillan start holds; NFL.com still out is lag), Allen OUT (NFL.com still questionable is lag), Davis Q, Mayfield OUT, Williams OUT, McConkey Q, Smith/Goedert Out, Cooper/Brinson notes, Achane WAIVERS_CONFIRMED ACL, do not reclaim. Official inactives are not posted. London kickoff 9:30 AM ET Sunday Oct 4; the 90-minute inactive window opens at 8:00 AM ET and is not open at 6:00 AM ET; it was not adopted. Unowned London context (Jayden Daniels Out, Terry McLaurin Questionable, Ashton Dulin Questionable) is not a Downs designation change. x_direct LIMITED (X opened, non-beat only). analytics LIMITED. experts LIMITED. beat_reporting LIMITED. No ESPN ownership pull. No roster, FAAB, lineup, IR, or trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T081648Z",
+  "prior_completed_at": "2026-10-04T08:16:48Z",
+  "prior_commit": "11d7ad68d370f611760b75beec2d586df6005019"
 }
