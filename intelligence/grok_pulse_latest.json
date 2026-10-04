@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-04T221758Z",
-  "generated_at": "2026-10-04T22:17:58Z",
-  "completed_at": "2026-10-04T22:17:58Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-04T231836Z",
+  "generated_at": "2026-10-04T23:18:36Z",
+  "completed_at": "2026-10-04T23:18:36Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Authenticated ESPN Live Check 2026-10-04 08:11 ET NO_MATERIAL_MONGO_CHANGE (JDD 2-1-0, FAAB $82, roster/IR unchanged, no tx since 2026-10-01). Hourly re-read 2026-10-04T22:17:58Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
+    "source": "Authenticated ESPN Live Check 2026-10-04 08:11 ET NO_MATERIAL_MONGO_CHANGE (JDD 2-1-0, FAAB $82, roster/IR unchanged, no tx since 2026-10-01). Hourly re-read 2026-10-04T23:18:36Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -70,7 +70,7 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "CONFIRMED_FACT",
-      "summary": "6:17 PM ET Bagent stays ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z. Johnson has not named him. Not re-logged.",
+      "summary": "7:18 PM ET Bagent stays ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z. Johnson has not named him. Not re-logged.",
       "mongo_impact": "start holds; no swap.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -214,7 +214,7 @@
       "team": "CAR",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "6:17 PM ET NFL.com Week 4 inactives HTML SNF block still has only Bank of America Stadium and 8:20 p.m. ET kickoff. No Panthers or Lions inactive names. McMillan is not listed. The window opens about 6:50 PM ET and is not open. No list was adopted. Coker questionable is unowned and not a McMillan change. Legette IR already logged, not re-logged. Start holds.",
+      "summary": "7:18 PM ET SNF inactives are posted. NFL.com Week 4 inactives and Panthers.com (Darin Gantt, Oct 4, 2026, 6:55 PM) list Ja'Tavion Sanders, Haynes King (emergency third QB), Jalen Coker, Damien Lewis, Albert Reese, and Cam Jackson. Tetairoa McMillan is not inactive. Panthers.com says the receiver group going into the game includes McMillan. Coker inactive is unowned context only, not a McMillan designation change and not a lineup swap. Legette IR already logged, not re-logged. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -248,7 +248,7 @@
       "team": "LAC",
       "signal_type": "game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. McConkey-active bench hold already recorded and not re-logged.",
+      "summary": "No new Gadsden designation. McConkey out for the rest of the game is unowned and was not logged. Bench holds.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -422,7 +422,7 @@
       "player": "Tetairoa McMillan",
       "slot": "WR",
       "status": "CONFIRMED_FACT",
-      "summary": "Start holds. SNF inactives not posted. McMillan not listed.",
+      "summary": "Start holds. Official SNF inactives do not include McMillan. Coker inactive is not a lineup swap.",
       "urgency": "MEDIUM"
     },
     {
@@ -482,15 +482,15 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "Hourly 6:17 PM ET re-read. No material change vs the 211734Z hourly pulse (completed_at 2026-10-04T21:17:34Z, commit 2a17001a888e2ac5ba22ac431a324d37cb9a7af5). NFL.com Week 4 inactives HTML opened this run: the SNF Lions-Panthers block lists only the stadium and 8:20 p.m. ET kickoff. No inactive player names. Tetairoa McMillan is not listed. The inactive window opens about 6:50 PM ET and is not open at this read. No SNF inactive list was adopted. Coker questionable is unowned and not a McMillan change. Legette IR already logged and not re-logged. Bagent stays ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z; Ben Johnson did not name him. Not logged: Lamar walking boot, Rashee Rice, Barkley, Chase, Higgins, Bigsby, Moore, Evans, and the already-recorded McConkey-active Gadsden bench hold. No roster, FAAB, lineup, or IR write. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED.",
-  "notes": "Intelligence only. no_material_change=true. Hourly 6 PM ET slot. Same files only. Sparta/DFS/props not touched.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T211734Z",
-  "prior_completed_at": "2026-10-04T21:17:34Z",
-  "prior_commit": "2a17001a888e2ac5ba22ac431a324d37cb9a7af5",
+  "summary": "Hourly 7:18 PM ET re-read. No material change vs the 221758Z hourly pulse (completed_at 2026-10-04T22:17:58Z, commit 31b281fa5bf8b84e0296b90fdb7d8dacc7a60e77). SNF inactives are posted. NFL.com and Panthers.com (Darin Gantt, Oct 4, 2026, 6:55 PM) list Panthers inactives Ja'Tavion Sanders, Haynes King, Jalen Coker, Damien Lewis, Albert Reese, and Cam Jackson. Owned Tetairoa McMillan is not inactive. Panthers.com names him among the receivers going into the game. Coker inactive is unowned context only, not a McMillan designation change and not a lineup swap. Legette IR not re-logged. Start holds. McConkey out for the rest of the Chargers game is unowned; Gadsden's designation did not change and was not logged. Rashee Rice, Pat Bryant, and Jalen Nailor were not logged. Bagent stays ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z. No roster, FAAB, lineup, or IR write. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED (Panthers.com inactive note).",
+  "notes": "Intelligence only. no_material_change=true. Hourly 7 PM ET slot. Same files only. Sparta/DFS/props not touched.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T221758Z",
+  "prior_completed_at": "2026-10-04T22:17:58Z",
+  "prior_commit": "31b281fa5bf8b84e0296b90fdb7d8dacc7a60e77",
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-04T211734Z",
-    "completed_at": "2026-10-04T21:17:34Z",
-    "commit": "2a17001a888e2ac5ba22ac431a324d37cb9a7af5"
+    "pulse_id": "mongo-grok-pulse-2026-10-04T221758Z",
+    "completed_at": "2026-10-04T22:17:58Z",
+    "commit": "31b281fa5bf8b84e0296b90fdb7d8dacc7a60e77"
   },
   "history": {
     "append_only": true,
