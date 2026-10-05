@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-05T002526Z",
-  "generated_at": "2026-10-05T00:25:26Z",
-  "completed_at": "2026-10-05T00:25:26Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-05T012321Z",
+  "generated_at": "2026-10-05T01:23:21Z",
+  "completed_at": "2026-10-05T01:23:21Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-05T00:25:26Z",
+  "as_of": "2026-10-05T01:23:21Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "LIMITED",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Sunday night check, ESPN read-only: JDD 2-1, FAAB $82, roster/lineup unchanged, only injury tag Sampson IR, no tx since 2026-10-01, score 100.52-76.9 vs You're a JaGoff. Still to play: McMillan SNF, Bijan and Miller MNF. Hourly re-read 2026-10-05T00:25:26Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
+    "source": "Sunday night check, ESPN read-only: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01, score 100.52-76.9 vs You're a JaGoff. Still to play: McMillan SNF, Bijan and Miller MNF. Hourly re-read 2026-10-05T01:23:21Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -70,7 +70,7 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "CONFIRMED_FACT",
-      "summary": "8:25 PM ET Bagent stays ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z. Johnson has not named him. Not re-logged.",
+      "summary": "No new designation. Bagent stays ATTRIBUTED_REPORT. Not re-logged.",
       "mongo_impact": "Week 4 start already played. No swap.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -81,7 +81,7 @@
       "team": "CHI",
       "signal_type": "qb_start",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Not re-logged. Still ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z. Johnson has not named him.",
+      "summary": "Not re-logged. Still ATTRIBUTED_REPORT. Ben Johnson and Bears.com have not named him in this run.",
       "mongo_impact": "Game final already known before 23:18Z pulse. No add.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -136,7 +136,7 @@
       "team": "BAL",
       "signal_type": "game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Not re-logged.",
+      "summary": "No new Andrews designation. Lamar Jackson week-to-week MRI note is unowned and unconfirmed and is not an Andrews change. Not logged.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -147,7 +147,7 @@
       "team": "BAL",
       "signal_type": "game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Lamar walking-boot note is unowned and not a Bateman change. Not re-logged.",
+      "summary": "No new Bateman designation. Lamar Jackson note is unowned and not a Bateman change. Not logged.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -214,7 +214,7 @@
       "team": "CAR",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "8:25 PM ET re-read. SNF inactives already logged at 231836Z and reconfirmed at 232210Z. McMillan is not inactive. Coker inactive is unowned context and is not re-logged. Not a lineup swap. Start holds. No new in-game designation found on the NFL.com game page HTML opened this run.",
+      "summary": "9:23 PM ET no new McMillan designation versus the 002526Z pulse. He was not inactive. Coker not re-logged. Start holds.",
       "mongo_impact": "start holds.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -237,7 +237,7 @@
       "team": "LAC",
       "signal_type": "game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Lamar walking-boot note is unowned and not a Mitchell change. Not re-logged.",
+      "summary": "No new Mitchell designation. Lamar Jackson note is unowned and not a Mitchell change. Not logged.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -394,7 +394,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on Ravens inactive list. Start holds.",
+      "summary": "No designation change. Lamar Jackson note not logged.",
       "urgency": "LOW"
     },
     {
@@ -422,7 +422,7 @@
       "player": "Tetairoa McMillan",
       "slot": "WR",
       "status": "CONFIRMED_FACT",
-      "summary": "Start holds. Not inactive. Coker not re-logged.",
+      "summary": "Start holds. No new designation since 002526Z.",
       "urgency": "MEDIUM"
     },
     {
@@ -443,7 +443,7 @@
       "player": "Keaton Mitchell",
       "slot": "BENCH",
       "status": "CONFIRMED_FACT",
-      "summary": "Already logged not inactive. Bench holds.",
+      "summary": "No designation change. Lamar Jackson note not logged.",
       "urgency": "LOW"
     },
     {
@@ -482,16 +482,16 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "Hourly 8:25 PM ET re-read. No material change vs the 232210Z hourly pulse (completed_at 2026-10-04T23:22:10Z, commit 47b57693848becf70816857d171277862b023b6b). McMillan remains not inactive. Coker inactive already logged and not re-logged. NFL.com Lions-Panthers game page HTML opened this run had no new McMillan designation. Bijan and Miller have no new designation. Unowned Saints defensive outs are not a Bijan or Miller change. Bagent stays ATTRIBUTED_REPORT. Bears.com dateModified still 2026-10-02T20:33:51Z. Will Shipley was not verified on ESPN. Availability UNKNOWN. Not logged as FREE_AGENT_CONFIRMED. Sunday night check cited roster/lineup unchanged, FAAB $82, record 2-1, score 100.52-76.9, Sampson the only injury tag. No roster write. Already handled and not re-logged: McConkey, Jackson boot, Rice, Bryant, Nailor, and the other unowned notes. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED. official_nfl_team OK.",
-  "notes": "Intelligence only. no_material_change=true. Hourly 8 PM ET slot. Same files only. Sparta/DFS/props not touched.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-04T232210Z",
-  "prior_completed_at": "2026-10-04T23:22:10Z",
-  "prior_commit": "47b57693848becf70816857d171277862b023b6b",
+  "summary": "Hourly 9:23 PM ET re-read. No material change vs the 002526Z hourly pulse (completed_at 2026-10-05T00:25:26Z, commit 2050c7f1de664b927b0f7c8e55b06342220f573b). No Mongo-owned or watched player designation changed. DJ Moore is not on the Mongo roster and was not logged. Lamar Jackson is not owned. The week-to-week MRI note is an unconfirmed relay and does not change Andrews, Bateman, or Mitchell. Not logged. McMillan, Bijan, and Miller have no new designation. Bagent stays ATTRIBUTED_REPORT. Already handled items were not re-logged. Will Shipley remains unverified; availability UNKNOWN; not FREE_AGENT_CONFIRMED. No roster, FAAB, lineup, or IR write. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED. official_nfl_team OK.",
+  "notes": "Intelligence only. no_material_change=true. Hourly 9 PM ET slot. Same files only. Sparta/DFS/props not touched.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T002526Z",
+  "prior_completed_at": "2026-10-05T00:25:26Z",
+  "prior_commit": "2050c7f1de664b927b0f7c8e55b06342220f573b",
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-04T232210Z",
-    "completed_at": "2026-10-04T23:22:10Z",
-    "no_material_change": true,
-    "commit": "47b57693848becf70816857d171277862b023b6b"
+    "pulse_id": "mongo-grok-pulse-2026-10-05T002526Z",
+    "completed_at": "2026-10-05T00:25:26Z",
+    "commit": "2050c7f1de664b927b0f7c8e55b06342220f573b",
+    "no_material_change": true
   },
   "history": {
     "append_only": true,
