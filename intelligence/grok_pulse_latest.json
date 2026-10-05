@@ -3,16 +3,16 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-05T191815Z",
-  "generated_at": "2026-10-05T19:17:30Z",
-  "completed_at": "2026-10-05T19:18:15Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-05T231830Z",
+  "generated_at": "2026-10-05T23:17:30Z",
+  "completed_at": "2026-10-05T23:18:30Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-05T19:18:15Z",
+  "as_of": "2026-10-05T23:18:30Z",
   "source_status": {
     "official_nfl_team": "OK",
-    "beat_reporting": "LIMITED",
+    "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "LIMITED",
     "analytics": "LIMITED"
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "3:18 PM ET hourly re-read. ESPN not re-pulled this run. Ownership baseline remains the Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. Still to play: Bijan Robinson and Kendre Miller, MNF 8:15 PM ET. Intelligence only. No roster, FAAB, lineup, or IR write.",
+    "source": "7 PM ET hourly re-read. ESPN not re-pulled this run. Ownership baseline remains the Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. Bijan Robinson and Kendre Miller both ACTIVE per official MNF inactives (posted ~6:45 PM ET); kickoff 8:15 PM ET. Intelligence only. No roster, FAAB, lineup, or IR write.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -70,14 +70,14 @@
       "team": "NO",
       "signal_type": "lineup",
       "status": "CONFIRMED_FACT",
-      "summary": "Saints.com injury report re-read Oct 5 ~3:17 PM ET still does not list Miller. Saints OUT remain Elliss, Granderson, Jennings; questionable Fant and Werner. Same designations as 181500Z. NFL.com Week 4 Monday report matches. Official inactives not posted (kickoff 8:15 PM ET; lists typically ~90 minutes prior).",
-      "mongo_impact": "Monday start holds.",
+      "summary": "Official Saints/Falcons inactives posted Oct 5 ~6:45 PM ET (neworleanssaints.com 22:45Z). Miller NOT inactive = ACTIVE for MNF. Saints inactives: Z. Wilson (3rd QB), D. Richardson, A. Jennings, C. Miller (DL), K. Elliss, N. Fant, C. Granderson. Etienne on IR; Kamara/Miller/Donaldson share backfield.",
+      "mongo_impact": "Start confirmed for MNF 8:15 PM ET.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.neworleanssaints.com/team/injury-report/",
-        "https://www.nfl.com/news/nfl-week-4-injury-report-player-statuses-for-all-16-games"
+        "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-atlanta-falcons-2026-nfl-week-4-gameday",
+        "https://sports.yahoo.com/articles/falcons-vs-saints-inactives-list-225017618.html"
       ]
     },
     {
@@ -85,15 +85,14 @@
       "team": "ATL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Saints.com Falcons table, Falcons.com injury report, and NFL.com Week 4 Monday report still do not list Bijan. Falcons questionable remain Deablo, Ebukam; NFL.com also lists Abdullah (illness) \u2014 already logged vs Falcons/Saints tables. Inactives not posted.",
-      "mongo_impact": "Monday start holds.",
+      "summary": "Official Falcons inactives posted Oct 5 ~6:44 PM ET (atlantafalcons.com 22:44Z): Rush (3rd QB), Strand, DeWalt IV, Longerbeam, Ivey, Onianwa. Bijan NOT inactive = ACTIVE. Deablo/Ebukam active.",
+      "mongo_impact": "Start confirmed for MNF 8:15 PM ET.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.nfl.com/news/nfl-week-4-injury-report-player-statuses-for-all-16-games",
-        "https://www.neworleanssaints.com/team/injury-report/",
-        "https://www.atlantafalcons.com/team/injury-report/"
+        "https://www.atlantafalcons.com/news/atlanta-falcons-week-4-inactives-vs-new-orleans-saints-on-monday-night-football",
+        "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-atlanta-falcons-2026-nfl-week-4-gameday"
       ]
     },
     {
@@ -101,8 +100,8 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation since 181500Z. Bagent stays ATTRIBUTED_REPORT. Not re-logged.",
-      "mongo_impact": "Week 4 start already played. No swap.",
+      "summary": "Ben Johnson officially named Bagent Week 5 starter vs GB (CONFIRMED_FACT). Williams out again.",
+      "mongo_impact": "Week 5 context only. No lineup write.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED"
@@ -111,12 +110,16 @@
       "player": "Tyson Bagent",
       "team": "CHI",
       "signal_type": "qb_start",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Not re-logged. Still ATTRIBUTED_REPORT until Ben Johnson/Bears name him. Not upgraded to CONFIRMED_FACT.",
-      "mongo_impact": "Game final already known. No add.",
+      "status": "CONFIRMED_FACT",
+      "summary": "Ben Johnson named Bagent Week 5 starter at GB on ESPN 1000 Monday (\"Tyson will be the guy\"; ESPN 12:52 PM ET). Caleb Williams (hamstring) out; Keenum backup. Upgraded from ATTRIBUTED_REPORT (late capture; prior pulses missed it).",
+      "mongo_impact": "Burden III Week 5 QB context; Packers D/ST Week 5 opponent QB context. No add.",
       "urgency": "HIGH",
       "confidence": "HIGH",
-      "availability": "UNKNOWN"
+      "availability": "UNKNOWN",
+      "sources": [
+        "https://www.espn.com/nfl/story/_/id/50110486/ben-johnson-tyson-bagent-start-qb-bears-vs-packers",
+        "https://chicago.suntimes.com/bears/2026/10/05/bears-rule-out-qb-caleb-williams-vs-packers-will-start-backup-tyson-bagent-again"
+      ]
     },
     {
       "player": "Jalen Hurts",
@@ -364,21 +367,21 @@
       "player": "Kendre Miller",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Monday start holds. Saints.com and NFL.com do not list him. Inactives not posted.",
+      "summary": "ACTIVE per official MNF inactives (~6:45 PM ET). Start confirmed.",
       "urgency": "HIGH"
     },
     {
       "player": "Bijan Robinson",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Monday start holds. NFL.com, Saints.com Falcons table, and Falcons.com do not list him. Inactives not posted.",
+      "summary": "ACTIVE per official MNF inactives (~6:44 PM ET). Start confirmed.",
       "urgency": "LOW"
     },
     {
       "player": "Luther Burden III",
       "slot": "WR",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Bagent still ATTRIBUTED_REPORT. Not officially named. Not re-logged.",
+      "status": "CONFIRMED_FACT",
+      "summary": "Bagent officially named Week 5 starter by Ben Johnson. Week 5 context.",
       "urgency": "HIGH"
     },
     {
@@ -467,8 +470,8 @@
     },
     {
       "player": "Tyson Bagent",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "In-game observation already logged. Not an official team announcement. Not a Mongo add.",
+      "status": "CONFIRMED_FACT",
+      "summary": "Ben Johnson named Bagent Week 5 starter (ESPN 1000, Oct 5). Availability UNKNOWN. Not a Mongo add.",
       "urgency": "MEDIUM"
     },
     {
@@ -480,21 +483,40 @@
     {
       "player": "Lamar Jackson",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Schefter: MRI on ankle Monday. No result posted as of ~3:17 PM ET. Watch only \u2014 no Andrews/Bateman/Mitchell designation change. Not a Mongo-owned QB.",
+      "summary": "MRI result still not posted as of ~7:15 PM ET; Minter: not 'crazy long-term'. No Andrews/Bateman/Mitchell designation change. Not logged as material.",
       "urgency": "LOW"
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
-  "summary": "Hourly 3:18 PM ET re-read. No material change vs the 181500Z hourly pulse (completed_at 2026-10-05T18:15:00Z). No Mongo-owned or watched player designation changed. Saints.com, Falcons.com, and NFL.com still omit Bijan Robinson and Kendre Miller. MNF inactives not yet posted (8:15 PM ET). Miller and Bijan starts hold. Lamar Jackson MRI Monday still pending; no owned Ravens skill designation change. Bagent stays ATTRIBUTED_REPORT. Shipley availability UNKNOWN (no ESPN FREE_AGENT_CONFIRMED). Unowned notes not logged. No new FREE_AGENT_CONFIRMED claims. No roster, FAAB, lineup, or IR write. x_direct LIMITED. analytics LIMITED. experts LIMITED. beat_reporting LIMITED. official_nfl_team OK.",
-  "notes": "Intelligence only. no_material_change=true. Hourly ~3 PM ET slot. Same files only. Sparta/DFS/props not touched.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T181500Z",
-  "prior_completed_at": "2026-10-05T18:15:00Z",
-  "prior_commit": "d7d32ba1955d2b78d030cdb3ea00809f41c3de6d",
+  "material_changes": [
+    {
+      "player": "Bijan Robinson",
+      "change": "Official MNF inactives posted ~6:44 PM ET; Bijan ACTIVE. Start confirmed.",
+      "status": "CONFIRMED_FACT",
+      "source": "https://www.atlantafalcons.com/news/atlanta-falcons-week-4-inactives-vs-new-orleans-saints-on-monday-night-football"
+    },
+    {
+      "player": "Kendre Miller",
+      "change": "Official MNF inactives posted ~6:45 PM ET; Miller ACTIVE. Start confirmed.",
+      "status": "CONFIRMED_FACT",
+      "source": "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-atlanta-falcons-2026-nfl-week-4-gameday"
+    },
+    {
+      "player": "Tyson Bagent",
+      "change": "Ben Johnson named Bagent Week 5 starter at GB; ATTRIBUTED_REPORT -> CONFIRMED_FACT. Burden III / Packers D/ST context. Availability UNKNOWN.",
+      "status": "CONFIRMED_FACT",
+      "source": "https://www.espn.com/nfl/story/_/id/50110486/ben-johnson-tyson-bagent-start-qb-bears-vs-packers"
+    }
+  ],
+  "no_material_change": false,
+  "summary": "Hourly 7 PM ET. Material: official MNF inactives posted ~6:45 PM ET — Bijan Robinson and Kendre Miller both ACTIVE; starts confirmed for 8:15 PM ET kickoff. Ben Johnson named Tyson Bagent Week 5 starter at GB (CONFIRMED_FACT; Burden III/Packers D/ST context; availability UNKNOWN, no add). Lamar MRI result still pending; no Andrews/Bateman/Mitchell designation change. Shipley UNKNOWN. No new FREE_AGENT_CONFIRMED. No roster, FAAB, lineup, or IR write.",
+  "notes": "Intelligence only. no_material_change=false. Hourly 7 PM ET slot. Same files only. Sparta/DFS/props not touched.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T191815Z",
+  "prior_completed_at": "2026-10-05T19:18:15Z",
+  "prior_commit": "cfb5e04ed3101604ddeeee5f9e45bf54352ca568",
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-05T181500Z",
-    "completed_at": "2026-10-05T18:15:00Z",
-    "commit": "d7d32ba1955d2b78d030cdb3ea00809f41c3de6d",
+    "pulse_id": "mongo-grok-pulse-2026-10-05T191815Z",
+    "completed_at": "2026-10-05T19:18:15Z",
+    "commit": "cfb5e04ed3101604ddeeee5f9e45bf54352ca568",
     "no_material_change": true
   },
   "history": {
