@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-05T181500Z",
-  "generated_at": "2026-10-05T18:15:00Z",
-  "completed_at": "2026-10-05T18:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-05T191815Z",
+  "generated_at": "2026-10-05T19:17:30Z",
+  "completed_at": "2026-10-05T19:18:15Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-05T18:15:00Z",
+  "as_of": "2026-10-05T19:18:15Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "LIMITED",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "2:15 PM ET hourly re-read. ESPN not re-pulled this run. Ownership baseline remains the Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. Still to play: Bijan Robinson and Kendre Miller, MNF 8:15 PM ET. Intelligence only. No roster, FAAB, lineup, or IR write.",
+    "source": "3:18 PM ET hourly re-read. ESPN not re-pulled this run. Ownership baseline remains the Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. Still to play: Bijan Robinson and Kendre Miller, MNF 8:15 PM ET. Intelligence only. No roster, FAAB, lineup, or IR write.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -70,7 +70,7 @@
       "team": "NO",
       "signal_type": "lineup",
       "status": "CONFIRMED_FACT",
-      "summary": "Saints.com injury report re-read Oct 5 ~2:15 PM ET still does not list Miller. Saints OUT remain Elliss, Granderson, Jennings; questionable Fant and Werner. Same designations as 171512Z. NFL.com Week 4 Monday report matches. Inactives not posted (kickoff 8:15 PM ET; lists typically ~90 minutes prior).",
+      "summary": "Saints.com injury report re-read Oct 5 ~3:17 PM ET still does not list Miller. Saints OUT remain Elliss, Granderson, Jennings; questionable Fant and Werner. Same designations as 181500Z. NFL.com Week 4 Monday report matches. Official inactives not posted (kickoff 8:15 PM ET; lists typically ~90 minutes prior).",
       "mongo_impact": "Monday start holds.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -85,14 +85,15 @@
       "team": "ATL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Saints.com Falcons table and NFL.com Week 4 Monday report still do not list Bijan. Falcons questionable remain Ebukam, Abdullah, Deablo. Abdullah is on NFL.com and not on the Saints.com Falcons table; already logged, not a new designation vs 171512Z. Inactives not posted.",
+      "summary": "Saints.com Falcons table, Falcons.com injury report, and NFL.com Week 4 Monday report still do not list Bijan. Falcons questionable remain Deablo, Ebukam; NFL.com also lists Abdullah (illness) \u2014 already logged vs Falcons/Saints tables. Inactives not posted.",
       "mongo_impact": "Monday start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
         "https://www.nfl.com/news/nfl-week-4-injury-report-player-statuses-for-all-16-games",
-        "https://www.neworleanssaints.com/team/injury-report/"
+        "https://www.neworleanssaints.com/team/injury-report/",
+        "https://www.atlantafalcons.com/team/injury-report/"
       ]
     },
     {
@@ -100,7 +101,7 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation since 171512Z. Bagent stays ATTRIBUTED_REPORT. Not re-logged.",
+      "summary": "No new designation since 181500Z. Bagent stays ATTRIBUTED_REPORT. Not re-logged.",
       "mongo_impact": "Week 4 start already played. No swap.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -111,7 +112,7 @@
       "team": "CHI",
       "signal_type": "qb_start",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Not re-logged. Still ATTRIBUTED_REPORT. Not upgraded to CONFIRMED_FACT.",
+      "summary": "Not re-logged. Still ATTRIBUTED_REPORT until Ben Johnson/Bears name him. Not upgraded to CONFIRMED_FACT.",
       "mongo_impact": "Game final already known. No add.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -166,8 +167,8 @@
       "team": "BAL",
       "signal_type": "game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Not re-logged.",
-      "mongo_impact": "start holds.",
+      "summary": "No new designation. Lamar Jackson MRI Monday still pending result; no Andrews/Bateman/Mitchell designation change. Not re-logged.",
+      "mongo_impact": "start holds. Week 4 game already final.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED"
@@ -370,7 +371,7 @@
       "player": "Bijan Robinson",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Monday start holds. NFL.com and Saints.com Falcons table do not list him. Inactives not posted.",
+      "summary": "Monday start holds. NFL.com, Saints.com Falcons table, and Falcons.com do not list him. Inactives not posted.",
       "urgency": "LOW"
     },
     {
@@ -405,7 +406,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "No designation change.",
+      "summary": "No designation change. Lamar MRI pending; no owned Ravens skill designation change.",
       "urgency": "LOW"
     },
     {
@@ -475,19 +476,25 @@
       "status": "ATTRIBUTED_REPORT",
       "summary": "PULSE_CONFLICT remains. Not CONFIRMED_FACT.",
       "urgency": "MEDIUM"
+    },
+    {
+      "player": "Lamar Jackson",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter: MRI on ankle Monday. No result posted as of ~3:17 PM ET. Watch only \u2014 no Andrews/Bateman/Mitchell designation change. Not a Mongo-owned QB.",
+      "urgency": "LOW"
     }
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "Hourly 2:15 PM ET re-read. No material change vs the 171512Z hourly pulse (completed_at 2026-10-05T17:15:12Z). No Mongo-owned or watched player designation changed. Saints.com and NFL.com still omit Bijan Robinson and Kendre Miller. MNF inactives not yet posted (8:15 PM ET). Miller and Bijan starts hold. X scan found no team-sourced designation change. Etienne IR not re-logged. Bagent stays ATTRIBUTED_REPORT. Unowned notes not logged. No new FREE_AGENT_CONFIRMED claims. No roster, FAAB, lineup, or IR write. x_direct LIMITED. analytics LIMITED. experts LIMITED. beat_reporting LIMITED. official_nfl_team OK.",
-  "notes": "Intelligence only. no_material_change=true. Hourly ~2 PM ET slot. Same files only. Sparta/DFS/props not touched.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T171512Z",
-  "prior_completed_at": "2026-10-05T17:15:12Z",
-  "prior_commit": "25269e65fd762ce83e05c3facc523223d45670c2",
+  "summary": "Hourly 3:18 PM ET re-read. No material change vs the 181500Z hourly pulse (completed_at 2026-10-05T18:15:00Z). No Mongo-owned or watched player designation changed. Saints.com, Falcons.com, and NFL.com still omit Bijan Robinson and Kendre Miller. MNF inactives not yet posted (8:15 PM ET). Miller and Bijan starts hold. Lamar Jackson MRI Monday still pending; no owned Ravens skill designation change. Bagent stays ATTRIBUTED_REPORT. Shipley availability UNKNOWN (no ESPN FREE_AGENT_CONFIRMED). Unowned notes not logged. No new FREE_AGENT_CONFIRMED claims. No roster, FAAB, lineup, or IR write. x_direct LIMITED. analytics LIMITED. experts LIMITED. beat_reporting LIMITED. official_nfl_team OK.",
+  "notes": "Intelligence only. no_material_change=true. Hourly ~3 PM ET slot. Same files only. Sparta/DFS/props not touched.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T181500Z",
+  "prior_completed_at": "2026-10-05T18:15:00Z",
+  "prior_commit": "d7d32ba1955d2b78d030cdb3ea00809f41c3de6d",
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-05T171512Z",
-    "completed_at": "2026-10-05T17:15:12Z",
-    "commit": "25269e65fd762ce83e05c3facc523223d45670c2",
+    "pulse_id": "mongo-grok-pulse-2026-10-05T181500Z",
+    "completed_at": "2026-10-05T18:15:00Z",
+    "commit": "d7d32ba1955d2b78d030cdb3ea00809f41c3de6d",
     "no_material_change": true
   },
   "history": {
