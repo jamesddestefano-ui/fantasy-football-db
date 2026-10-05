@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-05T041611Z",
-  "generated_at": "2026-10-05T04:16:11Z",
-  "completed_at": "2026-10-05T04:16:11Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-05T061200Z",
+  "generated_at": "2026-10-05T06:12:00Z",
+  "completed_at": "2026-10-05T06:12:00Z",
   "week": 4,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-05T04:16:11Z",
+  "as_of": "2026-10-05T06:12:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "LIMITED",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Sunday night check, ESPN read-only: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. Still to play: McMillan SNF, Bijan and Miller MNF. Hourly re-read 2026-10-05T02:16:51Z. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
+    "source": "2:12 AM ET overnight re-read. ESPN not re-pulled this run. Prior Sunday night check still the ownership baseline: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. Still to play: Bijan and Miller MNF 8:15 PM ET. Intelligence only. No roster, FAAB, lineup, or IR write this run.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -70,7 +70,7 @@
       "team": "CHI",
       "signal_type": "qb_absence",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Bagent stays ATTRIBUTED_REPORT. Not re-logged.",
+      "summary": "No new designation since 041611Z. Bagent stays ATTRIBUTED_REPORT. Not re-logged.",
       "mongo_impact": "Week 4 start already played. No swap.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -82,7 +82,7 @@
       "signal_type": "qb_start",
       "status": "ATTRIBUTED_REPORT",
       "summary": "Not re-logged. Still ATTRIBUTED_REPORT. Not upgraded to CONFIRMED_FACT.",
-      "mongo_impact": "Game final already known before 23:18Z pulse. No add.",
+      "mongo_impact": "Game final already known. No add.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "UNKNOWN"
@@ -92,7 +92,7 @@
       "team": "PHI",
       "signal_type": "supporting_cast",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new designation. Unowned Barkley/Bigsby notes not re-logged.",
+      "summary": "No new designation. Postgame commentary only. Unowned Barkley/Bigsby notes not re-logged.",
       "mongo_impact": "start holds. No lineup change.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -103,8 +103,8 @@
       "team": "PHI",
       "signal_type": "pulse_conflict",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "PULSE_CONFLICT remains open. NFL.com Week 4 inactives HTML opened this run still does not name Lane Johnson (Eagles list: Hollywood Brown, DeVonta Smith, Cole Payton, Marcus Epps, Zack Baun, Fred Johnson, Dallas Goedert). NBC Sports Philadelphia, Reuters, and ESPN attribute him inactive for personal reasons. Not upgraded to CONFIRMED_FACT. Not re-logged as a new fact.",
-      "mongo_impact": "Hurts context only. Game underway. No lineup change.",
+      "summary": "PULSE_CONFLICT remains open. Not re-opened on NFL.com HTML this run. Still not upgraded to CONFIRMED_FACT. Not re-logged as a new fact.",
+      "mongo_impact": "Hurts context only. Game final. No lineup change.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN"
@@ -136,7 +136,7 @@
       "team": "BAL",
       "signal_type": "game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Jackson MRI note is unowned and not an Andrews change. Not logged.",
+      "summary": "No new designation. Jackson note is unowned and not an Andrews change. Not logged.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -192,7 +192,7 @@
       "team": "NO",
       "signal_type": "lineup",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Monday start holds. Not re-logged.",
+      "summary": "NFL.com Week 4 injury report Monday section does not list Miller. Saints outs are Granderson, Jennings, Elliss; questionable Fant and Werner. Not a new designation. Monday start holds. Inactives not posted (90 minutes before 8:15 PM ET kick).",
       "mongo_impact": "start holds.",
       "urgency": "HIGH",
       "confidence": "HIGH",
@@ -203,7 +203,7 @@
       "team": "ATL",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Monday start holds. Not re-logged.",
+      "summary": "NFL.com Week 4 Monday injury report does not list Bijan. Falcons questionable are Ebukam, Abdullah, Deablo only. No new designation. Monday start holds. Inactives not posted.",
       "mongo_impact": "start holds.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -214,8 +214,8 @@
       "team": "CAR",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "12:16 AM ET postgame re-read. SNF ended (Panthers won 32-26 per WRAL). McMillan has no postgame injury or designation in sources read (NBC/PFT: 2 TD, 11-162 by 3Q). Not a material change vs 031546Z. Coker not re-logged.",
-      "mongo_impact": "start holds.",
+      "summary": "Final box score only, not a new designation. AP/PFT: 14 catches, 192 yards, 2 TDs in Panthers 32-26 win. No postgame injury in sources read. Same underlying game as 041611Z (then 11-162 by 3Q). Not a material change.",
+      "mongo_impact": "start holds. Game final.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "OWNED"
@@ -248,7 +248,7 @@
       "team": "LAC",
       "signal_type": "game_status",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. McConkey out rest of game already not logged as a Gadsden change. Bench holds.",
+      "summary": "No new designation. Bench holds.",
       "mongo_impact": "bench hold.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -408,21 +408,21 @@
       "player": "Kendre Miller",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Monday start holds. No new designation.",
+      "summary": "Monday start holds. NFL.com injury report does not list him. Inactives not posted.",
       "urgency": "HIGH"
     },
     {
       "player": "Bijan Robinson",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Monday start holds. No new designation.",
+      "summary": "Monday start holds. NFL.com injury report does not list him. Inactives not posted.",
       "urgency": "LOW"
     },
     {
       "player": "Tetairoa McMillan",
       "slot": "WR",
       "status": "CONFIRMED_FACT",
-      "summary": "Start holds. No new designation since 012321Z. Coker not re-logged.",
+      "summary": "Game final. Final line 14-192-2. No injury designation. Not a lineup change.",
       "urgency": "MEDIUM"
     },
     {
@@ -458,13 +458,13 @@
     {
       "player": "Saquon Barkley",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Already logged at 18:25Z. NBC Sports Philadelphia live blog this run says he left with a hamstring and has been ruled out. Same underlying out signal; not re-logged as new. Hurts context only. Availability UNKNOWN.",
+      "summary": "Already logged. Not re-logged. Hurts context only. Availability UNKNOWN.",
       "urgency": "HIGH"
     },
     {
       "player": "Jalen Coker",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Panthers Wire cites Adam Schefter: Coker unlikely to play tonight (quad). SNF inactive list not posted on NFL.com this run. Unowned. McMillan usage context only. Not FREE_AGENT_CONFIRMED.",
+      "status": "CONFIRMED_FACT",
+      "summary": "NFL.com Week 4 Sunday inactives list names WR Jalen Coker. Game final. Unowned. McMillan usage context only. Not FREE_AGENT_CONFIRMED. Not a new waiver signal.",
       "urgency": "MEDIUM"
     },
     {
@@ -476,21 +476,21 @@
     {
       "player": "Lane Johnson",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "PULSE_CONFLICT remains. NFL.com inactives HTML still omits him; Rams.com and NBC list him inactive for personal reasons. Not CONFIRMED_FACT.",
+      "summary": "PULSE_CONFLICT remains. Not re-checked on NFL.com inactives HTML this run. Not CONFIRMED_FACT.",
       "urgency": "MEDIUM"
     }
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "Overnight 12:16 AM ET re-read after SNF. No material change vs the 031546Z hourly pulse (completed_at 2026-10-05T03:15:46Z, commit 80183707ac0ae363440647128911d33f54e9418e). No Mongo-owned or watched player designation changed. McMillan has no postgame injury report in sources read; his big game is performance only. Coker not re-logged. Bijan and Miller have no new designation before MNF. Bagent stays ATTRIBUTED_REPORT. Unowned notes were not logged. Will Shipley not FREE_AGENT_CONFIRMED. No roster, FAAB, lineup, or IR write. x_direct LIMITED (X not opened). analytics LIMITED. experts LIMITED. beat_reporting LIMITED. official_nfl_team OK.",
-  "notes": "Intelligence only. no_material_change=true. Overnight 12 AM ET slot after SNF. Same files only. Sparta/DFS/props not touched.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T031546Z",
-  "prior_completed_at": "2026-10-05T03:15:46Z",
-  "prior_commit": "80183707ac0ae363440647128911d33f54e9418e",
+  "summary": "Overnight 2:12 AM ET re-read. No material change vs the 041611Z overnight pulse (completed_at 2026-10-05T04:16:11Z, commit 498b0f8c61a402551f3bcb00ff8616ac917d0f5c). NFL.com Week 4 injury report Monday section does not list Bijan Robinson or Kendre Miller; MNF inactives not posted. McMillan final line 14-192-2 is the same game already pulsed, no injury. Coker appears on the published NFL.com Sunday inactive list; not a Mongo add. Bagent stays ATTRIBUTED_REPORT. Lane Johnson PULSE_CONFLICT remains open. Unowned notes not logged. No roster, FAAB, lineup, or IR write. x_direct LIMITED. analytics LIMITED. experts LIMITED. beat_reporting LIMITED. official_nfl_team OK.",
+  "notes": "Intelligence only. no_material_change=true. Overnight 2 AM ET slot. Same files only. Sparta/DFS/props not touched. ESPN not re-pulled.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T041611Z",
+  "prior_completed_at": "2026-10-05T04:16:11Z",
+  "prior_commit": "498b0f8c61a402551f3bcb00ff8616ac917d0f5c",
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-05T031546Z",
-    "completed_at": "2026-10-05T03:15:46Z",
-    "commit": "80183707ac0ae363440647128911d33f54e9418e",
+    "pulse_id": "mongo-grok-pulse-2026-10-05T041611Z",
+    "completed_at": "2026-10-05T04:16:11Z",
+    "commit": "498b0f8c61a402551f3bcb00ff8616ac917d0f5c",
     "no_material_change": true
   },
   "history": {
