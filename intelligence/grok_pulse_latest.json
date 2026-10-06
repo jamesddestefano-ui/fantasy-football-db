@@ -3,19 +3,19 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-06T081442Z",
-  "generated_at": "2026-10-06T08:14:40Z",
-  "completed_at": "2026-10-06T08:14:42Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-06T100100Z",
+  "generated_at": "2026-10-06T10:00:30Z",
+  "completed_at": "2026-10-06T10:01:00Z",
   "week": 4,
   "season": 2026,
-  "run_type": "overnight",
-  "as_of": "2026-10-06T08:14:42Z",
+  "run_type": "overnight_6am_et",
+  "as_of": "2026-10-06T10:01:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
-    "beat_reporting": "LIMITED",
+    "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "LIMITED",
-    "analytics": "UNAVAILABLE"
+    "analytics": "LIMITED"
   },
   "scope": {
     "repository": "jamesddestefano-ui/fantasy-football-db",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Overnight 4 AM ET. ESPN ownership not re-pulled. Baseline remains Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, Sampson IR only. Intelligence only. No roster write.",
+    "source": "6:00 AM ET. ESPN ownership not re-pulled. Baseline remains Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, Sampson IR only. Intelligence only. No roster write.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -59,40 +59,57 @@
     {
       "player": "Bijan Robinson",
       "team": "ATL",
-      "signal_type": "in_game",
-      "status": "CONFIRMED_FACT",
-      "summary": "Prior late-4th note (ESPN ATL 38-17 NO, two Bijan rushing TDs) stands. Overnight: no confirmed or attributed post-game injury found; final box not re-verified this run.",
-      "mongo_impact": "Start already locked. No injury designation. No lineup write.",
+      "signal_type": "box_score",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Reuters recap: 145 rushing yards and two TDs in Falcons 45-24 win at Saints. Prior Pulse carried an in-progress 38-17 note and had not re-verified the final box. No post-game injury designation found.",
+      "mongo_impact": "Week 4 start already locked. No injury designation. No lineup write.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.espn.com/nfl/game?gameId=401872979"
+        "https://www.reuters.com/sports/nfl/bijan-robinson-2-tds-falcons-spoil-saints-homecoming-anniversary--flm-2026-10-06/"
       ]
     },
     {
       "player": "Kendre Miller",
       "team": "NO",
-      "signal_type": "in_game",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "No Miller injury designation found overnight. Kamara knee evaluation/return remains ATTRIBUTED_REPORT context.",
-      "mongo_impact": "Start already locked.",
+      "signal_type": "usage",
+      "status": "EXPERT_OPINION",
+      "summary": "PFF recap: Miller was the backup behind Kamara, lost a fumble on the third possession, and no Week 5 injury designation was found. Kamara knee evaluation/return remains prior ATTRIBUTED_REPORT context. Etienne IR is context only.",
+      "mongo_impact": "Start already locked. Usage note for Week 5 vs MIN, not an injury designation.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
-      "availability": "OWNED"
+      "availability": "OWNED",
+      "sources": [
+        "https://www.pff.com/news/fantasy-football-recap-falcons-saints-week-4"
+      ]
     },
     {
-      "player": "Alvin Kamara",
-      "team": "NO",
+      "player": "Lamar Jackson",
+      "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Saints Wire ~9:53 PM CT: evaluated for a knee injury and returned. Availability UNKNOWN in Mongo.",
-      "mongo_impact": "Miller context only. No add.",
+      "summary": "ESPN Jamison Hensley: coach Jesse Minter said Monday he does not know Jackson's chances vs Falcons, imaging is still being gathered, and he does not think it is crazy long-term. MRI result itself still not published as a confirmed diagnosis. Tyler Huntley would start if Jackson cannot play.",
+      "mongo_impact": "Andrews start holds. Bateman/Mitchell no new designation. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN",
       "sources": [
-        "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/10/05/saints-falcons-score-updates-highlights--live/92063111007/"
+        "https://www.espn.com.au/nfl/story/_/id/50111347/ravens-unsure-lamar-jackson-ankle-play-vs-falcons"
+      ]
+    },
+    {
+      "player": "Edgerrin Cooper",
+      "team": "GB",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Ian Rapoport via RotoWire: torn Achilles in Week 4 vs Bucs, out for the season. Not an official Packers transaction page this run.",
+      "mongo_impact": "Packers D/ST context only. Season-long defensive loss. No roster write.",
+      "urgency": "MEDIUM",
+      "confidence": "MEDIUM",
+      "availability": "UNKNOWN",
+      "sources": [
+        "https://www.rotowire.com/football/player/edgerrin-cooper-17753"
       ]
     },
     {
@@ -100,31 +117,23 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "RotoWire ~11:13 PM ET: not out long-term, week-to-week. Not an official Eagles designation this run. Availability UNKNOWN.",
-      "mongo_impact": "Hurts context only.",
+      "summary": "Carried forward and sourced to NFL Network via ESPN: week-to-week hamstring, not considered long-term. Sirianni did not confirm London availability. Not an official Eagles designation this run. Availability UNKNOWN.",
+      "mongo_impact": "Hurts context only. No add.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
-      "availability": "UNKNOWN"
+      "availability": "UNKNOWN",
+      "sources": [
+        "https://players.bio/news/sources-eagles-rb-bigsby-headed-to-ir/905859"
+      ]
     },
     {
       "player": "Tank Bigsby",
       "team": "PHI",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "RotoWire: needs surgery and headed to IR. Not confirmed on an official transaction page this run. Availability UNKNOWN.",
-      "mongo_impact": "Hurts context only. No add.",
+      "summary": "Carried forward: Rapoport sources say core-muscle surgery and IR, hope of return in six weeks or less. Not confirmed on an official transaction page this run. Availability UNKNOWN.",
+      "mongo_impact": "Hurts context only. Will Shipley is the reported lone healthy active back. Do not add on UNKNOWN availability.",
       "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
-      "availability": "UNKNOWN"
-    },
-    {
-      "player": "Lamar Jackson",
-      "team": "BAL",
-      "signal_type": "injury",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "MRI result not confirmed this overnight run. Week 5 uncertain. No Andrews/Bateman/Mitchell designation change.",
-      "mongo_impact": "Andrews start holds.",
-      "urgency": "LOW",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN"
     },
@@ -133,22 +142,22 @@
       "team": "SEA",
       "signal_type": "depth",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Schefter/Garafolo: practice-squad signing process after Price to IR. Holani remains on the 53. Not FREE_AGENT_CONFIRMED.",
+      "summary": "No new Holani injury designation. Prior practice-squad Mixon process and Holani on the 53 carried forward. Not FREE_AGENT_CONFIRMED.",
       "mongo_impact": "Holani bench hold. No add.",
       "urgency": "NONE",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN"
     },
     {
-      "player": "Tyson Bagent",
-      "team": "CHI",
-      "signal_type": "qb_start",
-      "status": "CONFIRMED_FACT",
-      "summary": "Already confirmed at 7:18 PM. Not re-opened. Availability UNKNOWN.",
-      "mongo_impact": "Burden / Packers D context.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "UNKNOWN"
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "No new return timeline. Prior Sept 15 IR placement remains the baseline. Still the only IR player in the Oct 1 ESPN snapshot.",
+      "mongo_impact": "IR hold. No activation claim.",
+      "urgency": "NONE",
+      "confidence": "MEDIUM",
+      "availability": "OWNED"
     }
   ],
   "waiver_signals": [
@@ -156,21 +165,21 @@
       "player": "De'Von Achane",
       "availability": "WAIVERS_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "Do not reclaim.",
+      "summary": "Do not reclaim. Prior ownership fact carried forward.",
       "urgency": "HIGH"
     },
     {
       "player": "Joe Mixon",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Practice-squad process. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Practice-squad process not re-opened. Not FREE_AGENT_CONFIRMED.",
       "urgency": "NONE"
     },
     {
-      "player": "Zach Charbonnet",
+      "player": "Will Shipley",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "RotoWire: not activated Week 5. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Reported lone healthy Eagles active back if Barkley and Bigsby are out. Not FREE_AGENT_CONFIRMED.",
       "urgency": "LOW"
     }
   ],
@@ -178,63 +187,83 @@
     {
       "player": "Bijan Robinson",
       "slot": "RB",
-      "status": "CONFIRMED_FACT",
-      "summary": "Week 4 complete for lineup purposes. No injury found overnight.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Final recap 145 yards and 2 TDs. No injury found. Week 4 locked.",
       "urgency": "LOW"
     },
     {
       "player": "Kendre Miller",
       "slot": "RB",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "No injury designation found overnight.",
+      "status": "EXPERT_OPINION",
+      "summary": "Fumble and backup role behind Kamara. No Week 5 injury designation found.",
       "urgency": "MEDIUM"
     },
     {
       "player": "Jalen Hurts",
       "slot": "QB",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Barkley week-to-week and Bigsby surgery/IR are reports only.",
+      "summary": "Barkley week-to-week and Bigsby surgery/IR remain reports. London vs JAX is the next game.",
       "urgency": "HIGH"
     },
     {
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Lamar MRI result not confirmed this run.",
-      "urgency": "LOW"
+      "summary": "Minter: Jackson Sunday status unknown, imaging still being gathered, not expected crazy long-term.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Packers D/ST",
+      "slot": "D/ST",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Edgerrin Cooper torn Achilles, season-ending per Rapoport. Defensive downgrade context only.",
+      "urgency": "MEDIUM"
     },
     {
       "player": "George Holani",
       "slot": "BENCH",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Mixon practice-squad process. Bench hold.",
+      "summary": "No new injury. Bench hold.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [
     {
-      "player": "Saquon Barkley",
+      "player": "Lamar Jackson",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "RotoWire week-to-week, not long-term.",
-      "urgency": "HIGH"
-    },
-    {
-      "player": "Tank Bigsby",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "RotoWire surgery/IR. Not official this run.",
+      "summary": "Minter Monday: chances unknown, imaging ongoing, not crazy long-term.",
       "urgency": "MEDIUM"
     },
     {
-      "player": "Lamar Jackson",
+      "player": "Edgerrin Cooper",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "MRI result not confirmed this run. Week 5 uncertain.",
-      "urgency": "LOW"
+      "summary": "Torn Achilles, season over, Packers D context.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Saquon Barkley",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Week-to-week, not long-term, per NFL Network sources.",
+      "urgency": "HIGH"
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
-  "summary": "Overnight 4 AM ET. No material change. Scan cut short at user finish; no new confirmed or attributed post-game injury to Bijan Robinson or Kendre Miller found this run, and MNF final box not re-verified. Lamar Jackson MRI result not confirmed this run; no Andrews/Bateman/Mitchell designation change. No new IR/injury news for owned players found. Prior signals carried forward unchanged (Barkley week-to-week and Bigsby surgery/IR remain RotoWire ATTRIBUTED_REPORT). Shipley UNKNOWN; Achane WAIVERS_CONFIRMED, do not reclaim. Intelligence only.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-06T032400Z",
-  "prior_completed_at": "2026-10-06T03:24:00Z",
-  "prior_commit": "f7d4fa6b3550c8794d96b67f6a19ed6494c8edcf"
+  "material_changes": [
+    {
+      "change": "MNF final box corrected from in-progress 38-17 note to Reuters 45-24, Bijan 145 yards and two TDs. No injury found.",
+      "status": "ATTRIBUTED_REPORT"
+    },
+    {
+      "change": "Lamar Jackson: Minter said Monday Sunday status is unknown, imaging still being gathered, not expected crazy long-term. MRI diagnosis still unpublished.",
+      "status": "ATTRIBUTED_REPORT"
+    },
+    {
+      "change": "Packers LB Edgerrin Cooper torn Achilles, season-ending per Rapoport. New context for owned Packers D/ST.",
+      "status": "ATTRIBUTED_REPORT"
+    }
+  ],
+  "no_material_change": false,
+  "summary": "6:00 AM ET. Material updates are intelligence only. Reuters final: Falcons 45-24, Bijan 145 yards and two TDs, no injury found; prior 38-17 note was in-progress. PFF: Miller fumbled and played behind Kamara, no Week 5 injury designation. ESPN/Hensley: Minter does not know Lamar's Sunday chances, imaging still being gathered, not crazy long-term; Andrews hold. Rapoport: Edgerrin Cooper torn Achilles, season over, Packers D context. Barkley week-to-week and Bigsby surgery/IR carried forward as ATTRIBUTED_REPORT. Achane WAIVERS_CONFIRMED, do not reclaim. Shipley and Mixon availability UNKNOWN. No ownership, FAAB, lineup, or IR write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-06T081442Z",
+  "prior_completed_at": "2026-10-06T08:14:42Z",
+  "prior_commit": "047c06ecfb98663306cfa916b0e4f9573b03a8a2"
 }
