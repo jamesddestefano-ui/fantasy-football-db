@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-06T132700Z",
-  "generated_at": "2026-10-06T13:26:30Z",
-  "completed_at": "2026-10-06T13:27:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-06T171626Z",
+  "generated_at": "2026-10-06T17:15:56Z",
+  "completed_at": "2026-10-06T17:16:26Z",
   "week": 5,
   "season": 2026,
-  "run_type": "hourly_9am_et",
-  "as_of": "2026-10-06T13:27:00Z",
+  "run_type": "hourly",
+  "as_of": "2026-10-06T17:16:26Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -27,9 +27,12 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "9:00 AM ET hourly. ESPN ownership not re-pulled. Baseline remains Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, Sampson IR only. Intelligence only. No roster write.",
+    "source": "1:00 PM ET hourly. Record/FAAB/injury tags from parent ESPN live check ~8:16 AM ET Oct 6 (not re-pulled this run). Intelligence only. No roster write.",
     "faab_remaining": 82,
-    "record": "2-1-0",
+    "record": "3-1-0",
+    "standing": "3rd of 12",
+    "week_4_result": "W 181.32-138.58",
+    "espn_injury_tags_on_roster": "none at 8:16 AM ET live check",
     "starters_week_4": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -41,6 +44,7 @@
       "CeeDee Lamb",
       "Packers D/ST"
     ],
+    "week_5_lineup_note": "McMillan (CAR bye) currently in a starting FLEX slot per 8:16 AM live check",
     "bench": [
       "Ray Davis",
       "Kaelon Black",
@@ -53,7 +57,7 @@
     "ir": [
       "Dylan Sampson"
     ],
-    "live_check_ref": "espn_live_20261001_0810"
+    "live_check_ref": "espn_live_20261006_0816"
   },
   "player_signals": [
     {
@@ -61,14 +65,71 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New since 6 AM Pulse. Ian Rapoport via RotoWire and NBC Rotoworld on Oct 6: sprained ankle, only an outside chance to play Week 5 at Atlanta, could miss multiple games, not described as long-term. Minter Monday comment (chances unknown, imaging still being gathered, not crazy long-term) still stands and is not an official designation. Tyler Huntley would start if Jackson cannot play. Not an official Ravens transaction page this run.",
-      "mongo_impact": "Downgrade context for owned Andrews and Bateman/Mitchell. Andrews still the start in 12-team expert note, but ceiling drops if Huntley plays. No lineup write.",
+      "summary": "Unchanged since 9 AM Pulse. ESPN 9:31 AM ET citing Rapoport: left ankle sprain, only an outside chance to play Week 5 at ATL (SNF Oct 11), could miss multiple games depending on rehab, not long-term, no surgery expected. Huntley starts if out. No team diagnosis or official designation yet (no practice report until later this week).",
+      "mongo_impact": "Material context for owned Mark Andrews (starting TE) and Rashod Bateman (bench); downgrade if Huntley starts. No designation change for Andrews/Bateman. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN",
       "sources": [
-        "https://www.rotowire.com/football/player/lamar-jackson-12561",
-        "https://www.nbcsports.com/nfl/lamar-jackson/5903/news"
+        "https://www.espn.com/nfl/story/_/id/50116449/sources-ravens-qb-lamar-jackson-dealing-ankle-sprain",
+        "https://www.cbssports.com/nfl/news/lamar-jackson-injury-update-ravens-qb-dealing-with-ankle-sprain/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-06/lamar-has-outside-chance-to-play-week-5"
+      ]
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "signal_type": "bye",
+      "status": "CONFIRMED_FACT",
+      "summary": "Carolina on bye Week 5. Currently in a starting FLEX slot per ESPN live check ~8:16 AM ET; would score 0.",
+      "mongo_impact": "Lineup signal only. Options: Keaton Mitchell (proj 8.0), George Holani (7.7), Chris Bell (7.5). No swap approved; no lineup write.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "OWNED"
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "signal_type": "post_game",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "MNF final ATL 45-24 at NO: 19 carries, 145 yards, 2 TDs (ESPN/AP). No post-game injury reported for Bijan in ESPN, AP/CBS, or Saints recaps. Falcons injuries were LT Jake Matthews (groin) and DE Za'Darius Smith (concussion) — team context only. ESPN live check 8:16 AM: no injury tag.",
+      "mongo_impact": "No change. Start-caliber Week 5. No lineup write.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.espn.com/nfl/story/_/id/50114045/mnf-falcons-saints-bijan-robinson",
+        "https://www.cbssports.com/nfl/news/bijan-robinson-leads-dominant-falcons-in-45-24-rout-of-saints/"
+      ]
+    },
+    {
+      "player": "Kendre Miller",
+      "team": "NO",
+      "signal_type": "post_game",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "No post-game injury reported; only notable item is lost fumble at NO 22 (AP). Kamara left briefly with a knee injury in Q3 but returned and scored twice (Saints recap) — context for Miller's role only. ESPN live check 8:16 AM: no injury tag.",
+      "mongo_impact": "Usage concern behind Kamara carried forward; not an injury designation. No lineup write.",
+      "urgency": "MEDIUM",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.cbssports.com/nfl/news/bijan-robinson-leads-dominant-falcons-in-45-24-rout-of-saints/",
+        "https://www.neworleanssaints.com/news/2026-nfl-week-4-atlanta-falcons-vs-new-orleans-saints-game-recap"
+      ]
+    },
+    {
+      "player": "Zach Charbonnet",
+      "team": "SEA",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Coach Macdonald on-record Monday: will not play Week 5 vs SF; team reps this week. Emanuel Wilson leads SEA backfield per NBC/RotoWire.",
+      "mongo_impact": "Context for bench RB George Holani (Week 5 proj 7.7 per ESPN). Holani's role behind Wilson not confirmed. Not an add signal.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN",
+      "sources": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-05/macdonald-charbonnet-knee-wont-play-week-5",
+        "https://www.rotowire.com/football/headlines/zach-charbonnet-injury-wont-debut-week-5-640882"
       ]
     },
     {
@@ -76,95 +137,10 @@
       "team": "DAL",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "League injury report via AP, updated Oct 5 5:20 PM ET, lists Lamb (thigh) as FULL for Thursday TB at DAL. PFT notes Cowboys did not practice Monday, so the listing is an estimated full participant. Not in the 6 AM Pulse. No game-status Out/Doubtful/Questionable designation in that report.",
-      "mongo_impact": "Owned WR trending toward Thursday availability vs Bucs. Still not a final active/inactive. No lineup write.",
-      "urgency": "HIGH",
+      "summary": "Carried forward from 9 AM Pulse: estimated FULL (thigh) on league report for Thursday TB at DAL. Not re-checked this hour.",
+      "mongo_impact": "No change. No lineup write.",
+      "urgency": "MEDIUM",
       "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://apnews.com/article/nfl-injury-report-0275537a506dd689292e55b2c1ef5205",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/wr-ceedee-lamb-thigh-cb-joey-porter-jr-ankle-estimated-as-full-participants"
-      ]
-    },
-    {
-      "player": "Mark Andrews",
-      "team": "BAL",
-      "signal_type": "qb_context",
-      "status": "EXPERT_OPINION",
-      "summary": "NBC Rotoworld/Denny Carter: Huntley start is a downgrade for Andrews and Zay Flowers, but both should still be played in 12-team leagues in Week 5 if Jackson sits. Opinion, not a designation.",
-      "mongo_impact": "Hold Andrews. No swap to Gadsden on this note alone.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.nbcsports.com/nfl/lamar-jackson/5903/news"
-      ]
-    },
-    {
-      "player": "Bijan Robinson",
-      "team": "ATL",
-      "signal_type": "box_score",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Carried forward: Reuters recap 145 rushing yards and two TDs in Falcons 45-24 win. No new injury designation found this hour.",
-      "mongo_impact": "Week 4 locked. No injury found. No lineup write.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.reuters.com/sports/nfl/bijan-robinson-2-tds-falcons-spoil-saints-homecoming-anniversary--flm-2026-10-06/"
-      ]
-    },
-    {
-      "player": "Kendre Miller",
-      "team": "NO",
-      "signal_type": "usage",
-      "status": "EXPERT_OPINION",
-      "summary": "No new injury designation. Prior PFF note stands: backup behind Kamara, fumble, 6 carries for 9 yards in the 45-24 loss. Kamara knee and Etienne IR remain context only.",
-      "mongo_impact": "Week 5 vs MIN usage concern, not an injury designation. No lineup write.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.pff.com/news/fantasy-football-recap-falcons-saints-week-4"
-      ]
-    },
-    {
-      "player": "Saquon Barkley",
-      "team": "PHI",
-      "signal_type": "injury",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Carried forward. NFL.com/Rapoport-Garafolo: week-to-week hamstring, not long-term. London vs JAX availability not confirmed. No new official Eagles designation this hour.",
-      "mongo_impact": "Hurts context only. Availability UNKNOWN. No add.",
-      "urgency": "HIGH",
-      "confidence": "MEDIUM",
-      "availability": "UNKNOWN",
-      "sources": [
-        "https://www.nfl.com/news/eagles-rb-saquon-barkley-hamstring-considered-week-to-week-avoids-long-term-injury"
-      ]
-    },
-    {
-      "player": "Edgerrin Cooper",
-      "team": "GB",
-      "signal_type": "injury",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Carried forward: Rapoport via RotoWire torn Achilles, out for the season. Not re-verified on an official Packers transaction page this hour.",
-      "mongo_impact": "Packers D/ST season-long defensive loss. No roster write.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
-      "availability": "UNKNOWN",
-      "sources": [
-        "https://www.rotowire.com/football/player/edgerrin-cooper-17753"
-      ]
-    },
-    {
-      "player": "Dylan Sampson",
-      "team": "CLE",
-      "signal_type": "injury",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "No new return timeline. Prior Sept 15 IR placement remains the baseline. Still the only IR player in the Oct 1 ESPN snapshot.",
-      "mongo_impact": "IR hold. No activation claim.",
-      "urgency": "NONE",
-      "confidence": "MEDIUM",
       "availability": "OWNED"
     }
   ],
@@ -173,101 +149,87 @@
       "player": "De'Von Achane",
       "availability": "WAIVERS_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "Do not reclaim. Prior ownership fact carried forward. Not re-checked on ESPN this hour.",
+      "summary": "Do not reclaim. Carried forward; not re-checked on ESPN this run.",
       "urgency": "HIGH"
     },
     {
-      "player": "Will Shipley",
-      "availability": "UNKNOWN",
-      "status": "EXPERT_OPINION",
-      "summary": "SI/FantasyLife name him a Week 5 FAAB target if Barkley and Bigsby are out. Mongo availability not confirmed. Not FREE_AGENT_CONFIRMED.",
-      "urgency": "LOW"
-    },
-    {
-      "player": "Joe Mixon",
+      "player": "Will Shipley / Thornton / Hutchinson / Hollywood Brown",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Practice-squad process not re-opened. Not FREE_AGENT_CONFIRMED.",
-      "urgency": "NONE"
+      "summary": "Reported on waivers clearing Wednesday. Availability UNKNOWN for free-agent purposes; not FREE_AGENT_CONFIRMED. Not re-checked.",
+      "urgency": "LOW"
     }
   ],
   "lineup_signals": [
     {
-      "player": "CeeDee Lamb",
-      "slot": "WR",
+      "player": "Tetairoa McMillan",
+      "slot": "FLEX",
       "status": "CONFIRMED_FACT",
-      "summary": "League report lists full (thigh) for Thursday vs Bucs. Estimated full per PFT because Dallas did not practice Monday. Not a final inactive list.",
-      "urgency": "HIGH"
+      "summary": "CAR bye Week 5; currently starting in FLEX and would score 0. Options Keaton Mitchell (8.0), George Holani (7.7), Chris Bell (7.5). James has not approved a swap; no change made.",
+      "urgency": "HIGH",
+      "material": true
     },
     {
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Rapoport: Jackson outside chance Sunday, could miss multiple games. Expert note still plays Andrews in 12-team if Huntley starts.",
-      "urgency": "HIGH"
+      "summary": "Lamar outside chance Week 5 per Rapoport (unchanged since 9 AM). Rotoworld still plays Andrews in 12-team if Huntley starts. No designation change.",
+      "urgency": "MEDIUM",
+      "material": false
     },
     {
-      "player": "Jalen Hurts",
-      "slot": "QB",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Barkley week-to-week and Bigsby surgery/IR carried forward. London vs JAX. No new designation this hour.",
-      "urgency": "HIGH"
-    },
-    {
-      "player": "Packers D/ST",
-      "slot": "D/ST",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Cooper torn Achilles carried forward. No new defensive injury this hour.",
-      "urgency": "MEDIUM"
-    },
-    {
-      "player": "Kendre Miller",
-      "slot": "RB",
-      "status": "EXPERT_OPINION",
-      "summary": "No new injury. Backup role and fumble carried forward.",
-      "urgency": "MEDIUM"
-    },
-    {
-      "player": "Bijan Robinson",
-      "slot": "RB",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Final recap carried forward. No injury found.",
-      "urgency": "LOW"
+      "player": "George Holani",
+      "slot": "BENCH",
+      "status": "CONFIRMED_FACT",
+      "summary": "Charbonnet out Week 5 (coach). Wilson lead back. Holani one of the McMillan FLEX replacement options.",
+      "urgency": "LOW",
+      "material": false
     }
   ],
   "expert_signals": [
     {
-      "player": "Lamar Jackson",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Rapoport Oct 6: outside chance Week 5, could miss multiple games, sprain, not long-term.",
-      "urgency": "HIGH"
-    },
-    {
       "player": "Mark Andrews",
       "status": "EXPERT_OPINION",
-      "summary": "Rotoworld: downgrade if Huntley starts, still a 12-team start.",
+      "summary": "NBC/Denny Carter: Huntley start downgrades Andrews but he remains a 12-team start in Week 5.",
       "urgency": "MEDIUM"
-    },
-    {
-      "player": "Will Shipley",
-      "status": "EXPERT_OPINION",
-      "summary": "Week 5 waiver target in expert columns. Mongo availability UNKNOWN.",
-      "urgency": "LOW"
     }
   ],
   "material_changes": [
     {
-      "change": "Lamar Jackson: Rapoport now reports only an outside chance to play Week 5 and that he could miss multiple games with a sprained ankle. Prior Pulse had only Minter's Monday unknown/not-crazy-long-term comment.",
-      "status": "ATTRIBUTED_REPORT"
+      "topic": "Week 5 lineup: Tetairoa McMillan (CAR) on bye in starting FLEX",
+      "status": "CONFIRMED_FACT",
+      "vs_prior": "NEW",
+      "summary": "ESPN live check ~8:16 AM ET: Carolina is on bye Week 5 and McMillan currently occupies a starting FLEX slot, so he would score 0 if left there. Bench options per ESPN projections: Keaton Mitchell 8.0, George Holani 7.7, Chris Bell 7.5. James has not approved a swap; no lineup change made."
     },
     {
-      "change": "CeeDee Lamb: league injury report via AP lists him full (thigh) for Thursday vs Bucs. PFT says the Monday listing is estimated because Dallas did not practice. Not in the 6 AM Pulse.",
-      "status": "CONFIRMED_FACT"
+      "topic": "Week 4 result and standings",
+      "status": "CONFIRMED_FACT",
+      "vs_prior": "NEW",
+      "summary": "ESPN live check ~8:16 AM ET: JDD won Week 4 181.32-138.58, now 3-1, 3rd of 12, FAAB $82. No JDD roster player carried an ESPN injury tag. Prior Pulse roster_context still showed 2-1."
+    },
+    {
+      "topic": "Zach Charbonnet out Week 5 (Holani context)",
+      "status": "CONFIRMED_FACT",
+      "vs_prior": "NEW",
+      "summary": "Seahawks coach Mike Macdonald said Monday Charbonnet (knee, PUP practice window) will not play Week 5 vs SF; team reps this week, Week 6 possible. Per NBC/RotoWire, Emanuel Wilson leads the SEA backfield (120 scrimmage yards on 24 touches in Week 4). Context for bench RB George Holani, not a designation for Holani."
     }
   ],
   "no_material_change": false,
-  "summary": "9:00 AM ET hourly. Material updates are intelligence only. Rapoport via RotoWire/NBC: Lamar Jackson sprained ankle, outside chance vs Falcons, could miss multiple games, not long-term; Andrews hold with a Huntley downgrade if he sits. AP league report: CeeDee Lamb full (thigh) for Thursday TB at DAL; PFT says estimated full because no Monday practice. Bijan final box, Miller usage, Barkley week-to-week, Cooper Achilles, and Sampson IR carried forward. Achane WAIVERS_CONFIRMED, do not reclaim. Shipley and Mixon availability UNKNOWN. No ownership, FAAB, lineup, or IR write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-06T100100Z",
-  "prior_completed_at": "2026-10-06T10:01:00Z",
-  "prior_commit": "3e22799bc4b29581ce772c8e35fa7cdd45f4741f"
+  "not_relogged_unchanged": [
+    "Bagent Bears starter",
+    "Allen",
+    "Legette IR",
+    "Price IR",
+    "Caleb",
+    "DeVonta/Goedert",
+    "Mayfield",
+    "Etienne IR",
+    "Barkley/Bigsby (unowned)",
+    "Lamar ankle (logged 9 AM; carried forward, not re-counted as material)",
+    "Lamb full (logged 9 AM)"
+  ],
+  "summary": "1:00 PM ET hourly. Intelligence only. NEW: (1) Week 5 lineup signal — McMillan (CAR bye) is in a starting FLEX slot and would score 0; options Mitchell 8.0 / Holani 7.7 / Bell 7.5; no swap approved, no change made. (2) Week 4 final per ESPN live check: JDD W 181.32-138.58, 3-1, 3rd of 12, FAAB $82, no roster injury tags. (3) Charbonnet out Week 5 per Macdonald; Wilson leads SEA — Holani context. Carried forward: Lamar ankle sprain, outside chance Week 5 per ESPN/Rapoport (ATTRIBUTED_REPORT, logged at 9 AM) — Andrews/Bateman context, no designation change. MNF post-game: no injury reported for Bijan or Miller; Kamara knee returned in-game. Not checked this run: X directly, official team injury pages, analytics, ESPN ownership/waivers (marked LIMITED). No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-06T132700Z",
+  "prior_completed_at": "2026-10-06T13:27:00Z",
+  "prior_commit": "757f85a06d2e16724771eae212cd1e9df771ddb0"
 }
