@@ -3,19 +3,19 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-06T032400Z",
-  "generated_at": "2026-10-06T03:22:30Z",
-  "completed_at": "2026-10-06T03:24:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-06T081442Z",
+  "generated_at": "2026-10-06T08:14:40Z",
+  "completed_at": "2026-10-06T08:14:42Z",
   "week": 4,
   "season": 2026,
-  "run_type": "hourly",
-  "as_of": "2026-10-06T03:24:00Z",
+  "run_type": "overnight",
+  "as_of": "2026-10-06T08:14:42Z",
   "source_status": {
-    "official_nfl_team": "OK",
-    "beat_reporting": "OK",
+    "official_nfl_team": "LIMITED",
+    "beat_reporting": "LIMITED",
     "x_direct": "LIMITED",
     "experts": "LIMITED",
-    "analytics": "LIMITED"
+    "analytics": "UNAVAILABLE"
   },
   "scope": {
     "repository": "jamesddestefano-ui/fantasy-football-db",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "11 PM ET correction after 03:15:45Z tip. ESPN ownership not re-pulled. Baseline remains Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, Sampson IR only. MNF still in progress late 4th. Intelligence only. No roster write.",
+    "source": "Overnight 4 AM ET. ESPN ownership not re-pulled. Baseline remains Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, Sampson IR only. Intelligence only. No roster write.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -61,7 +61,7 @@
       "team": "ATL",
       "signal_type": "in_game",
       "status": "CONFIRMED_FACT",
-      "summary": "Supersedes 03:15:45Z halftime note. ESPN live page ~11:08 PM ET: ATL 38 NO 17, 8:29 4th, not final. Play-by-play lists Bijan rushing TDs of 59 and 4. Saints.com live box listed B. Robinson 19-145 and a second B. Robinson 14-62-3 TD (name collision on the page; treat stat line as in-progress, not final).",
+      "summary": "Prior late-4th note (ESPN ATL 38-17 NO, two Bijan rushing TDs) stands. Overnight: no confirmed or attributed post-game injury found; final box not re-verified this run.",
       "mongo_impact": "Start already locked. No injury designation. No lineup write.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -75,7 +75,7 @@
       "team": "NO",
       "signal_type": "in_game",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new Miller injury designation. Saints Wire: Kamara evaluated for a knee injury and returned to score in the 4th. Miller snap share not confirmed.",
+      "summary": "No Miller injury designation found overnight. Kamara knee evaluation/return remains ATTRIBUTED_REPORT context.",
       "mongo_impact": "Start already locked.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -122,7 +122,7 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "MRI result still not posted. Week 5 availability uncertain. No Andrews/Bateman/Mitchell designation change.",
+      "summary": "MRI result not confirmed this overnight run. Week 5 uncertain. No Andrews/Bateman/Mitchell designation change.",
       "mongo_impact": "Andrews start holds.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -179,14 +179,14 @@
       "player": "Bijan Robinson",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "In progress, not final. No injury. Start locked.",
+      "summary": "Week 4 complete for lineup purposes. No injury found overnight.",
       "urgency": "LOW"
     },
     {
       "player": "Kendre Miller",
       "slot": "RB",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No injury designation. Kamara returned after knee evaluation. Start locked.",
+      "summary": "No injury designation found overnight.",
       "urgency": "MEDIUM"
     },
     {
@@ -200,7 +200,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Lamar MRI still unpublished.",
+      "summary": "Lamar MRI result not confirmed this run.",
       "urgency": "LOW"
     },
     {
@@ -227,45 +227,14 @@
     {
       "player": "Lamar Jackson",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "MRI unpublished. Week 5 uncertain.",
+      "summary": "MRI result not confirmed this run. Week 5 uncertain.",
       "urgency": "LOW"
     }
   ],
-  "material_changes": [
-    {
-      "player": "Bijan Robinson",
-      "change": "4th quarter update vs 03:15:45Z halftime note. ESPN live ~11:08 PM ET ATL 38-17 NO, 8:29 4th, not final. Two Bijan rushing TDs on play-by-play.",
-      "status": "CONFIRMED_FACT",
-      "source": "https://www.espn.com/nfl/game?gameId=401872979"
-    },
-    {
-      "player": "Alvin Kamara",
-      "change": "Knee evaluation then return and 4th-quarter TD (Saints Wire). Miller context only.",
-      "status": "ATTRIBUTED_REPORT",
-      "source": "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/10/05/saints-falcons-score-updates-highlights--live/92063111007/"
-    },
-    {
-      "player": "Saquon Barkley",
-      "change": "RotoWire: week-to-week, not long-term. Availability UNKNOWN.",
-      "status": "ATTRIBUTED_REPORT",
-      "source": "https://x.com/RotoWireNFL/status/2107308253864423766"
-    },
-    {
-      "player": "Tank Bigsby",
-      "change": "RotoWire: surgery and headed to IR. Not official this run. Availability UNKNOWN.",
-      "status": "ATTRIBUTED_REPORT",
-      "source": "https://x.com/RotoWireNFL/status/2107308253864423766"
-    },
-    {
-      "player": "Joe Mixon",
-      "change": "Seahawks practice-squad process. Holani context. Not FREE_AGENT_CONFIRMED.",
-      "status": "ATTRIBUTED_REPORT",
-      "source": "https://nypost.com/2026/10/05/sports/joe-mixon-signing-with-seahawks-after-mystery-injury-kept-him-off-field-for-more-than-a-year/"
-    }
-  ],
-  "no_material_change": false,
-  "summary": "Hourly 11 PM ET correction after 03:15:45Z no-material tip. MNF still not final: ESPN late-4th 38-17, Bijan two rushing TDs on play-by-play. Kamara knee evaluation then return is ATTRIBUTED_REPORT; no Miller injury designation. Barkley week-to-week and Bigsby surgery/IR are RotoWire only. Lamar MRI unpublished. Mixon practice-squad process is not a waiver. Intelligence only.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-06T031545Z",
-  "prior_completed_at": "2026-10-06T03:15:45Z",
-  "prior_commit": "be21e11"
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "Overnight 4 AM ET. No material change. Scan cut short at user finish; no new confirmed or attributed post-game injury to Bijan Robinson or Kendre Miller found this run, and MNF final box not re-verified. Lamar Jackson MRI result not confirmed this run; no Andrews/Bateman/Mitchell designation change. No new IR/injury news for owned players found. Prior signals carried forward unchanged (Barkley week-to-week and Bigsby surgery/IR remain RotoWire ATTRIBUTED_REPORT). Shipley UNKNOWN; Achane WAIVERS_CONFIRMED, do not reclaim. Intelligence only.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-06T032400Z",
+  "prior_completed_at": "2026-10-06T03:24:00Z",
+  "prior_commit": "f7d4fa6b3550c8794d96b67f6a19ed6494c8edcf"
 }
