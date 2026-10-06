@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-05T231830Z",
-  "generated_at": "2026-10-05T23:17:30Z",
-  "completed_at": "2026-10-05T23:18:30Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-06T031545Z",
+  "generated_at": "2026-10-06T03:15:00Z",
+  "completed_at": "2026-10-06T03:15:45Z",
   "week": 4,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-05T23:18:30Z",
+  "as_of": "2026-10-06T03:15:45Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "7 PM ET hourly re-read. ESPN not re-pulled this run. Ownership baseline remains the Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. Bijan Robinson and Kendre Miller both ACTIVE per official MNF inactives (posted ~6:45 PM ET); kickoff 8:15 PM ET. Intelligence only. No roster, FAAB, lineup, or IR write.",
+    "source": "11 PM ET hourly re-read. ESPN not re-pulled this run. Ownership baseline remains the Oct 1 authenticated ESPN live check: JDD 2-1, FAAB $82, roster/lineup unchanged, Sampson IR only, no tx since 2026-10-01. MNF ATL@NO played; no in-game injury confirmed for Bijan/Miller. Intelligence only. No roster, FAAB, lineup, or IR write.",
     "faab_remaining": 82,
     "record": "2-1-0",
     "starters_week_4": [
@@ -68,32 +68,34 @@
     {
       "player": "Kendre Miller",
       "team": "NO",
-      "signal_type": "lineup",
+      "signal_type": "game_result",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Saints/Falcons inactives posted Oct 5 ~6:45 PM ET (neworleanssaints.com 22:45Z). Miller NOT inactive = ACTIVE for MNF. Saints inactives: Z. Wilson (3rd QB), D. Richardson, A. Jennings, C. Miller (DL), K. Elliss, N. Fant, C. Granderson. Etienne on IR; Kamara/Miller/Donaldson share backfield.",
-      "mongo_impact": "Start confirmed for MNF 8:15 PM ET.",
+      "summary": "MNF ATL@NO: lost fumble at NO 22 (C.J. Henderson punch-out; replay reversed to fumble) leading to ATL TD. No confirmed or attributed in-game injury found. Kamara scored NO first-half TD.",
+      "mongo_impact": "Performance note only; no injury flag. No lineup write.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
         "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-atlanta-falcons-2026-nfl-week-4-gameday",
         "https://sports.yahoo.com/articles/falcons-vs-saints-inactives-list-225017618.html"
-      ]
+      ],
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bijan-robinsons-second-td-gives-falcons-14-0-lead"
     },
     {
       "player": "Bijan Robinson",
       "team": "ATL",
-      "signal_type": "usage",
+      "signal_type": "game_result",
       "status": "CONFIRMED_FACT",
-      "summary": "Official Falcons inactives posted Oct 5 ~6:44 PM ET (atlantafalcons.com 22:44Z): Rush (3rd QB), Strand, DeWalt IV, Longerbeam, Ivey, Onianwa. Bijan NOT inactive = ACTIVE. Deablo/Ebukam active.",
-      "mongo_impact": "Start confirmed for MNF 8:15 PM ET.",
+      "summary": "MNF ATL@NO: 103 rush yds on 12 carries, 2 TD (59-yd, 4-yd) at halftime, ATL led 24-7 (neworleanssaints.com halftime update). No confirmed or attributed in-game injury found.",
+      "mongo_impact": "Week 4 production strong; no injury flag. No lineup write.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
         "https://www.atlantafalcons.com/news/atlanta-falcons-week-4-inactives-vs-new-orleans-saints-on-monday-night-football",
         "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-atlanta-falcons-2026-nfl-week-4-gameday"
-      ]
+      ],
+      "source": "https://www.neworleanssaints.com/news/2026-nfl-week-4-atlanta-falcons-vs-new-orleans-saints-halftime-update"
     },
     {
       "player": "Luther Burden III",
@@ -169,12 +171,13 @@
       "player": "Mark Andrews",
       "team": "BAL",
       "signal_type": "game_status",
-      "status": "CONFIRMED_FACT",
-      "summary": "No new designation. Lamar Jackson MRI Monday still pending result; no Andrews/Bateman/Mitchell designation change. Not re-logged.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Lamar Jackson (left ankle) MRI result not yet reported as of 11 PM ET. Minter: Week 5 chances unknown, \"not crazy long-term\"; Huntley would start if out (ESPN Hensley). No Andrews/Bateman/Mitchell designation change.",
       "mongo_impact": "start holds. Week 4 game already final.",
       "urgency": "LOW",
       "confidence": "HIGH",
-      "availability": "OWNED"
+      "availability": "OWNED",
+      "source": "https://www.espn.com/nfl/story/_/id/50111347/ravens-unsure-lamar-jackson-ankle-play-vs-falcons"
     },
     {
       "player": "Rashod Bateman",
@@ -487,37 +490,18 @@
       "urgency": "LOW"
     }
   ],
-  "material_changes": [
-    {
-      "player": "Bijan Robinson",
-      "change": "Official MNF inactives posted ~6:44 PM ET; Bijan ACTIVE. Start confirmed.",
-      "status": "CONFIRMED_FACT",
-      "source": "https://www.atlantafalcons.com/news/atlanta-falcons-week-4-inactives-vs-new-orleans-saints-on-monday-night-football"
-    },
-    {
-      "player": "Kendre Miller",
-      "change": "Official MNF inactives posted ~6:45 PM ET; Miller ACTIVE. Start confirmed.",
-      "status": "CONFIRMED_FACT",
-      "source": "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-atlanta-falcons-2026-nfl-week-4-gameday"
-    },
-    {
-      "player": "Tyson Bagent",
-      "change": "Ben Johnson named Bagent Week 5 starter at GB; ATTRIBUTED_REPORT -> CONFIRMED_FACT. Burden III / Packers D/ST context. Availability UNKNOWN.",
-      "status": "CONFIRMED_FACT",
-      "source": "https://www.espn.com/nfl/story/_/id/50110486/ben-johnson-tyson-bagent-start-qb-bears-vs-packers"
-    }
-  ],
-  "no_material_change": false,
-  "summary": "Hourly 7 PM ET. Material: official MNF inactives posted ~6:45 PM ET — Bijan Robinson and Kendre Miller both ACTIVE; starts confirmed for 8:15 PM ET kickoff. Ben Johnson named Tyson Bagent Week 5 starter at GB (CONFIRMED_FACT; Burden III/Packers D/ST context; availability UNKNOWN, no add). Lamar MRI result still pending; no Andrews/Bateman/Mitchell designation change. Shipley UNKNOWN. No new FREE_AGENT_CONFIRMED. No roster, FAAB, lineup, or IR write.",
-  "notes": "Intelligence only. no_material_change=false. Hourly 7 PM ET slot. Same files only. Sparta/DFS/props not touched.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T191815Z",
-  "prior_completed_at": "2026-10-05T19:18:15Z",
-  "prior_commit": "cfb5e04ed3101604ddeeee5f9e45bf54352ca568",
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "Hourly 11 PM ET. No material change. MNF ATL@NO: no CONFIRMED/ATTRIBUTED in-game injury found for Bijan Robinson or Kendre Miller. Bijan 103 rush yds/12 car, 2 TD at half (ATL 24-7, Saints official halftime update); Miller lost a fumble (replay-reversed) — performance only, not an injury. Lamar Jackson MRI result not yet reported; Minter 'not crazy long-term', Week 5 uncertain, Huntley would start — no Andrews/Bateman/Mitchell designation change. Shipley UNKNOWN. No new FREE_AGENT_CONFIRMED. No roster, FAAB, lineup, or IR write.",
+  "notes": "Intelligence only. no_material_change=true. Hourly 11 PM ET slot. Same files only. Sparta/DFS/props not touched. MNF final stats not re-pulled (halftime official update used); in-game injury check found none.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-05T231830Z",
+  "prior_completed_at": "2026-10-05T23:18:30Z",
+  "prior_commit": "b23c4c7671a6307cde23430cd80895f44b895701",
   "prior_pulse": {
-    "pulse_id": "mongo-grok-pulse-2026-10-05T191815Z",
-    "completed_at": "2026-10-05T19:18:15Z",
-    "commit": "cfb5e04ed3101604ddeeee5f9e45bf54352ca568",
-    "no_material_change": true
+    "pulse_id": "mongo-grok-pulse-2026-10-05T231830Z",
+    "completed_at": "2026-10-05T23:18:30Z",
+    "commit": "b23c4c7671a6307cde23430cd80895f44b895701",
+    "no_material_change": false
   },
   "history": {
     "append_only": true,
