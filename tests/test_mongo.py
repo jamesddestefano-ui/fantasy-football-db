@@ -12,17 +12,18 @@ from ffdb.services import DomainError, add_drop, faab_balance, ownership, rebuil
 
 def test_seed_roster_is_exact(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    expected = ({r[0] for r in ROSTER} | {"Chris Bell", "Oronde Gadsden", "Rashod Bateman", "George Holani"}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders"}
+    expected = ({r[0] for r in ROSTER} | {"Oronde Gadsden", "Rashod Bateman", "George Holani", "Packers D/ST", "Keaton Mitchell", "Michael Penix Jr."}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders", "Eagles D/ST", "De'Von Achane", "Chris Bell"}
     assert actual == expected
     assert len(actual) == 17
     assert "Malik Davis" not in actual
     assert "Tre Tucker" not in actual
-    assert "Chris Bell" in actual and "Oronde Gadsden" in actual and "Rashod Bateman" in actual and "George Holani" in actual
+    assert "Michael Penix Jr." in actual and "Oronde Gadsden" in actual and "Rashod Bateman" in actual and "George Holani" in actual
+    assert "Chris Bell" not in actual
     assert "Raheim Sanders" not in actual
     assert "Emari Demercado" not in actual
     assert "Ja'Kobi Lane" not in actual
     assert "Dylan Sampson" in actual
-    assert faab_balance(session, "mongo") == Decimal("82.00")
+    assert faab_balance(session, "mongo") == Decimal("74.00")
     assert validate(session, "mongo") == []
 
 def test_league_settings_include_espn_ids_scoring_and_faab_budget(session):
@@ -58,12 +59,13 @@ def test_faab_history_explains_100_to_82_via_saylors_bell_sanders_gadsden(sessio
     debits = session.scalars(select(FaabEntry).where(
         FaabEntry.league_id == lg.id, FaabEntry.kind == "WAIVER_EXPENDITURE",
     )).all()
-    assert sorted(abs(d.amount) for d in debits) == [Decimal("2.00"), Decimal("2.00"), Decimal("6.00"), Decimal("8.00")]
-    assert faab_balance(session, "mongo") == Decimal("82.00")
+    assert sorted(abs(d.amount) for d in debits) == [Decimal("2.00"), Decimal("2.00"), Decimal("6.00"), Decimal("8.00"), Decimal("8.00")]
+    assert faab_balance(session, "mongo") == Decimal("74.00")
 
 def test_historical_transactions_are_seeded_without_changing_current_roster(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    assert "Kaelon Black" in actual and "Chris Bell" in actual and "Oronde Gadsden" in actual
+    assert "Kaelon Black" in actual and "Michael Penix Jr." in actual and "Oronde Gadsden" in actual
+    assert "Chris Bell" not in actual
     assert "Raheim Sanders" not in actual
     assert "Tre Tucker" not in actual
     assert "George Holani" in actual and "Rashod Bateman" in actual
@@ -169,7 +171,7 @@ def test_demercado_free_add_then_drop_leaves_unknown_without_faab_change(session
         TransactionEvent.group_id == "rashod-bateman-add-demercado-drop-20260917-espn-001",
     ))
     assert drop is not None
-    assert faab_balance(session, "mongo") == Decimal("82.00")
+    assert faab_balance(session, "mongo") == Decimal("74.00")
 
 
 def test_bateman_owned_on_bench_week2_after_free_add(session):
@@ -191,7 +193,7 @@ def test_bateman_owned_on_bench_week2_after_free_add(session):
         TransactionEvent.group_id == "rashod-bateman-add-demercado-drop-20260917-espn-001",
     ))
     assert add.faab_amount == Decimal("0.00")
-    assert faab_balance(session, "mongo") == Decimal("82.00")
+    assert faab_balance(session, "mongo") == Decimal("74.00")
 
 
 
@@ -215,7 +217,7 @@ def test_holani_owned_on_bench_week2_after_free_add(session):
         TransactionEvent.group_id == "george-holani-add-lane-drop-20260919-espn-001",
     ))
     assert add.faab_amount == Decimal("0.00")
-    assert faab_balance(session, "mongo") == Decimal("82.00")
+    assert faab_balance(session, "mongo") == Decimal("74.00")
 
 
 def test_gadsden_owned_on_bench_week2_after_waiver_sanders_drop(session):
@@ -238,7 +240,7 @@ def test_gadsden_owned_on_bench_week2_after_waiver_sanders_drop(session):
         TransactionEvent.group_id == "oronde-gadsden-waiver-sanders-drop-20260923-espn-001",
     ))
     assert add.faab_amount == Decimal("8.00")
-    assert faab_balance(session, "mongo") == Decimal("82.00")
+    assert faab_balance(session, "mongo") == Decimal("74.00")
 
 def test_not_mine_is_unknown_not_free_agent(session):
     for name in ["Browns D/ST", "Nicholas Singleton", "Kayshon Boutte", "Jacob Saylors"]:
@@ -258,7 +260,7 @@ def test_atomic_add_drop_preserves_drop_as_unknown_and_debits_faab(session):
     add_drop(session, "mongo", "mine", "Kendre Miller", "Player X", Decimal("4"), src.id)
     assert ownership(session, "mongo", "Kendre Miller").state == OwnershipState.UNKNOWN
     assert ownership(session, "mongo", "Player X").state == OwnershipState.OWNED
-    assert faab_balance(session, "mongo") == Decimal("78.00")
+    assert faab_balance(session, "mongo") == Decimal("70.00")
     assert validate(session, "mongo") == []
 
 def test_add_owned_elsewhere_is_rejected_atomically(session):

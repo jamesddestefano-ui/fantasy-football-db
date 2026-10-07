@@ -25,6 +25,7 @@ HOLANI_LANE_AT = datetime(2026, 9, 20, 0, 28, 0, tzinfo=timezone.utc)  # Sat Sep
 GADSDEN_SANDERS_WAIVER_AT = datetime(2026, 9, 23, 7, 27, 0, tzinfo=timezone.utc)  # Wed Sep 23, 3:27 am ET
 PACKERS_EAGLES_DST_AT = datetime(2026, 9, 30, 15, 58, 23, tzinfo=timezone.utc)  # Tue Sep 30, 11:58:23 am ET
 MITCHELL_ACHANE_AT = datetime(2026, 9, 30, 15, 59, 9, tzinfo=timezone.utc)  # Tue Sep 30, 11:59:09 am ET
+PENIX_BELL_WAIVER_AT = datetime(2026, 10, 7, 7, 34, 0, tzinfo=timezone.utc)  # Wed Oct 7, 3:34 am ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -788,6 +789,64 @@ def seed_mongo(session: Session):
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("82"),
         observed_at=MITCHELL_ACHANE_AT, source_id=mitchell_source.id,
     ))
+
+    # --- 2026-10-07 ESPN: WAIVER ADD Michael Penix Jr. $8 / DROP Chris Bell ---
+    bell_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Chris Bell")))
+    penix = _player(session, "Michael Penix Jr.", "QB", "ATL")
+    penix_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Michael Penix Jr. from waivers for $8; dropped Chris Bell (Wed Oct 7, 3:34 am)",
+        original_ref="data/imports/2026-10-07-michael-penix-waiver-bell-drop.json",
+        platform="ESPN",
+        observed_at=PENIX_BELL_WAIVER_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-07; FAAB $82→$74.",
+    )
+    session.add(penix_source)
+    session.flush()
+    penix_group = TransactionGroup(
+        id="michael-penix-waiver-bell-drop-20261007-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=PENIX_BELL_WAIVER_AT, source_id=penix_source.id,
+        notes="ESPN-authoritative WAIVER_ADD_DROP: Michael Penix Jr. $8 waiver; Chris Bell dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(penix_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=penix_group.id, sequence=1, event_type="DROP", player_id=bell_drop.id,
+            notes="Dropped when claiming Michael Penix Jr. on waivers.",
+        ),
+        TransactionEvent(
+            group_id=penix_group.id, sequence=2, event_type="WAIVER_ADD", player_id=penix.id,
+            faab_amount=Decimal("8"), notes="Waiver claim $8.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=bell_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=PENIX_BELL_WAIVER_AT, source_id=penix_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=penix_group.id,
+            notes="Drop proves departure from roster, not current free agency; dropped to Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=penix.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=PENIX_BELL_WAIVER_AT, source_id=penix_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=penix_group.id,
+            notes="ESPN waiver claim $8 dropping Bell.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=penix.id,
+            slot="BN", placement="BENCH", effective_at=PENIX_BELL_WAIVER_AT, source_id=penix_source.id,
+        ),
+        FaabEntry(
+            league_id=lg.id, fantasy_team_id=tm.id, amount=Decimal("-8"), kind="WAIVER_EXPENDITURE",
+            effective_at=PENIX_BELL_WAIVER_AT, transaction_group_id=penix_group.id, source_id=penix_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=PENIX_BELL_WAIVER_AT, source_id=penix_source.id,
+    ))
+
 
 
     for name, pos in NOT_MINE_UNKNOWN:

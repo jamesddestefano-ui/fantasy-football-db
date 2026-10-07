@@ -649,4 +649,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-09-23",
         "faab_amount": 8,
     },
+    {
+        "description": "2026-10-07 ET WAIVER_ADD_DROP Michael Penix Jr. $8 + DROP Chris Bell (ESPN waivers 3:34 am)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "waiver",
+        "added_player": "Michael Penix Jr.",
+        "dropped_player": "Chris Bell",
+        "calendar_day_ET": "2026-10-07",
+        "faab_amount": 8,
+    },
 ]
