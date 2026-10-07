@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-07T031830Z",
-  "generated_at": "2026-10-07T03:16:00Z",
-  "completed_at": "2026-10-07T03:18:30Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-07T041620Z",
+  "generated_at": "2026-10-07T04:14:30Z",
+  "completed_at": "2026-10-07T04:16:20Z",
   "week": 5,
   "season": 2026,
-  "run_type": "hourly",
-  "as_of": "2026-10-07T03:18:30Z",
+  "run_type": "overnight",
+  "as_of": "2026-10-07T04:16:20Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "11:00 PM ET hourly. Record/FAAB/injury tags carried from parent ESPN live check ~8:16 AM ET Oct 6 (not re-pulled this run). Repo imports show no Mongo transaction after 2026-09-30. Intelligence only. No roster write.",
+    "source": "12:00 AM ET overnight. Record/FAAB/injury tags carried from parent ESPN live check ~8:16 AM ET Oct 6 (not re-pulled this run). Repo imports show no Mongo transaction after 2026-09-30. Intelligence only. No roster write.",
     "faab_remaining": 82,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -65,15 +65,14 @@
       "team": "BAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Unchanged team diagnosis since 7:17 PM ET Pulse. Schefter 7:13 PM ET restated Rapoport: left ankle sprain, outside chance Week 5 at ATL (SNF Oct 11), could miss multiple games, not long-term, no surgery expected; Huntley if out. Zrebiec ~8:00 PM ET: specific injury detail rarely comes out on Lamar. Late X (Ledbetter podcast tease, La Canfora column) says likely out \u2014 SPECULATION / column framing, not a new team or Rapoport designation. First BAL practice report still expected Thursday (MNF schedule).",
+      "summary": "No overnight team diagnosis or Minter update. Still Rapoport/ESPN: left ankle sprain, outside chance Week 5 at ATL (SNF Oct 11), could miss multiple games, not long-term, no surgery expected; Huntley if out. First BAL practice report still expected Thursday (MNF schedule). Wed practice reports not out yet at ~12 AM ET.",
       "mongo_impact": "Context for owned Mark Andrews (starting TE) and Rashod Bateman (bench); downgrade if Huntley starts. No designation change. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN",
       "sources": [
         "https://www.espn.com/nfl/story/_/id/50116449/sources-ravens-qb-lamar-jackson-dealing-ankle-sprain",
-        "https://x.com/AdamSchefter/status/2107610106791891193",
-        "https://x.com/jeffzrebiec/status/2107621753895711132"
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-06/lamar-has-outside-chance-to-play-week-5"
       ]
     },
     {
@@ -92,14 +91,14 @@
       "team": "DAL",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "Tuesday DAL practice report (AP / PFT, published before 7 PM ET and not newly changed overnight): Lamb (thigh) FULL, same as Monday estimated report. No Wednesday designation yet. Thursday vs TB.",
+      "summary": "Tuesday DAL practice report (AP/PFT): Lamb (thigh) FULL. No Wednesday designation yet overnight (~12 AM ET; final TNF report usually morning).",
       "mongo_impact": "Confirms already-logged full participation. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
         "https://apnews.com/article/nfl-injury-report-9c0039bbbed997a41307fc9ecd87206e",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ceedee-lamb-joey-porter-jr-remain-full-participants-for-cowboys"
+        "https://sports.yahoo.com/articles/buccaneers-cowboys-day-2-injury-013350857.html"
       ]
     },
     {
@@ -107,7 +106,7 @@
       "team": "ATL",
       "signal_type": "post_game",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new injury since MNF. Carried forward: 19-145-2 rushing; no post-game injury in prior ESPN/AP/CBS. ESPN 8:16 AM: no injury tag. Aggregator pages claiming a high-ankle sprain were not corroborated and are not used.",
+      "summary": "No overnight injury. Carried: 19-145-2 rushing MNF; no post-game injury in ESPN/AP/CBS. ESPN 8:16 AM: no injury tag.",
       "mongo_impact": "No change. Start-caliber Week 5. No lineup write.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -118,7 +117,7 @@
       "team": "NO",
       "signal_type": "post_game",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new injury or usage update Tuesday night. Kamara returned Monday and remains lead back without Etienne (IR); Miller backup concern carried forward.",
+      "summary": "No overnight injury or usage update. Kamara returned Monday and remains lead back without Etienne (IR); Miller backup concern carried forward.",
       "mongo_impact": "Usage concern behind Kamara; not an injury designation. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -129,7 +128,7 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Macdonald on-record: will not play Week 5 vs SF. No new SEA Wednesday practice report overnight. Holani no new Week 5 injury designation found. Wilson lead back.",
+      "summary": "Macdonald on-record: will not play Week 5 vs SF. No new SEA Wednesday practice report overnight. Holani no new Week 5 injury designation found.",
       "mongo_impact": "Context for bench RB George Holani. Not an add signal.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -176,7 +175,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Lamar outside chance Week 5 per Rapoport (unchanged). Late 'likely out' posts are not a new team designation. No lineup write.",
+      "summary": "Lamar outside chance Week 5 per Rapoport (unchanged overnight). No new team designation. No lineup write.",
       "urgency": "MEDIUM",
       "material": false
     },
@@ -184,7 +183,7 @@
       "player": "CeeDee Lamb",
       "slot": "WR",
       "status": "CONFIRMED_FACT",
-      "summary": "Tuesday report FULL (thigh), unchanged from Monday estimate. Thursday vs TB. No change made.",
+      "summary": "Tuesday report FULL (thigh). No Wednesday TNF report yet overnight. Thursday vs TB. No change made.",
       "urgency": "LOW",
       "material": false
     },
@@ -207,7 +206,7 @@
     {
       "player": "Lamar Jackson",
       "status": "EXPERT_OPINION",
-      "summary": "RotoWire still 'likely to miss time.' La Canfora column frames offense changes with Huntley stepping in. Not a confirmed out.",
+      "summary": "RotoWire/NBC still frame outside chance / likely miss time. Not a confirmed out. No overnight flip.",
       "urgency": "MEDIUM"
     }
   ],
@@ -217,16 +216,16 @@
     "McMillan bye lineup signal (logged 1 PM)",
     "Week 4 win 3-1 (logged 1 PM)",
     "Charbonnet out W5 (logged 1 PM)",
-    "Lamar ankle sprain, outside chance W5 (logged 9 AM; Schefter restatement 7:13 PM ET already covered by 7:17 PM Pulse)",
-    "Lamb full Monday estimate; Tuesday DAL report confirms FULL, no new designation",
+    "Lamar ankle sprain, outside chance W5 (logged 9 AM; Schefter restatement covered by 7:17 PM / 11 PM)",
+    "Lamb full Tuesday DAL report; no Wed designation overnight",
     "MNF Bijan/Miller no injury",
     "Kamara knee returned (no new update)",
     "Bagent Bears starter",
     "Parsons won't practice this week (logged 4 PM)",
     "Achane WAIVERS_CONFIRMED do not reclaim"
   ],
-  "summary": "11:00 PM ET hourly. Intelligence only. No material change vs 7:17 PM ET Pulse. Lamar: no new team diagnosis; Schefter restated Rapoport outside-chance sprain (already in prior Pulse); late X 'likely out' is column/podcast framing, not CONFIRMED. Tuesday DAL report confirms Lamb FULL (thigh), same as Monday estimate. No new injury/IR/transaction found for owned players. Repo imports have no Mongo transaction after 2026-09-30. Waivers clearing Wed stay UNKNOWN; Achane WAIVERS_CONFIRMED, do not reclaim. ESPN ownership not re-pulled. No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-06T231745Z",
-  "prior_completed_at": "2026-10-06T23:17:45Z",
-  "prior_commit": "3f178588e3fe092ec1e3d830072fbf61ce8626a1"
+  "summary": "12:00 AM ET overnight. Intelligence only. No material change vs 11:00 PM ET hourly. No late-night injury/IR/practice news for owned players. Lamar: no overnight team diagnosis or Minter update; still Rapoport outside-chance ankle sprain. Wed practice reports not out yet (~12 AM ET). Lamb Tuesday FULL unchanged; no Wed TNF report yet. Waivers clearing Wed stay UNKNOWN; Achane WAIVERS_CONFIRMED, do not reclaim. ESPN ownership not re-pulled. x_direct LIMITED (no direct X read). No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-07T031830Z",
+  "prior_completed_at": "2026-10-07T03:18:30Z",
+  "prior_commit": "fe374e1c2d21c14f2053bd11a5d82c3a8a10b32b"
 }
