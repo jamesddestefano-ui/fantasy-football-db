@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-08T211553Z",
-  "generated_at": "2026-10-08T21:14:00Z",
-  "completed_at": "2026-10-08T21:15:53Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-08T221734Z",
+  "generated_at": "2026-10-08T22:13:34Z",
+  "completed_at": "2026-10-08T22:17:34Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-08T21:15:53Z",
+  "as_of": "2026-10-08T22:17:34Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -61,7 +61,7 @@
       "Chris Bell"
     ],
     "live_check_ref": "mongo_live_check_20261008_0817_ET_espn",
-    "repo_head_at_read": "c46ed7e57f6cebf303a49061418014520be5f11d",
+    "repo_head_at_read": "f20cd1aff7e545fac7e3ec2c22c26818475091a5",
     "starters_week_5": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -376,27 +376,8 @@
       "urgency": "MEDIUM"
     }
   ],
-  "material_changes": [
-    {
-      "topic": "Alvin Kamara Thursday practice (Kendre Miller impact)",
-      "status": "ATTRIBUTED_REPORT",
-      "vs_prior": "UPDATED (prior: Wednesday DNP back; Thursday not posted)",
-      "summary": "RotoWire and FantasyPros: Kamara (back) practiced LIMITED Thursday after Wednesday DNP; trending toward playing vs MIN. Lowers Kendre Miller lead-back upside. Friday designation pending. No lineup write."
-    },
-    {
-      "topic": "Rashod Bateman Thursday official participation",
-      "status": "ATTRIBUTED_REPORT",
-      "vs_prior": "UPDATED (prior: red non-contact jersey, official level not posted)",
-      "summary": "Ravens Thursday report (Ravens Wire 4:14 PM ET table): Bateman (shoulder) upgraded to FULL. Bench WR; no lineup write."
-    },
-    {
-      "topic": "Lamar Jackson Thursday official participation",
-      "status": "ATTRIBUTED_REPORT",
-      "vs_prior": "UPDATED (prior: absent at start of practice, official level not posted)",
-      "summary": "Ravens Thursday report (Ravens Wire 4:14 PM ET table): Jackson (ankle) officially DNP Thursday, second straight DNP. No designation yet; Friday last full practice; Huntley fallback. Andrews FULL both days."
-    }
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "not_relogged_unchanged": [
     "Penix add / Bell drop / FAAB 74",
     "Week 4 win 3-1",
@@ -421,18 +402,23 @@
     "Holani LIMITED Wed+Thu (unchanged)",
     "Lamb no TNF designation; TNF inactives (~6:45 PM ET) not yet posted",
     "McMillan bye resolved (Mitchell FLEX per 8:17 AM ESPN)",
-    "Charbonnet out"
+    "Charbonnet out",
+    "Lamar Thursday DNP (logged 5 PM; no newer update)",
+    "Kamara LP Thursday (logged 5 PM)",
+    "Bateman FP Thursday (logged 5 PM)",
+    "Lamb final TNF report full, no status; inactives pending",
+    "Black Thursday still not posted",
+    "Ray Davis not on Bills report"
   ],
-  "summary": "5:15 PM ET hourly Oct 8. Intelligence only. Material vs 18:16Z Pulse: (1) Kamara (back) LIMITED Thursday after Wed DNP (RotoWire, FantasyPros); trending to play vs MIN, lowers Kendre Miller upside. (2) Bateman (shoulder) upgraded to FULL Thursday (Ravens Wire report table 4:14 PM ET). (3) Lamar Jackson officially DNP Thursday, second straight; no designation, Friday key; Andrews FULL both days. Unchanged: Holani LP; Lamb no TNF designation (inactives not out); Black Thursday not posted. Lineup per 8:17 AM ESPN live check (Mitchell FLEX, McMillan bench). Skipped (LIMITED): ESPN re-pull, Bills/Colts/Bears/Chargers/Eagles Thursday reports, X, experts, analytics; official team sites not directly read. No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-08T181603Z",
-  "prior_completed_at": "2026-10-08T18:16:03Z",
-  "prior_commit": "c46ed7e57f6cebf303a49061418014520be5f11d",
+  "summary": "6:17 PM ET hourly Oct 8. Intelligence only. No material change vs 21:15:53Z Pulse. Re-checked: Lamar (ankle) still DNP Thu, no new Harbaugh/Minter update or designation (Friday key); Lamb on Cowboys final TNF report full all week, no game status, TNF inactives (~6:45 PM ET) not yet posted at run time; 49ers official report still shows Kaelon Black LP Wed only, Thursday column blank; Ray Davis not on Bills Week 5 report per tracker (official page not parsed). Lineup per 8:17 AM ESPN live check (Mitchell FLEX, McMillan bench); no newer live check. Skipped (LIMITED): ESPN re-pull, Colts/Bears/Chargers/Eagles/Saints Thursday official tables, X direct, experts, analytics. No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-08T211553Z",
+  "prior_completed_at": "2026-10-08T21:15:53Z",
+  "prior_commit": "f20cd1aff7e545fac7e3ec2c22c26818475091a5",
   "checks_skipped": [
     "Fresh ESPN re-pull (lineup per 8:17 AM ET live check)",
-    "Saints official Thursday table (Kamara via RotoWire/FantasyPros)",
-    "49ers Thursday participation not posted",
-    "Bills/Colts/Bears/Chargers/Eagles Thursday reports",
-    "TNF inactives not yet released",
+    "TNF inactives not yet released at run time (~6:45 PM ET)",
+    "49ers Thursday participation not posted (Black)",
+    "Colts/Bears/Chargers/Eagles/Saints Thursday official tables not directly read",
     "X direct read",
     "experts",
     "analytics"
