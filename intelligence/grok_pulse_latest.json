@@ -3,15 +3,15 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-08T112132Z",
-  "generated_at": "2026-10-08T11:20:30Z",
-  "completed_at": "2026-10-08T11:21:32Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-08T151833Z",
+  "generated_at": "2026-10-08T15:17:30Z",
+  "completed_at": "2026-10-08T15:18:33Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-08T11:21:32Z",
+  "as_of": "2026-10-08T15:18:33Z",
   "source_status": {
-    "official_nfl_team": "OK",
+    "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "LIMITED",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Unchanged vs 08:17Z Pulse. Repo import data/imports/2026-10-07-michael-penix-waiver-bell-drop.json on main (Penix ADD $8 / Bell DROP, FAAB $74, Sampson IR). ESPN not re-pulled this run. Intelligence only. No roster write.",
+    "source": "Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read): observed ESPN state, authoritative. Penix ADD $8 / Bell DROP import on main carried. Intelligence only. No roster write.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -44,15 +44,15 @@
       "CeeDee Lamb",
       "Packers D/ST"
     ],
-    "week_5_lineup_note": "McMillan (CAR bye) was in a starting FLEX slot per 8:16 AM ET Oct 6 live check. Not re-checked on ESPN this run. Chris Bell no longer on roster.",
+    "week_5_lineup_note": "Per Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read): McMillan (CAR bye) on BENCH, Keaton Mitchell in FLEX. Swap was made on ESPN directly, not by the bot. Observed state only.",
     "bench": [
       "Ray Davis",
       "Kaelon Black",
+      "Michael Penix Jr.",
       "Rashod Bateman",
       "George Holani",
       "Oronde Gadsden",
-      "Keaton Mitchell",
-      "Michael Penix Jr."
+      "Tetairoa McMillan"
     ],
     "ir": [
       "Dylan Sampson"
@@ -60,8 +60,19 @@
     "dropped_not_rostered": [
       "Chris Bell"
     ],
-    "live_check_ref": "espn_live_20261007_0817_via_import",
-    "repo_head_at_read": "9b5405d31cccacb8f110fb1d38a9c65918632dcc"
+    "live_check_ref": "mongo_live_check_20261008_0817_ET_espn",
+    "repo_head_at_read": "8f531ec443f0cc1bbe927e8b5a6ffb903d85ab63",
+    "starters_week_5": [
+      "Jalen Hurts",
+      "Bijan Robinson",
+      "Kendre Miller",
+      "Luther Burden III",
+      "Keaton Mitchell (FLEX)",
+      "Mark Andrews",
+      "Josh Downs",
+      "CeeDee Lamb",
+      "Packers D/ST"
+    ]
   },
   "player_signals": [
     {
@@ -69,7 +80,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New vs 18:16Z: Wednesday injury report posted by beat, not only open-window absence. Jeff Zrebiec (The Athletic) 5:02 PM ET Oct 7: DNP ankle. Jamison Hensley (ESPN) 5:06 PM ET: did not practice; Jesse Minter said there will be a point later in the week where they figure out where he is. Not ruled out. Diagnosis unchanged: outside-chance unconventional ankle sprain, could miss multiple games, no surgery, Huntley if out (Rapoport, carried). Official team site still only the early-window note (BaltimoreRavens.com 1:53 PM ET), not a posted participation table. SNF vs ATL Oct 11. 12 AM Oct 8 check: Ravens Wire Wednesday table (5:58 PM ET) and AP (7:01 PM ET) match the logged DNP. NBC (Dvorchak) adds Minter said Jackson does not need to practice 'much' to play the same week; Huntley still the likely starter. No status change. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change. Recheck 7:20 AM ET Oct 8: Vikings.com Saints table and Yahoo/SI recaps still show Wednesday participation only; no Thursday practice report posted yet. No designation change.",
+      "summary": "New vs 18:16Z: Wednesday injury report posted by beat, not only open-window absence. Jeff Zrebiec (The Athletic) 5:02 PM ET Oct 7: DNP ankle. Jamison Hensley (ESPN) 5:06 PM ET: did not practice; Jesse Minter said there will be a point later in the week where they figure out where he is. Not ruled out. Diagnosis unchanged: outside-chance unconventional ankle sprain, could miss multiple games, no surgery, Huntley if out (Rapoport, carried). Official team site still only the early-window note (BaltimoreRavens.com 1:53 PM ET), not a posted participation table. SNF vs ATL Oct 11. 12 AM Oct 8 check: Ravens Wire Wednesday table (5:58 PM ET) and AP (7:01 PM ET) match the logged DNP. NBC (Dvorchak) adds Minter said Jackson does not need to practice 'much' to play the same week; Huntley still the likely starter. No status change. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change. Recheck 7:20 AM ET Oct 8: Vikings.com Saints table and Yahoo/SI recaps still show Wednesday participation only; no Thursday practice report posted yet. No designation change. Recheck 11:20 AM ET Oct 8: no Thursday practice report or new team statement found; BaltimoreRavens.com Oct 7 transcript and Baltimore Positive Wednesday table unchanged. A Yahoo article cites Schefter 'realistic chance' to play Week 5, publication time not verified this run, so not logged as new. No designation change.",
       "mongo_impact": "Raises Huntley-start odds for owned Mark Andrews (starting TE) and Rashod Bateman (bench). No designation change to out. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
@@ -130,9 +141,9 @@
       "team": "CAR",
       "signal_type": "bye",
       "status": "CONFIRMED_FACT",
-      "summary": "Carolina on bye Week 5. Still listed in a starting FLEX slot per ESPN live check ~8:16 AM ET Oct 6; would score 0. Not re-checked on ESPN this run. Chris Bell is no longer a bench option. Remaining options: Keaton Mitchell, George Holani, Kaelon Black, Ray Davis, Rashod Bateman, Oronde Gadsden. No swap approved.",
-      "mongo_impact": "Lineup signal only. No lineup write.",
-      "urgency": "HIGH",
+      "summary": "Carolina on bye Week 5. RESOLVED: Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read) shows McMillan on the BENCH and Keaton Mitchell in FLEX. Swap made on ESPN directly, not by the bot. Observed ESPN state only.",
+      "mongo_impact": "Bye no longer costs a starting slot. No lineup write by Pulse.",
+      "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED"
     },
@@ -141,7 +152,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Status change on the logged Kamara item: Alvin Kamara DID NOT PARTICIPATE in Wednesday's walkthrough with a back injury (Katherine Terrell, ESPN, via RotoWire/CBS 4:30 PM ET; Heavy citing Kellen Moore). Moore said the Monday-night knee was checked and is fine. Etienne on IR (carried). Miller not listed on the Saints Wednesday report per those summaries. RotoWire: Miller or CJ Donaldson may be more involved if Kamara cannot go vs MIN. Not ruled out; Thursday/Friday reports pending. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change. Recheck 7:20 AM ET Oct 8: Vikings.com Saints table and Yahoo/SI recaps still show Wednesday participation only; no Thursday practice report posted yet. No designation change.",
+      "summary": "Status change on the logged Kamara item: Alvin Kamara DID NOT PARTICIPATE in Wednesday's walkthrough with a back injury (Katherine Terrell, ESPN, via RotoWire/CBS 4:30 PM ET; Heavy citing Kellen Moore). Moore said the Monday-night knee was checked and is fine. Etienne on IR (carried). Miller not listed on the Saints Wednesday report per those summaries. RotoWire: Miller or CJ Donaldson may be more involved if Kamara cannot go vs MIN. Not ruled out; Thursday/Friday reports pending. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change. Recheck 7:20 AM ET Oct 8: Vikings.com Saints table and Yahoo/SI recaps still show Wednesday participation only; no Thursday practice report posted yet. No designation change. Recheck 11:20 AM ET Oct 8: Saints Wednesday table (Yahoo 12:51 AM ET, SI, Audacy) unchanged; Thursday report not out yet.",
       "mongo_impact": "Starting RB. Possible usage upside if Kamara is limited or out. Donaldson shares that upside. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -225,18 +236,18 @@
       "team": "MIA",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "Dropped to waivers Wed Oct 7 3:34 am ET in the Penix add/drop. Availability UNKNOWN. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Dropped Wed Oct 7 3:34 am ET in the Penix add/drop. ESPN-confirmed free agent per Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read).",
       "mongo_impact": "No longer a FLEX option. Do not treat as a pickup.",
       "urgency": "LOW",
       "confidence": "HIGH",
-      "availability": "UNKNOWN"
+      "availability": "FREE_AGENT_CONFIRMED"
     },
     {
       "player": "Josh Downs / Keaton Mitchell / Oronde Gadsden / Luther Burden III",
       "team": "IND/LAC/LAC/CHI",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Not listed on Wednesday reports checked: Colts (Yahoo/CBS summary), Chargers official table (Chargers.com 3:50 PM ET), Bears (CBS summary). Bears: Caleb Williams, Monangai, Swift DNP (context; Caleb already logged). Bills report (Ray Davis) not checked.",
+      "summary": "Not listed on Wednesday reports checked: Colts (Yahoo/CBS summary), Chargers official table (Chargers.com 3:50 PM ET), Bears (CBS summary). Bears: Caleb Williams, Monangai, Swift DNP (context; Caleb already logged). Bills report (Ray Davis) not checked. Keaton Mitchell now in FLEX per Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read).",
       "mongo_impact": "No designation on these owned players. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -258,20 +269,28 @@
     },
     {
       "player": "Chris Bell",
-      "availability": "UNKNOWN",
+      "availability": "FREE_AGENT_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "Dropped to waivers in the Penix add/drop. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Dropped Wed Oct 7 in the Penix add/drop. ESPN-confirmed free agent per Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read). Not worth re-adding.",
+      "urgency": "LOW"
+    },
+    {
+      "player": "Hutchinson / Caleb Douglas / Colbie Young / Chris Brooks / Chris Bell",
+      "availability": "FREE_AGENT_CONFIRMED",
+      "status": "CONFIRMED_FACT",
+      "summary": "ESPN-confirmed free agents per Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read). None judged worth adding. Coker and Tucker are owned. Intelligence only; no add.",
       "urgency": "LOW"
     }
   ],
   "lineup_signals": [
     {
-      "player": "Tetairoa McMillan",
+      "player": "Tetairoa McMillan / Keaton Mitchell",
       "slot": "FLEX",
       "status": "CONFIRMED_FACT",
-      "summary": "CAR bye Week 5; last live check had him starting in FLEX (would score 0). Not re-checked on ESPN this run. Options: Keaton Mitchell (not on LAC Wednesday report), George Holani (limited, ribs), Kaelon Black (limited, illness), Ray Davis, Bateman (limited), Gadsden. James has not approved a swap; no change made.",
-      "urgency": "HIGH",
-      "material": true
+      "summary": "RESOLVED vs prior (prior: swap pending James's approval). Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read): McMillan (CAR bye) on BENCH, Keaton Mitchell in FLEX. Made on ESPN directly, not by the bot. Observed state only; no lineup write by Pulse.",
+      "urgency": "LOW",
+      "material": true,
+      "source": "Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read)"
     },
     {
       "player": "Kendre Miller",
@@ -285,9 +304,9 @@
       "player": "George Holani",
       "slot": "BN",
       "status": "CONFIRMED_FACT",
-      "summary": "Limited Wednesday (ribs) per official Seahawks report. Factor into any McMillan replacement choice. No change made.",
+      "summary": "Limited Wednesday (ribs) per official Seahawks report. Bench; no longer needed as a McMillan replacement. No change made.",
       "urgency": "MEDIUM",
-      "material": true
+      "material": false
     },
     {
       "player": "Mark Andrews",
@@ -354,11 +373,17 @@
       "urgency": "MEDIUM"
     }
   ],
-  "material_changes": [],
-  "no_material_change": true,
+  "material_changes": [
+    {
+      "topic": "McMillan bye / FLEX",
+      "status": "CONFIRMED_FACT",
+      "vs_prior": "RESOLVED (prior: swap pending approval)",
+      "summary": "Per Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read): McMillan on BENCH, Keaton Mitchell in FLEX; swap made on ESPN directly, not by the bot. Observed state only."
+    }
+  ],
+  "no_material_change": false,
   "not_relogged_unchanged": [
     "Penix add / Bell drop / FAAB 74",
-    "McMillan bye lineup signal",
     "Week 4 win 3-1",
     "Charbonnet out W5",
     "Kamara knee returned",
@@ -372,18 +397,21 @@
     "DeVonta Smith / Goedert",
     "Kamara Wednesday back DNP (no new designation)",
     "Holani limited ribs",
-    "Black limited illness"
+    "Black limited illness",
+    "Lamar Wednesday DNP (no Thursday update yet)",
+    "Kamara Wednesday DNP (no Thursday update yet)"
   ],
-  "summary": "7:20 AM ET hourly Oct 8. Intelligence only. No material change vs 08:17Z Pulse. Lamar: still Wednesday DNP (ankle) with Minter 'later in the week' framing; no new team diagnosis or designation overnight (AP/Fox, Baltimore Positive, BaltimoreRavens.com). Kamara: still Wednesday DNP (back) on the Saints table via Vikings.com; Moore called it back soreness separate from the MNF knee (nola.com); no Thursday participation posted. Thursday practice reports not out yet (usually afternoon). X sample since 04:15Z (keyword search, last ~15 min returned) was fan/prop chatter only, no beat designation. Lamb TNF tonight vs TB, no designation. McMillan bye still the open lineup item; no swap approved; ESPN not re-pulled. No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-08T081730Z",
-  "prior_completed_at": "2026-10-08T08:17:30Z",
-  "prior_commit": "9b5405d31cccacb8f110fb1d38a9c65918632dcc",
+  "summary": "11:20 AM ET hourly Oct 8. Intelligence only. Material vs 11:21Z Pulse: McMillan bye lineup item RESOLVED. Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read) shows McMillan on BENCH and Keaton Mitchell in FLEX; the swap was made on ESPN directly, not by the bot (CONFIRMED_FACT, observed state). Same check: ESPN-confirmed free agents Hutchinson, Caleb Douglas, Colbie Young, Chris Brooks, Chris Bell; Coker and Tucker owned; none worth adding. No other change: Lamar still Wednesday DNP (ankle), Kamara still Wednesday DNP (back); Thursday practice reports not out yet (usually afternoon). Lamb TNF tonight vs TB, no designation; no inactives news yet. Focused web scan only; official team pages not re-read, X/experts/analytics not scanned this run (LIMITED). No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-08T112132Z",
+  "prior_completed_at": "2026-10-08T11:21:32Z",
+  "prior_commit": "8f531ec443f0cc1bbe927e8b5a6ffb903d85ab63",
   "checks_skipped": [
-    "Thursday practice reports: not posted as of 7:20 AM ET",
-    "x_direct: keyword search sample only (25 posts, ~11:06-11:20Z); beat accounts not scanned individually",
-    "experts: no new expert pass beyond carried items",
+    "Thursday practice reports: not posted as of ~11:20 AM ET",
+    "official_nfl_team: team sites not re-read this run (search snippets only)",
+    "x_direct: no X read this run",
+    "experts: no new expert pass",
     "analytics: not checked",
-    "ESPN ownership/lineup/injury tags: not re-pulled",
-    "Bills report (Ray Davis), Seahawks/49ers/Eagles/Falcons official pages not re-read this run"
+    "ESPN: not re-pulled by this run; lineup/FA state taken from the 8:17 AM ET authenticated live check",
+    "TNF inactives: not released yet"
   ]
 }
