@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-08T041431Z",
-  "generated_at": "2026-10-08T04:13:00Z",
-  "completed_at": "2026-10-08T04:14:31Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-08T081730Z",
+  "generated_at": "2026-10-08T08:16:20Z",
+  "completed_at": "2026-10-08T08:17:30Z",
   "week": 5,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-08T04:14:31Z",
+  "as_of": "2026-10-08T08:17:30Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Unchanged vs 21:18Z Pulse. Repo import data/imports/2026-10-07-michael-penix-waiver-bell-drop.json on main; ESPN activity Wed Oct 7 3:34 am ET ADD Michael Penix Jr. ATL QB $8, DROP Chris Bell MIA WR. Live ESPN ~08:17 ET cited in that import: Penix BN, Bell absent, FAAB $74, Sampson IR, 17 rostered. ESPN not re-pulled this run (ownership/lineup not re-checked). Intelligence only. No roster write.",
+    "source": "Unchanged vs 04:14Z Pulse. Repo import data/imports/2026-10-07-michael-penix-waiver-bell-drop.json on main; ESPN activity Wed Oct 7 3:34 am ET ADD Michael Penix Jr. ATL QB $8, DROP Chris Bell MIA WR. Live ESPN ~08:17 ET cited in that import: Penix BN, Bell absent, FAAB $74, Sampson IR, 17 rostered. ESPN not re-pulled this run. Intelligence only. No roster write.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -61,7 +61,7 @@
       "Chris Bell"
     ],
     "live_check_ref": "espn_live_20261007_0817_via_import",
-    "repo_head_at_read": "282314a952034e75376795afa3f4325b06631708"
+    "repo_head_at_read": "fd5d89e54f7810f64a94115c0cac64c8f2baec7f"
   },
   "player_signals": [
     {
@@ -69,7 +69,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New vs 18:16Z: Wednesday injury report posted by beat, not only open-window absence. Jeff Zrebiec (The Athletic) 5:02 PM ET Oct 7: DNP ankle. Jamison Hensley (ESPN) 5:06 PM ET: did not practice; Jesse Minter said there will be a point later in the week where they figure out where he is. Not ruled out. Diagnosis unchanged: outside-chance unconventional ankle sprain, could miss multiple games, no surgery, Huntley if out (Rapoport, carried). Official team site still only the early-window note (BaltimoreRavens.com 1:53 PM ET), not a posted participation table. SNF vs ATL Oct 11. 12 AM Oct 8 check: Ravens Wire Wednesday table (5:58 PM ET) and AP (7:01 PM ET) match the logged DNP. NBC (Dvorchak) adds Minter said Jackson does not need to practice 'much' to play the same week; Huntley still the likely starter. No status change.",
+      "summary": "New vs 18:16Z: Wednesday injury report posted by beat, not only open-window absence. Jeff Zrebiec (The Athletic) 5:02 PM ET Oct 7: DNP ankle. Jamison Hensley (ESPN) 5:06 PM ET: did not practice; Jesse Minter said there will be a point later in the week where they figure out where he is. Not ruled out. Diagnosis unchanged: outside-chance unconventional ankle sprain, could miss multiple games, no surgery, Huntley if out (Rapoport, carried). Official team site still only the early-window note (BaltimoreRavens.com 1:53 PM ET), not a posted participation table. SNF vs ATL Oct 11. 12 AM Oct 8 check: Ravens Wire Wednesday table (5:58 PM ET) and AP (7:01 PM ET) match the logged DNP. NBC (Dvorchak) adds Minter said Jackson does not need to practice 'much' to play the same week; Huntley still the likely starter. No status change. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change.",
       "mongo_impact": "Raises Huntley-start odds for owned Mark Andrews (starting TE) and Rashod Bateman (bench). No designation change to out. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
@@ -86,7 +86,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Upgrade vs open-window absence. Zrebiec 5:02 PM ET: LIMITED shoulder on Wednesday report. Not a DNP. Flowers limited (foot) per same report and Hensley, which is usage context only.",
+      "summary": "Upgrade vs open-window absence. Zrebiec 5:02 PM ET: LIMITED shoulder on Wednesday report. Not a DNP. Flowers limited (foot) per same report and Hensley, which is usage context only. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change.",
       "mongo_impact": "Bench WR. Limited, not confirmed out. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -100,7 +100,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Zrebiec Wednesday report: FULL (hand). No Andrews game designation. Reuters/Field Level Media: Andrews said Wednesday the Ravens trust Tyler Huntley if called upon. QB context remains Jackson DNP.",
+      "summary": "Zrebiec Wednesday report: FULL (hand). No Andrews game designation. Reuters/Field Level Media: Andrews said Wednesday the Ravens trust Tyler Huntley if called upon. QB context remains Jackson DNP. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change.",
       "mongo_impact": "Starting TE. Hand is full, not a sit signal. Huntley downgrade risk still open. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -115,7 +115,7 @@
       "team": "DAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New vs blank game status: USA Today fantasy note 3:09 PM ET Oct 7, citing Ian Rapoport, says Lamb (thigh) fully participated Wednesday and is not on the Week 5 injury report. NFL.com Around the NFL Week 5 status article lists Cowboys OUT (Shelton, Overshown, Durant) and QUESTIONABLE (Mingo, Smith) and does not list Lamb. NFL.com injuries page still showed full participation with blank game-status cell in an earlier scrape. TNF vs TB Oct 8. Baker Mayfield listed OUT (thumb) on that NFL.com status article; opponent QB context only.",
+      "summary": "New vs blank game status: USA Today fantasy note 3:09 PM ET Oct 7, citing Ian Rapoport, says Lamb (thigh) fully participated Wednesday and is not on the Week 5 injury report. NFL.com Around the NFL Week 5 status article lists Cowboys OUT (Shelton, Overshown, Durant) and QUESTIONABLE (Mingo, Smith) and does not list Lamb. NFL.com injuries page still showed full participation with blank game-status cell in an earlier scrape. TNF vs TB Oct 8. Baker Mayfield listed OUT (thumb) on that NFL.com status article; opponent QB context only. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change.",
       "mongo_impact": "Clears the Wednesday designation watch. Still a start. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -141,7 +141,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Status change on the logged Kamara item: Alvin Kamara DID NOT PARTICIPATE in Wednesday's walkthrough with a back injury (Katherine Terrell, ESPN, via RotoWire/CBS 4:30 PM ET; Heavy citing Kellen Moore). Moore said the Monday-night knee was checked and is fine. Etienne on IR (carried). Miller not listed on the Saints Wednesday report per those summaries. RotoWire: Miller or CJ Donaldson may be more involved if Kamara cannot go vs MIN. Not ruled out; Thursday/Friday reports pending.",
+      "summary": "Status change on the logged Kamara item: Alvin Kamara DID NOT PARTICIPATE in Wednesday's walkthrough with a back injury (Katherine Terrell, ESPN, via RotoWire/CBS 4:30 PM ET; Heavy citing Kellen Moore). Moore said the Monday-night knee was checked and is fine. Etienne on IR (carried). Miller not listed on the Saints Wednesday report per those summaries. RotoWire: Miller or CJ Donaldson may be more involved if Kamara cannot go vs MIN. Not ruled out; Thursday/Friday reports pending. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change.",
       "mongo_impact": "Starting RB. Possible usage upside if Kamara is limited or out. Donaldson shares that upside. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -157,7 +157,7 @@
       "team": "SEA",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "New vs 21:18Z: official Seahawks Wednesday Oct 7 report (Seahawks.com 4:15 PM ET; also Seattle Sports, 49ers communications via 49ers Webzone) lists Holani LIMITED (ribs). No game designation yet. Charbonnet limited but Macdonald said he will not play vs SF (carried). Mixon-to-Seattle report carried from earlier Pulse.",
+      "summary": "New vs 21:18Z: official Seahawks Wednesday Oct 7 report (Seahawks.com 4:15 PM ET; also Seattle Sports, 49ers communications via 49ers Webzone) lists Holani LIMITED (ribs). No game designation yet. Charbonnet limited but Macdonald said he will not play vs SF (carried). Mixon-to-Seattle report carried from earlier Pulse. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change.",
       "mongo_impact": "Bench RB. Limited practice adds risk to Holani as a McMillan-bye FLEX replacement. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -172,7 +172,7 @@
       "team": "SF",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New: 49ers Webzone, citing the 49ers communications staff Wednesday participation report, lists Kaelon Black LIMITED (illness). Not checked on 49ers.com directly. No game designation yet.",
+      "summary": "New: 49ers Webzone, citing the 49ers communications staff Wednesday participation report, lists Kaelon Black LIMITED (illness). Not checked on 49ers.com directly. No game designation yet. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change.",
       "mongo_impact": "Bench RB. Illness limited, not a DNP. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -354,27 +354,8 @@
       "urgency": "MEDIUM"
     }
   ],
-  "material_changes": [
-    {
-      "topic": "Kamara back DNP (Kendre Miller usage)",
-      "status": "ATTRIBUTED_REPORT",
-      "vs_prior": "status_change",
-      "summary": "Kamara did not participate Wednesday with a back injury (Terrell/ESPN via RotoWire; Kellen Moore via Heavy); knee checked and fine. Miller not listed. Possible usage upside for owned Miller if Kamara sits vs MIN."
-    },
-    {
-      "topic": "George Holani limited (ribs)",
-      "status": "CONFIRMED_FACT",
-      "vs_prior": "new",
-      "summary": "Official Seahawks Wednesday report: Holani LIMITED (ribs). Owned bench RB and a McMillan-bye FLEX option."
-    },
-    {
-      "topic": "Kaelon Black limited (illness)",
-      "status": "ATTRIBUTED_REPORT",
-      "vs_prior": "new",
-      "summary": "49ers Wednesday participation report via 49ers Webzone: Black LIMITED (illness). Owned bench RB."
-    }
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "not_relogged_unchanged": [
     "Penix add / Bell drop / FAAB 74",
     "McMillan bye lineup signal",
@@ -388,18 +369,20 @@
     "Bateman limited / Andrews full",
     "Lamb not on report",
     "Durham Smythe IR",
-    "DeVonta Smith / Goedert"
+    "DeVonta Smith / Goedert",
+    "Kamara Wednesday back DNP (no new designation)",
+    "Holani limited ribs",
+    "Black limited illness"
   ],
-  "summary": "12 AM ET overnight Oct 8. Intelligence only. Material vs 21:18Z: Kamara DNP Wednesday (back; knee fine), a possible usage bump for owned Kendre Miller; George Holani limited (ribs) on the official Seahawks report; Kaelon Black limited (illness) per 49ers participation report. Hurts, Bijan, Penix, Downs, Mitchell, Gadsden, Burden not on Wednesday reports checked. Lamar DNP re-confirmed, no status change. McMillan bye still in FLEX. X, analytics, ESPN not checked. No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-07T211800Z",
-  "prior_completed_at": "2026-10-07T21:18:00Z",
-  "prior_commit": "282314a952034e75376795afa3f4325b06631708",
+  "summary": "4:16 AM ET overnight Oct 8. Intelligence only. No material change vs 04:14Z Pulse. NFL.com Week 5 injury page still shows Wednesday participation only: Lamb full / blank game status (TNF), Mayfield still OUT (opponent, already logged), Lamar DNP / Andrews full / Bateman limited with blank game status, Kamara DNP blank game status. No Thursday practice table. X since 04:14Z is recap only (no new beat designation). Holani limited and Black limited unchanged. McMillan bye still the open lineup item; ESPN not re-pulled. No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-08T041431Z",
+  "prior_completed_at": "2026-10-08T04:14:31Z",
+  "prior_commit": "fd5d89e54f7810f64a94115c0cac64c8f2baec7f",
   "checks_skipped": [
-    "x_direct: no direct X read this run",
+    "Thursday practice reports: not posted as of 4:16 AM ET",
     "analytics: not checked",
     "ESPN ownership/lineup/injury tags: not re-pulled",
     "Bills report (Ray Davis) not checked",
-    "Packers official report not read directly (CBS summary only)",
-    "49ers.com and Saints/Colts/Bears official pages not read directly (media summaries)"
+    "49ers.com and Saints/Colts/Bears official pages not re-read this run"
   ]
 }
