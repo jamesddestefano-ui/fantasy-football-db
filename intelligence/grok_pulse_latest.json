@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T100500Z",
-  "generated_at": "2026-10-09T10:00:00Z",
-  "completed_at": "2026-10-09T10:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T112200Z",
+  "generated_at": "2026-10-09T11:20:00Z",
+  "completed_at": "2026-10-09T11:22:00Z",
   "week": 5,
   "season": 2026,
-  "run_type": "overnight",
-  "as_of": "2026-10-09T10:05:00Z",
+  "run_type": "hourly",
+  "as_of": "2026-10-09T11:22:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -61,7 +61,7 @@
       "Chris Bell"
     ],
     "live_check_ref": "mongo_live_check_20261008_0817_ET_espn",
-    "repo_head_at_read": "3d867b1fcfa3f636b627db8affc166e523488d75",
+    "repo_head_at_read": "5c9d8c8aadf3429a0dc17b22ee27c4e81100fb24",
     "starters_week_5": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -80,14 +80,15 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No material change vs 08:16Z Pulse. Still no Cowboys.com diagnosis, MRI result, or Week 6 designation. Archer (ESPN) 05:54Z report stands: quad tightened after a hit for the second straight game. Watkins/DMN Schottenheimer same-thigh quote already logged as corroboration. USA Today/HC Green recap (05:50Z) restates the 2-9 line and quad exit and is opinion that extra days before Week 6 could help; not a new fact. X since 08:16Z is fan/betting chatter only, not beat. Week 6 availability still UNKNOWN.",
+      "summary": "No material change vs 10:05Z Pulse. Still no Cowboys.com diagnosis, MRI result, or Week 6 designation. USA Today/For The Win (Charles Curtis, 7:12 AM ET Oct 9) restates Archer's quad-tightened-after-hit report and says there is no word on missed games; Dallas next plays Sun Oct 18 at Green Bay (Week 5 bye-like gap). That FTW piece says 'five yards'; official box line of 2 rec, 9 yds stays as logged (FTW figure treated as a typo, not a correction). X since 10:05Z: CowboysSI roundup link, aggregator reposts, and fan/betting-void chatter only; no beat update. Week 6 availability still UNKNOWN.",
       "mongo_impact": "Week 6 availability still UNKNOWN. No severity upgrade. Watch Friday exams. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
         "https://x.com/toddarcher/status/2108435796021694821",
-        "https://www.dallasnews.com/sports/cowboys/article/cowboys-injuries-ceedee-lamb-tyler-guyton-nfl-22468463.php"
+        "https://www.dallasnews.com/sports/cowboys/article/cowboys-injuries-ceedee-lamb-tyler-guyton-nfl-22468463.php",
+        "https://ftw.usatoday.com/story/sports/nfl/2026/10/09/ceedee-lamb-injury-update-status-bucs-quad/92167233007/"
       ]
     },
     {
@@ -95,7 +96,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 08:16Z Pulse. Official Ravens.com injury report at ~6:00 AM ET still shows Jackson (ankle) DNP Wednesday and DNP Thursday, Friday column blank, game status UNSPECIFIED. No Friday report and no new designation. Tyler Huntley remains the fallback if he cannot play.",
+      "summary": "No change vs 10:05Z Pulse. Ravens Friday practice/injury report and game designations not posted as of ~7:20 AM ET. Thursday DNP (ankle) stands; Baltimore Banner (re-posted on X 10:17Z) explainer cites media reports of a medial sprain and Minter's 'not crazy long-term' quote, already in window. Tyler Huntley remains the fallback.",
       "mongo_impact": "Huntley-start risk for Andrews and Bateman. No new designation this run. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
@@ -106,7 +107,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Ravens.com: Bateman (shoulder) LP Wednesday, FP Thursday, Friday blank, game status UNSPECIFIED.",
+      "summary": "No change vs 10:05Z Pulse. Ravens.com: Bateman (shoulder) LP Wednesday, FP Thursday, Friday blank, game status UNSPECIFIED. Friday Ravens report not yet posted as of ~7:20 AM ET.",
       "mongo_impact": "Bench WR. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -117,7 +118,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Ravens.com: Andrews (hand) FP Wednesday and FP Thursday, Friday blank, game status UNSPECIFIED. Huntley-start risk if Jackson sits.",
+      "summary": "No change vs 10:05Z Pulse. Ravens.com: Andrews (hand) FP Wednesday and FP Thursday, Friday blank, game status UNSPECIFIED. Huntley-start risk if Jackson sits. Friday Ravens report not yet posted as of ~7:20 AM ET.",
       "mongo_impact": "Starting TE. Health fine; QB is the variable. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -128,7 +129,7 @@
       "team": "SF",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Illness FULL Thursday after LIMITED Wednesday (prior RotoWire/Harrison Rich). No Friday 49ers designation found as of 6:00 AM ET.",
+      "summary": "No change vs 10:05Z Pulse. Illness FULL Thursday after LIMITED Wednesday (prior RotoWire/Harrison Rich). No Friday 49ers designation found as of ~7:20 AM ET.",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -139,7 +140,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Alvin Kamara (back) LIMITED Thursday after Wednesday walkthrough DNP. Friday designation and Saints.com Friday report not posted as of 6:00 AM ET.",
+      "summary": "No change vs 10:05Z Pulse. Alvin Kamara (back) LIMITED Thursday after Wednesday walkthrough DNP. Friday designation and Saints.com Friday report not posted as of ~7:20 AM ET.",
       "mongo_impact": "Starting RB2 likely shared if Kamara plays. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -150,7 +151,7 @@
       "team": "SEA",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Official Seahawks Thursday report: Holani LIMITED (ribs). No Friday Seahawks.com report found as of 6:00 AM ET.",
+      "summary": "No change vs 10:05Z Pulse. Official Seahawks Thursday report: Holani LIMITED (ribs). No Friday Seahawks.com report found as of ~7:20 AM ET.",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -222,7 +223,7 @@
       "player": "CeeDee Lamb",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Week 5 final carried: 2 rec, 9 yds, 0 TD, 5 targets. Quad/thigh mechanism unchanged from Archer 05:54Z. No Week 6 designation. Status still UNKNOWN. No lineup write.",
+      "summary": "Week 5 final carried: 2 rec, 9 yds, 0 TD, 5 targets. No new beat since Archer 05:54Z; USA Today FTW 7:12 AM ET recap adds nothing new. No Week 6 designation. Status still UNKNOWN. No lineup write.",
       "urgency": "HIGH",
       "material": false,
       "source": "Todd Archer on X; Calvin Watkins / Dallas Morning News corroboration"
@@ -282,14 +283,16 @@
     "Kaelon Black full Thursday (ATTRIBUTED_REPORT)",
     "Achane WAIVERS_CONFIRMED do not reclaim"
   ],
-  "summary": "6:00 AM ET overnight Oct 9. Intelligence only. No material change vs 08:16Z Pulse. Friday practice reports and game designations not posted (Ravens.com Friday column blank, game status UNSPECIFIED; Saints/Seahawks/49ers Friday reports not found). Lamb Week 6 status still UNKNOWN; no new beat past Archer 05:54Z. Lamar DNP Thu, Andrews full, Bateman full, Kamara limited, Holani limited, Black full Thu carried. Roster context from 8:17 AM ET Oct 8 ESPN live check (FAAB 74, 3-1, McMillan bench, Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T081600Z",
-  "prior_completed_at": "2026-10-09T08:16:00Z",
-  "prior_commit": "3d867b1fcfa3f636b627db8affc166e523488d75",
+  "summary": "7:00 AM ET hourly Oct 9. Intelligence only. No material change vs 10:05Z Pulse. Friday practice reports and game designations not yet posted (Ravens, Saints, Seahawks, 49ers) as of ~7:20 AM ET. Lamb Week 6 status still UNKNOWN; USA Today FTW 7:12 AM ET recap restates Archer quad report, no diagnosis. Lamar DNP Thu, Andrews full, Bateman full, Kamara limited, Holani limited, Black full Thu carried. Roster context from 8:17 AM ET Oct 8 ESPN live check (FAAB 74, 3-1, McMillan bench, Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T100500Z",
+  "prior_completed_at": "2026-10-09T10:05:00Z",
+  "prior_commit": "5c9d8c8aadf3429a0dc17b22ee27c4e81100fb24",
   "checks_skipped": [
-    "No Friday injury reports yet (6:00 AM ET)",
-    "No Cowboys.com postgame diagnosis found",
+    "No Friday injury reports yet (~7:20 AM ET)",
+    "No Cowboys.com diagnosis found",
     "No fresh ESPN authenticated pull; roster/lineup from 8:17 AM ET Oct 8 live check",
-    "Fan and betting-protection replies about Lamb not treated as fact"
+    "No new posts found from Archer, Hensley, Mink, Fantasy Points Data, or McFarland since 08:00Z via X search (McFarland handle not verified)",
+    "Fantasy Life / analytics sites not re-checked this hour",
+    "Fan and betting-void replies about Lamb not treated as fact"
   ]
 }
