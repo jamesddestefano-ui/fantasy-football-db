@@ -3,16 +3,16 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T002243Z",
-  "generated_at": "2026-10-09T00:22:43Z",
-  "completed_at": "2026-10-09T00:22:43Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T002244Z",
+  "generated_at": "2026-10-09T00:22:44Z",
+  "completed_at": "2026-10-09T00:22:44Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T00:22:43Z",
+  "as_of": "2026-10-09T00:22:44Z",
   "source_status": {
-    "official_nfl_team": "OK",
-    "beat_reporting": "LIMITED",
+    "official_nfl_team": "LIMITED",
+    "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "LIMITED",
     "analytics": "LIMITED"
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read) still newest observed ESPN state. No newer live check this hour. Intelligence only. No roster write.",
+    "source": "Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read): observed ESPN state, authoritative. No newer live check in /workspace/mongo-ff-bot-state (newest ESPN file still 8:17 AM ET). Intelligence only. No roster write.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -127,14 +127,13 @@
       "player": "CeeDee Lamb",
       "team": "DAL",
       "signal_type": "game_status",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "TNF IN PROGRESS. CBS Sports gametracker (TB at DAL, Oct 8 2026) showed the game INPROGRESS, 1st quarter, 14:48 remaining, 0-0, around 8:22 PM ET. Opening play: Dak Prescott pass incomplete short middle to B. Spann-Ford. Lamb was not on that play and no early in-game injury was reported. Prior Pulse already CONFIRMED active: official inactives (NFL.com published 2026-10-08T22:50:06Z; Buccaneers.com Scott Smith 6:45 PM ET) do not list Lamb. Kickoff was 8:15 PM ET.",
-      "mongo_impact": "Starting WR is active and the game is underway. No target on the opening play. No lineup write.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
+      "status": "CONFIRMED_FACT",
+      "summary": "CONFIRMED ACTIVE. Official Week 5 TNF inactives posted. NFL.com Around the NFL (published 2026-10-08T22:50:06Z) Cowboys inactives: Camden Brown, Ajani Cornelius, Drew Shelton, James Houston, DeMarvion Overshown, Cobie Durant, Joey Porter Jr. Lamb is not listed. Buccaneers.com (Scott Smith, 6:45 PM ET) same seven and does not list Lamb. Kickoff Bucs at Cowboys 8:15 PM ET. Prior: full all week (thigh), no injury designation; 6:17 PM Pulse had inactives not yet posted.",
+      "mongo_impact": "Starting WR is active tonight. No lineup write.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.cbssports.com/nfl/gametracker/live/NFL_20261008_TB@DAL/",
         "https://www.nfl.com/news/week-5-thursday-night-inactives-tampa-bay-buccaneers-at-dallas-cowboys",
         "https://www.buccaneers.com/news/bucs-cowboys-inactives-rueben-bain-jr-ko-kieft-return-action"
       ]
@@ -187,13 +186,14 @@
       "team": "SF",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "New: 49ers Webzone, citing the 49ers communications staff Wednesday participation report, lists Kaelon Black LIMITED (illness). Not checked on 49ers.com directly. No game designation yet. Recheck 4:16 AM ET Oct 8: no Thursday practice report posted yet; NFL.com Week 5 injury page still shows Wednesday participation and the same blank game-status cells. No designation change. Recheck 2:15 PM ET Oct 8: no 49ers Thursday participation for Black confirmed from a primary source (search summaries cited Wednesday tables only). No change. Recheck 5:15 PM ET Oct 8: 49ers.com injury report page (via search snapshot) still shows Wednesday LP (illness) with Thursday column blank; Thursday participation not confirmed this run.",
-      "mongo_impact": "Bench RB. Illness limited, not a DNP. No lineup write.",
+      "summary": "UPGRADE vs 7:17 PM ET Pulse: RotoWire (CBS Sports timestamp 2026-10-08T23:05:08Z), citing Harrison Rich of the San Francisco Chronicle, reports Black (illness) upgraded to a FULL practice Thursday after LIMITED Wednesday. No game designation in that report. Not opened on 49ers.com this run, so not CONFIRMED_FACT. Prior Pulse had Thursday participation unconfirmed.",
+      "mongo_impact": "Bench RB. Illness looks cleared to a full Thursday practice. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "https://www.49erswebzone.com/articles/203972-seahawks-injury-report-practice-showdown/"
+        "https://www.49erswebzone.com/articles/203972-seahawks-injury-report-practice-showdown/",
+        "https://www.rotowire.com/football/headlines/kaelon-black-news-back-to-full-practice-thursday-641420"
       ]
     },
     {
@@ -323,11 +323,11 @@
     {
       "player": "CeeDee Lamb",
       "slot": "WR",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Game underway (CBS gametracker: 1st, 14:48, 0-0). Lamb active; not targeted on the opening incomplete to Spann-Ford. No in-game injury reported. No lineup write.",
-      "urgency": "MEDIUM",
+      "status": "CONFIRMED_FACT",
+      "summary": "Official TNF inactives (NFL.com 22:50Z and Buccaneers.com 6:45 PM ET) do not list Lamb. He is active vs TB tonight. No lineup write.",
+      "urgency": "LOW",
       "material": true,
-      "source": "CBS Sports gametracker NFL_20261008_TB@DAL; prior official inactives NFL.com / Buccaneers.com"
+      "source": "NFL.com Week 5 TNF inactives; Buccaneers.com inactive report 6:45 PM ET"
     },
     {
       "player": "Rashod Bateman",
@@ -380,10 +380,10 @@
   ],
   "material_changes": [
     {
-      "topic": "TNF underway, Lamb active, no early target or injury",
+      "topic": "Kaelon Black full Thursday",
       "status": "ATTRIBUTED_REPORT",
-      "vs_prior": "Prior 23:17:13Z Pulse confirmed Lamb active from official inactives; kickoff had not started.",
-      "summary": "CBS Sports gametracker showed Buccaneers at Cowboys INPROGRESS, 1st quarter 14:48 remaining, 0-0. First play: Prescott incomplete short middle to Spann-Ford. Lamb not on that play; no early in-game injury reported. Official inactives still do not list him."
+      "vs_prior": "Prior 23:17:13Z Pulse said Thursday participation for Black was still unconfirmed (Wednesday LP illness only).",
+      "summary": "RotoWire, citing Harrison Rich of the San Francisco Chronicle (CBS Sports published 2026-10-08T23:05:08Z): Black (illness) upgraded to a full practice Thursday after limited Wednesday. No game designation. Not confirmed on 49ers.com this run."
     }
   ],
   "no_material_change": false,
@@ -424,17 +424,25 @@
     "Holani limited Wed+Thu (not rechecked; no new report found)",
     "Kaelon Black Thursday participation still unconfirmed",
     "McMillan bye resolved (Mitchell FLEX per 8:17 AM ESPN)",
+    "Charbonnet out",
+    "Lamar Thursday DNP, no designation (no change vs 7 PM)",
+    "Bateman full Thursday (no change)",
+    "Kamara limited Thursday (no change)",
+    "Holani limited Wed+Thu (no change; NBC/RotoWire still LP Thursday)",
+    "Lamb active TNF; no sourced in-game injury in early game window",
+    "McMillan bye resolved (Mitchell FLEX per 8:17 AM ESPN)",
     "Charbonnet out"
   ],
-  "summary": "8 PM ET hourly Oct 8. Intelligence only. Material: TNF is underway and CeeDee Lamb remains active with no early target or injury. CBS Sports gametracker showed TB at DAL INPROGRESS, 1st quarter 14:48, 0-0; opening play Prescott incomplete to Spann-Ford. Official inactives (already logged at 7:17 PM) still exclude Lamb. No change on Lamar (ankle DNP Thu, no designation), Bateman (full Thu), Kamara (limited Thu), Holani (limited Wed+Thu), or Black (Thursday participation still unconfirmed). Lineup still the 8:17 AM ESPN live check (Mitchell FLEX, McMillan bench). No ownership, FAAB, lineup, IR, or transaction write.",
+  "summary": "8 PM ET hourly Oct 8. Intelligence only. Material: Kaelon Black (illness) ATTRIBUTED_REPORT full Thursday practice (RotoWire citing Harrison Rich, San Francisco Chronicle; CBS timestamp 2026-10-08T23:05:08Z). Not confirmed on 49ers.com. No change vs 7 PM on Lamb (active; no sourced in-game injury after 8:15 PM ET kickoff), Lamar (ankle DNP Thu, no designation), Bateman (full Thu), Kamara (limited Thu), or Holani (limited Wed+Thu). Lineup still the 8:17 AM ESPN live check (Mitchell FLEX, McMillan bench). Skipped/LIMITED: official team page, X, experts, analytics, ESPN re-pull. No ownership, FAAB, lineup, IR, or transaction write.",
   "prior_pulse_id": "mongo-grok-pulse-2026-10-08T231713Z",
   "prior_completed_at": "2026-10-08T23:17:13Z",
   "prior_commit": "5f5dd4fed2170dcbbf72ee1ad47b50f51db59920",
   "checks_skipped": [
-    "Fresh ESPN re-pull (lineup still the 8:17 AM ET authenticated live check)",
-    "New Lamar/Bateman/Kamara/Holani designation (no Friday designation found)",
-    "49ers Thursday participation for Kaelon Black still unconfirmed",
-    "Full box score / Lamb stat line not finalized (game just started)",
+    "Fresh ESPN re-pull (newest mongo-ff-bot-state live check still 8:17 AM ET Oct 8)",
+    "Official 49ers.com Thursday table not opened (Black full via Chronicle/RotoWire only)",
+    "In-game Lamb box score / routine TNF stats (not logged; no sourced injury)",
+    "X direct read",
+    "experts",
     "analytics"
   ]
 }
