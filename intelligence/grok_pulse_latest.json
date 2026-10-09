@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T021511Z",
-  "generated_at": "2026-10-09T02:15:11Z",
-  "completed_at": "2026-10-09T02:15:11Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T031531Z",
+  "generated_at": "2026-10-09T03:15:31Z",
+  "completed_at": "2026-10-09T03:15:31Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T02:15:11Z",
+  "as_of": "2026-10-09T03:15:31Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "LIMITED",
@@ -61,7 +61,7 @@
       "Chris Bell"
     ],
     "live_check_ref": "mongo_live_check_20261008_0817_ET_espn",
-    "repo_head_at_read": "13e9d102dde8e3c130132f8bd5bb105ae7ea096c",
+    "repo_head_at_read": "e7f81df6df1f2d5dc3dad9fb08f9a675d29e70b6",
     "starters_week_5": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -80,7 +80,7 @@
       "team": "DAL",
       "signal_type": "game_status",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Still active; no sourced in-game injury. FOX Sports box score snapshot during 10 PM ET run showed end of 2nd quarter (TB 154 total yds, DAL 146; Javonte Williams TD). Lamb not listed among top performers. Routine stats not material. Prior Pulse confirmed he was not on official TNF inactives.",
+      "summary": "Still active; no sourced in-game injury. FOX Sports game page during 11 PM ET run showed 4th quarter, 5:26 left (Prescott 17-yd TD to George Pickens, 2-pt failed); game not yet final at read. Lamb not listed among top performers. Routine stats not material; final line not logged. Prior Pulse confirmed he was not on official TNF inactives.",
       "mongo_impact": "Starting WR remains active. Routine early-game volume is not a lineup change. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -229,10 +229,10 @@
       "player": "CeeDee Lamb",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Active in TNF. FOX snapshot at halftime, no sourced injury. No lineup write.",
+      "summary": "Active in TNF. FOX snapshot 4th quarter 5:26 left, no sourced injury. No lineup write.",
       "urgency": "LOW",
       "material": false,
-      "source": "FOX Sports play-by-play snapshot during 9 PM ET run"
+      "source": "FOX Sports game page snapshot during 11 PM ET run"
     },
     {
       "player": "Tetairoa McMillan / Keaton Mitchell",
@@ -290,16 +290,16 @@
     "Charbonnet out W5",
     "Parsons won't practice this week"
   ],
-  "summary": "10 PM ET hourly Oct 8. Intelligence only. no_material_change vs 9 PM Pulse (01:22:30Z). FOX Sports box score at end of 2nd quarter: no sourced in-game injury for CeeDee Lamb (not among listed top performers; routine stats not material). Lamar Jackson still DNP Wed+Thu with no designation (BaltimoreRavens.com, PFT, Yahoo, Baltimore Sun two-game-plan report already consistent with prior). No new Bateman/Andrews/Kamara/Holani/Black status. Baker Mayfield OUT is context only. Lineup still from 8:17 AM ESPN live check. Note: 9 PM Pulse updated latest (d2b7211) but no 9 PM history line exists on main; not backfilled. No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T012230Z",
-  "prior_completed_at": "2026-10-09T01:22:30Z",
-  "prior_commit": "d2b7211e32db32d60ecc65ec307f9d6981b8be3b",
+  "summary": "11 PM ET hourly Oct 8. Intelligence only. no_material_change vs 10 PM Pulse (02:15:11Z). TNF TB at DAL in 4th quarter (5:26 left) per FOX Sports at read; no sourced CeeDee Lamb injury; final not yet posted, routine stats not material. Lamar Jackson unchanged: DNP Wed+Thu, no designation, Ravens preparing Jackson and Huntley plans (Baltimore Sun 4:44 PM ET); no newer report found. No new Bateman/Andrews/Kamara/Holani/Black status (Friday reports pending). Mayfield OUT context only. X read rate-limited (429) so x_direct LIMITED. Lineup still from 8:17 AM ET ESPN live check. No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T021511Z",
+  "prior_completed_at": "2026-10-09T02:15:11Z",
+  "prior_commit": "e7f81df6df1f2d5dc3dad9fb08f9a675d29e70b6",
   "checks_skipped": [
-    "Fresh ESPN re-pull (newest live check still 8:17 AM ET Oct 8)",
-    "Official team injury pages not re-opened (search excerpts only)",
-    "X direct read",
-    "Expert and analytics scan",
-    "Saints/49ers/Bills late updates (no new search this run)",
-    "Friday practice reports not yet posted"
+    "X direct read attempted for Lamb in-game injury but returned HTTP 429 (no data)",
+    "Final TNF score/Lamb stat line not available at read (game in 4th quarter)",
+    "Second Lamb injury web search interrupted",
+    "No new expert/analytics pull",
+    "No fresh ESPN authenticated pull; lineup from 8:17 AM ET live check",
+    "No team-site re-check for Kamara/Holani/Black/Bateman (no Friday reports yet)"
   ]
 }
