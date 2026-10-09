@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-08T231713Z",
-  "generated_at": "2026-10-08T23:17:13Z",
-  "completed_at": "2026-10-08T23:17:13Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T002243Z",
+  "generated_at": "2026-10-09T00:22:43Z",
+  "completed_at": "2026-10-09T00:22:43Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-08T23:17:13Z",
+  "as_of": "2026-10-09T00:22:43Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "LIMITED",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read): observed ESPN state, authoritative. No newer live check in /workspace/mongo-ff-bot-state (newest ESPN file still 8:17 AM ET). Intelligence only. No roster write.",
+    "source": "Mongo Live Check 8:17 AM ET Oct 8 (authenticated ESPN read) still newest observed ESPN state. No newer live check this hour. Intelligence only. No roster write.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -61,7 +61,7 @@
       "Chris Bell"
     ],
     "live_check_ref": "mongo_live_check_20261008_0817_ET_espn",
-    "repo_head_at_read": "f010da1eb665fd4fc599a5a2209c1493a4033b44",
+    "repo_head_at_read": "5f5dd4fed2170dcbbf72ee1ad47b50f51db59920",
     "starters_week_5": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -127,13 +127,14 @@
       "player": "CeeDee Lamb",
       "team": "DAL",
       "signal_type": "game_status",
-      "status": "CONFIRMED_FACT",
-      "summary": "CONFIRMED ACTIVE. Official Week 5 TNF inactives posted. NFL.com Around the NFL (published 2026-10-08T22:50:06Z) Cowboys inactives: Camden Brown, Ajani Cornelius, Drew Shelton, James Houston, DeMarvion Overshown, Cobie Durant, Joey Porter Jr. Lamb is not listed. Buccaneers.com (Scott Smith, 6:45 PM ET) same seven and does not list Lamb. Kickoff Bucs at Cowboys 8:15 PM ET. Prior: full all week (thigh), no injury designation; 6:17 PM Pulse had inactives not yet posted.",
-      "mongo_impact": "Starting WR is active tonight. No lineup write.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "TNF IN PROGRESS. CBS Sports gametracker (TB at DAL, Oct 8 2026) showed the game INPROGRESS, 1st quarter, 14:48 remaining, 0-0, around 8:22 PM ET. Opening play: Dak Prescott pass incomplete short middle to B. Spann-Ford. Lamb was not on that play and no early in-game injury was reported. Prior Pulse already CONFIRMED active: official inactives (NFL.com published 2026-10-08T22:50:06Z; Buccaneers.com Scott Smith 6:45 PM ET) do not list Lamb. Kickoff was 8:15 PM ET.",
+      "mongo_impact": "Starting WR is active and the game is underway. No target on the opening play. No lineup write.",
+      "urgency": "MEDIUM",
+      "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
+        "https://www.cbssports.com/nfl/gametracker/live/NFL_20261008_TB@DAL/",
         "https://www.nfl.com/news/week-5-thursday-night-inactives-tampa-bay-buccaneers-at-dallas-cowboys",
         "https://www.buccaneers.com/news/bucs-cowboys-inactives-rueben-bain-jr-ko-kieft-return-action"
       ]
@@ -322,11 +323,11 @@
     {
       "player": "CeeDee Lamb",
       "slot": "WR",
-      "status": "CONFIRMED_FACT",
-      "summary": "Official TNF inactives (NFL.com 22:50Z and Buccaneers.com 6:45 PM ET) do not list Lamb. He is active vs TB tonight. No lineup write.",
-      "urgency": "LOW",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Game underway (CBS gametracker: 1st, 14:48, 0-0). Lamb active; not targeted on the opening incomplete to Spann-Ford. No in-game injury reported. No lineup write.",
+      "urgency": "MEDIUM",
       "material": true,
-      "source": "NFL.com Week 5 TNF inactives; Buccaneers.com inactive report 6:45 PM ET"
+      "source": "CBS Sports gametracker NFL_20261008_TB@DAL; prior official inactives NFL.com / Buccaneers.com"
     },
     {
       "player": "Rashod Bateman",
@@ -379,10 +380,10 @@
   ],
   "material_changes": [
     {
-      "topic": "CeeDee Lamb TNF active",
-      "status": "CONFIRMED_FACT",
-      "vs_prior": "Prior 22:17:34Z Pulse said TNF inactives (~6:45 PM ET) were not posted and Lamb had no game designation.",
-      "summary": "Official Week 5 TNF inactives are posted. NFL.com Around the NFL (published 2026-10-08T22:50:06Z) lists Cowboys inactives: WR Camden Brown, OG Ajani Cornelius, OT Drew Shelton, OLB James Houston, LB DeMarvion Overshown, CB Cobie Durant, CB Joey Porter Jr. Lamb is not on the list. Buccaneers.com (Scott Smith, 6:45 PM ET / 2026-10-08T22:45:00Z) lists the same seven Cowboys inactives and does not list Lamb. Lamb is active for Bucs at Cowboys, 8:15 PM ET."
+      "topic": "TNF underway, Lamb active, no early target or injury",
+      "status": "ATTRIBUTED_REPORT",
+      "vs_prior": "Prior 23:17:13Z Pulse confirmed Lamb active from official inactives; kickoff had not started.",
+      "summary": "CBS Sports gametracker showed Buccaneers at Cowboys INPROGRESS, 1st quarter 14:48 remaining, 0-0. First play: Prescott incomplete short middle to Spann-Ford. Lamb not on that play; no early in-game injury reported. Official inactives still do not list him."
     }
   ],
   "no_material_change": false,
@@ -425,17 +426,15 @@
     "McMillan bye resolved (Mitchell FLEX per 8:17 AM ESPN)",
     "Charbonnet out"
   ],
-  "summary": "7 PM ET hourly Oct 8. Intelligence only. Material: CeeDee Lamb CONFIRMED active. Official TNF inactives (NFL.com published 2026-10-08T22:50:06Z; Buccaneers.com Scott Smith 6:45 PM ET) list seven Cowboys inactives and do not include Lamb. No change vs 6 PM Pulse on Lamar (ankle DNP Thu, no designation), Bateman (full Thu), Kamara (limited Thu), Holani (limited Wed+Thu), or Black (Thursday participation still not confirmed). Lineup still the 8:17 AM ESPN live check (Mitchell FLEX, McMillan bench); no newer live check. Skipped/LIMITED: beat re-read, X, experts, analytics, ESPN re-pull. No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-08T221734Z",
-  "prior_completed_at": "2026-10-08T22:17:34Z",
-  "prior_commit": "f010da1eb665fd4fc599a5a2209c1493a4033b44",
+  "summary": "8 PM ET hourly Oct 8. Intelligence only. Material: TNF is underway and CeeDee Lamb remains active with no early target or injury. CBS Sports gametracker showed TB at DAL INPROGRESS, 1st quarter 14:48, 0-0; opening play Prescott incomplete to Spann-Ford. Official inactives (already logged at 7:17 PM) still exclude Lamb. No change on Lamar (ankle DNP Thu, no designation), Bateman (full Thu), Kamara (limited Thu), Holani (limited Wed+Thu), or Black (Thursday participation still unconfirmed). Lineup still the 8:17 AM ESPN live check (Mitchell FLEX, McMillan bench). No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-08T231713Z",
+  "prior_completed_at": "2026-10-08T23:17:13Z",
+  "prior_commit": "5f5dd4fed2170dcbbf72ee1ad47b50f51db59920",
   "checks_skipped": [
-    "Fresh ESPN re-pull (lineup still the 8:17 AM ET authenticated live check; no newer file in mongo-ff-bot-state)",
-    "New Lamar/Bateman/Kamara/Holani designation (search showed same Thursday DNP/LP already logged; no Friday designation)",
-    "49ers Thursday participation for Kaelon Black not re-fetched this hour (still unconfirmed as of 6 PM Pulse)",
-    "Saints official Thursday table not re-opened (Kamara LP Thursday already logged at 5 PM)",
-    "X direct read",
-    "experts",
+    "Fresh ESPN re-pull (lineup still the 8:17 AM ET authenticated live check)",
+    "New Lamar/Bateman/Kamara/Holani designation (no Friday designation found)",
+    "49ers Thursday participation for Kaelon Black still unconfirmed",
+    "Full box score / Lamb stat line not finalized (game just started)",
     "analytics"
   ]
 }
