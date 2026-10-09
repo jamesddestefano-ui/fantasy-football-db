@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T012230Z",
-  "generated_at": "2026-10-09T01:22:30Z",
-  "completed_at": "2026-10-09T01:22:30Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T021511Z",
+  "generated_at": "2026-10-09T02:15:11Z",
+  "completed_at": "2026-10-09T02:15:11Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T01:22:30Z",
+  "as_of": "2026-10-09T02:15:11Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "LIMITED",
@@ -80,7 +80,7 @@
       "team": "DAL",
       "signal_type": "game_status",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Still active. FOX Sports live play-by-play snapshot during this run: Bucs at Cowboys 7-7, 2nd quarter about 9:13. Two Dak Prescott incompletions intended for C.Lamb at 9:32 and 9:29 of the 2nd. No sourced in-game injury. Fan posts about body language are SPECULATION and are not a status change. Prior Pulse already confirmed he was not on the official TNF inactive list.",
+      "summary": "Still active; no sourced in-game injury. FOX Sports box score snapshot during 10 PM ET run showed end of 2nd quarter (TB 154 total yds, DAL 146; Javonte Williams TD). Lamb not listed among top performers. Routine stats not material. Prior Pulse confirmed he was not on official TNF inactives.",
       "mongo_impact": "Starting WR remains active. Routine early-game volume is not a lineup change. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -229,7 +229,7 @@
       "player": "CeeDee Lamb",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Active in TNF. FOX snapshot 7-7 in the 2nd with two incomplete targets and no sourced injury. No lineup write.",
+      "summary": "Active in TNF. FOX snapshot at halftime, no sourced injury. No lineup write.",
       "urgency": "LOW",
       "material": false,
       "source": "FOX Sports play-by-play snapshot during 9 PM ET run"
@@ -290,14 +290,16 @@
     "Charbonnet out W5",
     "Parsons won't practice this week"
   ],
-  "summary": "9 PM ET hourly Oct 8. Intelligence only. no_material_change vs 00:22:44Z Pulse. FOX Sports play-by-play snapshot: Bucs at Cowboys 7-7, 2nd quarter about 9:13, two incomplete passes intended for CeeDee Lamb, no sourced in-game injury. X body-language posts are SPECULATION. No change on Lamar (ankle DNP Thu, no designation), Bateman (full Thu), Andrews (full Thu), Kamara (limited Thu), Holani (limited Wed+Thu), or Black (full Thu, Chronicle/RotoWire). Lineup still the 8:17 AM ESPN live check (Mitchell FLEX, McMillan bench). No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T002244Z",
-  "prior_completed_at": "2026-10-09T00:22:44Z",
-  "prior_commit": "13e9d102dde8e3c130132f8bd5bb105ae7ea096c",
+  "summary": "10 PM ET hourly Oct 8. Intelligence only. no_material_change vs 9 PM Pulse (01:22:30Z). FOX Sports box score at end of 2nd quarter: no sourced in-game injury for CeeDee Lamb (not among listed top performers; routine stats not material). Lamar Jackson still DNP Wed+Thu with no designation (BaltimoreRavens.com, PFT, Yahoo, Baltimore Sun two-game-plan report already consistent with prior). No new Bateman/Andrews/Kamara/Holani/Black status. Baker Mayfield OUT is context only. Lineup still from 8:17 AM ESPN live check. Note: 9 PM Pulse updated latest (d2b7211) but no 9 PM history line exists on main; not backfilled. No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T012230Z",
+  "prior_completed_at": "2026-10-09T01:22:30Z",
+  "prior_commit": "d2b7211e32db32d60ecc65ec307f9d6981b8be3b",
   "checks_skipped": [
     "Fresh ESPN re-pull (newest live check still 8:17 AM ET Oct 8)",
-    "Official team injury pages not re-opened",
-    "Friday practice reports not yet posted",
-    "analytics"
+    "Official team injury pages not re-opened (search excerpts only)",
+    "X direct read",
+    "Expert and analytics scan",
+    "Saints/49ers/Bills late updates (no new search this run)",
+    "Friday practice reports not yet posted"
   ]
 }
