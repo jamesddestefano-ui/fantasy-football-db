@@ -43,6 +43,7 @@ def test_player_aliases_seeded_for_known_gaps(session):
     assert resolve_player_key(session, "Jakobi Lane") == normalize_name("Ja'Kobi Lane")
     assert resolve_player_key(session, "Ja'Kobi Lane") == normalize_name("Ja'Kobi Lane")
     assert resolve_player_key(session, "Eagles") == normalize_name("Eagles D/ST")
+    assert resolve_player_key(session, "Raiders") == normalize_name("Raiders D/ST")
     assert resolve_player_key(session, "Devon Achane") == normalize_name("De'Von Achane")
     aliases = session.scalars(select(PlayerAlias)).all()
     norms = {a.normalized_alias for a in aliases}
@@ -53,7 +54,7 @@ def test_player_aliases_seeded_for_known_gaps(session):
 
 def test_all_known_espn_events_classify_already_recorded(session):
     results = dry_run_classify(session, KNOWN_ESPN_EVENTS)
-    assert len(results) == 15
+    assert len(results) == 16
     for r, event in zip(results, KNOWN_ESPN_EVENTS):
         assert r.classification == Classification.ALREADY_RECORDED, (
             f"{event['description']} → {r.classification} {r.reasons}"
@@ -87,6 +88,8 @@ def test_six_espn_live_plus_ir_confirmation_match_expected_groups(session):
     assert by_desc[KNOWN_ESPN_EVENTS[11]["description"]].matched_group_id == "rashod-bateman-add-demercado-drop-20260917-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[12]["description"]].matched_group_id == "george-holani-add-lane-drop-20260919-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[13]["description"]].matched_group_id == "oronde-gadsden-waiver-sanders-drop-20260923-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[14]["description"]].matched_group_id == "michael-penix-waiver-bell-drop-20261007-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[15]["description"]].matched_group_id == "raiders-dst-add-packers-dst-drop-20261008-espn-001"
 
 
 def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):

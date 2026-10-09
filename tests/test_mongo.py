@@ -12,12 +12,13 @@ from ffdb.services import DomainError, add_drop, faab_balance, ownership, rebuil
 
 def test_seed_roster_is_exact(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    expected = ({r[0] for r in ROSTER} | {"Oronde Gadsden", "Rashod Bateman", "George Holani", "Packers D/ST", "Keaton Mitchell", "Michael Penix Jr."}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders", "Eagles D/ST", "De'Von Achane", "Chris Bell"}
+    expected = ({r[0] for r in ROSTER} | {"Oronde Gadsden", "Rashod Bateman", "George Holani", "Raiders D/ST", "Keaton Mitchell", "Michael Penix Jr."}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders", "Eagles D/ST", "De'Von Achane", "Chris Bell", "Packers D/ST"}
     assert actual == expected
     assert len(actual) == 17
     assert "Malik Davis" not in actual
     assert "Tre Tucker" not in actual
     assert "Michael Penix Jr." in actual and "Oronde Gadsden" in actual and "Rashod Bateman" in actual and "George Holani" in actual
+    assert "Raiders D/ST" in actual and "Packers D/ST" not in actual
     assert "Chris Bell" not in actual
     assert "Raheim Sanders" not in actual
     assert "Emari Demercado" not in actual
@@ -78,6 +79,8 @@ def test_historical_transactions_are_seeded_without_changing_current_roster(sess
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "chris-bell-waiver-tucker-drop-20260916-espn-001"))
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "raheim-sanders-waiver-20260916-espn-001"))
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "oronde-gadsden-waiver-sanders-drop-20260923-espn-001"))
+    assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "raiders-dst-add-packers-dst-drop-20261008-espn-001"))
+    assert "Raiders D/ST" in actual and "Packers D/ST" not in actual
     assert "Jacob Saylors" not in actual and "Kayshon Boutte" not in actual
     assert "Nicholas Singleton" not in actual
     assert session.scalar(select(TransactionGroup).where(TransactionGroup.id == "black-add-lane-drop-20260903-001"))

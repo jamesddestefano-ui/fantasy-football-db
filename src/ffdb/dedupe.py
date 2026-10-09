@@ -659,4 +659,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-10-07",
         "faab_amount": 8,
     },
+    {
+        "description": "2026-10-08 ET ADD_DROP Raiders D/ST $0 + DROP Packers D/ST (ESPN FA 6:13 pm)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "add/drop",
+        "added_player": "Raiders D/ST",
+        "dropped_player": "Packers D/ST",
+        "calendar_day_ET": "2026-10-08",
+        "faab_amount": 0,
+    },
 ]

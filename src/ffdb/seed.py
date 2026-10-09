@@ -26,6 +26,7 @@ GADSDEN_SANDERS_WAIVER_AT = datetime(2026, 9, 23, 7, 27, 0, tzinfo=timezone.utc)
 PACKERS_EAGLES_DST_AT = datetime(2026, 9, 30, 15, 58, 23, tzinfo=timezone.utc)  # Tue Sep 30, 11:58:23 am ET
 MITCHELL_ACHANE_AT = datetime(2026, 9, 30, 15, 59, 9, tzinfo=timezone.utc)  # Tue Sep 30, 11:59:09 am ET
 PENIX_BELL_WAIVER_AT = datetime(2026, 10, 7, 7, 34, 0, tzinfo=timezone.utc)  # Wed Oct 7, 3:34 am ET
+RAIDERS_PACKERS_DST_AT = datetime(2026, 10, 8, 22, 13, 0, tzinfo=timezone.utc)  # Wed Oct 8, 6:13 pm ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -847,7 +848,58 @@ def seed_mongo(session: Session):
         observed_at=PENIX_BELL_WAIVER_AT, source_id=penix_source.id,
     ))
 
-
+    # --- 2026-10-08 ESPN: FREE_AGENT ADD Raiders D/ST $0 / DROP Packers D/ST ---
+    packers_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Packers D/ST")))
+    raiders_dst = _player(session, "Raiders D/ST", "D/ST", "LV")
+    raiders_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Raiders D/ST for $0; dropped Packers D/ST (Wed Oct 8, 6:13 pm ET)",
+        original_ref="data/imports/2026-10-08-raiders-dst-add-packers-dst-drop.json",
+        platform="ESPN",
+        observed_at=RAIDERS_PACKERS_DST_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-09; FAAB remained $74; no espn_id observed for Raiders D/ST.",
+    )
+    session.add(raiders_source)
+    session.flush()
+    raiders_group = TransactionGroup(
+        id="raiders-dst-add-packers-dst-drop-20261008-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=RAIDERS_PACKERS_DST_AT, source_id=raiders_source.id,
+        notes="ESPN-authoritative ADD_DROP: Raiders D/ST $0 free add; Packers D/ST dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(raiders_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=raiders_group.id, sequence=1, event_type="DROP", player_id=packers_drop.id,
+            notes="Dropped when adding Raiders D/ST.",
+        ),
+        TransactionEvent(
+            group_id=raiders_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=raiders_dst.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=packers_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=RAIDERS_PACKERS_DST_AT, source_id=raiders_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=raiders_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=raiders_dst.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=RAIDERS_PACKERS_DST_AT, source_id=raiders_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=raiders_group.id,
+            notes="ESPN free add $0 dropping Packers D/ST.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=raiders_dst.id,
+            slot="D/ST", placement="STARTER", effective_at=RAIDERS_PACKERS_DST_AT, source_id=raiders_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=RAIDERS_PACKERS_DST_AT, source_id=raiders_source.id,
+    ))
 
     for name, pos in NOT_MINE_UNKNOWN:
         p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(name)))
@@ -879,6 +931,7 @@ def seed_mongo(session: Session):
         ("Ja'Kobi Lane", "Jakobi Lane"),
         ("Eagles D/ST", "Eagles"),
         ("Packers D/ST", "Packers"),
+        ("Raiders D/ST", "Raiders"),
         ("De'Von Achane", "Devon Achane"),
     ]:
         p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(canonical)))
