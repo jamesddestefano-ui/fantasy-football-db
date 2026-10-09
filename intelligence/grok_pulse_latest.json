@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T202240Z",
-  "generated_at": "2026-10-09T20:18:40Z",
-  "completed_at": "2026-10-09T20:22:40Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T211923Z",
+  "generated_at": "2026-10-09T21:11:23Z",
+  "completed_at": "2026-10-09T21:19:23Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T20:22:40Z",
+  "as_of": "2026-10-09T21:19:23Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -66,8 +66,8 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261009_0832_ET_espn",
-    "repo_head_at_read": "7b0e8a0252420634828e12f47444b1b2bf2eb0de",
-    "newer_espn_snapshot": "espn_live_20261009_0832.json (captured 8:35 AM ET Oct 9). No fresh ESPN pull this run.",
+    "repo_head_at_read": "c730b32c055fc9d64839e92cf576836bbe7aaf10",
+    "newer_espn_snapshot": "espn_live_20261009_0832.json (captured 8:35 AM ET Oct 9). No newer snapshot in /workspace/mongo-ff-bot-state/ at read (no 4 PM ET Live Check file found). No fresh ESPN pull this run.",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -85,7 +85,7 @@
       "team": "PHI",
       "signal_type": "context",
       "status": "CONFIRMED_FACT",
-      "summary": "UPGRADED vs 19:18Z Pulse. NFL.com Week 5 injury report (read this run; AroundTheNFL 4:10 PM ET links the same page) lists Saquon Barkley (hamstring) and DeVonta Smith (hamstring) OUT vs JAX in London, with Marquise Brown, Drew Kendall, Marcus Epps also OUT and Jonathan Greenard QUESTIONABLE. Philadelphiaeagles.com table still showed Friday column blank and UNSPECIFIED when read this run, so the team HTML row was not the stamp; NFL.com's published Friday game statuses are the basis. Hurts has no designation. Neither Barkley nor Smith is on Mongo's roster.",
+      "summary": "UPGRADED vs 19:18Z Pulse. NFL.com Week 5 injury report (read this run; AroundTheNFL 4:10 PM ET links the same page) lists Saquon Barkley (hamstring) and DeVonta Smith (hamstring) OUT vs JAX in London, with Marquise Brown, Drew Kendall, Marcus Epps also OUT and Jonathan Greenard QUESTIONABLE. Philadelphiaeagles.com table still showed Friday column blank and UNSPECIFIED when read this run, so the team HTML row was not the stamp; NFL.com's published Friday game statuses are the basis. Hurts has no designation. Neither Barkley nor Smith is on Mongo's roster. Hurts is not named on the NFL.com Eagles statuses (no designation).",
       "mongo_impact": "Starting QB remains healthy. Week 5 weapons set is now officially without Barkley and Smith. Context only; no lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -116,8 +116,8 @@
       "team": "BAL",
       "signal_type": "designation",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Not listed OUT or QUESTIONABLE on the NFL.com Friday Week 5 Ravens statuses (Jackson, Jurgens, Hendrickson out; Flowers, Vorhees, Humphrey questionable). Prior Ravens.com table had hand, Wed FP / Thu FP, Friday blank. Absence from the questionable list is not a full-practice stamp.",
-      "mongo_impact": "Starting TE. Expected to play with Huntley. No lineup write.",
+      "summary": "No Friday designation seen. Ravens final report (Jonas Shaffer, Ryan Mink, Sam Cohn, Brian Wacker on X ~4:03-4:16 PM ET): Jackson, Jurgens, Hendrickson OUT; Flowers (foot), Vorhees (foot), Humphrey (hamstring/calf) QUESTIONABLE. Andrews is not named. Absence from the list is not a full-practice stamp; I did not see the Ravens table row. Expert context (EXPERT_OPINION): Fantasy Life utilization piece (Dwain McFarland) calls him a 'low-end TE1' (Wk4 28% target share, 35% TPRR, route share 57% after Likely returned); FantasyPros (Derek Brown) projects TE1 range. One tipster, blitzlink_, lists him as a SIT because of Huntley.",
+      "mongo_impact": "Starting TE. No designation; Huntley (CONFIRMED_FACT) lowers ceiling. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
       "availability": "OWNED"
@@ -127,8 +127,8 @@
       "team": "BAL",
       "signal_type": "designation",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Not listed OUT or QUESTIONABLE on NFL.com Friday Ravens statuses. Shoulder, prior table Wed LP / Thu FP. Huntley is the QB (CONFIRMED_FACT).",
-      "mongo_impact": "Bench WR. Ceiling lower with Huntley. No lineup write.",
+      "summary": "No designation. Relayed FantasyPros (Ari Koslow) item on X ~4:42 PM ET: Bateman (shoulder) off the Ravens injury report. Not on NFL.com OUT/QUESTIONABLE list. Zay Flowers (foot) QUESTIONABLE, Hensley says Flowers and Humphrey 'both expected to play' (ATTRIBUTED_REPORT). Fantasy Alarm target report (EXPERT_OPINION, written before Friday) says Bateman fell behind Devontez Walker in snaps and 'does not need to be rostered'. Huntley is QB (CONFIRMED_FACT).",
+      "mongo_impact": "Bench WR; low ceiling with Huntley. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
       "availability": "OWNED"
@@ -138,7 +138,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "No new designation. NFL.com Friday statuses re-confirm Alvin Kamara (back) QUESTIONABLE vs MIN, with Jeremiah Wright, Kaden Elliss, Anfernee Jennings OUT. Already logged at 19:18Z from Saints.com. Kamara is not on Mongo's roster.",
+      "summary": "No designation for Miller seen. NFL.com Friday statuses: Alvin Kamara (back) QUESTIONABLE vs MIN, with Wright, Elliss, Jennings OUT; Barion Brown (thigh), Julian Blackmon (shoulder) QUESTIONABLE. Saints Friday report (Yahoo, 2:17 PM ET): Kamara limited, Chris Olave full / off report. NBC/Rotoworld calls Kamara likely lead back in a committee (EXPERT_OPINION). Kamara is not on Mongo's roster.",
       "mongo_impact": "Starting RB2. Share still unresolved until Sunday inactives. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -152,34 +152,43 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Re-searched this run: Rapoport quad bruise still 'not considered serious' (ATTRIBUTED_REPORT); NBC/Rotoworld opinion expects him Week 6 at GB. No Cowboys MRI result or Week 6 designation; first Week 6 practice report is Wednesday. ESPN Q tag remains the 8:35 AM ET snapshot, not re-pulled.",
-      "mongo_impact": "Week 6 (DAL @ GB SNF Oct 18) outlook unchanged. Hold. No lineup write.",
+      "summary": "UPDATED vs 20:22Z. Cowboys HC Brian Schottenheimer on Friday (Jon Machota, Calvin Watkins, Garrett Podell, Nick Harris, ~5:04-5:07 PM ET on X): Lamb has a quad bruise and 'is okay'/'fine'; not expected to miss time. Machota: 'Both sound like they won't miss any time.' Consistent with Rapoport's earlier 'not considered serious'. Still no Cowboys MRI result or Week 6 designation; first Week 6 practice report is Wednesday. ESPN Q tag remains the 8:35 AM ET snapshot, not re-pulled.",
+      "mongo_impact": "Week 6 (DAL @ GB SNF Oct 18) outlook slightly firmer. Hold. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/rap-lamb-quad-injury-not-considered-serious",
-        "https://www.cbssports.com/fantasy/football/news/cowboys-ceedee-lamb-injury-seemingly-not-serious/"
+        "https://x.com/jonmachota/status/2108665085677772819",
+        "https://x.com/calvinwatkins/status/2108665384027005272",
+        "https://x.com/garrettpodell/status/2108664995152019844",
+        "https://x.com/NickHarrisFWST/status/2108665135082721754"
       ]
     },
     {
       "player": "George Holani",
       "team": "SEA",
       "signal_type": "practice",
-      "status": "CONFIRMED_FACT",
-      "summary": "Carried. Seahawks.com table last read 19:18Z: ribs, Wed LP / Thu LP, Friday blank, UNSPECIFIED. Not on a new designation this run. RotoWire/NBC expect him to play (EXPERT_OPINION).",
-      "mongo_impact": "Bench RB. No lineup write.",
-      "urgency": "MEDIUM",
-      "confidence": "HIGH",
-      "availability": "OWNED"
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "CHANGED vs 20:22Z. Seahawks Friday final designations (ESPN's Brady Henderson, Seahawks Wired, FantasyPros/Ari Koslow, Sunday League, all on X ~4:31-4:54 PM ET): RB George Holani (ribs) QUESTIONABLE vs SF; RB Zach Charbonnet (knee) OUT, plus Surratt, Neal OUT and WR Irv Charles QUESTIONABLE. Henderson: Holani, 'Seattle's RB2 with Jadarian Price on IR', was limited again and 'is now dealing with a pair of injuries' (RotoLegends says ribs and knee). Prior Seahawks.com Thu table: Wed LP / Thu LP. I did not open the seahawks.com final table, so status is ATTRIBUTED_REPORT, not CONFIRMED_FACT. Experts frame Emanuel Wilson and newly signed Robert Henry Jr. in line for backfield volume (EXPERT_OPINION).",
+      "mongo_impact": "Bench RB; not a starter. A questionable tag with a second injury makes his Sunday availability uncertain; role is depth behind Wilson. Watch Sunday inactives (SF @ SEA 4:25 PM ET). No lineup write.",
+      "urgency": "HIGH",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://x.com/BradyHenderson/status/2108667332973547675",
+        "https://x.com/BradyHenderson/status/2108656535824199812",
+        "https://x.com/seahawks_wired_/status/2108662451516670305",
+        "https://x.com/FantasyProsNFL/status/2108658753562169667",
+        "https://x.com/RotoLegends/status/2108665684662030786"
+      ]
     },
     {
       "player": "Kaelon Black",
       "team": "SF",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Carried. Seahawks.com combined table last read 19:18Z: illness, Wed LP / Thu FP, Friday blank, UNSPECIFIED. No new designation this run.",
-      "mongo_impact": "Bench RB. No lineup write.",
+      "summary": "No designation. 49ers Friday final statuses on X (Matt Barrows, Cam Inman, 49ers Webzone ~4:56-5:06 PM ET): OUT Bosa, Juszczyk, Sigle, James Thompson; QUESTIONABLE Upton Stout, Mykel Williams (activated off PUP Saturday). Black (illness) is not listed. Seahawks.com Thu table had him full participation. Friday practice stamp not seen.",
+      "mongo_impact": "Bench RB. Illness tag appears cleared; no designation. McCaffrey rested (not injury related) Wed/Thu. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
       "availability": "OWNED"
@@ -199,19 +208,22 @@
       "player": "Bijan Robinson",
       "team": "ATL",
       "signal_type": "practice",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Not named on the NFL.com Friday Ravens/Falcons questionable list seen this run. SNF vs BAL with Huntley starting for Baltimore. No new designation.",
+      "status": "CONFIRMED_FACT",
+      "summary": "No designation. NFL.com Friday Falcons statuses (read this run): OUT Yasir Abdullah; QUESTIONABLE Jake Matthews, Samson Ebukam, Za'Darius Smith, Divine Deablo. Robinson is not listed. Penix is also not listed (same NFL.com Falcons section). SNF vs BAL with Huntley starting for Baltimore.",
       "mongo_impact": "Start-caliber Week 5. No lineup write.",
       "urgency": "LOW",
       "confidence": "HIGH",
-      "availability": "OWNED"
+      "availability": "OWNED",
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-5-injury-report-player-statuses-for-all-15-games"
+      ]
     },
     {
       "player": "Raiders D/ST",
       "team": "LV",
       "signal_type": "roster",
       "status": "CONFIRMED_FACT",
-      "summary": "Observed ESPN state (8:35 AM ET Oct 9 Live Check, repo fc0de10): JDD added Raiders D/ST (FA $0) and dropped Packers D/ST on Oct 8 6:13 PM ET. Starting D/ST Week 5 vs NE. ESPN player id not observed; not invented. Opponent note only: NFL.com Friday roundup says Ashton Jeanty (ankle/foot) questionable and did not practice Friday (ATTRIBUTED_REPORT via NFL.com news roundup). That is a Raiders offense note, not a D/ST designation.",
+      "summary": "Observed ESPN state (8:35 AM ET Oct 9 Live Check, repo fc0de10): JDD added Raiders D/ST (FA $0) and dropped Packers D/ST on Oct 8 6:13 PM ET. Starting D/ST Week 5 vs NE. ESPN player id not observed; not invented. Opponent/offense note only: NFL.com Friday statuses list Raiders OUT Jalen Nailor (concussion), Dont'e Thornton Jr. (hamstring), Trey Zuhn III (knee) and Ashton Jeanty QUESTIONABLE (hamstring on NFL.com; earlier reports said ankle/foot; designation discrepancy not resolved). Patriots OUT Mack Hollins, Christian Gonzalez, Carlton Davis and others; Rhamondre Stevenson QUESTIONABLE. These are offense/opponent notes, not a D/ST designation.",
       "mongo_impact": "Starter unchanged. No lineup write.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -221,12 +233,54 @@
       "player": "Chris Bell",
       "team": "MIA",
       "signal_type": "roster",
-      "status": "CONFIRMED_FACT",
-      "summary": "Dropped Wed Oct 7 in the Penix add/drop. ESPN-confirmed free agent per Mongo Live Check 8:17 AM ET Oct 8. Not re-pulled this hour.",
-      "mongo_impact": "Do not treat as a pickup.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Dropped Wed Oct 7 in the Penix add/drop (repo). The ESPN free-agent check was from Oct 8 8:17 AM ET and is stale; not re-pulled. Availability set to UNKNOWN until a fresh ESPN/repo ownership read.",
+      "mongo_impact": "Do not treat as a pickup or as confirmed available.",
       "urgency": "LOW",
       "confidence": "HIGH",
-      "availability": "FREE_AGENT_CONFIRMED"
+      "availability": "UNKNOWN"
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "designation",
+      "status": "CONFIRMED_FACT",
+      "summary": "Not listed on the Colts Friday final report (colts.com table read this run lists Allen, Slayton, Ward QUESTIONABLE; Dulin, Key, Carlies, Mallory OUT). No designation for Downs. Slatestats shows 4 of 4 games played, no injury listed. Aly Jiwani (X, EXPERT_OPINION) ranks him PPR WR18.",
+      "mongo_impact": "Starting WR. No designation. No lineup write.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.colts.com/team/injury-report/"
+      ]
+    },
+    {
+      "player": "Keaton Mitchell / Oronde Gadsden",
+      "team": "LAC",
+      "signal_type": "designation",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Neither is named on the NFL.com Friday Chargers statuses (OUT Quentin Johnston, Brenen Thompson, Joe Alt, Awosika, Penning, Donte Jackson, Derwin James; DOUBTFUL Trey Lance; QUESTIONABLE Matlock, Ladd McConkey, Charlie Kolar, Branson Taylor, Rodney Shelley). Kolar's status matters for Gadsden's role: SI says out, NFL.com says QUESTIONABLE; conflict not resolved. Slatestats shows Gadsden 4 of 4, no injury.",
+      "mongo_impact": "Mitchell is in FLEX; Gadsden on bench. No designations. No lineup write.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-5-injury-report-player-statuses-for-all-15-games"
+      ]
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "signal_type": "designation",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Not named on the NFL.com Friday Bears statuses (OUT Kyle Monangai, Keyshaun Elliott; QUESTIONABLE Caleb Williams (hamstring), Shemar Turner, Noah Sewell, Kyler Gordon). No designation for Burden. Caleb Williams QUESTIONABLE is QB context only.",
+      "mongo_impact": "FLEX starter. Monangai out is a Bears backfield note, not Mongo-owned. No lineup write.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-5-injury-report-player-statuses-for-all-15-games"
+      ]
     }
   ],
   "waiver_signals": [
@@ -239,9 +293,9 @@
     },
     {
       "player": "Chris Bell",
-      "availability": "FREE_AGENT_CONFIRMED",
-      "status": "CONFIRMED_FACT",
-      "summary": "ESPN-confirmed free agent per 8:17 AM ET Oct 8 live check. Not worth re-adding. Not re-pulled this run. No new availability claim.",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Prior ESPN free-agent check (Oct 8 8:17 AM ET) is stale and not re-pulled. Availability UNKNOWN; do not treat as a pickup.",
       "urgency": "LOW"
     },
     {
@@ -266,7 +320,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Huntley starts (already CONFIRMED_FACT). Andrews not on NFL.com OUT/QUESTIONABLE list. Remains starting TE on the 8:35 AM ET ESPN snapshot. No lineup write.",
+      "summary": "Huntley starts (CONFIRMED_FACT). Andrews not named on the Ravens final OUT/QUESTIONABLE list. Remains starting TE on the 8:35 AM ET ESPN snapshot. No lineup write.",
       "urgency": "HIGH",
       "material": false
     },
@@ -282,9 +336,9 @@
       "player": "CeeDee Lamb",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Week 5 final carried: 2 rec, 9 yds, 0 TD, 5 tgts. Quad bruise per Rapoport (ATTRIBUTED_REPORT). No Week 6 designation. No lineup write.",
-      "urgency": "HIGH",
-      "material": false
+      "summary": "Schottenheimer Friday: quad bruise, Lamb 'is okay'; no Week 6 designation yet. No lineup write.",
+      "urgency": "MEDIUM",
+      "material": true
     },
     {
       "player": "Raiders D/ST",
@@ -301,6 +355,14 @@
       "summary": "Unchanged per 8:35 AM ET Oct 9 ESPN read: McMillan bench, Mitchell FLEX. No lineup write.",
       "urgency": "LOW",
       "material": false
+    },
+    {
+      "player": "George Holani",
+      "slot": "BN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Seahawks Friday final: Holani QUESTIONABLE (ribs, possibly knee); Charbonnet OUT. Bench RB, no lineup effect. Watch Sunday inactives. No lineup write.",
+      "urgency": "HIGH",
+      "material": true
     }
   ],
   "expert_signals": [
@@ -318,33 +380,57 @@
       "sources": [
         "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/alvin-kamara-back-questionable-for-week-5"
       ]
+    },
+    {
+      "player": "Mark Andrews",
+      "status": "EXPERT_OPINION",
+      "summary": "Fantasy Life (Dwain McFarland utilization report) calls Andrews a low-end TE1 with a season-best 28% target share in Week 4; FantasyPros (Derek Brown, Oct 8) says he could easily be a TE1 again vs ATL. One tipster (blitzlink_) says SIT because of Huntley. Opinions only.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Emanuel Wilson / George Holani",
+      "status": "EXPERT_OPINION",
+      "summary": "RotoLegends and PollSports (X) expect Emanuel Wilson to lead Seattle's backfield with Charbonnet out and Holani questionable. Opinion only.",
+      "urgency": "LOW"
     }
   ],
   "material_changes": [
     {
-      "player": "Saquon Barkley / DeVonta Smith",
-      "team": "PHI",
-      "change": "Friday game status upgraded ATTRIBUTED_REPORT -> CONFIRMED_FACT. NFL.com Week 5 injury report lists both OUT (hamstring) vs JAX in London. Eagles.com table still had Friday blank / UNSPECIFIED when read this run. AroundTheNFL 4:10 PM ET pointed at the same NFL.com page.",
-      "status": "CONFIRMED_FACT",
-      "mongo_relevance": "Context only for Jalen Hurts (Mongo QB). Neither Barkley nor Smith is on Mongo's roster; their availability is not a waiver claim.",
+      "player": "George Holani",
+      "team": "SEA",
+      "change": "Seahawks Friday final designations: Holani QUESTIONABLE (ribs, a second issue reported) vs SF; Charbonnet OUT. Previously Friday column blank / UNSPECIFIED.",
+      "status": "ATTRIBUTED_REPORT",
+      "mongo_relevance": "Mongo bench RB. Availability uncertain; no lineup effect. Seahawks.com final table not opened, so not CONFIRMED_FACT.",
+      "source": "https://x.com/BradyHenderson/status/2108667332973547675"
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "change": "Cowboys HC Schottenheimer says Lamb's quad bruise is okay and he is not expected to miss time (Machota, Watkins, Podell). Supplements Rapoport's 'not serious'.",
+      "status": "ATTRIBUTED_REPORT",
+      "mongo_relevance": "Mongo WR1. Week 6 outlook slightly firmer. No MRI result or designation yet.",
+      "source": "https://x.com/jonmachota/status/2108665085677772819"
+    },
+    {
+      "player": "Friday designations resolved (Downs, Bijan, Penix, Hurts, Burden, Miller, Mitchell, Gadsden, Bateman, Black)",
+      "team": "multi",
+      "change": "None of these owned players is named on the Friday statuses read this run (NFL.com roundup, Colts.com table, 49ers/Ravens X posts). Previously open checks; none carries a designation. Andrews is also not named, but his Friday practice stamp was not seen.",
+      "status": "ATTRIBUTED_REPORT",
+      "mongo_relevance": "Reduces designation risk for owned players. Ray Davis and Dylan Sampson (IR) not located in any report read.",
       "source": "https://www.nfl.com/news/nfl-week-5-injury-report-player-statuses-for-all-15-games"
     }
   ],
   "no_material_change": false,
   "not_relogged_unchanged": [
-    "Lamar Jackson OUT / Huntley start (logged 19:18Z; reconfirmed on NFL.com Friday statuses)",
-    "Kamara QUESTIONABLE back LP Fri (logged 19:18Z; reconfirmed on NFL.com)",
-    "Andrews/Bateman not on Ravens OUT/QUESTIONABLE list",
-    "Lamb quad bruise per Rapoport",
+    "Lamar Jackson OUT / Huntley starts (logged 19:18Z; reconfirmed on Ravens X final report)",
+    "Barkley and DeVonta Smith OUT (logged 20:22Z)",
+    "Kamara QUESTIONABLE back (logged 19:18Z; NFL.com and Yahoo reconfirm)",
+    "Pat Bryant DEN IR, McLaurin Q, Marquise Brown OUT, Jaylen Wright Q: NFL Pulse Bot context, not Mongo-owned, not logged as Mongo impact",
     "TNF final TB 24 DAL 16 / Lamb 2-9 line",
     "Penix add / Bell drop / FAAB 74",
     "Week 4 win 3-1",
-    "McMillan bye resolved (Mitchell FLEX per 8:35 AM ESPN)",
-    "Holani limited Wed+Thu",
-    "Kaelon Black full Thursday",
     "Achane WAIVERS_CONFIRMED do not reclaim",
-    "Raiders D/ST in / Packers D/ST out (availability UNKNOWN)",
-    "Chris Bell FREE_AGENT_CONFIRMED not re-pulled"
+    "Raiders D/ST in / Packers D/ST out (availability UNKNOWN)"
   ],
   "integrity": {
     "ownership_writes": 0,
