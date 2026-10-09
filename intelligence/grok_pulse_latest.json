@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T221841Z",
-  "generated_at": "2026-10-09T22:10:41Z",
-  "completed_at": "2026-10-09T22:18:41Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T232143Z",
+  "generated_at": "2026-10-09T23:12:43Z",
+  "completed_at": "2026-10-09T23:21:43Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T22:18:41Z",
+  "as_of": "2026-10-09T23:21:43Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -66,8 +66,8 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261009_0832_ET_espn",
-    "repo_head_at_read": "59bfddf0b80e89315ad1b85f57d5a5ddc65c4f69",
-    "newer_espn_snapshot": "espn_live_20261009_0832.json (captured 8:35 AM ET Oct 9) is still the newest snapshot in /workspace/mongo-ff-bot-state/ at read. No 4 PM or 6 PM Live Check file found. No fresh ESPN pull this run.",
+    "repo_head_at_read": "0143aa4f04bfa7cf065a8a56c1995cf50678a9e4",
+    "newer_espn_snapshot": "espn_live_20261009_0832.json (captured 8:35 AM ET Oct 9) is still the newest snapshot in /workspace/mongo-ff-bot-state/ at read. No 4/6/7 PM Live Check file found. No fresh ESPN pull this run.",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -158,7 +158,7 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "UPDATED vs 20:22Z. Cowboys HC Brian Schottenheimer on Friday (Jon Machota, Calvin Watkins, Garrett Podell, Nick Harris, ~5:04-5:07 PM ET on X): Lamb has a quad bruise and 'is okay'/'fine'; not expected to miss time. Machota: 'Both sound like they won't miss any time.' Consistent with Rapoport's earlier 'not considered serious'. Still no Cowboys MRI result or Week 6 designation; first Week 6 practice report is Wednesday. ESPN Q tag remains the 8:35 AM ET snapshot, not re-pulled.",
+      "summary": "UPDATED vs 20:22Z. Cowboys HC Brian Schottenheimer on Friday (Jon Machota, Calvin Watkins, Garrett Podell, Nick Harris, ~5:04-5:07 PM ET on X): Lamb has a quad bruise and 'is okay'/'fine'; not expected to miss time. Machota: 'Both sound like they won't miss any time.' Consistent with Rapoport's earlier 'not considered serious'. Still no Cowboys MRI result or Week 6 designation; first Week 6 practice report is Wednesday. ESPN Q tag remains the 8:35 AM ET snapshot, not re-pulled. | RE-SEEN 7 PM run (no status change): Dallas Morning News (Joseph Hoyt, ~6:48 PM ET) says Lamb's quad injury 'doesn't sound like it's of concern' and he was intermittently in on the final drive; SI cites ESPN's Todd Archer that it was quad tightness for a second straight game; Express-News says Schottenheimer said he was hit on the same thigh vs TB. Still no MRI result, no Week 6 designation; first Dallas Week 6 report is Wednesday. ATTRIBUTED_REPORT only.",
       "mongo_impact": "Week 6 (DAL @ GB SNF Oct 18) outlook slightly firmer. Hold. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -423,59 +423,19 @@
       "urgency": "LOW"
     }
   ],
-  "material_changes": [
-    {
-      "player": "George Holani",
-      "team": "SEA",
-      "change": "Seahawks.com official report confirms Holani (ribs, knee) LP/LP/LP, Game Status QUESTIONABLE vs SF; Charbonnet OUT. Upgrade of the 21:19Z report from ATTRIBUTED_REPORT to CONFIRMED_FACT.",
-      "status": "CONFIRMED_FACT",
-      "mongo_relevance": "Mongo bench RB, questionable. No lineup effect; watch Sunday inactives.",
-      "source": "https://www.seahawks.com/team/injury-report/"
-    },
-    {
-      "player": "Mark Andrews / Rashod Bateman",
-      "team": "BAL",
-      "change": "Ravens official report (baltimoreravens.com) now read: Andrews (hand) FP Wed/Thu/Fri and Bateman (shoulder) LP/FP/FP, neither with a game designation. Lamar Jackson OUT, Flowers QUESTIONABLE. Replaces the earlier inferred 'not named on the list' basis.",
-      "status": "CONFIRMED_FACT",
-      "mongo_relevance": "Andrews (starting TE) and Bateman (bench WR) are healthy; the Week 5 risk is Huntley at QB, not injury.",
-      "source": "https://www.baltimoreravens.com/team/injury-report/"
-    },
-    {
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "change": "Eagles official report now populated: Barkley and DeVonta Smith OUT (and Marquise Brown OUT), confirmed on the team table. NEW: Hurts (calf) is listed with Fri FP and UNSPECIFIED game status, no designation.",
-      "status": "CONFIRMED_FACT",
-      "mongo_relevance": "Mongo starting QB. Calf entry carries no designation; fewer Eagles weapons is context only (Barkley, Smith, Brown are not Mongo-owned).",
-      "source": "https://www.philadelphiaeagles.com/team/injury-report/"
-    },
-    {
-      "player": "Official team tables for owned players (Black, Bijan, Penix, Downs, Burden, Mitchell, Gadsden, Kendre Miller)",
-      "team": "multi",
-      "change": "Official team tables read this run show no game designation for any of them: Black (illness) FP Fri UNSPECIFIED; Bijan, Penix, Downs, Burden, Mitchell, Gadsden and Miller are not listed. Upgrades the earlier ATTRIBUTED_REPORT basis (NFL.com roundup and X posts) to CONFIRMED_FACT. Jeanty (LV, context) is QUESTIONABLE ankle/foot, DNP Fri, resolving the NFL.com 'hamstring' discrepancy.",
-      "status": "CONFIRMED_FACT",
-      "mongo_relevance": "Removes designation risk for the owned starters and bench players named. Kamara QUESTIONABLE (non-owned) still leaves Miller's share unresolved.",
-      "source": "https://www.neworleanssaints.com/team/injury-report/"
-    },
-    {
-      "player": "Ray Davis",
-      "team": "BUF",
-      "change": "Located: Buffalo plays Monday night at LAR. Official Bills report has only the Thursday column (Davis, hamstring, FP). No Friday stamp.",
-      "status": "ATTRIBUTED_REPORT",
-      "mongo_relevance": "Mongo bench RB. Open check partly resolved; Friday status not yet seen.",
-      "source": "https://www.buffalobills.com/team/injury-report/"
-    }
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "not_relogged_unchanged": [
-    "Lamar Jackson OUT / Huntley starts (re-read on Ravens official report, unchanged)",
-    "Kamara QUESTIONABLE back (Saints.com DNP/LP/LP, unchanged)",
-    "CeeDee Lamb: Schottenheimer says quad bruise okay, not expected to miss time (21:04-21:07Z X posts, re-seen, unchanged); no MRI result or Week 6 designation; the Cowboys.com table read this run was stale (earlier-week Mon/Tue/Wed columns), not used",
-    "Pat Bryant DEN IR, McLaurin Q, Marquise Brown OUT, Jaylen Wright Q: NFL Pulse Bot context, not Mongo-owned",
-    "Dylan Sampson (IR): no new report found",
-    "Penix add / Bell drop / FAAB 74",
-    "Raiders D/ST in / Packers D/ST out (availability UNKNOWN)",
-    "Achane WAIVERS_CONFIRMED do not reclaim",
-    "Chris Bell availability UNKNOWN (stale Oct 8 check), no FREE_AGENT_CONFIRMED claim"
+    "Lamar Jackson OUT / Huntley starts (CONFIRMED_FACT, unchanged)",
+    "Kamara QUESTIONABLE back; Kendre Miller not listed on the Saints Friday report (Saints.com/PFT/Yahoo re-seen, unchanged)",
+    "Holani QUESTIONABLE ribs/knee vs SF; Black FP Fri status unspecified; Andrews FP all week; Bateman LP/FP/FP; Hurts calf FP Fri no designation (6 PM official-table reads, unchanged)",
+    "CeeDee Lamb: bruised quad, not of concern per Schottenheimer/DMN (re-seen 22:48Z), ATTRIBUTED_REPORT, no MRI/designation",
+    "Raiders: Patriots.com/Raiders.com Friday report re-read: OUT Nailor, Thornton (not activated), Zuhn; Jeanty QUESTIONABLE; Bowers FP no designation. No Raiders defender listed. Raiders D/ST observed state unchanged",
+    "Dylan Sampson (IR, knee, placed Sep 15, eligible Week 6 per Browns/ESPN): no new report",
+    "Ray Davis (BUF MNF at LAR): Thursday FP hamstring; no Friday stamp found (SI Friday practice article names Moore, Oliver, Alford absent, no Davis mention)",
+    "Gadsden/Mitchell/Bijan/Burden/Downs/Penix: no designations; Chargers OUT Johnston, McConkey QUESTIONABLE are non-Mongo context (Gadsden not listed)",
+    "Pat Bryant DEN IR, McLaurin Q, Marquise Brown OUT, Jaylen Wright Q, Barkley/Smith OUT: non-Mongo context",
+    "Chris Bell availability UNKNOWN (stale Oct 8 check), no FREE_AGENT_CONFIRMED claim; Achane WAIVERS_CONFIRMED do not reclaim"
   ],
   "integrity": {
     "ownership_writes": 0,
@@ -485,5 +445,6 @@
     "ir_writes": 0,
     "trade_writes": 0,
     "free_agent_confirmed_new_claims": 0
-  }
+  },
+  "summary": "7 PM ET hourly Oct 9. Intelligence only. NO MATERIAL CHANGE vs the 6 PM Pulse (0143aa4). Searched X (Lamb/Cowboys, and owned-player designation queries) since 22:18Z, re-read Saints, Raiders/Patriots, Browns and Bills items, and reviewed NFL Pulse Bot's 6:25 PM scan (quiet, 0 accepted). Only nuance: Dallas Morning News (~6:48 PM ET) and SI/ESPN Archer add that Lamb's quad is not of concern/tightness for a second straight game; still ATTRIBUTED_REPORT, no MRI or Week 6 designation. Raiders final report shows no defender listed; Kendre Miller not on Saints report; Sampson still IR; Ray Davis has no Friday stamp found. Roster still the 8:35 AM ET ESPN snapshot (Raiders D/ST, FAAB $74, Mitchell FLEX). Chris Bell UNKNOWN. No fresh ESPN pull. No ownership, FAAB, lineup, IR or transaction write."
 }
