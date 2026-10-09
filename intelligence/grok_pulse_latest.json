@@ -3,15 +3,15 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T171726Z",
-  "generated_at": "2026-10-09T17:17:00Z",
-  "completed_at": "2026-10-09T17:17:26Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T181640Z",
+  "generated_at": "2026-10-09T18:16:00Z",
+  "completed_at": "2026-10-09T18:16:40Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T17:17:26Z",
+  "as_of": "2026-10-09T18:16:40Z",
   "source_status": {
-    "official_nfl_team": "LIMITED",
+    "official_nfl_team": "OK",
     "beat_reporting": "OK",
     "x_direct": "OK",
     "experts": "LIMITED",
@@ -114,17 +114,19 @@
     {
       "player": "Lamar Jackson",
       "team": "BAL",
-      "signal_type": "practice",
+      "signal_type": "designation",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "NEW vs 16:22Z Pulse: Jackson (ankle) not on the field at the start of Friday practice, his third straight missed practice this week (Ravens.com, Ryan Mink, 12:46 PM ET; PFT/Myles Simmons 12:31 PM ET citing reporters on scene; NBC/Rotoworld citing Jamison Hensley). HC Minter said Wednesday he would not need to practice to play. Official Friday injury report with game designation NOT yet posted as of ~1:17 PM ET; Jackson has not been ruled out. PFT view that Huntley is likely to start is EXPERT_OPINION, not official.",
-      "mongo_impact": "Raises Huntley-start risk for Andrews (starting TE) and Bateman (bench WR); SNF game so final call may come late. Await official designation. Informational only; no lineup write.",
+      "summary": "NEW vs 17:17Z Pulse: ruled out for Week 5 at Atlanta (ankle). Coach Jesse Minter ruled him out in Friday availability; @Ravens posted the clip at 1:29 PM ET. Adam Schefter (1:30 PM ET) confirmed ruled out for Sunday night. PFT (Myles Simmons, 1:37 PM ET), The Banner (1:35 PM ET) and NBC report Tyler Huntley will start. Ravens.com 12:46 PM note still only covered the Friday DNP and has not been updated in this scan. Not an official PDF injury-report stamp in hand.",
+      "mongo_impact": "Huntley starts SNF vs ATL. Downgrade path for starting TE Mark Andrews and bench WR Rashod Bateman. Informational only; no lineup write.",
       "urgency": "HIGH",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "availability": "UNKNOWN",
       "sources": [
-        "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jackson-is-not-practicing-on-friday-with-ankle-sprain",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/lamar-jackson-ankle-misses-another-practice"
+        "https://x.com/Ravens/status/2108610822846963849",
+        "https://x.com/AdamSchefter/status/2108610973598642617",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jackson-ruled-out-tyler-huntley-to-start-vs-falcons",
+        "https://www.thebanner.com/sports/ravens-nfl/ravens-lamar-jackson-trey-hendrickson-out-falcons-KSEGONYEWVCDDJRCQSJGG5BUYM/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/lamar-jackson-ankle-ruled-out-vs-falcons"
       ]
     },
     {
@@ -132,10 +134,10 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Friday official report/designation not posted as of ~1:17 PM ET. Ravens.com early-practice note (12:46 PM ET) listed only Jackson, Hendrickson and Campbell as not on the field; Rashod Bateman was not named among absences (inference from omission, not an official participation status). Thursday: Bateman (shoulder) upgraded to FP per Yahoo/Ravens report. QB status is the variable.",
-      "mongo_impact": "Bench WR. No lineup write.",
+      "summary": "No new Bateman injury. Material change is QB: Minter ruled Lamar Jackson out and Huntley will start (team account 1:29 PM ET; Schefter 1:30 PM ET; PFT 1:37 PM ET).",
+      "mongo_impact": "Bench WR. Huntley start lowers ceiling. No lineup write.",
       "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "availability": "OWNED"
     },
     {
@@ -143,10 +145,10 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Friday official report/designation not posted as of ~1:17 PM ET. Ravens.com early-practice note (12:46 PM ET) listed only Jackson, Hendrickson and Campbell as not on the field; Mark Andrews was not named among absences (inference from omission, not an official participation status). Thursday: Andrews (hand) FP. QB status is the variable.",
-      "mongo_impact": "Starting TE. Health fine; QB is the variable. No lineup write.",
-      "urgency": "MEDIUM",
-      "confidence": "MEDIUM",
+      "summary": "No new Andrews injury. Friday official participation still not independently stamped. Material change is QB: Minter ruled Lamar Jackson out and Huntley will start (team account 1:29 PM ET; Schefter 1:30 PM ET; PFT 1:37 PM ET).",
+      "mongo_impact": "Starting TE. Health unchanged; Week 5 QB is Huntley, not Jackson. Decision remains JDD's; no lineup write.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
       "availability": "OWNED"
     },
     {
@@ -292,7 +294,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Jackson missed Friday practice (Ravens.com 12:46 PM ET), third straight miss; official designation not yet posted ~1:17 PM ET. Huntley-start risk elevated for Andrews. Decision remains JDD's; no lineup write.",
+      "summary": "Jackson ruled out Week 5; Huntley starts (Minter via @Ravens 1:29 PM ET, Schefter 1:30 PM ET, PFT 1:37 PM ET). Andrews remains the starting TE on the 8:35 AM ET ESPN snapshot. No lineup write.",
       "urgency": "HIGH",
       "material": true
     },
@@ -307,12 +309,6 @@
   ],
   "expert_signals": [
     {
-      "player": "Lamar Jackson",
-      "status": "EXPERT_OPINION",
-      "summary": "Carried: NBC/RotoWorld unconventional sprain and Hensley open-window absence. Not an official out. No new expert flip since 15:21Z Pulse.",
-      "urgency": "MEDIUM"
-    },
-    {
       "player": "CeeDee Lamb",
       "status": "EXPERT_OPINION",
       "summary": "NBC Sports/Rotoworld (Zachary Krueger, Oct 9): barring unexpected development, expects Lamb good to go Week 6 at GB. Opinion only; not an official designation. No new expert flip this run.",
@@ -326,16 +322,25 @@
       "sources": [
         "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jackson-is-not-practicing-on-friday-with-ankle-sprain"
       ]
+    },
+    {
+      "player": "Lamar Jackson",
+      "status": "EXPERT_OPINION",
+      "summary": "NBC/Rotoworld (RotoPat): Minter ruled Jackson out rather than leaving him questionable; not a long-term absence call. Opinion on Week 6 timeline only. Designation itself is the coach ruling, not this opinion.",
+      "urgency": "LOW",
+      "sources": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/lamar-jackson-ankle-ruled-out-vs-falcons"
+      ]
     }
   ],
   "material_changes": [
     {
       "player": "Lamar Jackson",
       "team": "BAL",
-      "change": "Missed Friday practice (third straight); official Friday designation still pending as of ~1:17 PM ET",
+      "change": "Ruled out Week 5 at Atlanta (ankle); Tyler Huntley will start",
       "status": "ATTRIBUTED_REPORT",
-      "mongo_relevance": "QB for owned Mark Andrews (starting TE) and Rashod Bateman (bench WR); Huntley-start risk elevated",
-      "source": "Ravens.com (Ryan Mink) 12:46 PM ET; PFT 12:31 PM ET"
+      "mongo_relevance": "QB for owned Mark Andrews (starting TE) and Rashod Bateman (bench WR). Not rostered himself.",
+      "source": "@Ravens 1:29 PM ET (Minter clip); Adam Schefter 1:30 PM ET; PFT 1:37 PM ET; The Banner 1:35 PM ET"
     }
   ],
   "no_material_change": false,
@@ -357,49 +362,34 @@
     "Lamar outside chance (Rapoport SportsCenter Fri AM restatement)",
     "Lamb quad bruise re-aggregations (NBC, Yardbarker, CBS/RotoWire)",
     "Lamar not ruled out / Ravens two game plans (NFL.com)",
-    "Holani/Black Wed-Thu official participation (Seahawks.com table)"
+    "Holani/Black Wed-Thu official participation (Seahawks.com table)",
+    "Lamar Friday DNP third straight (superseded by OUT ruling this run)"
   ],
-  "summary": "1:17 PM ET hourly Oct 9. Intelligence only. One material change: Lamar Jackson (ankle) did not practice Friday, third straight miss (Ravens.com 12:46 PM ET; PFT), raising Huntley-start risk for owned Andrews and Bateman; official Friday report/designation not yet posted, Jackson not ruled out. Seahawks/49ers/Saints Friday columns still blank or not found; Lamb unchanged (quad bruise ATTRIBUTED_REPORT, no Cowboys designation). Roster per 8:35 AM ET Live Check (Raiders D/ST, FAAB $74, McMillan BN / Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T162200Z",
-  "prior_completed_at": "2026-10-09T16:22:00Z",
-  "prior_commit": "b00ef8556715ecadc4b8253a3ffcc7f5f06b4ced",
+  "summary": "2:16 PM ET hourly Oct 9. Intelligence only. One material change: Lamar Jackson ruled out Week 5 at Atlanta (ankle) and Tyler Huntley will start (Minter via @Ravens 1:29 PM ET; Schefter 1:30 PM ET; PFT/Banner). Raises Huntley-start impact for owned Andrews and Bateman. Lamb, Holani, Black, Kamara/Miller unchanged vs 1:17 PM Pulse. Roster still the 8:35 AM ET ESPN snapshot (Raiders D/ST, FAAB $74, Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T171726Z",
+  "prior_completed_at": "2026-10-09T17:17:26Z",
+  "prior_commit": "24ff170182ef57a4b35698f57c6addd6d36065e7",
   "checks_skipped": [
-    "Official Friday injury reports/designations not yet posted for Ravens, Saints, Seahawks, 49ers as of ~1:17 PM ET",
-    "No fresh authenticated ESPN pull; used 8:35 AM ET Oct 9 snapshot (espn_live_20261009_0832.json); no newer Live Check snapshot in /workspace/mongo-ff-bot-state",
-    "Cowboys team site not opened directly",
-    "Fantasy Life / Dwaine McFarland, @FantasyPtsData and analytics sites not checked this run",
-    "Andrews/Bateman Friday participation inferred only from omission in Ravens.com early-practice note",
-    "Hurts, Bijan, Burden, Keaton Mitchell, Downs, Penix, Ray Davis, Gadsden, Raiders D/ST not re-searched this run (carried)",
-    "Unverified X fan/aggregator posts (e.g. 'all but ruling him OUT') not treated as fact"
+    "No fresh authenticated ESPN pull; used 8:35 AM ET Oct 9 snapshot (espn_live_20261009_0832.json)",
+    "Official Friday injury-report PDF not opened; designation taken from team account clip plus beat/Schefter",
+    "Fantasy Life / analytics sites not checked this run",
+    "Lamb, Holani, Black, Kamara, Hurts, Bijan not re-opened; carried from 17:17Z Pulse",
+    "Diggs and Monangai Week 5 outs are not on the Mongo roster; context only, not logged as player_signals"
   ],
   "context_signals_not_mongo_owned": [
     {
-      "player": "Breece Hall",
-      "team": "NYJ",
-      "status": "CONFIRMED_FACT",
-      "summary": "Jets ruled out Hall (quad) for Week 5 vs CLE. Adam Schefter X 10:42 AM ET; PRIME NFL Pulse 20261009-104701 (Cimini, HC Glenn via Waszak).",
-      "mongo_impact": "Context only. Not on Mongo roster (team 2) per 8:35 AM ET ESPN snapshot. No ownership/availability claim (availability UNKNOWN).",
-      "sources": [
-        "https://x.com/AdamSchefter/status/2108568898786508951"
-      ]
-    },
-    {
-      "player": "Adonai Mitchell",
-      "team": "NYJ",
-      "status": "CONFIRMED_FACT",
-      "summary": "Jets ruled out Mitchell (finger) for Week 5 vs CLE; third straight miss. Cimini follow-up: no surgery, progressing faster (ATTRIBUTED_REPORT). Schefter X 10:42 AM ET; PRIME 20261009-104702.",
-      "mongo_impact": "Context only. NOT Keaton Mitchell (Mongo FLEX). Not on Mongo roster. No availability claim (UNKNOWN).",
-      "sources": [
-        "https://x.com/AdamSchefter/status/2108568898786508951",
-        "https://x.com/RichCimini/status/2108570104141070659"
-      ]
-    },
-    {
-      "player": "Mason Taylor",
-      "team": "NYJ",
+      "player": "Stefon Diggs",
+      "team": "WAS",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Will play Week 5 (thumb) per HC Glenn via Waszak, relayed by PRIME NFL Pulse 20261009-104703 (MEDIUM). Not independently verified this run.",
-      "mongo_impact": "Context only. Not on Mongo roster. No availability claim (UNKNOWN)."
+      "summary": "Reported OUT Week 5 vs NYG (hamstring) per Garafolo/Rapoport/Keim/PFT. Not on Mongo roster. Availability UNKNOWN.",
+      "mongo_impact": "Context only. No ownership claim."
+    },
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Reported OUT Week 5 at GB (turf toe) per Cronin/PFT. Not on Mongo roster. Availability UNKNOWN.",
+      "mongo_impact": "Context only. No ownership claim."
     }
   ]
 }
