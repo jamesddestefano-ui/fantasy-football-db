@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T152118Z",
-  "generated_at": "2026-10-09T15:19:00Z",
-  "completed_at": "2026-10-09T15:21:18Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T162200Z",
+  "generated_at": "2026-10-09T16:18:00Z",
+  "completed_at": "2026-10-09T16:22:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T15:21:18Z",
+  "as_of": "2026-10-09T16:22:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -66,7 +66,7 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261009_0832_ET_espn",
-    "repo_head_at_read": "c41955e396bd59d2c78877193fa456a17b75a19d",
+    "repo_head_at_read": "5d64fe1a233d406db65f063a601bd65ad95b7f89",
     "starters_week_5": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -96,7 +96,7 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No material change vs 14:21Z Pulse. Rapoport quad-bruise report (ATTRIBUTED_REPORT) further re-aggregated by CBS/RotoWire (8:44 AM ET, 'seemingly not serious'). X chatter since 10:15 AM ET is sportsbook/fan talk, not logged. No Cowboys diagnosis, MRI result or Week 6 designation. ESPN Q tag (8:35 AM ET snapshot). Lamb played season-low 34 snaps TNF.",
+      "summary": "No material change vs 15:21Z Pulse. No new Cowboys diagnosis, MRI result, or Week 6 designation since 11:20 AM ET. Quad-bruise ATTRIBUTED_REPORT (Rapoport) and expert expectation he plays Week 6 already logged. ESPN Q tag (8:35 AM ET snapshot).",
       "mongo_impact": "Week 6 (DAL @ GB SNF Oct 18) outlook improved but availability still UNKNOWN until Cowboys practice reports. Hold; no drop, no replacement add from Pulse. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -116,8 +116,8 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 14:21Z Pulse: Friday team reports/designations still not posted as of ~11:20 AM ET (Seahawks.com and footballdb Friday columns blank). Thursday DNP (ankle) stands (Ravens.com/Mink). Rapoport on SportsCenter Fri AM (via Heavy): 'rare ankle sprain... continues to be an outside chance' — restatement of already-logged outside-chance report. Zrebiec (X, 11:17 AM ET): Ravens say plan won't change if Huntley starts; no designation. Huntley fallback.",
-      "mongo_impact": "Huntley-start risk for Andrews and Bateman. No new designation this run. No lineup write.",
+      "summary": "No material change vs 15:21Z Pulse. Friday Ravens report and game designation still not posted as of ~12:17 PM ET (Saints.com Friday column blank pattern; Ravens.com latest article still Thursday DNP; SharpFootballAnalysis stamp 11:39 AM ET still 'No designation'). Thursday DNP (ankle) stands. Rapoport outside-chance and Zrebiec 11:17 AM ET plan-won't-change notes already logged. No new Schefter/Rapoport/Zrebiec designation post since 11:20 AM ET.",
+      "mongo_impact": "Huntley-start risk for Andrews and Bateman unchanged. No new designation this run. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
       "availability": "UNKNOWN",
@@ -131,7 +131,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 14:21Z Pulse: Friday team reports/designations still not posted as of ~11:20 AM ET (Seahawks.com and footballdb Friday columns blank). Bateman (shoulder) on field Thursday in red non-contact jersey per Ravens.com; Friday report not posted as of ~8:25 AM ET.",
+      "summary": "No change vs 15:21Z Pulse. Friday Ravens report/designation still not posted as of ~12:17 PM ET. Bateman (shoulder) on field Thursday in red non-contact jersey per Ravens.com.",
       "mongo_impact": "Bench WR. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -142,7 +142,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 14:21Z Pulse: Friday team reports/designations still not posted as of ~11:20 AM ET (Seahawks.com and footballdb Friday columns blank). Andrews (hand) FP Wed/Thu; Friday Ravens report not posted as of ~8:25 AM ET. QB is the variable.",
+      "summary": "No change vs 15:21Z Pulse. Friday Ravens report/designation still not posted as of ~12:17 PM ET. Andrews (hand) FP Wed/Thu. QB is the variable.",
       "mongo_impact": "Starting TE. Health fine; QB is the variable. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -153,7 +153,7 @@
       "team": "SF",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 14:21Z Pulse: Friday team reports/designations still not posted as of ~11:20 AM ET (Seahawks.com and footballdb Friday columns blank). Illness FULL Thursday (prior RotoWire). No Friday 49ers designation found as of ~8:25 AM ET.",
+      "summary": "No change vs 15:21Z Pulse. Friday 49ers report/designation still not posted as of ~12:17 PM ET. Illness FULL Thursday (prior RotoWire). Unverified fan post at 12:10 PM ET about Evans/Bosa is not a Black designation and is not logged as fact.",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -164,7 +164,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 14:21Z Pulse: Friday team reports/designations still not posted as of ~11:20 AM ET (Seahawks.com and footballdb Friday columns blank). Saints.com Thursday report: Kamara (back) DNP Wed (estimated) / LP Thu. Friday final report and designations not posted as of ~8:25 AM ET.",
+      "summary": "No change vs 15:21Z Pulse. Saints.com injury table still blank in Friday column (Kamara back DNP Wed / LP Thu, game status UNSPECIFIED) as of this run. No Friday designation found.",
       "mongo_impact": "Starting RB2 likely shared if Kamara plays. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -175,7 +175,7 @@
       "team": "SEA",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "No change vs 14:21Z Pulse: Friday team reports/designations still not posted as of ~11:20 AM ET (Seahawks.com and footballdb Friday columns blank). Official Seahawks Thursday report: Holani LIMITED (ribs). No Friday report found as of ~8:25 AM ET. ESPN shows Q tag (8:35 AM ET snapshot).",
+      "summary": "No change vs 15:21Z Pulse. Official Seahawks Thursday report remains the latest team post: Holani LIMITED (ribs). No Friday Seahawks designation found as of ~12:17 PM ET. ESPN Q tag from 8:35 AM ET snapshot carried.",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -291,7 +291,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Jackson DNP Wed+Thu, Friday report not yet posted, no designation. Huntley risk unchanged. No lineup write.",
+      "summary": "Jackson DNP Wed+Thu; Friday report still not posted ~12:17 PM ET; no designation. Huntley risk unchanged. No lineup write.",
       "urgency": "MEDIUM",
       "material": false
     },
@@ -299,7 +299,7 @@
       "player": "Kendre Miller",
       "slot": "RB",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Kamara limited Thursday. Friday designation still pending. No lineup write.",
+      "summary": "Kamara limited Thursday; Saints.com Friday column still blank, designation UNSPECIFIED. No lineup write.",
       "urgency": "MEDIUM",
       "material": false
     }
@@ -308,13 +308,13 @@
     {
       "player": "Lamar Jackson",
       "status": "EXPERT_OPINION",
-      "summary": "Carried: NBC/RotoWorld unconventional sprain and Hensley open-window absence. Not an official out. No new expert flip this run.",
+      "summary": "Carried: NBC/RotoWorld unconventional sprain and Hensley open-window absence. Not an official out. No new expert flip since 15:21Z Pulse.",
       "urgency": "MEDIUM"
     },
     {
       "player": "CeeDee Lamb",
       "status": "EXPERT_OPINION",
-      "summary": "NBC Sports/Rotoworld (Zachary Krueger, Oct 9): barring unexpected development, expects Lamb good to go Week 6 at GB. Draft Sharks 'not serious' headline carried. Opinion only; not an official designation.",
+      "summary": "NBC Sports/Rotoworld (Zachary Krueger, Oct 9): barring unexpected development, expects Lamb good to go Week 6 at GB. Opinion only; not an official designation. No new expert flip this run.",
       "urgency": "MEDIUM"
     }
   ],
@@ -338,16 +338,16 @@
     "Lamar outside chance (Rapoport SportsCenter Fri AM restatement)",
     "Lamb quad bruise re-aggregations (NBC, Yardbarker, CBS/RotoWire)"
   ],
-  "summary": "11:00 AM ET hourly Oct 9. Intelligence only. No material change for Mongo vs 14:21Z Pulse. Friday Ravens/Saints/Seahawks/49ers final reports and game designations still not posted ~11:20 AM ET; Thursday statuses carried (Lamar DNP ankle, Bateman/Andrews full, Kamara LP back, Holani LP ribs, Black full). Lamar: Rapoport 'outside chance' restated; Zrebiec 11:17 AM ET no designation. Lamb: quad bruise ATTRIBUTED_REPORT unchanged, no Cowboys designation. Context only (not Mongo-owned): NYJ Breece Hall and Adonai Mitchell OUT W5 (Schefter), Mason Taylor expected to play; Adonai Mitchell is not Keaton Mitchell. Roster per 8:35 AM ET Live Check (Raiders D/ST, FAAB $74, McMillan BN / Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T142132Z",
-  "prior_completed_at": "2026-10-09T14:21:32Z",
-  "prior_commit": "c41955e396bd59d2c78877193fa456a17b75a19d",
+  "summary": "12:17 PM ET hourly Oct 9. Intelligence only. No material change for Mongo vs 15:21Z Pulse. Friday Ravens/Saints/Seahawks/49ers final reports and game designations still not posted ~12:17 PM ET; Thursday statuses carried (Lamar DNP ankle, Bateman/Andrews full, Kamara LP back, Holani LP ribs, Black full). No new designation posts from Schefter, Rapoport, or Zrebiec since 11:20 AM ET. Lamb quad bruise ATTRIBUTED_REPORT unchanged. Roster per 8:35 AM ET Live Check (Raiders D/ST, FAAB $74, McMillan BN / Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T152118Z",
+  "prior_completed_at": "2026-10-09T15:21:18Z",
+  "prior_commit": "5d64fe1a233d406db65f063a601bd65ad95b7f89",
   "checks_skipped": [
-    "Friday injury reports/designations not posted as of ~11:20 AM ET (Ravens, Saints, Seahawks, 49ers); Ravens.com/Saints.com/49ers.com not opened directly this run (search snippets + seahawks.com/footballdb tables)",
+    "Friday injury reports/designations not posted as of ~12:17 PM ET (Ravens, Saints, Seahawks, 49ers). Saints.com injury table opened via search snippet (Friday column blank). Ravens.com and Seahawks.com latest articles still Thursday.",
     "No fresh authenticated ESPN pull; used 8:35 AM ET Oct 9 snapshot",
-    "Fantasy Life / Dwaine McFarland (handle unverified) not checked; FantasyPtsData X posts since 9 AM ET only retweets unrelated to Mongo players; no analytics sites opened",
-    "Mason Taylor report relayed from PRIME NFL Pulse; not independently verified",
-    "Rapoport SportsCenter video not viewed; quote via Heavy text only"
+    "Fantasy Life / analytics sites not opened this run",
+    "Yahoo injury tracker page timestamp 9:26 AM ET (before prior Pulse); body not re-scraped",
+    "Unverified GameBlazers X post 12:10 PM ET on Evans/Bosa not treated as fact"
   ],
   "context_signals_not_mongo_owned": [
     {
