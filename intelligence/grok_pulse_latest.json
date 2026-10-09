@@ -3,17 +3,17 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T132900Z",
-  "generated_at": "2026-10-09T13:27:00Z",
-  "completed_at": "2026-10-09T13:29:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T142132Z",
+  "generated_at": "2026-10-09T14:21:00Z",
+  "completed_at": "2026-10-09T14:21:32Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-09T13:29:00Z",
+  "as_of": "2026-10-09T14:21:32Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
-    "x_direct": "OK",
+    "x_direct": "LIMITED",
     "experts": "LIMITED",
     "analytics": "LIMITED"
   },
@@ -66,7 +66,7 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261009_0832_ET_espn",
-    "repo_head_at_read": "fc0de10982bab9eaab8d1ccd553a2c997649e6f8",
+    "repo_head_at_read": "8f8dd9314c8c1a9a65bd89ddf7fe589de382ac13",
     "starters_week_5": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -96,7 +96,7 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "NEW: Ian Rapoport (NFL Network, X 13:21Z, 'From @SportsCenter') reports Lamb is dealing with a quad BRUISE and the extra few days should help; Bleacher Report cites Rapoport that it is 'not expected to be a long-term' issue. Draft Sharks (13:07Z) headline: not serious. Still no official Cowboys diagnosis, MRI result or Week 6 designation. ESPN shows Q tag (8:35 AM ET snapshot). Lamb played season-low 34 snaps TNF (Bleacher Report).",
+      "summary": "No material change vs 13:29Z Pulse. Rapoport quad-bruise report re-aggregated: NBC Sports/Rotoworld (Krueger) 'not believed to be serious', expects Lamb good to go for Week 6 at GB barring setback (EXPERT_OPINION layer); Yardbarker (10:11 AM ET) quotes Rapoport on SportsCenter: 'should be able to return after the long weekend... for the Cowboys next game.' Still ATTRIBUTED_REPORT; no Cowboys diagnosis, MRI result or Week 6 designation. ESPN Q tag (8:35 AM ET snapshot). Lamb played season-low 34 snaps TNF.",
       "mongo_impact": "Week 6 (DAL @ GB SNF Oct 18) outlook improved but availability still UNKNOWN until Cowboys practice reports. Hold; no drop, no replacement add from Pulse. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -105,7 +105,9 @@
         "https://x.com/RapSheet/status/2108548305302995334",
         "https://bleacherreport.com/articles/25508424-ceedee-lamb-injury-update-new-rumors-return-timeline-after-exiting-cowboys-loss-vs-bucs",
         "https://www.draftsharks.com/fantasy-football-news/83249/ceedee-lambs-quad-injury-not-serious",
-        "https://x.com/toddarcher/status/2108435796021694821"
+        "https://x.com/toddarcher/status/2108435796021694821",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/rap-lamb-quad-injury-not-considered-serious",
+        "https://www.yardbarker.com/nfl/articles/major_ceedee_lamb_injury_update_surfaces_after_cowboys_loss_to_buccaneers/s1_13132_44407720"
       ]
     },
     {
@@ -113,7 +115,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 12:28Z Pulse: Friday team reports/designations not found as of ~9:25 AM ET. Ravens Friday practice/injury report and game designations not posted as of ~8:25 AM ET. Thursday DNP (ankle) stands (Ravens.com/Mink). Banner (Shaffer, 5:30 AM ET) medial-sprain explainer already in window. Baltimore Sun: Ravens preparing Jackson and Huntley game plans. Huntley fallback. Rapoport GMFB injury segment (12:29Z) covered Jackson; no new designation found in text.",
+      "summary": "No change vs 13:29Z Pulse: Friday team reports/designations still not found as of ~10:20 AM ET. Ravens Friday practice/injury report and game designations not posted as of ~8:25 AM ET. Thursday DNP (ankle) stands (Ravens.com/Mink). Banner (Shaffer, 5:30 AM ET) medial-sprain explainer already in window. Baltimore Sun: Ravens preparing Jackson and Huntley game plans. Huntley fallback. Rapoport GMFB injury segment (12:29Z) covered Jackson; no new designation found in text.",
       "mongo_impact": "Huntley-start risk for Andrews and Bateman. No new designation this run. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
@@ -124,7 +126,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 12:28Z Pulse: Friday team reports/designations not found as of ~9:25 AM ET. Bateman (shoulder) on field Thursday in red non-contact jersey per Ravens.com; Friday report not posted as of ~8:25 AM ET.",
+      "summary": "No change vs 13:29Z Pulse: Friday team reports/designations still not found as of ~10:20 AM ET. Bateman (shoulder) on field Thursday in red non-contact jersey per Ravens.com; Friday report not posted as of ~8:25 AM ET.",
       "mongo_impact": "Bench WR. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -135,7 +137,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 12:28Z Pulse: Friday team reports/designations not found as of ~9:25 AM ET. Andrews (hand) FP Wed/Thu; Friday Ravens report not posted as of ~8:25 AM ET. QB is the variable.",
+      "summary": "No change vs 13:29Z Pulse: Friday team reports/designations still not found as of ~10:20 AM ET. Andrews (hand) FP Wed/Thu; Friday Ravens report not posted as of ~8:25 AM ET. QB is the variable.",
       "mongo_impact": "Starting TE. Health fine; QB is the variable. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -146,7 +148,7 @@
       "team": "SF",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 12:28Z Pulse: Friday team reports/designations not found as of ~9:25 AM ET. Illness FULL Thursday (prior RotoWire). No Friday 49ers designation found as of ~8:25 AM ET.",
+      "summary": "No change vs 13:29Z Pulse: Friday team reports/designations still not found as of ~10:20 AM ET. Illness FULL Thursday (prior RotoWire). No Friday 49ers designation found as of ~8:25 AM ET.",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -157,7 +159,7 @@
       "team": "NO",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 12:28Z Pulse: Friday team reports/designations not found as of ~9:25 AM ET. Saints.com Thursday report: Kamara (back) DNP Wed (estimated) / LP Thu. Friday final report and designations not posted as of ~8:25 AM ET.",
+      "summary": "No change vs 13:29Z Pulse: Friday team reports/designations still not found as of ~10:20 AM ET. Saints.com Thursday report: Kamara (back) DNP Wed (estimated) / LP Thu. Friday final report and designations not posted as of ~8:25 AM ET.",
       "mongo_impact": "Starting RB2 likely shared if Kamara plays. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -168,7 +170,7 @@
       "team": "SEA",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "No change vs 12:28Z Pulse: Friday team reports/designations not found as of ~9:25 AM ET. Official Seahawks Thursday report: Holani LIMITED (ribs). No Friday report found as of ~8:25 AM ET. ESPN shows Q tag (8:35 AM ET snapshot).",
+      "summary": "No change vs 13:29Z Pulse: Friday team reports/designations still not found as of ~10:20 AM ET. Official Seahawks Thursday report: Holani LIMITED (ribs). No Friday report found as of ~8:25 AM ET. ESPN shows Q tag (8:35 AM ET snapshot).",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -258,18 +260,18 @@
       "player": "CeeDee Lamb",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Week 5 final carried: 2 rec, 9 yds, 0 TD, 5 tgts, season-low 34 snaps. NEW attributed report: quad bruise, extra days should help (Rapoport). No Week 6 designation. No lineup write.",
+      "summary": "Week 5 final carried: 2 rec, 9 yds, 0 TD, 5 tgts, season-low 34 snaps. Quad bruise per Rapoport (ATTRIBUTED_REPORT), expected back for Week 6 per NBC/Rotoworld opinion; no official designation. No lineup write.",
       "urgency": "HIGH",
-      "material": true,
+      "material": false,
       "source": "Ian Rapoport on X / Bleacher Report; Todd Archer"
     },
     {
       "player": "Raiders D/ST (replaces Packers D/ST)",
       "slot": "D/ST",
       "status": "CONFIRMED_FACT",
-      "summary": "CORRECTION: prior Pulses (12 AM, 2/4/6 AM, 7 AM, 8 AM Oct 9) listed Packers D/ST from the 8:17 AM Oct 8 roster. ESPN (8:35 AM ET Oct 9 Live Check) shows JDD swapped to Raiders D/ST on Oct 8 6:13 PM ET; Raiders D/ST is the starter. Observed state only; made by JDD on ESPN, not the bot. FAAB still $74.",
+      "summary": "Carried from 13:29Z Pulse (correction already logged there): Raiders D/ST is the starter per 8:35 AM ET Oct 9 ESPN Live Check (fc0de10); Packers D/ST dropped by JDD Oct 8 6:13 PM ET. Observed state only. FAAB $74.",
       "urgency": "LOW",
-      "material": true,
+      "material": false,
       "source": "espn_live_20261009_0832.json; repo commit fc0de10"
     },
     {
@@ -307,15 +309,12 @@
     {
       "player": "CeeDee Lamb",
       "status": "EXPERT_OPINION",
-      "summary": "Draft Sharks (Jared Smola, 13:07Z) headline 'Quad Injury Not Serious', layered on Rapoport report. Opinion/aggregation only; not an official designation. RotoWire est. return 10/18 carried.",
+      "summary": "NBC Sports/Rotoworld (Zachary Krueger, Oct 9): barring unexpected development, expects Lamb good to go Week 6 at GB. Draft Sharks 'not serious' headline carried. Opinion only; not an official designation.",
       "urgency": "MEDIUM"
     }
   ],
-  "material_changes": [
-    "D/ST roster correction (observed ESPN state, 8:35 AM ET Oct 9 Live Check / repo fc0de10): JDD added Raiders D/ST (FA $0) and dropped Packers D/ST Oct 8 6:13 PM ET; FAAB $74; McMillan BN / Mitchell FLEX unchanged. Prior Pulses listed Packers D/ST. ESPN ids not observed.",
-    "CeeDee Lamb: Rapoport (NFL Network, X 13:21Z) reports quad bruise, extra days should help; Bleacher Report cites 'not expected to be a long-term' issue. ATTRIBUTED_REPORT; no official diagnosis/W6 designation. ESPN Q tag."
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "not_relogged_unchanged": [
     "TNF final TB 24 DAL 16 / Lamb 2-9 line",
     "Archer 05:54Z quad tightened after second-straight-game hit",
@@ -328,17 +327,19 @@
     "Kamara limited Thursday",
     "Holani limited Wed+Thu",
     "Kaelon Black full Thursday (ATTRIBUTED_REPORT)",
-    "Achane WAIVERS_CONFIRMED do not reclaim"
+    "Achane WAIVERS_CONFIRMED do not reclaim",
+    "Raiders D/ST in / Packers D/ST out (logged 13:29Z)",
+    "Lamb quad bruise per Rapoport (logged 13:29Z)"
   ],
-  "summary": "9:00 AM ET hourly Oct 9. Intelligence only. Material: (1) observed ESPN roster correction — Raiders D/ST in, Packers D/ST out (JDD on ESPN Oct 8 6:13 PM ET; fc0de10), FAAB $74, McMillan BN / Mitchell FLEX unchanged; (2) Lamb quad BRUISE, extra days should help (Rapoport, ATTRIBUTED_REPORT), no official W6 designation. Friday Ravens/Saints/Seahawks/49ers reports not yet found ~9:25 AM ET; Thursday statuses carried. No ownership, FAAB, lineup, IR, or transaction write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T122800Z",
-  "prior_completed_at": "2026-10-09T12:28:00Z",
-  "prior_commit": "7e5a7a7e89b4d81b6e769446ece7693ac1f72b0e",
+  "summary": "10:00 AM ET hourly Oct 9. Intelligence only. No material change vs 13:29Z Pulse. Friday Ravens/Saints/Seahawks/49ers practice reports and game designations not yet found ~10:20 AM ET; Thursday statuses carried (Lamar DNP ankle, Bateman/Andrews full, Kamara LP back, Holani LP ribs, Black full). Lamb: Rapoport quad-bruise report re-aggregated by NBC/Rotoworld and Yardbarker (should return for Week 6 at GB) — same ATTRIBUTED_REPORT, no Cowboys designation. Roster per 8:35 AM ET Live Check (Raiders D/ST, FAAB $74, McMillan BN / Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T132900Z",
+  "prior_completed_at": "2026-10-09T13:29:00Z",
+  "prior_commit": "8f8dd9314c8c1a9a65bd89ddf7fe589de382ac13",
   "checks_skipped": [
-    "Friday injury reports/designations not posted or not found as of ~9:25 AM ET (Ravens, Saints, Seahawks, 49ers); official team sites not opened directly for Seahawks/49ers",
+    "Friday injury reports/designations not posted or not found as of ~10:20 AM ET (Ravens, Saints, Seahawks, 49ers); official Seahawks/49ers sites not opened directly",
     "No fresh authenticated ESPN pull; used 8:35 AM ET Oct 9 snapshot",
-    "No official Cowboys diagnosis found; Rapoport GMFB/SportsCenter video content not viewed (post text only)",
-    "X: no posts since 12:15Z from toddarcher, jamisonhensley, ryanmink, nick_underhill, FantasyPtsData, AdamSchefter, CalvinWatkins matching roster players; McFarland handle not verified/searched",
-    "Fantasy Life / analytics sites not checked this hour; Draft Sharks article body not opened (headline only)"
+    "X: direct X searches this run were interrupted before returning; x_direct LIMITED; no X posts logged this run",
+    "Fantasy Life / Dwaine McFarland, FantasyPtsData and analytics sites not checked this hour",
+    "Rapoport video not viewed; quotes via Yardbarker/NBC text only"
   ]
 }
