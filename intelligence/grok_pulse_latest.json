@@ -3,18 +3,18 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-09T042000Z",
-  "generated_at": "2026-10-09T04:20:00Z",
-  "completed_at": "2026-10-09T04:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-09T061200Z",
+  "generated_at": "2026-10-09T06:12:00Z",
+  "completed_at": "2026-10-09T06:12:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-09T04:20:00Z",
+  "as_of": "2026-10-09T06:12:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
-    "x_direct": "LIMITED",
-    "experts": "OK",
+    "x_direct": "OK",
+    "experts": "LIMITED",
     "analytics": "LIMITED"
   },
   "scope": {
@@ -61,7 +61,7 @@
       "Chris Bell"
     ],
     "live_check_ref": "mongo_live_check_20261008_0817_ET_espn",
-    "repo_head_at_read": "1d16979017e60e1fc84c2fb71aa0c4779c44029f",
+    "repo_head_at_read": "fec72e5585f9b3c3d359f6f750abb848968525f4",
     "starters_week_5": [
       "Jalen Hurts",
       "Bijan Robinson",
@@ -78,31 +78,16 @@
     {
       "player": "CeeDee Lamb",
       "team": "DAL",
-      "signal_type": "game_result",
-      "status": "CONFIRMED_FACT",
-      "summary": "TNF final: Buccaneers 24, Cowboys 16 (FOX Sports box score). Lamb final line: 2 receptions, 9 yards, 0 TD on 5 targets. Dak Prescott 24/42, 316 yards, 1 TD, 2 INT.",
-      "mongo_impact": "Low Week 5 output from starting WR. Intelligence only. No lineup write.",
-      "urgency": "MEDIUM",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.foxsports.com/nfl/week-5-tampa-bay-buccaneers-vs-dallas-cowboys-oct-08-2026-game-boxscore-11061"
-      ]
-    },
-    {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Quad injury in 4th quarter. PFT (Charean Williams) Oct 8 11:04 PM ET: questionable to return with a quad; 11:26 PM ET recap: Cowboys lost Lamb (quad) and Guyton (back) in the 4th quarter; mini-bye before Packers Oct 18. USA Today (Jacob Camenker): Amazon sideline reporter Kaylee Hartung said questionable to return with 8:32 left; Lamb briefly returned, hobbled off, then was on field for the failed 2-point attempt; Cowboys gave no immediate postgame update. RotoWire Oct 8: Lamb (quadriceps) questionable to return citing Todd Archer (ESPN); 2 of 5 for 9 before exit. No official Cowboys.com postgame diagnosis found. NOT marked out for Week 6.",
-      "mongo_impact": "Week 6 availability UNKNOWN pending official diagnosis/injury report. Next game Packers Oct 18 after mini-bye (ATTRIBUTED_REPORT, PFT only). Watch for MRI/diagnosis. No lineup write.",
+      "summary": "New since 04:20Z Pulse: ESPN Cowboys reporter Todd Archer on X at 05:54 UTC Oct 9 (1:54 AM ET): Lamb's quadriceps tightened up after taking a hit for the second straight game, which is why he was not on the field at the end. Not an MRI result and not a Week 6 designation. Prior Pulse already logged TNF final (TB 24, DAL 16; Lamb 2 rec, 9 yds, 0 TD, 5 targets) and in-game questionable-to-return reports (PFT, USA Today/Amazon, RotoWire/ESPN Archer). Still no Cowboys.com postgame diagnosis found. Not marked out for Week 6. Next game Packers Oct 18 after mini-bye remains prior PFT context only.",
+      "mongo_impact": "Week 6 availability still UNKNOWN. Mechanism clarified by beat, not severity. Watch Friday exams. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/dallas-cowboys",
-        "https://www.usatoday.com/story/sports/nfl/cowboys/2026/10/08/ceedee-lamb-injury-cowboys-wide-receiver-thursday-night-football/92161247007/",
-        "https://www.rotowire.com/football/player/ceedee-lamb-14411"
+        "https://x.com/toddarcher/status/2108435796021694821",
+        "https://www.foxsports.com/nfl/week-5-tampa-bay-buccaneers-vs-dallas-cowboys-oct-08-2026-game-boxscore-11061"
       ]
     },
     {
@@ -110,22 +95,18 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 00:22:44Z Pulse. Thursday Ravens report (Ravens Wire 4:14 PM ET; BaltimoreRavens.com 1:46 PM ET): Jackson (ankle) DNP Wednesday and DNP Thursday. No game designation. Friday is the last full practice. Tyler Huntley remains the fallback if he cannot play. Carried from 03:15:31Z Pulse; no Friday report yet as of midnight ET (nfl.com injury page still shows Thursday practice). No new designation.",
-      "mongo_impact": "Huntley-start risk for Andrews and Bateman. No new designation this hour. No lineup write.",
+      "summary": "No change vs 04:20Z Pulse. Thursday Ravens report: Jackson (ankle) DNP Wednesday and DNP Thursday. No game designation. Friday is the last full practice. No Friday report as of 2:12 AM ET. Tyler Huntley remains the fallback if he cannot play.",
+      "mongo_impact": "Huntley-start risk for Andrews and Bateman. No new designation this run. No lineup write.",
       "urgency": "HIGH",
       "confidence": "MEDIUM",
-      "availability": "UNKNOWN",
-      "sources": [
-        "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson",
-        "https://ravenswire.usatoday.com/story/sports/nfl/ravens/2026/10/08/ravens-falcons-thursday-injury-report-lamar-jackson-zay-flowers-week-5/92158597007/"
-      ]
+      "availability": "UNKNOWN"
     },
     {
       "player": "Rashod Bateman",
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Thursday Ravens report: Bateman (shoulder) FULL Thursday after LIMITED Wednesday. No designation. QB uncertainty unchanged. Carried from 03:15:31Z Pulse; no Friday report yet as of midnight ET (nfl.com injury page still shows Thursday practice). No new designation.",
+      "summary": "No change. Thursday Ravens report: Bateman (shoulder) FULL Thursday after LIMITED Wednesday. No designation. No Friday report as of 2:12 AM ET.",
       "mongo_impact": "Bench WR. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -136,7 +117,7 @@
       "team": "BAL",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Thursday report: Andrews (hand) FULL Wednesday and FULL Thursday. No designation. Huntley-start risk if Jackson sits. Carried from 03:15:31Z Pulse; no Friday report yet as of midnight ET (nfl.com injury page still shows Thursday practice). No new designation.",
+      "summary": "No change. Thursday report: Andrews (hand) FULL Wednesday and FULL Thursday. No designation. Huntley-start risk if Jackson sits. No Friday report as of 2:12 AM ET.",
       "mongo_impact": "Starting TE. Health fine; QB is the variable. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -147,21 +128,18 @@
       "team": "SF",
       "signal_type": "practice",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change vs 00:22:44Z. RotoWire citing Harrison Rich of the San Francisco Chronicle (CBS Sports published 2026-10-08T23:05:08Z): illness upgraded to FULL Thursday after LIMITED Wednesday. No game designation. Not re-opened on 49ers.com this run. Carried from 03:15:31Z Pulse; no Friday report yet as of midnight ET (nfl.com injury page still shows Thursday practice). No new designation.",
+      "summary": "No change. RotoWire citing Harrison Rich of the San Francisco Chronicle: illness upgraded to FULL Thursday after LIMITED Wednesday. No game designation. No Friday report as of 2:12 AM ET.",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.rotowire.com/football/headlines/kaelon-black-news-back-to-full-practice-thursday-641420"
-      ]
+      "availability": "OWNED"
     },
     {
       "player": "Kendre Miller",
       "team": "NO",
       "signal_type": "usage",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No change. Alvin Kamara (back) LIMITED Thursday after Wednesday walkthrough DNP. Friday designation still the next read. Etienne remains IR context. Carried from 03:15:31Z Pulse; no Friday report yet as of midnight ET (nfl.com injury page still shows Thursday practice). No new designation.",
+      "summary": "No change. Alvin Kamara (back) LIMITED Thursday after Wednesday walkthrough DNP. Friday designation still the next read. No Friday report as of 2:12 AM ET.",
       "mongo_impact": "Starting RB2 likely shared if Kamara plays. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -172,7 +150,7 @@
       "team": "SEA",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Official Seahawks table carried from prior Pulse: Holani LIMITED Wednesday and LIMITED Thursday (ribs). No designation. Not re-opened this hour. Carried from 03:15:31Z Pulse; no Friday report yet as of midnight ET (nfl.com injury page still shows Thursday practice). No new designation.",
+      "summary": "No change. Official Seahawks table carried from prior Pulse: Holani LIMITED Wednesday and LIMITED Thursday (ribs). No designation. No Friday report as of 2:12 AM ET.",
       "mongo_impact": "Bench RB. No lineup write.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -194,7 +172,7 @@
       "team": "PHI",
       "signal_type": "practice",
       "status": "CONFIRMED_FACT",
-      "summary": "No change. Official Eagles Wednesday report did not list Hurts. Barkley, DeVonta Smith, Hollywood Brown, and Drew Kendall were DNP; Goedert limited. London vs JAX Sunday. Not re-checked this hour. Carried; no change this run.",
+      "summary": "No change. Official Eagles Wednesday report did not list Hurts. Not re-checked this hour. Carried; no change this run.",
       "mongo_impact": "Starting QB. No designation. No lineup write.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -228,14 +206,14 @@
       "player": "De'Von Achane",
       "availability": "WAIVERS_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "Do not reclaim. Carried; not re-checked on ESPN this run. Carried; no new availability claim.",
+      "summary": "Do not reclaim. Carried; not re-checked on ESPN this run. No new availability claim.",
       "urgency": "HIGH"
     },
     {
       "player": "Chris Bell",
       "availability": "FREE_AGENT_CONFIRMED",
       "status": "CONFIRMED_FACT",
-      "summary": "ESPN-confirmed free agent per 8:17 AM ET Oct 8 live check. Not worth re-adding. Not re-pulled this run. Carried from 8:17 AM ET Oct 8 ESPN live check; no new availability claim.",
+      "summary": "ESPN-confirmed free agent per 8:17 AM ET Oct 8 live check. Not worth re-adding. Not re-pulled this run. No new availability claim.",
       "urgency": "LOW"
     }
   ],
@@ -244,16 +222,16 @@
       "player": "CeeDee Lamb",
       "slot": "WR",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Week 5 final: 2 rec, 9 yds, 0 TD, 5 targets (FOX box, CONFIRMED_FACT). Left 4th quarter with quad injury (ATTRIBUTED_REPORT: PFT, USA Today/Amazon, RotoWire/ESPN Archer). Week 6 status UNKNOWN; not marked out. No lineup write.",
+      "summary": "Week 5 final carried: 2 rec, 9 yds, 0 TD, 5 targets. New: Todd Archer (ESPN) 1:54 AM ET says quad tightened after a hit for the second straight game, explaining the late absence. Week 6 status still UNKNOWN; not marked out. No lineup write.",
       "urgency": "HIGH",
       "material": true,
-      "source": "FOX Sports box score; PFT; USA Today; RotoWire"
+      "source": "Todd Archer on X; prior FOX box / PFT / USA Today"
     },
     {
       "player": "Tetairoa McMillan / Keaton Mitchell",
       "slot": "FLEX",
       "status": "CONFIRMED_FACT",
-      "summary": "Unchanged. 8:17 AM ET ESPN read: McMillan bench, Mitchell FLEX. No lineup write. Carried; no change this run.",
+      "summary": "Unchanged. 8:17 AM ET ESPN read: McMillan bench, Mitchell FLEX. No lineup write.",
       "urgency": "LOW",
       "material": false
     },
@@ -261,7 +239,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Jackson still DNP Wed+Thu, no designation. Huntley risk unchanged. No lineup write. Carried; no change this run.",
+      "summary": "Jackson still DNP Wed+Thu, no designation. Huntley risk unchanged. No Friday report yet. No lineup write.",
       "urgency": "MEDIUM",
       "material": false
     },
@@ -269,7 +247,7 @@
       "player": "Kendre Miller",
       "slot": "RB",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Kamara limited Thursday. Friday designation still pending. No lineup write. Carried; no change this run.",
+      "summary": "Kamara limited Thursday. Friday designation still pending. No lineup write.",
       "urgency": "MEDIUM",
       "material": false
     }
@@ -278,42 +256,31 @@
     {
       "player": "Lamar Jackson",
       "status": "EXPERT_OPINION",
-      "summary": "Carried: NBC/RotoWorld unconventional sprain and Hensley open-window absence. Not an official out. No new expert flip this hour. Carried; no change this run.",
+      "summary": "Carried: NBC/RotoWorld unconventional sprain and Hensley open-window absence. Not an official out. No new expert flip this run.",
       "urgency": "MEDIUM"
     },
     {
-      "player": "Mark Andrews",
+      "player": "CeeDee Lamb",
       "status": "EXPERT_OPINION",
-      "summary": "Carried: Huntley start would downgrade Andrews but he remains a 12-team start in prior NBC/Rotoworld note. No new expert flip this hour. Carried; no change this run.",
+      "summary": "NBC Sports (Mark Garcia, recap of TNF): extra recovery before Week 6 could help him avoid a missed game. Opinion only, not a diagnosis. RotoWire still lists the in-game questionable-to-return note and an estimated return of 10/18/2026; that date is not an official designation.",
       "urgency": "MEDIUM"
     }
   ],
   "material_changes": [
     {
-      "topic": "TNF final TB 24 DAL 16 / Lamb line",
-      "player": "CeeDee Lamb",
-      "status": "CONFIRMED_FACT",
-      "vs_prior": "new",
-      "summary": "Buccaneers 24, Cowboys 16 final (FOX Sports box score). Lamb 2 rec, 9 yds, 0 TD, 5 targets. Prescott 24/42, 316 yds, 1 TD, 2 INT.",
-      "sources": [
-        "https://www.foxsports.com/nfl/week-5-tampa-bay-buccaneers-vs-dallas-cowboys-oct-08-2026-game-boxscore-11061"
-      ]
-    },
-    {
-      "topic": "CeeDee Lamb quad injury",
+      "topic": "CeeDee Lamb quad mechanism",
       "player": "CeeDee Lamb",
       "status": "ATTRIBUTED_REPORT",
-      "vs_prior": "new",
-      "summary": "Lamb left in the 4th quarter with a quad injury, questionable to return (PFT Charean Williams 11:04/11:26 PM ET; USA Today Jacob Camenker citing Amazon's Kaylee Hartung; RotoWire citing ESPN's Todd Archer). Briefly returned, hobbled off, on field for failed 2-pt try. No official Cowboys postgame diagnosis. Not marked out for Week 6; next game Packers Oct 18 after mini-bye (PFT).",
+      "vs_prior": "update",
+      "summary": "Todd Archer (ESPN) at 05:54 UTC Oct 9: Lamb's quadriceps tightened up after taking a hit for the second straight game, which is why he was not on the field at the end. Not an MRI or Week 6 designation. Guyton back x-rays at the stadium were good; more exams Friday (not a Mongo player).",
       "sources": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/dallas-cowboys",
-        "https://www.usatoday.com/story/sports/nfl/cowboys/2026/10/08/ceedee-lamb-injury-cowboys-wide-receiver-thursday-night-football/92161247007/",
-        "https://www.rotowire.com/football/player/ceedee-lamb-14411"
+        "https://x.com/toddarcher/status/2108435796021694821"
       ]
     }
   ],
   "no_material_change": false,
   "not_relogged_unchanged": [
+    "TNF final TB 24 DAL 16 / Lamb 2-9 line",
     "Penix add / Bell drop / FAAB 74",
     "Week 4 win 3-1",
     "McMillan bye resolved (Mitchell FLEX per 8:17 AM ESPN)",
@@ -323,19 +290,16 @@
     "Kamara limited Thursday",
     "Holani limited Wed+Thu",
     "Kaelon Black full Thursday (ATTRIBUTED_REPORT)",
-    "Achane WAIVERS_CONFIRMED do not reclaim",
-    "Charbonnet out W5",
-    "Parsons won't practice this week"
+    "Achane WAIVERS_CONFIRMED do not reclaim"
   ],
-  "summary": "12 AM ET overnight Oct 9. Intelligence only. Material change vs 11 PM Pulse (03:15:31Z): TNF final Buccaneers 24, Cowboys 16 (FOX box, CONFIRMED_FACT); CeeDee Lamb 2 rec, 9 yds, 0 TD, 5 targets. Lamb quad injury in 4th quarter is ATTRIBUTED_REPORT (PFT, USA Today/Amazon, RotoWire/ESPN Archer); no official Cowboys diagnosis; not marked out for Week 6; next game Packers Oct 18 after mini-bye (PFT). Lamar Jackson DNP Thu, Andrews full, Bateman full, Kamara limited, Holani limited, Black full Thu carried; no Friday reports yet. Roster context from 8:17 AM ET Oct 8 ESPN live check (FAAB 74, 3-1, McMillan bench, Mitchell FLEX). X was fan prop speculation only. No ownership, FAAB, lineup, IR, or transaction write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T031531Z",
-  "prior_completed_at": "2026-10-09T03:15:31Z",
-  "prior_commit": "1d16979017e60e1fc84c2fb71aa0c4779c44029f",
+  "summary": "2:12 AM ET overnight Oct 9. Intelligence only. Material change vs 04:20Z Pulse: Todd Archer (ESPN) on X said CeeDee Lamb's quadriceps tightened after a hit for the second straight game, explaining the late absence. ATTRIBUTED_REPORT, not an MRI or Week 6 designation; Week 6 status still UNKNOWN. Friday practice reports not out. Lamar DNP Thu, Andrews full, Bateman full, Kamara limited, Holani limited, Black full Thu carried. Roster context from 8:17 AM ET Oct 8 ESPN live check (FAAB 74, 3-1, McMillan bench, Mitchell FLEX). No ownership, FAAB, lineup, IR, or transaction write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-09T042000Z",
+  "prior_completed_at": "2026-10-09T04:20:00Z",
+  "prior_commit": "fec72e5585f9b3c3d359f6f750abb848968525f4",
   "checks_skipped": [
-    "No independent web/X scan this run: facts supplied by James and encoded as given",
-    "X sample was fan prop speculation, not beat confirmation; x_direct LIMITED, not treated as fact",
-    "No official Cowboys.com postgame diagnosis found",
-    "No Friday injury reports yet (midnight ET)",
-    "No fresh ESPN authenticated pull; roster/lineup from 8:17 AM ET Oct 8 live check"
+    "No Friday injury reports yet (2:12 AM ET)",
+    "No Cowboys.com postgame diagnosis found",
+    "No fresh ESPN authenticated pull; roster/lineup from 8:17 AM ET Oct 8 live check",
+    "Fan replies to Archer not treated as fact"
   ]
 }
