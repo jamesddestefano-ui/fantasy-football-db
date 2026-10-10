@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-10T152117Z",
-  "generated_at": "2026-10-10T15:16:17Z",
-  "completed_at": "2026-10-10T15:21:17Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-10T153500Z",
+  "generated_at": "2026-10-10T15:30:00Z",
+  "completed_at": "2026-10-10T15:35:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-10T15:21:17Z",
+  "as_of": "2026-10-10T15:35:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -67,7 +67,7 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
-    "repo_head_at_read": "dfd092a4287fb501c52502e0b95b4c2229cf01a3",
+    "repo_head_at_read": "9523d14ed096696f330413d7a572019cde11bdf7",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -91,7 +91,7 @@
       "team": "DAL",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Quad bruise not considered serious (Rapoport/NFL Network). Cowboys EVP Stephen Jones (105.3 The Fan, Fri Oct 9): 'I think both CeeDee and Tyler will be all ready to go for Green Bay.' Dallas plays W6 at GB Sun Oct 18 8:20 PM ET; no Week 6 designation yet (report starts Wed Oct 14). No new Saturday update found.",
+      "summary": "Quad bruise not considered serious (Rapoport/NFL Network). Cowboys EVP Stephen Jones (105.3 The Fan, Fri Oct 9): 'I think both CeeDee and Tyler will be all ready to go for Green Bay.' Dallas plays W6 at GB Sun Oct 18 8:20 PM ET; no Week 6 designation yet (report starts Wed Oct 14). No new Saturday update found beyond prior reports.",
       "mongo_impact": "Hold; start in Week 6 when cleared. No action.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -107,7 +107,7 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Questionable (ribs/knee) for Week 5 vs SF per official reports and beat (Seattle Times/Boyle/Condotta). Limited all week. New knee mention Friday.",
+      "summary": "Questionable (ribs/knee) for Week 5 vs SF per official reports and beat (Seattle Times/Boyle/Condotta). Limited all week. New knee mention Friday. No Saturday change.",
       "mongo_impact": "Bench only; do not start. Watch inactives.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -124,7 +124,7 @@
       "team": "DET",
       "signal_type": "usage",
       "status": "CONFIRMED_FACT",
-      "summary": "Rostered (ESPN add Oct 9, $0). Not listed on the Lions' Oct 9 Week 5 injury report (no designation); legionreport/PlayCaller/DraftSharks show no injury as of Oct 10 AM. DET at ARI Sun Oct 11 4:25 PM ET. Prior reports: W4 4 rec/95 yds/8 tgt, 82% snaps; behind St. Brown and J. Williams.",
+      "summary": "Rostered (ESPN add Oct 9, $0). Not listed on the Lions' Oct 9 Week 5 injury report (no designation); legionreport/PlayCaller/DraftSharks show no injury as of Oct 10. DET at ARI Sun Oct 11 4:25 PM ET. Prior reports: W4 4 rec/95 yds/8 tgt, 82% snaps; behind St. Brown and J. Williams.",
       "mongo_impact": "Bench depth. No start recommendation.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -141,15 +141,16 @@
       "team": "BUF",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Hamstring: full participant Thursday (Bills official table) and Friday (Bills PR report via Yahoo Sports/Buffalo Rumblings). No game designation. Bills play Monday night at LAR; Saturday practice report not yet published as of this scan (buffalobills.com Sat column blank).",
-      "mongo_impact": "Bench RB. Hold; recheck Saturday report.",
+      "summary": "Hamstring: full participant Thursday and Friday (Bills official/PR via Yahoo/Buffalo Rumblings/BillsWire). No game designation yet. Bills play Monday night at LAR; Saturday practice report not yet published as of this scan.",
+      "mongo_impact": "Bench RB. Hold; recheck Saturday report / inactives.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
         "buffalobills.com injury report",
-        "Yahoo Sports (Trapasso)",
-        "Buffalo Rumblings"
+        "Yahoo Sports",
+        "Buffalo Rumblings",
+        "BillsWire"
       ]
     },
     {
@@ -157,7 +158,7 @@
       "team": "NO",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Kamara (back) officially QUESTIONABLE vs MIN, practiced Friday; SI/RotoWire say likely to play (expert opinion). Miller (Mongo RB2) has no designation. Context: Kamara not Mongo-owned.",
+      "summary": "Kamara (back) officially QUESTIONABLE vs MIN, practiced limited/Friday; experts (SI/RotoWire) say likely to play. Miller (Mongo RB2) has no designation. Context: Kamara not Mongo-owned.",
       "mongo_impact": "Hold Miller as RB2; share risk if Kamara plays.",
       "urgency": "MEDIUM",
       "confidence": "MEDIUM",
@@ -165,7 +166,8 @@
       "sources": [
         "CBS Sports final injury report",
         "SI",
-        "RotoWire"
+        "RotoWire",
+        "NBC Sports"
       ]
     },
     {
@@ -189,13 +191,13 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Calf: full participant Friday, no designation per Eagles report (prior pulse). Barkley, D. Smith, M. Brown OUT (context, not Mongo-owned).",
+      "summary": "Calf: full participant Friday, no designation per Eagles report. Barkley, D. Smith, M. Brown OUT (context, not Mongo-owned).",
       "mongo_impact": "Start.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "Eagles.com (prior Pulse)",
+        "Eagles.com",
         "CBS Sports"
       ]
     },
@@ -272,8 +274,8 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "11:25 AM ET hourly Oct 10 (Saturday). Intelligence only. No material changes vs prior 9:35 AM ET (133500Z) Pulse. Rechecked: Bills report (Ray Davis FP Thu/Fri, Saturday report not yet out), Lions Oct 9 report (TeSlaa not listed, no designation), Lamb (nothing new beyond Rapoport/Stephen Jones), Kamara Q/Miller, Andrews/Lamar, Holani Q (ribs/knee), X search OK. TeSlaa on roster / Bateman dropped (UNKNOWN) reflected from ed7b846. No fresh ESPN pull; Sunday inactives not yet available. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T133500Z",
-  "prior_completed_at": "2026-10-10T13:35:00Z",
-  "prior_commit": "dfd092a4287fb501c52502e0b95b4c2229cf01a3"
+  "summary": "11:35 AM ET hourly Oct 10 (Saturday). Intelligence only. No material changes vs prior 11:21 AM ET (152117Z) Pulse. Rechecked: Bills (Ray Davis FP Thu/Fri, Saturday report still pending), Lions (TeSlaa no designation), Lamb (no new beyond Rapoport/Stephen Jones), Kamara Q/Miller, Andrews/Lamar OUT, Holani Q (ribs/knee), X/web OK. TeSlaa on roster / Bateman dropped (UNKNOWN) from ed7b846. No fresh ESPN pull; Sunday inactives not yet available. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T152117Z",
+  "prior_completed_at": "2026-10-10T15:21:17Z",
+  "prior_commit": "9523d14ed096696f330413d7a572019cde11bdf7"
 }
