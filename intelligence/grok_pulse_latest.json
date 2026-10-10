@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-10T171500Z",
-  "generated_at": "2026-10-10T17:10:00Z",
-  "completed_at": "2026-10-10T17:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-10T181500Z",
+  "generated_at": "2026-10-10T18:10:00Z",
+  "completed_at": "2026-10-10T18:15:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-10T17:15:00Z",
+  "as_of": "2026-10-10T18:15:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -67,7 +67,7 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
-    "repo_head_at_read": "579c4f31f4ec1ceb8b808eb17130d5cf138a1b1e",
+    "repo_head_at_read": "874fa6033344c452f0875edf8071c5df3ecf6369",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -296,8 +296,8 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "1:15 PM ET hourly Oct 10 (Saturday). Intelligence only. No material changes vs prior 12:30 PM ET (163000Z) Pulse. MHJ inactive/trade-finalizing context already captured; Houston remains leading chatter only. Owned signals stable: Ray Davis FP Thu/Fri no designation (Sat report pending), TeSlaa no designation, Lamb no new, Kamara Q/Miller no designation, Andrews/Lamar OUT, Holani Q, Hurts no designation. No fresh ESPN pull; Sunday inactives not yet available. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T163000Z",
-  "prior_completed_at": "2026-10-10T16:30:00Z",
-  "prior_commit": "579c4f31f4ec1ceb8b808eb17130d5cf138a1b1e"
+  "summary": "2:15 PM ET hourly Oct 10 (Saturday). Intelligence only. No material changes vs prior 1:15 PM ET (171500Z) Pulse. MHJ inactive/trade-finalizing context already captured; Houston remains leading chatter only. Owned signals stable: Ray Davis FP Thu/Fri no designation (Sat report pending), TeSlaa no designation, Lamb no new, Kamara Q/Miller no designation, Andrews/Lamar OUT, Holani Q, Hurts no designation. No fresh ESPN pull; Sunday inactives not yet available. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T171500Z",
+  "prior_completed_at": "2026-10-10T17:15:00Z",
+  "prior_commit": "874fa6033344c452f0875edf8071c5df3ecf6369"
 }
