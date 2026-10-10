@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-10T100500Z",
-  "generated_at": "2026-10-10T10:00:00Z",
-  "completed_at": "2026-10-10T10:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-10T112000Z",
+  "generated_at": "2026-10-10T11:15:00Z",
+  "completed_at": "2026-10-10T11:20:00Z",
   "week": 5,
   "season": 2026,
-  "run_type": "overnight",
-  "as_of": "2026-10-10T10:05:00Z",
+  "run_type": "hourly",
+  "as_of": "2026-10-10T11:20:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -66,7 +66,7 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261009_0832_ET_espn",
-    "repo_head_at_read": "d0304abc7a77be0cc8f0c889753b52334c41c885",
+    "repo_head_at_read": "a25733d4d5dd1cd6941902d34a8c2a396d0d1e98",
     "newer_espn_snapshot": "espn_live_20261009_0832.json (captured 8:35 AM ET Oct 9) is still the newest snapshot. No fresh ESPN pull this run.",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
@@ -85,8 +85,8 @@
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "6:00 AM ET overnight Oct 10. Intelligence only. No material changes vs the prior 4:15 AM (081500Z) Pulse. Re-checked NFL.com injury reports, RotoWire, team beat reporting, and limited X: Mongo-owned designations unchanged (Lamb quad bruise ATTRIBUTED_REPORT not serious with extra rest into Week 6; Holani QUESTIONABLE ribs/knee for Week 5; Sampson remains IR; no new designations or status changes for other owned players including Hurts, Robinson, Miller, Downs, Andrews, Burden, Mitchell, McMillan, Davis, Black, Bateman, Gadsden, Penix). No fresh ESPN roster pull. Chris Bell availability UNKNOWN. No ownership, FAAB, lineup, IR, transaction or trade write.",
-  "repo_head_at_read": "d0304abc7a77be0cc8f0c889753b52334c41c885",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T081500Z",
-  "prior_completed_at": "2026-10-10T08:15:00Z"
+  "summary": "7:19 AM ET hourly Oct 10. Intelligence only. No material changes vs the prior 6:00 AM (100500Z) Pulse. Re-checked NFL.com injury reports, RotoWire, team beat reporting, and limited X: Mongo-owned designations unchanged (Lamb quad bruise ATTRIBUTED_REPORT not serious with extra rest into Week 6; Holani QUESTIONABLE ribs/knee for Week 5; Sampson remains IR; Hurts calf minor full practice expected to play; no new designations or status changes for other owned players including Robinson, Miller, Downs, Andrews, Burden, Mitchell, McMillan, Davis, Black, Bateman, Gadsden, Penix). No fresh ESPN roster pull. Chris Bell availability UNKNOWN. No ownership, FAAB, lineup, IR, transaction or trade write.",
+  "repo_head_at_read": "a25733d4d5dd1cd6941902d34a8c2a396d0d1e98",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T100500Z",
+  "prior_completed_at": "2026-10-10T10:05:00Z"
 }
