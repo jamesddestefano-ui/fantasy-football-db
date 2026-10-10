@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-10T171930Z",
-  "generated_at": "2026-10-10T17:14:00Z",
-  "completed_at": "2026-10-10T17:19:30Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-10T171500Z",
+  "generated_at": "2026-10-10T17:10:00Z",
+  "completed_at": "2026-10-10T17:15:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-10T17:19:30Z",
+  "as_of": "2026-10-10T17:15:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo repository current state (ed7b846: ESPN FA ADD Isaac TeSlaa $0 / DROP Rashod Bateman, Oct 9 9:28 AM ET; FAAB $74), 8:10 AM ET Oct 10 Live Check files, plus prior Pulse. Observed state only. No fresh ESPN pull this run. No roster write by Pulse.",
+    "source": "Mongo repository current state (ed7b846: ESPN FA ADD Isaac TeSlaa $0 / DROP Rashod Bateman, txn Oct 9 9:28 AM ET; FAAB $74) plus prior Pulse. Observed state only. No fresh ESPN pull this run. No roster write by Pulse.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -107,7 +107,7 @@
       "team": "SEA",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Questionable (ribs/knee) for Week 5 vs SF; Seahawks official table: LP Wed/Thu/Fri. No Saturday change found.",
+      "summary": "Questionable (ribs/knee) for Week 5 vs SF per official reports and beat (Seattle Times/Boyle/Condotta). Limited all week. New knee mention Friday. No Saturday change found.",
       "mongo_impact": "Bench only; do not start. Watch inactives.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -140,7 +140,7 @@
       "team": "BUF",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Hamstring: FP Thu (Bills official table) and FP Fri (Buffalo Rumblings/BillsWire reports); no game designation. Bills play Monday night at LAR; Saturday column on official table still blank at 1 PM ET.",
+      "summary": "Hamstring: full participant Thursday and Friday (Bills official/PR via Yahoo/Buffalo Rumblings/BillsWire/SI). No game designation yet. Bills play Monday night at LAR; Saturday practice report not yet published as of this scan.",
       "mongo_impact": "Bench RB. Hold; recheck Saturday report / inactives.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -218,31 +218,15 @@
       "team": "ARI",
       "signal_type": "transaction + inactive",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Cardinals finalizing trade of MHJ (Schefter/Rapoport/ESPN, X read 15:02Z). Team informed him Saturday morning he will be inactive Sunday vs DET. Schefter (15:58Z): ARI had sought first-round value, now comfortable with offer received. No trade completed until after Sunday games. Destination unconfirmed: Houston is the leading chatter (Schefter: HOU in the mix; Florio/PFT: likely destination, 2027 vs 2028 2nd-round pick dispute). Not Mongo-owned.",
-      "mongo_impact": "NONE. Context for TeSlaa (DET WR) game vs ARI only.",
+      "summary": "Cardinals finalizing trade of MHJ (Schefter/Rapoport/ESPN). Team informed him Saturday morning he will be inactive Sunday vs DET while details finalize. No trade completed until after Sunday games. Destination TBD — Houston = current chatter only (not confirmed); Colts ruled out. Not Mongo-owned. No change vs prior Pulse.",
+      "mongo_impact": "Context for TeSlaa (DET WR) game vs ARI. Potential secondary/opportunity effects if inactive. No action.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "UNKNOWN (not Mongo)",
       "sources": [
         "Adam Schefter X/ESPN",
-        "Ian Rapoport X/NFL Network",
-        "ProFootballTalk (Florio)"
-      ]
-    },
-    {
-      "player": "Kaelon Black",
-      "team": "SF",
-      "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "49ers official Week 5 report: illness, LP Wed / FP Thu / FP Fri, no game designation. NBC Sports: not on final injury report, handles backup duties vs SEA; only ~10 carries over last two games.",
-      "mongo_impact": "Bench depth only; not a FLEX option. No action.",
-      "urgency": "LOW",
-      "confidence": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "49ers.com injury report",
-        "NBC Sports",
-        "Fantasy Guru"
+        "Ian Rapoport X",
+        "ESPN.com"
       ]
     }
   ],
@@ -310,13 +294,9 @@
       ]
     }
   ],
-  "material_changes": [
-    "No Mongo-owned status change found since the 12:30 PM ET Pulse (163000Z). Context only (mongo_impact NONE): Marvin Harrison Jr. (ARI, not Mongo-owned) trade remains unfinished; Schefter (X, 15:58Z) says Arizona had asked first-round value and is comfortable enough with its offer to make him inactive Sunday vs DET; PFT/Florio (ATTRIBUTED_REPORT) says Texans are the likely destination, destination unconfirmed, no deal until after Sunday games.",
-    "Kaelon Black (SF RB, Mongo bench): 49ers official Week 5 table shows illness LP Wed, FP Thu, FP Fri, no game designation (CONFIRMED_FACT); NBC Sports agrees (not on final report). Bench depth only.",
-    "Holani re-verified on Seahawks official table: Q (ribs/knee), LP Wed/Thu/Fri. Ray Davis: Bills official table shows FP Thu; Fri FP per Buffalo Rumblings; Saturday column still blank. Kamara Q (DNP Wed, LP Thu/Fri; Saints Wire) with Miller no designation. No Saturday or Sunday-inactives updates for Mongo players yet."
-  ],
+  "material_changes": [],
   "no_material_change": true,
-  "summary": "1:19 PM ET hourly Oct 10 (Saturday). Intelligence only. No Mongo-owned status change vs the 12:30 PM ET Pulse (163000Z). Context: MHJ trade still unfinished (Schefter 15:58Z: ARI wanted first-round value; Houston leading chatter, unconfirmed; inactive Sunday). Kaelon Black officially FP Thu/Fri, no designation. Holani Q (LP all week), Davis FP Thu/Fri, Kamara Q/Miller no designation, Lamar OUT/Huntley, Andrews/Hurts no designation, Lamb ready for GB per Jones. X read real (Schefter/Rapoport); experts/analytics limited; no fresh ESPN pull; Saturday reports and Sunday inactives not out. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "summary": "1:15 PM ET hourly Oct 10 (Saturday). Intelligence only. No material changes vs prior 12:30 PM ET (163000Z) Pulse. MHJ inactive/trade-finalizing context already captured; Houston remains leading chatter only. Owned signals stable: Ray Davis FP Thu/Fri no designation (Sat report pending), TeSlaa no designation, Lamb no new, Kamara Q/Miller no designation, Andrews/Lamar OUT, Holani Q, Hurts no designation. No fresh ESPN pull; Sunday inactives not yet available. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
   "prior_pulse_id": "mongo-grok-pulse-2026-10-10T163000Z",
   "prior_completed_at": "2026-10-10T16:30:00Z",
   "prior_commit": "579c4f31f4ec1ceb8b808eb17130d5cf138a1b1e"
