@@ -3,17 +3,17 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-10T021739Z",
-  "generated_at": "2026-10-10T02:12:39Z",
-  "completed_at": "2026-10-10T02:17:39Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-10T031511Z",
+  "generated_at": "2026-10-10T03:12:00Z",
+  "completed_at": "2026-10-10T03:15:11Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-10T02:17:39Z",
+  "as_of": "2026-10-10T03:15:11Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
-    "x_direct": "OK",
+    "x_direct": "LIMITED",
     "experts": "LIMITED",
     "analytics": "LIMITED"
   },
@@ -435,11 +435,8 @@
       ]
     }
   ],
-  "material_changes": [
-    "Ray Davis (BUF RB, bench, Mongo-owned): Friday Bills practice report shows him FULL participation (hamstring) per Yahoo Sports (Trapasso) relaying Bills PR; Bills play MNF at LAR and Saturday practice remains. Prior pulse had only the Thursday FP entry. ATTRIBUTED_REPORT (Bills PR image not opened directly; no designation seen).",
-    "CeeDee Lamb (DAL WR, Mongo-owned, ESPN Q): Cowboys EVP Stephen Jones said Friday on 105.3 The Fan 'I think both CeeDee and Tyler will be all ready to go for Green Bay' (Week 6, Oct 18), per Heavy.com. New named-executive attribution on top of the Rapoport/Schottenheimer quad-bruise reports. ATTRIBUTED_REPORT; still no MRI result and no Week 6 designation."
-  ],
-  "no_material_change": false,
+  "material_changes": [],
+  "no_material_change": true,
   "not_relogged_unchanged": [
     "Lamar Jackson OUT / Huntley starts (CONFIRMED_FACT, unchanged)",
     "Holani QUESTIONABLE; Kamara QUESTIONABLE; Miller not listed; Olave to play per Kellen Moore (non-Mongo); Andrews FP; Bateman LP/FP/FP; Hurts calf FP no designation; Black FP no designation",
@@ -458,6 +455,6 @@
     "history_restored_from_commit": "c6593e2",
     "history_lines_restored": 239
   },
-  "summary": "10 PM ET hourly Oct 9/10. Intelligence only. Two small ATTRIBUTED_REPORT updates vs the 9 PM (013000Z) Pulse: Ray Davis full practice Friday (hamstring) per Yahoo relaying Bills PR; Stephen Jones says Lamb will be ready for Green Bay. All other Mongo designations unchanged (Lamar OUT/Huntley, Holani Q, Kamara Q, Andrews/Bateman/Hurts/Black no designation). REPO INTEGRITY NOTE: at read, main (d897a10) had grok_pulse_history.jsonl replaced by a 17-byte placeholder and grok_pulse_latest.json by a 683-byte 013000Z stub (commits 4489891/03336c4/d897a10 by another writer). This single commit restores history to its 239 lines as of c6593e2 (8 PM, 002500Z) and appends this record; the 013000Z (9 PM) record exists only as the stub that was in latest and is not in the restored history. Roster still the 8:35 AM ET ESPN snapshot; no fresh ESPN pull. Chris Bell UNKNOWN. No ownership, FAAB, lineup, IR, transaction or trade write.",
-  "repo_head_at_read": "d897a10d14e208b6e2633ee7a22c56ba71086650"
+  "summary": "11 PM ET hourly Oct 9/10. Intelligence only. No material changes vs the 10 PM (021739Z) Pulse. Re-read NFL.com official Week 5 injury report (and CBS/Yahoo roundups): Mongo-owned designations unchanged (Hurts calf FP no designation expected to play; Andrews/Bateman no designation; Holani QUESTIONABLE; Kamara QUESTIONABLE non-Mongo; Ray Davis full practice hamstring no designation; Lamb quad bruise ATTRIBUTED_REPORT ready for Week 6 per Jones/Rapoport; Black no designation; Downs/Burden/Mitchell/Gadsden not listed). No fresh ESPN roster pull. Chris Bell UNKNOWN. No ownership, FAAB, lineup, IR, transaction or trade write.",
+  "repo_head_at_read": "af271e5dc2effcf725d25e748e20ea05f43261d3"
 }
