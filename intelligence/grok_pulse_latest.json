@@ -1,475 +1,352 @@
 {
- "league": "mongo",
- "espn_league_id": "1470431049",
- "espn_team_id": 2,
- "team": "Tom Brady of Ass / JDD",
- "pulse_id": "mongo-grok-pulse-2026-10-10T211921Z",
- "generated_at": "2026-10-10T21:14:21Z",
- "completed_at": "2026-10-10T21:19:21Z",
- "week": 5,
- "season": 2026,
- "run_type": "hourly",
- "as_of": "2026-10-10T21:19:21Z",
- "source_status": {
-  "official_nfl_team": "OK",
-  "beat_reporting": "OK",
-  "x_direct": "OK",
-  "experts": "LIMITED",
-  "analytics": "LIMITED"
- },
- "scope": {
-  "repository": "jamesddestefano-ui/fantasy-football-db",
-  "branch": "main",
-  "internal_league_id": "mongo",
-  "intelligence_only": true,
-  "sparta_touched": false,
-  "dfs_touched": false,
-  "props_touched": false
- },
- "roster_context": {
-  "source": "Mongo repository current state (ed7b846: ESPN FA ADD Isaac TeSlaa $0 / DROP Rashod Bateman, txn Oct 9 9:28 AM ET; FAAB $74) plus prior Pulse. Observed state only. No fresh ESPN pull and no newer Live Check file this run (newest local Live Check is 8:10 AM ET Oct 10). No roster write by Pulse.",
-  "faab_remaining": 74,
-  "record": "3-1-0",
-  "standing": "3rd of 12",
-  "week_4_result": "W 181.32-138.58",
-  "espn_injury_tags_on_roster": {
-   "CeeDee Lamb": "Q",
-   "George Holani": "Q",
-   "Dylan Sampson": "IR"
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-10-10T221500Z",
+  "generated_at": "2026-10-10T22:10:00Z",
+  "completed_at": "2026-10-10T22:15:00Z",
+  "week": 5,
+  "season": 2026,
+  "run_type": "hourly",
+  "as_of": "2026-10-10T22:15:00Z",
+  "source_status": {
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
+    "x_direct": "OK",
+    "experts": "LIMITED",
+    "analytics": "LIMITED"
   },
-  "starters_week_5": [
-   "Jalen Hurts",
-   "Bijan Robinson",
-   "Kendre Miller",
-   "CeeDee Lamb",
-   "Josh Downs",
-   "Mark Andrews",
-   "Luther Burden III (FLEX)",
-   "Keaton Mitchell (FLEX)",
-   "Raiders D/ST"
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Mongo repository current state (ed7b846: ESPN FA ADD Isaac TeSlaa $0 / DROP Rashod Bateman, txn Oct 9 9:28 AM ET; FAAB $74) plus prior Pulse. Observed state only. No fresh ESPN pull and no newer Live Check file this run (newest local Live Check is 8:10 AM ET Oct 10). No roster write by Pulse.",
+    "faab_remaining": 74,
+    "record": "3-1-0",
+    "standing": "3rd of 12",
+    "week_4_result": "W 181.32-138.58",
+    "espn_injury_tags_on_roster": {
+      "CeeDee Lamb": "Q",
+      "George Holani": "Q",
+      "Dylan Sampson": "IR"
+    },
+    "starters_week_5": [
+      "Jalen Hurts",
+      "Bijan Robinson",
+      "Kendre Miller",
+      "CeeDee Lamb",
+      "Josh Downs",
+      "Mark Andrews",
+      "Luther Burden III (FLEX)",
+      "Keaton Mitchell (FLEX)",
+      "Raiders D/ST"
+    ],
+    "week_5_lineup_note": "Observed from prior snapshot; TeSlaa on roster (bench, DET WR), Bateman dropped to waivers (availability UNKNOWN, not FREE_AGENT_CONFIRMED). No fresh ESPN pull this run.",
+    "bench": [
+      "Tetairoa McMillan",
+      "Ray Davis",
+      "Kaelon Black",
+      "Isaac TeSlaa",
+      "George Holani",
+      "Oronde Gadsden",
+      "Michael Penix Jr."
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ],
+    "dropped_not_rostered": [
+      "Rashod Bateman",
+      "Chris Bell",
+      "Packers D/ST"
+    ],
+    "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
+    "repo_head_at_read": "84b371f9c5dcec290e9afa37e605b6f985969a6b",
+    "dst_swap": {
+      "time_et": "2026-10-08T18:13:00-04:00",
+      "added": "Raiders D/ST (FA, $0)",
+      "dropped": "Packers D/ST (to waivers; availability UNKNOWN)",
+      "faab_after": 74,
+      "made_by": "JDD on ESPN directly, not the bot"
+    },
+    "teslaa_swap": {
+      "time_et": "2026-10-09T09:28:00-04:00",
+      "added": "Isaac TeSlaa (DET WR, FA, $0)",
+      "dropped": "Rashod Bateman (to waivers; availability UNKNOWN, not FREE_AGENT_CONFIRMED)",
+      "faab_after": 74,
+      "made_by": "JDD on ESPN directly, not the bot",
+      "repo_record": "ed7b8469899287adc845c3a3b08a30f48b132bf9"
+    },
+    "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN."
+  },
+  "player_signals": [
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Quad bruise not considered serious (Rapoport/NFL Network). Cowboys EVP Stephen Jones (Fri Oct 9): 'all ready to go for Green Bay'. Dallas plays W6 at GB Sun Oct 18; no Week 6 designation yet. No new Saturday update found this run.",
+      "mongo_impact": "Hold; start in Week 6 when cleared. No action.",
+      "urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "NFL Network Ian Rapoport",
+        "105.3 The Fan via Heavy.com/Yardbarker/Yahoo",
+        "Dallas Morning News"
+      ]
+    },
+    {
+      "player": "George Holani",
+      "team": "SEA",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Questionable (ribs/knee) for Week 5 vs SF. No Saturday change found this run.",
+      "mongo_impact": "Bench only; do not start. Watch Sunday inactives.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "RotoWire",
+        "NBC Sports",
+        "Seahawks.com",
+        "Seattle Times"
+      ]
+    },
+    {
+      "player": "Isaac TeSlaa",
+      "team": "DET",
+      "signal_type": "usage + game_context",
+      "status": "CONFIRMED_FACT",
+      "summary": "Rostered (ESPN add Oct 9, $0), bench. Not on the Lions' Oct 9 injury report (no designation). DET at ARI Sun Oct 11 4:25 PM ET. MHJ expected inactive (trade finalizing). No new update this run.",
+      "mongo_impact": "Bench depth. Context only for game script. No start recommendation.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "Detroit Lions Oct 9 injury report",
+        "Adam Schefter / Ian Rapoport (X)",
+        "Repo ed7b846"
+      ]
+    },
+    {
+      "player": "Ray Davis",
+      "team": "BUF",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Hamstring: full participant Thursday and Friday. Bills' Saturday article: no designation for Davis. OUT = Oliver, Palmer; Q = DJ Moore, Alford, L. Jackson. Bills at Rams Mon Oct 12 8:15 PM ET. Re-confirmed; no new Saturday change.",
+      "mongo_impact": "Bench RB. Hold; no designation. Recheck Monday inactives.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "buffalobills.com Saturday injury report article (Oct 10)",
+        "SI Bills Friday report"
+      ]
+    },
+    {
+      "player": "Alvin Kamara / Kendre Miller",
+      "team": "NO",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Kamara (back) officially QUESTIONABLE vs MIN. Miller (Mongo RB2) not listed with designation. No Saturday change found.",
+      "mongo_impact": "Hold Miller as RB2; share risk if Kamara plays.",
+      "urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "availability": "Miller OWNED",
+      "sources": [
+        "neworleanssaints.com Friday report",
+        "CBS Sports final reports"
+      ]
+    },
+    {
+      "player": "Mark Andrews / Lamar Jackson",
+      "team": "BAL",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Lamar Jackson OUT W5 vs ATL (SNF); Tyler Huntley starts. Andrews (hand) FP no designation. No new update this run.",
+      "mongo_impact": "Andrews remains TE1; floor risk with Huntley.",
+      "urgency": "HIGH",
+      "confidence": "HIGH",
+      "availability": "Andrews OWNED",
+      "sources": [
+        "baltimoreravens.com",
+        "Yahoo Sports"
+      ]
+    },
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Calf: full participant Friday, no game designation. Expected to play. PHI vs JAX in London Sun Oct 11 9:30 AM ET. No new update.",
+      "mongo_impact": "Start.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "Eagles.com",
+        "CBS Sports",
+        "NBC Sports/PFT"
+      ]
+    },
+    {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "On IR; Browns said eligible to return Week 6 (prior Pulse). No new update this run.",
+      "mongo_impact": "IR slot; no action.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED (IR)",
+      "sources": [
+        "prior Pulse"
+      ]
+    },
+    {
+      "player": "Marvin Harrison Jr.",
+      "team": "ARI",
+      "signal_type": "transaction + inactive",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Cardinals finalizing trade of MHJ (Schefter/Rapoport); inactive Sunday vs DET. No completed trade or confirmed destination found this run. Not Mongo-owned.",
+      "mongo_impact": "Context only for TeSlaa game. No action.",
+      "urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "availability": "UNKNOWN (not Mongo)",
+      "sources": [
+        "Adam Schefter X/ESPN",
+        "Ian Rapoport X"
+      ]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "signal_type": "teammate injury / WR depth",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Not listed on Colts report. Slayton OUT, Westbrook-Ikhine elevated, Allen Q. Modest positive opportunity. No new change this run.",
+      "mongo_impact": "Downs (WR starter) modest positive opportunity. No lineup change recommended.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "steelers.com Week 5 injury report (Colts section)",
+        "Colts official X via Steelers Depot"
+      ]
+    },
+    {
+      "player": "Oronde Gadsden / Keaton Mitchell",
+      "team": "LAC",
+      "signal_type": "injury context",
+      "status": "CONFIRMED_FACT",
+      "summary": "Neither listed with designation. McConkey Q (DNP all week). Thin WR group. No change to designation this run.",
+      "mongo_impact": "Gadsden modest opportunity if McConkey sits; Mitchell listed backup. No lineup change.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "chargers.com injury report",
+        "Adam Schefter X"
+      ]
+    },
+    {
+      "player": "Bijan Robinson / Luther Burden III / Kaelon Black",
+      "team": "ATL / CHI / SF",
+      "signal_type": "availability",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Bijan not listed in injury table. Burden not on final report. Black: illness, limited Wed full Thu, no designation (CONFIRMED prior). No Saturday change found.",
+      "mongo_impact": "No change; Bijan and Burden stay starters, Black bench.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "atlantafalcons.com",
+        "49ers.com",
+        "prior Pulse"
+      ]
+    }
   ],
-  "week_5_lineup_note": "Observed from prior snapshot; TeSlaa on roster (bench, DET WR), Bateman dropped to waivers (availability UNKNOWN, not FREE_AGENT_CONFIRMED). No fresh ESPN pull this run.",
-  "bench": [
-   "Tetairoa McMillan",
-   "Ray Davis",
-   "Kaelon Black",
-   "Isaac TeSlaa",
-   "George Holani",
-   "Oronde Gadsden",
-   "Michael Penix Jr."
+  "waiver_signals": [
+    {
+      "player": "Rashod Bateman",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Dropped to waivers Oct 9. Not FREE_AGENT_CONFIRMED.",
+      "mongo_impact": "Do not reclaim without ESPN ownership check.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": [
+        "Repo ed7b846"
+      ]
+    },
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": [
+        "AGENTS.md"
+      ]
+    }
   ],
-  "ir": [
-   "Dylan Sampson"
+  "lineup_signals": [
+    {
+      "player": "Kendre Miller",
+      "slot": "RB2",
+      "status": "CONFIRMED_FACT",
+      "summary": "No designation. Kamara (back) official Q; Miller leads if Kamara sits.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Mark Andrews",
+      "slot": "TE",
+      "status": "CONFIRMED_FACT",
+      "summary": "No designation, FP all week. Lamar OUT, Huntley starts. Floor riskier but TE1 hold.",
+      "urgency": "HIGH"
+    },
+    {
+      "player": "Josh Downs",
+      "slot": "WR",
+      "status": "CONFIRMED_FACT",
+      "summary": "Not on Colts report. Slayton OUT; modest positive opportunity.",
+      "urgency": "LOW"
+    },
+    {
+      "player": "Isaac TeSlaa",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "No designation. Opponent MHJ expected inactive (trade finalizing). Bench depth.",
+      "urgency": "LOW"
+    }
   ],
-  "dropped_not_rostered": [
-   "Rashod Bateman",
-   "Chris Bell",
-   "Packers D/ST"
+  "expert_signals": [
+    {
+      "player": "Alvin Kamara",
+      "status": "EXPERT_OPINION",
+      "summary": "Questionable but likely to play per prior expert notes. No new this run.",
+      "mongo_impact": "Context for Kendre Miller's share.",
+      "sources": [
+        "SI",
+        "RotoWire",
+        "NBC Sports"
+      ]
+    }
   ],
-  "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
-  "repo_head_at_read": "f0baadb0b33ceec1da3274ed0bedb1649f3fe45e",
-  "dst_swap": {
-   "time_et": "2026-10-08T18:13:00-04:00",
-   "added": "Raiders D/ST (FA, $0)",
-   "dropped": "Packers D/ST (to waivers; availability UNKNOWN)",
-   "faab_after": 74,
-   "made_by": "JDD on ESPN directly, not the bot"
-  },
-  "teslaa_swap": {
-   "time_et": "2026-10-09T09:28:00-04:00",
-   "added": "Isaac TeSlaa (DET WR, FA, $0)",
-   "dropped": "Rashod Bateman (to waivers; availability UNKNOWN, not FREE_AGENT_CONFIRMED)",
-   "faab_after": 74,
-   "made_by": "JDD on ESPN directly, not the bot",
-   "repo_record": "ed7b8469899287adc845c3a3b08a30f48b132bf9"
-  },
-  "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN."
- },
- "player_signals": [
-  {
-   "player": "CeeDee Lamb",
-   "team": "DAL",
-   "signal_type": "injury",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Quad bruise not considered serious (Rapoport/NFL Network). Cowboys EVP Stephen Jones (Fri Oct 9): 'all ready to go for Green Bay'. Dallas plays W6 at GB Sun Oct 18; no Week 6 designation yet. No new Saturday update found.",
-   "mongo_impact": "Hold; start in Week 6 when cleared. No action.",
-   "urgency": "MEDIUM",
-   "confidence": "HIGH",
-   "availability": "OWNED",
-   "sources": [
-    "NFL Network Ian Rapoport",
-    "105.3 The Fan via Heavy.com/Yardbarker/Yahoo",
-    "Dallas Morning News"
-   ]
-  },
-  {
-   "player": "George Holani",
-   "team": "SEA",
-   "signal_type": "injury",
-   "status": "CONFIRMED_FACT",
-   "summary": "Questionable (ribs/knee) for Week 5 vs SF per Seahawks final report (CBS final injury reports, Seattle Times/Condotta Friday). Charbonnet out. If Holani can't go, Robert Henry II (signed this week) might be active per Macdonald. No Saturday change found; table not re-opened directly.",
-   "mongo_impact": "Bench only; do not start. Watch Sunday inactives.",
-   "urgency": "LOW",
-   "confidence": "HIGH",
-   "availability": "OWNED",
-   "sources": [
-    "RotoWire",
-    "NBC Sports",
-    "Seahawks.com",
-    "Seattle Times"
-   ]
-  },
-  {
-   "player": "Isaac TeSlaa",
-   "team": "DET",
-   "signal_type": "usage + game_context",
-   "status": "CONFIRMED_FACT",
-   "summary": "Rostered (ESPN add Oct 9, $0), bench. Not on the Lions' Oct 9 injury report (no designation; legionreport/search). DET at ARI Sun Oct 11 4:25 PM ET. Marvin Harrison Jr. inactive Sunday vs DET while the Cardinals finalize a trade (Schefter/Rapoport; MLive). Destination unconfirmed. Lions final report: Branch, Bartch, Mays, Ya-Sin OUT.",
-   "mongo_impact": "Bench depth. Context only for game script. No start recommendation.",
-   "urgency": "LOW",
-   "confidence": "MEDIUM",
-   "availability": "OWNED",
-   "sources": [
-    "Detroit Lions Oct 9 injury report",
-    "MLive",
-    "Adam Schefter / Ian Rapoport (X)",
-    "Repo ed7b846"
-   ]
-  },
-  {
-   "player": "Ray Davis",
-   "team": "BUF",
-   "signal_type": "injury",
-   "status": "CONFIRMED_FACT",
-   "summary": "Hamstring: full participant Thursday and Friday (Bills Friday report via SI/FanDuel/FantasyPros). Bills' own Saturday article (buffalobills.com, Oct 10 2:25 PM ET, Brady): OUT = Oliver (knee), Palmer (shoulder); QUESTIONABLE = DJ Moore (shoulder), Dee Alford (ankle), Landon Jackson (knee). Davis is not listed with any game designation. WR Skyler Bell will be active (first NFL game). Bills at Rams Mon Oct 12 8:15 PM ET. Re-confirmed this run (RB Roulette Week 5 board: no designation, full practice, hamstring).",
-   "mongo_impact": "Bench RB. Hold; no designation. Recheck Monday inactives.",
-   "urgency": "LOW",
-   "confidence": "HIGH",
-   "availability": "OWNED",
-   "sources": [
-    "buffalobills.com Saturday injury report article (Oct 10)",
-    "SI Bills Friday report",
-    "FanDuel Research / FantasyPros"
-   ]
-  },
-  {
-   "player": "Alvin Kamara / Kendre Miller",
-   "team": "NO",
-   "signal_type": "injury",
-   "status": "CONFIRMED_FACT",
-   "summary": "Kamara (back) officially QUESTIONABLE vs MIN: Saints Friday table DNP/LP/LP; CBS final report lists him Q; AOL says LP Thu/Fri. Miller (Mongo RB2) not listed in the Saints table. Context: Kamara not Mongo-owned; Etienne on IR.",
-   "mongo_impact": "Hold Miller as RB2; share risk if Kamara plays.",
-   "urgency": "MEDIUM",
-   "confidence": "HIGH",
-   "availability": "Miller OWNED",
-   "sources": [
-    "neworleanssaints.com Friday report",
-    "CBS Sports final reports",
-    "AOL/Saints Wire"
-   ]
-  },
-  {
-   "player": "Mark Andrews / Lamar Jackson",
-   "team": "BAL",
-   "signal_type": "injury",
-   "status": "CONFIRMED_FACT",
-   "summary": "Lamar Jackson OUT W5 vs ATL (SNF) per Ravens (Minter, baltimoreravens.com) and ATL table; Tyler Huntley starts. Andrews (hand) FP Wed/Thu/Fri with no designation per the final report table. Zay Flowers (foot) questionable (LP all week). Bateman (BAL WR, dropped by Mongo Oct 9) FP shoulder, no designation (context only; availability UNKNOWN).",
-   "mongo_impact": "Andrews remains TE1; floor risk with Huntley.",
-   "urgency": "HIGH",
-   "confidence": "HIGH",
-   "availability": "Andrews OWNED",
-   "sources": [
-    "baltimoreravens.com",
-    "atlantafalcons.com injury table (Ravens section)",
-    "Yahoo Sports"
-   ]
-  },
-  {
-   "player": "Jalen Hurts",
-   "team": "PHI",
-   "signal_type": "injury",
-   "status": "CONFIRMED_FACT",
-   "summary": "Calf: full participant Friday, no game designation (Eagles final report; CBS Sports final reports; NBC/PFT 'expected to play'). Barkley, D. Smith, M. Brown OUT (context). Eagles elevated TE Zach Ertz and T John Ojukwu for Sunday (@Eagles via Rapoport X RT 20:01Z). PHI vs JAX in London Sun Oct 11 9:30 AM ET.",
-   "mongo_impact": "Start.",
-   "urgency": "LOW",
-   "confidence": "HIGH",
-   "availability": "OWNED",
-   "sources": [
-    "Eagles.com",
-    "CBS Sports",
-    "NBC Sports/PFT",
-    "@Eagles via Rapoport"
-   ]
-  },
-  {
-   "player": "Dylan Sampson",
-   "team": "CLE",
-   "signal_type": "injury",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "On IR; Browns said eligible to return Week 6 (prior Pulse). No new update this run.",
-   "mongo_impact": "IR slot; no action.",
-   "urgency": "LOW",
-   "confidence": "MEDIUM",
-   "availability": "OWNED (IR)",
-   "sources": [
-    "prior Pulse"
-   ]
-  },
-  {
-   "player": "Marvin Harrison Jr.",
-   "team": "ARI",
-   "signal_type": "transaction + inactive",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Cardinals finalizing trade of MHJ (Schefter/Rapoport); inactive Sunday vs DET (Yahoo 11:24 AM ET; azcardinals.com: expected healthy inactive). No completed trade or confirmed destination found this run. Schefter, Pelissero, Rapoport and Fowler posted no new MHJ item since 20:10Z (Pelissero 21:00Z RT of a Ringer notebook mentioning MHJ trade market only). Not Mongo-owned.",
-   "mongo_impact": "Context only for TeSlaa game. No action.",
-   "urgency": "MEDIUM",
-   "confidence": "HIGH",
-   "availability": "UNKNOWN (not Mongo)",
-   "sources": [
-    "Adam Schefter X/ESPN",
-    "Ian Rapoport X",
-    "ESPN.com"
-   ]
-  },
-  {
-   "player": "Josh Downs",
-   "team": "IND",
-   "signal_type": "teammate injury / WR depth",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Downs and Michael Penix Jr. are not listed on the Colts' Week 5 participation/injury report as printed on steelers.com and Yahoo (official team report). Saturday: Colts (@Colts X, via Steelers Depot) ruled WR Darius Slayton (knee) OUT, elevated WR Nick Westbrook-Ikhine from the practice squad and placed DE Arden Key on IR. Keenan Allen (NIR rest/groin) QUESTIONABLE (FP Friday). Also OUT: Dulin (WR), Mallory (TE), Carlies (LB). IND at PIT Sun Oct 11 1:00 PM ET; Pittman (PIT WR) now on IR (context). No change vs prior Pulse; no newer Colts item found this run.",
-   "mongo_impact": "Downs (WR starter) loses a WR competitor; modest positive opportunity. No lineup change recommended.",
-   "urgency": "LOW",
-   "confidence": "HIGH",
-   "availability": "OWNED",
-   "sources": [
-    "steelers.com Week 5 injury report (Colts section)",
-    "Colts official X via Steelers Depot",
-    "Yahoo Sports"
-   ]
-  },
-  {
-   "player": "Oronde Gadsden / Keaton Mitchell",
-   "team": "LAC",
-   "signal_type": "injury context",
-   "status": "CONFIRMED_FACT",
-   "summary": "chargers.com Friday table (Oct 9): neither Gadsden nor Mitchell is listed. McConkey (foot) QUESTIONABLE after DNP all three days; Johnston OUT, Alt/James/Jackson/Penning OUT. Saturday (Schefter 20:12Z): Chargers placed QB Trey Lance and OL Penning on IR and activated Matlock and Branson Taylor from IR. Lance had been doubtful; Herbert unaffected. LAC hosts DEN Sun 4:05 PM ET. Saturday addendum (PFT 4:24 PM ET, Draft Sharks): Chargers signed WR Theo Wease from the practice squad, elevated OL Brunskill and CB Waxter; Lance out at least four games. Johnston and B. Thompson OUT, McConkey Q (DNP all week), so thin WR group (Harris, Valdes-Scantling, D. Davis active). No change to Gadsden/Mitchell designation.",
-   "mongo_impact": "Gadsden (bench TE/WR depth) gets modest opportunity if McConkey sits; Mitchell (FLEX) is a listed backup RB. No change to lineup.",
-   "urgency": "LOW",
-   "confidence": "HIGH",
-   "availability": "OWNED",
-   "sources": [
-    "chargers.com injury report (Oct 9)",
-    "Adam Schefter X (20:12Z)",
-    "Chargerswire"
-   ]
-  },
-  {
-   "player": "Bijan Robinson / Luther Burden III / Kaelon Black",
-   "team": "ATL / CHI / SF",
-   "signal_type": "availability",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Bijan: not in the Falcons' injury table rows returned (ATL official table); ATL hosts BAL SNF. Burden: not on the Bears' final report per Packers/Bears report summaries; CHI at GB Sun 1:00 PM ET (Caleb Williams Q, Bagent expected to start; Monangai out). Black: CONFIRMED by 49ers.com Week 5 status report (illness, limited Wed, full Thu, no designation; listed among players entering the weekend with no game status) plus NBC Sports/FantasyPros/Fantasy Guru (Oct 9): full Thu/Fri, no designation, off the final report. No newer Saturday change found.",
-   "mongo_impact": "No change; Bijan and Burden stay starters, Black bench.",
-   "urgency": "LOW",
-   "confidence": "MEDIUM",
-   "availability": "OWNED",
-   "sources": [
-    "atlantafalcons.com injury table",
-    "packers.com/Bears final reports (search summaries)",
-    "prior Pulse (Black)",
-    "49ers.com Week 5 status report",
-    "NBC Sports",
-    "FantasyPros"
-   ]
-  }
- ],
- "waiver_signals": [
-  {
-   "player": "Rashod Bateman",
-   "availability": "UNKNOWN",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Dropped to waivers Oct 9. Not FREE_AGENT_CONFIRMED. Prior signals on Flowers/Lamar context.",
-   "mongo_impact": "Do not reclaim without ESPN ownership check.",
-   "recommendation": "NONE",
-   "urgency": "NONE",
-   "confidence": "HIGH",
-   "sources": [
-    "Repo ed7b846"
-   ]
-  },
-  {
-   "player": "generic_watch_only",
-   "availability": "UNKNOWN",
-   "status": "SPECULATION",
-   "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names.",
-   "mongo_impact": "Do not spend FAAB from this Pulse.",
-   "recommendation": "NONE",
-   "urgency": "NONE",
-   "confidence": "HIGH",
-   "sources": [
-    "AGENTS.md"
-   ]
-  }
- ],
- "lineup_signals": [
-  {
-   "player": "Kendre Miller",
-   "slot": "RB2",
-   "status": "CONFIRMED_FACT",
-   "summary": "No designation (not on Saints table). Kamara (back) official Q; Miller leads if Kamara sits.",
-   "urgency": "MEDIUM"
-  },
-  {
-   "player": "Mark Andrews",
-   "slot": "TE",
-   "status": "CONFIRMED_FACT",
-   "summary": "No designation, FP all week. Lamar OUT, Huntley starts; Flowers Q. Floor riskier but TE1 hold.",
-   "urgency": "HIGH"
-  },
-  {
-   "player": "Josh Downs",
-   "slot": "WR",
-   "status": "CONFIRMED_FACT",
-   "summary": "Not on Colts report. Slayton OUT, Westbrook-Ikhine elevated, Allen Q; modest positive opportunity.",
-   "urgency": "LOW"
-  },
-  {
-   "player": "Isaac TeSlaa",
-   "slot": "bench",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "No designation. Opponent MHJ expected inactive (trade finalizing). Bench depth.",
-   "urgency": "LOW"
-  }
- ],
- "expert_signals": [
-  {
-   "player": "Alvin Kamara",
-   "status": "EXPERT_OPINION",
-   "summary": "Search/SI/RotoWire/NBC (prior Pulse): questionable but likely to play. X start/sit accounts also flag 'make sure he's active before the 1pm lock' (@parlaeio, unverified).",
-   "mongo_impact": "Context for Kendre Miller's share.",
-   "sources": [
-    "SI",
-    "RotoWire",
-    "NBC Sports"
-   ]
-  },
-  {
-   "player": "Emanuel Wilson / George Holani",
-   "status": "EXPERT_OPINION",
-   "summary": "X analysts (Aly Jiwani, Box Score Scout, @fantasysportDP) frame Wilson as SEA lead back with Holani questionable and Charbonnet out.",
-   "mongo_impact": "Supports keeping Holani on the bench.",
-   "sources": [
-    "X: @alyshahjiwani",
-    "X: @boxscorescout",
-    "X: @fantasysportDP"
-   ]
-  }
- ],
- "material_changes": [],
- "no_material_change": true,
- "summary": "5 PM ET hourly Oct 10 (Saturday). Intelligence only. No material change for Mongo-owned/watched players vs prior 4:17 PM ET (201741Z) Pulse; no other writer committed between. New confirmations: Kaelon Black upgraded from carried/unchecked to CONFIRMED_FACT via 49ers.com status report (illness, limited Wed, full Thu, no designation) plus NBC/FantasyPros; Ray Davis (BUF, MNF) hamstring FP, no designation re-confirmed; Holani Q (CBS/NBC), Kamara Q (nola.com: limited last two days, back), Kendre Miller no designation; Andrews FP no designation, Lamar OUT/Huntley starts; Hurts no designation, Barkley/D. Smith/M. Brown OUT (context); Downs/Penix not on Colts report; McConkey Q (DNP all week) with Chargers WR group thin (Wease signed). Context only (mongo_impact NONE): MHJ inactive/trade unfinished; Pittman IR; Seahawks signed CB Diggs and put CB Neal on IR; 49ers released Judon; Cardinals put G Isaiah Adams on IR; Chargers IR moves; OBJ elevated; Hemby/Ertz elevations. Real X reads done (Schefter and Pelissero timelines since 20:10Z with posts returned; Rapoport and Fowler timelines returned no posts in window; one player keyword search returned only fan/betting chatter, no news). Not checked: Sunday inactives (not out), official NFL injury PDF, Saturday team tables for Holani/Kamara/Bijan/Burden/Gadsden/Mitchell, Lamb Week 6 update, Fantasy Life/McFarland/analytics sites. No fresh ESPN pull; no ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
- "prior_pulse_id": "mongo-grok-pulse-2026-10-10T201741Z",
- "prior_completed_at": "2026-10-10T20:17:41Z",
- "prior_commit": "f0baadb0b33ceec1da3274ed0bedb1649f3fe45e",
- "context_only_signals": [
-  {
-   "player": "Michael Pittman Jr.",
-   "team": "PIT",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Steelers placing WR Pittman (foot) on short-term IR (Fowler/ESPN X 2:56 PM ET). Schefter X 3:50 PM ET (19:50Z): Steelers 'officially placed' him on injured reserve, minimum four games. Already OUT Sunday vs IND. CBS/RotoWire and Steelers Now corroborate. Not in the Mongo roster/watch list per the 8:10 AM ET ESPN files, the repo roster and imports; no Pittman record in the repo.",
-   "mongo_impact": "NONE",
-   "sources": [
-    "Jeremy Fowler X",
-    "Adam Schefter X",
-    "CBS/RotoWire",
-    "Steelers Now",
-    "NFL Pulse Bot pulse 20261010-151701"
-   ]
-  },
-  {
-   "player": "Odell Beckham Jr.",
-   "team": "MIN",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Vikings elevated OBJ from the practice squad for Week 5 at NO (Rapoport/Pelissero X, PFT). Jefferson (ankle) and Addison (hamstring) questionable. Whether OBJ plays is TBD. Not Mongo-owned.",
-   "mongo_impact": "NONE",
-   "sources": [
-    "Ian Rapoport X",
-    "Tom Pelissero X",
-    "PFT",
-    "NFL Pulse Bot pulse 20261010-151702"
-   ]
-  },
-  {
-   "player": "Marvin Harrison Jr.",
-   "team": "ARI",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Cardinals finalizing trade; inactive Sunday vs DET per Schefter/Rapoport. No completed trade or confirmed destination found this run.",
-   "mongo_impact": "NONE"
-  },
-  {
-   "player": "Chris Brooks",
-   "team": "GB",
-   "status": "CONFIRMED_FACT",
-   "summary": "Packers placed RB Chris Brooks on injured reserve (@packers via Pelissero RT 20:00Z; Schefter X). Brooks was FREE_AGENT_CONFIRMED only as of the 8:10 AM ET ESPN FA scan (not re-verified); this run is an NFL-side fact only.",
-   "mongo_impact": "NONE (no ownership or lineup effect; watch-list context only)"
-  },
-  {
-   "player": "Trey Lance / Trevor Penning",
-   "team": "LAC",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Chargers placed QB Trey Lance and OL Trevor Penning on IR; activated Matlock and Branson Taylor from IR (Schefter X 20:12Z). Context for Mitchell/Gadsden game; Herbert unaffected.",
-   "mongo_impact": "NONE"
-  },
-  {
-   "player": "Ashton Jeanty / Roman Hemby",
-   "team": "LV",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Raiders elevated RB Roman Hemby with Jeanty (foot/ankle) questionable (Rapoport X 20:07Z). Raiders D/ST is a Mongo starter; this is offense-side context only.",
-   "mongo_impact": "NONE"
-  },
-  {
-   "player": "DJ Moore / Joshua Palmer / Skyler Bell",
-   "team": "BUF",
-   "status": "CONFIRMED_FACT",
-   "summary": "Bills' Saturday article: Palmer (shoulder) and Oliver OUT; Moore (shoulder), Alford, L. Jackson questionable; rookie WR Skyler Bell active for MNF at LAR. Not Mongo-owned.",
-   "mongo_impact": "NONE"
-  },
-  {
-   "player": "Alvin Kamara",
-   "team": "NO",
-   "status": "CONFIRMED_FACT",
-   "summary": "Questionable (back); not Mongo-owned (see lineup signal for Kendre Miller).",
-   "mongo_impact": "NONE"
-  },
-  {
-   "player": "Trevon Diggs / Julian Neal",
-   "team": "SEA",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "Seahawks signed CB Trevon Diggs off their practice squad and placed rookie CB Julian Neal (hamstring) on IR ahead of Sunday vs SF (Schefter X 20:18Z). Defense-side context for Holani/Black game environment only.",
-   "mongo_impact": "NONE",
-   "sources": [
-    "Adam Schefter X"
-   ]
-  },
-  {
-   "player": "Matt Judon",
-   "team": "SF",
-   "status": "ATTRIBUTED_REPORT",
-   "summary": "49ers released veteran edge Matt Judon from the practice squad (Pelissero X 21:04Z). Not Mongo-owned.",
-   "mongo_impact": "NONE",
-   "sources": [
-    "Tom Pelissero X"
-   ]
-  },
-  {
-   "player": "Isaiah Adams / Jon Gaines II",
-   "team": "ARI",
-   "status": "CONFIRMED_FACT",
-   "summary": "Cardinals placed starting RG Isaiah Adams (ankle) on IR, promoted CB Art Green (azcardinals.com, Oct 10 1:00 PM ET). Context for DET at ARI (TeSlaa bench).",
-   "mongo_impact": "NONE",
-   "sources": [
-    "azcardinals.com"
-   ]
-  }
- ]
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "6 PM ET hourly Oct 10 (Saturday). Intelligence only. No material change for Mongo-owned/watched players vs prior 5:19 PM ET (211921Z) Pulse. Re-scanned NFL.com roundups, team reports, web, and limited X (Pelissero et al.): designations stable (Holani Q, Kamara Q/Miller no des, Andrews FP/Lamar OUT, Hurts no des, Davis no des, Lamb attributed not serious for W6, TeSlaa no des with MHJ inactive context, Downs modest opportunity from Slayton OUT, Black no des, etc.). MHJ trade still finalizing, no destination. No fresh ESPN pull; Sunday inactives not out. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T211921Z",
+  "prior_completed_at": "2026-10-10T21:19:21Z",
+  "prior_commit": "84b371f9c5dcec290e9afa37e605b6f985969a6b"
 }
