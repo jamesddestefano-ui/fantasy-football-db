@@ -669,4 +669,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-10-08",
         "faab_amount": 0,
     },
+    {
+        "description": "2026-10-09 ET ADD_DROP Isaac TeSlaa $0 + DROP Rashod Bateman (ESPN FA 9:28 am)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "add/drop",
+        "added_player": "Isaac TeSlaa",
+        "dropped_player": "Rashod Bateman",
+        "calendar_day_ET": "2026-10-09",
+        "faab_amount": 0,
+    },
 ]

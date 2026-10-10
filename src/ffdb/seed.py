@@ -27,6 +27,7 @@ PACKERS_EAGLES_DST_AT = datetime(2026, 9, 30, 15, 58, 23, tzinfo=timezone.utc)  
 MITCHELL_ACHANE_AT = datetime(2026, 9, 30, 15, 59, 9, tzinfo=timezone.utc)  # Tue Sep 30, 11:59:09 am ET
 PENIX_BELL_WAIVER_AT = datetime(2026, 10, 7, 7, 34, 0, tzinfo=timezone.utc)  # Wed Oct 7, 3:34 am ET
 RAIDERS_PACKERS_DST_AT = datetime(2026, 10, 8, 22, 13, 0, tzinfo=timezone.utc)  # Wed Oct 8, 6:13 pm ET
+TESLAA_BATEMAN_AT = datetime(2026, 10, 9, 13, 28, 0, tzinfo=timezone.utc)  # Thu Oct 9, 9:28 am ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -899,6 +900,59 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
         observed_at=RAIDERS_PACKERS_DST_AT, source_id=raiders_source.id,
+    ))
+
+    # --- 2026-10-09 ESPN: FREE_AGENT ADD Isaac TeSlaa $0 / DROP Rashod Bateman ---
+    bateman_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Rashod Bateman")))
+    teslaa = _player(session, "Isaac TeSlaa", "WR", "DET")
+    teslaa_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Isaac TeSlaa for $0; dropped Rashod Bateman (Thu Oct 9, 9:28 am ET)",
+        original_ref="data/imports/2026-10-09-isaac-teslaa-add-bateman-drop.json",
+        platform="ESPN",
+        observed_at=TESLAA_BATEMAN_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-10; FAAB remained $74; no espn_id observed for Isaac TeSlaa.",
+    )
+    session.add(teslaa_source)
+    session.flush()
+    teslaa_group = TransactionGroup(
+        id="isaac-teslaa-add-bateman-drop-20261009-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=TESLAA_BATEMAN_AT, source_id=teslaa_source.id,
+        notes="ESPN-authoritative ADD_DROP: Isaac TeSlaa $0 free add; Rashod Bateman dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(teslaa_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=teslaa_group.id, sequence=1, event_type="DROP", player_id=bateman_drop.id,
+            notes="Dropped when adding Isaac TeSlaa.",
+        ),
+        TransactionEvent(
+            group_id=teslaa_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=teslaa.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=bateman_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=TESLAA_BATEMAN_AT, source_id=teslaa_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=teslaa_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=teslaa.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=TESLAA_BATEMAN_AT, source_id=teslaa_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=teslaa_group.id,
+            notes="ESPN free add $0 dropping Rashod Bateman.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=teslaa.id,
+            slot="BN", placement="BENCH", effective_at=TESLAA_BATEMAN_AT, source_id=teslaa_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=TESLAA_BATEMAN_AT, source_id=teslaa_source.id,
     ))
 
     for name, pos in NOT_MINE_UNKNOWN:
