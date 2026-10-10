@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-10T112000Z",
-  "generated_at": "2026-10-10T11:15:00Z",
-  "completed_at": "2026-10-10T11:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-10T122500Z",
+  "generated_at": "2026-10-10T12:20:00Z",
+  "completed_at": "2026-10-10T12:25:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-10T11:20:00Z",
+  "as_of": "2026-10-10T12:25:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo Live Check 8:35 AM ET Oct 9 (authenticated READ-ONLY ESPN snapshot espn_live_20261009_0832.json) plus repo ingest fc0de10. Observed state only; JDD made the D/ST swap on ESPN, not the bot. No roster write by Pulse.",
+    "source": "Mongo repository current state (ed7b846 ESPN FA ADD Isaac TeSlaa $0 / DROP Rashod Bateman observed Oct 9 9:28 AM ET; FAAB $74) plus prior Live Check. Observed state only. No roster write by Pulse.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -48,12 +48,12 @@
       "Keaton Mitchell (FLEX)",
       "Raiders D/ST"
     ],
-    "week_5_lineup_note": "Per 8:35 AM ET Oct 9 ESPN read: McMillan (CAR bye) BENCH, Keaton Mitchell FLEX unchanged; D/ST slot Raiders D/ST. No fresh ESPN pull this run. Observed state only.",
+    "week_5_lineup_note": "Observed from prior snapshot; TeSlaa added to roster (WR DET), Bateman dropped to waivers (availability UNKNOWN). No fresh ESPN pull this run.",
     "bench": [
       "Tetairoa McMillan",
       "Ray Davis",
       "Kaelon Black",
-      "Rashod Bateman",
+      "Isaac TeSlaa",
       "George Holani",
       "Oronde Gadsden",
       "Michael Penix Jr."
@@ -62,31 +62,113 @@
       "Dylan Sampson"
     ],
     "dropped_not_rostered": [
+      "Rashod Bateman",
       "Chris Bell",
       "Packers D/ST"
     ],
-    "live_check_ref": "mongo_live_check_20261009_0832_ET_espn",
-    "repo_head_at_read": "a25733d4d5dd1cd6941902d34a8c2a396d0d1e98",
-    "newer_espn_snapshot": "espn_live_20261009_0832.json (captured 8:35 AM ET Oct 9) is still the newest snapshot. No fresh ESPN pull this run.",
+    "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
+    "repo_head_at_read": "ed7b8469899287adc845c3a3b08a30f48b132bf9",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
       "dropped": "Packers D/ST (to waivers; availability UNKNOWN)",
       "faab_after": 74,
-      "espn_ids": "not observed; null in repo (MISSING_PLAYER_ESPN_IDS open); not invented",
-      "made_by": "JDD on ESPN directly, not the bot",
-      "repo_record": "fc0de10982bab9eaab8d1ccd553a2c997649e6f8"
+      "made_by": "JDD on ESPN directly, not the bot"
     },
-    "matchup_week_5": "vs $Cmoney$; 2.9-0.0 after TNF; starters proj 121.3 (per 8:35 AM ET snapshot)"
+    "teslaa_swap": {
+      "time_et": "2026-10-09T09:28:00-04:00",
+      "added": "Isaac TeSlaa (DET WR, FA, $0)",
+      "dropped": "Rashod Bateman (to waivers; availability UNKNOWN, not FREE_AGENT_CONFIRMED)",
+      "faab_after": 74,
+      "made_by": "JDD on ESPN directly, not the bot",
+      "repo_record": "ed7b8469899287adc845c3a3b08a30f48b132bf9"
+    }
   },
-  "player_signals": [],
-  "waiver_signals": [],
-  "lineup_signals": [],
+  "player_signals": [
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "signal_type": "injury",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Quad bruise not considered serious (Rapoport/NFL Network); extra rest into Week 6 vs GB. No Week 6 designation yet. Schottenheimer/Jones expect ready.",
+      "mongo_impact": "Hold; start in Week 6 when cleared. No action.",
+      "urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["NFL Network Ian Rapoport", "Dallas Morning News", "Heavy.com"]
+    },
+    {
+      "player": "George Holani",
+      "team": "SEA",
+      "signal_type": "injury",
+      "status": "CONFIRMED_FACT",
+      "summary": "Questionable (ribs/knee) for Week 5 vs SF per official reports and beat (Seattle Times/Boyle). Limited all week.",
+      "mongo_impact": "Bench only; do not start. Watch inactives.",
+      "urgency": "LOW",
+      "confidence": "HIGH",
+      "availability": "OWNED",
+      "sources": ["RotoWire", "NBC Sports", "Seahawks.com"]
+    },
+    {
+      "player": "Isaac TeSlaa",
+      "team": "DET",
+      "signal_type": "usage",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Added as FA $0. WR3/4 option; 9 rec 187 yds through 4 games. Healthy, no designation. Limited fantasy relevance unless injuries ahead.",
+      "mongo_impact": "Bench depth. No start recommendation.",
+      "urgency": "LOW",
+      "confidence": "MEDIUM",
+      "availability": "OWNED",
+      "sources": ["RotoWire", "FantasyData", "Repo ESPN snapshot"]
+    }
+  ],
+  "waiver_signals": [
+    {
+      "player": "Rashod Bateman",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Dropped to waivers Oct 9. Not FREE_AGENT_CONFIRMED. Prior signals on Flowers/Lamar context.",
+      "mongo_impact": "Do not reclaim without ESPN ownership check.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": ["Repo ed7b846"]
+    },
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "confidence": "HIGH",
+      "sources": ["AGENTS.md"]
+    }
+  ],
+  "lineup_signals": [
+    {
+      "player": "Kendre Miller",
+      "slot": "RB2",
+      "status": "EXPERT_OPINION",
+      "summary": "No designation. Kamara (back) questionable. Hold as RB2; leads if Kamara sits.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Mark Andrews",
+      "slot": "TE",
+      "status": "EXPERT_OPINION",
+      "summary": "No designation. Lamar out, Huntley starts. Floor riskier but TE1 hold.",
+      "urgency": "HIGH"
+    }
+  ],
   "expert_signals": [],
-  "material_changes": [],
-  "no_material_change": true,
-  "summary": "7:19 AM ET hourly Oct 10. Intelligence only. No material changes vs the prior 6:00 AM (100500Z) Pulse. Re-checked NFL.com injury reports, RotoWire, team beat reporting, and limited X: Mongo-owned designations unchanged (Lamb quad bruise ATTRIBUTED_REPORT not serious with extra rest into Week 6; Holani QUESTIONABLE ribs/knee for Week 5; Sampson remains IR; Hurts calf minor full practice expected to play; no new designations or status changes for other owned players including Robinson, Miller, Downs, Andrews, Burden, Mitchell, McMillan, Davis, Black, Bateman, Gadsden, Penix). No fresh ESPN roster pull. Chris Bell availability UNKNOWN. No ownership, FAAB, lineup, IR, transaction or trade write.",
-  "repo_head_at_read": "a25733d4d5dd1cd6941902d34a8c2a396d0d1e98",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T100500Z",
-  "prior_completed_at": "2026-10-10T10:05:00Z"
+  "material_changes": [
+    "Observed ESPN FA ADD Isaac TeSlaa ($0) / DROP Rashod Bateman (to waivers, availability UNKNOWN) per repo commit ed7b846 (txn Oct 9 9:28 AM ET). Roster context updated to reflect. No other ownership/FAAB/lineup changes.",
+    "Holani remains QUESTIONABLE (ribs/knee) CONFIRMED_FACT. Lamb quad bruise ATTRIBUTED_REPORT not serious."
+  ],
+  "no_material_change": false,
+  "summary": "8:25 AM ET hourly Oct 10. Intelligence only. Material: roster observation of TeSlaa add/Bateman drop now reflected (from ed7b846). Re-checked injury reports: Holani Q, Lamb attributed not serious, Miller no designation (Kamara Q), no new designations for other owned. No fresh ESPN pull. No ownership write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-10T112000Z",
+  "prior_completed_at": "2026-10-10T11:20:00Z"
 }
