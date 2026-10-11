@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T142503Z",
-  "generated_at": "2026-10-11T14:20:00Z",
-  "completed_at": "2026-10-11T14:25:03Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T152200Z",
+  "generated_at": "2026-10-11T15:15:00Z",
+  "completed_at": "2026-10-11T15:22:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-11T14:25:03Z",
+  "as_of": "2026-10-11T15:22:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -67,7 +67,6 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261011_0816_ET_espn",
-    "repo_head_at_read": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -137,7 +136,7 @@
       "team": "NO",
       "signal_type": "injury",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Kamara (back) still QUESTIONABLE vs MIN; Rapoport: expected to play. Kendre Miller (Mongo RB2 starter) no designation. Shared backfield context if Kamara plays. No new update this run. Inactives for 1 PM games not yet out.",
+      "summary": "Kamara (back) still QUESTIONABLE vs MIN; Rapoport (X, ~11:04 GMT): expected to play. Kendre Miller (Mongo RB2 starter) no designation. Shared backfield context if Kamara plays. No new update this run. Inactives for 1 PM games not yet fully out (~11:30 AM ET).",
       "mongo_impact": "Miller status unchanged; share-risk context. No action by Pulse. Verify NO inactives ~11:30 AM ET.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -250,8 +249,8 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "10:25 AM ET hourly Oct 11 (Week 5 gameday, PHI at JAX underway). Intelligence only. No Mongo-owned player's status materially changed vs the prior 9:29 AM ET Pulse (132941Z), so no_material_change=true. Re-scanned web, X (Rapoport/Schefter/McLane), team reports: Hurts confirmed active (game started), no new designations for owned players. Kamara still expected to play per prior Rapoport; McConkey not expected (context only). Sunday 1 PM ET inactives (~11:30 AM ET) not yet fully posted for non-London games. ESPN state cited from Live Check 8:16 AM ET (roster/FAAB $74/3-1-0 unchanged); no fresh ESPN pull by Pulse. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T132941Z",
-  "prior_completed_at": "2026-10-11T13:29:41Z",
-  "prior_commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5"
+  "summary": "11:22 AM ET hourly Oct 11 (Week 5 gameday, PHI at JAX underway). Intelligence only. No Mongo-owned player's status materially changed vs the prior 10:25 AM ET Pulse (142503Z), so no_material_change=true. Re-scanned web, X (Rapoport/Schefter/McLane), team reports: Hurts confirmed active (game started), no new designations for owned players. Kamara still expected to play per Rapoport; McConkey not expected (context only). Sunday 1 PM ET inactives (~11:30 AM ET) not yet fully posted for non-London games. ESPN state cited from Live Check 8:16 AM ET (roster/FAAB $74/3-1-0 unchanged); no fresh ESPN pull by Pulse. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T142503Z",
+  "prior_completed_at": "2026-10-11T14:25:03Z",
+  "prior_commit": "76736669e0b966cb729d3e336e30d758b8928bfd"
 }
