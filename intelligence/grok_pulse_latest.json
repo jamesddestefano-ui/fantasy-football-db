@@ -3,17 +3,17 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T222000Z",
-  "generated_at": "2026-10-11T22:20:00Z",
-  "completed_at": "2026-10-11T22:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T232137Z",
+  "generated_at": "2026-10-11T23:19:37Z",
+  "completed_at": "2026-10-11T23:21:37Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-11T22:20:00Z",
+  "as_of": "2026-10-11T23:21:37Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
-    "x_direct": "LIMITED",
+    "x_direct": "OK",
     "experts": "LIMITED",
     "analytics": "LIMITED"
   },
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo Live Check 2026-10-11 ~8:16-8:20 AM ET (espn_live_20261011_0816.json): authenticated ESPN OK, roster/lineup/FAAB $74/record 3-1-0/IR unchanged vs Oct 10, no new JDD transaction. Cited as ESPN state source; this Pulse did NOT do its own ESPN pull. No roster write by Pulse.",
+    "source": "Newest Mongo ESPN state: Sunday gameday check ~12:49 PM ET Oct 11 (espn_live_20261011_1248.json), authenticated ESPN read-only: lineup, IR, FAAB $74, record 3-1-0 unchanged vs morning; no new JDD transaction. Cited as ESPN state source; this Pulse did NOT do its own ESPN pull. No roster write by Pulse.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -66,22 +66,102 @@
       "Chris Bell",
       "Packers D/ST"
     ],
-    "live_check_ref": "mongo_live_check_20261011_0816_ET_espn",
+    "live_check_ref": "mongo_gameday_check_20261011_1248_ET_espn",
     "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN."
   },
   "player_signals": [
     {
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "slot": "QB",
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Final box: 21/40, 220 yards, 1 TD, 0 INT in 17-19 loss at JAX (London). No injury designation or exit. Game complete.",
-      "mongo_impact": "Week 5 start locked and completed. No post-game injury reported.",
+      "summary": "SNF inactives official ~6:50-6:53 PM ET: Ravens inactives are Lamar Jackson (ankle), Elijah Sarratt, Cam Jurgens, Andrew Vorhees, Trey Hendrickson, Aeneas Peebles. Andrews is not listed = ACTIVE. Lamar Jackson officially OUT. Backup-QB starter not re-verified this run (Huntley per prior context).",
+      "mongo_impact": "Starter TE is active for 8:20 PM ET SNF at ATL; Lamar-out downgrade to BAL offense already known. No lineup action taken.",
+      "urgency": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://x.com/jeffzrebiec/status/2109417024942162278",
+        "https://x.com/Ravens/status/2109416755307147554",
+        "https://x.com/AdamSchefter/status/2109416850350129343"
+      ]
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "slot": "RB",
+      "status": "CONFIRMED_FACT",
+      "summary": "Falcons official inactives (posted 6:50 PM ET): Za'Darius Smith, Christian Harris, Cooper Rush (emergency 3rd QB), Jack Strand, Ethan Onianwa, Malcolm DeWalt IV, Robert Longerbeam. Bijan not listed = ACTIVE. LT Jake Matthews, ILB Deablo, DE Ebukam also active.",
+      "mongo_impact": "Starter RB active for SNF vs BAL.",
+      "urgency": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.atlantafalcons.com/news/atlanta-falcons-week-5-inactives-vs-baltimore-ravens-on-sunday-night-football"
+      ]
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "slot": "bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "Not on Falcons official inactive list = active for SNF vs BAL (Rush is emergency 3rd QB, so Penix and a backup are both dressed).",
+      "mongo_impact": "Bench QB; no start impact.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.si.com/nfl/scoreboard/eagles-vs-jaguars-10-11-2026-449",
-        "https://www.cbssports.com/nfl/players/2240246/jalen-hurts/game-log/"
+        "https://www.atlantafalcons.com/news/atlanta-falcons-week-5-inactives-vs-baltimore-ravens-on-sunday-night-football"
+      ]
+    },
+    {
+      "player": "Kendre Miller",
+      "team": "NO",
+      "slot": "RB",
+      "status": "CONFIRMED_FACT",
+      "summary": "Final: MIN 23, NO 13. Miller 10 carries, 30 yds, 2-yd TD (Saints only TD); Donaldson 4-13, Kamara 3-12. No injury designation or in-game injury reported for Miller. Shough 16/25, 96 yds, 2 INT.",
+      "mongo_impact": "Starter RB game complete, healthy.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.neworleanssaints.com/game-day/2026/reg-week5/vikings-at-saints/recap"
+      ]
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "slot": "FLEX",
+      "status": "CONFIRMED_FACT",
+      "summary": "Final: GB 31, CHI 7. With Caleb Williams inactive, Bagent went 12/21, 87 yds, 2 INT, replaced by Keenum in the 4th. Burden 4 rec on 6 targets for 47 yds (team high; long 23) plus 4 carries for 2 yds. No injury reported.",
+      "mongo_impact": "Starter FLEX game complete, healthy.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.packers.com/news/in-game-updates-week-5-bears-2026",
+        "https://www.chicagobears.com/news/game-recap-bears-fall-to-packers-in-green-bay-2026-week-5"
+      ]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "slot": "WR",
+      "status": "CONFIRMED_FACT",
+      "summary": "Final: PIT 34, IND 22. Downs 6 targets, 3 rec, 47 yds (long 42), no TD. No injury reported.",
+      "mongo_impact": "Starter WR game complete, healthy.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.colts.com/game-day/2026/reg-week5/colts-at-steelers/box-score"
+      ]
+    },
+    {
+      "player": "Raiders D/ST",
+      "team": "LV",
+      "slot": "D/ST",
+      "status": "CONFIRMED_FACT",
+      "summary": "Final: NE 45, LV 17 (AP). Raiders defense allowed 45 points; D/ST fantasy line not verified this run.",
+      "mongo_impact": "Starter D/ST game complete.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://apnews.com/article/raiders-patriots-score-b28e97e4d4c4fd071d70b4fa85a016eb"
       ]
     },
     {
@@ -89,13 +169,26 @@
       "team": "LAC",
       "slot": "FLEX",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on LAC inactive list vs DEN (4:05 PM ET). Confirmed active. Game underway or complete; no new in-game injury report.",
-      "mongo_impact": "Active for Week 5 start.",
-      "urgency": "MEDIUM",
+      "summary": "Final: DEN 23, LAC 17. Mitchell 6 carries, 11 yds; 4 targets, 3 rec, 18 yds; 3 kick returns. Vidal 8-57 with a 42-yd TD, Hampton 14-33. No injury reported for Mitchell. Tre' Harris (LAC WR) was questionable to return with a hamstring injury per Schefter 6:06 PM ET (context).",
+      "mongo_impact": "Starter FLEX game complete, healthy.",
+      "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.fantasypros.com/nfl/players/inactives.php",
-        "https://legionreport.com/broncos-vs-chargers-inactives/"
+        "https://sportsfly.cbsistatic.com/nfl/gametracker/recap/NFL_20261011_DEN@LAC/",
+        "https://x.com/AdamSchefter/status/2109405366048149875"
+      ]
+    },
+    {
+      "player": "Oronde Gadsden",
+      "team": "LAC",
+      "slot": "bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "Final vs DEN: 1 target, 0 receptions. No injury reported.",
+      "mongo_impact": "Bench only.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://sportsfly.cbsistatic.com/nfl/gametracker/recap/NFL_20261011_DEN@LAC/"
       ]
     },
     {
@@ -103,28 +196,65 @@
       "team": "SEA",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Officially active for Week 5 vs SF. Not on inactive list. Prior Questionable (ribs/knee) carried but active. Game underway; no new injury.",
+      "summary": "As of CBS gametracker snapshot (SF 29, SEA 26, 4th quarter; final not verified): Holani 4 carries, 7 yds; 4 rec, 24 yds; fumbled at the goal line in the 2nd quarter and SF recovered in the end zone for a TD. No injury reported.",
       "mongo_impact": "Bench only; no start impact.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.fantasypros.com/nfl/news/613249/george-holani-ribs-officially-active-week-5.php",
-        "https://sports.mynorthwest.com/nfl/seattle-seahawks/inactives-holani-good-to-go-seattle-seahawks-san-francisco-49ers"
+        "https://sportsfly.cbsistatic.com/nfl/gametracker/recap/NFL_20261011_SF@SEA/"
       ]
     },
     {
-      "player": "Mark Andrews",
-      "team": "BAL",
-      "slot": "TE",
+      "player": "Kaelon Black",
+      "team": "SF",
+      "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on BAL inactive list vs ATL (SNF). Full practice, no designation. Lamar Jackson OUT. Active. SNF inactives pending (~90 min before 8:20 PM ET).",
-      "mongo_impact": "Active; Huntley start context continues.",
-      "urgency": "HIGH",
+      "summary": "As of CBS gametracker snapshot at SEA (4th quarter; final not verified): 3 carries, 1 yd. Deebo Samuel left the game and was ruled out with a hamstring injury (Schefter 6:58 PM ET, Rapoport 6:52 PM ET) - context for Black only.",
+      "mongo_impact": "Bench only.",
+      "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.fantasypros.com/nfl/players/inactives.php",
-        "https://www.footballdb.com/teams/nfl/baltimore-ravens/injuries",
-        "https://ravenswire.usatoday.com/story/sports/nfl/ravens/2026/10/11/ravens-falcons-week-5-roster-practice-squad-injury-updates/92192225007/"
+        "https://sportsfly.cbsistatic.com/nfl/gametracker/recap/NFL_20261011_SF@SEA/",
+        "https://x.com/AdamSchefter/status/2109418287633158343",
+        "https://x.com/RapSheet/status/2109416934215237735"
+      ]
+    },
+    {
+      "player": "Isaac TeSlaa",
+      "team": "DET",
+      "slot": "bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "As of CBS gametracker snapshot (DET 45, ARI 14, late 4th quarter; final not verified): 2 targets, 0 receptions. No injury reported.",
+      "mongo_impact": "Bench only.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://sportsfly.cbsistatic.com/nfl/gametracker/recap/NFL_20261011_DET@ARI/"
+      ]
+    },
+    {
+      "player": "Jalen Hurts / CeeDee Lamb / Ray Davis (carry-forward)",
+      "team": "PHI/DAL/BUF",
+      "slot": "QB/WR/bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "Carried from prior Pulse, not re-checked: Hurts game final (PHI 17-19 at JAX) with no injury reported; Lamb DAL L 16-24 final, 2.9 pts per 12:49 PM ET ESPN snapshot; Ray Davis plays BUF at LAR on Monday night.",
+      "mongo_impact": "No new information.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": []
+    },
+    {
+      "player": "Context only (not on repo roster)",
+      "team": "various",
+      "slot": "n/a",
+      "status": "CONFIRMED_FACT",
+      "summary": "Per NFL Pulse intake and X reads: Hockenson OUT (concussion), Concepcion OUT, Aaron Jones (returned/scored, no Tier-1 stamp), Montgomery OUT, Kittle and Mike Evans active (Evans 7-113-1 per CBS snapshot), Deebo Samuel OUT (hamstring), Henderson OUT, Zay Flowers ACTIVE for SNF (Schefter 6:52 PM ET), Marvin Harrison Jr. traded ARI to HOU (agreed ~4:24 PM ET; HOU gets MHJ + 2027 7th, ARI gets 2027 2nd + 6th). Chase/Higgins, Jeanty, McLaurin, Jefferson, Addison not re-checked. None are on the Mongo roster per ESPN 12:49 PM ET snapshot and repo context.",
+      "mongo_impact": "NONE",
+      "urgency": "LOW",
+      "availability": "UNKNOWN",
+      "sources": [
+        "https://x.com/RapSheet/status/2109416934215237735",
+        "https://x.com/AdamSchefter/status/2109416850350129343"
       ]
     }
   ],
@@ -133,50 +263,81 @@
       "player": "Rashod Bateman",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Dropped to waivers Oct 9. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Dropped Oct 9. Not FREE_AGENT_CONFIRMED; not re-verified.",
       "mongo_impact": "Do not reclaim without ESPN ownership check.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "sources": [
         "Repo ed7b846"
       ]
+    },
+    {
+      "player": "Marvin Harrison Jr.",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Traded ARI to HOU (agreed ~4:24 PM ET) per Rapoport/Schefter/Pelissero via NFL Pulse intake. Not on repo roster; ESPN ownership not checked, so availability UNKNOWN, not FREE_AGENT_CONFIRMED.",
+      "mongo_impact": "Context only.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": [
+        "https://x.com/RapSheet/status/2109379599939559824"
+      ]
     }
   ],
   "lineup_signals": [
     {
-      "player": "Jalen Hurts",
-      "slot": "QB",
-      "status": "CONFIRMED_FACT",
-      "summary": "Game final: 21/40 220-1-0. No injury.",
-      "urgency": "LOW"
-    },
-    {
-      "player": "Keaton Mitchell",
-      "slot": "FLEX",
-      "status": "CONFIRMED_FACT",
-      "summary": "Active (not inactive) for 4:05 PM ET vs DEN. Game underway, no new report.",
-      "urgency": "MEDIUM"
-    },
-    {
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Active; Lamar OUT, Huntley starts. SNF inactives not yet posted.",
-      "urgency": "HIGH"
+      "summary": "Official SNF inactives out; Andrews active.",
+      "urgency": "MEDIUM"
     },
     {
-      "player": "George Holani",
+      "player": "Bijan Robinson",
+      "slot": "RB",
+      "status": "CONFIRMED_FACT",
+      "summary": "Falcons official inactives out; Bijan active.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Kendre Miller / Luther Burden III / Josh Downs / Raiders D/ST / Keaton Mitchell",
+      "slot": "starters",
+      "status": "CONFIRMED_FACT",
+      "summary": "1 PM and 4:05 PM games complete; all five healthy. Miller 10-30-1; Burden 4-47 + 4-2 rushing; Downs 3-47 on 6 targets; Mitchell 6-11 + 3-18; Raiders lost 45-17.",
+      "urgency": "LOW"
+    },
+    {
+      "player": "Holani / Black / TeSlaa / Gadsden / Penix",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Officially active despite prior Q.",
+      "summary": "No in-game injuries found. Bench-only impact.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [],
-  "material_changes": [],
-  "no_material_change": true,
-  "summary": "6:20 PM ET hourly Oct 11 (Week 5 gameday). No material change vs prior 5:16 PM ET Pulse. 4 PM slate (Mitchell LAC vs DEN, Holani SEA vs SF) underway or finishing; no new in-game injury reports for Mongo-owned players. Early-slate carried. Hurts final already recorded. Andrews active for SNF (inactives pending). ESPN state from Live Check 8:16 AM ET only (no fresh pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T211600Z",
-  "prior_completed_at": "2026-10-11T21:16:00Z",
-  "prior_commit": "bb54c69840054e4d6335374757859df5482cd484"
+  "material_changes": [
+    {
+      "player": "Mark Andrews",
+      "status": "CONFIRMED_FACT",
+      "change": "SNF inactives official: Andrews ACTIVE; Lamar Jackson OUT (official).",
+      "mongo_impact": "Confirmation of starter availability; no negative surprise."
+    },
+    {
+      "player": "Bijan Robinson / Michael Penix Jr.",
+      "status": "CONFIRMED_FACT",
+      "change": "Falcons official inactives out: both active for SNF.",
+      "mongo_impact": "Confirmation of starter RB and bench QB availability."
+    },
+    {
+      "player": "Kendre Miller, Burden, Downs, Mitchell, Raiders D/ST",
+      "status": "CONFIRMED_FACT",
+      "change": "1 PM and 4:05 PM games final with no in-game injuries to Mongo players; box-score results logged.",
+      "mongo_impact": "Results only; no status change."
+    }
+  ],
+  "no_material_change": false,
+  "summary": "7:20 PM ET Sunday hourly (Week 5). SNF inactives became official: Andrews and Bijan (starters) and Penix (bench) are active; Lamar Jackson is OUT. 1 PM and 4:05 PM games are final for Miller (10-30-1 TD), Burden (4-47, Bears 7-31), Downs (3-47), Mitchell (6-11, 3-18) and Raiders D/ST (lost 45-17), with no in-game injuries to Mongo players. SF/SEA and DET/ARI box lines (Holani, Black, TeSlaa) are from an in-progress CBS snapshot; finals not verified. Context-only items (Deebo OUT, Hockenson OUT, MHJ to HOU, etc.) are not on the Mongo roster. ESPN state from the 12:49 PM ET gameday snapshot (no fresh pull this run). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T222000Z",
+  "prior_completed_at": "2026-10-11T22:20:00Z",
+  "prior_commit": "0fb711e90c78bf689fad30a27d99a7d61d844bfc"
 }
