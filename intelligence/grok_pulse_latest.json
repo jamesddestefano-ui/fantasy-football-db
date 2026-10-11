@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T042500Z",
-  "generated_at": "2026-10-11T04:20:00Z",
-  "completed_at": "2026-10-11T04:25:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T061000Z",
+  "generated_at": "2026-10-11T06:05:00Z",
+  "completed_at": "2026-10-11T06:10:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-11T04:25:00Z",
+  "as_of": "2026-10-11T06:10:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -67,7 +67,7 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
-    "repo_head_at_read": "fb1a90fe1ec2f01929c1da455eec10cf62b816a1",
+    "repo_head_at_read": "81d0a817e51e32c9032050478f66ba7ab93362f0",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -155,7 +155,7 @@
       "team": "NO",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Kamara (back) officially QUESTIONABLE vs MIN (LP Thu/Fri). Miller (Mongo RB2) not listed with designation. No overnight change found.",
+      "summary": "Kamara (back) officially QUESTIONABLE vs MIN (LP Thu/Fri). Miller (Mongo RB2) not listed with designation. No overnight change found. Early inactives not yet material for NO.",
       "mongo_impact": "Hold Miller as RB2; share risk if Kamara plays.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
@@ -163,7 +163,8 @@
       "sources": [
         "neworleanssaints.com",
         "CBS Sports",
-        "NOLA.com"
+        "NOLA.com",
+        "FantasyPros inactives"
       ]
     },
     {
@@ -187,7 +188,7 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Calf: full participant Friday, no game designation. Expected to play. PHI vs JAX in London Sun Oct 11 9:30 AM ET. No new update.",
+      "summary": "Calf: full participant Friday, no game designation. Expected to play. PHI vs JAX in London Sun Oct 11 9:30 AM ET. Early inactives show Saquon Barkley OUT (known); Hurts not listed inactive. No new update.",
       "mongo_impact": "Start.",
       "urgency": "LOW",
       "confidence": "HIGH",
@@ -195,7 +196,8 @@
       "sources": [
         "Eagles.com",
         "CBS Sports",
-        "NBC Sports/PFT"
+        "NBC Sports/PFT",
+        "FantasyPros inactives"
       ]
     },
     {
@@ -235,13 +237,14 @@
       "team": "IND",
       "signal_type": "teammate injury / WR depth",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Not listed on Colts report. Slayton OUT, Westbrook-Ikhine elevated, Allen Q. Modest positive opportunity. No new change this run.",
+      "summary": "Not listed on Colts report. Slayton OUT, Westbrook-Ikhine elevated, Allen Q. Modest positive opportunity. No new change this run. Early inactives confirm Slayton OUT.",
       "mongo_impact": "Downs (WR starter) modest positive opportunity. No lineup change recommended.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
         "steelers.com / Colts",
+        "FantasyPros inactives",
         "prior Pulse"
       ]
     },
@@ -324,7 +327,7 @@
       "player": "Josh Downs",
       "slot": "WR",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on Colts report. Slayton OUT; modest positive opportunity.",
+      "summary": "Not on Colts report. Slayton OUT (confirmed inactive); modest positive opportunity.",
       "urgency": "LOW"
     },
     {
@@ -332,6 +335,13 @@
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
       "summary": "No designation. Opponent MHJ expected inactive (trade finalizing). Bench depth.",
+      "urgency": "LOW"
+    },
+    {
+      "player": "Jalen Hurts",
+      "slot": "QB",
+      "status": "CONFIRMED_FACT",
+      "summary": "No designation. Expected to play; Saquon OUT (early inactive).",
       "urgency": "LOW"
     }
   ],
@@ -350,8 +360,8 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "12 AM ET overnight Oct 11 (Sunday). Intelligence only. No material change for Mongo-owned/watched players vs prior 11:15 PM ET (031500Z) Pulse. Re-scanned NFL.com, team reports, web, and X: designations stable. MHJ trade still finalizing; not at meetings Saturday night; no completed trade or confirmed destination. No fresh ESPN pull; Sunday inactives not out. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T031500Z",
-  "prior_completed_at": "2026-10-11T03:15:00Z",
-  "prior_commit": "fb1a90fe1ec2f01929c1da455eec10cf62b816a1"
+  "summary": "2:00 AM ET overnight Oct 11 (Sunday). Intelligence only. No material change for Mongo-owned/watched players vs prior 12:25 AM ET (042500Z) Pulse. Re-scanned NFL.com, team reports, web, X, and early inactives: designations stable. MHJ trade still finalizing; no completed trade or confirmed destination. Early London inactives out (Saquon OUT, Hurts active). No fresh ESPN pull. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T042500Z",
+  "prior_completed_at": "2026-10-11T04:25:00Z",
+  "prior_commit": "81d0a817e51e32c9032050478f66ba7ab93362f0"
 }
