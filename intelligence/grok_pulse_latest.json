@@ -3,17 +3,17 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T211600Z",
-  "generated_at": "2026-10-11T21:16:00Z",
-  "completed_at": "2026-10-11T21:16:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T222000Z",
+  "generated_at": "2026-10-11T22:20:00Z",
+  "completed_at": "2026-10-11T22:20:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-11T21:16:00Z",
+  "as_of": "2026-10-11T22:20:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
-    "x_direct": "OK",
+    "x_direct": "LIMITED",
     "experts": "LIMITED",
     "analytics": "LIMITED"
   },
@@ -89,7 +89,7 @@
       "team": "LAC",
       "slot": "FLEX",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on LAC inactive list vs DEN (4:05 PM ET). Confirmed active. Game underway; no new in-game injury report.",
+      "summary": "Not on LAC inactive list vs DEN (4:05 PM ET). Confirmed active. Game underway or complete; no new in-game injury report.",
       "mongo_impact": "Active for Week 5 start.",
       "urgency": "MEDIUM",
       "availability": "OWNED",
@@ -117,13 +117,14 @@
       "team": "BAL",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on BAL inactive list vs ATL (SNF). Full practice, no designation. Lamar Jackson OUT. Active.",
+      "summary": "Not on BAL inactive list vs ATL (SNF). Full practice, no designation. Lamar Jackson OUT. Active. SNF inactives pending (~90 min before 8:20 PM ET).",
       "mongo_impact": "Active; Huntley start context continues.",
       "urgency": "HIGH",
       "availability": "OWNED",
       "sources": [
         "https://www.fantasypros.com/nfl/players/inactives.php",
-        "https://www.footballdb.com/teams/nfl/baltimore-ravens/injuries"
+        "https://www.footballdb.com/teams/nfl/baltimore-ravens/injuries",
+        "https://ravenswire.usatoday.com/story/sports/nfl/ravens/2026/10/11/ravens-falcons-week-5-roster-practice-squad-injury-updates/92192225007/"
       ]
     }
   ],
@@ -160,7 +161,7 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Active; Lamar OUT, Huntley starts.",
+      "summary": "Active; Lamar OUT, Huntley starts. SNF inactives not yet posted.",
       "urgency": "HIGH"
     },
     {
@@ -174,8 +175,8 @@
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "5:16 PM ET hourly Oct 11 (Week 5 gameday). No material change vs prior 4:15 PM ET Pulse. 4 PM slate (Mitchell LAC vs DEN, Holani SEA vs SF) underway; no new in-game injury reports for Mongo-owned players. Early-slate carried. Hurts final already recorded. Andrews active for SNF. ESPN state from Live Check 8:16 AM ET only (no fresh pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T201500Z",
-  "prior_completed_at": "2026-10-11T20:15:00Z",
-  "prior_commit": "aa6a99c4a90765fcbb062e0e19420dd0b1759e3b"
+  "summary": "6:20 PM ET hourly Oct 11 (Week 5 gameday). No material change vs prior 5:16 PM ET Pulse. 4 PM slate (Mitchell LAC vs DEN, Holani SEA vs SF) underway or finishing; no new in-game injury reports for Mongo-owned players. Early-slate carried. Hurts final already recorded. Andrews active for SNF (inactives pending). ESPN state from Live Check 8:16 AM ET only (no fresh pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T211600Z",
+  "prior_completed_at": "2026-10-11T21:16:00Z",
+  "prior_commit": "bb54c69840054e4d6335374757859df5482cd484"
 }
