@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T123113Z",
-  "generated_at": "2026-10-11T12:23:13Z",
-  "completed_at": "2026-10-11T12:31:13Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T132941Z",
+  "generated_at": "2026-10-11T13:23:41Z",
+  "completed_at": "2026-10-11T13:29:41Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-11T12:31:13Z",
+  "as_of": "2026-10-11T13:29:41Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -187,14 +187,14 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "ACTIVE for PHI at JAX (London, 9:30 AM ET): not on the Eagles inactive list (Brown, DeVonta Smith, Barkley, Epps, Greenard, Kendall) per Jeff McLane post 8:03 AM ET (read directly on X); Rapoport quoted the Eagles' inactives graphic. No game designation all week. Wicks also active; Goedert not inactive.",
+      "summary": "ACTIVE for PHI at JAX (London, 9:30 AM ET): Eagles' own inactives article lists Barkley, DeVonta Smith, Hollywood Brown, Epps, Kendall, Greenard inactive and says Hurts, McKee and Payton are all active (prior Pulse: McLane X post 8:03 AM ET). Friday report: calf, full participant, no game designation. Not a change vs prior Pulse.",
       "mongo_impact": "Start (QB1). Status confirmed by inactive list; not a change vs prior expectation.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Jeff McLane (Inquirer) X post 2109253560399511676",
-        "Ian Rapoport X 2109253040444518500 quoting Eagles inactives graphic",
+        "philadelphiaeagles.com Eagles at Jaguars inactives (via search result)",
+        "Jeff McLane (Inquirer) X post 2109253560399511676 (prior Pulse)",
         "NFL Pulse Bot 20261011-080007"
       ]
     },
@@ -314,7 +314,7 @@
       "player": "Jalen Hurts",
       "slot": "QB",
       "status": "CONFIRMED_FACT",
-      "summary": "Active at JAX (not on Eagles inactives). 9:30 AM ET kickoff.",
+      "summary": "Active at JAX per Eagles' official inactives article (all three QBs active). 9:30 AM ET kickoff. No change vs prior Pulse.",
       "urgency": "LOW"
     },
     {
@@ -375,10 +375,10 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "8:00 AM ET hourly Oct 11 (Week 5 gameday). Intelligence only. No Mongo-owned player's status materially changed vs prior 7:00 AM Pulse (111700Z), so no_material_change=true. New pregame context (read directly on X): Hurts confirmed ACTIVE for 9:30 AM ET London game (Eagles inactives: Brown, DeVonta Smith, Barkley, Epps, Greenard, Kendall; Wicks active). Rapoport: Kamara (Q, back) expected to play vs MIN, so Kendre Miller (owned, no designation) shares work; Schefter: McConkey (not owned) not expected to play vs DEN and OTs Slater/Alt out, context for owned Gadsden/Mitchell; Flowers (not owned) expected to play SNF; Rapoport: Lamar has a real chance to return Week 6. Other NFL Pulse Bot leans (Dowdle, Stevenson, McLaurin) are not Mongo-owned, context only. ESPN state cited from Live Check 8:16 AM ET (roster/FAAB $74/3-1-0 unchanged; no new JDD transaction); no fresh ESPN pull by Pulse. Official NFL injury PDF and team tables not opened; Sunday inactives for non-PHI games not out. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T111700Z",
-  "prior_completed_at": "2026-10-11T11:17:00Z",
-  "prior_commit": "fbb7a0b5b94c01fa63ed840ef7cb1e7d49e9c9aa",
+  "summary": "9:00 AM ET hourly Oct 11 (Week 5 gameday, ~30 min before PHI at JAX London kickoff). Intelligence only. No Mongo-owned player's status materially changed vs the prior 8:00 AM ET Pulse (123113Z), so no_material_change=true. Hurts: the Eagles' own inactives article (philadelphiaeagles.com) lists Barkley, DeVonta Smith, Hollywood Brown, Epps, Kendall and Greenard inactive and says all three QBs (Hurts, McKee, Payton) are active; Goedert/Baun return. Direct X reads of Schefter, Rapoport and Garafolo timelines since 12:25Z (Pelissero had 0 posts) found no new injury/status item for any Mongo-owned player: Schefter - Ravens C Cam Jurgens out tonight (OL, context for Andrews/Huntley; not Mongo); Rapoport/Garafolo - GameDay Kickoff tease of MHJ inactive and soon-to-be traded, Daniels returning. NFL Pulse Bot 9:00 AM scan: QUIET, 0 accepted. ESPN state cited from Live Check 8:16 AM ET (roster/FAAB $74/3-1-0 unchanged); no fresh ESPN pull by Pulse; no newer Live Check exists. Official NFL injury PDF and non-PHI team tables not opened; Sunday 1 PM ET inactives (released ~11:30 AM ET) are not out yet. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T123113Z",
+  "prior_completed_at": "2026-10-11T12:31:13Z",
+  "prior_commit": "c892dc341c3f21e8a8cb6573115b8f1fb33c4a90",
   "context_only_signals": [
     {
       "player": "Ladd McConkey",
@@ -451,7 +451,7 @@
       "player": "Marvin Harrison Jr.",
       "team": "ARI",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Inactive Sunday; trade still unfinished, no confirmed destination (carried from prior Pulse; no new completion found).",
+      "summary": "Inactive Sunday; trade still unfinished, no confirmed destination. Rapoport 8:32 AM ET (direct X, GameDay Kickoff): inactive today and soon-to-be traded. No new completion found.",
       "mongo_impact": "NONE; TeSlaa game context only.",
       "availability": "NOT_MONGO_OWNED",
       "sources": [
@@ -468,6 +468,28 @@
       "availability": "NOT_MONGO_OWNED",
       "sources": [
         "prior Pulse"
+      ]
+    },
+    {
+      "player": "Cam Jurgens",
+      "team": "BAL",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter 8:30 AM ET (direct X): new Ravens C Cam Jurgens out tonight vs ATL, expected to debut next week at Cleveland. OL context for Huntley/Andrews only.",
+      "mongo_impact": "NONE (not Mongo-owned); Ravens OL context for Andrews only.",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "Adam Schefter X 2109260440156987741"
+      ]
+    },
+    {
+      "player": "Jayden Daniels",
+      "team": "WAS",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Garafolo (direct X, 8:35 AM ET): Daniels returns vs NYG with a full game plan.",
+      "mongo_impact": "NONE (not Mongo-owned).",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "Mike Garafolo X 2109261530554302708"
       ]
     }
   ]
