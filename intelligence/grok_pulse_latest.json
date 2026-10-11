@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T082000Z",
-  "generated_at": "2026-10-11T08:15:00Z",
-  "completed_at": "2026-10-11T08:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T100500Z",
+  "generated_at": "2026-10-11T10:00:00Z",
+  "completed_at": "2026-10-11T10:05:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-11T08:20:00Z",
+  "as_of": "2026-10-11T10:05:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -67,7 +67,7 @@
       "Packers D/ST"
     ],
     "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
-    "repo_head_at_read": "2f16eb04a60c74aa140a419e1072a2cb437604eb",
+    "repo_head_at_read": "6625aac26e6b0f425d6b9d15a5e49a828dc678ca",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -360,8 +360,8 @@
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "4:00 AM ET overnight Oct 11 (Sunday). Intelligence only. No material change for Mongo-owned/watched players vs prior 2:10 AM ET (061000Z) Pulse. Re-scanned NFL.com, team reports, web, X, and early inactives: designations stable. MHJ trade still finalizing; no completed trade or confirmed destination. Early London inactives out (Saquon OUT, Hurts active). No fresh ESPN pull. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T061000Z",
-  "prior_completed_at": "2026-10-11T06:10:00Z",
-  "prior_commit": "2f16eb04a60c74aa140a419e1072a2cb437604eb"
+  "summary": "6:00 AM ET overnight Oct 11 (Sunday). Intelligence only. No material change for Mongo-owned/watched players vs prior 4:20 AM ET (082000Z) Pulse. Re-scanned NFL.com, team reports, web, X, and early inactives: designations stable. MHJ trade still finalizing; no completed trade or confirmed destination. Early London inactives out (Saquon OUT, Hurts active). No fresh ESPN pull. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T082000Z",
+  "prior_completed_at": "2026-10-11T08:20:00Z",
+  "prior_commit": "6625aac26e6b0f425d6b9d15a5e49a828dc678ca"
 }
