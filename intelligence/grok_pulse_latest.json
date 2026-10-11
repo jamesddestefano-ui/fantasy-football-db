@@ -1,1 +1,1 @@
-$(cat /tmp/new_latest.json)
+$(python3 -c 'print(open("/tmp/new_latest.json").read())')
