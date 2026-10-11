@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "title": "Qualify NFL scoring, active-status and game-completion evidence before fantasy analysis",
+  "research_window_utc": {
+    "started_at": "2026-10-11T21:18:00Z",
+    "ended_at": "2026-10-11T21:20:00Z",
+    "precision": "minute",
+    "note": "These examples reflect the bounded public-source research window. This draft does not claim a later news refresh."
+  },
+  "purpose": "Use public NFL reporting to illustrate what a source establishes and what requires additional evidence.",
+  "examples": [
+    {
+      "topic": "A scoring play is an outcome, not a complete workload measurement",
+      "players": [
+        "Braelon Allen"
+      ],
+      "verified_public_fact": "The Jets' official highlight description records a 22-yard go-ahead rushing touchdown in the fourth quarter against Cleveland.",
+      "fact_confidence": "HIGH",
+      "source": {
+        "publisher": "New York Jets",
+        "title": "Jets-Browns Highlight | Braelon Allen Races 22 Yards for a Touchdown",
+        "url": "https://www.newyorkjets.com/video/braelon-allen-22-yard-touchdown-jets-browns-highlight-10-11-2026",
+        "published_date_displayed": "2026-10-11",
+        "material_reviewed": "Search-returned official text description. Direct page opening failed; video not watched."
+      },
+      "game_status_in_evidence": "Fourth-quarter scoring event. This example makes no final-game or complete-box-score assertion.",
+      "analytical_lesson": "A touchdown does not independently establish increased carry share, routes, snaps, goal-line share or a durable workload change.",
+      "additional_evidence_needed": "Complete final usage counts, provider definitions and a comparable prior sample."
+    },
+    {
+      "topic": "Multiple active running backs can coexist without an established touch split",
+      "players": [
+        "George Holani",
+        "Emanuel Wilson"
+      ],
+      "verified_public_fact": "Seattle's official report confirms Holani active after rib/knee concerns. Wilson and Velus Jones Jr. are also active, while Zach Charbonnet is ruled out.",
+      "fact_confidence": "HIGH",
+      "source": {
+        "publisher": "Seattle Seahawks",
+        "author": "John Boyle",
+        "title": "Seahawks vs. 49ers Week 5 Inactives",
+        "url": "https://www.seahawks.com/news/seahawks-vs-49ers-week-5-inactives",
+        "published_at_displayed": "Oct 11, 2026 at 11:54 AM",
+        "display_timezone": "Not stated in the retrieved text.",
+        "material_reviewed": "Search-returned official article text. Direct page opening failed."
+      },
+      "game_status_in_evidence": "Pregame availability announcement; no final Seattle usage asserted.",
+      "analytical_lesson": "Active status establishes game-day eligibility. It does not establish an uncontested role, unrestricted health or a particular allocation of touches.",
+      "additional_evidence_needed": "Subsequent participation and workload evidence, with an observation time distinct from the pregame announcement."
+    },
+    {
+      "topic": "A completed game is not a complete usage dataset",
+      "players": [
+        "Jalen Hurts",
+        "Dontayvion Wicks"
+      ],
+      "verified_public_fact": "The NFL recap confirms that Philadelphia-Jacksonville is complete.",
+      "fact_confidence": "HIGH for game completion",
+      "source": {
+        "publisher": "NFL.com",
+        "title": "2026 NFL season, Week 5: What We Learned from Sunday's games",
+        "url": "https://www.nfl.com/news/2026-nfl-season-week-5-what-we-learned-from-sunday-s-games",
+        "published_date_displayed": "2026-10-11 in search/index",
+        "published_time_utc": null,
+        "material_reviewed": "Search-returned NFL recap text. Direct opening of its AMP copy failed."
+      },
+      "game_status_in_evidence": "FINAL",
+      "analytical_lesson": "Final status alone does not supply routes, snaps, target-earning rates or a provider-defined participation denominator. Missing usage must remain unknown rather than be inferred from production.",
+      "additional_evidence_needed": "A verified final usage source. Preserve raw counts and definitions before calculating rates."
+    },
+    {
+      "topic": "Practice participation, injury designation and official game-day active status are distinct",
+      "players": [
+        "Mark Andrews"
+      ],
+      "verified_public_fact": "The Ravens' official injury table lists Andrews with a hand injury, full participation Wednesday through Friday, and no game-status designation.",
+      "fact_confidence": "HIGH for the displayed injury-table contents",
+      "sources": [
+        {
+          "publisher": "Baltimore Ravens",
+          "title": "Ravens Injury Report",
+          "url": "https://www.baltimoreravens.com/team/injury-report/",
+          "published_time_utc": null,
+          "material_reviewed": "Directly opened official injury-report table showing Baltimore and Atlanta for this matchup."
+        },
+        {
+          "publisher": "NFL.com",
+          "title": "NFL 2026 Baltimore Ravens Schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-team/baltimore-ravens",
+          "published_time_utc": null,
+          "material_reviewed": "Search-returned official schedule text; October 11 kickoff listed at 8:20 PM Eastern."
+        }
+      ],
+      "game_status_in_evidence": "PREGAME during the research window.",
+      "verification_limit": "No official game-day inactive list confirming Andrews active was obtained in this bounded scan. This does not mean he is inactive.",
+      "analytical_lesson": "No injury designation supports a different claim from confirmed game-day active status. A later active confirmation should retain its own source and observation time.",
+      "additional_evidence_needed": "The official game-day inactive list or another explicit official confirmation."
+    }
+  ],
+  "metric_status": {
+    "final_routes": "NOT_VERIFIED",
+    "final_snap_shares": "NOT_VERIFIED",
+    "final_target_shares": "NOT_VERIFIED"
+  },
+  "methodological_limits": [
+    "Some search extracts and public pages had different crawl freshness. A scheduled ending time is not proof that a game is final.",
+    "Search-returned text is distinguished from a directly opened page and from video viewing.",
+    "Corroboration of an existing fact does not create a second independent underlying event.",
+    "These examples support source qualification only. They establish no calibrated player forecast, current fantasy move, betting recommendation, decision grade or adopted signal weight."
+  ],
+  "forecast_handling": "No forecast is created here. Preserve any original contemporaneous forecast and add later outcomes with their own timestamps; never reconstruct a pregame claim from a known result.",
+  "future_corrections": "Add a later dated clarification if new evidence changes an interpretation; preserve this time-bounded record."
+}
