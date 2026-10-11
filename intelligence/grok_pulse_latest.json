@@ -3,17 +3,17 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T111700Z",
-  "generated_at": "2026-10-11T11:15:00Z",
-  "completed_at": "2026-10-11T11:17:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T123113Z",
+  "generated_at": "2026-10-11T12:23:13Z",
+  "completed_at": "2026-10-11T12:31:13Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-11T11:17:00Z",
+  "as_of": "2026-10-11T12:31:13Z",
   "source_status": {
-    "official_nfl_team": "OK",
+    "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
-    "x_direct": "LIMITED",
+    "x_direct": "OK",
     "experts": "LIMITED",
     "analytics": "LIMITED"
   },
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo repository current state (ed7b846: ESPN FA ADD Isaac TeSlaa $0 / DROP Rashod Bateman, txn Oct 9 9:28 AM ET; FAAB $74) plus prior Pulse. Observed state only. No fresh ESPN pull this run. No roster write by Pulse.",
+    "source": "Mongo Live Check 2026-10-11 ~8:16-8:20 AM ET (/workspace/mongo-ff-bot-state/espn_live_20261011_0816.json + live-check-2026-10-11-0816-decision.json): authenticated ESPN OK, roster/lineup/FAAB $74/record 3-1-0/IR unchanged vs Oct 10, no new JDD transaction, TeSlaa/Bateman already recorded (ed7b846). Cited as ESPN state source; this Pulse did NOT do its own ESPN pull. No roster write by Pulse.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -48,7 +48,7 @@
       "Keaton Mitchell (FLEX)",
       "Raiders D/ST"
     ],
-    "week_5_lineup_note": "Observed from prior snapshot; TeSlaa on roster (bench, DET WR), Bateman dropped to waivers (availability UNKNOWN, not FREE_AGENT_CONFIRMED). No fresh ESPN pull this run.",
+    "week_5_lineup_note": "Per Live Check 8:16 AM ET Oct 11: starters Hurts, Bijan, Kendre Miller, Lamb (TNF already played, 2.9), Downs, Andrews, Burden (FLEX), Mitchell (FLEX), Raiders D/ST; bench McMillan (BYE), Davis, Black, TeSlaa, Holani (Q), Gadsden, Penix; IR Sampson. Bateman dropped (availability UNKNOWN, not FREE_AGENT_CONFIRMED).",
     "bench": [
       "Tetairoa McMillan",
       "Ray Davis",
@@ -66,8 +66,8 @@
       "Chris Bell",
       "Packers D/ST"
     ],
-    "live_check_ref": "mongo_live_check_20261010_0810_ET_espn",
-    "repo_head_at_read": "f18f9d039225e7ba3f33249293b76ca464f94c43",
+    "live_check_ref": "mongo_live_check_20261011_0816_ET_espn",
+    "repo_head_at_read": "fbb7a0b5b94c01fa63ed840ef7cb1e7d49e9c9aa",
     "dst_swap": {
       "time_et": "2026-10-08T18:13:00-04:00",
       "added": "Raiders D/ST (FA, $0)",
@@ -154,33 +154,32 @@
       "player": "Alvin Kamara / Kendre Miller",
       "team": "NO",
       "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Kamara (back) officially QUESTIONABLE vs MIN (LP Thu/Fri). Miller (Mongo RB2) not listed with designation. No morning change found. Early inactives not yet material for NO.",
-      "mongo_impact": "Hold Miller as RB2; share risk if Kamara plays.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Kamara (back) officially still QUESTIONABLE vs MIN; Rapoport (7:04 AM ET, read directly on X): Kamara expected to play, source says. Pregame lean, not an official stamp. Kendre Miller (Mongo RB2 starter) has no designation; a Kamara return means shared NO backfield work. Prior Pulse carried only EXPERT_OPINION 'likely to play'; this is a new insider attribution. Kamara is NOT Mongo-owned.",
+      "mongo_impact": "Miller status unchanged (no designation); share-risk context if Kamara plays. No action by Pulse. Verify NO inactives ~11:30 AM ET.",
       "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "Miller OWNED",
       "sources": [
-        "neworleanssaints.com",
-        "CBS Sports",
-        "NOLA.com",
-        "FantasyPros inactives"
+        "Ian Rapoport X 2109238603364577484",
+        "CBS/RotoWire mirror (via NFL Pulse Bot 20261011-080005)",
+        "neworleanssaints.com injury report (prior)"
       ]
     },
     {
       "player": "Mark Andrews / Lamar Jackson",
       "team": "BAL",
       "signal_type": "injury",
-      "status": "CONFIRMED_FACT",
-      "summary": "Lamar Jackson OUT W5 vs ATL (SNF); Tyler Huntley starts. Andrews (hand) FP no designation. No new update this run.",
-      "mongo_impact": "Andrews remains TE1; floor risk with Huntley.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Lamar Jackson OUT W5 vs ATL (SNF); Tyler Huntley starts. Andrews (hand) full participant, no designation. New context: Rapoport (12:01 PM UTC / 8:01 AM ET, direct X) on NFL GameDay: Lamar has a real chance to return NEXT week pending rehab (Week 6 only). Schefter: Zay Flowers (foot, Q) expected to play SNF (Flowers not owned).",
+      "mongo_impact": "Andrews remains TE1; Huntley floor risk unchanged this week. No action.",
       "urgency": "HIGH",
       "confidence": "HIGH",
       "availability": "Andrews OWNED",
       "sources": [
-        "baltimoreravens.com",
-        "Yahoo Sports",
-        "NFL.com"
+        "baltimoreravens.com (prior)",
+        "Ian Rapoport X 2109253070022480288",
+        "Adam Schefter X 2109239069079146540 (Flowers)"
       ]
     },
     {
@@ -188,16 +187,15 @@
       "team": "PHI",
       "signal_type": "injury",
       "status": "CONFIRMED_FACT",
-      "summary": "Calf: full participant Friday, no game designation. Expected to play. PHI vs JAX in London Sun Oct 11 9:30 AM ET. Early inactives show Saquon Barkley OUT (known); Hurts not listed inactive. No new update.",
-      "mongo_impact": "Start.",
+      "summary": "ACTIVE for PHI at JAX (London, 9:30 AM ET): not on the Eagles inactive list (Brown, DeVonta Smith, Barkley, Epps, Greenard, Kendall) per Jeff McLane post 8:03 AM ET (read directly on X); Rapoport quoted the Eagles' inactives graphic. No game designation all week. Wicks also active; Goedert not inactive.",
+      "mongo_impact": "Start (QB1). Status confirmed by inactive list; not a change vs prior expectation.",
       "urgency": "LOW",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "Eagles.com",
-        "CBS Sports",
-        "NBC Sports/PFT",
-        "FantasyPros inactives"
+        "Jeff McLane (Inquirer) X post 2109253560399511676",
+        "Ian Rapoport X 2109253040444518500 quoting Eagles inactives graphic",
+        "NFL Pulse Bot 20261011-080007"
       ]
     },
     {
@@ -252,15 +250,16 @@
       "player": "Oronde Gadsden / Keaton Mitchell",
       "team": "LAC",
       "signal_type": "injury context",
-      "status": "CONFIRMED_FACT",
-      "summary": "Neither listed with designation. McConkey Q (DNP all week). Thin WR group. No change to designation this run.",
-      "mongo_impact": "Gadsden modest opportunity if McConkey sits; Mitchell listed backup. No lineup change.",
-      "urgency": "LOW",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "LAC vs DEN (4:05 PM ET). Neither Gadsden nor Mitchell has a designation (Fri table, not re-opened). New: Schefter (7:04 AM ET, direct X) says WR Ladd McConkey (foot, officially Q, DNP all week) is NOT expected to play; Schefter (8:04 AM ET, direct X) says OT Rashawn Slater and Joe Alt are out and the Chargers are expected to start four rookies on the OL. McConkey/Johnston (out) absences thin the WR group; the OL news is a negative run/pass-game context for Mitchell and Gadsden. McConkey is NOT Mongo-owned.",
+      "mongo_impact": "Gadsden (bench) modest target-opportunity context if McConkey sits; Mitchell (FLEX starter) faces a depleted OL. Statuses of owned players unchanged. No action by Pulse. Verify LAC inactives ~2:35 PM ET.",
+      "urgency": "MEDIUM",
       "confidence": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "chargers.com",
-        "prior Pulse"
+        "Adam Schefter X 2109238725607833603",
+        "Adam Schefter X 2109253738338660359 (OL Slater/Alt out)",
+        "NFL Pulse Bot 20261011-080001"
       ]
     },
     {
@@ -268,7 +267,7 @@
       "team": "ATL / CHI / SF",
       "signal_type": "availability",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Bijan not listed in injury table. Burden not on final report. Black: illness, limited Wed full Thu, no designation (CONFIRMED prior). No morning change found.",
+      "summary": "Bijan not listed in injury table. Burden not on final report. Black: illness, limited Wed full Thu, no designation (CONFIRMED prior). No morning change found. Burden context: Bears start QB Tyson Bagent at GB (Williams Q but not expected to play per PFT/Bears/Pelissero via secondary reads; Rapoport 8:01 AM ET says Williams pushing to play next week). Not re-verified on Bears table.",
       "mongo_impact": "No change; Bijan and Burden stay starters, Black bench.",
       "urgency": "LOW",
       "confidence": "MEDIUM",
@@ -276,7 +275,9 @@
       "sources": [
         "atlantafalcons.com",
         "49ers.com",
-        "prior Pulse"
+        "prior Pulse",
+        "Rapoport X 2109253070022480288",
+        "Yahoo/PFT (secondary)"
       ]
     }
   ],
@@ -310,58 +311,164 @@
   ],
   "lineup_signals": [
     {
+      "player": "Jalen Hurts",
+      "slot": "QB",
+      "status": "CONFIRMED_FACT",
+      "summary": "Active at JAX (not on Eagles inactives). 9:30 AM ET kickoff.",
+      "urgency": "LOW"
+    },
+    {
       "player": "Kendre Miller",
       "slot": "RB2",
       "status": "CONFIRMED_FACT",
-      "summary": "No designation. Kamara (back) official Q; Miller leads if Kamara sits.",
+      "summary": "No designation. Rapoport: Kamara (Q, back) expected to play, so shared NO work (ATTRIBUTED_REPORT on Kamara).",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Keaton Mitchell",
+      "slot": "FLEX",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "No designation (Fri table). LAC OL Slater/Alt out per Schefter; McConkey not expected to play.",
       "urgency": "MEDIUM"
     },
     {
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "No designation, FP all week. Lamar OUT, Huntley starts. Floor riskier but TE1 hold.",
+      "summary": "No designation. Lamar OUT, Huntley starts. Flowers expected to play (Schefter).",
       "urgency": "HIGH"
     },
     {
       "player": "Josh Downs",
       "slot": "WR",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on Colts report. Slayton OUT (confirmed inactive); modest positive opportunity.",
+      "summary": "Not on Colts report; Slayton OUT. No new change. Dowdle (PIT) unlikely per NFL Pulse Bot, context only.",
       "urgency": "LOW"
     },
     {
-      "player": "Isaac TeSlaa",
-      "slot": "bench",
+      "player": "Luther Burden III",
+      "slot": "FLEX",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No designation. Opponent MHJ expected inactive (trade finalizing). Bench depth.",
-      "urgency": "LOW"
-    },
-    {
-      "player": "Jalen Hurts",
-      "slot": "QB",
-      "status": "CONFIRMED_FACT",
-      "summary": "No designation. Expected to play; Saquon OUT (early inactive).",
+      "summary": "Not on final Bears report. Bagent expected to start at QB (Williams Q, not expected). Not re-verified on Bears table.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [
     {
       "player": "Alvin Kamara",
-      "status": "EXPERT_OPINION",
-      "summary": "Questionable but likely to play per prior expert notes. No new this run.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Rapoport (insider, direct X): expected to play (back). Pregame lean; officially Questionable.",
       "mongo_impact": "Context for Kendre Miller's share.",
       "sources": [
-        "SI",
-        "RotoWire",
-        "NBC Sports"
+        "Ian Rapoport X 2109238603364577484"
+      ]
+    },
+    {
+      "player": "Ladd McConkey",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter: not expected to play vs DEN. Not Mongo-owned.",
+      "mongo_impact": "Context for Gadsden/Mitchell only.",
+      "sources": [
+        "Adam Schefter X 2109238725607833603"
       ]
     }
   ],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "7:00 AM ET hourly Oct 11 (Sunday). Intelligence only. No material change for Mongo-owned/watched players vs prior 6:05 AM ET (100500Z) overnight Pulse. Re-scanned NFL.com, team reports, web, limited X, and early inactives: designations stable. MHJ trade still finalizing; no completed trade or confirmed destination. Early London inactives out (Saquon OUT, Hurts active). No fresh ESPN pull. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T100500Z",
-  "prior_completed_at": "2026-10-11T10:05:00Z",
-  "prior_commit": "f18f9d039225e7ba3f33249293b76ca464f94c43"
+  "summary": "8:00 AM ET hourly Oct 11 (Week 5 gameday). Intelligence only. No Mongo-owned player's status materially changed vs prior 7:00 AM Pulse (111700Z), so no_material_change=true. New pregame context (read directly on X): Hurts confirmed ACTIVE for 9:30 AM ET London game (Eagles inactives: Brown, DeVonta Smith, Barkley, Epps, Greenard, Kendall; Wicks active). Rapoport: Kamara (Q, back) expected to play vs MIN, so Kendre Miller (owned, no designation) shares work; Schefter: McConkey (not owned) not expected to play vs DEN and OTs Slater/Alt out, context for owned Gadsden/Mitchell; Flowers (not owned) expected to play SNF; Rapoport: Lamar has a real chance to return Week 6. Other NFL Pulse Bot leans (Dowdle, Stevenson, McLaurin) are not Mongo-owned, context only. ESPN state cited from Live Check 8:16 AM ET (roster/FAAB $74/3-1-0 unchanged; no new JDD transaction); no fresh ESPN pull by Pulse. Official NFL injury PDF and team tables not opened; Sunday inactives for non-PHI games not out. No ownership, FAAB, lineup, IR, transaction or trade write by Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T111700Z",
+  "prior_completed_at": "2026-10-11T11:17:00Z",
+  "prior_commit": "fbb7a0b5b94c01fa63ed840ef7cb1e7d49e9c9aa",
+  "context_only_signals": [
+    {
+      "player": "Ladd McConkey",
+      "team": "LAC",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter: not expected to play vs DEN (foot); officially Questionable, did not practice all week.",
+      "mongo_impact": "NONE (not Mongo-owned); teammate context only for Gadsden/Mitchell.",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "Adam Schefter X 2109238725607833603"
+      ]
+    },
+    {
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter: expected to play SNF vs ATL (foot); officially Questionable.",
+      "mongo_impact": "NONE (not Mongo-owned); Ravens offense context for Andrews with Huntley.",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "Adam Schefter X 2109239069079146540"
+      ]
+    },
+    {
+      "player": "Dontayvion Wicks",
+      "team": "PHI",
+      "status": "CONFIRMED_FACT",
+      "summary": "ACTIVE vs JAX: not on Eagles inactive list. Inactives: Hollywood Brown, DeVonta Smith, Saquon Barkley, Epps, Greenard, Kendall.",
+      "mongo_impact": "NONE (not on Mongo roster); Hurts pass-catcher context only.",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "Jeff McLane X 2109253560399511676",
+        "NFL Pulse Bot 20261011-080007"
+      ]
+    },
+    {
+      "player": "Rico Dowdle",
+      "team": "PIT",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter: unlikely to play vs IND (toe); final call in warmups; officially Q. (NFL Pulse Bot 080003; not independently re-read.)",
+      "mongo_impact": "NONE (not Mongo-owned); Downs game context only.",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "NFL Pulse Bot 20261011-080003"
+      ]
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "team": "NE",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Rapoport: expected to play vs LV (knee); officially Q. (NFL Pulse Bot 080004; not independently re-read.)",
+      "mongo_impact": "NONE (not Mongo-owned); Raiders D/ST matchup context only.",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "NFL Pulse Bot 20261011-080004"
+      ]
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Garafolo: true game-time decision vs NYG (hamstring); limited snaps if he plays; Keim slight lean to playing. Rapoport RT'd (read directly).",
+      "mongo_impact": "NONE (not Mongo-owned).",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "Mike Garafolo X 2109241923990925413"
+      ]
+    },
+    {
+      "player": "Marvin Harrison Jr.",
+      "team": "ARI",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Inactive Sunday; trade still unfinished, no confirmed destination (carried from prior Pulse; no new completion found).",
+      "mongo_impact": "NONE; TeSlaa game context only.",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "prior Pulse",
+        "NFL Pulse Bot 20261010-112401"
+      ]
+    },
+    {
+      "player": "Michael Pittman Jr.",
+      "team": "PIT",
+      "status": "CONFIRMED_FACT",
+      "summary": "On IR (>=4 games), carried from prior Pulses.",
+      "mongo_impact": "NONE (not Mongo-owned).",
+      "availability": "NOT_MONGO_OWNED",
+      "sources": [
+        "prior Pulse"
+      ]
+    }
+  ]
 }
