@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "record_type": "fantasy_education_research",
+  "title": "Usage versus results: routes, target earning and waiver opportunity cost",
+  "reviewed_on": "2026-10-11",
+  "recorded_at": "2026-10-11T20:06:41Z",
+  "research_status": "METHODOLOGY_ONLY",
+  "materials_reviewed": {
+    "original_article_bodies": 3,
+    "videos_watched": 0,
+    "video_transcripts_reviewed": 0,
+    "note": "Accessible article text was reviewed. No video viewing, paid player-profile access or independent chart/table audit is claimed."
+  },
+  "sources": [
+    {
+      "source_id": "RP_METHOD",
+      "publisher": "Reception Perception",
+      "author": "Matt Harmon",
+      "title": "Introduction to Reception Perception",
+      "url": "https://receptionperception.com/introduction-to-reception-perception-and-its-new-home/",
+      "published_date_displayed": "2021-03-16",
+      "additional_date_displayed": "2023-06-22",
+      "material_reviewed": "Accessible methodology/explanatory body and retrospective examples; paid player profiles not accessed.",
+      "lesson": "Route, coverage and alignment evidence can help distinguish receiver performance from quarterback and box-score effects.",
+      "caveats": [
+        "Reception Perception Route Percentage is the distribution of route types, not routes per team dropback.",
+        "Historical hit rates are retrospective and are not calibrated forward probabilities."
+      ]
+    },
+    {
+      "source_id": "TPRR_METHOD",
+      "publisher": "The Fantasy Footballers",
+      "author": "Mike Anderson",
+      "title": "Targets Per Route Run Report: 2026 Season Preview (Fantasy Football)",
+      "url": "https://www.thefantasyfootballers.com/analysis/targets-per-route-run-report-2026-season-preview-fantasy-football/",
+      "published_date_displayed": "2026-09-08",
+      "material_reviewed": "Accessible explanatory body and displayed historical table; table not independently audited.",
+      "lesson": "TPRR means targets divided by routes. Evaluate target earning alongside route opportunity, rather than interpreting either alone.",
+      "caveats": [
+        "Small samples, quarterback, scheme, role, target depth and touchdown variance complicate comparisons.",
+        "Percentage bands are heuristics, not universal validated thresholds."
+      ]
+    },
+    {
+      "source_id": "WAIVER_METHOD",
+      "publisher": "Establish The Run",
+      "author": "Sam Sherman",
+      "title": "Dominate the Waiver Wire: Top Five Tips",
+      "url": "https://establishtherun.com/dominate-the-waiver-wire-top-five-tips/",
+      "published_date_displayed": "2023-09-05",
+      "material_reviewed": "Accessible methodology, findings and tips; embedded charts not independently transcribed.",
+      "lesson": "Consider talent, competition, offensive environment, bench opportunity cost and changing seasonal needs when studying waiver value.",
+      "caveats": [
+        "Historical analysis predates 2023 and uses five bench slots plus a kicker; league transfer requires adjustment.",
+        "Retrospective scoring weeks do not establish that a player was predictably startable."
+      ]
+    }
+  ],
+  "analytical_proposals": [
+    {
+      "proposal_id": "DISTINGUISH_OPPORTUNITY_EARNING_RESULT",
+      "status": "RESEARCH_HYPOTHESIS_NOT_ADOPTED_RULE",
+      "source_ids": [
+        "RP_METHOD",
+        "TPRR_METHOD"
+      ],
+      "proposal": "Study changes in route participation together with target earning and role context, then compare those signals with later production. A scoring spike alone should not be treated as evidence of a durable role change.",
+      "definitions": [
+        "Provider-defined routes and the denominator for route participation must be recorded.",
+        "TPRR = targets/routes; preserve the raw targets and routes as well as the rate.",
+        "Receiving skill, opportunity and realized fantasy points are different measurements."
+      ]
+    },
+    {
+      "proposal_id": "EVALUATE_WAIVER_OPPORTUNITY_COST",
+      "status": "RESEARCH_HYPOTHESIS_NOT_ADOPTED_RULE",
+      "source_ids": [
+        "WAIVER_METHOD"
+      ],
+      "proposal": "When the existing league decision process evaluates a candidate, compare plausible future utility with the roster spot and acquisition resources consumed; examine results after accounting for whether the player was reasonably startable."
+    }
+  ],
+  "risks_and_limits": [
+    "Definitions and sample windows may differ across providers. Do not merge incompatible route metrics.",
+    "Injury absences, quarterback changes, game script and schedule may confound apparent signal performance.",
+    "Research must preserve negative examples and rejected candidates to limit selection and survivorship bias.",
+    "Retrospective evidence supports questions to test; it does not establish a current player forecast or a guaranteed breakout.",
+    "No numerical edge, signal weight, universal cutoff or new governing rule has been validated by this reading."
+  ],
+  "forecasts": [],
+  "predictions": [],
+  "outcomes": [],
+  "current_player_recommendations": [],
+  "video_timestamps": [],
+  "prospective_test_plan": {
+    "status": "PROPOSED_RESEARCH_PROTOCOL",
+    "objective": "Determine whether combined opportunity and target-earning evidence improves league-specific role-change identification beyond recent fantasy points alone.",
+    "selection": "Define the future player pool and observation window before evaluating outcomes; retain all assessed cases and reasons for inclusion.",
+    "inputs_to_capture": [
+      "As-of timestamp and source URL",
+      "Provider metric definitions",
+      "Routes, team dropbacks when available, targets and TPRR",
+      "Prior and current role/sample windows",
+      "Injury, quarterback, depth-chart and game-script context",
+      "Relevant league format and authenticated availability only if actionable advice is contemplated"
+    ],
+    "forecast_handling": "This note creates no forecast. If the established Brain later makes a material recommendation, preserve its original contemporaneous prediction, evidence, uncertainty and deadline in the existing decision ledger.",
+    "evaluation": "After the chosen future windows finish, compare subsequent role persistence and fantasy production with a simple recent-points baseline. Grade decision process independently from results and separate actual user action from advice.",
+    "adoption_gate": "Treat findings as provisional across multiple observations. Any adopted rule belongs in the repository's existing versioned learning system, not this research note.",
+    "aggregation": "When combining games, aggregate compatible raw counts before recomputing rates. Preserve sample sizes, source definitions and explicit context exclusions.",
+    "baselines": "Compare with a highest-projected-eligible-player baseline when available, and optionally a recent-points baseline, under the same eligibility, deadline and resource constraints.",
+    "outcome_dimensions": [
+      "Workload forecast error when a forecast was actually recorded",
+      "Persistence of the anticipated role",
+      "Useful starts and points above an available replacement",
+      "Actual acquisition cost when an acquisition occurred",
+      "Role error versus touchdown or yardage variance"
+    ]
+  },
+  "preservation": {
+    "educational_evidence_only": true,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "correction_policy": "Preserve this dated note; document later corrections or evidence in a new dated record referencing it."
+  },
+  "record_id": "mongo-2026-10-11-fantasy-education-usage-vs-results",
+  "league_id": "mongo",
+  "league": "mongo",
+  "scope_filter": "mongo educational research only",
+  "league_context": {
+    "source": "https://github.com/jamesddestefano-ui/fantasy-football-db/blob/main/src/ffdb/seed.py",
+    "format": "Full PPR; two FLEX; seven bench; no kicker",
+    "relevance": "Translate the waiver article's five-bench, kicker-containing example to this format before testing any conclusion. Current player ownership, availability and prices are not asserted here."
+  },
+  "repository_provenance": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "head_before_note": "ecb522d27c944d07e71c655d6b219b2ae80a4a27",
+    "controls_file": "AGENTS.md",
+    "controls_blob_sha": "324b95220da532ab46e62b23493e74995e62a131",
+    "storage": "Existing intelligence/news/ dated evidence convention; no new decision or learning database."
+  },
+  "existing_learning_destinations": {
+    "decision_ledger": "learning/decision_ledger.jsonl",
+    "outcome_event_type": "REVIEW",
+    "weekly_review_pattern": "learning/weekly_reviews/2026-week-NN.json"
+  }
+}
