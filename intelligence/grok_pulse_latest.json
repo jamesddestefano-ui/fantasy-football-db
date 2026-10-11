@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-11T201500Z",
-  "generated_at": "2026-10-11T20:15:00Z",
-  "completed_at": "2026-10-11T20:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-11T211600Z",
+  "generated_at": "2026-10-11T21:16:00Z",
+  "completed_at": "2026-10-11T21:16:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-11T20:15:00Z",
+  "as_of": "2026-10-11T21:16:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -89,12 +89,13 @@
       "team": "LAC",
       "slot": "FLEX",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on LAC inactive list vs DEN (4:05 PM ET). Confirmed active. 4 PM slate underway; no new injury report.",
+      "summary": "Not on LAC inactive list vs DEN (4:05 PM ET). Confirmed active. Game underway; no new in-game injury report.",
       "mongo_impact": "Active for Week 5 start.",
       "urgency": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "https://www.fantasypros.com/nfl/players/inactives.php"
+        "https://www.fantasypros.com/nfl/players/inactives.php",
+        "https://legionreport.com/broncos-vs-chargers-inactives/"
       ]
     },
     {
@@ -102,13 +103,13 @@
       "team": "SEA",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Officially active for Week 5 vs SF. Not on inactive list. Prior Questionable (ribs/knee) carried but active.",
+      "summary": "Officially active for Week 5 vs SF. Not on inactive list. Prior Questionable (ribs/knee) carried but active. Game underway; no new injury.",
       "mongo_impact": "Bench only; no start impact.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
         "https://www.fantasypros.com/nfl/news/613249/george-holani-ribs-officially-active-week-5.php",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-11/george-holani-active-for-week-5-vs-49ers"
+        "https://sports.mynorthwest.com/nfl/seattle-seahawks/inactives-holani-good-to-go-seattle-seahawks-san-francisco-49ers"
       ]
     },
     {
@@ -116,12 +117,13 @@
       "team": "BAL",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Not on BAL inactive list vs ATL (SNF). Lamar Jackson OUT. Active.",
+      "summary": "Not on BAL inactive list vs ATL (SNF). Full practice, no designation. Lamar Jackson OUT. Active.",
       "mongo_impact": "Active; Huntley start context continues.",
       "urgency": "HIGH",
       "availability": "OWNED",
       "sources": [
-        "https://www.fantasypros.com/nfl/players/inactives.php"
+        "https://www.fantasypros.com/nfl/players/inactives.php",
+        "https://www.footballdb.com/teams/nfl/baltimore-ravens/injuries"
       ]
     }
   ],
@@ -151,7 +153,7 @@
       "player": "Keaton Mitchell",
       "slot": "FLEX",
       "status": "CONFIRMED_FACT",
-      "summary": "Active (not inactive) for 4:05 PM ET vs DEN. No new report.",
+      "summary": "Active (not inactive) for 4:05 PM ET vs DEN. Game underway, no new report.",
       "urgency": "MEDIUM"
     },
     {
@@ -172,8 +174,8 @@
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "4:15 PM ET hourly Oct 11 (Week 5 gameday). No material change vs prior 3:15 PM ET Pulse. 4 PM slate (Mitchell LAC, Holani SEA) underway or starting; no new in-game injury reports for Mongo-owned players. Early-slate carried. Hurts final already recorded. ESPN state from Live Check 8:16 AM ET only (no fresh pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T191500Z",
-  "prior_completed_at": "2026-10-11T19:15:00Z",
-  "prior_commit": "a2754d0ced6e3d04d88a5f7131136151ea06954e"
+  "summary": "5:16 PM ET hourly Oct 11 (Week 5 gameday). No material change vs prior 4:15 PM ET Pulse. 4 PM slate (Mitchell LAC vs DEN, Holani SEA vs SF) underway; no new in-game injury reports for Mongo-owned players. Early-slate carried. Hurts final already recorded. Andrews active for SNF. ESPN state from Live Check 8:16 AM ET only (no fresh pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T201500Z",
+  "prior_completed_at": "2026-10-11T20:15:00Z",
+  "prior_commit": "aa6a99c4a90765fcbb062e0e19420dd0b1759e3b"
 }
