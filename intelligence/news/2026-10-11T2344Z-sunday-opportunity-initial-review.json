@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "title": "Initial Sunday opportunity review: injury-contingent volume and production limits",
+  "research_window_utc": {
+    "started_at": "2026-10-11T23:41:00Z",
+    "ended_at": "2026-10-11T23:44:00Z",
+    "precision": "minute",
+    "note": "Bounded initial public-source review. Not a full Sunday-final or full-week grade."
+  },
+  "purpose": "Preserve source-qualified public NFL facts and general evaluation lessons without creating a league decision.",
+  "examples": [
+    {
+      "topic": "Injury-contingent workload is not a permanent role",
+      "players": [
+        "Braelon Allen",
+        "Breece Hall"
+      ],
+      "classification": "confirmed_fact",
+      "verified_public_fact": "Allen: 24 rushes, 116 yards, 1 rush TD; prior week: 14 rushes, 59 yards. Hall inactive.",
+      "fact_confidence": "HIGH for stated official counts and availability",
+      "sources": [
+        {
+          "publisher": "New York Jets",
+          "url": "https://www.newyorkjets.com/team/players-roster/braelon-allen/logs/",
+          "retrieved_at_utc": "2026-10-11T23:41:56Z",
+          "published_time_utc": null,
+          "material_reviewed": "Official player log, current and prior-week carries."
+        },
+        {
+          "publisher": "New York Jets",
+          "url": "https://www.newyorkjets.com/news/jets-vs-browns-game-inactives-10-11-2026",
+          "retrieved_at_utc": "2026-10-11T23:42:13Z",
+          "published_at_displayed": "Oct 11, 2026 at 11:30 AM",
+          "display_timezone": "Unlabeled",
+          "material_reviewed": "Official inactive list."
+        }
+      ],
+      "game_status_in_evidence": "FINAL",
+      "analytical_lesson": "Substantial Allen realized volume is conditional on Hall absence. The prior-week comparison is descriptive and does not control for health or game environment. No permanent takeover or future touch split is established.",
+      "additional_evidence_needed": "Subsequent official Hall status, complete snaps/routes, situational assignments and comparable games."
+    },
+    {
+      "topic": "Receiving-production concentration is not target share",
+      "players": [
+        "Garrett Wilson",
+        "Geno Smith"
+      ],
+      "classification": "confirmed_fact",
+      "verified_public_fact": "Wilson: 7 receptions, 104 yards, 1 TD. Team gross passing yards: 182.",
+      "sources": [
+        {
+          "publisher": "New York Jets",
+          "url": "https://www.newyorkjets.com/news/jets-vs-browns-nfl-game-recap-green-and-white-edge-cleveland-10-11-2026",
+          "retrieved_at_utc": "2026-10-11T23:42:02Z",
+          "published_at_displayed": "Oct 11, 2026 at 07:00 PM",
+          "display_timezone": "Unlabeled",
+          "material_reviewed": "Official completed-game recap."
+        }
+      ],
+      "game_status_in_evidence": "FINAL",
+      "calculated_quantity": {
+        "classification": "arithmetic",
+        "formula": "104 / 182 * 100",
+        "value_rounded": 57.1,
+        "unit": "percent of team gross passing yards",
+        "not_equivalent_to": [
+          "target share",
+          "route participation",
+          "TPRR",
+          "air-yard share"
+        ]
+      },
+      "analytical_lesson": "A high share of produced yards can reflect a small number of productive plays. Without targets/routes, this does not establish a changed opportunity rate.",
+      "additional_evidence_needed": "Provider-defined targets, routes and comparable prior denominators."
+    },
+    {
+      "topic": "An injury-affected outcome does not identify healthy opportunity",
+      "players": [
+        "Will Shipley",
+        "Saquon Barkley"
+      ],
+      "classification": "confirmed_fact",
+      "verified_public_fact": "Shipley: 5 carries, 6 rush yards, 1 rush TD; 1 catch, 7 receiving yards. Foot-injury exit; no return. Barkley inactive.",
+      "sources": [
+        {
+          "publisher": "Jacksonville Jaguars",
+          "url": "https://www.jaguars.com/game-day/2026/reg-week5/eagles-at-jaguars/box-score",
+          "retrieved_at_utc": "2026-10-11T23:43:48Z",
+          "published_time_utc": null,
+          "material_reviewed": "Official completed box score, FINAL."
+        },
+        {
+          "publisher": "Philadelphia Eagles",
+          "url": "https://www.philadelphiaeagles.com/news/spadaro-6-observations-from-a-hard-fought-loss-to-the-jaguars-in-london",
+          "retrieved_at_utc": "2026-10-11T23:42:24Z",
+          "published_at_displayed": "Oct 11, 2026 at 03:00 PM",
+          "display_timezone": "Unlabeled",
+          "material_reviewed": "Official report of Shipley foot-injury exit/no return and Barkley absence."
+        }
+      ],
+      "game_status_in_evidence": "FINAL",
+      "calculated_quantity": {
+        "classification": "arithmetic",
+        "formula": "5 rush attempts + 1 reception",
+        "value": 6,
+        "unit": "scrimmage touches"
+      },
+      "analytical_lesson": "Retain the injury-affected result without post-hoc exclusion. A touchdown cannot establish sufficient volume; the injury prevents a confident healthy full-game counterfactual. Carries and scrimmage touches are distinct units. This public record does not reconstruct any pregame fantasy forecast or grade a league decision.",
+      "additional_evidence_needed": "Subsequent official injury updates and complete participation/assignment evidence; future role remains unresolved.",
+      "freshness_note": "Philadelphia postgame reporting predates the earlier 21:20 UTC review; this is verified comparison context, not newly breaking news."
+    },
+    {
+      "topic": "A live feed snapshot is not a verified final result",
+      "players": [
+        "Jaxon Smith-Njigba",
+        "George Holani",
+        "Emanuel Wilson"
+      ],
+      "classification": "confirmed_fact",
+      "verified_public_fact": "Official page at 23:43:45 UTC: LIVE Q4 00:54. Final not verified.",
+      "sources": [
+        {
+          "publisher": "Seattle Seahawks",
+          "url": "https://www.seahawks.com/game-day/2026/reg-week5/seahawks-vs-49ers/box-score",
+          "retrieved_at_utc": "2026-10-11T23:42:51Z",
+          "rechecked_at_utc": "2026-10-11T23:43:45Z",
+          "published_time_utc": null,
+          "material_reviewed": "Official page still displayed LIVE Q4 00:54, San Francisco 32-Seattle 29; final outcome not verified."
+        }
+      ],
+      "game_status_in_evidence": "FINAL_NOT_VERIFIED",
+      "analytical_lesson": "The feed may lag. This states what the page displayed, not the actual game status at publication. No Seattle final usage or performance grade is inferred.",
+      "additional_evidence_needed": "An explicitly final official box and complete usage data."
+    }
+  ],
+  "metric_status": {
+    "final_routes": "NOT_VERIFIED",
+    "final_snap_shares": "NOT_VERIFIED",
+    "final_target_shares": "NOT_VERIFIED",
+    "red_zone_opportunities": "NOT_VERIFIED"
+  },
+  "methodological_limits": [
+    "SNF had not started within this research window; no SNF outcome or full-week grade is asserted.",
+    "Official counts may later be corrected. Missing usage is unknown, not zero.",
+    "Several articles about one event corroborate the event but do not create independent samples.",
+    "One game does not establish signal skill, a durable player-role change, source ranking or calibration.",
+    "No league availability, roster move, bid, lineup change, trade or adopted learning rule is established by this educational record."
+  ],
+  "forecast_handling": "Preserve contemporaneous forecasts unchanged and append later observations with distinct timestamps. Do not backfill pregame confidence from a known result.",
+  "future_corrections": "Preserve this record and add a separately dated correction if later official evidence changes a count or interpretation.",
+  "context": "mongo public NFL intelligence only",
+  "general_fantasy_implications": [
+    {
+      "classification": "analyst_opinion",
+      "text": "For longer-horizon player evaluation, distinguish temporary injury replacement volume from evidence of sustainable participation and target earning. One high-production game alone is insufficient to establish lasting roster value."
+    },
+    {
+      "classification": "analyst_opinion",
+      "text": "When evaluating an apparent emerging receiver, ask whether routes and targets persisted across comparable games before relying on a single receiving-yard concentration result."
+    },
+    {
+      "classification": "analyst_opinion",
+      "text": "Keep public NFL news separate from any authenticated league state. A later decision needs its own contemporaneous evidence and immutable record; this education entry is not that decision."
+    }
+  ],
+  "research_hypotheses": [
+    {
+      "classification": "untested_hypothesis",
+      "claim": "Availability-conditioned opportunity projections outperform an unconditioned baseline on future comparable games.",
+      "test": "Prespecify eligible games and injury strata, preserve all outcomes including injury-affected games, compare chronological held-out carry errors."
+    },
+    {
+      "classification": "untested_hypothesis",
+      "claim": "Persistent target/route changes are more informative for future opportunity than single-game receiving-yard concentration.",
+      "test": "Acquire defined target and route denominators and compare subsequent games without selecting only successful examples."
+    }
+  ],
+  "confidence_limits": "High confidence in retrieved official final counts, subject to correction. Interpretations are conditional; research hypotheses are untested. No confidence level is assigned to unestimated future probabilities or decision value."
+}
