@@ -1,1 +1,230 @@
-PLACEHOLDER_FOR_CONTENT
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-10-12T061500Z",
+  "generated_at": "2026-10-12T06:10:00Z",
+  "completed_at": "2026-10-12T06:15:00Z",
+  "week": 5,
+  "season": 2026,
+  "run_type": "overnight",
+  "as_of": "2026-10-12T06:15:00Z",
+  "source_status": {
+    "official_nfl_team": "LIMITED",
+    "beat_reporting": "OK",
+    "x_direct": "OK",
+    "experts": "LIMITED",
+    "analytics": "UNAVAILABLE"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Newest Mongo ESPN state: Mongo Sunday Night Check 7:48 PM ET Oct 11 (espn_live_20261011_1948.json), authenticated ESPN read-only snapshot captured 7:47 PM ET: lineup unchanged vs noon, IR unchanged, FAAB $74, record 3-1-0, matchup JDD 51.4 vs C$ 109.66 (C$ finished; Bijan + Andrews yet to play at snapshot time), no new JDD or league transactions after Sun Oct 11 12:37 am. Cited as ESPN state source; this Pulse did NOT do its own ESPN pull. No roster write by Pulse.",
+    "faab_remaining": 74,
+    "record": "3-1-0",
+    "standing": "3rd of 12",
+    "week_4_result": "W 181.32-138.58",
+    "espn_injury_tags_on_roster": {
+      "CeeDee Lamb": "Q",
+      "George Holani": "Q",
+      "Dylan Sampson": "IR"
+    },
+    "starters_week_5": [
+      "Jalen Hurts",
+      "Bijan Robinson",
+      "Kendre Miller",
+      "CeeDee Lamb",
+      "Josh Downs",
+      "Mark Andrews",
+      "Luther Burden III (FLEX)",
+      "Keaton Mitchell (FLEX)",
+      "Raiders D/ST"
+    ],
+    "week_5_lineup_note": "Per Live Check 8:16 AM ET Oct 11: starters Hurts, Bijan, Kendre Miller, Lamb (TNF already played, 2.9), Downs, Andrews, Burden (FLEX), Mitchell (FLEX), Raiders D/ST; bench McMillan (BYE), Davis, Black, TeSlaa, Holani (Q), Gadsden, Penix; IR Sampson. Bateman dropped (availability UNKNOWN, not FREE_AGENT_CONFIRMED).",
+    "bench": [
+      "Tetairoa McMillan",
+      "Ray Davis",
+      "Kaelon Black",
+      "Isaac TeSlaa",
+      "George Holani",
+      "Oronde Gadsden",
+      "Michael Penix Jr."
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ],
+    "dropped_not_rostered": [
+      "Rashod Bateman",
+      "Chris Bell",
+      "Packers D/ST"
+    ],
+    "live_check_ref": "mongo_sunday_night_check_20261011_1948_ET_espn",
+    "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN.",
+    "week_5_matchup_snapshot": {
+      "jdd_score": 51.4,
+      "opponent": "$Cmoney$ (C$)",
+      "opponent_score": 109.66,
+      "jdd_yet_to_play": 2,
+      "note": "as of the 7:47 PM ET Sunday Night Check snapshot (not refreshed; no fresh ESPN pull). Bijan + Andrews have since finished (SNF final in OT); an unofficial PPR arithmetic estimate still leaves JDD well short of 109.66, but this is not ESPN-confirmed."
+    }
+  },
+  "player_signals": [
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "POSTGAME UPDATE (new vs prior Pulse): Official Falcons site article by Tori McElhaney (Oct 12 01:10 AM ET): Penix suffered rib injury on late 4Q sack, tried to return for OT but pain worsened as he cooled down; Tua Tagovailoa entered. Penix postgame: 'I hated it. I hated that I couldn't get back in that game.' He does not believe it will keep him out long term: 'Knowing me, I am going to be ready to go next week because I've sat out enough in my career.' Imaging to be done Monday. Coach Kevin Stefanski previously confirmed imaging pending. No diagnosis or official Week 6 designation yet. Final line 19/32, 240 yds, 1 TD.",
+      "mongo_impact": "Bench QB. Optimistic player timeline for Week 6 (expects to play), but imaging results still pending; availability unknown until further report. No Week 5 lineup effect. Intelligence only.",
+      "urgency": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.atlantafalcons.com/news/michael-penix-jr-sunday-night-football-rib-injury",
+        "https://x.com/tori_mcelhaney/status/2109512722002088444",
+        "https://www.foxsports.com/articles/nfl/falcons-michael-penix-jr-sustains-rib-injury-in-4th-quarter-in-ot-loss-to-ravens"
+      ]
+    },
+    {
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "slot": "TE",
+      "status": "CONFIRMED_FACT",
+      "summary": "SNF FINAL/OT: 4 rec/28 yds, 0 TD, 1 fumble lost. No injury reported. Carried from prior.",
+      "mongo_impact": "Starter TE; game final, no change.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993"
+      ]
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "slot": "RB",
+      "status": "CONFIRMED_FACT",
+      "summary": "SNF FINAL/OT: 17 car/86 yds, 4 rec/32 yds, 0 TD. No injury. Official site notes Bijan hoped Penix is alright (context).",
+      "mongo_impact": "Starter RB; game final, no change.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993",
+        "https://www.atlantafalcons.com/news/michael-penix-jr-sunday-night-football-rib-injury"
+      ]
+    },
+    {
+      "player": "Jalen Hurts / CeeDee Lamb / Raiders D/ST / Kendre Miller / Luther Burden III / Josh Downs / Keaton Mitchell",
+      "team": "PHI/DAL/LV/NO/CHI/IND/LAC",
+      "slot": "starters",
+      "status": "CONFIRMED_FACT",
+      "summary": "Games final per prior Pulse. No new news this run.",
+      "mongo_impact": "Results only; no status change.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": []
+    },
+    {
+      "player": "George Holani / Kaelon Black / Isaac TeSlaa / Oronde Gadsden / Tetairoa McMillan",
+      "team": "SEA/SF/DET/LAC/CAR",
+      "slot": "bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "Bench only; no new news this run. McMillan BYE.",
+      "mongo_impact": "None.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": []
+    },
+    {
+      "player": "Ray Davis",
+      "team": "BUF",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Plays MNF BUF at LAR 8:15 PM ET Oct 12. No new injury designation found; listed as no designation / expected to play in practice reports (hamstring earlier cleared). Official inactives not yet out (due ~90 min pregame).",
+      "mongo_impact": "Bench RB; no change. Inactives pending.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.nfl.com/news/nfl-week-5-injury-report-player-statuses-for-all-15-games"
+      ]
+    }
+  ],
+  "waiver_signals": [
+    {
+      "player": "Rashod Bateman",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Dropped Oct 9 per repo; played in SNF. Not FREE_AGENT_CONFIRMED.",
+      "mongo_impact": "Do not reclaim without ESPN ownership check.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": ["Repo"]
+    },
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. No new Monday waiver news.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": ["AGENTS.md"]
+    }
+  ],
+  "lineup_signals": [
+    {
+      "player": "Penix (bench)",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Postgame: expects to be ready for Week 6 per his comments; imaging Monday. No Week 5 effect.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Mark Andrews / Bijan Robinson",
+      "slot": "starters",
+      "status": "CONFIRMED_FACT",
+      "summary": "SNF final, no injuries.",
+      "urgency": "LOW"
+    },
+    {
+      "player": "Other starters / bench",
+      "slot": "various",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new status changes. Davis MNF pending inactives.",
+      "urgency": "LOW"
+    }
+  ],
+  "expert_signals": [],
+  "material_changes": [
+    {
+      "player": "Michael Penix Jr.",
+      "change": "POSTGAME UPDATE: Official Falcons site (Tori McElhaney) and Penix comments: expects to be ready for Week 6 ('I'm going to be ready to go next week'); imaging Monday; not believed long-term. Builds on prior in-game rib injury report.",
+      "status": "ATTRIBUTED_REPORT",
+      "availability": "OWNED",
+      "mongo_impact": "Bench QB. Optimistic timeline pending imaging results. No immediate lineup impact.",
+      "urgency": "MEDIUM",
+      "sources": [
+        "https://www.atlantafalcons.com/news/michael-penix-jr-sunday-night-football-rib-injury",
+        "https://x.com/tori_mcelhaney/status/2109512722002088444"
+      ]
+    }
+  ],
+  "no_material_change": false,
+  "summary": "2 AM ET Monday overnight (Week 5). Postgame update on bench QB Michael Penix Jr. rib injury: official Falcons site article and Penix quotes indicate he expects to be ready for Week 6, imaging Monday, not long-term. No other material changes for Mongo-owned players. SNF final already recorded (Andrews/Bijan no injuries). Ray Davis MNF still pending official inactives. ESPN state unchanged from Sunday Night Check 7:48 PM ET snapshot (no fresh pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T041644Z",
+  "prior_completed_at": "2026-10-12T04:16:44Z",
+  "prior_commit": "b5602eed1f44b7738594bf0ba2e9aa988ff34678",
+  "source_status_notes": {
+    "official_nfl_team": "LIMITED: official Falcons team site article read (Tori McElhaney); no full team injury report tables.",
+    "beat_reporting": "OK: Falcons reporter Tori McElhaney X and official site.",
+    "x_direct": "OK: multiple X searches and post reads succeeded.",
+    "experts": "LIMITED: no expert sites deeply read; expert_signals empty.",
+    "analytics": "UNAVAILABLE: no analytics source."
+  }
+}
