@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "title": "Monday opportunity update: final workload denominators and contingent availability",
+  "research_window_utc": {
+    "started_at": "2026-10-12T13:19:38Z",
+    "ended_at": "2026-10-12T13:21:28Z"
+  },
+  "coverage": "Selected completed Sunday and Sunday-night games only. Week 5 is incomplete before Monday Night Football. This is not a full-week grade.",
+  "sources": [
+    {
+      "id": "SEA_BOX",
+      "creator": "Seattle Seahawks",
+      "title": "Seahawks vs. 49ers Box Score",
+      "url": "https://www.seahawks.com/game-day/2026/reg-week5/seahawks-vs-49ers/box-score",
+      "publication_date": null,
+      "retrieved_at": "2026-10-12T13:20:39Z",
+      "access": "Reviewed official HTML final box text; no playback"
+    },
+    {
+      "id": "SEA_LOG",
+      "creator": "Seattle Seahawks",
+      "title": "Emanuel Wilson player page: Recent Games",
+      "url": "https://www.seahawks.com/team/players-roster/emanuel-wilson/",
+      "publication_date": null,
+      "retrieved_at": "2026-10-12T13:21:01Z",
+      "access": "Reviewed current official player log in search-rendered article text"
+    },
+    {
+      "id": "SEA_STATUS",
+      "creator": "John Boyle / Seattle Seahawks",
+      "title": "RB Zach Charbonnet Not Expected To Make Return For Seahawks\u2019 Week 6 Game At Denver",
+      "url": "https://www.seahawks.com/news/rb-zach-charbonnet-not-expected-to-make-return-for-seahawks-week-6-game-at-denver",
+      "publication_date": "2026-10-11",
+      "displayed_time": "06:28 PM; timezone unlabeled",
+      "retrieved_at": "2026-10-12T13:20:05Z",
+      "access": "Full article body returned in search; initial direct open failed"
+    },
+    {
+      "id": "ATL_STATUS",
+      "creator": "Tori McElhaney / Atlanta Falcons",
+      "title": "Michael Penix Jr.: 'I hated it. I hated that I couldn\u2019t get back in that game.'",
+      "url": "https://www.atlantafalcons.com/news/michael-penix-jr-sunday-night-football-rib-injury",
+      "publication_date": "2026-10-12",
+      "displayed_time": "01:10 AM; timezone unlabeled",
+      "retrieved_at": "2026-10-12T13:20:19Z",
+      "access": "Full article text reviewed after initial direct-open failure"
+    },
+    {
+      "id": "NFL_STATUS",
+      "creator": "Grant Gordon / NFL",
+      "title": "Falcons QB Michael Penix Jr. (ribs) says injury isn't long term, will be OK",
+      "url": "https://amp.nfl.com/news/falcons-qb-michael-penix-jr-ribs-says-injury-isn-t-long-term-will-be-ok",
+      "publication_date": "2026-10-12",
+      "displayed_time": "01:17 AM; timezone unlabeled",
+      "retrieved_at": "2026-10-12T13:21:13Z",
+      "access": "Article body returned by search; repeats same postgame information, not independent diagnostic evidence"
+    },
+    {
+      "id": "BAL_BOX",
+      "creator": "Baltimore Ravens",
+      "title": "Ravens Box Scores, Week 5 section",
+      "url": "https://www.baltimoreravens.com/game-day/box-scores/",
+      "publication_date": null,
+      "retrieved_at": "2026-10-12T13:21:28Z",
+      "access": "Reviewed official HTML Week 5 FINAL/OT box, distinct from earlier preseason/regular-season sections"
+    },
+    {
+      "id": "ATL_FINAL",
+      "creator": "Atlanta Falcons",
+      "title": "Falcons home game status",
+      "url": "https://www.atlantafalcons.com/",
+      "publication_date": null,
+      "retrieved_at": "2026-10-12T13:21:13Z",
+      "access": "Official current page text: Ravens 30, Falcons 23, FINAL/OT"
+    }
+  ],
+  "material_access": {
+    "videos_watched": 0,
+    "video_transcripts_reviewed": 0,
+    "medium": "Official articles, final boxes and player log text. No paid route database or film review."
+  },
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Seattle final workload",
+      "facts": "Seattle lost 32\u201329. Emanuel Wilson had 20 carries for 61 yards and one touchdown, plus two catches for 11 yards. George Holani had four carries for seven yards and four catches for 24 yards. JSN had five catches for 102 yards and one touchdown.",
+      "sources": [
+        "SEA_BOX"
+      ],
+      "confidence": "HIGH for observed final counts, subject to official correction"
+    },
+    {
+      "classification": "VERIFIED MATHEMATICAL PRINCIPLE",
+      "topic": "Carry-share denominators",
+      "calculations": [
+        {
+          "expression": "20/(20+4)",
+          "value": 0.8333333333,
+          "definition": "Wilson share of recorded Seattle running-back carries"
+        },
+        {
+          "expression": "20/(20+4+1+1)",
+          "value": 0.7692307692,
+          "definition": "Wilson share of all Seattle carries, including one JSN carry and one Darnold carry"
+        },
+        {
+          "expression": "20+2",
+          "value": 22,
+          "definition": "Wilson scrimmage touches"
+        }
+      ],
+      "limits": "These describe this game; none is a snap, route, target or goal-line share. Receptions are not targets. A rushing touchdown alone does not identify goal-line opportunity share.",
+      "sources": [
+        "SEA_BOX"
+      ]
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Repeat opportunity versus efficient scoring",
+      "facts": "Wilson had 21 carries and three catches in Week 4; Week 5 had 20 carries and two catches.",
+      "sources": [
+        "SEA_LOG",
+        "SEA_BOX"
+      ],
+      "confidence": "HIGH for descriptive counts; two games do not validate a permanent role"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Seattle Thursday availability",
+      "facts": "Macdonald said activation of Charbonnet for Thursday at Denver was not expected but could change. Price must miss at least two more games on IR.",
+      "sources": [
+        "SEA_STATUS"
+      ],
+      "confidence": "HIGH that coach expectation was reported; future activation remains unresolved"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "topic": "Sustainability interpretation",
+      "text": "Wilson has a plausible near-term workload opportunity while both backs remain unavailable. Role persistence depends on activation, health, usage and coaching response; yards per carry and a touchdown do not establish a new permanent hierarchy. Holani receiving counts warrant separate passing-down research.",
+      "sources": [
+        "SEA_STATUS",
+        "SEA_LOG",
+        "SEA_BOX"
+      ]
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Penix injury and final",
+      "facts": "Atlanta lost 30\u201323 in overtime. Penix injured his ribs late in regulation, returned briefly, then could not play in overtime. Monday imaging was planned. His optimism about next week is not medical clearance.",
+      "sources": [
+        "ATL_FINAL",
+        "ATL_STATUS",
+        "NFL_STATUS"
+      ],
+      "confidence": "HIGH for reported event and planned imaging; no imaging result or Week 6 clearance verified"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "SNF production is not route evidence",
+      "facts": "Penix finished 19/32 for 240 yards and one touchdown. Mark Andrews had four catches for 28 yards; Kyle Pitts had five for 42 yards and a touchdown.",
+      "sources": [
+        "BAL_BOX",
+        "NFL_STATUS"
+      ],
+      "confidence": "HIGH for displayed final counts"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "topic": "Pass-catcher evaluation",
+      "text": "Do not treat a touchdown difference as proof that one tight end gained routes or target earning. Obtain compatible target and route counts; separate regulation and overtime exposure when studying per-opportunity efficiency."
+    }
+  ],
+  "source_quality": [
+    "Seattle final status resolves the earlier Sunday note\u2019s FINAL_NOT_VERIFIED gap; preserve that earlier observation unchanged.",
+    "Atlanta\u2019s generic game-center search snapshot still showed Q3 06:53. It was rejected as a final stat source; the explicitly FINAL/OT Ravens Week 5 box and Falcons home status were used instead.",
+    "The Penix cross-check repeats the same postgame statements and does not count as a second diagnosis.",
+    "No current verified snap counts, route totals, target shares, goal-line shares or injury-imaging results were obtained in this bounded pass. Missing is unknown, not zero."
+  ],
+  "forecast_comparison": {
+    "status": "NO_NEW_QUANTITATIVE_FORECAST_BACKFILL",
+    "note": "These selected observations are evidence for the existing review process. This note establishes no matched pregame numerical fantasy forecast, adopted prediction, acquisition, or actual lineup action; no error metric, process grade or calibration statistic is invented."
+  },
+  "research_proposal": {
+    "classification": "UNTESTED HYPOTHESIS",
+    "hypothesis": "An injury-conditioned opportunity baseline plus defined participation denominators improves short-horizon waiver usefulness over last-game fantasy points alone.",
+    "mechanism": "Injury absences change opportunities, while touchdowns and long plays can inflate scoring without increasing role.",
+    "test": "Before future outcomes, freeze candidate eligibility, information time, one-week and four-week utility horizons, projected opportunity and a recent-points baseline. Use chronological held-out comparisons; retain failed candidates, injury-affected games and non-acquisitions. Track actual useful starts separately from hindsight best possible starts.",
+    "failure_conditions": "No held-out improvement, benefits vanish after availability and roster opportunity cost, or missing participation definitions prevent comparable measurement.",
+    "implementation_if_supported": "Propose a versioned change through the existing hub learning process; this research does not adopt it."
+  },
+  "early_waiver_method": {
+    "classification": "MODEL ASSUMPTION",
+    "text": "Separate temporary replacement value from season-long value. Any later bid model needs expected useful starts above the actual eligible replacement, probability the role persists, roster-spot cost and league-specific acquisition constraints. No numerical bid or availability classification is justified by these public sources alone."
+  },
+  "preservation": {
+    "rule_change": false,
+    "transaction": false,
+    "authoritative_state_write": false,
+    "historical_forecast_backfill": false,
+    "correction_policy": "Append a new dated note for later corrections; keep original evidence and forecasts."
+  },
+  "missing_evidence": [
+    "Official Monday imaging update and subsequent practice designations",
+    "Thursday activation and final inactives",
+    "Provider-defined routes, snaps, targets and goal-line opportunities",
+    "MNF final results before complete weekly review",
+    "Current authenticated league-specific eligibility and constraints before actionable advice"
+  ],
+  "context": "mongo public NFL intelligence only",
+  "record_id": "mongo-2026-10-12-monday-opportunity-review",
+  "general_hub_application": {
+    "classification": "ANALYST OPINION",
+    "text": "Mongo can use the Penix availability scenarios to evaluate quarterback contingency and Atlanta receiving uncertainty, while evaluating Seattle backfield receiving versus rushing roles separately. Any roster, waiver or lineup conclusion requires a fresh authenticated ESPN comparison. No player is declared available and no acquisition cost is proposed."
+  }
+}
