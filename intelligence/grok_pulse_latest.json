@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-12T032023Z",
-  "generated_at": "2026-10-12T03:15:03Z",
-  "completed_at": "2026-10-12T03:20:23Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-12T041644Z",
+  "generated_at": "2026-10-12T04:15:02Z",
+  "completed_at": "2026-10-12T04:16:44Z",
   "week": 5,
   "season": 2026,
-  "run_type": "hourly",
-  "as_of": "2026-10-12T03:20:23Z",
+  "run_type": "overnight",
+  "as_of": "2026-10-12T04:16:44Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -73,25 +73,41 @@
       "opponent": "$Cmoney$ (C$)",
       "opponent_score": 109.66,
       "jdd_yet_to_play": 2,
-      "note": "as of the 7:47 PM ET Sunday Night Check snapshot (not refreshed; no fresh ESPN pull). Bijan + Andrews on SNF still in progress (tied 23-23, 0:40 left in 4th) at ~11:20 PM ET."
+      "note": "as of the 7:47 PM ET Sunday Night Check snapshot (not refreshed; no fresh ESPN pull). Bijan + Andrews have since finished (SNF final in OT); an unofficial PPR arithmetic estimate still leaves JDD well short of 109.66, but this is not ESPN-confirmed."
     }
   },
   "player_signals": [
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Sunday Night BAL@ATL FINAL/OT: Ravens 30, Falcons 23 (ESPN summary status Final/OT; X final posts ~03:46-04:10Z). Regulation ended 23-23 after Huntley's 7-yd TD pass to Devontez Walker with 0:40 left and Henry's 2-pt run; Baltimore won it with Huntley's 1-yd TD run in OT (2:57 left) and Kyle Hamilton intercepted Tua Tagovailoa to end it. NEW: Penix suffered a rib injury late. ESPN play-by-play: he was sacked/fumbled at 0:27 of the 4th (~03:21Z) with 'ATL-M.Penix was injured during the play', returned at 0:13 ('Injury Update: ATL-M.Penix has returned to the game'), then left again; Falcons reporter Tori McElhaney posted 'Michael Penix Jr. has a rib injury and is questionable to return. Tua Tagovailoa coming back in' (~03:43Z, during OT) and relayed that, per the Falcons head coach (named in her post as Kevin Stefanski), 'We will know more once we get imaging done' and Penix tried to get comfortable on the sideline but couldn't by the 4th quarter. A non-official X account says he took a shot to the ribs and never took an OT snap (not independently confirmed). ESPN's game injury table now lists Penix Questionable (ribs). Final line per ESPN box score: 19/32, 240 yds, 1 TD (Kyle Pitts, 5 yds), 0 INT, 3 sacks, 2 rush for 8 yds, 1 fumble (0 lost per box). No imaging result, diagnosis, or Week 6 status has been reported as of this read (~04:15Z).",
+      "mongo_impact": "Bench QB (no Week 5 points for JDD). New injury designation vs prior Pulse: rib injury, imaging pending, Week 6 availability unknown. Intelligence only; no roster/lineup/IR/FAAB action taken by Pulse and no ESPN transaction made.",
+      "urgency": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://x.com/tori_mcelhaney/status/2109490101482881032",
+        "https://x.com/tori_mcelhaney/status/2109493967855235195",
+        "https://x.com/tori_mcelhaney/status/2109494848105730074",
+        "https://x.com/nflnetwork/status/2109496508026438048",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993",
+        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
+      ]
+    },
     {
       "player": "Mark Andrews",
       "team": "BAL",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Andrews per ESPN box score at that time: 2 receptions for 12 yards on 4 targets plus 1 fumble lost (Jessie Bates 36-yd return TD, 1st quarter). Still playing; no injury designation or report for Andrews on X/Ravens/beat through ~11:20 PM ET. Lamar Jackson remains OUT; Huntley is the BAL QB (19/27, 173 yds, 2 TD, 0 INT). Ravens team posts at 02:45Z list DL Broderick Washington Jr. (ankle) questionable to return; Hibner status not updated from the prior Pulse.",
-      "mongo_impact": "Starter TE, game still in progress/not final; no injury or status change vs prior Pulse. Fumble lost remains a negative fantasy event; no final line yet. No lineup action taken.",
+      "summary": "Sunday Night BAL@ATL FINAL/OT: Ravens 30, Falcons 23 (ESPN summary status Final/OT; X final posts ~03:46-04:10Z). Regulation ended 23-23 after Huntley's 7-yd TD pass to Devontez Walker with 0:40 left and Henry's 2-pt run; Baltimore won it with Huntley's 1-yd TD run in OT (2:57 left) and Kyle Hamilton intercepted Tua Tagovailoa to end it. Andrews per ESPN box score: 4 receptions, 28 yards, 0 TD on 6 targets (long 10), 1 fumble lost (returned 36 yds for a TD by Jessie Bates III in the 1st quarter). Lamar Jackson was OUT (ankle sprain, ESPN injury table) and Tyler Huntley started (24/32, 201 yds, 2 TD, 0 INT, 3 sacks; 6 rush for 20 yds and the OT TD). No postgame injury report found for Andrews on X/ESPN play-by-play (no 'injured during the play' entry for him). Hibner returned to the game earlier per play-by-play (02:13Z); Broderick Washington Jr. (ankle) listed Questionable in ESPN table (context only).",
+      "mongo_impact": "Starter TE; game final, no injury or role change vs prior Pulse. Fantasy points not recomputed (no fresh ESPN pull).",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993",
-        "https://x.com/Ravens/status/2109475548535648626",
-        "https://x.com/willmcfadden/status/2109483795028013437",
-        "https://x.com/BradJamesRadio/status/2109483931078938803",
-        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
+        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json",
+        "https://x.com/Ravens/status/2109475548535648626"
       ]
     },
     {
@@ -99,24 +115,8 @@
       "team": "ATL",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Bijan per ESPN box score at that time: 17 carries for 86 yards (long 38) and 3 receptions for 18 yards on 6 targets, no TD. No in-game injury report on X/team/beat through ~11:20 PM ET; he was on the field late in the 4th (X: ryan_slonaker ~03:08Z).",
-      "mongo_impact": "Starter RB, game still in progress/not final; productive, no injury or status change vs prior Pulse.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993",
-        "https://x.com/ryan_slonaker/status/2109481371274260982",
-        "https://x.com/willmcfadden/status/2109483795028013437",
-        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
-      ]
-    },
-    {
-      "player": "Michael Penix Jr.",
-      "team": "ATL",
-      "slot": "bench",
-      "status": "CONFIRMED_FACT",
-      "summary": "Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Penix (Mongo bench, no fantasy points count for JDD) per ESPN box score: 18/30 for 222 yards, 1 TD (to Kyle Pitts), 0 INT, 2 carries for 8 yards. No in-game injury report found.",
-      "mongo_impact": "Bench QB; no lineup effect, no injury.",
+      "summary": "Sunday Night BAL@ATL FINAL/OT: Ravens 30, Falcons 23 (ESPN summary status Final/OT; X final posts ~03:46-04:10Z). Regulation ended 23-23 after Huntley's 7-yd TD pass to Devontez Walker with 0:40 left and Henry's 2-pt run; Baltimore won it with Huntley's 1-yd TD run in OT (2:57 left) and Kyle Hamilton intercepted Tua Tagovailoa to end it. Bijan per ESPN box score: 17 carries, 86 yards (long 38), 0 TD; 4 receptions, 32 yards on 7 targets (prior Pulse had 3 rec/18 yds mid-game). Brian Robinson Jr. had 7 carries for 16 yards. No injury to Bijan appears in play-by-play or the ESPN injury table, and none found on X through ~04:15Z.",
+      "mongo_impact": "Starter RB; game final, no injury or status change.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
@@ -125,86 +125,28 @@
       ]
     },
     {
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "slot": "QB",
-      "status": "CONFIRMED_FACT",
-      "summary": "Final: JAX 19, PHI 17. ESPN snapshot score 15.0 pts. No injury reported.",
-      "mongo_impact": "Starter QB game complete.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.espn.com/nfl/scoreboard",
-        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
-      ]
-    },
-    {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
-      "slot": "WR",
-      "status": "CONFIRMED_FACT",
-      "summary": "TNF final: TB 24, DAL 16. ESPN snapshot score 2.9 pts; ESPN injury tag Q. Game complete.",
-      "mongo_impact": "Starter WR game complete.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.espn.com/nfl/scoreboard",
-        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
-      ]
-    },
-    {
-      "player": "Raiders D/ST",
-      "team": "LV",
-      "slot": "D/ST",
-      "status": "CONFIRMED_FACT",
-      "summary": "Final: NE 45, LV 17. ESPN snapshot D/ST score 2.0 pts.",
-      "mongo_impact": "Starter D/ST game complete.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.espn.com/nfl/scoreboard",
-        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
-      ]
-    },
-    {
-      "player": "Kendre Miller / Luther Burden III / Josh Downs / Keaton Mitchell",
-      "team": "NO/CHI/IND/LAC",
+      "player": "Jalen Hurts / CeeDee Lamb / Raiders D/ST / Kendre Miller / Luther Burden III / Josh Downs / Keaton Mitchell",
+      "team": "PHI/DAL/LV/NO/CHI/IND/LAC",
       "slot": "starters",
       "status": "CONFIRMED_FACT",
-      "summary": "Games final. ESPN snapshot fantasy pts: Miller 9.0, Downs 7.7, Burden 8.9, Mitchell 5.9. No injuries reported.",
+      "summary": "Games final per prior Pulse (JAX 19 PHI 17; TB 24 DAL 16; NE 45 LV 17; NO, CHI, IND, LAC losses). Fantasy points as of the 7:47 PM ET ESPN snapshot (Hurts 15.0, Lamb 2.9, Raiders D/ST 2.0, Miller 9.0, Downs 7.7, Burden 8.9, Mitchell 5.9); not refreshed. No new news read for these players this run.",
       "mongo_impact": "Results only; no status change.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json",
-        "https://www.espn.com/nfl/scoreboard"
-      ]
-    },
-    {
-      "player": "George Holani / Kaelon Black",
-      "team": "SEA/SF",
-      "slot": "bench",
-      "status": "CONFIRMED_FACT",
-      "summary": "SF-SEA final: SF 32, SEA 29. ESPN snapshot fantasy pts: Holani 7.1, Black 1.6. No injury to either found.",
-      "mongo_impact": "Bench only.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.espn.com/nfl/scoreboard",
         "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
       ]
     },
     {
-      "player": "Isaac TeSlaa / Oronde Gadsden",
-      "team": "DET/LAC",
+      "player": "George Holani / Kaelon Black / Isaac TeSlaa / Oronde Gadsden / Tetairoa McMillan",
+      "team": "SEA/SF/DET/LAC/CAR",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "DET-ARI final: DET 45, ARI 21; TeSlaa 0.0 pts. Gadsden 0.0 pts. No injuries found.",
-      "mongo_impact": "Bench only.",
+      "summary": "Bench only; carried from prior Pulse (ESPN snapshot pts Holani 7.1, Black 1.6, TeSlaa 0.0, Gadsden 0.0; McMillan on BYE). No new news read this run.",
+      "mongo_impact": "None.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.espn.com/nfl/scoreboard",
         "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
       ]
     },
@@ -212,14 +154,28 @@
       "player": "Ray Davis",
       "team": "BUF",
       "slot": "bench",
-      "status": "CONFIRMED_FACT",
-      "summary": "BUF plays at LAR on Monday night (8:15 PM ET Mon Oct 12 per ESPN scoreboard). Official inactives are not due until Monday pregame. An X search for Ray Davis/Bills backfield news since Sunday afternoon returned 0 results; no new Davis status found. Nothing new on early-Monday waiver news was read.",
-      "mongo_impact": "No new information.",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "BUF at LAR is Monday night Oct 12, 8:15 PM ET. A non-official X thread (T_Will5, ~23:15Z Oct 11, text partly truncated in the API result) listing the final injury report shows Bills OUT: Joshua Palmer (shoulder), Ed Oliver (knee); QUESTIONABLE: DJ Moore (shoulder), Dee Alford (ankle), Landon Jackson (knee). No Ray Davis designation appears in the visible portion, but the post was truncated and not an official team source. Official inactives are not due until Monday pregame. Rams per a separate non-official post: Aaron Donald, Colby Parkinson, Jaylen Watson cleared (no designation).",
+      "mongo_impact": "Bench RB; no known designation, but unverified. Monday-night inactives still pending.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json",
-        "https://www.espn.com/nfl/scoreboard"
+        "https://x.com/T_Will5/status/2109422544474251530",
+        "https://x.com/RambLAngMan/status/2109440437056401670",
+        "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
+      ]
+    },
+    {
+      "player": "Lamar Jackson",
+      "team": "BAL",
+      "slot": "not on Mongo roster (context)",
+      "status": "CONFIRMED_FACT",
+      "summary": "Lamar Jackson was OUT for SNF (ankle sprain per ESPN injury table, inactive); Tyler Huntley started and won the game. Return timeline for Week 6 not reported in sources read.",
+      "mongo_impact": "Context only; not a Mongo-owned player per roster context.",
+      "urgency": "LOW",
+      "availability": "UNKNOWN",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993"
       ]
     },
     {
@@ -227,12 +183,12 @@
       "team": "various",
       "slot": "n/a",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Context only, none on the Mongo roster (availability UNKNOWN, not FREE_AGENT_CONFIRMED): BAL DL Broderick Washington Jr. (ankle) questionable to return per Ravens X ~10:45 PM ET; Ravens DT Travis Jones and S Kyle Hamilton were reported hurt in-game on X by non-official accounts (Hamilton reported returned); no official Ravens statements read for those two. Falcons CB C.J. Henderson QTR (groin) carried from prior. Prior items (Harrison Jr. traded to HOU, Montgomery/Henderson(NE)/Hockenson OUT, Deebo OUT) carried. NFL Pulse Bot 10:51 PM ET scan (2026-10-11-2251) was QUIET: 0 accepted, 0 escalations, no skill-position OUT flips in SNF.",
+      "summary": "Context only, none on the Mongo roster (availability UNKNOWN, not FREE_AGENT_CONFIRMED): Marvin Harrison Jr. traded ARI to HOU, Montgomery, Henderson (NE), Hockenson OUT and Deebo Samuel OUT carried from prior Pulses. Falcons CB C.J. Henderson Questionable (groin) and Ravens DL Broderick Washington Jr. Questionable (ankle) per ESPN injury table. Falcons backup QB Tua Tagovailoa played in OT after Penix left (context; ownership not checked). NFL Pulse Bot scans after 2251 (22:51 ET): none found on box; newest scan dir remains 2026-10-11-2251 (QUIET).",
       "mongo_impact": "NONE",
       "urgency": "LOW",
       "availability": "UNKNOWN",
       "sources": [
-        "https://x.com/Ravens/status/2109475548535648626",
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993",
         "/workspace/prime-nfl-pulse/scans/2026-10-11-2251/scan_outcome.md"
       ]
     }
@@ -242,7 +198,7 @@
       "player": "Rashod Bateman",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Dropped Oct 9 per repo. Not FREE_AGENT_CONFIRMED; not re-verified.",
+      "summary": "Dropped Oct 9 per repo; played in SNF per play-by-play (reception from Huntley). Not FREE_AGENT_CONFIRMED; ownership not re-verified.",
       "mongo_impact": "Do not reclaim without ESPN ownership check.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -251,10 +207,22 @@
       ]
     },
     {
+      "player": "Tua Tagovailoa (ATL backup QB; context)",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "Entered the SNF OT after Penix left. No ESPN ownership check was done; this is not an add recommendation.",
+      "mongo_impact": "None; Mongo already owns Penix. Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993"
+      ]
+    },
+    {
       "player": "generic_watch_only",
       "availability": "UNKNOWN",
       "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names from this scan.",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names from this scan. No Monday waiver-run news was read.",
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -269,43 +237,65 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Playing in SNF (tied 23-23, 0:40 left, not final); 2 rec/12 yds, 1 fumble lost; no injury.",
+      "summary": "SNF final: 4 rec/28 yds, 1 fumble lost; no injury.",
       "urgency": "LOW"
     },
     {
       "player": "Bijan Robinson",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Playing in SNF (not final); 17 car/86 yds, 3 rec/18 yds; no injury found.",
+      "summary": "SNF final: 17 car/86 yds, 4 rec/32 yds, no TD; no injury.",
       "urgency": "LOW"
     },
     {
       "player": "Hurts / Miller / Lamb / Downs / Burden / Mitchell / Raiders D/ST",
       "slot": "starters",
       "status": "CONFIRMED_FACT",
-      "summary": "All games final; pts as previously logged. No injuries.",
+      "summary": "All games final; pts as of the 7:47 PM ET ESPN snapshot. No new injuries read.",
       "urgency": "LOW"
     },
     {
-      "player": "Holani / Black / TeSlaa / Gadsden / Penix / Davis",
+      "player": "Penix (bench)",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "NEW rib injury, imaging pending, left SNF OT; no lineup effect for Week 5.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Holani / Black / TeSlaa / Gadsden / Davis",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Bench-only; Penix playing SNF; Davis plays MNF (BUF@LAR); no injuries found.",
+      "summary": "Bench-only; Davis plays MNF (BUF@LAR, 8:15 PM ET), inactives pending.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [],
-  "material_changes": [],
-  "no_material_change": true,
-  "summary": "11:20 PM ET Sunday hourly (Week 5). No Mongo-owned player's injury status or designation materially changed since the 10 PM ET Pulse (mongo-grok-pulse-2026-10-12T021841Z). Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Bijan 17 car/86 yds, 3 rec/18 yds; Andrews 2 rec/12 yds with 1 fumble lost; Penix (bench) 18/30 222 yds 1 TD; Lamar OUT, Huntley playing. No injury report for Andrews, Bijan or Penix. Context only: BAL DL Washington (ankle) QTR. Monday night BUF@LAR 8:15 PM ET; Ray Davis inactives not yet due, no news found. ESPN state from the Sunday Night Check 7:48 PM ET snapshot (no fresh ESPN pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T021841Z",
-  "prior_completed_at": "2026-10-12T02:18:41Z",
-  "prior_commit": "2de52a71d6cc39fcd86a6e8d10460522c52f9b5b",
+  "material_changes": [
+    {
+      "player": "Michael Penix Jr.",
+      "change": "NEW in-game rib injury in SNF (sacked/fumbled at 0:27 of 4Q, returned, then left; did not take an OT snap per non-official X, Tua entered); Falcons reporter relays 'imaging' pending; ESPN game injury table lists Questionable (ribs).",
+      "status": "ATTRIBUTED_REPORT",
+      "availability": "OWNED",
+      "mongo_impact": "Bench QB; Week 6 availability unknown pending imaging. No lineup effect this week.",
+      "urgency": "MEDIUM",
+      "sources": [
+        "https://x.com/tori_mcelhaney/status/2109490101482881032",
+        "https://x.com/tori_mcelhaney/status/2109493967855235195",
+        "https://x.com/tori_mcelhaney/status/2109494848105730074",
+        "https://x.com/nflnetwork/status/2109496508026438048"
+      ]
+    }
+  ],
+  "no_material_change": false,
+  "summary": "12 AM ET Monday overnight (Week 5). Sunday Night BAL@ATL FINAL/OT: Ravens 30, Falcons 23 (ESPN summary status Final/OT; X final posts ~03:46-04:10Z). Regulation ended 23-23 after Huntley's 7-yd TD pass to Devontez Walker with 0:40 left and Henry's 2-pt run; Baltimore won it with Huntley's 1-yd TD run in OT (2:57 left) and Kyle Hamilton intercepted Tua Tagovailoa to end it. One material change for a Mongo-owned player: bench QB Michael Penix Jr. (ATL) suffered a rib injury late in SNF, was questionable to return and left in OT (Tua Tagovailoa entered); imaging pending per Falcons reporter Tori McElhaney, no diagnosis yet. Andrews final 4 rec/28 yds on 6 targets with 1 fumble lost; Bijan final 17 car/86 yds, 4 rec/32 yds; no injury for either. Lamar Jackson was OUT (Huntley started, 30-23 win). Matchup: the 7:47 PM ET ESPN snapshot had JDD 51.4 vs C$ 109.66 with only Bijan and Andrews left; adding their SNF lines under approximate PPR arithmetic still leaves JDD well short (unofficial estimate, ESPN not re-pulled; not ESPN-confirmed). Ray Davis plays MNF 8:15 PM ET; no official status yet. ESPN state from the Sunday Night Check 7:48 PM ET snapshot (lineup unchanged, FAAB $74, no new transactions); no fresh ESPN pull this run. Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T032023Z",
+  "prior_completed_at": "2026-10-12T03:20:23Z",
+  "prior_commit": "2b17c2145b19add5218a9fc23996e0d776adde81",
   "source_status_notes": {
-    "official_nfl_team": "LIMITED: only official Ravens X posts read (Washington ankle QTR, Huntley/Flowers play); no official injury tables or Falcons account read.",
-    "beat_reporting": "OK: X beat/media posts (Will McFadden, Ravens, Ryan Slonaker, Brad James Radio) read directly.",
-    "x_direct": "OK: x connector reads succeeded (5 calls, 1 returned 0 results; no rate limiting hit).",
-    "experts": "LIMITED: no expert or ranking sites read; expert_signals empty.",
+    "official_nfl_team": "LIMITED: no official team injury tables or team statements read; ESPN public game summary (box score, play-by-play, injury table) and Falcons team reporter Tori McElhaney's X posts only.",
+    "beat_reporting": "OK: Falcons beat/team reporter posts (Tori McElhaney), NFL Network and many game-final posts read directly on X.",
+    "x_direct": "OK: x connector reads succeeded (6 calls: 5 search/post reads + 1 user timeline), no rate limiting hit; 1 search returned 0 results.",
+    "experts": "LIMITED: no expert/ranking sites read; expert_signals empty.",
     "analytics": "UNAVAILABLE: no analytics source read."
   }
 }
