@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-12T002913Z",
-  "generated_at": "2026-10-12T00:27:10Z",
-  "completed_at": "2026-10-12T00:29:13Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-12T012100Z",
+  "generated_at": "2026-10-12T01:18:00Z",
+  "completed_at": "2026-10-12T01:21:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-12T00:29:13Z",
+  "as_of": "2026-10-12T01:21:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Newest Mongo ESPN state: Mongo Sunday Night Check 7:48 PM ET Oct 11 (espn_live_20261011_1948.json), authenticated ESPN read-only snapshot captured 7:47 PM ET: lineup unchanged vs noon, IR unchanged, FAAB $74, record 3-1-0, matchup JDD 51.4 vs C$ 109.66 (C$ finished; Bijan + Andrews yet to play), no new JDD or league transactions after Sun Oct 11 12:37 am. Cited as ESPN state source; this Pulse did NOT do its own ESPN pull. No roster write by Pulse.",
+    "source": "Newest Mongo ESPN state: Mongo Sunday Night Check 7:48 PM ET Oct 11 (espn_live_20261011_1948.json), authenticated ESPN read-only snapshot captured 7:47 PM ET: lineup unchanged vs noon, IR unchanged, FAAB $74, record 3-1-0, matchup JDD 51.4 vs C$ 109.66 (C$ finished; Bijan + Andrews yet to play at snapshot time), no new JDD or league transactions after Sun Oct 11 12:37 am. Cited as ESPN state source; this Pulse did NOT do its own ESPN pull. No roster write by Pulse.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -73,7 +73,7 @@
       "opponent": "$Cmoney$ (C$)",
       "opponent_score": 109.66,
       "jdd_yet_to_play": 2,
-      "note": "as of 7:47 PM ET snapshot; Bijan + Andrews on SNF"
+      "note": "as of 7:47 PM ET snapshot; Bijan + Andrews on SNF now in progress"
     }
   },
   "player_signals": [
@@ -82,14 +82,14 @@
       "team": "BAL",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "SNF BAL@ATL kicked off ~8:21 PM ET (Falcons deferred; Ravens received). Andrews is active (not on official Ravens inactives; ESPN 7:47 PM ET snapshot: no injury tag, yet to play). Direct X read of Schefter/Rapoport/Zrebiec/Ravens/Falcons posts through ~8:27 PM ET found no in-game injury report for Andrews. Lamar Jackson officially OUT; Huntley is the Ravens' QB (ESPN scoreboard shows T. Huntley QB #5 passing leader). Game is only minutes old.",
-      "mongo_impact": "Starter TE in progress; no injury or status change found. No lineup action taken.",
+      "summary": "SNF BAL@ATL in progress (2nd quarter ~12 min remaining, Ravens 3-7 Falcons per ESPN live). Andrews active; has 1 rec for 9 yards and a fumble (Jessie Bates 36-yd return TD) in 1st quarter. No injury designation or report found on X/team/beat through ~9:20 PM ET. Matt Hibner (other TE) listed questionable to return (hand) per Ravens account. Lamar Jackson remains OUT; Huntley QB.",
+      "mongo_impact": "Starter TE in progress; fumble is negative fantasy scoring event. No status change for future weeks. No lineup action taken.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://x.com/jeffzrebiec/status/2109439304636506482",
-        "https://x.com/Ravens/status/2109440203442298994",
-        "https://www.espn.com/nfl/scoreboard",
+        "https://www.espn.com/nfl/game/_/gameId/401872993/ravens-falcons",
+        "https://x.com/Ravens/status/2109449911804506262",
+        "https://www.nfl.com/videos/can-t-miss-play-scoop-and-score-alert-jessie-bates-iii-returns-mark-andrews-fumble-for-td-on-snf",
         "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
       ]
     },
@@ -98,12 +98,12 @@
       "team": "ATL",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Active for SNF (not on Falcons official inactives; ESPN 7:47 PM ET snapshot: no injury tag, yet to play). Game just underway ~8:21 PM ET; no in-game injury report found on direct X read through ~8:27 PM ET (Falcons account posted pregame 'All eyes on Bijan' only).",
+      "summary": "Active for SNF; game in progress. No in-game injury report found through ~9:20 PM ET on direct X, team, or beat. Playing.",
       "mongo_impact": "Starter RB in progress; no injury or status change found.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://x.com/AtlantaFalcons/status/2109434810011619833",
+        "https://www.espn.com/nfl/game/_/gameId/401872993/ravens-falcons",
         "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
       ]
     },
@@ -112,12 +112,11 @@
       "team": "ATL",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Active for SNF (bench; ESPN proj 17.8). No in-game injury report found through ~8:27 PM ET. Note: ESPN's public game-page injury table still lists a stale offseason ACL entry for Penix (est. return Aug 1); this conflicts with his active status and the official Falcons inactive list, and was treated as stale site data, not a current designation.",
+      "summary": "Active for SNF (bench). No in-game injury report found through ~9:20 PM ET.",
       "mongo_impact": "Bench QB; no start impact.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.atlantafalcons.com/news/atlanta-falcons-week-5-inactives-vs-baltimore-ravens-on-sunday-night-football",
         "https://www.espn.com/nfl/game/_/gameId/401872993/ravens-falcons"
       ]
     },
@@ -155,7 +154,7 @@
       "slot": "D/ST",
       "status": "CONFIRMED_FACT",
       "summary": "Final: NE 45, LV 17. ESPN snapshot D/ST score 2.0 pts.",
-      "mongo_impact": "Starter D/ST game complete; line now verified from ESPN snapshot.",
+      "mongo_impact": "Starter D/ST game complete.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
@@ -168,7 +167,7 @@
       "team": "NO/CHI/IND/LAC",
       "slot": "starters",
       "status": "CONFIRMED_FACT",
-      "summary": "Games final (NO 13-23 MIN, CHI 7-31 GB, IND 22-34 PIT, LAC 17-23 DEN). ESPN snapshot fantasy pts: Miller 9.0, Downs 7.7, Burden 8.9, Mitchell 5.9. No injuries reported (carried from prior Pulse box-score reads).",
+      "summary": "Games final. ESPN snapshot fantasy pts: Miller 9.0, Downs 7.7, Burden 8.9, Mitchell 5.9. No injuries reported.",
       "mongo_impact": "Results only; no status change.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -182,8 +181,8 @@
       "team": "SEA/SF",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "SF-SEA final: SF 32, SEA 29 (ESPN scoreboard). ESPN snapshot fantasy pts: Holani 7.1 (SEA L 29-32), Black 1.6 (SF W 32-29). Prior unverified final now verified. No injury to either found.",
-      "mongo_impact": "Bench only; no start impact.",
+      "summary": "SF-SEA final: SF 32, SEA 29. ESPN snapshot fantasy pts: Holani 7.1, Black 1.6. No injury to either found.",
+      "mongo_impact": "Bench only.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
@@ -196,7 +195,7 @@
       "team": "DET/LAC",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "DET-ARI final: DET 45, ARI 21 (ESPN scoreboard); TeSlaa 0.0 pts. Gadsden 0.0 pts (LAC L 17-23). No injuries found.",
+      "summary": "DET-ARI final: DET 45, ARI 21; TeSlaa 0.0 pts. Gadsden 0.0 pts. No injuries found.",
       "mongo_impact": "Bench only.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -210,7 +209,7 @@
       "team": "BUF",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "BUF plays at LAR on Monday night (ESPN lists Mon Oct 12; JDD roster shows Mon 8:15 PM, proj 1.0). Official inactives not due until Monday pregame; nothing new found.",
+      "summary": "BUF plays at LAR on Monday night. Official inactives not due until Monday pregame; nothing new found.",
       "mongo_impact": "No new information.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -224,15 +223,12 @@
       "team": "various",
       "slot": "n/a",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Per NFL Pulse intake (scan 1951 quiet, 0 accepted; no escalations since 1851) and prior direct X reads: Hockenson, Concepcion, Montgomery, Henderson, Deebo Samuel OUT; Tre' Harris LAC WR still soft QTR (no Tier-1 OUT stamp); Flowers ACTIVE for SNF (Ravens X 'First down Zay Flowers' ~8:25 PM ET); MHJ traded ARI to HOU (Schefter ~8:16 PM ET follow-up on the completed trade). Rapoport ~8:26 PM ET: Packers DT Javon Hargrave believed to have torn Achilles. Not on the Mongo roster per ESPN 7:47 PM ET snapshot.",
+      "summary": "Hibner QTR (hand) in-game. No other new material context for Mongo roster. Prior items (MHJ to HOU, Montgomery/Henderson/Hockenson OUT, Deebo OUT) carried; not on roster, availability UNKNOWN.",
       "mongo_impact": "NONE",
       "urgency": "LOW",
       "availability": "UNKNOWN",
       "sources": [
-        "https://x.com/Ravens/status/2109440203442298994",
-        "https://x.com/AdamSchefter/status/2109437996907024637",
-        "https://x.com/RapSheet/status/2109440645924618692",
-        "/workspace/prime-nfl-pulse/scans/2026-10-11-1951/digest.md"
+        "https://x.com/Ravens/status/2109449911804506262"
       ]
     }
   ],
@@ -241,37 +237,25 @@
       "player": "Rashod Bateman",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Dropped Oct 9 per repo ed7b846. Not FREE_AGENT_CONFIRMED; not re-verified.",
+      "summary": "Dropped Oct 9 per repo. Not FREE_AGENT_CONFIRMED; not re-verified.",
       "mongo_impact": "Do not reclaim without ESPN ownership check.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "sources": [
-        "Repo ed7b846"
+        "Repo"
       ]
     },
     {
-      "player": "Marvin Harrison Jr.",
+      "player": "generic_watch_only",
       "availability": "UNKNOWN",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Traded ARI to HOU (agreed ~4:24 PM ET Sun) per Rapoport/Schefter/Pelissero via NFL Pulse intake. Not on repo roster; ESPN ownership not checked, so availability UNKNOWN, not FREE_AGENT_CONFIRMED. Context only.",
-      "mongo_impact": "Context only; unowned by Mongo.",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names from this scan.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
       "sources": [
-        "https://x.com/RapSheet/status/2109379599939559824",
-        "https://x.com/AdamSchefter/status/2109437996907024637"
-      ]
-    },
-    {
-      "player": "David Montgomery / TreVeyon Henderson / T.J. Hockenson",
-      "availability": "UNKNOWN",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Monday-waiver watch context from NFL Pulse (all ruled OUT in-game Sun). Not on Mongo roster; ESPN availability not checked, so UNKNOWN.",
-      "mongo_impact": "Context only; no add advice.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "sources": [
-        "/workspace/prime-nfl-pulse/scans/2026-10-11-1951/digest.md"
+        "AGENTS.md",
+        "Mongo repo"
       ]
     }
   ],
@@ -280,36 +264,36 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Active; SNF just underway; no in-game injury found.",
+      "summary": "Active; in progress with 1-9 and a fumble returned for TD. No injury.",
       "urgency": "LOW"
     },
     {
       "player": "Bijan Robinson",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Active; SNF just underway; no in-game injury found.",
+      "summary": "Active; in progress; no injury found.",
       "urgency": "LOW"
     },
     {
       "player": "Hurts / Miller / Lamb / Downs / Burden / Mitchell / Raiders D/ST",
       "slot": "starters",
       "status": "CONFIRMED_FACT",
-      "summary": "All games final; ESPN snapshot pts: Hurts 15.0, Miller 9.0, Lamb 2.9, Downs 7.7, Burden 8.9, Mitchell 5.9, Raiders D/ST 2.0. No injuries.",
+      "summary": "All games final; pts as previously logged. No injuries.",
       "urgency": "LOW"
     },
     {
       "player": "Holani / Black / TeSlaa / Gadsden / Penix / Davis",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Bench-only impact; Penix active for SNF; Davis plays MNF; no injuries found.",
+      "summary": "Bench-only; Penix active for SNF; Davis MNF; no injuries.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "8 PM ET Sunday hourly (Week 5). No Mongo-owned player's status materially changed since the 7:21 PM ET Pulse. SNF BAL@ATL kicked off ~8:21 PM ET; direct X reads through ~8:27 PM ET found no in-game injury for Andrews, Bijan or Penix (bench); Lamar Jackson remains OUT (Huntley). Final scores now verified for SF 32-SEA 29 and DET 45-ARI 21 (Holani 7.1, Black 1.6, TeSlaa 0.0 per ESPN 7:47 PM ET snapshot), plus Hurts 15.0, Lamb 2.9, Raiders D/ST 2.0. NFL Pulse scan 1951 was quiet (0 accepted). Context-only items (MHJ to HOU, Montgomery/Henderson/Hockenson, Deebo) are not on the Mongo roster; availability UNKNOWN. ESPN state from the Sunday Night Check 7:48 PM ET snapshot (no fresh ESPN pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-11T232137Z",
-  "prior_completed_at": "2026-10-11T23:21:37Z",
-  "prior_commit": "e7b145b2d37b2a5f18f038a1b78de3835c650179"
+  "summary": "9:20 PM ET Sunday hourly (Week 5). No Mongo-owned player's status or designation materially changed since the 8:29 PM ET Pulse. SNF BAL@ATL in 2nd quarter (Ravens 3-7 Falcons); Andrews has 1 reception for 9 yards and a fumble returned for a TD (negative fantasy event); no injury report. Bijan and Penix active, no injuries. Hibner QTR is context only. All other Week 5 games for roster final as previously verified. ESPN state from the Sunday Night Check 7:48 PM ET snapshot (no fresh ESPN pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T002913Z",
+  "prior_completed_at": "2026-10-12T00:29:13Z",
+  "prior_commit": "ea12c0e36537e5f47b32b017c10c42b685845c96"
 }
