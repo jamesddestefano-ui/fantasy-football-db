@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-12T112500Z",
-  "generated_at": "2026-10-12T11:20:00Z",
-  "completed_at": "2026-10-12T11:25:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-12T152612Z",
+  "generated_at": "2026-10-12T15:26:12Z",
+  "completed_at": "2026-10-12T15:26:12Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-12T11:25:00Z",
+  "as_of": "2026-10-12T15:26:12Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Newest Mongo ESPN state: Mongo Sunday Night Check 7:48 PM ET Oct 11 (espn_live_20261011_1948.json), authenticated ESPN read-only snapshot captured 7:47 PM ET: lineup unchanged vs noon, IR unchanged, FAAB $74, record 3-1-0, matchup JDD 51.4 vs C$ 109.66 (C$ finished; Bijan + Andrews yet to play at snapshot time), no new JDD or league transactions after Sun Oct 11 12:37 am. Cited as ESPN state source; this Pulse did NOT do its own ESPN pull. No roster write by Pulse.",
+    "source": "Mongo Live Check 8:26 AM ET Oct 12 (authenticated ESPN read-only): roster/lineup/IR unchanged, FAAB $74, record 3-1-0, matchup JDD 74.0 vs $Cmoney$ 109.66 with Ray Davis (MNF) left. Pulse did no ESPN pull.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -69,11 +69,11 @@
     "live_check_ref": "mongo_sunday_night_check_20261011_1948_ET_espn",
     "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN.",
     "week_5_matchup_snapshot": {
-      "jdd_score": 51.4,
+      "jdd_score": 74.0,
       "opponent": "$Cmoney$ (C$)",
       "opponent_score": 109.66,
-      "jdd_yet_to_play": 2,
-      "note": "as of the 7:47 PM ET Sunday Night Check snapshot (not refreshed; no fresh ESPN pull). Bijan + Andrews have since finished (SNF final in OT); an unofficial PPR arithmetic estimate still leaves JDD well short of 109.66, but this is not ESPN-confirmed."
+      "jdd_yet_to_play": 1,
+      "note": "per 8:26 AM ET Live Check; Ray Davis MNF remaining"
     }
   },
   "player_signals": [
@@ -82,14 +82,15 @@
       "team": "ATL",
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new update since prior Pulse. Imaging still pending Monday per coach Stefanski and official reports (The Athletic, Reuters, CBS). Postgame comments: expects to be ready for Week 6, does not believe long-term. No diagnosis or official designation yet. No imaging results published as of ~7:25 AM ET.",
+      "summary": "No imaging results published as of ~11 AM ET Monday. Stefanski: imaging Monday, timeline after testing. Penix self-report: not long-term, expects to play W6 vs CHI (player self-report, not medical update). AJC 10:47 AM ET repeats same; no diagnosis/designation.",
       "mongo_impact": "Bench QB. Timeline optimistic but unconfirmed pending imaging. No Week 5 lineup effect. Intelligence only.",
       "urgency": "MEDIUM",
       "availability": "OWNED",
       "sources": [
         "https://www.atlantafalcons.com/news/michael-penix-jr-sunday-night-football-rib-injury",
-        "https://www.reuters.com/sports/falcons-qb-michael-penix-jr-doesnt-expect-rib-injury-be-long-term--flm-2026-10-12/",
-        "https://www.nytimes.com/athletic/7683285/2026/10/12/falcons-michael-penix-jr-injury-loss-ravens-sunday-night-football/"
+        "https://www.nfl.com/news/falcons-qb-michael-penix-jr-ribs-says-injury-isn-t-long-term-will-be-ok",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-on-michael-penixs-rib-injury-well-know-more-as-we-get-imaging",
+        "https://www.ajc.com/sports/2026/10/falcons-penix-injury-return-likely/"
       ]
     },
     {
@@ -97,13 +98,14 @@
       "team": "BUF",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Plays MNF BUF at LAR 8:15 PM ET Oct 12. Full participant in practice all week (hamstring), no game status designation (expected to play). Official inactives not yet out (~90 min pregame). Confirmed via Bills site and multiple reports as of Oct 12 morning.",
+      "summary": "MNF BUF at LAR 8:15 PM ET tonight. Listed 'will play' on Bills final injury report (hamstring, full practice). Inactives not out yet.",
       "mongo_impact": "Bench RB; no change. Inactives pending.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
         "https://www.buffalobills.com/team/injury-report/",
-        "https://legionreport.com/is-ray-davis-playing/"
+        "https://legionreport.com/is-ray-davis-playing/",
+        "https://billswire.usatoday.com/story/sports/nfl/bills/2026/10/11/buffalo-bills-la-rams-final-injury-report-dh-moore-ed-oliver-nfl/92205145007/"
       ]
     },
     {
@@ -151,7 +153,9 @@
       "mongo_impact": "Do not reclaim without ESPN ownership check.",
       "recommendation": "NONE",
       "urgency": "NONE",
-      "sources": ["Repo"]
+      "sources": [
+        "Repo"
+      ]
     },
     {
       "player": "generic_watch_only",
@@ -161,7 +165,9 @@
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
-      "sources": ["AGENTS.md"]
+      "sources": [
+        "AGENTS.md"
+      ]
     }
   ],
   "lineup_signals": [
@@ -190,15 +196,9 @@
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "7:25 AM ET Monday hourly (Week 5). No material changes for Mongo-owned players since the 6 AM ET Pulse. Michael Penix Jr. rib injury imaging still pending (Monday); postgame comments remain optimistic for Week 6 readiness (no results yet). Ray Davis full participant, no designation, expected to play MNF (inactives pending, game at 8:15 PM ET). CeeDee Lamb quad bruise not serious. ESPN state unchanged from Sunday Night Check 7:48 PM ET snapshot (no fresh pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T100500Z",
-  "prior_completed_at": "2026-10-12T10:05:00Z",
-  "prior_commit": "d81cae72f36454081e97c0306c94cb8af2d6ed18",
-  "source_status_notes": {
-    "official_nfl_team": "LIMITED: Bills official injury report confirms Ray Davis full participant no designation; Falcons site previously covered Penix (imaging pending). No new official imaging or inactives.",
-    "beat_reporting": "OK: The Athletic, Reuters, CBS reconfirm Penix imaging Monday and optimistic comments. No new diagnosis.",
-    "x_direct": "LIMITED: limited fresh X on Mongo players; prior coverage and reflections only.",
-    "experts": "LIMITED: no new expert analysis requiring signal.",
-    "analytics": "UNAVAILABLE: no analytics source."
-  }
+  "summary": "11 AM ET Monday hourly (Week 5). No material change since 7:25 AM ET Pulse. Penix imaging results not yet public; self-report optimistic for W6 vs CHI. Ray Davis listed will-play for MNF (inactives pending). ESPN state per 8:26 AM ET Live Check: FAAB $74, 3-1-0, matchup 74.0-109.66 with Davis left. Intelligence only; no roster/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T112500Z",
+  "prior_completed_at": "2026-10-12T11:25:00Z",
+  "prior_commit": "a1e4da9e",
+  "source_status_notes": "Web search only; no direct X reads; no official team injury table read; no analytics/utilization data pulled this run."
 }
