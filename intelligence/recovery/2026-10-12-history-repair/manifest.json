@@ -1,0 +1,505 @@
+{
+  "repository": "jamesddestefano-ui/fantasy-football-db",
+  "base_commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+  "target_path": "intelligence/grok_pulse_history.jsonl",
+  "sources": [
+    {
+      "label": "repair13",
+      "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+      "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+      "bytes": 16851,
+      "sha256": "80e36ef23a3406d8940127d5dfffe0a19dbbcf7ab2ab45e5aa73ce2b10b6609c",
+      "objects": 13,
+      "url": "https://github.com/jamesddestefano-ui/fantasy-football-db/blob/bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5/intelligence/grok_pulse_history.jsonl",
+      "preservation": "Existing immutable source commit/blob; no additional raw archive is published."
+    },
+    {
+      "label": "repair10",
+      "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+      "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+      "bytes": 14219,
+      "sha256": "b9eba574561b036394ad9689f885fb2f58a13c7537f5752b046b34c4a13eab74",
+      "objects": 10,
+      "url": "https://github.com/jamesddestefano-ui/fantasy-football-db/blob/61b50c3d1c70c172a8ce7de3b42e7b083ae0162a/intelligence/grok_pulse_history.jsonl",
+      "preservation": "Existing immutable source commit/blob; no additional raw archive is published."
+    },
+    {
+      "label": "repairCurrent",
+      "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+      "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+      "bytes": 10090,
+      "sha256": "0956c6f0ed7003d62154b6cdb4e9bc556bbe77bb233161e01d6fb49cbc01af2e",
+      "objects": 7,
+      "url": "https://github.com/jamesddestefano-ui/fantasy-football-db/blob/ffe0e1955b94c093f13a27a4dc64c262b436aa70/intelligence/grok_pulse_history.jsonl",
+      "preservation": "Existing immutable source commit/blob; no additional raw archive is published."
+    }
+  ],
+  "records": [
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-10T221500Z",
+      "completed_at": "2026-10-10T22:15:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 1,
+          "end_line": 1,
+          "original_object_sha256": "25781f0d03bd86f2fc20eef40246b1f609bb13866c21f0c8e3232a8da99ce48f",
+          "normalized_object_sha256": "25781f0d03bd86f2fc20eef40246b1f609bb13866c21f0c8e3232a8da99ce48f"
+        }
+      ],
+      "output_line": 1
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-10T231500Z",
+      "completed_at": "2026-10-10T23:15:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 2,
+          "end_line": 2,
+          "original_object_sha256": "614e5cbe314ce5f6a0c964cee9eb63aa0e4f58d3ad082b9a3eea9848e9946fe5",
+          "normalized_object_sha256": "614e5cbe314ce5f6a0c964cee9eb63aa0e4f58d3ad082b9a3eea9848e9946fe5"
+        }
+      ],
+      "output_line": 2
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T002500Z",
+      "completed_at": "2026-10-11T00:25:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 3,
+          "end_line": 3,
+          "original_object_sha256": "58c595eba61980989b00ee2ab2ef3da75f0a15c0bd91e38dd3f86579c21dc367",
+          "normalized_object_sha256": "58c595eba61980989b00ee2ab2ef3da75f0a15c0bd91e38dd3f86579c21dc367"
+        }
+      ],
+      "output_line": 3
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T012000Z",
+      "completed_at": "2026-10-11T01:20:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 4,
+          "end_line": 4,
+          "original_object_sha256": "7fc1fee4340b4d31cde06c2d9af414cccda2de949931ab05bdf6ed1c174417e5",
+          "normalized_object_sha256": "7fc1fee4340b4d31cde06c2d9af414cccda2de949931ab05bdf6ed1c174417e5"
+        }
+      ],
+      "output_line": 4
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T022000Z",
+      "completed_at": "2026-10-11T02:20:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 5,
+          "end_line": 5,
+          "original_object_sha256": "98e93e72ee193f92589a2f84a3132ad1893cd064ef28a1d37abd64d1a1170941",
+          "normalized_object_sha256": "98e93e72ee193f92589a2f84a3132ad1893cd064ef28a1d37abd64d1a1170941"
+        }
+      ],
+      "output_line": 5
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T031500Z",
+      "completed_at": "2026-10-11T03:15:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 6,
+          "end_line": 6,
+          "original_object_sha256": "f4d7cc11b1d192955f08e4ed5aa812ca3796b168bd131bd5acfc0a8d0954647c",
+          "normalized_object_sha256": "f4d7cc11b1d192955f08e4ed5aa812ca3796b168bd131bd5acfc0a8d0954647c"
+        }
+      ],
+      "output_line": 6
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T042500Z",
+      "completed_at": "2026-10-11T04:25:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 7,
+          "end_line": 7,
+          "original_object_sha256": "f8c7bc26f049944c9e0a0397b9418a154a0b159eaa5e12b5385bc312abf208e0",
+          "normalized_object_sha256": "f8c7bc26f049944c9e0a0397b9418a154a0b159eaa5e12b5385bc312abf208e0"
+        }
+      ],
+      "output_line": 7
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T061000Z",
+      "completed_at": "2026-10-11T06:10:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 8,
+          "end_line": 8,
+          "original_object_sha256": "43934a81931333ce495f65ffbdabb763c31bec7b9d669948691c866bc21eca83",
+          "normalized_object_sha256": "43934a81931333ce495f65ffbdabb763c31bec7b9d669948691c866bc21eca83"
+        }
+      ],
+      "output_line": 8
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T082000Z",
+      "completed_at": "2026-10-11T08:20:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 9,
+          "end_line": 9,
+          "original_object_sha256": "dcdaa71ccef3016fb36fd1a72b22e0b256c1663a4ff5dbc4fc256e97908ccb7c",
+          "normalized_object_sha256": "dcdaa71ccef3016fb36fd1a72b22e0b256c1663a4ff5dbc4fc256e97908ccb7c"
+        }
+      ],
+      "output_line": 9
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T100500Z",
+      "completed_at": "2026-10-11T10:05:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 10,
+          "end_line": 10,
+          "original_object_sha256": "8ebbb3cbcbe205a7bb087b0d41d1e6eb17f871fce6021d0954a7385128a30115",
+          "normalized_object_sha256": "8ebbb3cbcbe205a7bb087b0d41d1e6eb17f871fce6021d0954a7385128a30115"
+        }
+      ],
+      "output_line": 10
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T111700Z",
+      "completed_at": "2026-10-11T11:17:00Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 11,
+          "end_line": 11,
+          "original_object_sha256": "a38812de90207af90bf67b45b2bf154507c093ad8643134ba1db769d9cdae314",
+          "normalized_object_sha256": "a38812de90207af90bf67b45b2bf154507c093ad8643134ba1db769d9cdae314"
+        }
+      ],
+      "output_line": 11
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T123113Z",
+      "completed_at": "2026-10-11T12:31:13Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 12,
+          "end_line": 12,
+          "original_object_sha256": "5d042b863818d73e96351ce6e3e453bd03568558552e6deb996f88926bebea6f",
+          "normalized_object_sha256": "5d042b863818d73e96351ce6e3e453bd03568558552e6deb996f88926bebea6f"
+        }
+      ],
+      "output_line": 12
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T132941Z",
+      "completed_at": "2026-10-11T13:29:41Z",
+      "sources": [
+        {
+          "commit": "bcb6c2675a6ca25243ca0d667c6f69392e0ba0e5",
+          "blob": "55cb8f1a99551184e469d5acdffaaed3ff7885d2",
+          "start_line": 13,
+          "end_line": 13,
+          "original_object_sha256": "047fcd65e8c9f50fc54e35d3dc84d327b3d72b4f917e9a41cd864a27c9bb8d33",
+          "normalized_object_sha256": "047fcd65e8c9f50fc54e35d3dc84d327b3d72b4f917e9a41cd864a27c9bb8d33"
+        }
+      ],
+      "output_line": 13
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T152200Z",
+      "completed_at": "2026-10-11T15:22:00Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 1,
+          "end_line": 1,
+          "original_object_sha256": "e668e8952a1f65645ec8fcff4b3f206a5b47a18c6f2a4bd62418b21fd650d357",
+          "normalized_object_sha256": "e668e8952a1f65645ec8fcff4b3f206a5b47a18c6f2a4bd62418b21fd650d357"
+        }
+      ],
+      "output_line": 14
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T162036Z",
+      "completed_at": "2026-10-11T16:20:36Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 2,
+          "end_line": 2,
+          "original_object_sha256": "837d5758c74111e6f913be5719de170c4a6f4b78ec99b6bf3dda2e8625e9cb69",
+          "normalized_object_sha256": "837d5758c74111e6f913be5719de170c4a6f4b78ec99b6bf3dda2e8625e9cb69"
+        }
+      ],
+      "output_line": 15
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T172000Z",
+      "completed_at": "2026-10-11T17:20:00Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 3,
+          "end_line": 3,
+          "original_object_sha256": "c99ad06ecb5f5f36e3183854a3ee40d006b50a281dc2f0a40a6abdd216557a0f",
+          "normalized_object_sha256": "c99ad06ecb5f5f36e3183854a3ee40d006b50a281dc2f0a40a6abdd216557a0f"
+        }
+      ],
+      "output_line": 16
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T181500Z",
+      "completed_at": "2026-10-11T18:15:00Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 4,
+          "end_line": 4,
+          "original_object_sha256": "17ba99d611b0d584048e2887e233bb43c5b22849bb55f4b3c8c8481da82fef34",
+          "normalized_object_sha256": "17ba99d611b0d584048e2887e233bb43c5b22849bb55f4b3c8c8481da82fef34"
+        }
+      ],
+      "output_line": 17
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T191500Z",
+      "completed_at": "2026-10-11T19:15:00Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 5,
+          "end_line": 5,
+          "original_object_sha256": "cd46b5c5a44c443451d3bbdaac8c0ebdff9f5955aa49cdd61bf99df08dfaccda",
+          "normalized_object_sha256": "cd46b5c5a44c443451d3bbdaac8c0ebdff9f5955aa49cdd61bf99df08dfaccda"
+        }
+      ],
+      "output_line": 18
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T201500Z",
+      "completed_at": "2026-10-11T20:15:00Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 6,
+          "end_line": 6,
+          "original_object_sha256": "96fbbf467c24b750054efdb205786aefd9bf307ab7b96ba21b6bef4d1691c4ab",
+          "normalized_object_sha256": "96fbbf467c24b750054efdb205786aefd9bf307ab7b96ba21b6bef4d1691c4ab"
+        }
+      ],
+      "output_line": 19
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T211600Z",
+      "completed_at": "2026-10-11T21:16:00Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 7,
+          "end_line": 7,
+          "original_object_sha256": "da9d15ccc8facbb1f9dc69eee6656c9301d2f9005c9674b6d25d974cc9d10a54",
+          "normalized_object_sha256": "da9d15ccc8facbb1f9dc69eee6656c9301d2f9005c9674b6d25d974cc9d10a54"
+        }
+      ],
+      "output_line": 20
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T222000Z",
+      "completed_at": "2026-10-11T22:20:00Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 8,
+          "end_line": 8,
+          "original_object_sha256": "6bc62d41da10c31c758c6ef5a058d69d8dd4f921948fd4ec80df9a667a1673ee",
+          "normalized_object_sha256": "6bc62d41da10c31c758c6ef5a058d69d8dd4f921948fd4ec80df9a667a1673ee"
+        }
+      ],
+      "output_line": 21
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-11T232137Z",
+      "completed_at": "2026-10-11T23:21:37Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 9,
+          "end_line": 9,
+          "original_object_sha256": "0b990b6ffe58ea27da5db60426a8cc87579853ecb23e82da0eaeda3183115779",
+          "normalized_object_sha256": "0b990b6ffe58ea27da5db60426a8cc87579853ecb23e82da0eaeda3183115779"
+        }
+      ],
+      "output_line": 22
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T002913Z",
+      "completed_at": "2026-10-12T00:29:13Z",
+      "sources": [
+        {
+          "commit": "61b50c3d1c70c172a8ce7de3b42e7b083ae0162a",
+          "blob": "ac4e81f13f5ba1e45fddffbdd2051525fad6090c",
+          "start_line": 10,
+          "end_line": 10,
+          "original_object_sha256": "f1db348c4c5c7aa9c57a8637589e45026a2454d6f18bac2e85dd1da18bb29af7",
+          "normalized_object_sha256": "f1db348c4c5c7aa9c57a8637589e45026a2454d6f18bac2e85dd1da18bb29af7"
+        }
+      ],
+      "output_line": 23
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T021841Z",
+      "completed_at": "2026-10-12T02:18:41Z",
+      "sources": [
+        {
+          "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+          "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+          "start_line": 1,
+          "end_line": 2,
+          "original_object_sha256": "22ad508ae5411b9d8dbe378960cc3361a661c5117b26029c0523f2f2e7a934c1",
+          "normalized_object_sha256": "66cf6d7feea7d841d0960921b7bfad1c40f5baec2d842d86de75daebbba71d5e"
+        }
+      ],
+      "output_line": 24
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T032023Z",
+      "completed_at": "2026-10-12T03:20:23Z",
+      "sources": [
+        {
+          "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+          "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+          "start_line": 3,
+          "end_line": 3,
+          "original_object_sha256": "054ff5aba56b0cb4357fcd9f4ad06025f9fa777e43b2b75f8a5a4f72e3a8d9ce",
+          "normalized_object_sha256": "054ff5aba56b0cb4357fcd9f4ad06025f9fa777e43b2b75f8a5a4f72e3a8d9ce"
+        }
+      ],
+      "output_line": 25
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T041644Z",
+      "completed_at": "2026-10-12T04:16:44Z",
+      "sources": [
+        {
+          "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+          "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+          "start_line": 4,
+          "end_line": 4,
+          "original_object_sha256": "82d3d88045af956f5c35fdb741b4d6203f8680dca5fdba7e391cb3a3e2574c85",
+          "normalized_object_sha256": "82d3d88045af956f5c35fdb741b4d6203f8680dca5fdba7e391cb3a3e2574c85"
+        }
+      ],
+      "output_line": 26
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T061500Z",
+      "completed_at": "2026-10-12T06:15:00Z",
+      "sources": [
+        {
+          "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+          "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+          "start_line": 5,
+          "end_line": 5,
+          "original_object_sha256": "c0557e4cc5d2b944b11d92fb3cb3c7260ba0b89b81d92da5f23a08210616e37c",
+          "normalized_object_sha256": "c0557e4cc5d2b944b11d92fb3cb3c7260ba0b89b81d92da5f23a08210616e37c"
+        }
+      ],
+      "output_line": 27
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T082000Z",
+      "completed_at": "2026-10-12T08:20:00Z",
+      "sources": [
+        {
+          "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+          "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+          "start_line": 6,
+          "end_line": 6,
+          "original_object_sha256": "b15ce7335fdf4ab433de963427272ce3ecc41fac2d11171752fd9edc35ad9510",
+          "normalized_object_sha256": "b15ce7335fdf4ab433de963427272ce3ecc41fac2d11171752fd9edc35ad9510"
+        }
+      ],
+      "output_line": 28
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T100500Z",
+      "completed_at": "2026-10-12T10:05:00Z",
+      "sources": [
+        {
+          "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+          "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+          "start_line": 7,
+          "end_line": 7,
+          "original_object_sha256": "42196b4402230f3477b5a1df9714ff80ed0e73cebf242cf4e3fa1f3961f9bd9d",
+          "normalized_object_sha256": "42196b4402230f3477b5a1df9714ff80ed0e73cebf242cf4e3fa1f3961f9bd9d"
+        }
+      ],
+      "output_line": 29
+    },
+    {
+      "pulse_id": "mongo-grok-pulse-2026-10-12T112500Z",
+      "completed_at": "2026-10-12T11:25:00Z",
+      "sources": [
+        {
+          "commit": "ffe0e1955b94c093f13a27a4dc64c262b436aa70",
+          "blob": "319c97a6413304c54b97d6ec95b6dc1014429080",
+          "start_line": 8,
+          "end_line": 8,
+          "original_object_sha256": "5ac5bc6fc3ad6210602be37edbd1d2a7ddc2541b42b308d535021c1a96f66e66",
+          "normalized_object_sha256": "5ac5bc6fc3ad6210602be37edbd1d2a7ddc2541b42b308d535021c1a96f66e66"
+        }
+      ],
+      "output_line": 30
+    }
+  ],
+  "conflicts": [],
+  "duplicates": [],
+  "excluded": [
+    "No snapshot-derived reconstruction, including the missing 2026-10-12T01:21:00Z pulse."
+  ],
+  "output": {
+    "path": "intelligence/grok_pulse_history.jsonl",
+    "rows": 30,
+    "bytes": 41159,
+    "sha256": "97f51e47ce8f798a77c5bad50b5486f175cf1947d728865f69393d06ec115aea",
+    "git_blob": "4b37068eb17978db76d731df72a4987063514278"
+  },
+  "schema_version": 1,
+  "authoritative": false,
+  "purpose": "Non-authoritative provenance for exact recovery of historical Mongo Pulse records from existing Git sources.",
+  "normalization": "Remove literal CR/LF formatting inside complete JSON objects and delimit each original object with one LF. No object values changed."
+}
