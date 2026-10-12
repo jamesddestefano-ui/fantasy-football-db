@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-12T021841Z",
-  "generated_at": "2026-10-12T02:14:41Z",
-  "completed_at": "2026-10-12T02:18:41Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-12T032023Z",
+  "generated_at": "2026-10-12T03:15:03Z",
+  "completed_at": "2026-10-12T03:20:23Z",
   "week": 5,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-12T02:18:41Z",
+  "as_of": "2026-10-12T03:20:23Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
@@ -73,7 +73,7 @@
       "opponent": "$Cmoney$ (C$)",
       "opponent_score": 109.66,
       "jdd_yet_to_play": 2,
-      "note": "as of the 7:47 PM ET Sunday Night Check snapshot (not refreshed; no fresh ESPN pull). Bijan + Andrews on SNF still in progress at ~10:18 PM ET."
+      "note": "as of the 7:47 PM ET Sunday Night Check snapshot (not refreshed; no fresh ESPN pull). Bijan + Andrews on SNF still in progress (tied 23-23, 0:40 left in 4th) at ~11:20 PM ET."
     }
   },
   "player_signals": [
@@ -82,14 +82,15 @@
       "team": "BAL",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "SNF BAL@ATL in progress, 3rd quarter 6:53 left at ~10:18 PM ET (ATL 17, BAL 15 per ESPN game summary). Andrews: 1 reception for 9 yards on 2 targets, plus 1 fumble lost (Jessie Bates 36-yd return TD, 1st quarter), per ESPN box score. No injury designation or report for Andrews on X/team/beat through ~10:20 PM ET. BAL TE Matt Hibner (hand) was questionable to return per Ravens/Zrebiec (~9:05 PM ET), carried; Lamar Jackson remains OUT, Huntley playing (13/20, 121 yds, 1 TD to Derrick Henry).",
-      "mongo_impact": "Starter TE still in progress; fumble lost is a negative fantasy event. No injury or status change vs prior Pulse. No lineup action taken.",
+      "summary": "Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Andrews per ESPN box score at that time: 2 receptions for 12 yards on 4 targets plus 1 fumble lost (Jessie Bates 36-yd return TD, 1st quarter). Still playing; no injury designation or report for Andrews on X/Ravens/beat through ~11:20 PM ET. Lamar Jackson remains OUT; Huntley is the BAL QB (19/27, 173 yds, 2 TD, 0 INT). Ravens team posts at 02:45Z list DL Broderick Washington Jr. (ankle) questionable to return; Hibner status not updated from the prior Pulse.",
+      "mongo_impact": "Starter TE, game still in progress/not final; no injury or status change vs prior Pulse. Fumble lost remains a negative fantasy event; no final line yet. No lineup action taken.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993",
-        "https://x.com/jeffzrebiec/status/2109450595782513065",
-        "https://x.com/jamisonhensley/status/2109450358376501580",
+        "https://x.com/Ravens/status/2109475548535648626",
+        "https://x.com/willmcfadden/status/2109483795028013437",
+        "https://x.com/BradJamesRadio/status/2109483931078938803",
         "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
       ]
     },
@@ -98,13 +99,14 @@
       "team": "ATL",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Active and playing; 3rd quarter 6:53 left at ~10:18 PM ET. ESPN box score: 10 carries for 81 yards (long 38, set up ATL goal-to-go that ended in a Folk FG) and 1 reception for 4 yards on 2 targets. No in-game injury report on X/team/beat through ~10:20 PM ET.",
-      "mongo_impact": "Starter RB in progress; productive, no injury or status change.",
+      "summary": "Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Bijan per ESPN box score at that time: 17 carries for 86 yards (long 38) and 3 receptions for 18 yards on 6 targets, no TD. No in-game injury report on X/team/beat through ~11:20 PM ET; he was on the field late in the 4th (X: ryan_slonaker ~03:08Z).",
+      "mongo_impact": "Starter RB, game still in progress/not final; productive, no injury or status change vs prior Pulse.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872993",
-        "https://x.com/ryan_slonaker/status/2109468356893880361",
+        "https://x.com/ryan_slonaker/status/2109481371274260982",
+        "https://x.com/willmcfadden/status/2109483795028013437",
         "/workspace/mongo-ff-bot-state/espn_live_20261011_1948.json"
       ]
     },
@@ -113,7 +115,7 @@
       "team": "ATL",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Active and playing as the Falcons' QB in the SNF; ESPN box score at ~10:18 PM ET: 6/12 for 96 yards, 1 TD (5-yd to Kyle Pitts), 0 INT, 1 rush for 5 yards. No in-game injury report found. Listed on Mongo's bench per the 7:47 PM ET snapshot (not in the lineup, no fantasy points count for JDD).",
+      "summary": "Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Penix (Mongo bench, no fantasy points count for JDD) per ESPN box score: 18/30 for 222 yards, 1 TD (to Kyle Pitts), 0 INT, 2 carries for 8 yards. No in-game injury report found.",
       "mongo_impact": "Bench QB; no lineup effect, no injury.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -211,7 +213,7 @@
       "team": "BUF",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "BUF plays at LAR on Monday night. Official inactives not due until Monday pregame; nothing new found this run (no early-Monday news read).",
+      "summary": "BUF plays at LAR on Monday night (8:15 PM ET Mon Oct 12 per ESPN scoreboard). Official inactives are not due until Monday pregame. An X search for Ray Davis/Bills backfield news since Sunday afternoon returned 0 results; no new Davis status found. Nothing new on early-Monday waiver news was read.",
       "mongo_impact": "No new information.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -225,13 +227,13 @@
       "team": "various",
       "slot": "n/a",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Context only, none on the Mongo roster: Hibner QTR (hand), BAL TE, per Zrebiec/Ravens (carried); Falcons CB C.J. Henderson questionable to return (groin) per Josh Kendall/Miles Garrett (~10:06 PM ET). Prior items (MHJ traded to HOU, Montgomery/Henderson(NE)/Hockenson OUT, Deebo OUT) carried; not on roster, availability UNKNOWN (not FREE_AGENT_CONFIRMED).",
+      "summary": "Context only, none on the Mongo roster (availability UNKNOWN, not FREE_AGENT_CONFIRMED): BAL DL Broderick Washington Jr. (ankle) questionable to return per Ravens X ~10:45 PM ET; Ravens DT Travis Jones and S Kyle Hamilton were reported hurt in-game on X by non-official accounts (Hamilton reported returned); no official Ravens statements read for those two. Falcons CB C.J. Henderson QTR (groin) carried from prior. Prior items (Harrison Jr. traded to HOU, Montgomery/Henderson(NE)/Hockenson OUT, Deebo OUT) carried. NFL Pulse Bot 10:51 PM ET scan (2026-10-11-2251) was QUIET: 0 accepted, 0 escalations, no skill-position OUT flips in SNF.",
       "mongo_impact": "NONE",
       "urgency": "LOW",
       "availability": "UNKNOWN",
       "sources": [
-        "https://x.com/jeffzrebiec/status/2109450595782513065",
-        "https://x.com/JoshTheAthletic/status/2109465760410272005"
+        "https://x.com/Ravens/status/2109475548535648626",
+        "/workspace/prime-nfl-pulse/scans/2026-10-11-2251/scan_outcome.md"
       ]
     }
   ],
@@ -267,14 +269,14 @@
       "player": "Mark Andrews",
       "slot": "TE",
       "status": "CONFIRMED_FACT",
-      "summary": "Active; in progress with 1 rec/9 yds and a fumble lost (returned for TD). No injury.",
+      "summary": "Playing in SNF (tied 23-23, 0:40 left, not final); 2 rec/12 yds, 1 fumble lost; no injury.",
       "urgency": "LOW"
     },
     {
       "player": "Bijan Robinson",
       "slot": "RB",
       "status": "CONFIRMED_FACT",
-      "summary": "Active; in progress with 10 car/81 yds, 1 rec/4 yds; no injury found.",
+      "summary": "Playing in SNF (not final); 17 car/86 yds, 3 rec/18 yds; no injury found.",
       "urgency": "LOW"
     },
     {
@@ -288,16 +290,22 @@
       "player": "Holani / Black / TeSlaa / Gadsden / Penix / Davis",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Bench-only; Penix active for SNF; Davis MNF; no injuries.",
+      "summary": "Bench-only; Penix playing SNF; Davis plays MNF (BUF@LAR); no injuries found.",
       "urgency": "LOW"
     }
   ],
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "10:20 PM ET Sunday hourly (Week 5). No Mongo-owned player's injury status or designation materially changed since the 9 PM ET Pulse (mongo-grok-pulse-2026-10-12T012100Z). SNF BAL@ATL still in progress (3rd quarter, ATL 17-15, not final): Bijan 10 car/81 yds (long 38), 1 rec/4 yds; Andrews 1 rec/9 yds on 2 targets and a fumble lost; Penix (bench) 6/12 96 yds 1 TD; Lamar OUT, Huntley playing. No in-game injury report for Andrews, Bijan or Penix. Hibner (BAL TE) QTR and Falcons CB C.J. Henderson QTR are context only. ESPN state from the Sunday Night Check 7:48 PM ET snapshot (no fresh ESPN pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T012100Z",
-  "prior_completed_at": "2026-10-12T01:21:00Z",
-  "prior_commit": "ea12c0e36537e5f47b32b017c10c42b685845c96",
-  "source_status_notes": "x_direct OK: real X API reads via connector (2 searches returned results, 1 malformed call errored; 29/30 per-minute quota remained). Beat reporters seen directly on X: Zrebiec, Hensley, WBAL Pete Gilbert, Josh Kendall (Falcons). official_nfl_team LIMITED: Ravens/Falcons team posts only via quoted/search results, no official injury tables read. experts LIMITED: no expert/ranking sites read. analytics UNAVAILABLE: none read. SNF box score from ESPN public game summary API (event 401872993), not the authenticated league API."
+  "summary": "11:20 PM ET Sunday hourly (Week 5). No Mongo-owned player's injury status or designation materially changed since the 10 PM ET Pulse (mongo-grok-pulse-2026-10-12T021841Z). Sunday Night BAL@ATL NOT FINAL at ~11:20 PM ET (03:20Z): tied ATL 23, BAL 23 with 0:40 left in the 4th quarter after Huntley's 7-yd TD pass to Devontez Walker and Henry's direct-snap 2-pt conversion (X: willmcfadden, BradJamesRadio, others ~03:18-03:19Z; ESPN scoreboard matches). Atlanta has the ball with 40 seconds and 2 timeouts; overtime is possible but not certain and no final exists. Bijan 17 car/86 yds, 3 rec/18 yds; Andrews 2 rec/12 yds with 1 fumble lost; Penix (bench) 18/30 222 yds 1 TD; Lamar OUT, Huntley playing. No injury report for Andrews, Bijan or Penix. Context only: BAL DL Washington (ankle) QTR. Monday night BUF@LAR 8:15 PM ET; Ray Davis inactives not yet due, no news found. ESPN state from the Sunday Night Check 7:48 PM ET snapshot (no fresh ESPN pull). Intelligence only; no ownership/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T021841Z",
+  "prior_completed_at": "2026-10-12T02:18:41Z",
+  "prior_commit": "2de52a71d6cc39fcd86a6e8d10460522c52f9b5b",
+  "source_status_notes": {
+    "official_nfl_team": "LIMITED: only official Ravens X posts read (Washington ankle QTR, Huntley/Flowers play); no official injury tables or Falcons account read.",
+    "beat_reporting": "OK: X beat/media posts (Will McFadden, Ravens, Ryan Slonaker, Brad James Radio) read directly.",
+    "x_direct": "OK: x connector reads succeeded (5 calls, 1 returned 0 results; no rate limiting hit).",
+    "experts": "LIMITED: no expert or ranking sites read; expert_signals empty.",
+    "analytics": "UNAVAILABLE: no analytics source read."
+  }
 }
