@@ -1,0 +1,205 @@
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-10-12T191800Z",
+  "generated_at": "2026-10-12T19:18:00Z",
+  "completed_at": "2026-10-12T19:18:00Z",
+  "week": 5,
+  "season": 2026,
+  "run_type": "hourly",
+  "as_of": "2026-10-12T19:18:00Z",
+  "source_status": {
+    "official_nfl_team": "LIMITED",
+    "beat_reporting": "OK",
+    "x_direct": "OK",
+    "experts": "LIMITED",
+    "analytics": "UNAVAILABLE"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Mongo Live Check 8:26 AM ET Oct 12 (authenticated ESPN read-only): roster/lineup/IR unchanged, FAAB $74, record 3-1-0, matchup JDD 74.0 vs $Cmoney$ 109.66 with Ray Davis (MNF) left. Pulse did no ESPN pull.",
+    "faab_remaining": 74,
+    "record": "3-1-0",
+    "standing": "3rd of 12",
+    "week_4_result": "W 181.32-138.58",
+    "espn_injury_tags_on_roster": {
+      "CeeDee Lamb": "Q",
+      "George Holani": "Q",
+      "Dylan Sampson": "IR"
+    },
+    "starters_week_5": [
+      "Jalen Hurts",
+      "Bijan Robinson",
+      "Kendre Miller",
+      "CeeDee Lamb",
+      "Josh Downs",
+      "Mark Andrews",
+      "Luther Burden III (FLEX)",
+      "Keaton Mitchell (FLEX)",
+      "Raiders D/ST"
+    ],
+    "week_5_lineup_note": "Per Live Check 8:16 AM ET Oct 11: starters Hurts, Bijan, Kendre Miller, Lamb (TNF already played, 2.9), Downs, Andrews, Burden (FLEX), Mitchell (FLEX), Raiders D/ST; bench McMillan (BYE), Davis, Black, TeSlaa, Holani (Q), Gadsden, Penix; IR Sampson. Bateman dropped (availability UNKNOWN, not FREE_AGENT_CONFIRMED).",
+    "bench": [
+      "Tetairoa McMillan",
+      "Ray Davis",
+      "Kaelon Black",
+      "Isaac TeSlaa",
+      "George Holani",
+      "Oronde Gadsden",
+      "Michael Penix Jr."
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ],
+    "dropped_not_rostered": [
+      "Rashod Bateman",
+      "Chris Bell",
+      "Packers D/ST"
+    ],
+    "live_check_ref": "mongo_sunday_night_check_20261011_1948_ET_espn",
+    "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN.",
+    "week_5_matchup_snapshot": {
+      "jdd_score": 74.0,
+      "opponent": "$Cmoney$ (C$)",
+      "opponent_score": 109.66,
+      "jdd_yet_to_play": 1,
+      "note": "per 8:26 AM ET Live Check; Ray Davis MNF remaining"
+    }
+  },
+  "player_signals": [
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter (3:13 PM ET): rib injury not considered serious per sources. Might return for Week 6 vs CHI, but team wants to see him practice this week before deciding. Prior: imaging Monday, self-report optimistic. No official diagnosis or designation yet.",
+      "mongo_impact": "Bench QB. Positive attributed update improves Week 6 outlook but still contingent on practice. No Week 5 effect. Intelligence only.",
+      "urgency": "MEDIUM",
+      "availability": "OWNED",
+      "sources": [
+        "https://x.com/AdamSchefter/status/2109724172167340385",
+        "https://www.nfl.com/news/falcons-qb-michael-penix-jr-ribs-says-injury-isn-t-long-term-will-be-ok",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-on-michael-penixs-rib-injury-well-know-more-as-we-get-imaging"
+      ]
+    },
+    {
+      "player": "Ray Davis",
+      "team": "BUF",
+      "slot": "bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "MNF BUF at LAR 8:15 PM ET tonight. Listed 'will play' on Bills final injury report (hamstring). Inactives not yet posted (~90 min pre-kickoff).",
+      "mongo_impact": "Bench RB; expected active. No change.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.buffalobills.com/team/injury-report/",
+        "https://billswire.usatoday.com/story/sports/nfl/bills/2026/10/11/buffalo-bills-la-rams-final-injury-report-dh-moore-ed-oliver-nfl/92205145007/"
+      ]
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "slot": "starter",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Quad bruise from TNF Week 5 not believed serious. Extra rest before Week 6 vs GB. No new designation or news this run.",
+      "mongo_impact": "Starter WR. Expected available next week.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.rotowire.com/football/player/ceedee-lamb-14411"
+      ]
+    },
+    {
+      "player": "Mark Andrews / Bijan Robinson / other starters",
+      "team": "BAL/ATL/various",
+      "slot": "starters",
+      "status": "CONFIRMED_FACT",
+      "summary": "SNF final, no injuries. No new news this run.",
+      "mongo_impact": "Results only; no status change.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": []
+    },
+    {
+      "player": "George Holani / other bench",
+      "team": "SEA/various",
+      "slot": "bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "Holani was active for his Sunday game. No new material news for bench players. McMillan BYE.",
+      "mongo_impact": "None.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": []
+    }
+  ],
+  "waiver_signals": [
+    {
+      "player": "Rashod Bateman",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Dropped Oct 9 per repo; played in SNF. Not FREE_AGENT_CONFIRMED.",
+      "mongo_impact": "Do not reclaim without ESPN ownership check.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": ["Repo"]
+    },
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. No new Monday waiver news.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": ["AGENTS.md"]
+    }
+  ],
+  "lineup_signals": [
+    {
+      "player": "Penix (bench)",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Schefter: not considered serious; possible W6 return contingent on practice. No change to Week 5.",
+      "urgency": "MEDIUM"
+    },
+    {
+      "player": "Ray Davis",
+      "slot": "bench",
+      "status": "CONFIRMED_FACT",
+      "summary": "Expected to play MNF; inactives pending.",
+      "urgency": "LOW"
+    },
+    {
+      "player": "Other",
+      "slot": "various",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new status changes.",
+      "urgency": "LOW"
+    }
+  ],
+  "expert_signals": [],
+  "material_changes": [
+    {
+      "type": "injury_update",
+      "player": "Michael Penix Jr.",
+      "description": "Schefter attributed report: rib injury not considered serious; possible Week 6 return pending practice.",
+      "prior_status": "Imaging pending, self-report optimistic only"
+    }
+  ],
+  "no_material_change": false,
+  "summary": "3:18 PM ET Monday hourly (Week 5). Material: Schefter (direct X) reports Penix rib injury not considered serious; might return W6 vs CHI contingent on practice this week. Prior pulse (11:26 AM) had no imaging results. Ray Davis still will-play for MNF (inactives pending). ESPN state per 8:26 AM ET Live Check unchanged: FAAB $74, 3-1-0, matchup 74.0-109.66 with Davis left. Intelligence only; no roster/FAAB/lineup/IR/transaction/trade write.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-12T152612Z",
+  "prior_completed_at": "2026-10-12T15:26:12Z",
+  "prior_commit": "pending",
+  "source_status_notes": "Direct X read of Schefter; web search; no official team injury table re-read; no analytics pulled; no fresh ESPN ownership pull."
+}
