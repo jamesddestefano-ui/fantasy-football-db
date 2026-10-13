@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-13T061000Z",
-  "generated_at": "2026-10-13T06:10:00Z",
-  "completed_at": "2026-10-13T06:10:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-13T100000Z",
+  "generated_at": "2026-10-13T10:00:00Z",
+  "completed_at": "2026-10-13T10:00:00Z",
   "week": 5,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-13T06:10:00Z",
+  "as_of": "2026-10-13T10:00:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "LIMITED",
@@ -27,7 +27,7 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo Live Check 8:26 AM ET Oct 12 (authenticated ESPN read-only): roster/lineup/IR unchanged, FAAB $74, record 3-1-0, matchup JDD 74.0 vs $Cmoney$ 109.66 with Ray Davis (MNF) left. Pulse did no ESPN pull.",
+    "source": "Mongo Live Check 8:26 AM ET Oct 12 (authenticated ESPN read-only): roster/lineup/IR unchanged, FAAB $74, record 3-1-0, matchup JDD 74.0 vs $Cmoney$ 109.66 with Ray Davis (MNF) left. Pulse did no ESPN pull. No newer Live Check found.",
     "faab_remaining": 74,
     "record": "3-1-0",
     "standing": "3rd of 12",
@@ -73,7 +73,7 @@
       "opponent": "$Cmoney$ (C$)",
       "opponent_score": 109.66,
       "jdd_yet_to_play": 0,
-      "note": "per 8:26 AM ET Live Check; Ray Davis MNF now final (Bills 37-34 OT win); Davis box score available but fantasy points not ESPN-confirmed; loss remains estimate pending Live Check"
+      "note": "per 8:26 AM ET Live Check; Ray Davis MNF now final (Bills 37-34 OT win); Davis box score available (2 rush/2 yds, 1 rec/31 yds) but fantasy points not ESPN-confirmed; loss remains estimate pending Live Check"
     }
   },
   "player_signals": [
@@ -82,13 +82,12 @@
       "team": "BUF",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "MNF final: Bills 37-34 Rams in OT. Davis: 2 rush att / 2 yds, 1 rec / 31 yds (no TD). Active, no injury reported post-game. Limited usage behind Cook/Allen.",
-      "mongo_impact": "Bench RB; W5 fantasy contribution small (approx 3-4 pts depending on scoring). No status change.",
+      "summary": "MNF final confirmed: Bills 37-34 Rams OT. Davis: 2 rush att / 2 yds, 1 rec / 31 yds (no TD). No injury reported. Limited usage. Already captured in prior Pulse.",
+      "mongo_impact": "Bench RB; small W5 contribution. No status change.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.espn.com/nfl/game/_/gameId/401872994/bills-rams",
-        "https://www.foxsports.com/nfl/week-5-buffalo-bills-vs-los-angeles-rams-oct-12-2026-game-boxscore-11074",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401872994",
         "https://www.cbssports.com/nfl/players/3123108/ray-davis/game-log/"
       ]
     },
@@ -97,13 +96,12 @@
       "team": "ATL",
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Rib injury not considered serious per Schefter sources (ESPN); might play W6 vs CHI contingent on practice. Stefanski: more info Wednesday. No new update overnight.",
-      "mongo_impact": "Bench QB; trending positive but unofficial. Monitor Wednesday.",
+      "summary": "Rib injury not considered serious (Schefter/ESPN sources). Possible W6 vs CHI pending practice. Stefanski: more info Wednesday. No new overnight update.",
+      "mongo_impact": "Bench QB; monitor Wednesday practice report.",
       "urgency": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "https://www.espn.com/nfl/story/_/id/50168293/falcons-qb-penix-rib-injury-not-considered-serious",
-        "https://www.reuters.com/sports/reports-michael-penix-jrs-rib-injury-not-serious--flm-2026-10-12/"
+        "https://www.espn.com/nfl/story/_/id/50168293/falcons-qb-penix-rib-injury-not-considered-serious"
       ]
     },
     {
@@ -111,26 +109,12 @@
       "team": "DAL",
       "slot": "starter",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Quad bruise from TNF Week 5 not believed serious (Rapoport). Extra rest before Week 6 vs GB. No new designation.",
+      "summary": "Quad bruise from TNF not believed serious (Rapoport). Extra rest before Week 6 vs GB. No new designation overnight.",
       "mongo_impact": "Starter WR. Expected available next week.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.nbcsports.com/nfl/ceedee-lamb/6733/news",
-        "https://www.rotowire.com/football/player/ceedee-lamb-14411"
-      ]
-    },
-    {
-      "player": "George Holani",
-      "team": "SEA",
-      "slot": "bench",
-      "status": "CONFIRMED_FACT",
-      "summary": "Active Week 5 vs SF: 4 rush / 7 yds, 4 rec / 24 yds, fumble (costly). Full participant Monday estimated practice. No new major designation.",
-      "mongo_impact": "Bench RB; limited role.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.rotowire.com/football/player/george-holani-17968"
+        "https://www.nbcsports.com/nfl/ceedee-lamb/6733/news"
       ]
     },
     {
@@ -138,7 +122,7 @@
       "team": "various",
       "slot": "various",
       "status": "CONFIRMED_FACT",
-      "summary": "No new material injury or status changes for Hurts, Bijan, Miller, Downs, Andrews, Burden, Mitchell, McMillan (BYE), Black, TeSlaa, Gadsden, Sampson (IR). Games completed or no news.",
+      "summary": "No new material injury or status changes for Hurts, Bijan, Miller, Downs, Andrews, Burden, Mitchell, McMillan (BYE), Black, TeSlaa, Holani, Gadsden, Sampson (IR).",
       "mongo_impact": "None.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -150,7 +134,7 @@
       "player": "Rashod Bateman",
       "availability": "UNKNOWN",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Dropped Oct 9 per repo; played SNF. Not FREE_AGENT_CONFIRMED.",
+      "summary": "Dropped Oct 9 per repo. Not FREE_AGENT_CONFIRMED.",
       "mongo_impact": "Do not reclaim without ESPN ownership check.",
       "recommendation": "NONE",
       "urgency": "NONE",
@@ -172,14 +156,14 @@
       "player": "Ray Davis",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Played MNF; limited production (2-2 rush, 1-31 rec). No injury.",
+      "summary": "MNF complete; limited production. No injury.",
       "urgency": "LOW"
     },
     {
       "player": "Penix (bench)",
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Rib not serious; possible W6 return pending practice/Wednesday update. No W5 effect.",
+      "summary": "Rib not serious; W6 contingent on practice. No new update.",
       "urgency": "MEDIUM"
     },
     {
@@ -191,17 +175,11 @@
     }
   ],
   "expert_signals": [],
-  "material_changes": [
-    {
-      "type": "game_result",
-      "description": "MNF Bills 37-34 Rams OT final; Ray Davis box score confirmed (2 rush/2 yds, 1 rec/31 yds). Prior Pulse had game in progress/stats unverified.",
-      "impact": "W5 complete for Davis; fantasy points pending ESPN confirmation."
-    }
-  ],
-  "no_material_change": false,
-  "summary": "2:00 AM ET overnight Tuesday (Week 5). Material: MNF concluded Bills 37-34 OT; Ray Davis final stats 2-2 rush / 1-31 rec, no injury. Penix unchanged (Schefter not serious; Stefanski Wednesday). No newer Live Check than 8:26 AM ET Oct 12; matchup final not ESPN-confirmed. Intelligence only.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-13T021541Z",
-  "prior_completed_at": "2026-10-13T02:15:41Z",
-  "prior_commit": "5dada011fddfaffeac6a9fe886a60075bd872ba7",
-  "source_status_notes": "Web search only for official/beat/experts; no direct X; no ESPN pull; no analytics."
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "6:00 AM ET overnight Tuesday (Week 5). No material change since prior 2:10 AM ET Pulse. MNF final and Davis box score already captured. Penix and Lamb unchanged (not serious; Wednesday/practice pending). No newer Live Check than 8:26 AM ET Oct 12. Intelligence only.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-13T061000Z",
+  "prior_completed_at": "2026-10-13T06:10:00Z",
+  "prior_commit": "42f6aa7dca6ce2e6104ab6aeee864ba7084ace28",
+  "source_status_notes": "Web search + limited X for official/beat/experts; no ESPN pull; no analytics."
 }
