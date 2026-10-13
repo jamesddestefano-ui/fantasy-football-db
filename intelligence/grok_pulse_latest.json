@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-13T100000Z",
-  "generated_at": "2026-10-13T10:00:00Z",
-  "completed_at": "2026-10-13T10:00:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-13T171500Z",
+  "generated_at": "2026-10-13T17:15:00Z",
+  "completed_at": "2026-10-13T17:15:00Z",
   "week": 5,
   "season": 2026,
-  "run_type": "overnight",
-  "as_of": "2026-10-13T10:00:00Z",
+  "run_type": "hourly",
+  "as_of": "2026-10-13T17:15:00Z",
   "source_status": {
     "official_nfl_team": "LIMITED",
     "beat_reporting": "LIMITED",
@@ -87,8 +87,7 @@
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.espn.com/nfl/boxscore/_/gameId/401872994",
-        "https://www.cbssports.com/nfl/players/3123108/ray-davis/game-log/"
+        "https://www.espn.com/nfl/boxscore/_/gameId/401872994"
       ]
     },
     {
@@ -96,7 +95,7 @@
       "team": "ATL",
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Rib injury not considered serious (Schefter/ESPN sources). Possible W6 vs CHI pending practice. Stefanski: more info Wednesday. No new overnight update.",
+      "summary": "Rib injury not considered serious (Schefter/ESPN sources). Possible W6 vs CHI pending practice. Stefanski: more info Wednesday. No new update since prior Pulse.",
       "mongo_impact": "Bench QB; monitor Wednesday practice report.",
       "urgency": "MEDIUM",
       "availability": "OWNED",
@@ -109,7 +108,7 @@
       "team": "DAL",
       "slot": "starter",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Quad bruise from TNF not believed serious (Rapoport). Extra rest before Week 6 vs GB. No new designation overnight.",
+      "summary": "Quad bruise from TNF not believed serious (Rapoport). Extra rest before Week 6 vs GB. No new designation or update.",
       "mongo_impact": "Starter WR. Expected available next week.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -118,11 +117,24 @@
       ]
     },
     {
+      "player": "George Holani",
+      "team": "SEA",
+      "slot": "bench",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Estimated Monday practice report: full participant (ribs/knee). No material change for Mongo ownership.",
+      "mongo_impact": "Bench RB; no action needed.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.fantasypros.com/nfl/news/613574/george-holani-ribsknee-fully-practices-on-estimated-practice-report.php"
+      ]
+    },
+    {
       "player": "Other starters / bench",
       "team": "various",
       "slot": "various",
       "status": "CONFIRMED_FACT",
-      "summary": "No new material injury or status changes for Hurts, Bijan, Miller, Downs, Andrews, Burden, Mitchell, McMillan (BYE), Black, TeSlaa, Holani, Gadsden, Sampson (IR).",
+      "summary": "No new material injury or status changes for Hurts, Bijan, Miller, Downs, Andrews, Burden, Mitchell, McMillan (BYE), Black, TeSlaa, Gadsden, Sampson (IR).",
       "mongo_impact": "None.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -177,9 +189,9 @@
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "6:00 AM ET overnight Tuesday (Week 5). No material change since prior 2:10 AM ET Pulse. MNF final and Davis box score already captured. Penix and Lamb unchanged (not serious; Wednesday/practice pending). No newer Live Check than 8:26 AM ET Oct 12. Intelligence only.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-13T061000Z",
-  "prior_completed_at": "2026-10-13T06:10:00Z",
+  "summary": "1:15 PM ET hourly Tuesday (Week 5). No material change since prior 6:00 AM ET overnight Pulse. Penix and Lamb unchanged (not serious; Wednesday practice pending). Holani estimated full practice (no Mongo impact). No newer Live Check than 8:26 AM ET Oct 12. Intelligence only.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-13T100000Z",
+  "prior_completed_at": "2026-10-13T10:00:00Z",
   "prior_commit": "42f6aa7dca6ce2e6104ab6aeee864ba7084ace28",
   "source_status_notes": "Web search + limited X for official/beat/experts; no ESPN pull; no analytics."
 }
