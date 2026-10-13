@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_correction",
+  "record_id": "mongo-2026-10-13-puka-stat-unit-correction",
+  "context": "mongo public NFL intelligence only",
+  "created_at_utc": "2026-10-13T12:47:09.255700+00:00",
+  "corrects": {
+    "path": "intelligence/news/2026-10-13T1237Z-weekly-public-evidence-education.json",
+    "observed_blob_sha": "24b8d6e0d7cfb4c85d4edaa89ee34558bff431ba",
+    "url": "https://github.com/jamesddestefano-ui/fantasy-football-db/blob/main/intelligence/news/2026-10-13T1237Z-weekly-public-evidence-education.json",
+    "fields": [
+      "findings[0]",
+      "weekly_review_evidence.data_quality_issues[0]",
+      "missing_evidence[0]"
+    ],
+    "original_retained": true
+  },
+  "sources": [
+    {
+      "id": "RAMS_SPLITS",
+      "creator": "Los Angeles Rams",
+      "title": "Puka Nacua: 2026 splits, Buffalo receiving and rushing rows",
+      "url": "https://www.therams.com/team/players-roster/puka-nacua/splits/",
+      "publication_time": null,
+      "retrieved_at_utc": "2026-10-13T12:45:59Z",
+      "access_medium": "Official HTML tables reviewed; season 2026 and opponent Buffalo checked; no gamebook obtained"
+    },
+    {
+      "id": "RAMS_HIGHLIGHT",
+      "creator": "Los Angeles Rams",
+      "title": "Puka Nacua Week 5 highlights: title and description review",
+      "url": "https://www.therams.com/video/highlights-puka-nacua-s-best-plays-from-147-yard-game-vs-bills-in-week-5",
+      "publication_date": "2026-10-12",
+      "publication_time": null,
+      "retrieved_at_utc": "2026-10-13T12:46:25Z",
+      "access_medium": "Video page title and description only; audiovisual playback and transcript not reviewed",
+      "video_timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Official Buffalo splits show 17 receptions, 138 receiving yards and one receiving touchdown, plus two rushes for nine yards.",
+      "source_ids": [
+        "RAMS_SPLITS"
+      ],
+      "confidence": "HIGH for displayed official rows"
+    },
+    {
+      "classification": "VERIFIED MATHEMATICAL PRINCIPLE",
+      "text": "138 receiving yards + 9 rushing yards = 147 scrimmage yards. Receiving yards and scrimmage yards are different statistical quantities.",
+      "source_ids": [
+        "RAMS_SPLITS"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "The highlight title and description use 147-yard game without labeling the number receiving yards.",
+      "source_ids": [
+        "RAMS_HIGHLIGHT"
+      ],
+      "confidence": "HIGH for inspected wording"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "inference": true,
+      "text": "The highlight total is consistent with scrimmage yards. This is an inference about its intended unit, not an explicit unit label or proof of author intent. The earlier report overstated an unresolved statistical conflict by comparing unlike or unspecified measures."
+    }
+  ],
+  "corrected_conclusion": "Use 138 for the official displayed receiving total and 147 only for rushing-plus-receiving scrimmage total. The Rams recap-versus-highlight comparison no longer establishes a contradictory receiving statistic. A gamebook remains unavailable, but it is not required to recognize this unit mismatch.",
+  "scope_limits": [
+    "This narrow correction does not adjudicate any separate Reuters/FOX discrepancy; those exact source versions were not reviewed here.",
+    "No historical forecast, fantasy platform score, settlement, roster, lineup or betting record is changed.",
+    "Source rows are official displayed statistics, not a claim that an official gamebook was obtained."
+  ],
+  "method_lesson": {
+    "classification": "ANALYST OPINION",
+    "text": "Before declaring source disagreement, match player, game, time window, stat category, inclusion rules and units. Record receiving, rushing and combined yards separately; never infer a receiving label from an unqualified highlight headline."
+  },
+  "preservation": {
+    "append_only": true,
+    "original_reports_unchanged": true,
+    "controlling_rule_change": false,
+    "authoritative_state_write": false,
+    "transaction": false
+  }
+}
