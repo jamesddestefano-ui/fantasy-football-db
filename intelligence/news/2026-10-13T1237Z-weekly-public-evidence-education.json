@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "record_id": "mongo-2026-10-13-week5-public-evidence-review",
+  "context": "mongo public NFL intelligence only",
+  "title": "Tuesday Week 5 evidence review and Week 6 contingent-opportunity education",
+  "research_window_utc": {
+    "started_at": "2026-10-13T12:28:38Z",
+    "ended_at": "2026-10-13T12:34:20.441807+00:00"
+  },
+  "coverage": "Post-MNF selected-player evidence review. Not a complete gamebook/statistical audit of every Week 5 game and not the authoritative league weekly scorecard.",
+  "sources": [
+    {
+      "id": "FP",
+      "creator": "Pat Fitzmaurice / FantasyPros",
+      "title": "Fantasy Football Waiver Wire Advice: Players to Add, Stash & Drop (Week 6)",
+      "url": "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-6-2026//?amp=1",
+      "publication_time": "2026-10-13T07:21:00-04:00",
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Substantial original article text reviewed; RB, WR, QB, TE and FAAB sections; no playback",
+      "video_timestamp": null
+    },
+    {
+      "id": "SEA_INJ",
+      "creator": "John Boyle / Seattle Seahawks",
+      "title": "Week 6 Injury Report: Seahawks at Broncos",
+      "url": "https://www.seahawks.com/news/week-6-injury-report-seahawks-at-broncos",
+      "publication_time": "2026-10-12 02:10 PM; displayed timezone unspecified",
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Official article and injury table reviewed",
+      "video_timestamp": null
+    },
+    {
+      "id": "DEN_BOX",
+      "creator": "Denver Broncos",
+      "title": "Week 5 Broncos at Chargers game day box",
+      "url": "https://www.denverbroncos.com/game-day/",
+      "publication_time": null,
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Official HTML box; checked matchup and 23-17 final; dynamic URL",
+      "video_timestamp": null
+    },
+    {
+      "id": "SEA_BOX",
+      "creator": "Seattle Seahawks",
+      "title": "Seahawks vs. 49ers Box Score",
+      "url": "https://www.seahawks.com/game-day/2026/reg-week5/seahawks-vs-49ers/box-score",
+      "publication_time": null,
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Official HTML box, 32-29 final",
+      "video_timestamp": null
+    },
+    {
+      "id": "JETS",
+      "creator": "Randy Lange / New York Jets",
+      "title": "Jets Turned to Garrett Wilson & Braelon Allen to Power Offense in the Sunday Rain",
+      "url": "https://www.newyorkjets.com/news/garrett-wilson-braelon-allen-power-jets-offense-vs-browns-10-12-2026",
+      "publication_time": "2026-10-12 11:47 AM; displayed timezone unspecified",
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Official full article text",
+      "video_timestamp": null
+    },
+    {
+      "id": "NFL_NEWS",
+      "creator": "Around the NFL Staff",
+      "title": "NFL news roundup: No update on Michael Penix Jr. status; Deebo Samuel to miss some time",
+      "url": "https://amp.nfl.com/news/nfl-news-roundup-latest-league-updates-from-monday-oct-12",
+      "publication_time": "Published 2026-10-12 11:24 AM; updated 10:51 PM, displayed timezone unspecified",
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Official NFL article; attributed reporting distinguished from team medical clearance",
+      "video_timestamp": null
+    },
+    {
+      "id": "RAMS",
+      "creator": "Stu Jackson / Los Angeles Rams",
+      "title": "Game Recap: Rams fall to Bills 37-34 in overtime on Monday Night Football",
+      "url": "https://www.therams.com/news/game-recap-rams-fall-to-bills-37-34-in-overtime-on-monday-night-football",
+      "publication_time": "2026-10-12 08:54 PM; displayed timezone unspecified",
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Official full article text, relevant statistics near ending",
+      "video_timestamp": null
+    },
+    {
+      "id": "NFL_MNF",
+      "creator": "Grant Gordon / NFL.com",
+      "title": "Bills-Rams on Monday Night Football: What We Learned",
+      "url": "https://amp.nfl.com/news/bills-rams-on-monday-night-football-what-we-learned-from-buffalo-s-37-34-overtime-win",
+      "publication_time": "Published 2026-10-12 11:49 PM; updated 2026-10-13 12:56 AM, displayed timezone unspecified",
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Full official analysis article",
+      "video_timestamp": null
+    },
+    {
+      "id": "RAMS_INDEX",
+      "creator": "Los Angeles Rams",
+      "title": "Rams homepage highlight description",
+      "url": "https://www.therams.com/",
+      "publication_time": null,
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Search-rendered index description only; video not watched",
+      "video_timestamp": null
+    },
+    {
+      "id": "PFF",
+      "creator": "Nathan Jahnke / PFF",
+      "title": "Fantasy football waiver wire targets: NFL Week 6",
+      "url": "https://www.pff.com/news/fantasy-football-waiver-wire-targets-2026",
+      "publication_time": "2026-10-11T23:45:00-04:00",
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Preview and limited initial section only; subscriber body not reviewed",
+      "video_timestamp": null
+    },
+    {
+      "id": "X",
+      "creator": "Pat Fitzmaurice",
+      "title": "Fitz_FF profile",
+      "url": "https://x.com/Fitz_FF",
+      "publication_time": null,
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Direct open failed; no original post verified",
+      "video_timestamp": null
+    },
+    {
+      "id": "NFL_GAME",
+      "creator": "NFL",
+      "title": "Bills at Rams 2026 REG 5 game center",
+      "url": "https://www.nfl.com/games/bills-at-rams-2026-reg-5",
+      "publication_time": null,
+      "retrieved_window_utc": [
+        "2026-10-13T12:29:00Z",
+        "2026-10-13T12:34:20.441807+00:00"
+      ],
+      "access_medium": "Page opened but player statistics/gamebook were not exposed in accessible text",
+      "video_timestamp": null
+    }
+  ],
+  "material_access": {
+    "videos_watched": 0,
+    "transcripts_reviewed": 0,
+    "substantial_article_reviewed": "FP",
+    "x_posts_verified": 0,
+    "limits": "Original X content inaccessible; PFF preview only; no paid routes or full gamebook obtained."
+  },
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "MNF outcome, with unresolved numerical provenance",
+      "text": "Buffalo won 37-34 in overtime. Rams and NFL recaps agree on Puka Nacua: 17 catches, 24 targets, 138 yards, one touchdown. The Rams homepage highlight description says 147 yards. No final gamebook was obtained; retain both versions and do not silently overwrite a historical outcome.",
+      "sources": [
+        "RAMS",
+        "NFL_MNF",
+        "RAMS_INDEX",
+        "NFL_GAME"
+      ],
+      "confidence": "HIGH for final score and recap agreement; final gamebook adjudication unavailable"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Thursday participation remains provisional",
+      "text": "Monday Seattle/Denver reports were estimates: neither team practiced. JSN was limited/ankle and finished Sunday; Charbonnet was limited/knee and unlikely to play Thursday, subject to change. A Monday estimate is not a Tuesday practice observation or final designation.",
+      "sources": [
+        "SEA_INJ"
+      ],
+      "confidence": "HIGH for Monday reporting; Thursday availability unresolved"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Injury information is conditional",
+      "text": "Penix imaging details were not disclosed Monday; Stefanski expected clearer information Wednesday. Schefter reported the rib injury was not serious. Shipley reportedly has a partial plantar-fascia tear and may miss weeks; Sirianni was hopeful Barkley could return. These are not final Week 6 clearances.",
+      "sources": [
+        "NFL_NEWS"
+      ],
+      "confidence": "MODERATE: NFL-published attributed reports; not independent diagnoses"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Temporary Jets role",
+      "text": "With Hall absent, Allen carried 24 times for 116 yards and a touchdown. No specific new Hall return clearance was verified in this research pass. Do not convert one injury-replacement game into a permanent depth-chart claim.",
+      "sources": [
+        "JETS"
+      ],
+      "confidence": "HIGH for displayed counts; Week 6 role unresolved"
+    },
+    {
+      "classification": "VERIFIED MATHEMATICAL PRINCIPLE",
+      "topic": "RB share requires a complete denominator",
+      "text": "Denver: Dobbins 18 carries, Harvey 3, Badie 1, Prentice 1, plus six QB/WR carries. Dobbins represents 18/22=81.82% of the three listed RBs, 18/23=78.26% including the fullback, or 18/29=62.07% of all team carries. The tempting 18/21=85.71% excludes another RB. None is snap share or route participation.",
+      "sources": [
+        "DEN_BOX"
+      ],
+      "confidence": "HIGH arithmetic; denominator definition must accompany comparison"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Rushing and receiving roles differ",
+      "text": "Wilson had 20 carries and two catches; Holani four carries and four catches. Wilson therefore had 20/24=83.33% of their carries, not 83.33% of routes. Their catches alone do not establish target share or passing-down participation.",
+      "sources": [
+        "SEA_BOX"
+      ],
+      "confidence": "HIGH for counts; routes unavailable"
+    }
+  ],
+  "educational_lesson": {
+    "classification": "ANALYST OPINION",
+    "source_id": "FP",
+    "central_method": "Separate short-term injury replacement, contingent receiving role and speculative stash; adjust acquisition value to need and opportunity cost.",
+    "source_lessons": "Fitzmaurice uses a $100 starting-budget basis and a sub-50% Yahoo-rostered inclusion filter. His Miller discussion reports 10 carries on 14 snaps; his Vidal discussion identifies a 42-yard touchdown inside 57 rushing yards. These illustrate why a high touch rate or big scoring play is not proof of a durable expanded role. Snap data is credited to PFF, so repeating it is not independent confirmation.",
+    "limitations": "A rostership filter is not league availability. Suggested values are analyst opinion, not calibrated utility or market-clearing bids. PFF underlying snap/route data was not independently accessed. Article HTML and AMP versions differ in included post-MNF material; preserve the retrieved version.",
+    "challenge": "A waiver budget percentage or last-game score should not be copied directly into a league-specific bid. Counts without opportunity denominator and replacement comparison can exaggerate value.",
+    "test": "Freeze before waivers the eligible candidate list, role scenarios, one-week and four-week useful-start utility, displaced-player value and bid ceiling. Compare opportunity-conditioned ranking with last-game-points ranking on future chronological weeks, including rejected and failed candidates. Evaluate actual useful starts above an eligible replacement, not hindsight perfect lineups.",
+    "evidence_grade": "B for transparent accessible methodology; C for unverified provider usage details; untested for incremental decision benefit"
+  },
+  "mathematical_application": {
+    "classification": "MODEL ASSUMPTION",
+    "model": "First estimate incremental expected fantasy points from actual useful starts: sum over role scenarios of scenario probability times expected points above the eligible replacement when actually started, minus displaced-player expected fantasy points. Acquisition utility is a separate objective: convert that points benefit, future budget opportunity cost, and any actual cash cost into one explicitly chosen common utility unit using declared conversion functions before combining them. Never subtract dollars or budget percentages directly from fantasy points.",
+    "example": "Synthetic only: a candidate projects 12 points if the starter stays out and 4 otherwise; replacement is 8. If the lineup cannot be changed after injury news and absence probability is 0.6, expected points are 8.8, only 0.8 above replacement before costs. If news arrives before lineup lock and replacement remains usable, the option value differs; explicitly model that timing rather than assuming it.",
+    "fair_bid": "No dollar bid follows without the probability of winning at each bid, own constraints, opponent demand and value of saved budget. Scaling a published dollar suggestion by starting budget is unit conversion, not optimization.",
+    "failure_condition": "Reject the proposed ranking upgrade if held-out incremental useful starts do not improve after eligibility, transaction costs, injury cases and displaced-player value; do not tune on this one week.",
+    "utility_units": "For example, U(b)=g(expected incremental points)-h(budget spent)-c(actual cash cost), with g, h and c all returning the same declared utility units. The functions require league-specific preferences and validation; none is estimated in this report. Alternatively optimize points subject to separate budget and cash constraints, without combining unlike units."
+  },
+  "weekly_review_evidence": {
+    "best_decisions": [],
+    "worst_decisions": [],
+    "good_process_bad_result": [],
+    "bad_process_good_result": [],
+    "missed_opportunities": [],
+    "signals_that_worked": [
+      "Official injury-conditioned role evidence supports studying workload rather than only touchdowns; this is not a causal validation or a decision grade."
+    ],
+    "signals_that_failed": [
+      "No signal is declared failed from a single game. Absence of a measured role variable is not a zero."
+    ],
+    "data_quality_issues": [
+      "MNF final is established, but Nacua yardage conflict still lacks gamebook adjudication.",
+      "Original post-news quotes, snaps, routes and complete goal-line denominators were not obtained."
+    ],
+    "timing_issues": [
+      "Thursday estimates must be replaced with Tuesday/Wednesday participation and final actives.",
+      "Public article updates can incorporate MNF outcomes; never use the current page as evidence of pregame foresight."
+    ],
+    "rule_changes_proposed": [
+      "Evaluate an explicit role-state and observation-time schema through existing learning review; no adoption."
+    ],
+    "rule_changes_adopted": [],
+    "rules_rejected_due_to_insufficient_sample": [
+      "Permanent depth-chart changes, signal reweighting and automatic aggressive bids based on Week 5 alone."
+    ],
+    "nfl_pulse_performance": {
+      "status": "NOT_GRADED",
+      "pulses_considered": null,
+      "pulses_used": null,
+      "pulses_rejected": null,
+      "actions_changed_by_pulse": null,
+      "successful_actions_changed_by_pulse": null,
+      "unsuccessful_actions_changed_by_pulse": null,
+      "average_information_lead_time": null,
+      "highly_useful_pulses": null,
+      "misleading_pulses": null,
+      "too_late_pulses": null,
+      "pulse_category_performance": null,
+      "pulse_source_performance": null,
+      "reason": "Public-source research does not establish complete league-specific lineage or actual actions. Existing lineage must be reconciled inside the authoritative learning system."
+    },
+    "week_scorecard": {
+      "status": "NOT_REBUILT",
+      "reason": "This is supporting public evidence, not a replacement season scorecard. Empty decision-grade sections mean ungraded here, not that no good or bad decisions exist."
+    }
+  },
+  "calibration": {
+    "status": "NOT_ESTIMABLE_HERE",
+    "reason": "No matched collection of genuine pregame numerical fantasy probabilities and verified outcomes is published in this public note. No Brier, calibration, dollar efficiency or outcome/process grade is invented."
+  },
+  "forecast_preservation": "Preserved forecasts and confirmed user actions remain in the existing league learning system. This public educational artifact neither backfills predictions nor republishes private decisions or account provenance.",
+  "hypotheses": [
+    {
+      "classification": "UNTESTED HYPOTHESIS",
+      "name": "Role-conditioned replacement utility",
+      "status": "OPEN_FOR_CHRONOLOGICAL_TEST",
+      "test": "Freeze before waivers the eligible candidate list, role scenarios, one-week and four-week useful-start utility, displaced-player value and bid ceiling. Compare opportunity-conditioned ranking with last-game-points ranking on future chronological weeks, including rejected and failed candidates. Evaluate actual useful starts above an eligible replacement, not hindsight perfect lineups.",
+      "failure_conditions": "Reject the proposed ranking upgrade if held-out incremental useful starts do not improve after eligibility, transaction costs, injury cases and displaced-player value; do not tune on this one week."
+    }
+  ],
+  "missing_evidence": [
+    "Authoritative final gamebook to adjudicate the Nacua yardage discrepancy",
+    "Provider-defined snap, route, target and goal-line denominators",
+    "Updated Tuesday/Wednesday injury information",
+    "League-specific authenticated ownership, availability and constraints before any actionable waiver or lineup synthesis"
+  ],
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "prior_notes_unchanged": true
+  },
+  "general_hub_application": {
+    "classification": "ANALYST OPINION",
+    "text": "Mongo should separately validate current ESPN lineup, availability and waiver constraints before translating public injury/role candidates into recommendations. A fresh news feed does not refresh an older league snapshot."
+  }
+}
