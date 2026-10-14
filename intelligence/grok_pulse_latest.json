@@ -3,16 +3,16 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-14T041448Z",
-  "generated_at": "2026-10-14T04:14:48Z",
-  "completed_at": "2026-10-14T04:14:48Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-14T041431Z",
+  "generated_at": "2026-10-14T04:14:31Z",
+  "completed_at": "2026-10-14T04:14:31Z",
   "week": 6,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-14T04:14:48Z",
+  "as_of": "2026-10-14T04:14:31Z",
   "source_status": {
-    "official_nfl_team": "LIMITED",
-    "beat_reporting": "LIMITED",
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "LIMITED",
     "analytics": "UNAVAILABLE"
@@ -77,7 +77,7 @@
       "team": "BUF",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "MNF final BUF 37-34 OT: 2-2 rushing, 1-31 receiving, 3 KR for 114. No injury. Already captured.",
+      "summary": "MNF final BUF 37-34 OT: 2-2 rushing, 1-31 receiving, 3 KR for 114. No injury. Already captured. No new designation.",
       "mongo_impact": "Bench RB; W5 final.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -145,9 +145,7 @@
       "mongo_impact": "Do not reclaim without ESPN ownership check.",
       "recommendation": "NONE",
       "urgency": "NONE",
-      "sources": [
-        "Repo"
-      ]
+      "sources": ["Repo"]
     },
     {
       "player": "generic_watch_only",
@@ -157,9 +155,7 @@
       "mongo_impact": "Do not spend FAAB from this Pulse.",
       "recommendation": "NONE",
       "urgency": "NONE",
-      "sources": [
-        "AGENTS.md"
-      ]
+      "sources": ["AGENTS.md"]
     }
   ],
   "lineup_signals": [
@@ -172,9 +168,9 @@
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "12 AM ET Wednesday overnight (Week 6). No material change since 11:16 PM ET Pulse. NFL Pulse Bot 11:15 PM ET scan quiet (0 accepted; Downs alignment soft watch only). Penix/Lamb await Wednesday info/practice. ESPN state per 8:25 AM ET Oct 13 Live Check: 3-2, FAAB $74, W6 vs Horton; McMillan bench observation stands (James's call). Intelligence only.",
+  "summary": "12:14 AM ET Wednesday overnight (Week 6). No material change since prior 11:16 PM ET Pulse. Penix/Lamb unchanged (Wed practice pending). Holani full practice confirmed. No newer Live Check than 8:25 AM ET Oct 13. Intelligence only.",
   "prior_pulse_id": "mongo-grok-pulse-2026-10-14T031626Z",
   "prior_completed_at": "2026-10-14T03:16:26Z",
-  "prior_commit": "1049458669c3d8c1610a478fcab091c30677f75b",
-  "source_status_notes": "Overnight: read NFL Pulse Bot scan 2026-10-13-2315 (quiet, 0 accepted; its X read OK but not my own read). No new web news; no ESPN pull; no newer Live Check than 8:25 AM ET Oct 13."
+  "prior_commit": "da4d2788dd61b52cb3ca66449d1d0614db22ddd8",
+  "source_status_notes": "Web search + limited X; no ESPN pull; uses prior Live Check. Official NFL sources for prior MNF."
 }
