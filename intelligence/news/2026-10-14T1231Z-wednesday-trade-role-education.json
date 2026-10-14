@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "record_id": "mongo-2026-10-14-wednesday-trade-role-education",
+  "title": "Wednesday rest-of-season valuation: roster status, role uncertainty and replacement-adjusted trades",
+  "research_window_utc": {
+    "started_at": "2026-10-14T12:27:27Z",
+    "ended_at": "2026-10-14T12:29:36Z"
+  },
+  "coverage": "Bounded public educational review, not a complete Week 5 outcome audit or a league trade recommendation.",
+  "sources": [
+    {
+      "id": "FP_TRADE",
+      "creator": "Jim Moorman / FantasyPros",
+      "title": "Fantasy Football Trade Advice: Players to Buy, Sell or Hold (Week 6)",
+      "url": "https://www.fantasypros.com/2026/10/fantasy-football-trade-advice-players-to-buy-sell-or-hold-week-6/",
+      "publication_date": null,
+      "publication_date_note": "Exact publication timestamp not exposed in reviewed article text; search labeled today, which is not treated as an exact timestamp.",
+      "retrieved_at_utc": "2026-10-14T12:28:51Z",
+      "access_medium": "Substantial original article text reviewed across buy, sell and hold sections; no video playback or podcast audio.",
+      "timestamp": null
+    },
+    {
+      "id": "FP_CHART",
+      "creator": "FantasyPros Staff",
+      "title": "Fantasy Football Trade Value Chart: Week 6 (2026)",
+      "url": "https://www.fantasypros.com/2026/10/fantasy-football-trade-value-chart-week-6-2026/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-14T12:28:19Z",
+      "access_medium": "Original methodology paragraph and chart text reviewed; values treated as analyst estimates.",
+      "timestamp": null
+    },
+    {
+      "id": "SEA",
+      "creator": "John Boyle / Seattle Seahawks",
+      "title": "Week 6 Injury Report: Seahawks at Broncos",
+      "url": "https://www.seahawks.com/news/week-6-injury-report-seahawks-at-broncos",
+      "publication_date": "2026-10-13 04:10 PM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-14T12:28:34Z",
+      "access_medium": "Official article and Tuesday injury table text.",
+      "timestamp": null
+    },
+    {
+      "id": "DEN",
+      "creator": "Aric DiLalla / Denver Broncos",
+      "title": "Injury Report: CB Riley Moss remains limited practice participant ahead of Week 6 game vs. Seahawks",
+      "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-riley-moss-remains-limited-practice-participant-ahead-of-week-6-game-vs-seahawks",
+      "publication_date": "2026-10-13 04:03 PM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-14T12:29:19Z",
+      "access_medium": "Official full article text.",
+      "timestamp": null
+    },
+    {
+      "id": "HOU_ROSTER",
+      "creator": "Houston Texans",
+      "title": "Texans Roster",
+      "url": "https://www.houstontexans.com/team/players-roster/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-14T12:29:09Z",
+      "access_medium": "Official dynamic roster table, Practice Squad heading and Jordan row inspected.",
+      "timestamp": null
+    },
+    {
+      "id": "HOU_TX",
+      "creator": "Houston Texans",
+      "title": "Transactions",
+      "url": "https://www.houstontexans.com/team/transactions/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-14T12:29:09Z",
+      "access_medium": "Official 2026 transaction table; dated rows distinguish historical events from present role.",
+      "timestamp": null
+    },
+    {
+      "id": "HOU_PROFILE",
+      "creator": "Houston Texans",
+      "title": "Jawhar Jordan player profile",
+      "url": "https://www.houstontexans.com/team/players-roster/jawhar-jordan/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-14T12:28:34Z",
+      "access_medium": "Official career statistics table; displayed season checked as 2025.",
+      "timestamp": null
+    },
+    {
+      "id": "KPRC",
+      "creator": "Aaron Wilson / KPRC 2",
+      "title": "Texans third running back Jawhar Jordan ‘playing faster than last year’",
+      "url": "https://www.click2houston.com/sports/2026/07/14/texans-third-running-back-jawhar-jordan-playing-faster-than-last-year/",
+      "publication_date": "2026-07-14 06:00 AM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-14T12:28:34Z",
+      "access_medium": "Original reported article with direct coach comments; historical context only.",
+      "timestamp": null
+    },
+    {
+      "id": "X",
+      "creator": "Jim Moorman",
+      "title": "jim_DFF author profile linked from original article",
+      "url": "https://x.com/jim_DFF",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-14T12:28:51Z",
+      "access_medium": "Direct original link failed with Internal Error; no original X post reviewed.",
+      "timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Jordan requires an NFL roster-status gate",
+      "text": "Houston's current official roster lists Jawhar Jordan under Practice Squad. Its transaction table records his August 31 practice-squad signing. The player profile displays 2025 totals of 43 carries for 193 yards and seven catches for 34 yards. Those are historical season totals, not Week 5 2026 production. No Week 6 elevation or current usage was established here.",
+      "source_ids": [
+        "HOU_ROSTER",
+        "HOU_TX",
+        "HOU_PROFILE"
+      ],
+      "confidence": "HIGH for displayed official records; game-day role unresolved"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "topic": "Historical praise is not a current depth-chart promotion",
+      "text": "The July KPRC interview describes improved third-down execution and a roster competition. Treat it as dated scouting context, not evidence of an October promotion or receiving workload.",
+      "source_ids": [
+        "KPRC"
+      ],
+      "confidence": "HIGH on source date; LOW for extrapolation to Week 6"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Tuesday estimates remain provisional",
+      "text": "Seattle did not practice Tuesday; Denver held a walkthrough. Both reports use estimated participation. JSN remained limited/ankle; Charbonnet limited/knee; Holani full/ribs-knee. Denver listed Surtain and Hufanga as estimated nonparticipants and Moss limited. Denver says game statuses come Wednesday. These are not final Thursday clearance or observed full-speed workload.",
+      "source_ids": [
+        "SEA",
+        "DEN"
+      ],
+      "confidence": "HIGH for official reports; future availability unresolved"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "topic": "Trade theses are conditional, price-dependent forecasts",
+      "text": "Moorman compares his half-PPR rest-of-season views against ECR, favoring opportunity over recent points and distinguishing buys, sells and holds. His Hall discussion anticipates possible Allen competition after a return; Mitchell is discussed as receiving-depth with contingent upside. Those are testable opinions, not confirmed future workload. Quoted usage estimates and all injury forecasts in that article were not independently validated here.",
+      "source_ids": [
+        "FP_TRADE"
+      ],
+      "confidence": "B for transparent accessible reasoning; C for uncrosschecked usage and forecast claims"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "topic": "Chart numbers are not trade-clearing prices",
+      "text": "FantasyPros describes its chart as analyst-ranking-derived and explicitly league-dependent. A positional rank match or equal summed chart value does not establish equal team utility, especially in a two-for-one trade.",
+      "source_ids": [
+        "FP_CHART"
+      ],
+      "confidence": "HIGH for stated method; no calibrated trade-price accuracy established"
+    }
+  ],
+  "educational_lesson": {
+    "classification": "MODEL ASSUMPTION",
+    "central_method": "Evaluate a proposed trade as a change in the feasible lineup portfolio across future role and injury scenarios, rather than adding positional ranks or last-week points.",
+    "mathematics": "For each future week and scenario, evaluate the best eligible lineup using only information that would be available by lineup lock. Expected trade benefit is the scenario-weighted difference in lineup points after versus before, including any player displaced to make roster room. Apply any playoff-week or risk weights explicitly. Do not combine fantasy points and dollars without a declared common utility conversion.",
+    "synthetic_example": "Two starting slots, deterministic example only: before a trade, A projects 18 and replacement R projects 8, totaling 26. Receiving B=14 and C=13 produces 27, a gain of 1, although comparing B+C=27 against A alone=18 misleadingly suggests a gain of 9. If both received players compete for one usable slot, the result changes again. These are invented teaching inputs, not player projections.",
+    "challenged_assumptions": [
+      "Equal positional rank does not imply equal surplus value across positions.",
+      "Regression toward a baseline is not a promise of imminent touchdowns.",
+      "A famous player's low price is not a bargain unless expected usable production exceeds what is surrendered.",
+      "A practice-squad player does not receive a positive opportunity projection merely because a historical highlight looks strong."
+    ],
+    "test": "Freeze role-state probabilities, expected routes/carries/goal-line usage, injury duration assumptions, feasible replacements and the offered price before the trade decision. Compare the scenario model against chart-sum and recent-score baselines on later chronological weeks. Record proposed, accepted and rejected trades separately; only confirmed actions enter realized team results. Measure lineup-point forecast error and opportunity-share error; evaluate intervals and calibration only when numerical probabilities and sufficient resolved cases exist.",
+    "failure_conditions": "Reject the added complexity if held-out lineup forecasts do not improve or any apparent advantage disappears after including rejected candidates, unavailable replacements and displaced-player costs. Preserve failed cases and original estimates.",
+    "evidence_grade": "Mathematical accounting is exact under stated assumptions. Probabilities, projections and incremental predictive benefit remain unvalidated."
+  },
+  "research_proposals": [
+    {
+      "classification": "UNTESTED HYPOTHESIS",
+      "name": "Role uncertainty drives misvaluation after injury-replacement weeks",
+      "mechanism": "Managers may price a replacement's latest points as permanent workload or overdiscount the returning starter.",
+      "test": "Predefine return-date scenarios and post-return carry, route and goal-line shares; compare to next four games and a static recent-volume baseline.",
+      "failure_condition": "No held-out gain, or improvements are attributable to hindsight injury updates.",
+      "status": "OPEN_UNRUN"
+    },
+    {
+      "classification": "UNTESTED HYPOTHESIS",
+      "name": "Roster-status gating reduces wasted speculative evaluations",
+      "mechanism": "Historical player profiles can appear current while omitting active/practice-squad status.",
+      "test": "Track candidates excluded pending an elevation and those later activated, with opportunity outcomes and opportunity costs; retain false negatives.",
+      "failure_condition": "Gate discards useful early contingent stashes without offsetting decision benefit.",
+      "status": "OPEN_UNRUN"
+    }
+  ],
+  "weekly_continuity": {
+    "status": "SUPPORTING_EVIDENCE_ONLY",
+    "prior_report": "intelligence/news/2026-10-13T1237Z-weekly-public-evidence-education.json",
+    "prior_correction": "intelligence/news/2026-10-13T1247Z-puka-stat-unit-correction.json",
+    "text": "Yesterday's selected Week 5 review and receiving-versus-scrimmage correction remain intact. No historical forecast, actual action, outcome grade or calibration statistic is fabricated. This Wednesday note adds role-state and trade-value testing, not another weekly truth system.",
+    "best_decisions": [],
+    "worst_decisions": [],
+    "good_process_bad_result": [],
+    "bad_process_good_result": [],
+    "missed_opportunities": [],
+    "signals_that_worked": [],
+    "signals_that_failed": [],
+    "data_quality_issues": [
+      "Historical career totals must retain season labels.",
+      "Injury estimates must retain estimate/observed flags.",
+      "No complete provider-defined route or goal-line data obtained."
+    ],
+    "timing_issues": [
+      "Wednesday game designations and Thursday actives can change scenarios before lineup lock."
+    ],
+    "rule_changes_proposed": [
+      "Review a candidate roster-status/date gate and replacement-adjusted trade scenario test."
+    ],
+    "rule_changes_adopted": [],
+    "rules_rejected_due_to_insufficient_sample": [
+      "Automatic buy/sell or permanent signal reweighting from one Week 5 result."
+    ],
+    "calibration": "NOT_ESTIMATED: no new matched probability/outcome sample.",
+    "nfl_pulse_performance": "NOT_GRADED: direct public-source review is not proof of actual Pulse influence or completed league actions."
+  },
+  "missing_evidence": [
+    "Current game-day elevation and role evidence for Jawhar Jordan.",
+    "Wednesday injury designations and Thursday actives for SEA/DEN.",
+    "Independently verified recent routes, targets-per-route, goal-line shares and injury-adjusted team opportunity denominators.",
+    "League-specific current ownership, scoring, roster feasibility, actual trade offer and replacement options before any actionable recommendation.",
+    "No verified original X post; no audiovisual playback claimed."
+  ],
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "paid_content_republished": false,
+    "private_state_republished": false
+  },
+  "context": "mongo public NFL intelligence only",
+  "general_hub_application": {
+    "classification": "ANALYST OPINION",
+    "text": "Mongo can use receiving-role and injury-scenario research to assess future useful starts, while independently verifying ESPN ownership, replacements and roster constraints. A new news update does not refresh an older league snapshot. No trade, bid or lineup change follows from this public note."
+  }
+}
