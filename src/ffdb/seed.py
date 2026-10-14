@@ -28,6 +28,11 @@ MITCHELL_ACHANE_AT = datetime(2026, 9, 30, 15, 59, 9, tzinfo=timezone.utc)  # Tu
 PENIX_BELL_WAIVER_AT = datetime(2026, 10, 7, 7, 34, 0, tzinfo=timezone.utc)  # Wed Oct 7, 3:34 am ET
 RAIDERS_PACKERS_DST_AT = datetime(2026, 10, 8, 22, 13, 0, tzinfo=timezone.utc)  # Wed Oct 8, 6:13 pm ET
 TESLAA_BATEMAN_AT = datetime(2026, 10, 9, 13, 28, 0, tzinfo=timezone.utc)  # Thu Oct 9, 9:28 am ET
+FLOURNOY_TESLAA_AT = datetime(2026, 10, 14, 11, 30, 0, tzinfo=timezone.utc)  # Wed Oct 14, 7:30 am ET
+SAINTS_RAIDERS_DST_AT = datetime(2026, 10, 14, 11, 30, 0, tzinfo=timezone.utc)  # Wed Oct 14, 7:30 am ET
+HIGBEE_GADSDEN_AT = datetime(2026, 10, 14, 12, 0, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:00 am ET
+MCLAUGHLIN_HOLANI_AT = datetime(2026, 10, 14, 12, 18, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:18 am ET
+ESTIME_PENIX_AT = datetime(2026, 10, 14, 12, 18, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:18 am ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -955,6 +960,271 @@ def seed_mongo(session: Session):
         observed_at=TESLAA_BATEMAN_AT, source_id=teslaa_source.id,
     ))
 
+    # --- 2026-10-14 ESPN: FREE_AGENT ADD Ryan Flournoy $0 / DROP Isaac TeSlaa ---
+    ryan_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Isaac TeSlaa")))
+    ryan_add = _player(session, "Ryan Flournoy", "WR", "DAL")
+    ryan_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Ryan Flournoy for $0; dropped Isaac TeSlaa (Wed Oct 14, 7:30 am ET)",
+        original_ref="data/imports/2026-10-14-ryan-flournoy-add-teslaa-drop.json",
+        platform="ESPN",
+        observed_at=FLOURNOY_TESLAA_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-14 08:15 ET; FAAB remained $74; no espn_id observed for Ryan Flournoy.",
+    )
+    session.add(ryan_source)
+    session.flush()
+    ryan_group = TransactionGroup(
+        id="ryan-flournoy-add-teslaa-drop-20261014-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=FLOURNOY_TESLAA_AT, source_id=ryan_source.id,
+        notes="ESPN-authoritative ADD_DROP: Ryan Flournoy $0 free add; Isaac TeSlaa dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(ryan_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=ryan_group.id, sequence=1, event_type="DROP", player_id=ryan_drop.id,
+            notes="Dropped when adding Ryan Flournoy.",
+        ),
+        TransactionEvent(
+            group_id=ryan_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=ryan_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=ryan_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=FLOURNOY_TESLAA_AT, source_id=ryan_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=ryan_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=ryan_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=FLOURNOY_TESLAA_AT, source_id=ryan_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=ryan_group.id,
+            notes="ESPN free add $0 dropping Isaac TeSlaa.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=ryan_add.id,
+            slot="BN", placement="BENCH", effective_at=FLOURNOY_TESLAA_AT, source_id=ryan_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=FLOURNOY_TESLAA_AT, source_id=ryan_source.id,
+    ))
+
+    # --- 2026-10-14 ESPN: FREE_AGENT ADD Saints D/ST $0 / DROP Raiders D/ST ---
+    saints_dst_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Raiders D/ST")))
+    saints_dst_add = _player(session, "Saints D/ST", "D/ST", "NO")
+    saints_dst_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Saints D/ST for $0; dropped Raiders D/ST (Wed Oct 14, 7:30 am ET)",
+        original_ref="data/imports/2026-10-14-saints-dst-add-raiders-dst-drop.json",
+        platform="ESPN",
+        observed_at=SAINTS_RAIDERS_DST_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-14 08:15 ET; FAAB remained $74; no espn_id observed for Saints D/ST.",
+    )
+    session.add(saints_dst_source)
+    session.flush()
+    saints_dst_group = TransactionGroup(
+        id="saints-dst-add-raiders-dst-drop-20261014-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=SAINTS_RAIDERS_DST_AT, source_id=saints_dst_source.id,
+        notes="ESPN-authoritative ADD_DROP: Saints D/ST $0 free add; Raiders D/ST dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(saints_dst_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=saints_dst_group.id, sequence=1, event_type="DROP", player_id=saints_dst_drop.id,
+            notes="Dropped when adding Saints D/ST.",
+        ),
+        TransactionEvent(
+            group_id=saints_dst_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=saints_dst_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=saints_dst_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=SAINTS_RAIDERS_DST_AT, source_id=saints_dst_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=saints_dst_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=saints_dst_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=SAINTS_RAIDERS_DST_AT, source_id=saints_dst_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=saints_dst_group.id,
+            notes="ESPN free add $0 dropping Raiders D/ST.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=saints_dst_add.id,
+            slot="D/ST", placement="STARTER", effective_at=SAINTS_RAIDERS_DST_AT, source_id=saints_dst_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=SAINTS_RAIDERS_DST_AT, source_id=saints_dst_source.id,
+    ))
+
+    # --- 2026-10-14 ESPN: FREE_AGENT ADD Tyler Higbee $0 / DROP Oronde Gadsden ---
+    tyler_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Oronde Gadsden")))
+    tyler_add = _player(session, "Tyler Higbee", "TE", "LAR")
+    tyler_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Tyler Higbee for $0; dropped Oronde Gadsden (Wed Oct 14, 8:00 am ET)",
+        original_ref="data/imports/2026-10-14-tyler-higbee-add-gadsden-drop.json",
+        platform="ESPN",
+        observed_at=HIGBEE_GADSDEN_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-14 08:15 ET; FAAB remained $74; no espn_id observed for Tyler Higbee.",
+    )
+    session.add(tyler_source)
+    session.flush()
+    tyler_group = TransactionGroup(
+        id="tyler-higbee-add-gadsden-drop-20261014-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=HIGBEE_GADSDEN_AT, source_id=tyler_source.id,
+        notes="ESPN-authoritative ADD_DROP: Tyler Higbee $0 free add; Oronde Gadsden dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(tyler_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=tyler_group.id, sequence=1, event_type="DROP", player_id=tyler_drop.id,
+            notes="Dropped when adding Tyler Higbee.",
+        ),
+        TransactionEvent(
+            group_id=tyler_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=tyler_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=tyler_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=HIGBEE_GADSDEN_AT, source_id=tyler_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=tyler_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=tyler_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=HIGBEE_GADSDEN_AT, source_id=tyler_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=tyler_group.id,
+            notes="ESPN free add $0 dropping Oronde Gadsden.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=tyler_add.id,
+            slot="BN", placement="BENCH", effective_at=HIGBEE_GADSDEN_AT, source_id=tyler_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=HIGBEE_GADSDEN_AT, source_id=tyler_source.id,
+    ))
+
+    # --- 2026-10-14 ESPN: FREE_AGENT ADD Jaleel McLaughlin $0 / DROP George Holani ---
+    jaleel_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("George Holani")))
+    jaleel_add = _player(session, "Jaleel McLaughlin", "RB", "CLE")
+    jaleel_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Jaleel McLaughlin for $0; dropped George Holani (Wed Oct 14, 8:18 am ET)",
+        original_ref="data/imports/2026-10-14-jaleel-mclaughlin-add-holani-drop.json",
+        platform="ESPN",
+        observed_at=MCLAUGHLIN_HOLANI_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-14 08:15 ET; FAAB remained $74; no espn_id observed for Jaleel McLaughlin.",
+    )
+    session.add(jaleel_source)
+    session.flush()
+    jaleel_group = TransactionGroup(
+        id="jaleel-mclaughlin-add-holani-drop-20261014-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=MCLAUGHLIN_HOLANI_AT, source_id=jaleel_source.id,
+        notes="ESPN-authoritative ADD_DROP: Jaleel McLaughlin $0 free add; George Holani dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(jaleel_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=jaleel_group.id, sequence=1, event_type="DROP", player_id=jaleel_drop.id,
+            notes="Dropped when adding Jaleel McLaughlin.",
+        ),
+        TransactionEvent(
+            group_id=jaleel_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=jaleel_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=jaleel_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=MCLAUGHLIN_HOLANI_AT, source_id=jaleel_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=jaleel_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=jaleel_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=MCLAUGHLIN_HOLANI_AT, source_id=jaleel_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=jaleel_group.id,
+            notes="ESPN free add $0 dropping George Holani.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=jaleel_add.id,
+            slot="BN", placement="BENCH", effective_at=MCLAUGHLIN_HOLANI_AT, source_id=jaleel_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=MCLAUGHLIN_HOLANI_AT, source_id=jaleel_source.id,
+    ))
+
+    # --- 2026-10-14 ESPN: FREE_AGENT ADD Audric Estime $0 / DROP Michael Penix Jr. ---
+    audric_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Michael Penix Jr.")))
+    audric_add = _player(session, "Audric Estime", "RB", "CLE")
+    audric_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Audric Estime for $0; dropped Michael Penix Jr. (Wed Oct 14, 8:18 am ET)",
+        original_ref="data/imports/2026-10-14-audric-estime-add-penix-drop.json",
+        platform="ESPN",
+        observed_at=ESTIME_PENIX_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-14 08:15 ET; FAAB remained $74; no espn_id observed for Audric Estime.",
+    )
+    session.add(audric_source)
+    session.flush()
+    audric_group = TransactionGroup(
+        id="audric-estime-add-penix-drop-20261014-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=ESTIME_PENIX_AT, source_id=audric_source.id,
+        notes="ESPN-authoritative ADD_DROP: Audric Estime $0 free add; Michael Penix Jr. dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(audric_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=audric_group.id, sequence=1, event_type="DROP", player_id=audric_drop.id,
+            notes="Dropped when adding Audric Estime.",
+        ),
+        TransactionEvent(
+            group_id=audric_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=audric_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=audric_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=ESTIME_PENIX_AT, source_id=audric_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=audric_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=audric_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=ESTIME_PENIX_AT, source_id=audric_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=audric_group.id,
+            notes="ESPN free add $0 dropping Michael Penix Jr..",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=audric_add.id,
+            slot="BN", placement="BENCH", effective_at=ESTIME_PENIX_AT, source_id=audric_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=ESTIME_PENIX_AT, source_id=audric_source.id,
+    ))
+
     for name, pos in NOT_MINE_UNKNOWN:
         p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(name)))
         session.add(OwnershipEvent(
@@ -986,6 +1256,7 @@ def seed_mongo(session: Session):
         ("Eagles D/ST", "Eagles"),
         ("Packers D/ST", "Packers"),
         ("Raiders D/ST", "Raiders"),
+        ("Saints D/ST", "Saints"),
         ("De'Von Achane", "Devon Achane"),
     ]:
         p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(canonical)))
