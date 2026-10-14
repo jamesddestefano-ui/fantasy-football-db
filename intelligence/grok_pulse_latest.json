@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-14T031552Z",
-  "generated_at": "2026-10-14T03:15:52Z",
-  "completed_at": "2026-10-14T03:15:52Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-14T031626Z",
+  "generated_at": "2026-10-14T03:16:26Z",
+  "completed_at": "2026-10-14T03:16:26Z",
   "week": 6,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-14T03:15:52Z",
+  "as_of": "2026-10-14T03:16:26Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -27,11 +27,13 @@
     "props_touched": false
   },
   "roster_context": {
-    "source": "Mongo Live Check 8:25 AM ET Oct 13 (authenticated ESPN read-only). Pulse did no ESPN pull.",
+    "source": "Mongo Live Check 8:25 AM ET Oct 13 (authenticated ESPN read-only). Pulse did no ESPN pull. No newer Live Check found.",
     "faab_remaining": 74,
     "record": "3-2",
     "standing": "5th of 12",
     "week_4_result": "W 181.32-138.58",
+    "week_5_result": "L 74.0-109.66 vs $Cmoney$",
+    "week_6_opponent": "Horton",
     "espn_injury_tags_on_roster": {
       "CeeDee Lamb": "Q",
       "George Holani": "Q",
@@ -66,10 +68,8 @@
       "Chris Bell",
       "Packers D/ST"
     ],
-    "live_check_ref": "mongo_sunday_night_check_20261011_1948_ET_espn",
-    "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN.",
-    "week_5_result": "L 74.0-109.66 vs $Cmoney$",
-    "week_6_opponent": "Horton"
+    "live_check_ref": "mongo_live_check_20261013_0825_ET_espn",
+    "free_agent_scan_note": "Packers D/ST and Chris Bell were FREE_AGENT_CONFIRMED only as of the 8:10 AM ET Oct 10 ESPN FA scan (Live Check); not re-verified this run. Bateman availability UNKNOWN."
   },
   "player_signals": [
     {
@@ -77,13 +77,12 @@
       "team": "BUF",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "MNF final BUF 37-34 OT: 2-2 rushing, 1-31 receiving, 3 KR for 114 (70-yd opening return). No injury reported.",
-      "mongo_impact": "Bench RB; W5 already final as loss.",
+      "summary": "MNF final BUF 37-34 OT: 2-2 rushing, 1-31 receiving, 3 KR for 114. No injury. Already captured.",
+      "mongo_impact": "Bench RB; W5 final.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://static.www.nfl.com/image/upload/v1791892319/gamecenter/aa94ccd3-4feb-11f1-abca-2c54536568a9.pdf",
-        "https://www.buffalobills.com/news/bills-37-rams-34-final-score-recap-highlights"
+        "https://static.www.nfl.com/image/upload/v1791892319/gamecenter/aa94ccd3-4feb-11f1-abca-2c54536568a9.pdf"
       ]
     },
     {
@@ -91,8 +90,8 @@
       "team": "ATL",
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Ribs not considered serious per Schefter sources; may play W6 vs CHI pending practice. Stefanski: more info Wednesday. No new Tuesday update found.",
-      "mongo_impact": "Bench QB.",
+      "summary": "Ribs not considered serious (Schefter). May play W6 vs CHI pending practice. Stefanski more info Wednesday. No new update since prior Pulse.",
+      "mongo_impact": "Bench QB; monitor Wed practice.",
       "urgency": "MEDIUM",
       "availability": "OWNED",
       "sources": [
@@ -104,37 +103,25 @@
       "team": "DAL",
       "slot": "starter",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Quad bruise not considered serious (Rapoport). Schottenheimer Monday update did not mention him. Week 6 report starts Wed Oct 14; W6 at GB SNF.",
+      "summary": "Quad bruise not considered serious (Rapoport). Week 6 report starts Wed Oct 14; W6 at GB SNF. No new designation.",
       "mongo_impact": "Starter WR; watch Wed practice.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/rap-lamb-quad-injury-not-considered-serious",
-        "https://dallassportsjournal.com/cowboys-injury-updates-daron-bland-caelen-carson-demarvion-overshown-packers/"
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-09/rap-lamb-quad-injury-not-considered-serious"
       ]
-    },
-    {
-      "player": "TreVeyon Henderson",
-      "team": "NE",
-      "slot": "not_on_mongo_roster",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "High-ankle sprain, multiple weeks per Schefter (via NFL Pulse Bot; not independently re-verified).",
-      "mongo_impact": "Context only.",
-      "urgency": "LOW",
-      "availability": "UNKNOWN",
-      "sources": []
     },
     {
       "player": "George Holani",
       "team": "SEA",
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Estimated Monday practice report: full participant (ribs/knee). No material change for Mongo ownership.",
+      "summary": "Full participant Mon/Tue practice reports (ribs/knee). No material change for Mongo.",
       "mongo_impact": "Bench RB; no action needed.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.fantasypros.com/nfl/news/613574/george-holani-ribsknee-fully-practices-on-estimated-practice-report.php"
+        "https://www.sharpfootballanalysis.com/betting/nfl-injury-report-this-week-all-32-teams/"
       ]
     },
     {
@@ -142,7 +129,7 @@
       "team": "various",
       "slot": "various",
       "status": "CONFIRMED_FACT",
-      "summary": "No new material injury or status changes for Hurts, Bijan, Miller, Downs, Andrews, Burden, Mitchell, McMillan (BYE), Black, TeSlaa, Gadsden, Sampson (IR).",
+      "summary": "No new material injury or status changes for Hurts, Bijan, Miller, Downs, Andrews, Burden, Mitchell, McMillan, Black, TeSlaa (W6 bye), Gadsden, Sampson (IR).",
       "mongo_impact": "None.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -151,45 +138,39 @@
   ],
   "waiver_signals": [
     {
-      "player": "Isaiah Likely",
-      "status": "CONFIRMED_FACT",
-      "summary": "Rostered by Horton per Live Check; not available."
+      "player": "Rashod Bateman",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Dropped Oct 9 per repo. Not FREE_AGENT_CONFIRMED.",
+      "mongo_impact": "Do not reclaim without ESPN ownership check.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": ["Repo"]
     },
     {
-      "player": "Coker",
-      "status": "CONFIRMED_FACT",
-      "summary": "Rostered by another team per Live Check; not available."
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. No new waiver news.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": ["AGENTS.md"]
     }
   ],
   "lineup_signals": [
     {
       "type": "lineup_observation",
       "status": "CONFIRMED_FACT",
-      "summary": "Observed ESPN state only: McMillan back from bye on bench (proj 16.7) vs starting flex options Mitchell 7.8 / Miller 9.3 / Downs 10.0; TeSlaa (DET) on W6 bye. Lineup is James's call; no ESPN action taken."
+      "summary": "Observed ESPN state only (prior Live Check): McMillan back from bye on bench (proj 16.7) vs starting flex options; TeSlaa (DET) on W6 bye. Lineup is James's call; no ESPN action taken."
     }
   ],
   "expert_signals": [],
-  "material_changes": [
-    {
-      "type": "matchup_result",
-      "status": "CONFIRMED_FACT",
-      "summary": "ESPN (Live Check 8:25 AM ET Oct 13): W5 loss 74.0-109.66 to $Cmoney$; record 3-2, 5th of 12. Week 6 opponent Horton. FAAB $74, roster/IR unchanged, no league txs since Oct 11."
-    },
-    {
-      "type": "lineup_observation",
-      "status": "CONFIRMED_FACT",
-      "summary": "Observed ESPN state only: McMillan back from bye on bench (proj 16.7) vs starting flex options Mitchell 7.8 / Miller 9.3 / Downs 10.0; TeSlaa (DET) on W6 bye. Lineup is James's call; no ESPN action taken."
-    },
-    {
-      "type": "player_final",
-      "status": "CONFIRMED_FACT",
-      "summary": "Ray Davis MNF final (BUF 37-34 OT at LAR): 2 rush-2 yds, 1 rec-31 yds, 3 KR-114 yds (official NFL game book). No injury reported."
-    }
-  ],
-  "no_material_change": false,
-  "summary": "11 PM ET Tuesday hourly (Week 6). Material: ESPN-confirmed W5 loss 74.0-109.66 (3-2, 5th); W6 vs Horton; McMillan back on bench (proj 16.7) above starting flex projections (observed state only, James's call); TeSlaa on bye. Ray Davis MNF: 2-2, 1-31, 3 KR-114, no injury. Penix/Lamb unchanged (Wed info/practice). Henderson (NE) context only. FAAB $74. Intelligence only.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-13T171500Z",
-  "prior_completed_at": "2026-10-13T17:15:00Z",
-  "prior_commit": "8903c54e1dc7e2d65c1fc33a176eff992b3a8a07",
-  "source_status_notes": "Official: NFL game book PDF + Bills site for MNF. Web search only otherwise; no direct X; no ESPN pull by Pulse (uses 8:25 AM ET Oct 13 Live Check)."
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "11:16 PM ET Tuesday hourly (Week 6). No material change since prior 11:15 PM ET Pulse. Penix/Lamb unchanged (Wed practice pending). Holani full practice confirmed. No newer Live Check than 8:25 AM ET Oct 13. Intelligence only.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-14T031552Z",
+  "prior_completed_at": "2026-10-14T03:15:52Z",
+  "prior_commit": "e4a7aceb5d25a112e6a959456e51a535c7a559f1",
+  "source_status_notes": "Web search + limited X; no ESPN pull; uses prior Live Check. Official NFL sources for prior MNF."
 }
