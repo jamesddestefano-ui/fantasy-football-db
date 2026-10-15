@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-14T231600Z",
-  "generated_at": "2026-10-14T23:16:00Z",
-  "completed_at": "2026-10-14T23:16:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-15T021500Z",
+  "generated_at": "2026-10-15T02:15:00Z",
+  "completed_at": "2026-10-15T02:15:00Z",
   "week": 6,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-14T23:16:00Z",
+  "as_of": "2026-10-15T02:15:00Z",
   "source_status": {
     "official_nfl_team": "OK",
     "beat_reporting": "OK",
@@ -77,13 +77,12 @@
       "team": "ATL",
       "slot": "bench",
       "status": "CONFIRMED_FACT",
-      "summary": "Full participant in Wednesday practice (official Falcons injury report / team site). Prior pending 'limited' expectation upgraded. Stefanski: on track to start W6 vs CHI if no setbacks. Penix: made every throw, felt good, scans positive.",
+      "summary": "Full participant Wednesday practice (official Falcons). Stefanski: on track to start W6 vs CHI if no setbacks. No new update since prior Pulse.",
       "mongo_impact": "Bench QB; positive availability signal for W6. Monitor Thu/Fri.",
       "urgency": "MEDIUM",
       "availability": "OWNED",
       "sources": [
-        "https://www.atlantafalcons.com/news/falcons-injury-report-michael-penix-jr-chicago-bears",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/michael-penix-fully-participated-in-wednesdays-practice"
+        "https://www.atlantafalcons.com/news/falcons-injury-report-michael-penix-jr-chicago-bears"
       ]
     },
     {
@@ -91,13 +90,12 @@
       "team": "DAL",
       "slot": "starter",
       "status": "CONFIRMED_FACT",
-      "summary": "Full participant Wednesday practice (official team report / PFT / RotoWire / Patrik Walker). Prior 'quad bruise not serious, watch Wed' upgraded to full. Expected available for W6 SNF at GB.",
+      "summary": "Full participant Wednesday practice (official Cowboys report). Expected available for W6 SNF at GB. No new update since prior Pulse.",
       "mongo_impact": "Starter WR; positive. No lineup change by Pulse.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-14/ceedee-lamb-quad-practicing-in-full-for-week-6",
-        "https://www.rotowire.com/football/player/ceedee-lamb-14411"
+        "https://www.packers.com/news/packers-cowboys-injury-report-oct-14-2026"
       ]
     },
     {
@@ -105,31 +103,46 @@
       "team": "SEA",
       "slot": "bench",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "No new material change. Prior full participant Mon/Tue carried. No designation on current reports; TNF context only.",
+      "summary": "Full participant, no game designation for TNF vs DEN (official Seahawks report). Ready to roll as backup.",
       "mongo_impact": "Bench RB; no action.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.nfl.com/injuries/"
+        "https://www.seahawks.com/news/week-6-injury-report-seahawks-at-broncos"
       ]
     },
     {
-      "player": "Ray Davis",
-      "team": "BUF",
-      "slot": "bench",
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "slot": "starter",
       "status": "CONFIRMED_FACT",
-      "summary": "MNF final already captured (2-2 rush, 1-31 rec, 3 KR-114). No new designation or injury.",
-      "mongo_impact": "Bench; W5 complete.",
+      "summary": "Full participant Wednesday practice (calf). On track to play. No material change.",
+      "mongo_impact": "Starter QB; positive.",
       "urgency": "LOW",
       "availability": "OWNED",
-      "sources": []
+      "sources": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/eagles-list-24-injured-players-including-devonta-smith-saquon-barkley-as-dnp"
+      ]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "slot": "starter",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Limited Wednesday (rest/hamstring). Common rest day; not expected to impact availability.",
+      "mongo_impact": "Starter WR; monitor only.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-list-daniel-jones-as-full-practice-participant-with-ankle-injury"
+      ]
     },
     {
       "player": "Other starters / bench",
       "team": "various",
       "slot": "various",
       "status": "CONFIRMED_FACT",
-      "summary": "No new material injury or status changes for Hurts, Bijan, Miller, Downs, Andrews, Burden, Mitchell, McMillan, Black, TeSlaa (W6 bye), Gadsden, Sampson (IR).",
+      "summary": "No new material injury or status changes for Bijan, Miller, Andrews, Burden, Mitchell, McMillan, Davis, Black, TeSlaa (W6 bye), Gadsden, Sampson (IR).",
       "mongo_impact": "None.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -170,24 +183,11 @@
     }
   ],
   "expert_signals": [],
-  "material_changes": [
-    {
-      "type": "practice_participation",
-      "player": "Michael Penix Jr.",
-      "status": "CONFIRMED_FACT",
-      "summary": "Upgraded from pending/limited expectation to full participant Wednesday (official Falcons report). Positive for W6 start if no setbacks."
-    },
-    {
-      "type": "practice_participation",
-      "player": "CeeDee Lamb",
-      "status": "CONFIRMED_FACT",
-      "summary": "Upgraded from pending Wed practice to full participant (official/team reports). Expected available W6 SNF."
-    }
-  ],
-  "no_material_change": false,
-  "summary": "~7:16 PM ET Wednesday hourly (Week 6). Material vs 6:05 AM ET overnight: Penix full Wed practice (official Falcons); Lamb full Wed practice (team/PFT/RotoWire). Holani unchanged. ESPN state per 8:25 AM ET Oct 13 Live Check (no newer): 3-2, FAAB $74, W6 vs Horton. Intelligence only. No ownership/FAAB/lineup/IR mutation.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-14T100530Z",
-  "prior_completed_at": "2026-10-14T10:05:30Z",
-  "prior_commit": "prior_sha_placeholder_to_be_verified",
-  "source_status_notes": "Official team sites OK for Penix/Lamb practice. No newer Live Check. x_direct LIMITED. Analytics UNAVAILABLE."
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "~10:15 PM ET Wednesday hourly (Week 6). No material change since 7:16 PM ET Pulse. Penix full Wed practice and Lamb full Wed practice already captured. Holani no designation for TNF. Hurts full (calf). Downs limited rest. ESPN state per 8:25 AM ET Oct 13 Live Check (no newer): 3-2, FAAB $74, W6 vs Horton. Intelligence only. No ownership/FAAB/lineup/IR mutation.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-14T231600Z",
+  "prior_completed_at": "2026-10-14T23:16:00Z",
+  "prior_commit": "06f8449b36b90957c0ccfec5c85087a06682012e",
+  "source_status_notes": "Official team sites OK. No newer Live Check. x_direct LIMITED. Analytics UNAVAILABLE."
 }
