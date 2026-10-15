@@ -3,15 +3,15 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-15T100000Z",
-  "generated_at": "2026-10-15T10:00:00Z",
-  "completed_at": "2026-10-15T10:00:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-15T162200Z",
+  "generated_at": "2026-10-15T16:22:00Z",
+  "completed_at": "2026-10-15T16:22:00Z",
   "week": 6,
   "season": 2026,
-  "run_type": "overnight",
-  "as_of": "2026-10-15T10:00:00Z",
+  "run_type": "hourly",
+  "as_of": "2026-10-15T16:22:00Z",
   "source_status": {
-    "official_nfl_team": "OK",
+    "official_nfl_team": "LIMITED",
     "beat_reporting": "OK",
     "x_direct": "LIMITED",
     "experts": "LIMITED",
@@ -80,13 +80,14 @@
       "team": "DAL",
       "slot": "starter",
       "status": "CONFIRMED_FACT",
-      "summary": "Full participant Wednesday practice (official/team reports). Expected available for W6 SNF at GB. No new overnight update.",
+      "summary": "Full participant Wednesday practice (official/team reports). Expected available for W6 SNF at GB. No Thursday practice report published yet as of 12:22 PM ET.",
       "mongo_impact": "Starter WR; positive. No lineup change by Pulse.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
         "https://www.packers.com/news/packers-cowboys-injury-report-oct-14-2026",
-        "NFL.com injury report"
+        "NFL.com injury report",
+        "team reports"
       ]
     },
     {
@@ -94,12 +95,13 @@
       "team": "PHI",
       "slot": "starter",
       "status": "CONFIRMED_FACT",
-      "summary": "Full participant Wednesday practice (calf). On track to play. No new overnight update.",
+      "summary": "Full participant Wednesday practice (calf). On track to play. No new Thursday update published.",
       "mongo_impact": "Starter QB; positive.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/eagles-list-24-injured-players-including-devonta-smith-saquon-barkley-as-dnp"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/eagles-list-24-injured-players-including-devonta-smith-saquon-barkley-as-dnp",
+        "official reports"
       ]
     },
     {
@@ -107,12 +109,12 @@
       "team": "IND",
       "slot": "starter",
       "status": "ATTRIBUTED_REPORT",
-      "summary": "Limited Wednesday (rest/hamstring). Common rest day; not expected to impact availability. No new update.",
+      "summary": "Limited Wednesday (rest/hamstring). Common rest day; not expected to impact availability. No Thursday practice report yet.",
       "mongo_impact": "Starter WR; monitor only.",
       "urgency": "LOW",
       "availability": "OWNED",
       "sources": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-list-daniel-jones-as-full-practice-participant-with-ankle-injury"
+        "https://www.colts.com/news/practice-notebook-ashton-dulin-and-jaylon-carlies-remain-out-darius-slayton-returns-to-practice"
       ]
     },
     {
@@ -120,7 +122,7 @@
       "team": "various",
       "slot": "various",
       "status": "CONFIRMED_FACT",
-      "summary": "No new material injury or status changes overnight for Bijan, Miller, Andrews, Burden, Mitchell, McMillan, Davis, Black, Flournoy, Higbee, McLaughlin, Estime, Sampson (IR).",
+      "summary": "No new material injury or status changes since overnight for Bijan, Miller, Andrews, Burden, Mitchell, McMillan, Davis, Black, Flournoy, Higbee, McLaughlin, Estime, Sampson (IR). Thursday reports pending.",
       "mongo_impact": "None.",
       "urgency": "LOW",
       "availability": "OWNED",
@@ -174,17 +176,11 @@
     }
   ],
   "expert_signals": [],
-  "material_changes": [
-    {
-      "type": "roster_context_sync",
-      "status": "CONFIRMED_FACT",
-      "summary": "Updated roster_context from Oct 13 Live Check to Oct 14 authenticated ESPN observation (per repo imports): adds Estime, McLaughlin, Flournoy, Higbee, Saints D/ST; drops Penix, Holani, Gadsden, TeSlaa, Raiders D/ST. FAAB $74, record 3-2 unchanged. Intelligence only."
-    }
-  ],
-  "no_material_change": false,
-  "summary": "6:00 AM ET overnight Thursday (Week 6). Material: synced roster_context to Oct 14 Live Check ESPN state (adds Estime/McLaughlin/Flournoy/Higbee/Saints; drops Penix/Holani/Gadsden/TeSlaa/Raiders). No new overnight NFL injury/practice material for rostered players (Lamb full Wed, Hurts full Wed unchanged). Penix dropped (availability UNKNOWN). ESPN state per Oct 14 Live Check: 3-2, FAAB $74, W6 vs Horton. Intelligence only. No ownership/FAAB/lineup/IR mutation.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-15T021500Z",
-  "prior_completed_at": "2026-10-15T02:15:00Z",
-  "prior_commit": "to_be_verified",
-  "source_status_notes": "Official team sites OK (Wed reports). No Thursday practice reports yet. x_direct LIMITED. Analytics UNAVAILABLE. Roster sync from repo imports only."
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "12:22 PM ET Thursday hourly (Week 6). No material change since 6:00 AM ET overnight Pulse. No Thursday practice reports published yet for DAL/PHI/IND as of scan. Lamb full Wed (expected available SNF), Hurts full Wed (calf), Downs limited Wed rest/hamstring (monitor). Roster per Oct 14 Live Check unchanged. Intelligence only. No ownership/FAAB/lineup/IR mutation.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-15T100000Z",
+  "prior_completed_at": "2026-10-15T10:00:00Z",
+  "prior_commit": "8d295af0bbacf05af0c3822048090605be83baa5",
+  "source_status_notes": "Official team sites LIMITED (no Thursday practice reports out yet at ~12:22 PM ET). Beat OK (prior Wed reports). x_direct LIMITED. Experts LIMITED. Analytics UNAVAILABLE. No newer ESPN Live Check."
 }
