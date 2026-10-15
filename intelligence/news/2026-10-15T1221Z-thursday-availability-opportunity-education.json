@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "record_id": "mongo-2026-10-15-thursday-availability-opportunity-education",
+  "title": "Thursday availability gates and scenario-based opportunity",
+  "research_window_utc": {
+    "started_at": null,
+    "ended_at": "2026-10-15T12:21:06Z",
+    "start_note": "Exact start timestamp not recorded; source retrieval timestamp records the upper bound of this review."
+  },
+  "coverage": "Public-only supporting education. No league roster, ownership, FAAB, account identifiers, private source provenance, transaction or actual lineup recommendation published.",
+  "sources": [
+    {
+      "id": "ETR_METHOD",
+      "creator": "Pat Thorman / Establish The Run",
+      "title": "Thorman: Why Snaps and Pace Matter",
+      "url": "https://establishtherun.com/thorman-why-snaps-and-pace-matter/",
+      "publication_date": "2019-07-08; updated 10:25 AM ET",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Full original educational article text reviewed; no playback.",
+      "timestamp": null
+    },
+    {
+      "id": "ETR_WEEK6",
+      "creator": "Pat Thorman / Establish The Run",
+      "title": "Thorman's Snaps and Pace: Week 6",
+      "url": "https://establishtherun.com/thormans-snaps-and-pace-week-6-8/",
+      "publication_date": "2026-10-14",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Public introduction and Cardinals-Rams section only; remainder subscription-restricted and not reviewed.",
+      "timestamp": null
+    },
+    {
+      "id": "SEA",
+      "creator": "John Boyle / Seattle Seahawks",
+      "title": "Week 6 Injury Report: Seahawks at Broncos",
+      "url": "https://www.seahawks.com/news/week-6-injury-report-seahawks-at-broncos",
+      "publication_date": "2026-10-14; header publication 04:10 PM, update 03:30 PM, timezone unspecified/order inconsistent",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Official article and Wednesday participation/game-status table.",
+      "timestamp": null
+    },
+    {
+      "id": "DEN",
+      "creator": "Aric DiLalla / Denver Broncos",
+      "title": "Injury Report: CB Riley Moss listed as questionable for Thursday Night Football vs. Seahawks",
+      "url": "https://www.denverbroncos.com/news/injury-report-cb-riley-moss-listed-as-questionable-for-thursday-night-football-vs-seahawks",
+      "publication_date": "2026-10-14 04:12 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Full official article text and statuses.",
+      "timestamp": null
+    },
+    {
+      "id": "CAR",
+      "creator": "Darin Gantt / Carolina Panthers",
+      "title": "Week 6 Wednesday injury report: Two players listed as out",
+      "url": "https://www.panthers.com/news/week-6-wednesday-injury-report-two-players-listed-as-out-monroe-freeling-aj-dillon",
+      "publication_date": "2026-10-14 03:59 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Official article; estimated Wednesday participation explicitly checked.",
+      "timestamp": null
+    },
+    {
+      "id": "CLE_INJ",
+      "creator": "Cleveland Browns",
+      "title": "Injury Report",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Dynamic official Browns-Ravens table: Wednesday populated, Thursday/Friday blank; exact publication timestamp unavailable.",
+      "timestamp": null
+    },
+    {
+      "id": "CLE_RETURN",
+      "creator": "Kelsey Russo / Cleveland Browns",
+      "title": "Dylan Sampson eligible to return to practice",
+      "url": "https://www.clevelandbrowns.com/news/dylan-sampson-eligible-to-return-to-practice",
+      "publication_date": "2026-10-14 11:56 AM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Full original official article text.",
+      "timestamp": null
+    },
+    {
+      "id": "GB",
+      "creator": "Green Bay Packers",
+      "title": "Packers-Cowboys injury report Oct. 14, 2026",
+      "url": "https://www.packers.com/news/packers-cowboys-injury-report-oct-14-2026",
+      "publication_date": "2026-10-14 04:03 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Official Wednesday table text.",
+      "timestamp": null
+    },
+    {
+      "id": "DAL",
+      "creator": "Dallas Cowboys",
+      "title": "Updates: October 2026",
+      "url": "https://www.dallascowboys.com/news/updates-october-2026",
+      "publication_date": "October 14 section, 4 PM; timezone unspecified",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Original October 14 Lamb update; dynamic page header not used as section date.",
+      "timestamp": null
+    },
+    {
+      "id": "DEN_ROLE",
+      "creator": "Aric DiLalla / Denver Broncos",
+      "title": "Broncos Postgame Notebook: Battle tested Broncos earn another 1-score win, Denver finds late success in run game",
+      "url": "https://www.denverbroncos.com/news/broncos-postgame-notebook-battle-tested-broncos-earn-another-1-score-win-denver-finds-late-success-in-run-game",
+      "publication_date": "2026-10-11 09:40 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-15T12:21:06Z",
+      "retrieval_time_note": "Research-window upper bound; individual browser calls occurred before this timestamp.",
+      "access_medium": "Full original official postgame article, especially run-game section.",
+      "timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Final Thursday designations supersede Tuesday estimates",
+      "text": "JSN was full Wednesday with no game-status designation. Charbonnet is out. Denver ruled out Surtain and Hufanga and lists Moss questionable. Both official team reports corroborate the statuses, but they are overlapping reporting of the same event, not independent predictive signals. No game-day inactive list reviewed. Thursday kickoff is October 15 at 20:15 EDT.",
+      "source_ids": [
+        "SEA",
+        "DEN"
+      ],
+      "confidence": "HIGH for reported statuses; workload and matchup effects uncertain"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Wednesday estimate is not an observed practice",
+      "text": "Carolina did not practice Wednesday. Waller (toe) and Tremble (ribs) were estimated limited; Freeling (knee) and Dillon (ankle) estimated nonparticipants. The headline's wording does not establish final Sunday OUT designations. Thursday actual practice and Friday game statuses are still needed.",
+      "source_ids": [
+        "CAR"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Return designation, participation and game activation are different gates",
+      "text": "Cleveland announced Sampson eligible to return to practice. Its Wednesday injury table lists Sampson (knee) and Judkins (ankle) as DNP, with Thursday/Friday and game status unresolved. Designated return does not prove activation, a healthy workload, or a vacated backfield share. Several offensive-line injuries also require monitoring before translating possible carries into efficiency.",
+      "source_ids": [
+        "CLE_RETURN",
+        "CLE_INJ"
+      ],
+      "confidence": "HIGH for official report; future role unresolved"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Positive participation still needs a final-status check",
+      "text": "Dallas and Green Bay's official Wednesday reporting shows Lamb full with a thigh issue. Baltimore's portion of the Browns-Ravens report shows Andrews full with a hand issue. These are Wednesday observations, not guarantees about Sunday health or usage.",
+      "source_ids": [
+        "GB",
+        "DAL",
+        "CLE_INJ"
+      ],
+      "confidence": "HIGH for Wednesday entries"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "A strong late quarter does not establish a permanent role shift",
+      "text": "Denver reports 29 team rush attempts Sunday and six Dobbins fourth-quarter carries averaging 6.8 yards, plus his touchdown. Those observations support reviewing volume and game script; they do not establish his full-game route, target, carry or goal-line share. Denver also reported 1-of-12 on third down, a reminder that possessions and offensive success affect volume.",
+      "source_ids": [
+        "DEN_ROLE"
+      ],
+      "confidence": "HIGH for reported game facts; LOW for extrapolated future share"
+    }
+  ],
+  "educational_lesson": {
+    "classification": "MODEL ASSUMPTION",
+    "central_method": "Model opportunity with health and game-script scenarios; distinguish tempo from total play volume.",
+    "source_lesson": "Thorman explains that seconds per snap and offensive play count need not move together because possessions, offensive success, opponents and game state matter. His older historical examples and reported neutral-pace R-squared of .45 were not independently reproduced here or validated for 2026. The current Week 6 public introduction defines a neutral filter; filtering is a modeling choice, not proof that excluded plays are irrelevant.",
+    "mathematics": "Own derivation: E[targets] = sum over scenarios s of P(s) * E[dropbacks * route participation * targets per route | s]. Multiplying unconditional averages assumes away dependence. A script can change all three factors together. A fantasy mean is not a reception-prop tail probability.",
+    "synthetic_example": "Teaching inputs only: 32 dropbacks x .85 route participation x .24 targets per route = 6.528 expected targets; 38 x .85 x .24 = 7.752. The 1.224 difference assumes fixed rates. No player forecast or executable wager is implied.",
+    "assumptions": [
+      "Scenario probabilities require evidence and calibration.",
+      "Routes and dropbacks must use consistent provider definitions and denominators.",
+      "Historical sample must handle injuries, overtime and coaching changes without hindsight.",
+      "Availability evidence does not by itself identify snap limits or target redistribution."
+    ],
+    "challenged_assumptions": [
+      "Faster pace alone guarantees more opportunities.",
+      "A full practice ensures normal usage.",
+      "A teammate's absence transfers all missing work to one replacement.",
+      "A touchdown or late-game burst proves sustainable improvement."
+    ],
+    "test": "Freeze a recent-volume baseline and a joint health/script model before each game. Use chronological held-out weeks and the same candidate set. Compare dropback, route and target MAE and interval coverage; score explicit role/availability probabilities with Brier score and calibration plots only when resolved sample size supports them. Record all failed predictions. Do not optimize filters on the evaluation weeks.",
+    "failure_conditions": "Reject the extra complexity if held-out errors/coverage do not improve, improvement relies on future information, or opportunity estimates become less robust across plausible injury scenarios.",
+    "evidence_grade": "A for probability/accounting identity under stated definitions; B for transparent educator reasoning; C for empirical gain until tested."
+  },
+  "research_proposals": [
+    {
+      "classification": "UNTESTED HYPOTHESIS",
+      "name": "Joint script/health opportunity forecasts outperform pace-only extrapolation",
+      "mechanism": "Injuries and script alter volume, routes and target propensity jointly.",
+      "test": "Freeze a recent-volume baseline and a joint health/script model before each game. Use chronological held-out weeks and the same candidate set. Compare dropback, route and target MAE and interval coverage; score explicit role/availability probabilities with Brier score and calibration plots only when resolved sample size supports them. Record all failed predictions. Do not optimize filters on the evaluation weeks.",
+      "failure_condition": "Reject the extra complexity if held-out errors/coverage do not improve, improvement relies on future information, or opportunity estimates become less robust across plausible injury scenarios.",
+      "status": "OPEN_UNRUN"
+    }
+  ],
+  "weekly_continuity": {
+    "status": "SUPPORTING_EVIDENCE_ONLY",
+    "prior_report": "intelligence/news/2026-10-14T1231Z-wednesday-trade-role-education.json",
+    "text": "Adds final TNF statuses, explicit return-to-practice gates and a new pace/opportunity lesson. Original forecasts and weekly reviews remain intact. No newly resolved matched forecast/outcome sample established in this bounded Thursday pass; no claim to complete weekly audit or calibration.",
+    "best_decisions": [],
+    "worst_decisions": [],
+    "good_process_bad_result": [],
+    "bad_process_good_result": [],
+    "missed_opportunities": [],
+    "signals_that_worked": [],
+    "signals_that_failed": [],
+    "data_quality_issues": [
+      "Provider-defined current routes, TPRR, goal-line shares and complete opportunity denominators not obtained.",
+      "Dynamic injury pages lack precise publication timestamps; Thursday/Friday blank fields are unresolved."
+    ],
+    "timing_issues": [
+      "Recheck official actives before Thursday kickoff and Sunday practices before lineup commitments."
+    ],
+    "rule_changes_proposed": [
+      "Review conditional opportunity modeling against a simple frozen baseline."
+    ],
+    "rule_changes_adopted": [],
+    "rules_rejected_due_to_insufficient_sample": [
+      "Permanent reweighting from a single touchdown, practice entry or one-week model result."
+    ],
+    "calibration": "NOT_ESTIMATED; no new matched sample.",
+    "nfl_pulse_performance": "NOT_GRADED; source review does not establish a logged decision or confirmed action."
+  },
+  "source_access_limitations": [
+    "No YouTube playback or transcript used in this secondary pass.",
+    "Original X link embedded in the 2019 ETR article returned Internal Error; no verified post text or exact permalink preserved, no X claim adopted.",
+    "Current ETR premium sections not accessed or summarized.",
+    "No current proprietary route dataset obtained."
+  ],
+  "missing_evidence": [
+    "Thursday actual practices and Friday final Sunday statuses.",
+    "Thursday game-day inactives and verified updated role projections.",
+    "Consistent recent route/carry/goal-line denominators.",
+    "Fresh authenticated league ownership, eligibility, available replacements, budget and scoring for any league-specific action; no assumptions imported from another league.",
+    "Preserved numerical forecast and verified outcome pair before any grading."
+  ],
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "paid_content_republished": false,
+    "private_state_republished": false
+  },
+  "context": "MONGO public NFL intelligence only",
+  "general_hub_application": {
+    "classification": "ANALYST OPINION",
+    "text": "Mongo should evaluate Cleveland backfield scenarios only after return/activation and participation checks, then verify its own current ESPN eligibility and available replacements. A public return designation does not establish platform IR eligibility or a free roster slot. Wednesday Lamb and Andrews participation is useful evidence for later lineup review. No bid, waiver availability or roster move can be inferred from this public note."
+  }
+}
