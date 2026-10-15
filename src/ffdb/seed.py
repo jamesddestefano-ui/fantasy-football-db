@@ -33,6 +33,7 @@ SAINTS_RAIDERS_DST_AT = datetime(2026, 10, 14, 11, 30, 0, tzinfo=timezone.utc)  
 HIGBEE_GADSDEN_AT = datetime(2026, 10, 14, 12, 0, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:00 am ET
 MCLAUGHLIN_HOLANI_AT = datetime(2026, 10, 14, 12, 18, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:18 am ET
 ESTIME_PENIX_AT = datetime(2026, 10, 14, 12, 18, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:18 am ET
+WINSTON_DAVIS_AT = datetime(2026, 10, 14, 12, 22, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:22 am ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -1223,6 +1224,59 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
         observed_at=ESTIME_PENIX_AT, source_id=audric_source.id,
+    ))
+
+    # --- 2026-10-14 ESPN: FREE_AGENT ADD Jameis Winston $0 / DROP Ray Davis ---
+    jameis_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Ray Davis")))
+    jameis_add = _player(session, "Jameis Winston", "QB", "NYG")
+    jameis_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Jameis Winston for $0; dropped Ray Davis (Wed Oct 14, 8:22 am ET)",
+        original_ref="data/imports/2026-10-14-jameis-winston-add-ray-davis-drop.json",
+        platform="ESPN",
+        observed_at=WINSTON_DAVIS_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-15 08:17 ET; FAAB remained $74; no espn_id observed for Jameis Winston.",
+    )
+    session.add(jameis_source)
+    session.flush()
+    jameis_group = TransactionGroup(
+        id="jameis-winston-add-ray-davis-drop-20261014-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=WINSTON_DAVIS_AT, source_id=jameis_source.id,
+        notes="ESPN-authoritative ADD_DROP: Jameis Winston $0 free add; Ray Davis dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(jameis_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=jameis_group.id, sequence=1, event_type="DROP", player_id=jameis_drop.id,
+            notes="Dropped when adding Jameis Winston.",
+        ),
+        TransactionEvent(
+            group_id=jameis_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=jameis_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=jameis_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=WINSTON_DAVIS_AT, source_id=jameis_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=jameis_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=jameis_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=WINSTON_DAVIS_AT, source_id=jameis_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=jameis_group.id,
+            notes="ESPN free add $0 dropping Ray Davis.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=jameis_add.id,
+            slot="QB", placement="STARTER", effective_at=WINSTON_DAVIS_AT, source_id=jameis_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=WINSTON_DAVIS_AT, source_id=jameis_source.id,
     ))
 
     for name, pos in NOT_MINE_UNKNOWN:

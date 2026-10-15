@@ -729,4 +729,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-10-14",
         "faab_amount": 0,
     },
+    {
+        "description": "2026-10-14 ET ADD_DROP Jameis Winston $0 + DROP Ray Davis (ESPN FA 8:22 am)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "add/drop",
+        "added_player": "Jameis Winston",
+        "dropped_player": "Ray Davis",
+        "calendar_day_ET": "2026-10-14",
+        "faab_amount": 0,
+    },
 ]
