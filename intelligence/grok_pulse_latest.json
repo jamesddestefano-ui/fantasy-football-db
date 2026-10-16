@@ -3,186 +3,53 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-16T123000Z",
-  "generated_at": "2026-10-16T12:30:00Z",
-  "completed_at": "2026-10-16T12:30:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-16T133600Z",
+  "generated_at": "2026-10-16T13:30:00Z",
+  "completed_at": "2026-10-16T13:36:00Z",
   "week": 6,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-16T12:30:00Z",
-  "source_status": {
-    "official_nfl_team": "OK",
-    "beat_reporting": "OK",
-    "x_direct": "LIMITED",
-    "experts": "LIMITED",
-    "analytics": "UNAVAILABLE"
-  },
-  "scope": {
-    "repository": "jamesddestefano-ui/fantasy-football-db",
-    "branch": "main",
-    "internal_league_id": "mongo",
-    "intelligence_only": true,
-    "sparta_touched": false,
-    "dfs_touched": false,
-    "props_touched": false
-  },
+  "as_of": "2026-10-16T13:36:00Z",
+  "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
+  "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {
-    "source": "Mongo Live Check ~08:15 ET Oct 14 (authenticated ESPN read-only, per import sources). No newer Live Check. Pulse did no ESPN pull.",
+    "source": "Newest Mongo ESPN state: Live Check 8:17 AM ET Oct 15 (authenticated ESPN read-only; recorded commits 365ab75 / 8d295af). The 8 AM ET Oct 16 Live Check failed (box down), so ESPN state is UNVERIFIED since Oct 15 8:17 AM ET. Pulse did no ESPN pull.",
     "faab_remaining": 74,
-    "record": "3-2",
+    "record": "3-2-0",
     "standing": "5th of 12",
-    "week_4_result": "W 181.32-138.58",
     "week_5_result": "L 74.0-109.66 vs $Cmoney$",
     "week_6_opponent": "Horton",
-    "espn_injury_tags_on_roster": {
-      "CeeDee Lamb": "Q",
-      "Dylan Sampson": "IR"
-    },
-    "starters_observed_oct14": [
-      "Jalen Hurts",
-      "Bijan Robinson",
-      "Kendre Miller",
-      "CeeDee Lamb",
-      "Tetairoa McMillan",
-      "Mark Andrews",
-      "Luther Burden III (FLEX)",
-      "Josh Downs (FLEX)",
-      "Saints D/ST"
-    ],
-    "bench": [
-      "Ray Davis",
-      "Kaelon Black",
-      "Keaton Mitchell",
-      "Ryan Flournoy",
-      "Tyler Higbee",
-      "Jaleel McLaughlin",
-      "Audric Estime"
-    ],
-    "ir": [
-      "Dylan Sampson"
-    ],
-    "dropped_not_rostered": [
-      "Michael Penix Jr.",
-      "George Holani",
-      "Oronde Gadsden",
-      "Isaac TeSlaa",
-      "Raiders D/ST",
-      "Rashod Bateman",
-      "Chris Bell",
-      "Packers D/ST"
-    ],
-    "live_check_ref": "mongo_live_check_20261014_0815_ET_espn",
-    "free_agent_scan_note": "Recent drops (Penix, Holani, etc.) to Waivers; availability UNKNOWN, not FREE_AGENT_CONFIRMED. Prior FA scan not re-verified."
+    "starters_observed_oct15": ["Jameis Winston (QB)", "Bijan Robinson", "Kendre Miller", "CeeDee Lamb", "Tetairoa McMillan", "Mark Andrews", "Luther Burden III (FLEX)", "Josh Downs (FLEX, Q)", "Saints D/ST"],
+    "bench": ["Jalen Hurts", "Kaelon Black", "Keaton Mitchell", "Ryan Flournoy", "Tyler Higbee", "Jaleel McLaughlin", "Audric Estime"],
+    "ir": ["Dylan Sampson"],
+    "dropped_not_rostered": ["Ray Davis", "Michael Penix Jr.", "George Holani", "Oronde Gadsden", "Isaac TeSlaa", "Raiders D/ST", "Rashod Bateman", "Chris Bell", "Packers D/ST"],
+    "recent_transactions": "Oct 14: five $0 FA moves (+Flournoy/-TeSlaa, +Saints D/ST/-Raiders D/ST, +Higbee/-Gadsden, +McLaughlin/-Holani, +Estime/-Penix). Oct 14 ~8:22 AM ET: +Jameis Winston/-Ray Davis ($0).",
+    "live_check_ref": "live-check-2026-10-15-0817",
+    "free_agent_scan_note": "Dropped players availability UNKNOWN; not FREE_AGENT_CONFIRMED."
   },
   "player_signals": [
-    {
-      "player": "Jalen Hurts",
-      "team": "PHI",
-      "slot": "starter",
-      "status": "CONFIRMED_FACT",
-      "summary": "Ruled OUT for Week 6 vs Panthers due to superficial blood clot in calf. Official Eagles statement Oct 15: follow-up ultrasound Wednesday night showed movement in the small clot after prior clearance to play Week 5. No timetable; out indefinitely per beat reports as treatment determined. No new update as of ~8:30 AM ET Friday. Friday practice report not yet available.",
-      "mongo_impact": "Starter QB OUT. Major negative for Week 6. Lineup change required by owner; Pulse does not set lineup.",
-      "urgency": "HIGH",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.nfl.com/news/eagles-qb-jalen-hurts-out-sunday-panthers-superficial-blood-clot",
-        "Eagles official statement",
-        "https://www.reuters.com/sports/eagles-qb-jalen-hurts-blood-clot-ruled-out-vs-panthers--flm-2026-10-15/"
-      ]
-    },
-    {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
-      "slot": "starter",
-      "status": "CONFIRMED_FACT",
-      "summary": "Full participant Thursday practice (thigh/quad bruise). Full all week. Expected available for W6 SNF at GB with no limitations. Official Packers/Cowboys injury report Oct 15. No overnight or early Friday change. Friday report not yet available.",
-      "mongo_impact": "Starter WR; positive, expected to play.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.packers.com/news/packers-cowboys-injury-report-oct-15-2026",
-        "NFL.com injury report"
-      ]
-    },
-    {
-      "player": "Josh Downs",
-      "team": "IND",
-      "slot": "starter",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Upgraded to full participation Thursday after limited Wednesday (rest/hamstring). Expected available Sunday vs Titans. Confirmed in Thursday NFL roundup. No new report as of early Friday. Friday report not yet available.",
-      "mongo_impact": "Starter WR; positive monitor.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": [
-        "https://www.rotowire.com/football/player/josh-downs-16689",
-        "Colts practice reports",
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-thursday-oct-15"
-      ]
-    },
-    {
-      "player": "Other starters / bench",
-      "team": "various",
-      "slot": "various",
-      "status": "CONFIRMED_FACT",
-      "summary": "No new material injury or status changes for Bijan, Miller, Andrews, Burden, Mitchell, McMillan, Davis, Black, Flournoy, Higbee, McLaughlin, Estime, Sampson (IR). Thursday reports available; no material flags. Mark Andrews full practice (hand). Friday morning quiet. Friday reports pending.",
-      "mongo_impact": "None.",
-      "urgency": "LOW",
-      "availability": "OWNED",
-      "sources": []
-    },
-    {
-      "player": "Michael Penix Jr.",
-      "team": "ATL",
-      "slot": "dropped",
-      "status": "CONFIRMED_FACT",
-      "summary": "Dropped Oct 14 per ESPN activity (to Waivers). Availability UNKNOWN.",
-      "mongo_impact": "None (not rostered). Do not reclaim without ESPN check.",
-      "urgency": "NONE",
-      "availability": "UNKNOWN",
-      "sources": [
-        "Repo import 2026-10-14-audric-estime-add-penix-drop.json"
-      ]
-    }
+    {"player": "Jalen Hurts", "team": "PHI", "slot": "bench (per Oct 15 Live Check)", "status": "CONFIRMED_FACT", "summary": "Eagles official statement: OUT Week 6 vs CAR; superficial calf blood clot found on London ultrasound, follow-up Wednesday night showed movement; team determining treatment, no timeline. Tanner McKee in line to start (ESPN/NFL.com). Rest-of-season availability doubt (AP Oct 16) is EXPERT_OPINION, not official. No Friday update found as of ~9:30 AM ET.", "mongo_impact": "Already benched behind Winston per Oct 15 Live Check (unverified since). McMillan (CAR) faces PHI without Hurts.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50189940/eagles-qb-jalen-hurts-ruled-vs-panthers-blood-clot", "https://www.nfl.com/news/eagles-qb-jalen-hurts-out-sunday-panthers-superficial-blood-clot", "https://apnews.com/article/hurts-eagles-3fa981399add189ffb627bc18df0c389"]},
+    {"player": "Jameis Winston", "team": "NYG", "slot": "starter QB", "status": "CONFIRMED_FACT", "summary": "Added $0 Oct 14; starting QB vs NO per Oct 15 Live Check. No injury news found.", "mongo_impact": "Starter.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "CeeDee Lamb", "team": "DAL", "slot": "starter", "status": "CONFIRMED_FACT", "summary": "Full practice Thursday (quad bruise); ESPN Q tag cleared Oct 15. Expected available SNF at GB. Friday report pending.", "mongo_impact": "Starter WR.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.packers.com/news/packers-cowboys-injury-report-oct-15-2026"]},
+    {"player": "Josh Downs", "team": "IND", "slot": "FLEX", "status": "CONFIRMED_FACT", "summary": "Full practice Thursday (rest/hamstring) after limited Wednesday per official Colts practice notebook. Friday report pending.", "mongo_impact": "Starting FLEX; Q concern easing.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.colts.com/news/practice-notebook-jalen-travis-returns-to-practice-jaylahn-tuimoloau-and-matt-goncalves-clear-concussion-protocol"]},
+    {"player": "Dylan Sampson", "team": "CLE", "slot": "IR", "status": "CONFIRMED_FACT", "summary": "Browns opened his 21-day return-from-IR window Wednesday; official report knee DNP Wed, LP Thu. Still needs activation; Week 6 availability undetermined.", "mongo_impact": "Mongo IR player; activation would matter for CLE backfield. No IR action by Pulse.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.clevelandbrowns.com/team/injury-report/", "https://www.cbssports.com/fantasy/football/news/browns-quinshon-judkins-no-activity-in-open-portion-thursday/"]},
+    {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "EXPERT_OPINION", "summary": "RotoWire/CBS and USA Today expect McLaughlin and Estime to split CLE backfield work if Judkins and Sampson both sit (SPECULATION on usage until game status known).", "mongo_impact": "Contingent role; watch Friday game statuses. No lineup action.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.cbssports.com/fantasy/football/news/browns-quinshon-judkins-no-activity-in-open-portion-thursday/"]},
+    {"player": "Quinshon Judkins (not Mongo-owned)", "team": "CLE", "slot": "context", "status": "ATTRIBUTED_REPORT", "summary": "Ankle; DNP Wed and Thu (official report). Present but not participating Thursday per ESPN's Daniel Oyefusi; Monken called him day-to-day; seen out of walking boot (Mary Kay Cabot). Friday report/game status key.", "mongo_impact": "Drives CLE RB contingent value for McLaughlin/Estime/Sampson.", "urgency": "MEDIUM", "availability": "UNKNOWN", "sources": ["https://heavy.com/sports/nfl/cleveland-browns/interesting-update-quinshon-judkins-injury-ravens/", "https://www.espn.com/nfl/team/injuries/_/name/cle"]},
+    {"player": "Raheim Sanders (not Mongo-owned)", "team": "CLE", "slot": "context", "status": "CONFIRMED_FACT", "summary": "Placed on injured reserve (hip) by the Browns Tuesday.", "mongo_impact": "Removes a CLE RB competitor.", "urgency": "LOW", "availability": "UNKNOWN", "sources": ["https://www.cbssports.com/fantasy/football/news/browns-quinshon-judkins-no-activity-in-open-portion-thursday/"]},
+    {"player": "George Holani (dropped)", "team": "SEA", "slot": "not_rostered", "status": "CONFIRMED_FACT", "summary": "TNF: Broncos 17, Seahawks 14 (OT). Holani scored a 1-yd rushing TD. Dropped by Mongo Oct 14 (to waivers).", "mongo_impact": "None; availability UNKNOWN.", "urgency": "LOW", "availability": "UNKNOWN", "sources": ["https://www.seahawks.com/game-day/2026/reg-week6/seahawks-at-broncos/box-score", "https://apnews.com/article/seahawks-broncos-score-0eefe33f29d958dbac881017f3ea0622"]},
+    {"player": "Other starters / bench", "team": "various", "slot": "various", "status": "CONFIRMED_FACT", "summary": "No new material news found for Bijan, Miller, McMillan, Andrews, Burden, Saints D/ST, Black, Mitchell, Flournoy, Higbee. Friday reports pending.", "mongo_impact": "None.", "urgency": "LOW", "availability": "OWNED", "sources": []}
   ],
-  "waiver_signals": [
-    {
-      "player": "Rashod Bateman",
-      "availability": "UNKNOWN",
-      "status": "ATTRIBUTED_REPORT",
-      "summary": "Dropped Oct 9 per repo. Not FREE_AGENT_CONFIRMED.",
-      "mongo_impact": "Do not reclaim without ESPN ownership check.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "sources": [
-        "Repo"
-      ]
-    },
-    {
-      "player": "generic_watch_only",
-      "availability": "UNKNOWN",
-      "status": "SPECULATION",
-      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. Recent drops to Waivers; availability UNKNOWN.",
-      "mongo_impact": "Do not spend FAAB from this Pulse.",
-      "recommendation": "NONE",
-      "urgency": "NONE",
-      "sources": [
-        "AGENTS.md"
-      ]
-    }
+  "waiver_signals": [{"player": "Recent drops (Ray Davis, Penix, Holani, TeSlaa, Gadsden)", "status": "CONFIRMED_FACT", "availability": "UNKNOWN", "summary": "Not FREE_AGENT_CONFIRMED; no FA scan.", "recommendation": "NONE"}],
+  "lineup_signals": [{"type": "lineup_observation", "status": "CONFIRMED_FACT", "summary": "Observed ESPN Oct 15 8:17 AM ET (unverified since): QB Winston, RB Bijan/Miller, WR Lamb/McMillan, TE Andrews, FLEX Burden/Downs, D/ST Saints; bench Hurts (OUT), Black, Mitchell, Flournoy, Higbee, McLaughlin, Estime; IR Sampson. Lineup is James's call; no ESPN action."}],
+  "expert_signals": [{"topic": "Hurts rest of season", "status": "EXPERT_OPINION", "summary": "AP: availability for remainder of season in doubt; future in PHI a question mark.", "sources": ["https://apnews.com/article/hurts-eagles-3fa981399add189ffb627bc18df0c389"]}],
+  "material_changes": [
+    {"type": "roster_state_refresh", "status": "CONFIRMED_FACT", "summary": "Prior Pulse (12:30Z) still used Oct 14 Live Check (Hurts starter, Ray Davis owned). Refreshed to Oct 15 8:17 AM ET Live Check: Winston added/starting QB, Ray Davis dropped, Hurts bench. ESPN unverified since (8 AM Oct 16 Live Check failed)."},
+    {"type": "cle_rb_context", "status": "CONFIRMED_FACT", "summary": "Raheim Sanders to IR; Sampson (Mongo IR) 21-day window opened, LP Thursday; Judkins DNP Wed/Thu (ATTRIBUTED_REPORT day-to-day). McLaughlin/Estime (Mongo bench) contingent split is EXPERT_OPINION."}
   ],
-  "lineup_signals": [
-    {
-      "type": "lineup_observation",
-      "status": "CONFIRMED_FACT",
-      "summary": "Observed ESPN state Oct 14 Live Check: starters Hurts, Bijan, Kendre Miller, Lamb (Q), McMillan, Andrews, Burden FLEX, Downs FLEX, Saints D/ST; bench Davis, Black, Mitchell, Flournoy, Higbee, McLaughlin, Estime; IR Sampson. Hurts now confirmed OUT; lineup is James's call. No ESPN action taken by Pulse."
-    }
-  ],
-  "expert_signals": [],
-  "material_changes": [],
-  "no_material_change": true,
-  "summary": "~8:30 AM ET Friday hourly (Week 6). No material change since 6:00 AM overnight Pulse. Hurts remains OUT W6 (blood clot, no new update). Lamb full Thursday expected SNF. Downs full Thursday. Roster per Oct 14 Live Check unchanged. Friday morning scan quiet; Friday practice reports not yet out. Intelligence only. No ownership/FAAB/lineup/IR mutation.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-16T100000Z",
-  "prior_completed_at": "2026-10-16T10:00:00Z",
-  "prior_commit": "6045b10d4f1907c1f9930125109df3e37c60957d",
-  "source_status_notes": "Official team sites OK (prior Eagles statement, Cowboys/Packers Thursday report, Colts reports). Beat OK. x_direct LIMITED (early Friday X chatter on Hurts restates prior facts only, no new facts). Experts LIMITED. Analytics UNAVAILABLE. No newer ESPN Live Check. Friday morning quiet. Friday reports pending."
+  "no_material_change": false,
+  "summary": "9 AM ET Friday hourly (Week 6). Material: roster state refreshed to Oct 15 Live Check (Winston starting, Ray Davis dropped, Hurts bench); CLE RB context (Sanders IR, Sampson window opened/LP, Judkins DNP Wed/Thu). Hurts OUT W6 official, McKee to start; ROS doubt is opinion. Lamb/Downs full Thursday. TNF DEN 17-14 OT (dropped Holani TD). Friday reports pending. ESPN unverified since Oct 15 8:17 AM ET. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-16T123000Z",
+  "prior_completed_at": "2026-10-16T12:30:00Z",
+  "prior_commit": "c1137bbf3789c42dd603e42e60d767f7765a0d4b",
+  "source_status_notes": "Box Shell unavailable; written via GitHub connector (single commit). Web search only; no direct X; Friday practice reports not yet released; no ESPN pull; no analytics."
 }
