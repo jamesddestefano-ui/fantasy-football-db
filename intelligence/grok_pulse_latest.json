@@ -1,1 +1,188 @@
-$(cat /tmp/new_pulse.json)
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-10-16T061500Z",
+  "generated_at": "2026-10-16T06:15:00Z",
+  "completed_at": "2026-10-16T06:15:00Z",
+  "week": 6,
+  "season": 2026,
+  "run_type": "overnight",
+  "as_of": "2026-10-16T06:15:00Z",
+  "source_status": {
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
+    "x_direct": "LIMITED",
+    "experts": "LIMITED",
+    "analytics": "UNAVAILABLE"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "Mongo Live Check ~08:15 ET Oct 14 (authenticated ESPN read-only, per import sources). No newer Live Check. Pulse did no ESPN pull.",
+    "faab_remaining": 74,
+    "record": "3-2",
+    "standing": "5th of 12",
+    "week_4_result": "W 181.32-138.58",
+    "week_5_result": "L 74.0-109.66 vs $Cmoney$",
+    "week_6_opponent": "Horton",
+    "espn_injury_tags_on_roster": {
+      "CeeDee Lamb": "Q",
+      "Dylan Sampson": "IR"
+    },
+    "starters_observed_oct14": [
+      "Jalen Hurts",
+      "Bijan Robinson",
+      "Kendre Miller",
+      "CeeDee Lamb",
+      "Tetairoa McMillan",
+      "Mark Andrews",
+      "Luther Burden III (FLEX)",
+      "Josh Downs (FLEX)",
+      "Saints D/ST"
+    ],
+    "bench": [
+      "Ray Davis",
+      "Kaelon Black",
+      "Keaton Mitchell",
+      "Ryan Flournoy",
+      "Tyler Higbee",
+      "Jaleel McLaughlin",
+      "Audric Estime"
+    ],
+    "ir": [
+      "Dylan Sampson"
+    ],
+    "dropped_not_rostered": [
+      "Michael Penix Jr.",
+      "George Holani",
+      "Oronde Gadsden",
+      "Isaac TeSlaa",
+      "Raiders D/ST",
+      "Rashod Bateman",
+      "Chris Bell",
+      "Packers D/ST"
+    ],
+    "live_check_ref": "mongo_live_check_20261014_0815_ET_espn",
+    "free_agent_scan_note": "Recent drops (Penix, Holani, etc.) to Waivers; availability UNKNOWN, not FREE_AGENT_CONFIRMED. Prior FA scan not re-verified."
+  },
+  "player_signals": [
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "slot": "starter",
+      "status": "CONFIRMED_FACT",
+      "summary": "Ruled OUT for Week 6 vs Panthers due to superficial blood clot in calf. Official Eagles statement Oct 15: follow-up ultrasound Wednesday night showed movement in the small clot after prior clearance to play Week 5. No timetable; out indefinitely per beat reports as treatment determined. DNP Thursday practice (calf). No new update overnight or early Friday.",
+      "mongo_impact": "Starter QB OUT. Major negative for Week 6. Lineup change required by owner; Pulse does not set lineup.",
+      "urgency": "HIGH",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.nfl.com/news/eagles-qb-jalen-hurts-out-sunday-panthers-superficial-blood-clot",
+        "Eagles official statement",
+        "https://www.reuters.com/sports/eagles-qb-jalen-hurts-blood-clot-ruled-out-vs-panthers--flm-2026-10-15/"
+      ]
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "slot": "starter",
+      "status": "CONFIRMED_FACT",
+      "summary": "Full participant Thursday practice (thigh/quad bruise). Full all week. Expected available for W6 SNF at GB with no limitations. Official Packers/Cowboys injury report Oct 15. No overnight change.",
+      "mongo_impact": "Starter WR; positive, expected to play.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.packers.com/news/packers-cowboys-injury-report-oct-15-2026",
+        "NFL.com injury report"
+      ]
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "slot": "starter",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Upgraded to full participation Thursday after limited Wednesday (rest/hamstring). Expected available Sunday vs Titans. Confirmed in Thursday NFL roundup. No new report overnight.",
+      "mongo_impact": "Starter WR; positive monitor.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": [
+        "https://www.rotowire.com/football/player/josh-downs-16689",
+        "Colts practice reports",
+        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-thursday-oct-15"
+      ]
+    },
+    {
+      "player": "Other starters / bench",
+      "team": "various",
+      "slot": "various",
+      "status": "CONFIRMED_FACT",
+      "summary": "No new material injury or status changes for Bijan, Miller, Andrews, Burden, Mitchell, McMillan, Davis, Black, Flournoy, Higbee, McLaughlin, Estime, Sampson (IR). Thursday reports available; no material flags. Mark Andrews full practice (hand). Overnight quiet.",
+      "mongo_impact": "None.",
+      "urgency": "LOW",
+      "availability": "OWNED",
+      "sources": []
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "slot": "dropped",
+      "status": "CONFIRMED_FACT",
+      "summary": "Dropped Oct 14 per ESPN activity (to Waivers). Availability UNKNOWN.",
+      "mongo_impact": "None (not rostered). Do not reclaim without ESPN check.",
+      "urgency": "NONE",
+      "availability": "UNKNOWN",
+      "sources": [
+        "Repo import 2026-10-14-audric-estime-add-penix-drop.json"
+      ]
+    }
+  ],
+  "waiver_signals": [
+    {
+      "player": "Rashod Bateman",
+      "availability": "UNKNOWN",
+      "status": "ATTRIBUTED_REPORT",
+      "summary": "Dropped Oct 9 per repo. Not FREE_AGENT_CONFIRMED.",
+      "mongo_impact": "Do not reclaim without ESPN ownership check.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": [
+        "Repo"
+      ]
+    },
+    {
+      "player": "generic_watch_only",
+      "availability": "UNKNOWN",
+      "status": "SPECULATION",
+      "summary": "No Mongo waiver-watch rows. No FREE_AGENT_CONFIRMED names. Recent drops to Waivers; availability UNKNOWN.",
+      "mongo_impact": "Do not spend FAAB from this Pulse.",
+      "recommendation": "NONE",
+      "urgency": "NONE",
+      "sources": [
+        "AGENTS.md"
+      ]
+    }
+  ],
+  "lineup_signals": [
+    {
+      "type": "lineup_observation",
+      "status": "CONFIRMED_FACT",
+      "summary": "Observed ESPN state Oct 14 Live Check: starters Hurts, Bijan, Kendre Miller, Lamb (Q), McMillan, Andrews, Burden FLEX, Downs FLEX, Saints D/ST; bench Davis, Black, Mitchell, Flournoy, Higbee, McLaughlin, Estime; IR Sampson. Hurts now confirmed OUT; lineup is James's call. No ESPN action taken by Pulse."
+    }
+  ],
+  "expert_signals": [],
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "2:15 AM ET Friday overnight (Week 6). No material change since 12:15 AM Pulse. Hurts remains OUT W6 (blood clot, no new update). Lamb full Thursday expected SNF. Downs full Thursday. Roster per Oct 14 Live Check unchanged. Overnight scan quiet. Intelligence only. No ownership/FAAB/lineup/IR mutation.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-16T041500Z",
+  "prior_completed_at": "2026-10-16T04:15:00Z",
+  "prior_commit": "3a6fb69de46ab8720349ae3a6602ce5560ae21e2",
+  "source_status_notes": "Official team sites OK (prior Eagles statement, Cowboys/Packers Thursday report, Colts reports). Beat OK. x_direct LIMITED (overnight X chatter on Hurts speculative only, no new facts). Experts LIMITED. Analytics UNAVAILABLE. No newer ESPN Live Check. Overnight quiet."
+}
