@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "title": "Friday role uncertainty, denominator audits and conditional usage testing",
+  "research_window_utc": {
+    "started_at": "2026-10-16T12:22:03Z",
+    "ended_at": "2026-10-16T12:23:34Z"
+  },
+  "coverage": "Public NFL facts and general educational methods only. No authenticated league details, private provenance, actual roster recommendations or transactions.",
+  "sources": [
+    {
+      "id": "TPRR_METHOD",
+      "creator": "Mike Anderson / Fantasy Footballers",
+      "title": "Targets Per Route Run Report: 2026 Season Preview (Fantasy Football)",
+      "url": "https://www.thefantasyfootballers.com/analysis/targets-per-route-run-report-2026-season-preview-fantasy-football/",
+      "publication_date": "2026-09-08",
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Original article methodological prose reviewed, including limitations and application; historical data table not independently audited. No video playback.",
+      "timestamp": null
+    },
+    {
+      "id": "TPRR_WEEK6",
+      "creator": "Mike Anderson / Fantasy Footballers",
+      "title": "Targets Per Route Run Report: Week 6 (Fantasy Football)",
+      "url": "https://www.thefantasyfootballers.com/analysis/targets-per-route-run-report-week-6-fantasy-football-4/",
+      "publication_date": "2026-10-14",
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Original article methodology, commentary and selected usage rows reviewed; not an independent NGS dataset reproduction.",
+      "timestamp": null
+    },
+    {
+      "id": "ROUTES",
+      "creator": "Matt LaMarca / Fantasy Life",
+      "title": "What is Route Participation?",
+      "url": "https://www.fantasylife.com/articles/fantasy/what-is-route-participation",
+      "publication_date": "2024-07-31 18:04 ET; updated 2025-06-23 05:05 ET",
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Original educational article prose and displayed table reviewed.",
+      "timestamp": null
+    },
+    {
+      "id": "SF",
+      "creator": "Kyle Shanahan / San Francisco 49ers",
+      "title": "Head Coach Kyle Shanahan Press Conference",
+      "url": "https://49ers.1rmg.com/transcripts/head-coach-kyle-shanahan-press-conference_10-15-26/",
+      "publication_date": "2026-10-15; time unspecified",
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Official written transcript, injury opening and WR opportunity answers reviewed; no audio playback.",
+      "timestamp": null
+    },
+    {
+      "id": "CAR",
+      "creator": "Darin Gantt / Carolina Panthers",
+      "title": "Week 6 Thursday Injury Report: Monroe Freeling returns to practice",
+      "url": "https://www.panthers.com/news/week-6-thursday-injury-report-monroe-freeling-returns-to-practice",
+      "publication_date": "2026-10-15 15:26; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Original official article body reviewed.",
+      "timestamp": null
+    },
+    {
+      "id": "CAR_TABLE",
+      "creator": "Carolina Panthers",
+      "title": "Panthers Injury Report",
+      "url": "https://www.panthers.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Dynamic official table with Wednesday and Thursday populated; Friday/game statuses blank.",
+      "timestamp": null
+    },
+    {
+      "id": "LV",
+      "creator": "Raiders.com Staff",
+      "title": "Raiders-Bills Week 6 Injury Report",
+      "url": "https://www.raiders.com/news/las-vegas-raiders-buffalo-bills-week-6-injury-report-2026",
+      "publication_date": "2026-10-14 16:38; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Official article/table exposed Wednesday only.",
+      "timestamp": null
+    },
+    {
+      "id": "LV_TABLE",
+      "creator": "Las Vegas Raiders",
+      "title": "Injury Report",
+      "url": "https://www.raiders.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Official dynamic table also exposed Wednesday only; Thursday/Friday unavailable in retrieved text.",
+      "timestamp": null
+    },
+    {
+      "id": "LV_DEPTH",
+      "creator": "Las Vegas Raiders",
+      "title": "Depth Chart",
+      "url": "https://www.raiders.com/team/depth-chart",
+      "publication_date": "As of 2026-10-13",
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Official displayed Week 6 depth chart.",
+      "timestamp": null
+    },
+    {
+      "id": "X_ATTEMPT",
+      "creator": "Mike Anderson",
+      "title": "Author X profile linked from original article",
+      "url": "https://twitter.com/MisterManderson",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-16T12:23:34Z",
+      "retrieval_time_note": "Upper bound of source review between 12:22 and 12:23:34 UTC.",
+      "access_medium": "Attempted opening returned Internal Error; no original post reviewed.",
+      "timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Waller participation update",
+      "text": "Carolina's Thursday article and official table agree Waller (toe) and Tremble (ribs) were limited; Freeling returned limited. Friday and game-status fields were unfilled at retrieval. These are two presentations of one team report, not independent predictive confirmations.",
+      "source_ids": [
+        "CAR",
+        "CAR_TABLE"
+      ],
+      "confidence": "HIGH for Thursday participation; future availability and workload unresolved"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Mayer remains a conditional evaluation",
+      "text": "The October 13 Raiders depth chart lists Bowers ahead of Mayer. Retrieved Week 6 injury pages list Bowers limited Wednesday and do not expose Thursday/Friday status. The dated October 10, 2025 Mayer-start story surfaced in search is a different season and was excluded from current-role inference.",
+      "source_ids": [
+        "LV",
+        "LV_TABLE",
+        "LV_DEPTH"
+      ],
+      "confidence": "HIGH for displayed dated entries; insufficient for a Sunday promotion"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Cowing does not inherit all vacated work",
+      "text": "Shanahan's October 15 transcript lists Samuel and Evans out of that day's practice and Kirk limited. The WR opportunity answer specifically discusses Watkins and Cooks. It does not establish Cowing's route participation or target share. Practice absence is not a final game designation.",
+      "source_ids": [
+        "SF"
+      ],
+      "confidence": "HIGH for transcript; LOW for any inferred receiver redistribution"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "topic": "Rate is not volume",
+      "text": "The Footballers Week 6 table reports Waller 19 targets/91 routes (20.9%) and Mayer 25/128 (19.5%) through Week 5. The arithmetic rounds correctly, but the underlying NGS counts were not independently reproduced. Different games, health and teammate contexts prevent ranking next-week value from these season rates alone.",
+      "source_ids": [
+        "TPRR_WEEK6"
+      ],
+      "confidence": "MEDIUM for attributed dataset; no validated player projection"
+    },
+    {
+      "classification": "VERIFIED MATHEMATICAL PRINCIPLE",
+      "topic": "Audit stated numerator and denominator",
+      "text": "Fantasy Life's primer states 184 targets and 641 team targets but prints 27.4%. Those stated inputs give 184/641 = 28.705%, approximately 28.7%. The cause may be an editorial error or unstated denominator mismatch; this check does not establish the correct underlying season dataset or invalidate the broader route concept.",
+      "source_ids": [
+        "ROUTES"
+      ],
+      "confidence": "HIGH for arithmetic only"
+    }
+  ],
+  "educational_lesson": {
+    "classification": "MODEL ASSUMPTION",
+    "central_method": "Separate route access from target propensity; shrink noisy rates and expose uncertainty about future role.",
+    "source_lesson": "Anderson distinguishes routes from TPRR and warns that small samples, scheme, quarterback, injury and depth of target matter. His Week 6 method changes tier rules relative to positional medians and compares TPRR percentile with fantasy points per qualifying game. These are transparent descriptive choices, not demonstrated causal or out-of-sample edges.",
+    "mathematics": "Own proposed model: p_target_given_route ~ Beta(alpha,beta); after T targets on R eligible routes, posterior mean = (T+alpha)/(R+alpha+beta). This is a conditional binomial approximation, not a claim that NFL routes are independent or identically distributed. Estimate route-count scenarios separately and use E[T_next] = E[R_next * p_next], retaining dependence when roles change.",
+    "synthetic_example": "Teaching inputs only: 6 targets on 15 routes is 40%. A prespecified Beta(4,16) prior yields 10/35 = 28.57%; at 20 future routes the simple conditional expectation is 5.71 targets, rather than 8. These invented parameters are not Cowing, Waller or Mayer forecasts. The prior strength must be trained before evaluation, not selected to manufacture a desired answer.",
+    "assumptions": [
+      "Consistent definitions for eligible routes and targets.",
+      "Historical prior exchangeability by position/role must be tested; role changes can invalidate it.",
+      "Target events share quarterback, game script and opponent conditions; use game-clustered evaluation.",
+      "Absent players and subminimum-route weeks remain in the candidate log, not silently removed."
+    ],
+    "challenged_assumptions": [
+      "High TPRR guarantees a high-volume role.",
+      "A percentile gap guarantees positive regression in fantasy points.",
+      "An injury to a teammate identifies one certain beneficiary.",
+      "A transparent educator chart is an audited prediction model."
+    ],
+    "evidence_grade": "A for arithmetic and beta-binomial identity under stated assumptions; B for explanatory source transparency; C for untested predictive benefit."
+  },
+  "expert_disagreement": {
+    "classification": "ANALYST OPINION",
+    "text": "The reviewed educators agree that route access matters; no independently verified head-to-head Cowing ranking disagreement was established. The substantive methodological tension is descriptive hot tiers/percentile gaps versus uncertainty-aware forecasts. Preserve model disagreement rather than treating a tier label as proof. A percentile gap is dimensionless and can reflect target depth, scoring, role or selection effects instead of future improvement.",
+    "source_ids": [
+      "TPRR_METHOD",
+      "TPRR_WEEK6",
+      "ROUTES"
+    ]
+  },
+  "research_proposals": [
+    {
+      "classification": "UNTESTED HYPOTHESIS",
+      "name": "Shrinkage plus explicit route scenarios improves next-game target forecasts",
+      "mechanism": "Small-route extremes regress, while injuries affect future route access separately from target propensity.",
+      "testing_method": "Freeze a recent-target baseline, raw-TPRR model and shrinkage/scenario model on the same candidates before kickoff. Fit priors and route filters on earlier weeks only. Evaluate held-out next-week target MAE, predictive interval coverage and proper distributional score; retain zero-route weeks and report them separately. Cluster uncertainty by game. Stratify TE/WR/RB, injury replacements and stable roles; log every failed hypothesis.",
+      "failure_condition": "Reject deployment if chronological held-out error or coverage fails to improve, gains disappear when zero-route/inactive cases are retained, or success requires tuning on evaluation weeks.",
+      "implementation": "Proposal only; review evidence before changing any controlling rule.",
+      "status": "OPEN_UNRUN"
+    }
+  ],
+  "weekly_continuity": {
+    "status": "SUPPORTING_EVIDENCE_ONLY",
+    "prior_report": "intelligence/news/2026-10-15T1221Z-thursday-availability-opportunity-education.json",
+    "text": "Adds actual Thursday Carolina participation, current SF competing-role context, dated Raiders limits, two new analytical sources and a shrinkage test rather than repeating the prior pace-only scenario lesson. No matched numerical pregame forecast/outcome evaluation completed in this bounded pass; historical advice and actual actions remain distinct.",
+    "best_decisions": [],
+    "worst_decisions": [],
+    "good_process_bad_result": [],
+    "bad_process_good_result": [],
+    "missed_opportunities": [],
+    "signals_that_worked": [],
+    "signals_that_failed": [],
+    "data_quality_issues": [
+      "Displayed numerator/denominator arithmetic discrepancy in one educational source.",
+      "Latest retrieval time does not mean latest underlying injury-table content.",
+      "No independently reconciled current route dataset or complete forecast/outcome sample."
+    ],
+    "timing_issues": [
+      "Sunday alternatives can lock before Monday receiver uncertainty resolves; compare only eligible alternatives at the actual decision cutoff."
+    ],
+    "rule_changes_proposed": [
+      "Test shrinkage and zero-route-inclusive evaluation."
+    ],
+    "rule_changes_adopted": [],
+    "rules_rejected_due_to_insufficient_sample": [
+      "Automatic role promotion from teammate absences or one hot tier."
+    ],
+    "calibration": "NOT_ESTIMATED; no matched forecast/outcome sample.",
+    "nfl_pulse_performance": "NOT_GRADED; no newly established decision lineage."
+  },
+  "source_access_limitations": [
+    "No YouTube playback in secondary fantasy pass.",
+    "Original X profile access failed; no post claims adopted or reposts counted as corroboration.",
+    "No proprietary NGS raw route export obtained; published figures remain attributed.",
+    "No latest Friday final designations obtained at this morning cutoff.",
+    "Full weekly result reconciliation and TNF opportunity reconstruction not performed in this bounded secondary pass."
+  ],
+  "missing_evidence": [
+    "Cowing recent routes, alignment, targets and teammate game status.",
+    "Waller final health status and routes while active; Mayer current role with/without Bowers using matched dates.",
+    "Fresh league-specific authenticated availability, eligibility and alternatives before any action.",
+    "Prospective frozen forecasts and verified outcomes to evaluate calibration."
+  ],
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "paid_content_republished": false,
+    "private_state_republished": false
+  },
+  "record_id": "mongo-2026-10-16-friday-role-uncertainty-education",
+  "context": "MONGO public NFL intelligence only",
+  "general_hub_application": {
+    "classification": "ANALYST OPINION",
+    "text": "Mongo can use the route-versus-target distinction to compare pass-catching role scenarios after checking its own current ESPN state. No availability, remaining budget or replacement ranking is established here. A source's season TPRR is not platform eligibility or an actual transaction."
+  }
+}
