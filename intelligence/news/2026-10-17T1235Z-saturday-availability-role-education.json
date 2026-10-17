@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-17T12:34:49Z",
+    "ended_at": "2026-10-17T12:35:30Z"
+  },
+  "coverage": "Public NFL source facts and educational methods only; no league holdings, budgets, authenticated provenance or actual actions.",
+  "weekly_continuity": {
+    "status": "SUPPORTING_EVIDENCE_ONLY",
+    "prior_report": "intelligence/news/2026-10-16T1223Z-friday-role-uncertainty-education.json",
+    "text": "Advances Friday morning participation uncertainty with final Friday reports and date-matched usage context. Historical forecasts remain intact; no matched forecast/outcome sample or calibration estimated. This is not a replacement weekly review.",
+    "rule_changes_adopted": [],
+    "calibration": "NOT_ESTIMATED",
+    "nfl_pulse_performance": "NOT_GRADED"
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "record_id": "mongo-2026-10-17-saturday-availability-role-education",
+  "context": "MONGO public NFL intelligence only",
+  "title": "Saturday injury-status gates and conditional target allocation",
+  "sources": [
+    {
+      "id": "IND",
+      "creator": "Indianapolis Colts",
+      "title": "Injury Report",
+      "url": "https://www.colts.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Official dynamic Week 6 table reviewed",
+      "timestamp": null
+    },
+    {
+      "id": "DOWNS",
+      "creator": "Leo Sells / FantasyPros",
+      "title": "Josh Downs (hamstring) good to go for Sunday",
+      "url": "https://www.fantasypros.com/nfl/news/614345/josh-downs-hamstring-good-to-go-sunday.php",
+      "publication_date": "2026-10-16 16:32 EDT",
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Original article reviewed; cites team report, not independent medical evidence",
+      "timestamp": null
+    },
+    {
+      "id": "CLE",
+      "creator": "Kelsey Russo / Cleveland Browns",
+      "title": "Quinshon Judkins questionable for Week 6 vs. Ravens",
+      "url": "https://www.clevelandbrowns.com/news/quinshon-judkins-questionable-for-week-6-vs-ravens-injury-report",
+      "publication_date": "2026-10-16 04:13 PM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Official article body reviewed",
+      "timestamp": null
+    },
+    {
+      "id": "CLE_TABLE",
+      "creator": "Cleveland Browns",
+      "title": "Injury Report",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Official final Friday table reviewed",
+      "timestamp": null
+    },
+    {
+      "id": "FP",
+      "creator": "FantasyPros",
+      "title": "Week 6 Flex Position Notes",
+      "url": "https://www.fantasypros.com/nfl/notes/weekly-flex.php",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Original dynamic Mark Andrews note reviewed; precise publication timestamp/individual author not exposed",
+      "timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Colts table shows Downs limited Wednesday, full Thursday/Friday and no game designation. FantasyPros independently presents the same team report's clearance. Do not rewrite the Wednesday participation as full.",
+      "source_ids": [
+        "IND",
+        "DOWNS"
+      ],
+      "confidence": "HIGH for displayed status; same underlying source event"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Browns Friday report lists Judkins questionable after returning limited; its table lists Sampson OUT despite limited Thursday/Friday participation. Practice return is not game availability.",
+      "source_ids": [
+        "CLE",
+        "CLE_TABLE"
+      ],
+      "confidence": "HIGH for official designations"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "text": "FantasyPros reports Andrews' 21.9% target share and 25.5% first-read share, yet a subdued weekly outlook. Attractive season shares alone do not determine absolute opportunities when pass volume, quarterback and matchup change.",
+      "source_ids": [
+        "FP"
+      ],
+      "confidence": "MEDIUM; underlying dataset not independently audited"
+    }
+  ],
+  "educational_lesson": {
+    "classification": "MODEL ASSUMPTION",
+    "central_method": "Separate play probability, conditional volume and allocation instead of automatically distributing an absent teammate's work.",
+    "mathematics": "E[targets] = P(active) times E[targets given active] only if inactive targets are zero; within the active state use a joint distribution for team attempts and target share. E[A*S] generally differs from E[A]*E[S] by Cov(A,S).",
+    "synthetic_example": "Invented two-state example: equal probabilities of 25 attempts with 30% share or 40 attempts with 15% share give expected targets 6.75. Multiplying mean attempts 32.5 by mean share 22.5% gives 7.3125, overstating by 0.5625. These are not Downs or Andrews projections.",
+    "limitations": [
+      "Injury and game-script scenarios can be correlated.",
+      "No fixed Q-tag probability is assigned.",
+      "Activation, active status, participation and workload must remain separate variables."
+    ]
+  },
+  "research_proposals": [
+    {
+      "classification": "UNTESTED HYPOTHESIS",
+      "name": "Joint game-script/opportunity scenarios improve target distributions",
+      "testing_method": "Freeze joint-scenario and product-of-means baselines before kickoff; fit only earlier weeks; evaluate held-out target MAE, proper scores and interval coverage, retaining inactive cases. Cluster uncertainty by game.",
+      "failure_condition": "No adoption if held-out calibration or error does not improve, or gains require postgame scenario selection.",
+      "status": "OPEN_UNRUN"
+    }
+  ],
+  "general_hub_application": {
+    "classification": "ANALYST OPINION",
+    "text": "Mongo can use these status gates and scenario checks when its ESPN-specific decision authority reviews lineup or waiver options. No pickup, FAAB amount, ownership or lineup action follows from public football news alone."
+  },
+  "source_access_limitations": [
+    "Week-specific Colts URL returned inaccessible; generic official table supplied current Week 6 data.",
+    "Tyler Warren designation mentioned by secondary source was not present in the retrieved Colts table; no Warren-dependent target upgrade adopted.",
+    "No video playback or independent route dataset reconstruction.",
+    "No current authenticated ESPN refresh performed."
+  ],
+  "missing_evidence": [
+    "Current final team reports and game-day inactives",
+    "Verified role allocation if Judkins does not play",
+    "Current ESPN eligibility/ownership/availability before action",
+    "Preserved numerical forecasts and verified outcomes for calibration"
+  ]
+}
