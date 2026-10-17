@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-17T041500Z",
-  "generated_at": "2026-10-17T04:15:00Z",
-  "completed_at": "2026-10-17T04:16:30Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-17T061500Z",
+  "generated_at": "2026-10-17T06:15:00Z",
+  "completed_at": "2026-10-17T06:16:45Z",
   "week": 6,
   "season": 2026,
-  "run_type": "hourly",
-  "as_of": "2026-10-17T04:16:30Z",
+  "run_type": "overnight",
+  "as_of": "2026-10-17T06:16:45Z",
   "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {
@@ -42,9 +42,9 @@
   "expert_signals": [{"topic": "Sampson return", "status": "EXPERT_OPINION", "summary": "Rotoworld: chance to return Week 7; no standalone value while Judkins healthy. Unchanged.", "sources": ["https://www.statpro.io/news/nfl/2026/10/16/dylan-sampson-knee-won-t-play-in-cleveland-s-week-6-game-against-the-ravens"]}, {"topic": "Warren Q impact on Downs", "status": "EXPERT_OPINION", "summary": "If Warren sits, Downs borderline WR2 boost (CBS/NBC). SPECULATION until game-time.", "sources": ["https://www.cbssports.com/fantasy/football/news/week-6-2026-fantasy-football-injuries/"]}],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "12:00 AM ET Saturday overnight (Week 6). No material changes since 11 PM Pulse. Downs no game designation (confirmed off Colts final report); Warren Q (context only). Lamb no designation. Sampson OUT W6 (not activated), Judkins Q. Hurts OUT W6. Williams Q (context for Burden). Giants OL Q (coach expects to play). ESPN unverified since Oct 15 8:17 AM ET. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-17T031500Z",
-  "prior_completed_at": "2026-10-17T03:16:15Z",
-  "prior_commit": "9e37f2caca5a64d37449f850b23ac2305cd56a47",
-  "source_status_notes": "Written via GitHub connector (single commit). Official Colts/Cowboys/Browns/Giants/Saints/Bears reports confirmed; limited X; no ESPN fantasy pull; no analytics."
+  "summary": "2:00 AM ET Saturday overnight (Week 6). No material changes since 12:00 AM Pulse. Downs no game designation (confirmed off Colts final report); Warren Q (context only). Lamb no designation. Sampson OUT W6 (not activated), Judkins Q. Hurts OUT W6. Williams Q (context for Burden). Giants OL Q (coach expects to play). ESPN unverified since Oct 15 8:17 AM ET. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-17T041500Z",
+  "prior_completed_at": "2026-10-17T04:16:30Z",
+  "prior_commit": "7971b1ad0129b0382e8bc4ddd3d343f139e40a9d",
+  "source_status_notes": "Written via GitHub connector (single commit). Official Colts/Cowboys/Browns/Giants/Saints/Bears reports confirmed; limited X; no ESPN fantasy pull; no analytics. Overnight scan confirmed no new material changes."
 }
