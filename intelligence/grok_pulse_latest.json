@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-17T001900Z",
-  "generated_at": "2026-10-17T00:15:00Z",
-  "completed_at": "2026-10-17T00:19:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-17T011800Z",
+  "generated_at": "2026-10-17T01:15:00Z",
+  "completed_at": "2026-10-17T01:18:23Z",
   "week": 6,
   "season": 2026,
   "run_type": "hourly",
-  "as_of": "2026-10-17T00:19:00Z",
+  "as_of": "2026-10-17T01:18:23Z",
   "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {
@@ -33,17 +33,18 @@
     {"player": "Quinshon Judkins (not Mongo-owned)", "team": "CLE", "slot": "context", "status": "CONFIRMED_FACT", "summary": "QUESTIONABLE (ankle) on Browns final report after limited Friday practice. Unchanged.", "mongo_impact": "If he sits, McLaughlin/Estime contingent role. Game-time decision.", "urgency": "MEDIUM", "availability": "UNKNOWN", "sources": ["https://www.espn.com/nfl/story/_/id/50197266/browns-wr-concepcion-clears-protocol-play-vs-ravens", "https://x.com/DanielOyefusi/status/2111145482215186902"]},
     {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "EXPERT_OPINION", "summary": "No designations (healthy). Role depends on Judkins (Q); usage split SPECULATION. Unchanged.", "mongo_impact": "Contingent only. No lineup action.", "urgency": "MEDIUM", "availability": "OWNED", "sources": []},
     {"player": "Jalen Hurts", "team": "PHI", "slot": "bench (per Oct 15 Live Check)", "status": "CONFIRMED_FACT", "summary": "OUT Week 6 vs CAR (Eagles official; blood clot, no timeline). No new update.", "mongo_impact": "Already benched behind Winston per Oct 15 Live Check (unverified since).", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50189940/eagles-qb-jalen-hurts-ruled-vs-panthers-blood-clot", "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-lamar-jackson-jalen-hurts-caleb-williams/"]},
+    {"player": "Luther Burden III", "team": "CHI", "slot": "FLEX", "status": "CONFIRMED_FACT", "summary": "Caleb Williams (CHI QB) listed QUESTIONABLE (hamstring) on Bears final report after full practices; potential return for Falcons. Unchanged designation vs prior scans. Context only for Burden targets.", "mongo_impact": "Starting FLEX; QB status game-time. Intelligence only.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.chicagobears.com/news/injury-update-caleb-williams-questionable-for-sunday-s-game-vs-falcons"]},
     {"player": "Saints D/ST (opponent context: Giants)", "team": "NO", "slot": "D/ST", "status": "CONFIRMED_FACT", "summary": "Giants final report: Andrew Thomas (groin), Jermaine Eluemunor (calf), Abdul Carter (calf) QUESTIONABLE after limited Friday practice (coach expects to play); Colton Hood, Theo Johnson, Tyler Nubin OUT. Saints: Elliss and Jennings OUT; Kamara, Olave QUESTIONABLE. Unchanged from prior Pulse.", "mongo_impact": "Mixed D/ST context; no action.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.giants.com/news/giants-vs-saints-week-6-injury-report-abdul-carter-jermaine-eluemunor-dnp", "https://www.neworleanssaints.com/news/injury-report-new-york-giants-vs-new-orleans-saints-2026-nfl-week-6-friday", "https://x.com/TheDougRush/status/2111189353292779815"]},
-    {"player": "Other starters / bench", "team": "various", "slot": "various", "status": "CONFIRMED_FACT", "summary": "No designations or news found for Winston, Bijan, Miller, McMillan, Andrews, Burden, Black, Mitchell, Flournoy, Higbee (not individually verified on every official report). No new material.", "mongo_impact": "None.", "urgency": "LOW", "availability": "OWNED", "sources": []}
+    {"player": "Other starters / bench", "team": "various", "slot": "various", "status": "CONFIRMED_FACT", "summary": "No designations or news found for Winston, Bijan, Miller, McMillan, Andrews, Black, Mitchell, Flournoy, Higbee (not individually verified on every official report). No new material.", "mongo_impact": "None.", "urgency": "LOW", "availability": "OWNED", "sources": []}
   ],
   "waiver_signals": [{"player": "Recent drops (Ray Davis, Penix, Holani, TeSlaa, Gadsden)", "status": "CONFIRMED_FACT", "availability": "UNKNOWN", "summary": "Not FREE_AGENT_CONFIRMED; no FA scan.", "recommendation": "NONE"}],
   "lineup_signals": [{"type": "lineup_observation", "status": "CONFIRMED_FACT", "summary": "Observed ESPN Oct 15 8:17 AM ET (unverified since): QB Winston, RB Bijan/Miller, WR Lamb/McMillan, TE Andrews, FLEX Burden/Downs, D/ST Saints; bench Hurts (OUT), Black, Mitchell, Flournoy, Higbee, McLaughlin, Estime; IR Sampson (OUT W6). Lineup is James's call; no ESPN action."}],
   "expert_signals": [{"topic": "Sampson return", "status": "EXPERT_OPINION", "summary": "Rotoworld: chance to return Week 7; no standalone value while Judkins healthy. Unchanged.", "sources": ["https://www.statpro.io/news/nfl/2026/10/16/dylan-sampson-knee-won-t-play-in-cleveland-s-week-6-game-against-the-ravens"]}],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "8 PM ET Friday hourly (Week 6). No material changes since 7 PM Pulse. Downs no game designation (confirmed off Colts final report). Lamb no designation. Sampson OUT W6 (not activated), Judkins Q. Hurts OUT W6. Giants OL Q (coach expects to play). ESPN unverified since Oct 15 8:17 AM ET. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-16T231700Z",
-  "prior_completed_at": "2026-10-16T23:17:00Z",
-  "prior_commit": "9beec39045ce7a6d46a0f8ddbc0444a0ef3a9a5d",
-  "source_status_notes": "Written via GitHub connector (single commit). Official Colts/Cowboys/Browns/Giants/Saints reports confirmed; limited X; no ESPN fantasy pull; no analytics."
+  "summary": "9 PM ET Friday hourly (Week 6). No material changes since 8 PM Pulse. Downs no game designation (confirmed off Colts final report). Lamb no designation. Sampson OUT W6 (not activated), Judkins Q. Hurts OUT W6. Williams Q (context for Burden). Giants OL Q (coach expects to play). ESPN unverified since Oct 15 8:17 AM ET. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-17T001900Z",
+  "prior_completed_at": "2026-10-17T00:19:00Z",
+  "prior_commit": "9316a64b514b1a9a24206c997c017191f8ff52df",
+  "source_status_notes": "Written via GitHub connector (single commit). Official Colts/Cowboys/Browns/Giants/Saints/Bears reports confirmed; limited X; no ESPN fantasy pull; no analytics."
 }
