@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-18T12:50:01Z",
+    "ended_at": "2026-10-18T12:50:28Z"
+  },
+  "coverage": "Public NFL facts and general educational methods only.",
+  "prior_report": "intelligence/news/2026-10-17T1235Z-saturday-availability-role-education.json",
+  "weekly_continuity": {
+    "status": "SUPPORTING_EVIDENCE_ONLY",
+    "calibration": "NOT_ESTIMATED",
+    "forecast_outcome_grading": "NOT_PERFORMED: no matched preserved numerical forecast/outcome sample",
+    "rule_changes_adopted": []
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "educational_lesson": {
+    "classification": "MODEL ASSUMPTION",
+    "method": "Treat report freshness at the field/event level. Retrieval today does not make a blank table a completed final report. Use the dated team article/transcript to resolve coverage gaps, retain the discrepancy, and do not promote a questionable tag or expected participation into confirmed active status.",
+    "testable_improvement": {
+      "classification": "UNTESTED HYPOTHESIS",
+      "hypothesis": "A final-report completeness check reduces erroneous unknown/cleared classifications relative to relying only on a generic injury URL.",
+      "test": "Freeze timestamped generic-table and dated-report observations before lineup cutoff; compare status error rates against the actual official final designation, preserving blank fields and conflicts. Evaluate game-day active status separately; do not judge injury classification by fantasy points.",
+      "failure_condition": "No adoption if the check increases stale-event substitution or gives no held-out error reduction.",
+      "status": "OPEN_UNRUN"
+    }
+  },
+  "source_access_limitations": [
+    "Article/table text reviewed; no video playback.",
+    "No fresh authenticated league-state refresh performed.",
+    "No new FantasyPros API call or failed-pilot data used."
+  ],
+  "notification": "Routine educational handoff; no claim of breaking news or an executable league action.",
+  "record_id": "mongo-2026-10-18-sunday-report-freshness",
+  "context": "MONGO public intelligence",
+  "title": "Sunday source completeness: Saints dated final report versus generic injury table",
+  "sources": [
+    {
+      "creator": "New Orleans Saints",
+      "title": "Saints Friday Injury Report: 2026 Week 6 vs. New York Giants",
+      "url": "https://www.neworleanssaints.com/news/injury-report-new-york-giants-vs-new-orleans-saints-2026-nfl-week-6-friday",
+      "publication_date": "2026-10-16 01:16 PM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-18T12:50:28Z",
+      "access_medium": "Official article and final table",
+      "video_timestamp": null
+    },
+    {
+      "creator": "New Orleans Saints",
+      "title": "Injury Report",
+      "url": "https://www.neworleanssaints.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-18T12:50:28Z",
+      "access_medium": "Dynamic table",
+      "video_timestamp": null
+    },
+    {
+      "creator": "Cleveland Browns",
+      "title": "Injury Report",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-18T12:50:28Z",
+      "access_medium": "Official final table",
+      "video_timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Saints dated Friday report lists Kamara and Olave QUESTIONABLE, each limited Friday. The generic Saints table still has blank Friday/game fields at retrieval. The dated report resolves missing coverage, not a new Sunday downgrade.",
+      "confidence": "HIGH for official final designations"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Browns table remains Judkins QUESTIONABLE and Sampson OUT; Ravens side lists Andrews without designation and Jackson OUT. These confirm existing status context rather than new actionable changes.",
+      "confidence": "HIGH for table; game-day actives not established"
+    },
+    {
+      "classification": "MODEL ASSUMPTION",
+      "text": "Kendre Miller opportunity requires separate Kamara-active and Kamara-inactive scenarios. A questionable tag does not specify absence probability, and absence would not justify allocating all missing touches to one backup.",
+      "confidence": "Scenario structure justified; numerical weights unavailable"
+    }
+  ],
+  "novelty": "Adds an observed official-source completeness failure and a falsifiable status-validation test; unchanged Browns facts are explicitly labeled confirmations.",
+  "general_hub_application": "Mongo's ESPN-specific decision authority can use these public status gates. Current ESPN ownership, eligibility, lineup and availability must be verified independently before any action. No acquisition or FAAB recommendation is issued.",
+  "missing_evidence": [
+    "Official game-day inactive lists",
+    "Conditional backfield role evidence",
+    "Current ESPN state"
+  ],
+  "numeric_projection": null
+}
