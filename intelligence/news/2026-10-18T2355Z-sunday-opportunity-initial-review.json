@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-18T23:54:21Z",
+    "ended_at": "2026-10-18T23:55:11Z"
+  },
+  "coverage": "Initial completed-game public opportunity review only; partial Week 6 coverage.",
+  "prior_report": "intelligence/news/2026-10-18T1250Z-sunday-report-freshness-education.json",
+  "game_coverage": {
+    "SNF": "Not started at review cutoff; excluded from results",
+    "MNF": "Not played; excluded from results",
+    "advanced_usage": "No independently verified final snap/route dataset retrieved. Absence from this review does not establish that none has been published."
+  },
+  "weekly_continuity": {
+    "status": "INITIAL_REVIEW_NOT_WEEKLY_FINAL",
+    "calibration": "NOT_ESTIMATED",
+    "original_forecasts": "Original educational records retained; they contained qualitative scenario checks rather than numerical player forecasts. No retroactive numeric forecast or grade is created.",
+    "decision_boundary": "Logged advice, unpersisted advice and actual actions remain distinct. This educational review does not certify any fantasy action or amend a decision ledger.",
+    "rule_changes_adopted": []
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "notification": "Routine repository handoff; existing reports may already carry these NFL facts.",
+  "record_id": "mongo-2026-10-18-evening-opportunity-initial",
+  "context": "MONGO public intelligence",
+  "title": "Initial Sunday review: quarterback role transition requires a new scenario model",
+  "sources": [
+    {
+      "creator": "New York Giants",
+      "title": "Instant Analysis: Giants fall to Saints, 34-27",
+      "url": "https://www.giants.com/news/instant-analysis-giants-fall-to-saints-34-27",
+      "publication_date": "2026-10-18 04:32 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-18T23:55:11Z",
+      "retrieval_time_note": "Upper bound of bounded review beginning 23:54:21 UTC",
+      "access_medium": "Official indexed article excerpt reviewed; direct open failed",
+      "video_timestamp": null
+    },
+    {
+      "creator": "Stephen Whyno / Associated Press",
+      "title": "John Harbaugh says no Giants QB decision yet after J.J. McCarthy replaces Jameis Winston",
+      "url": "https://www.clickondetroit.com/sports/2026/10/18/john-harbaugh-says-no-giants-qb-decision-yet-after-jj-mccarthy-replaces-jameis-winston/",
+      "publication_date": "Published 2026-10-18 3:54 PM; updated 6:49 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-18T23:55:11Z",
+      "retrieval_time_note": "Upper bound of bounded review beginning 23:54:21 UTC",
+      "access_medium": "Full syndicated original AP reporting reviewed",
+      "video_timestamp": null
+    },
+    {
+      "creator": "Josh Alper / NBC Sports PFT",
+      "title": "John Harbaugh on Week 7 QB: Now is not the time to make decision",
+      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/john-harbaugh-on-week-7-qb-now-is-not-the-time-to-make-decision",
+      "publication_date": "2026-10-18 05:00 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-18T23:55:11Z",
+      "retrieval_time_note": "Upper bound of bounded review beginning 23:54:21 UTC",
+      "access_medium": "Indexed article text reviewed",
+      "video_timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Official Giants coverage confirms the completed 34-27 loss and McCarthy replacing Winston with 11:25 remaining. This is a game-specific quarterback change, not proof of a Week 7 appointment.",
+      "confidence": "HIGH for in-game change"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "AP reports Winston 14/26 for 152 yards, one touchdown and two interceptions; McCarthy 11/21 for 243 yards. Harbaugh had not selected the next starter. McCarthy entered down 34-10, so the late passing sample is strongly game-script selected.",
+      "confidence": "HIGH for attributed results; future role unresolved"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "text": "PFT likewise reports the next-start decision remained open.",
+      "confidence": "HIGH for attribution; same press-conference event, not independent forecasts"
+    },
+    {
+      "classification": "MODEL ASSUMPTION",
+      "text": "Next-week pass-catcher opportunity should use separate starter scenarios with uncertain weights. Extrapolating McCarthy's short high-volume comeback sample to a normal full game would ignore selection by deficit, opponent behavior and playing time.",
+      "confidence": "HIGH principle; numerical projections unavailable"
+    }
+  ],
+  "hypothesis": {
+    "classification": "UNTESTED HYPOTHESIS",
+    "text": "Starter-scenario forecasts outperform pooling emergency replacement-quarter rates with ordinary starts.",
+    "test": "Preserve each pregame starter probability, attempts and target allocation. Evaluate later weeks with chronological holdout and game-clustered uncertainty; retain wrong-starter predictions rather than dropping them.",
+    "failure_condition": "Reject if held-out predictive scores do not improve after accounting for replacement sample selection.",
+    "status": "OPEN_UNRUN"
+  },
+  "prior_expectation_review": "Earlier public education required conditional opportunity scenarios rather than status-only conclusions. The quarterback change adds an unresolved scenario; it supplies no retroactive probability forecast or decision grade.",
+  "general_hub_application": "Mongo's decision authority can reassess QB and receiver projections once the team clarifies its starter. This public report does not claim ownership, waiver availability, FAAB or a completed action.",
+  "source_access_limitations": [
+    "Official Giants direct page open failed; official indexed excerpt was cross-checked against accessible AP reporting.",
+    "No validated snap/route export or completed SNF/MNF data.",
+    "No player pickup or budget recommendation."
+  ],
+  "missing_evidence": [
+    "Official Week 7 starter announcement",
+    "Normal-game starter usage and target distribution",
+    "Complete Week 6 usage and outcomes",
+    "League-specific verified alternatives before action"
+  ]
+}
