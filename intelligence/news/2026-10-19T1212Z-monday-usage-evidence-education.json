@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-19T12:09:54Z",
+    "ended_at": "2026-10-19T12:12:04Z"
+  },
+  "coverage": "Bounded Monday opportunity education; not a complete Week 6 review.",
+  "prior_report": "intelligence/news/2026-10-18T2355Z-sunday-opportunity-initial-review.json",
+  "game_coverage": {
+    "SNF": "Completed; Dallas-Green Bay final confirmed.",
+    "MNF": "Not played at this morning cutoff; excluded from outcomes.",
+    "advanced_usage": "Only specifically attributed preliminary usage is included. A complete independently verified final route/snap dataset was not retrieved."
+  },
+  "weekly_continuity": {
+    "status": "MONDAY_PARTIAL_REVIEW_NOT_WEEKLY_FINAL",
+    "calibration": "NOT_ESTIMATED",
+    "original_forecasts": "Retain original qualitative scenarios and decision-time records. No numerical forecast is backfilled from these results.",
+    "decision_boundary": "Logged advice, unpersisted advice and confirmed actions remain distinct. No action or decision grade is certified by this educational report.",
+    "rule_changes_adopted": []
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "notification": "Routine educational handoff; not a time-sensitive roster recommendation.",
+  "record_id": "mongo-2026-10-19-monday-usage-evidence",
+  "context": "MONGO public intelligence",
+  "title": "Monday SNF review: distinguish target opportunity from conversion and late-game script",
+  "sources": [
+    {
+      "creator": "Kurt Daniels / Dallas Cowboys",
+      "title": "Game Recap: Cowboys lose to Packers, 23-13",
+      "url": "https://www.dallascowboys.com/news/game-recap-cowboys-lose-to-packers-23-13",
+      "publication_date": "2026-10-18 11:01 PM; timezone unspecified",
+      "retrieved_at_utc": "2026-10-19T12:12:04Z",
+      "retrieval_time_note": "Upper bound of bounded review starting 12:09:54 UTC",
+      "access_medium": "Substantial indexed official article text reviewed; direct open failed",
+      "video_timestamp": null
+    },
+    {
+      "creator": "NFL",
+      "title": "2026 Green Bay Packers schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-team/green-bay-packers",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-19T12:12:04Z",
+      "retrieval_time_note": "Upper bound of bounded review starting 12:09:54 UTC",
+      "access_medium": "Official schedule page and indexed final-score row reviewed",
+      "video_timestamp": null
+    },
+    {
+      "creator": "Mark Garcia / NBC Sports Rotoworld",
+      "title": "CeeDee squanders 18 targets, goes 9-70 in loss",
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-19/ceedee-squanders-18-targets-goes-9-70-in-loss",
+      "publication_date": "2026-10-19; exact article publication time not exposed",
+      "retrieved_at_utc": "2026-10-19T12:12:04Z",
+      "retrieval_time_note": "Upper bound of bounded review starting 12:09:54 UTC",
+      "access_medium": "Original article text reviewed; no video playback",
+      "video_timestamp": null
+    },
+    {
+      "creator": "The Football Database",
+      "title": "CeeDee Lamb game log",
+      "url": "https://www.footballdb.com/players/ceedee-lamb-lambce01",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-19T12:12:04Z",
+      "retrieval_time_note": "Upper bound of bounded review starting 12:09:54 UTC",
+      "access_medium": "Indexed October 18 game-log row reviewed; direct page returned 403",
+      "video_timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Official sources confirm Green Bay beat Dallas 23-13. The Cowboys recap places Flournoy's six-yard touchdown at 52 seconds remaining, after a 13-play, 78-yard drive.",
+      "confidence": "HIGH for official final and drive context"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Lamb: 18 targets, nine catches, 70 yards (NBC; indexed Football Database corroboration).",
+      "confidence": "HIGH for attributed box results; route shares unverified"
+    },
+    {
+      "classification": "MODEL ASSUMPTION",
+      "text": "Targets describe opportunity; realized yardage also depends on catch probability and gain distribution. A low conversion result alone cannot identify a reduced future role. Conversely, a late touchdown alone cannot establish a durable promotion.",
+      "confidence": "HIGH analytical distinction; future production uncertain"
+    },
+    {
+      "classification": "MODEL ASSUMPTION",
+      "text": "Score/time context should be specified before validation. Do not discard late-drive production only after observing an inconvenient result: retain all realized scoring and evaluate predeclared script strata alongside the full-game forecast.",
+      "confidence": "HIGH process rationale; strata remain a proposed model choice"
+    }
+  ],
+  "hypothesis": {
+    "classification": "UNTESTED HYPOTHESIS",
+    "text": "A partially pooled score/time opportunity model predicts subsequent targets better than extrapolating the latest full-game total without context.",
+    "test": "Predefine deficit and time strata on training data, retain every play for realized totals, and compare against an unconditional baseline on future held-out games. Evaluate target error, predictive interval coverage and sensitivity to alternate prespecified strata; report missing play-by-play and route coverage.",
+    "failure_condition": "Reject if improvement is unstable out of sample, arises from dropping losing predictions, or disappears after team pass volume and player participation are controlled.",
+    "status": "OPEN_UNRUN"
+  },
+  "prior_expectation_review": "The prior public report excluded unplayed SNF. This adds its verified final and a separate opportunity-versus-conversion lesson. No preserved numerical forecast for these players is introduced or retrospectively graded.",
+  "general_hub_application": "Mongo's evidence review can separate opportunity, efficiency and game script before waiver/trade/lineup synthesis. ESPN-specific availability and alternatives must be established separately before a player recommendation.",
+  "source_access_limitations": [
+    "Official recap read through indexed article text; direct open failed.",
+    "Independent game-log corroboration was indexed only; direct Football Database page returned 403.",
+    "No verified final route distribution or complete play-by-play audit; no current injury diagnosis inferred from performance."
+  ],
+  "missing_evidence": [
+    "Official play-by-play and final player participation/route denominators",
+    "Normal-script and deficit-script historical comparison",
+    "MNF outcome and complete Week 6 data",
+    "Current Mongo-specific authority before any actionable decision"
+  ]
+}
