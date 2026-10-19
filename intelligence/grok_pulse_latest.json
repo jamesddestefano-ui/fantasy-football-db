@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-19T100500Z",
-  "generated_at": "2026-10-19T10:00:00Z",
-  "completed_at": "2026-10-19T10:05:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-19T111700Z",
+  "generated_at": "2026-10-19T11:10:00Z",
+  "completed_at": "2026-10-19T11:17:00Z",
   "week": 6,
   "season": 2026,
-  "run_type": "overnight",
-  "as_of": "2026-10-19T10:05:00Z",
+  "run_type": "hourly",
+  "as_of": "2026-10-19T11:17:00Z",
   "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {
@@ -27,23 +27,23 @@
     "free_agent_scan_note": "Dropped players availability UNKNOWN; not FREE_AGENT_CONFIRMED."
   },
   "player_signals": [
-    {"player": "CeeDee Lamb", "team": "DAL", "slot": "starter WR", "status": "CONFIRMED_FACT", "summary": "SNF final (Packers 23, Cowboys 13): 9 rec, 70 yds (long 17), 0 TD. Active, no injury reported. No overnight updates; finished healthy.", "mongo_impact": "Starter WR final modest volume/production in loss; high targets but limited yards.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.packers.com/game-day/2026/reg-week6/packers-vs-cowboys/", "https://www.espn.com/nfl/game/_/gameId/401873007/cowboys-packers"]},
-    {"player": "Ryan Flournoy", "team": "DAL", "slot": "bench", "status": "CONFIRMED_FACT", "summary": "SNF final: 7 rec, 40 yds, 1 TD (6-yd from Prescott, 2-pt failed). Active. No overnight updates; finished healthy.", "mongo_impact": "Bench WR scored TD in garbage time of loss.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.packers.com/game-day/2026/reg-week6/packers-vs-cowboys/", "https://www.espn.com/nfl/game/_/gameId/401873007/cowboys-packers"]},
+    {"player": "CeeDee Lamb", "team": "DAL", "slot": "starter WR", "status": "CONFIRMED_FACT", "summary": "SNF final (Packers 23, Cowboys 13): 9 rec, 70 yds (long 17), 0 TD. Active, no injury reported. No new updates; finished healthy.", "mongo_impact": "Starter WR final modest volume/production in loss; high targets but limited yards.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.packers.com/game-day/2026/reg-week6/packers-vs-cowboys/", "https://www.espn.com/nfl/game/_/gameId/401873007/cowboys-packers"]},
+    {"player": "Ryan Flournoy", "team": "DAL", "slot": "bench", "status": "CONFIRMED_FACT", "summary": "SNF final: 7 rec, 40 yds, 1 TD (6-yd from Prescott, 2-pt failed). Active. No new updates; finished healthy.", "mongo_impact": "Bench WR scored TD in garbage time of loss.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.packers.com/game-day/2026/reg-week6/packers-vs-cowboys/", "https://www.espn.com/nfl/game/_/gameId/401873007/cowboys-packers"]},
     {"player": "Tyler Higbee", "team": "LAR", "slot": "bench", "status": "CONFIRMED_FACT", "summary": "ARI-LAR final (prior): 4 rec, 22 yds, 0 TD, fumble lost. No new update.", "mongo_impact": "Bench TE limited outing confirmed earlier.", "urgency": "LOW", "availability": "OWNED", "sources": ["Prior Pulse"]},
-    {"player": "Jameis Winston", "team": "NYG", "slot": "starter QB", "status": "ATTRIBUTED_REPORT", "summary": "No new update since postgame Oct 18: Harbaugh has not named Week 7 starter. McCarthy played well in relief (11/21, 243 yds, 1 TD, 1 INT). Job remains undecided as of 6 AM ET Oct 19 scan.", "mongo_impact": "Owned starting QB Week 7 status still TBD; Hurts on NFL IR.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50214248/giants-john-harbaugh-not-ready-name-week-7-starter-qb", "https://www.nfl.com/news/john-harbaugh-no-giants-qb-decision-yet-after-j-j-mccarthy-replaces-jameis-winston-vs-saints"]},
-    {"player": "Jalen Hurts", "team": "PHI", "slot": "bench (per Oct 15 Live Check)", "status": "CONFIRMED_FACT", "summary": "On NFL IR (superficial blood clot in calf). No new update overnight. Out at least 4 games.", "mongo_impact": "Owned QB out multi-week.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.nfl.com/news/eagles-place-qb-jalen-hurts-on-injured-reserve-due-to-superficial-blood-clot-in-calf"]},
+    {"player": "Jameis Winston", "team": "NYG", "slot": "starter QB", "status": "ATTRIBUTED_REPORT", "summary": "No new update since postgame Oct 18: Harbaugh has not named Week 7 starter. McCarthy played well in relief (11/21, 243 yds, 1 TD, 1 INT). Job remains undecided as of 7 AM ET Oct 19 scan. No announcement found.", "mongo_impact": "Owned starting QB Week 7 status still TBD; Hurts on NFL IR.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50214248/giants-john-harbaugh-not-ready-name-week-7-starter-qb", "https://www.nfl.com/news/john-harbaugh-no-giants-qb-decision-yet-after-j-j-mccarthy-replaces-jameis-winston-vs-saints"]},
+    {"player": "Jalen Hurts", "team": "PHI", "slot": "bench (per Oct 15 Live Check)", "status": "CONFIRMED_FACT", "summary": "On NFL IR (superficial blood clot in calf). No new update. Out at least 4 games.", "mongo_impact": "Owned QB out multi-week.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.nfl.com/news/eagles-place-qb-jalen-hurts-on-injured-reserve-due-to-superficial-blood-clot-in-calf"]},
     {"player": "1 PM / SNF finals (carried)", "team": "various", "slot": "various", "status": "CONFIRMED_FACT", "summary": "Prior confirmed: Burden 8-95; McMillan 6-86; Miller 20-70; Downs 4-40; Bijan 9-61 (2 rec -8); McLaughlin 9-41 + 4-14; Estime 9-19 TD; Andrews 1-4; Winston 14/26 152 yds 1 TD 2 INT; Saints D/ST 5 sacks 4 takeaways. Lamb/Flournoy SNF final confirmed. No new post-game updates.", "mongo_impact": "Context only.", "urgency": "LOW", "availability": "OWNED", "sources": []},
     {"player": "Dylan Sampson", "team": "CLE", "slot": "IR", "status": "CONFIRMED_FACT", "summary": "Remains on IR.", "mongo_impact": "None this week.", "urgency": "MEDIUM", "availability": "OWNED", "sources": []},
-    {"player": "Injuries", "team": "various", "slot": "various", "status": "CONFIRMED_FACT", "summary": "No new injuries found for Mongo roster players overnight. Lamb and Flournoy finished healthy. MNF WAS@SF inactives not relevant to current Mongo roster.", "mongo_impact": "None.", "urgency": "LOW", "availability": "OWNED", "sources": []}
+    {"player": "Injuries", "team": "various", "slot": "various", "status": "CONFIRMED_FACT", "summary": "No new injuries found for Mongo roster players. Lamb and Flournoy finished healthy. MNF WAS@SF inactives not relevant to current Mongo roster.", "mongo_impact": "None.", "urgency": "LOW", "availability": "OWNED", "sources": []}
   ],
   "waiver_signals": [{"player": "Recent drops (Ray Davis, Penix, Holani, TeSlaa, Gadsden)", "status": "CONFIRMED_FACT", "availability": "UNKNOWN", "summary": "Not FREE_AGENT_CONFIRMED; no FA scan performed. QB depth relevant given Winston uncertainty and Hurts IR.", "recommendation": "NONE"}],
   "lineup_signals": [{"type": "lineup_observation", "status": "CONFIRMED_FACT", "summary": "Observed ESPN Oct 15 8:17 AM ET (unverified since). All Week 6 games final except MNF (WAS @ SF). Lineup is James's call; no ESPN action."}],
-  "expert_signals": [{"player": "Jameis Winston", "status": "EXPERT_OPINION", "summary": "Harbaugh left Week 7 decision open postgame; McCarthy relief performance noted positively. No change overnight as of 6 AM ET.", "sources": ["https://www.cbssports.com/nfl/news/jameis-winston-benched-giants-j-j-mccarthy-makes-debut/"]}],
+  "expert_signals": [{"player": "Jameis Winston", "status": "EXPERT_OPINION", "summary": "Harbaugh left Week 7 decision open postgame; McCarthy relief performance noted positively. No change as of 7 AM ET Oct 19.", "sources": ["https://www.cbssports.com/nfl/news/jameis-winston-benched-giants-j-j-mccarthy-makes-debut/"]}],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "6:00 AM ET Monday overnight (Week 6). No material changes since prior 4:15 AM Pulse. Winston Week 7 starter still undecided. No new injuries for rostered players. ESPN unverified since Oct 15 8:17 AM ET. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-19T081500Z",
-  "prior_completed_at": "2026-10-19T08:15:00Z",
-  "prior_commit": "daf149a7958b1cb176f700cba95cab15e68cc716",
-  "source_status_notes": "Official final scores/boxes via ESPN/packers.com. Beat reporting OK. Limited X; no ESPN fantasy pull; no analytics. No overnight material updates."
+  "summary": "7:00 AM ET hourly (Week 6). No material changes since prior 6:05 AM Pulse. Winston Week 7 starter still undecided. No new injuries for rostered players. ESPN unverified since Oct 15 8:17 AM ET. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-19T100500Z",
+  "prior_completed_at": "2026-10-19T10:05:00Z",
+  "prior_commit": "a900d4518e1b63a4bef78f93e1a3dac88176b3b2",
+  "source_status_notes": "Official final scores/boxes via ESPN/packers.com. Beat reporting OK. Limited X; no ESPN fantasy pull; no analytics. No material updates since prior Pulse."
 }
