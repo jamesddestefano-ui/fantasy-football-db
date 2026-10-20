@@ -34,6 +34,9 @@ HIGBEE_GADSDEN_AT = datetime(2026, 10, 14, 12, 0, 0, tzinfo=timezone.utc)  # Wed
 MCLAUGHLIN_HOLANI_AT = datetime(2026, 10, 14, 12, 18, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:18 am ET
 ESTIME_PENIX_AT = datetime(2026, 10, 14, 12, 18, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:18 am ET
 WINSTON_DAVIS_AT = datetime(2026, 10, 14, 12, 22, 0, tzinfo=timezone.utc)  # Wed Oct 14, 8:22 am ET
+COWING_ESTIME_AT = datetime(2026, 10, 15, 23, 10, 0, tzinfo=timezone.utc)  # Thu Oct 15, 7:10 pm ET
+MCKEE_HURTS_AT = datetime(2026, 10, 16, 0, 19, 0, tzinfo=timezone.utc)  # Thu Oct 15, 8:19 pm ET
+ESTIME_MCKEE_AT = datetime(2026, 10, 18, 16, 18, 0, tzinfo=timezone.utc)  # Sun Oct 18, 12:18 pm ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -1277,6 +1280,157 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
         observed_at=WINSTON_DAVIS_AT, source_id=jameis_source.id,
+    ))
+
+    # --- 2026-10-15 ESPN: FREE_AGENT ADD Jacob Cowing $0 / DROP Audric Estime ---
+    cowing_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Audric Estime")))
+    cowing_add = _player(session, "Jacob Cowing", "WR", "SF")
+    cowing_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Jacob Cowing for $0; dropped Audric Estime (Thu Oct 15, 7:10 pm ET)",
+        original_ref="data/imports/2026-10-15-jacob-cowing-add-estime-drop.json",
+        platform="ESPN",
+        observed_at=COWING_ESTIME_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-20 08:09 ET; FAAB remained $74; no espn_id observed for Jacob Cowing.",
+    )
+    session.add(cowing_source)
+    session.flush()
+    cowing_group = TransactionGroup(
+        id="jacob-cowing-add-estime-drop-20261015-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=COWING_ESTIME_AT, source_id=cowing_source.id,
+        notes="ESPN-authoritative ADD_DROP: Jacob Cowing $0 free add; Audric Estime dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(cowing_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=cowing_group.id, sequence=1, event_type="DROP", player_id=cowing_drop.id,
+            notes="Dropped when adding Jacob Cowing.",
+        ),
+        TransactionEvent(
+            group_id=cowing_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=cowing_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=cowing_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=COWING_ESTIME_AT, source_id=cowing_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=cowing_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=cowing_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=COWING_ESTIME_AT, source_id=cowing_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=cowing_group.id,
+            notes="ESPN free add $0 dropping Audric Estime.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=cowing_add.id,
+            slot="BN", placement="BENCH", effective_at=COWING_ESTIME_AT, source_id=cowing_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=COWING_ESTIME_AT, source_id=cowing_source.id,
+    ))
+
+    # --- 2026-10-15 ESPN: FREE_AGENT ADD Tanner McKee $0 / DROP Jalen Hurts ---
+    mckee_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Jalen Hurts")))
+    mckee_add = _player(session, "Tanner McKee", "QB", "PHI")
+    mckee_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Tanner McKee for $0; dropped Jalen Hurts (Thu Oct 15, 8:19 pm ET)",
+        original_ref="data/imports/2026-10-15-tanner-mckee-add-hurts-drop.json",
+        platform="ESPN",
+        observed_at=MCKEE_HURTS_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-20 08:09 ET; FAAB remained $74; no espn_id observed for Tanner McKee.",
+    )
+    session.add(mckee_source)
+    session.flush()
+    mckee_group = TransactionGroup(
+        id="tanner-mckee-add-hurts-drop-20261015-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=MCKEE_HURTS_AT, source_id=mckee_source.id,
+        notes="ESPN-authoritative ADD_DROP: Tanner McKee $0 free add; Jalen Hurts dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(mckee_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=mckee_group.id, sequence=1, event_type="DROP", player_id=mckee_drop.id,
+            notes="Dropped when adding Tanner McKee.",
+        ),
+        TransactionEvent(
+            group_id=mckee_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=mckee_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=mckee_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=MCKEE_HURTS_AT, source_id=mckee_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=mckee_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=mckee_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=MCKEE_HURTS_AT, source_id=mckee_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=mckee_group.id,
+            notes="ESPN free add $0 dropping Jalen Hurts. Lineup slot not observed; no assignment recorded.",
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=MCKEE_HURTS_AT, source_id=mckee_source.id,
+    ))
+
+    # --- 2026-10-18 ESPN: FREE_AGENT ADD Audric Estime $0 (re-acquired) / DROP Tanner McKee ---
+    estime2_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Tanner McKee")))
+    estime2_add = _player(session, "Audric Estime", "RB", "CLE")
+    estime2_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Audric Estime for $0; dropped Tanner McKee (Sun Oct 18, 12:18 pm ET)",
+        original_ref="data/imports/2026-10-18-audric-estime-add-mckee-drop.json",
+        platform="ESPN",
+        observed_at=ESTIME_MCKEE_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-20 08:09 ET; FAAB remained $74; no espn_id observed for Audric Estime.",
+    )
+    session.add(estime2_source)
+    session.flush()
+    estime2_group = TransactionGroup(
+        id="audric-estime-add-mckee-drop-20261018-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=ESTIME_MCKEE_AT, source_id=estime2_source.id,
+        notes="ESPN-authoritative ADD_DROP: Audric Estime $0 free add (re-acquired after Oct 15 drop); Tanner McKee dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(estime2_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=estime2_group.id, sequence=1, event_type="DROP", player_id=estime2_drop.id,
+            notes="Dropped when adding Audric Estime.",
+        ),
+        TransactionEvent(
+            group_id=estime2_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=estime2_add.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=estime2_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=ESTIME_MCKEE_AT, source_id=estime2_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=estime2_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=estime2_add.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=ESTIME_MCKEE_AT, source_id=estime2_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=estime2_group.id,
+            notes="ESPN free add $0 re-acquiring Audric Estime, dropping Tanner McKee. Existing week=2 BN assignment retained (ESPN shows BN).",
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
+        observed_at=ESTIME_MCKEE_AT, source_id=estime2_source.id,
     ))
 
     for name, pos in NOT_MINE_UNKNOWN:

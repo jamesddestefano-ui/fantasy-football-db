@@ -54,7 +54,7 @@ def test_player_aliases_seeded_for_known_gaps(session):
 
 def test_all_known_espn_events_classify_already_recorded(session):
     results = dry_run_classify(session, KNOWN_ESPN_EVENTS)
-    assert len(results) == 23
+    assert len(results) == 26
     for r, event in zip(results, KNOWN_ESPN_EVENTS):
         assert r.classification == Classification.ALREADY_RECORDED, (
             f"{event['description']} → {r.classification} {r.reasons}"
@@ -97,6 +97,9 @@ def test_six_espn_live_plus_ir_confirmation_match_expected_groups(session):
     assert by_desc[KNOWN_ESPN_EVENTS[20]["description"]].matched_group_id == "jaleel-mclaughlin-add-holani-drop-20261014-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[21]["description"]].matched_group_id == "audric-estime-add-penix-drop-20261014-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[22]["description"]].matched_group_id == "jameis-winston-add-ray-davis-drop-20261014-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[23]["description"]].matched_group_id == "jacob-cowing-add-estime-drop-20261015-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[24]["description"]].matched_group_id == "tanner-mckee-add-hurts-drop-20261015-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[25]["description"]].matched_group_id == "audric-estime-add-mckee-drop-20261018-espn-001"
 
 
 def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):
