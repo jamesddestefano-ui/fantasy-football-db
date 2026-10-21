@@ -3,14 +3,14 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-21T100600Z",
-  "generated_at": "2026-10-21T10:00:00Z",
-  "completed_at": "2026-10-21T10:06:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-21T162500Z",
+  "generated_at": "2026-10-21T16:15:00Z",
+  "completed_at": "2026-10-21T16:25:00Z",
   "week": 7,
   "season": 2026,
-  "run_type": "overnight",
-  "as_of": "2026-10-21T10:06:00Z",
-  "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
+  "run_type": "hourly",
+  "as_of": "2026-10-21T16:25:00Z",
+  "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "OK", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {
     "source": "Live Check Oct 20 ~8:09-8:12 AM ET (authenticated ESPN read-only), ingested in commit fc7ded0: roster 17 matches ESPN. Oct 15 ADD Cowing / DROP Estime; Oct 15 ADD McKee / DROP Hurts; Oct 18 ADD Estime / DROP McKee. Pulse did no ESPN pull.",
@@ -24,21 +24,21 @@
     "free_agent_scan_note": "Hurts and McKee availability UNKNOWN; not FREE_AGENT_CONFIRMED."
   },
   "player_signals": [
-    {"player": "Jameis Winston", "team": "NYG", "slot": "rostered QB", "status": "ATTRIBUTED_REPORT", "summary": "No official Week 7 starter named as of 6:00 AM ET. Harbaugh continues honing in on decision between Winston and McCarthy for @HOU. No new announcement overnight or early Wednesday.", "mongo_impact": "Only rostered QB has an uncertain Week 7 job.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50219771/jameis-winston-jj-mccarthy-qb-pros-cons-new-york-giants", "https://www.nfl.com/news/giants-john-harbaugh-week-7-qb1-decision-between-jameis-winston-j-j-mccarthy"]},
-    {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "CONFIRMED_FACT", "summary": "Judkins (ankle) remains questionable/TBD for Week 7 at TEN; practice reports expected Wednesday. No new status change overnight.", "mongo_impact": "McLaughlin and Estime keep value only if Judkins sits again.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.fantasypros.com/nfl/news/614780/quinshon-judkins-ankle-uncertain-week-7.php"]},
-    {"player": "CeeDee Lamb", "team": "DAL", "slot": "rostered WR", "status": "CONFIRMED_FACT", "summary": "No new Week 7 injury report found. Practiced fully and played Week 6 healthy.", "mongo_impact": "Low.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Jameis Winston", "team": "NYG", "slot": "rostered QB", "status": "ATTRIBUTED_REPORT", "summary": "ESPN report (Jeremy Fowler source, ~12:00 PM ET Oct 21): Giants plan to start J.J. McCarthy over Winston for Week 7 at HOU. Not yet confirmed by team/Harbaugh as official. Prior status was undecided.", "mongo_impact": "Rostered QB may not start Week 7; McCarthy expected to get the nod. High urgency for QB evaluation/waiver consideration.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week"]},
+    {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "ATTRIBUTED_REPORT", "summary": "Judkins (ankle) remains uncertain/questionable for Week 7 at TEN. Monken optimistic earlier in week but no new Wednesday practice participation confirmed as of ~12:20 PM ET. Practice reports expected.", "mongo_impact": "McLaughlin and Estime retain handcuff value if Judkins limited or out.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.fantasypros.com/nfl/news/614780/quinshon-judkins-ankle-uncertain-week-7.php"]},
+    {"player": "CeeDee Lamb", "team": "DAL", "slot": "rostered WR", "status": "CONFIRMED_FACT", "summary": "No new Week 7 injury designation. Practiced fully previously and played Week 6 healthy.", "mongo_impact": "Low.", "urgency": "LOW", "availability": "OWNED", "sources": []},
     {"player": "Kendre Miller / Saints D/ST", "team": "NO", "slot": "rostered", "status": "CONFIRMED_FACT", "summary": "Week 7 Steelers-Saints in Paris at 9:30 AM ET Sunday. Lineup slots lock early.", "mongo_impact": "Set lineup decisions before 9:30 AM ET Sunday.", "urgency": "MEDIUM", "availability": "OWNED", "sources": []}
   ],
   "waiver_signals": [
-    {"player": "C.J. Stroud / Kyler Murray", "status": "CONFIRMED_FACT", "availability": "WAIVERS_CONFIRMED", "summary": "On waivers per authenticated live ESPN check ~8:09 AM ET Oct 20. Not re-checked. Not FREE_AGENT_CONFIRMED.", "recommendation": "CONSIDER_QB_CLAIM (recommendation only; James decides; no ESPN action)"}
+    {"player": "C.J. Stroud / Kyler Murray", "status": "CONFIRMED_FACT", "availability": "WAIVERS_CONFIRMED", "summary": "On waivers per authenticated live ESPN check ~8:09 AM ET Oct 20. Not re-checked this run. Not FREE_AGENT_CONFIRMED.", "recommendation": "CONSIDER_QB_CLAIM (recommendation only; James decides; no ESPN action)"}
   ],
   "lineup_signals": [{"type": "early_lock", "status": "CONFIRMED_FACT", "summary": "Miller and Saints D/ST lock at 9:30 AM ET Sunday (Paris). Lineup is James's call; no ESPN action."}],
-  "expert_signals": [{"player": "Jameis Winston / J.J. McCarthy", "status": "EXPERT_OPINION", "summary": "Ongoing expert discussion (CBS, ESPN, Russell Wilson) that McCarthy may have a case to start Week 7. No official change.", "sources": ["https://www.cbssports.com/nfl/news/j-j-mccarthy-vs-jameis-winston-giants-starting-qb-texans/", "https://www.espn.com/nfl/story/_/id/50219771/jameis-winston-jj-mccarthy-qb-pros-cons-new-york-giants"]}],
-  "material_changes": [],
-  "no_material_change": true,
-  "summary": "6:00 AM ET Wednesday overnight (Week 7 prep). No material changes since prior 2:12 AM ET Pulse. Winston Week 7 starter still undecided (Harbaugh honing in). Judkins remains questionable/TBD (ankle). No new injuries for rostered players. Stroud/Murray still WAIVERS_CONFIRMED per morning ESPN check. Miller/Saints D/ST early Paris lock. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-21T061200Z",
-  "prior_completed_at": "2026-10-21T06:12:00Z",
-  "prior_commit": "be2b18350561f453ff162f7af827bb7fc717b804",
-  "source_status_notes": "No new official announcements overnight or early Wednesday. Beat reporting confirms Winston still TBD. Limited X (no material overnight activity). Limited experts. No analytics. Roster context carried from fc7ded0."
+  "expert_signals": [{"player": "Jameis Winston / J.J. McCarthy", "status": "EXPERT_OPINION", "summary": "ESPN attributed report of planned McCarthy start. Prior expert discussion favored possible McCarthy case. Official confirmation pending.", "sources": ["https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week"]}],
+  "material_changes": [{"type": "player_status", "player": "Jameis Winston", "description": "Shift from undecided Week 7 starter to attributed report that McCarthy will start instead.", "status": "ATTRIBUTED_REPORT"}],
+  "no_material_change": false,
+  "summary": "12:25 PM ET Wednesday hourly (Week 7 prep). Material change: ESPN (Jeremy Fowler) reports Giants plan to start J.J. McCarthy over Winston vs. Texans. Judkins remains ankle-uncertain/questionable with no new practice confirmation. Stroud/Murray still WAIVERS_CONFIRMED per Oct 20 ESPN. Miller/Saints D/ST early Paris lock. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-21T100600Z",
+  "prior_completed_at": "2026-10-21T10:06:00Z",
+  "prior_commit": "2c3ea0c07657cb5f8c2c3d9e81d101fbf23da230",
+  "source_status_notes": "ESPN attributed report on McCarthy start (Fowler). Beat/X confirming the report. No official team announcement yet. Judkins no new practice detail. Limited experts. No analytics. Roster context carried from fc7ded0."
 }
