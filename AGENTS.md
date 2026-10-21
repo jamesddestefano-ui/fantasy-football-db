@@ -50,3 +50,14 @@ Prime Mongo Fantasy Watch uses the append-only learning layer under `learning/`.
 9. NFL Pulse is approved real-time intelligence, never an ownership or transaction authority. Before any Mongo action, validate authenticated ESPN roster, ownership, availability, waivers, FAAB, lineup and league settings.
 10. When Pulse materially informs a decision, preserve its lineage in the decision event. Keep Pulse fact confidence separate from Mongo decision confidence, collapse repeated coverage of one underlying NFL fact into one signal, and record `PULSE_CONFLICT` when credible evidence conflicts.
 11. After outcomes are known, grade Pulse usefulness and record whether it was early, improved the decision, prevented a mistake, arrived too late or was misleading.
+
+## Mongo Brain roles (adopted 2026-10-21, at James's request)
+
+Mirrors the Sparta arrangement. Earlier rules stay in force; this section only assigns roles.
+
+1. **Claude is the Mongo Brain** (system id `CLAUDE_MONGO_BRAIN`): final Mongo recommendations, DECISION and REVIEW records, weekly report card. Operating manual: `docs/brain_playbook.md`.
+2. **ChatGPT/Codex** (Prime Mongo Fantasy Watch, Mongo Live Check) are the data-collection and ingest layer: authenticated ESPN checks, completed-transaction ingest into `data/imports/` and `src/ffdb/seed.py`, Grok Pulse. They may surface evidence, alerts and candidates but do not write new DECISION records.
+3. Prime's historical DECISIONs (`PRIME_MONGO_FANTASY_WATCH`) remain valid, immutable history and are reviewed and graded like any other; the scorecard reports both systems in `system_performance`.
+4. Record decisions with `scripts/record_decision.py`; it validates every event, never edits a prior line, and rebuilds `learning/season_scorecard.json`.
+5. `scripts/espn_sync.py` snapshots (`data/espn_api/`) are read-only ESPN current-ownership evidence as of `observed_at`. They inform availability on the board but never write ownership or transactions; ingest remains a separate step under rules 4, 8 and 12.
+6. The weekly board (`.github/workflows/mongo_weekly_board.yml`, `scripts/mongo_board.py`) is intelligence, not a recommendation. Waiver targets not in the ESPN pool snapshot stay `UNKNOWN`.

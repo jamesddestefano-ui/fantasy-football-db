@@ -47,3 +47,17 @@ The September 10, 2026 user confirmation seeds the current Mongo roster, Week 1 
 ## Measurable learning loop
 
 Prime Mongo recommendations are recorded before their deadlines in `learning/decision_ledger.jsonl`. Outcomes are appended later as separate review events so the original recommendation and information set remain immutable. `src/ffdb/learning.py` validates Mongo-only records and rebuilds confidence, decision-type, signal and user-action performance metrics. Weekly reviews, the season scorecard and versioned rule changes live under `learning/`.
+
+
+## Mongo Brain (Claude)
+
+Claude makes the weekly Mongo calls; ChatGPT/Codex collect ESPN data and ingest completed moves (see `AGENTS.md`, "Mongo Brain roles"). Scheduled sessions follow `docs/brain_playbook.md`: Tuesday report card and waiver plan, Saturday injury update, Sunday lineup check.
+
+```bash
+python scripts/espn_sync.py            # ESPN snapshot (needs ESPN_S2 / ESPN_SWID)
+python scripts/fp_weekly.py            # FantasyPros pull (needs FANTASYPROS_API_KEY)
+python scripts/mongo_board.py          # lineup + waiver board -> intelligence/board/latest.md
+python scripts/record_decision.py open # unreviewed decisions
+```
+
+The "Mongo weekly board" GitHub Action runs the three pulls on Tuesday and Saturday mornings. Repository secrets: `FANTASYPROS_API_KEY` (required), `ESPN_S2` and `ESPN_SWID` (the espn.com sign-in cookies; without them waiver availability stays `UNKNOWN`).

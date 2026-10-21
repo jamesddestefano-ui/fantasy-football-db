@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T03:01:35Z",
+  "generated_at": "2026-10-21T11:29:34-04:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
@@ -58,86 +58,6 @@
     }
   },
   "signal_performance": {
-    "authenticated league state": {
-      "count": 6,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
-    "injury replacement role": {
-      "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
-    "official team report": {
-      "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
-    "high-confidence insider injury reporting": {
-      "count": 3,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
-    "backfield vacancy/role contingency": {
-      "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
-    "current starter comparison": {
-      "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
-    "in-game injury exit": {
-      "count": 2,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
-    "official team injury report": {
-      "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
-      "false_negative_rate": null,
-      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
-    },
     "Mongo Grok Pulse": {
       "count": 4,
       "success_rate": null,
@@ -148,7 +68,17 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
-    "post-game injury evidence": {
+    "authenticated league state": {
+      "count": 6,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "backfield vacancy/role contingency": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -168,8 +98,68 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
-    "scheduled medical testing": {
+    "current starter comparison": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "high-confidence insider injury reporting": {
+      "count": 3,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "in-game injury exit": {
       "count": 2,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "injury replacement role": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "official team injury report": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "official team report": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "post-game injury evidence": {
+      "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -180,6 +170,16 @@
     },
     "roster/IR slot optimization": {
       "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "scheduled medical testing": {
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -250,7 +250,7 @@
     "actions_changed_by_pulse": 5,
     "successful_actions_changed_by_pulse": 0,
     "unsuccessful_actions_changed_by_pulse": 0,
-    "average_information_lead_time_minutes": 96.8,
+    "average_information_lead_time_minutes": 97.2,
     "highly_useful_pulses": 0,
     "misleading_pulses": 0,
     "too_late_pulses": 0,
@@ -278,6 +278,15 @@
         "changed_decision_count": 5,
         "usefulness_grade_distribution": {}
       }
+    }
+  },
+  "system_performance": {
+    "PRIME_MONGO_FANTASY_WATCH": {
+      "count": 6,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
     }
   }
 }

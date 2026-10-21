@@ -1,0 +1,86 @@
+name: Mongo weekly board
+
+# Read-only pulls for the Mongo Brain (docs/brain_playbook.md):
+#   1. ESPN snapshot (optional; needs ESPN_S2 + ESPN_SWID secrets) -> data/espn_api/
+#   2. FantasyPros weekly rankings/projections/injuries (FANTASYPROS_API_KEY) -> intelligence/fantasypros/weekly/
+#   3. Board: James's lineup + waiver targets -> intelligence/board/
+# Never writes Mongo transactions or ownership history; the board is intelligence, not a decision.
+
+on:
+  schedule:
+    - cron: '23 13 * * 2'   # Tue ~9:23 AM EDT / 8:23 EST: after MNF, before Wed waivers
+    - cron: '23 13 * * 6'   # Sat ~9:23 AM EDT: after Friday injury reports
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'NFL week (blank = current)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mongo-weekly-board
+  cancel-in-progress: false
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Offline tests
+        run: |
+          pip install -q -e '.[dev]'
+          pytest
+
+      - name: ESPN snapshot (read-only)
+        id: espn
+        continue-on-error: true
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: |
+          if [ -z "$ESPN_S2" ]; then echo "::warning title=ESPN::ESPN_S2/ESPN_SWID secrets not set; trying anonymous read"; fi
+          python scripts/espn_sync.py
+
+      - name: Pull FantasyPros
+        env:
+          FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
+          WEEK: ${{ inputs.week }}
+        run: |
+          if [ -z "$FANTASYPROS_API_KEY" ]; then echo "::error::FANTASYPROS_API_KEY secret is not set"; exit 1; fi
+          python scripts/fp_weekly.py ${WEEK:+--week "$WEEK"}
+
+      - name: Build board
+        env:
+          WEEK: ${{ inputs.week }}
+        run: |
+          python scripts/mongo_board.py ${WEEK:+--week "$WEEK"} > "$RUNNER_TEMP/board.md"
+          cat "$RUNNER_TEMP/board.md" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ steps.espn.outcome }}" != "success" ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "**ESPN snapshot failed — waiver availability is UNKNOWN this run.**" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Validate and commit
+        run: |
+          ffdb init >/dev/null
+          ffdb validate --league mongo
+          git config user.name "mongo-board[bot]"
+          git config user.email "mongo-board@users.noreply.github.com"
+          git add data/espn_api intelligence/fantasypros intelligence/board 2>/dev/null || true
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "Mongo weekly board: ESPN snapshot + FantasyPros pull + lineup/waiver board"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::Could not push board commit"; exit 1

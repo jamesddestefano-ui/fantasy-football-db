@@ -8,6 +8,10 @@ from typing import Any
 
 
 SYSTEM = "PRIME_MONGO_FANTASY_WATCH"
+# Mongo decision systems allowed in this ledger. PRIME_MONGO_FANTASY_WATCH (ChatGPT) made the
+# historical decisions; CLAUDE_MONGO_BRAIN is the Mongo Brain from 2026-10-21 (AGENTS.md).
+BRAIN_SYSTEM = "CLAUDE_MONGO_BRAIN"
+MONGO_SYSTEMS = {SYSTEM, BRAIN_SYSTEM}
 CONFIDENCE_LEVELS = {1, 2, 3, 4, 5}
 URGENCY_LEVELS = {"LOW", "MEDIUM", "HIGH", "IMMEDIATE"}
 GRADES = {"A", "B", "C", "D", "F"}
@@ -77,7 +81,7 @@ def validate_decision(record: dict[str, Any]) -> None:
         raise LearningValidationError("missing decision fields: " + ", ".join(missing))
     if record.get("record_type", "DECISION") != "DECISION":
         raise LearningValidationError("new recommendations must use record_type=DECISION")
-    if record["system"] != SYSTEM:
+    if record["system"] not in MONGO_SYSTEMS:
         raise LearningValidationError("learning records in this repository must be Mongo-only")
     if not isinstance(record["decision_id"], str) or not record["decision_id"].strip():
         raise LearningValidationError("decision_id is required")
@@ -272,6 +276,10 @@ def build_scorecard(path: Path, season: int = 2026) -> dict[str, Any]:
         "user_action_performance": {key: _decision_bucket(value) for key, value in action_groups.items()},
         "mongo_outcome_metrics": _mongo_outcome_metrics(reviewed),
         "nfl_pulse_performance": _pulse_performance(rows),
+        "system_performance": {
+            name: _decision_bucket([row for row in rows if row["system"] == name])
+            for name in sorted({row["system"] for row in rows})
+        },
     }
 
 
