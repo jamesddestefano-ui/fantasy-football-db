@@ -37,6 +37,7 @@ WINSTON_DAVIS_AT = datetime(2026, 10, 14, 12, 22, 0, tzinfo=timezone.utc)  # Wed
 COWING_ESTIME_AT = datetime(2026, 10, 15, 23, 10, 0, tzinfo=timezone.utc)  # Thu Oct 15, 7:10 pm ET
 MCKEE_HURTS_AT = datetime(2026, 10, 16, 0, 19, 0, tzinfo=timezone.utc)  # Thu Oct 15, 8:19 pm ET
 ESTIME_MCKEE_AT = datetime(2026, 10, 18, 16, 18, 0, tzinfo=timezone.utc)  # Sun Oct 18, 12:18 pm ET
+MURRAY_ANDREWS_WAIVER_AT = datetime(2026, 10, 21, 8, 8, 0, tzinfo=timezone.utc)  # Wed Oct 21, 4:08 am ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -1431,6 +1432,63 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("74"),
         observed_at=ESTIME_MCKEE_AT, source_id=estime2_source.id,
+    ))
+
+    # --- 2026-10-21 ESPN: WAIVER ADD Kyler Murray $8 / DROP Mark Andrews ---
+    andrews_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Mark Andrews")))
+    murray = _player(session, "Kyler Murray", "QB", "MIN")
+    murray_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added Kyler Murray (MIN QB) from waivers for $8; dropped Mark Andrews (BAL TE) (Wed Oct 21, 4:08 am ET)",
+        original_ref="data/imports/2026-10-21-kyler-murray-waiver-andrews-drop.json",
+        platform="ESPN",
+        observed_at=MURRAY_ANDREWS_WAIVER_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-21 08:17 ET; FAAB $74→$66; no espn_id observed for Kyler Murray.",
+    )
+    session.add(murray_source)
+    session.flush()
+    murray_group = TransactionGroup(
+        id="kyler-murray-waiver-andrews-drop-20261021-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=MURRAY_ANDREWS_WAIVER_AT, source_id=murray_source.id,
+        notes="ESPN-authoritative WAIVER_ADD_DROP: Kyler Murray $8 waiver; Mark Andrews dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(murray_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=murray_group.id, sequence=1, event_type="DROP", player_id=andrews_drop.id,
+            notes="Dropped when claiming Kyler Murray on waivers.",
+        ),
+        TransactionEvent(
+            group_id=murray_group.id, sequence=2, event_type="WAIVER_ADD", player_id=murray.id,
+            faab_amount=Decimal("8"), notes="Waiver claim $8.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=andrews_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=MURRAY_ANDREWS_WAIVER_AT, source_id=murray_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=murray_group.id,
+            notes="Drop proves departure from roster, not current free agency; drop destination not captured.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=murray.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=MURRAY_ANDREWS_WAIVER_AT, source_id=murray_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=murray_group.id,
+            notes="ESPN waiver claim $8 dropping Mark Andrews.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=murray.id,
+            slot="BN", placement="BENCH", effective_at=MURRAY_ANDREWS_WAIVER_AT, source_id=murray_source.id,
+        ),
+        FaabEntry(
+            league_id=lg.id, fantasy_team_id=tm.id, amount=Decimal("-8"), kind="WAIVER_EXPENDITURE",
+            effective_at=MURRAY_ANDREWS_WAIVER_AT, transaction_group_id=murray_group.id, source_id=murray_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
+        observed_at=MURRAY_ANDREWS_WAIVER_AT, source_id=murray_source.id,
     ))
 
     for name, pos in NOT_MINE_UNKNOWN:

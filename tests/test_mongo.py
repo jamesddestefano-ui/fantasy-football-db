@@ -21,7 +21,7 @@ OCT14_GROUPS = [
 
 def test_seed_roster_is_exact(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    expected = ({r[0] for r in ROSTER} | {"Keaton Mitchell", "Ryan Flournoy", "Saints D/ST", "Tyler Higbee", "Jaleel McLaughlin", "Audric Estime", "Jameis Winston", "Jacob Cowing"}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders", "Eagles D/ST", "De'Von Achane", "Chris Bell", "Packers D/ST", "Rashod Bateman", "Isaac TeSlaa", "Raiders D/ST", "Oronde Gadsden", "George Holani", "Michael Penix Jr.", "Ray Davis", "Jalen Hurts"}
+    expected = ({r[0] for r in ROSTER} | {"Keaton Mitchell", "Ryan Flournoy", "Saints D/ST", "Tyler Higbee", "Jaleel McLaughlin", "Audric Estime", "Jameis Winston", "Jacob Cowing", "Kyler Murray"}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders", "Eagles D/ST", "De'Von Achane", "Chris Bell", "Packers D/ST", "Rashod Bateman", "Isaac TeSlaa", "Raiders D/ST", "Oronde Gadsden", "George Holani", "Michael Penix Jr.", "Ray Davis", "Jalen Hurts", "Mark Andrews"}
     assert actual == expected
     assert len(actual) == 17
     assert "Malik Davis" not in actual
@@ -34,6 +34,8 @@ def test_seed_roster_is_exact(session):
     # 2026-10-15/18 ESPN FA moves: Cowing/Estime, McKee/Hurts, Estime (re-add)/McKee.
     assert {"Jacob Cowing", "Audric Estime"} <= actual
     assert not ({"Jalen Hurts", "Tanner McKee"} & actual)
+    # 2026-10-21 4:08 am ET ESPN waiver: Kyler Murray $8 in, Mark Andrews out.
+    assert "Kyler Murray" in actual and "Mark Andrews" not in actual
     assert "Rashod Bateman" not in actual
     assert "Packers D/ST" not in actual
     assert "Chris Bell" not in actual
@@ -41,7 +43,7 @@ def test_seed_roster_is_exact(session):
     assert "Emari Demercado" not in actual
     assert "Ja'Kobi Lane" not in actual
     assert "Dylan Sampson" in actual
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
     assert validate(session, "mongo") == []
 
 def test_league_settings_include_espn_ids_scoring_and_faab_budget(session):
@@ -77,8 +79,8 @@ def test_faab_history_explains_100_to_82_via_saylors_bell_sanders_gadsden(sessio
     debits = session.scalars(select(FaabEntry).where(
         FaabEntry.league_id == lg.id, FaabEntry.kind == "WAIVER_EXPENDITURE",
     )).all()
-    assert sorted(abs(d.amount) for d in debits) == [Decimal("2.00"), Decimal("2.00"), Decimal("6.00"), Decimal("8.00"), Decimal("8.00")]
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert sorted(abs(d.amount) for d in debits) == [Decimal("2.00"), Decimal("2.00"), Decimal("6.00"), Decimal("8.00"), Decimal("8.00"), Decimal("8.00")]
+    assert faab_balance(session, "mongo") == Decimal("66.00")
 
 def test_historical_transactions_are_seeded_without_changing_current_roster(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
@@ -196,7 +198,7 @@ def test_demercado_free_add_then_drop_leaves_unknown_without_faab_change(session
         TransactionEvent.group_id == "rashod-bateman-add-demercado-drop-20260917-espn-001",
     ))
     assert drop is not None
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
 
 
 def test_bateman_free_add_then_dropped_for_teslaa(session):
@@ -226,7 +228,7 @@ def test_bateman_free_add_then_dropped_for_teslaa(session):
     ))
     assert assignment.slot == "BN"
     assert assignment.placement == "BENCH"
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
 
 
 
@@ -250,7 +252,7 @@ def test_holani_free_add_history_preserved_after_oct14_drop(session):
         TransactionEvent.group_id == "george-holani-add-lane-drop-20260919-espn-001",
     ))
     assert add.faab_amount == Decimal("0.00")
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
 
 
 def test_gadsden_waiver_history_preserved_after_oct14_drop(session):
@@ -273,7 +275,7 @@ def test_gadsden_waiver_history_preserved_after_oct14_drop(session):
         TransactionEvent.group_id == "oronde-gadsden-waiver-sanders-drop-20260923-espn-001",
     ))
     assert add.faab_amount == Decimal("8.00")
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
 
 def test_not_mine_is_unknown_not_free_agent(session):
     for name in ["Browns D/ST", "Nicholas Singleton", "Kayshon Boutte", "Jacob Saylors"]:
@@ -293,7 +295,7 @@ def test_atomic_add_drop_preserves_drop_as_unknown_and_debits_faab(session):
     add_drop(session, "mongo", "mine", "Kendre Miller", "Player X", Decimal("4"), src.id)
     assert ownership(session, "mongo", "Kendre Miller").state == OwnershipState.UNKNOWN
     assert ownership(session, "mongo", "Player X").state == OwnershipState.OWNED
-    assert faab_balance(session, "mongo") == Decimal("70.00")
+    assert faab_balance(session, "mongo") == Decimal("62.00")
     assert validate(session, "mongo") == []
 
 def test_add_owned_elsewhere_is_rejected_atomically(session):
@@ -345,7 +347,7 @@ def test_oct14_espn_free_agent_add_drops(session):
             LineupAssignment.season == 2026, LineupAssignment.week == 2,
         ))
         assert assignment.slot == slot
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
     assert validate(session, "mongo") == []
 
 
@@ -367,7 +369,7 @@ def test_oct14_winston_add_ray_davis_drop(session):
         LineupAssignment.season == 2026, LineupAssignment.week == 2,
     ))
     assert assignment.slot == "QB" and assignment.placement == "STARTER"
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
     assert len(roster(session, "mongo")) == 17
     assert validate(session, "mongo") == []
 
@@ -404,6 +406,33 @@ def test_oct15_oct18_espn_free_agent_add_drops(session):
         LineupAssignment.season == 2026, LineupAssignment.week == 2,
     ))
     assert assignment.slot == "BN" and assignment.placement == "BENCH"
-    assert faab_balance(session, "mongo") == Decimal("74.00")
+    assert faab_balance(session, "mongo") == Decimal("66.00")
+    assert len(roster(session, "mongo")) == 17
+    assert validate(session, "mongo") == []
+
+
+def test_oct21_kyler_murray_waiver_andrews_drop(session):
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    gid = "kyler-murray-waiver-andrews-drop-20261021-espn-001"
+    murray = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Kyler Murray")))
+    andrews = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Mark Andrews")))
+    events = {e.event_type: e for e in session.scalars(select(TransactionEvent).where(TransactionEvent.group_id == gid))}
+    assert events["WAIVER_ADD"].player_id == murray.id
+    assert events["WAIVER_ADD"].faab_amount == Decimal("8.00")
+    assert events["DROP"].player_id == andrews.id
+    debit = session.scalar(select(FaabEntry).where(
+        FaabEntry.league_id == lg.id, FaabEntry.kind == "WAIVER_EXPENDITURE", FaabEntry.transaction_group_id == gid,
+    ))
+    assert debit.amount == Decimal("-8.00")
+    assert ownership(session, "mongo", "Kyler Murray").state == OwnershipState.OWNED
+    # Andrews dropped -> UNKNOWN, never FREE_AGENT_CONFIRMED.
+    assert ownership(session, "mongo", "Mark Andrews").state == OwnershipState.UNKNOWN
+    assert murray.espn_id is None
+    assignment = session.scalar(select(LineupAssignment).where(
+        LineupAssignment.league_id == lg.id, LineupAssignment.player_id == murray.id,
+        LineupAssignment.season == 2026, LineupAssignment.week == 2,
+    ))
+    assert assignment.slot == "BN" and assignment.placement == "BENCH"
+    assert faab_balance(session, "mongo") == Decimal("66.00")
     assert len(roster(session, "mongo")) == 17
     assert validate(session, "mongo") == []

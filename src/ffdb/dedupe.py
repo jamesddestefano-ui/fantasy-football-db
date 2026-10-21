@@ -769,4 +769,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-10-18",
         "faab_amount": 0,
     },
+    {
+        "description": "2026-10-21 ET WAIVER_ADD_DROP Kyler Murray $8 + DROP Mark Andrews (ESPN waivers 4:08 am)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "waiver",
+        "added_player": "Kyler Murray",
+        "dropped_player": "Mark Andrews",
+        "calendar_day_ET": "2026-10-21",
+        "faab_amount": 8,
+    },
 ]

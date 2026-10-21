@@ -54,7 +54,7 @@ def test_player_aliases_seeded_for_known_gaps(session):
 
 def test_all_known_espn_events_classify_already_recorded(session):
     results = dry_run_classify(session, KNOWN_ESPN_EVENTS)
-    assert len(results) == 26
+    assert len(results) == 27
     for r, event in zip(results, KNOWN_ESPN_EVENTS):
         assert r.classification == Classification.ALREADY_RECORDED, (
             f"{event['description']} → {r.classification} {r.reasons}"
@@ -100,6 +100,7 @@ def test_six_espn_live_plus_ir_confirmation_match_expected_groups(session):
     assert by_desc[KNOWN_ESPN_EVENTS[23]["description"]].matched_group_id == "jacob-cowing-add-estime-drop-20261015-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[24]["description"]].matched_group_id == "tanner-mckee-add-hurts-drop-20261015-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[25]["description"]].matched_group_id == "audric-estime-add-mckee-drop-20261018-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[26]["description"]].matched_group_id == "kyler-murray-waiver-andrews-drop-20261021-espn-001"
 
 
 def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):
@@ -122,9 +123,9 @@ def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):
 
 def test_reclassifying_saylors_waiver_does_not_recommend_second_faab_debit(session):
     before = faab_balance(session, "mongo")
-    assert before == Decimal("74.00")
+    assert before == Decimal("66.00")
     debit_count = len(session.scalars(select(FaabEntry).where(FaabEntry.kind == "WAIVER_EXPENDITURE")).all())
-    assert debit_count == 5
+    assert debit_count == 6
 
     result = find_existing_transaction(
         session,
@@ -141,8 +142,8 @@ def test_reclassifying_saylors_waiver_does_not_recommend_second_faab_debit(sessi
     assert result.would_append_faab is False
     assert result.matched_group_id == "saylors-waiver-20260903-faab6-001"
     # No write occurred — balance and debit count unchanged.
-    assert faab_balance(session, "mongo") == Decimal("74.00")
-    assert len(session.scalars(select(FaabEntry).where(FaabEntry.kind == "WAIVER_EXPENDITURE")).all()) == 5
+    assert faab_balance(session, "mongo") == Decimal("66.00")
+    assert len(session.scalars(select(FaabEntry).where(FaabEntry.kind == "WAIVER_EXPENDITURE")).all()) == 6
 
 
 def test_semantic_key_ignores_source_label_and_exact_timestamp(session):

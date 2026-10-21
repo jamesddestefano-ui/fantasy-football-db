@@ -1,0 +1,34 @@
+{
+  "event_type": "WAIVER_ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Kyler Murray",
+  "nfl_team": "MIN",
+  "position": "QB",
+  "faab_amount": 8,
+  "dropped_player": "Mark Andrews",
+  "dropped_nfl_team": "BAL",
+  "dropped_position": "TE",
+  "observed_at": "2026-10-21T08:08:00Z",
+  "espn_activity_display": "Wed Oct 21, 4:08 am",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "WAIVER_ADD_DROP",
+    "added": "Kyler Murray",
+    "dropped": "Mark Andrews",
+    "calendar_day_ET": "2026-10-21",
+    "faab_amount": 8
+  },
+  "sources": [
+    {
+      "type": "ESPN_ACTIVITY",
+      "statement": "Authenticated ESPN recent activity for Tom Brady of Ass (teamId 2) (Wed Oct 21, 4:08 am ET waiver run): added Kyler Murray, MIN QB from Waivers for $8; dropped Mark Andrews, BAL TE."
+    },
+    {
+      "type": "CURRENT_ROSTER_SCREENSHOT",
+      "observation": "Live ESPN team page 2026-10-21 ~08:17-08:30 ET (authenticated, read-only; NFL Week 7 vs I Loveland Rice Krispies): starters Winston QB, Bijan RB, McLaughlin RB, Lamb WR, McMillan WR, Higbee TE, Burden FLEX, Downs FLEX, Saints D/ST; bench Kendre Miller, Kaelon Black, Keaton Mitchell (BYE), Ryan Flournoy, Jacob Cowing, Audric Estime, Kyler Murray; IR Dylan Sampson. Mark Andrews absent. 17 roster slots. Free Agent Budget $66 (was $74); record 3-3-0 (7th). No pending claims visible."
+    }
+  ],
+  "notes": "ESPN-authoritative waiver ADD_DROP observed during Mongo Live Check 2026-10-21 08:17 ET (capture /workspace/mongo-ff-bot-state/espn_live_20261021_0817.json; minute precision only). Mark Andrews drop does not prove FREE_AGENT_CONFIRMED. No espn_id observed for Kyler Murray (left null). Murray observed on BN (week=2 BN convention). W7 lineup observed but not mutated."
+}
