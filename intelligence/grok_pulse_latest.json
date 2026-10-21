@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-21T061200Z",
-  "generated_at": "2026-10-21T06:05:00Z",
-  "completed_at": "2026-10-21T06:12:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-21T100600Z",
+  "generated_at": "2026-10-21T10:00:00Z",
+  "completed_at": "2026-10-21T10:06:00Z",
   "week": 7,
   "season": 2026,
   "run_type": "overnight",
-  "as_of": "2026-10-21T06:12:00Z",
+  "as_of": "2026-10-21T10:06:00Z",
   "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {
@@ -24,8 +24,8 @@
     "free_agent_scan_note": "Hurts and McKee availability UNKNOWN; not FREE_AGENT_CONFIRMED."
   },
   "player_signals": [
-    {"player": "Jameis Winston", "team": "NYG", "slot": "rostered QB", "status": "ATTRIBUTED_REPORT", "summary": "No official Week 7 starter named as of ~2:10 AM ET. Harbaugh continues honing in on decision between Winston and McCarthy for @HOU. No new announcement overnight.", "mongo_impact": "Only rostered QB has an uncertain Week 7 job.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50219771/jameis-winston-jj-mccarthy-qb-pros-cons-new-york-giants", "https://www.nfl.com/news/giants-john-harbaugh-week-7-qb1-decision-between-jameis-winston-j-j-mccarthy"]},
-    {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "CONFIRMED_FACT", "summary": "Judkins (ankle) remains questionable/TBD for Week 7 at TEN; practice reports expected Wednesday. Sampson on IR (knee). No new status change overnight.", "mongo_impact": "McLaughlin and Estime keep value only if Judkins sits again.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.fantasypros.com/nfl/news/614780/quinshon-judkins-ankle-uncertain-week-7.php"]},
+    {"player": "Jameis Winston", "team": "NYG", "slot": "rostered QB", "status": "ATTRIBUTED_REPORT", "summary": "No official Week 7 starter named as of 6:00 AM ET. Harbaugh continues honing in on decision between Winston and McCarthy for @HOU. No new announcement overnight or early Wednesday.", "mongo_impact": "Only rostered QB has an uncertain Week 7 job.", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50219771/jameis-winston-jj-mccarthy-qb-pros-cons-new-york-giants", "https://www.nfl.com/news/giants-john-harbaugh-week-7-qb1-decision-between-jameis-winston-j-j-mccarthy"]},
+    {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "CONFIRMED_FACT", "summary": "Judkins (ankle) remains questionable/TBD for Week 7 at TEN; practice reports expected Wednesday. No new status change overnight.", "mongo_impact": "McLaughlin and Estime keep value only if Judkins sits again.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.fantasypros.com/nfl/news/614780/quinshon-judkins-ankle-uncertain-week-7.php"]},
     {"player": "CeeDee Lamb", "team": "DAL", "slot": "rostered WR", "status": "CONFIRMED_FACT", "summary": "No new Week 7 injury report found. Practiced fully and played Week 6 healthy.", "mongo_impact": "Low.", "urgency": "LOW", "availability": "OWNED", "sources": []},
     {"player": "Kendre Miller / Saints D/ST", "team": "NO", "slot": "rostered", "status": "CONFIRMED_FACT", "summary": "Week 7 Steelers-Saints in Paris at 9:30 AM ET Sunday. Lineup slots lock early.", "mongo_impact": "Set lineup decisions before 9:30 AM ET Sunday.", "urgency": "MEDIUM", "availability": "OWNED", "sources": []}
   ],
@@ -36,9 +36,9 @@
   "expert_signals": [{"player": "Jameis Winston / J.J. McCarthy", "status": "EXPERT_OPINION", "summary": "Ongoing expert discussion (CBS, ESPN, Russell Wilson) that McCarthy may have a case to start Week 7. No official change.", "sources": ["https://www.cbssports.com/nfl/news/j-j-mccarthy-vs-jameis-winston-giants-starting-qb-texans/", "https://www.espn.com/nfl/story/_/id/50219771/jameis-winston-jj-mccarthy-qb-pros-cons-new-york-giants"]}],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "2:10 AM ET Wednesday overnight (Week 7 prep). No material changes since prior 9:16 PM ET Pulse. Winston Week 7 starter still undecided (Harbaugh honing in). Judkins remains questionable/TBD (ankle). No new injuries for rostered players. Stroud/Murray still WAIVERS_CONFIRMED per morning ESPN check. Miller/Saints D/ST early Paris lock. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-21T011600Z",
-  "prior_completed_at": "2026-10-21T01:16:00Z",
-  "prior_commit": "d97ac599571ef97d53dbb35e4239fe18f663e303",
-  "source_status_notes": "No new official announcements overnight. Beat reporting confirms Winston still TBD. Limited X (no material overnight activity). Limited experts. No analytics. Roster context carried from fc7ded0."
+  "summary": "6:00 AM ET Wednesday overnight (Week 7 prep). No material changes since prior 2:12 AM ET Pulse. Winston Week 7 starter still undecided (Harbaugh honing in). Judkins remains questionable/TBD (ankle). No new injuries for rostered players. Stroud/Murray still WAIVERS_CONFIRMED per morning ESPN check. Miller/Saints D/ST early Paris lock. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-21T061200Z",
+  "prior_completed_at": "2026-10-21T06:12:00Z",
+  "prior_commit": "be2b18350561f453ff162f7af827bb7fc717b804",
+  "source_status_notes": "No new official announcements overnight or early Wednesday. Beat reporting confirms Winston still TBD. Limited X (no material overnight activity). Limited experts. No analytics. Roster context carried from fc7ded0."
 }
