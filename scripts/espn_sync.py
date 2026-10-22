@@ -219,10 +219,17 @@ def main(argv=None) -> int:
         except EspnError as exc:
             print(f"::error title=ESPN sync::{exc}")
             return 1
+        except Exception as exc:  # network/TLS/etc.: report the type, never the cookies
+            print(f"::error title=ESPN sync::{type(exc).__name__}: {str(exc)[:300]}")
+            return 1
     try:
         snap = normalize(raw, now)
     except EspnError as exc:
         print(f"::error title=ESPN sync::{exc}")
+        return 1
+    except Exception as exc:
+        keys = sorted(raw["league"])[:25] if isinstance(raw.get("league"), dict) else type(raw.get("league")).__name__
+        print(f"::error title=ESPN sync::could not read ESPN response ({type(exc).__name__}: {str(exc)[:200]}); league keys={keys}")
         return 1
     path = write(snap, args.out)
     me = snap["my_team"]

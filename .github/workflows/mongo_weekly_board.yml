@@ -49,7 +49,8 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: |
           if [ -z "$ESPN_S2" ]; then echo "::warning title=ESPN::ESPN_S2/ESPN_SWID secrets not set; trying anonymous read"; fi
-          python scripts/espn_sync.py
+          python scripts/espn_sync.py | tee "$RUNNER_TEMP/espn.txt"
+          exit ${PIPESTATUS[0]}
 
       - name: Pull FantasyPros
         env:
@@ -68,6 +69,7 @@ jobs:
           if [ "${{ steps.espn.outcome }}" != "success" ]; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
             echo "**ESPN snapshot failed — waiver availability is UNKNOWN this run.**" >> "$GITHUB_STEP_SUMMARY"
+            sed 's/^::error title=ESPN sync:://' "$RUNNER_TEMP/espn.txt" 2>/dev/null >> "$GITHUB_STEP_SUMMARY" || true
           fi
 
       - name: Validate and commit
@@ -76,7 +78,9 @@ jobs:
           ffdb validate --league mongo
           git config user.name "mongo-board[bot]"
           git config user.email "mongo-board@users.noreply.github.com"
-          git add data/espn_api intelligence/fantasypros intelligence/board 2>/dev/null || true
+          for p in data/espn_api intelligence/fantasypros intelligence/board; do
+            if [ -e "$p" ]; then git add "$p"; fi
+          done
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -q -m "Mongo weekly board: ESPN snapshot + FantasyPros pull + lineup/waiver board"
           for i in 1 2 3; do
