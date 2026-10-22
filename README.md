@@ -58,6 +58,10 @@ python scripts/espn_sync.py            # ESPN snapshot (needs ESPN_S2 / ESPN_SWI
 python scripts/fp_weekly.py            # FantasyPros pull (needs FANTASYPROS_API_KEY)
 python scripts/mongo_board.py          # lineup + waiver board -> intelligence/board/latest.md
 python scripts/record_decision.py open # unreviewed decisions
+python scripts/espn_reconcile.py       # ESPN moves not yet in the repo -> intelligence/reconcile/
+python scripts/faab_market.py          # league winning bids -> intelligence/faab_market.md
 ```
+
+"Mongo ESPN daily" refreshes the ESPN snapshot, transaction log, reconciliation and FAAB market every morning.
 
 The "Mongo weekly board" GitHub Action runs the three pulls on Tuesday and Saturday mornings. Repository secrets: `FANTASYPROS_API_KEY` (required), `ESPN_S2` and `ESPN_SWID` (the espn.com sign-in cookies; without them waiver availability stays `UNKNOWN`).

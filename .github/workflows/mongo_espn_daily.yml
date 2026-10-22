@@ -1,0 +1,57 @@
+name: Mongo ESPN daily
+
+# Every morning (and after Wednesday waivers): read-only ESPN snapshot, transaction log,
+# reconciliation against repository history, and the FAAB market report.
+# Never ingests transactions: drafts for Codex land in intelligence/reconcile/pending/.
+
+on:
+  schedule:
+    - cron: '7 11 * * *'     # daily ~7:07 AM EDT (6:07 EST), after overnight waivers
+    - cron: '37 16 * * 0'    # Sunday ~12:37 PM EDT: inactives-era refresh before 1 PM lock
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mongo-espn
+  cancel-in-progress: false
+
+jobs:
+  espn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -q -e '.[dev]'
+
+      - name: ESPN snapshot + transactions (read-only)
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python scripts/espn_sync.py
+
+      - name: Reconcile with repository + FAAB market
+        run: |
+          python scripts/espn_reconcile.py > "$RUNNER_TEMP/reconcile.md"
+          cat "$RUNNER_TEMP/reconcile.md" >> "$GITHUB_STEP_SUMMARY"
+          python scripts/faab_market.py > /dev/null
+
+      - name: Commit
+        run: |
+          git config user.name "mongo-espn[bot]"
+          git config user.email "mongo-espn@users.noreply.github.com"
+          for p in data/espn_api intelligence/reconcile intelligence/faab_market.json intelligence/faab_market.md; do
+            if [ -e "$p" ]; then git add -A "$p"; fi
+          done
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "Mongo ESPN daily: snapshot, transactions, reconcile, FAAB market"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::Could not push"; exit 1

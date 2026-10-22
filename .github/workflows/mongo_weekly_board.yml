@@ -22,7 +22,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: mongo-weekly-board
+  group: mongo-espn
   cancel-in-progress: false
 
 jobs:
@@ -52,6 +52,13 @@ jobs:
           python scripts/espn_sync.py | tee "$RUNNER_TEMP/espn.txt"
           exit ${PIPESTATUS[0]}
 
+      - name: Reconcile + FAAB market
+        if: steps.espn.outcome == 'success'
+        continue-on-error: true
+        run: |
+          python scripts/espn_reconcile.py > /dev/null
+          python scripts/faab_market.py > /dev/null
+
       - name: Pull FantasyPros
         env:
           FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
@@ -78,8 +85,8 @@ jobs:
           ffdb validate --league mongo
           git config user.name "mongo-board[bot]"
           git config user.email "mongo-board@users.noreply.github.com"
-          for p in data/espn_api intelligence/fantasypros intelligence/board; do
-            if [ -e "$p" ]; then git add "$p"; fi
+          for p in data/espn_api intelligence/fantasypros intelligence/board intelligence/reconcile intelligence/faab_market.json intelligence/faab_market.md; do
+            if [ -e "$p" ]; then git add -A "$p"; fi
           done
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -q -m "Mongo weekly board: ESPN snapshot + FantasyPros pull + lineup/waiver board"

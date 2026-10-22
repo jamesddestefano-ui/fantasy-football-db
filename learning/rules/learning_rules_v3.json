@@ -1,0 +1,46 @@
+{
+  "version": 3,
+  "supersedes": "learning_rules_v2.json",
+  "system": "CLAUDE_MONGO_BRAIN",
+  "effective_date": "2026-10-22",
+  "adopted_by": "Claude (Mongo Brain) with explicit owner approval (James, chat 2026-10-22 ~09:40 ET: 'All five')",
+  "isolation_note": "These are process lessons James asked to carry over from his other league. No other league's players, decisions, prices or metrics are stored here; Mongo sample sizes start at 0 and are measured from Mongo outcomes only.",
+  "changes": [
+    {
+      "rule_id": "mongo-learning-008",
+      "old_rule": "Start/sit and FLEX advice could compare two named players.",
+      "new_rule": "Every start/sit or FLEX recommendation ranks ALL eligible Mongo players (starters and bench) for the open slots with this week's projection from at least one source (ESPN league-scored preferred) and names the full set of starters.",
+      "reason": "Owner-approved process transfer: head-to-head duels repeatedly missed the best available option.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Fewer points left on the bench; measured by weekly lineup efficiency."
+    },
+    {
+      "rule_id": "mongo-learning-009",
+      "old_rule": "Waiver bids were set from generic FAAB guidance.",
+      "new_rule": "Anchor each bid to Mongo's own clearing prices (intelligence/faab_market.md: winning bids by position, runner-up gaps, rivals' remaining budgets) and to James's remaining FAAB. If the anchored price is not worth it, say 'pass' rather than a token bid. Use $0 free-agent adds when ESPN lists the player as FREEAGENT. Keep a reserve for a starter injury.",
+      "reason": "Owner-approved process transfer: below-market bids lost and token bids added churn.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Higher claim win rate per dollar; measured by FAAB_OVERPAY / FAAB_UNDERBID review counts."
+    },
+    {
+      "rule_id": "mongo-learning-010",
+      "old_rule": "Roster advice could be issued from the newest repository record even if days old.",
+      "new_rule": "Roster, IR, add/drop and lineup advice requires roster evidence under 24 hours old (ESPN API snapshot, Mongo Live Check, or James's screenshot). If intelligence/reconcile/latest.md shows NEEDS_INGEST, advise from ESPN state and say the repository is behind. If no fresh evidence exists, the first line asks for an ESPN Team-page screenshot and advice is marked 'pending roster check'.",
+      "reason": "Owner-approved process transfer: stale-roster advice recommended moves on players already dropped.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Zero STALE_DATA / ROSTER_STATE_ERROR review findings."
+    },
+    {
+      "rule_id": "mongo-learning-011",
+      "old_rule": "Restatements, watches and confirmations could be logged as DECISIONs.",
+      "new_rule": "Log a DECISION only for a new or changed recommendation. Restatements, no-action watches and confirmations are not DECISIONs; a changed call names the DECISION it supersedes.",
+      "reason": "Owner-approved process transfer: restatements polluted confidence calibration.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Cleaner calibration in learning/season_scorecard.json."
+    }
+  ]
+}

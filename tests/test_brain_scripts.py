@@ -209,3 +209,93 @@ def test_redact_never_leaks_cookie():
     msg = f"Invalid header value b'espn_s2={s2}; SWID={{1A2B}}'"
     out = espn_sync.redact(msg, [s2])
     assert s2 not in out and "AEBkmZ" not in out
+
+
+# ------------------------------------------------------------ matchup, transactions, reconcile, market
+
+import espn_reconcile  # noqa: E402
+import faab_market  # noqa: E402
+
+MS = 1_000
+
+
+def _ms(iso):
+    return int(datetime.fromisoformat(iso.replace("Z", "+00:00")).timestamp() * MS)
+
+
+def raw_with_transactions():
+    raw = espn_raw()
+    raw["league"]["schedule"] = [
+        {"matchupPeriodId": 7, "home": {"teamId": 5}, "away": {"teamId": 2}},
+        {"matchupPeriodId": 6, "home": {"teamId": 2}, "away": {"teamId": 9}},
+    ]
+    raw["league"]["status"]["currentMatchupPeriod"] = 7
+    murray, andrews, kraft = 1, 70, 60
+    raw["player_lookup"] = [{"players": [{"player": _pl(70, "Mark Andrews", 4, 33, 7)}]}]
+    raw["transactions"] = [{"transactions": [
+        # James's Oct 21 claim (already in data/imports) + a losing bid by team 5
+        {"id": "t1", "type": "WAIVER", "status": "EXECUTED", "teamId": 2, "bidAmount": 8, "scoringPeriodId": 7,
+         "processDate": _ms("2026-10-21T08:08:00Z"),
+         "items": [{"type": "ADD", "playerId": murray, "toTeamId": 2}, {"type": "DROP", "playerId": andrews, "fromTeamId": 2}]},
+        {"id": "t2", "type": "WAIVER", "status": "FAILED_BIDTOOLOW", "teamId": 5, "bidAmount": 5, "scoringPeriodId": 7,
+         "processDate": _ms("2026-10-21T08:08:00Z"), "items": [{"type": "ADD", "playerId": murray, "toTeamId": 5}]},
+        # an ESPN move the repository has not ingested
+        {"id": "t3", "type": "FREEAGENT", "status": "EXECUTED", "teamId": 2, "bidAmount": 0, "scoringPeriodId": 7,
+         "processDate": _ms("2026-10-22T14:00:00Z"),
+         "items": [{"type": "ADD", "playerId": kraft, "toTeamId": 2}, {"type": "DROP", "playerId": 8, "fromTeamId": 2}]},
+        {"id": "t4", "type": "ROSTER", "status": "EXECUTED", "teamId": 2, "items": [{"type": "LINEUP", "playerId": 3}]},
+    ]}, {"transactions": [  # same transaction returned for another week is de-duplicated
+        {"id": "t1", "type": "WAIVER", "status": "EXECUTED", "teamId": 2, "bidAmount": 8, "scoringPeriodId": 7,
+         "processDate": _ms("2026-10-21T08:08:00Z"), "items": [{"type": "ADD", "playerId": murray, "toTeamId": 2}]},
+    ]}]
+    return raw
+
+
+def test_matchup_and_team_rosters():
+    snap = espn_sync.normalize(raw_with_transactions(), "2026-10-22T15:00:00Z")
+    mu = snap["matchup"]
+    assert mu["opponent_team_id"] == 5 and mu["opponent"] == "Rival" and mu["opponent_proj"] == 14.0
+    assert mu["my_proj"] > 100 and mu["opponent_starters"][0]["name"] == "Brock Bowers"
+    rival = next(t for t in snap["teams"] if t["team_id"] == 5)
+    assert rival["roster"][0]["slot"] == "TE" and rival["faab_remaining"] == 90
+
+
+def test_transactions_normalized_named_and_deduped():
+    raw = raw_with_transactions()
+    snap = espn_sync.normalize(raw, "2026-10-22T15:00:00Z")
+    tx = espn_sync.normalize_transactions(raw, snap)
+    rows = {t["id"]: t for t in tx["transactions"]}
+    assert set(rows) == {"t1", "t2", "t3"}                     # ROSTER skipped, t1 once
+    assert rows["t1"]["drops"][0]["name"] == "Mark Andrews"     # resolved via player lookup
+    assert rows["t1"]["processed_at"] == "2026-10-21T08:08:00Z"
+    assert rows["t2"]["bid"] == 5 and rows["t2"]["team"] == "Rival"
+
+
+def _repo_with_espn(tmp_path):
+    root = _repo_copy(tmp_path)
+    shutil.copytree(ROOT / "scripts", root / "scripts")
+    raw = raw_with_transactions()
+    snap = espn_sync.normalize(raw, "2099-01-01T14:00:00Z")
+    espn_sync.write(snap, root / "data" / "espn_api")
+    (root / "data" / "espn_api" / "transactions.json").write_text(json.dumps(espn_sync.normalize_transactions(raw, snap)))
+    return root
+
+
+def test_reconcile_finds_only_the_unlogged_move(tmp_path):
+    root = _repo_with_espn(tmp_path)
+    r = espn_reconcile.reconcile(root)
+    assert r["status"] == "NEEDS_INGEST"
+    assert [u["transaction"]["id"] for u in r["unlogged_moves"]] == ["t3"]   # Murray claim already in data/imports
+    d = r["unlogged_moves"][0]["draft"]
+    assert d["event_type"] == "ADD_DROP" and d["player"] == "Tucker Kraft" and d["dropped_player"] == "Tyler Higbee"
+    assert d["status"] == "DRAFT_PENDING_INGEST" and d["dedupe_key"]["calendar_day_ET"] == "2026-10-22"
+
+
+def test_faab_market_pairs_winner_with_losing_bid(tmp_path):
+    root = _repo_with_espn(tmp_path)
+    m = faab_market.build(root)
+    c = m["claims"][0]
+    assert c["player"] == "Kyler Murray" and c["winning_bid"] == 8 and c["runner_up_bid"] == 5
+    assert c["overpay_vs_runner_up"] == 3 and m["by_position"]["QB"]["median"] == 8
+    assert m["budgets"][0]["remaining"] == 90 and m["james"]["won"] == 1
+    assert "Kyler Murray" in faab_market.to_markdown(m)

@@ -22,6 +22,9 @@ Mongo only. Never read, cite or write Sparta, DFS or prop data here (AGENTS.md r
    - ESPN snapshot: `data/espn_api/latest.json` `observed_at` (preferred when newer)
    - Board: `intelligence/board/latest.md` and its `.json` (FantasyPros `pulled_at`)
    - Pulse: `intelligence/grok_pulse_latest.json` `completed_at`
+   - Reconciliation: `intelligence/reconcile/latest.md`. `NEEDS_INGEST` means ESPN shows completed
+     moves the repository hasn't logged: advise from ESPN state and tell James the repo is behind
+     (drafts for Codex are in `intelligence/reconcile/pending/`). Never ingest them yourself.
    If the newest roster evidence is older than 72 hours, lead with: "Roster data is N days old —
    send me an ESPN Team-page screenshot or ask Codex for a Mongo Live Check." Never present
    stale roster state as current.
@@ -31,6 +34,13 @@ Mongo only. Never read, cite or write Sparta, DFS or prop data here (AGENTS.md r
    waiver targets. News is intelligence, never ownership (AGENTS.md rule 5).
 
 ## Hard rules for every recommendation
+
+Standing learning rules (`learning/rules/learning_rules_v3.json`, adopted 2026-10-22) — apply every session:
+- **008 Rank everyone:** start/sit and FLEX calls rank ALL eligible players; never a two-player duel.
+- **009 Market-anchored bids:** size bids from `intelligence/faab_market.md` (Mongo's winning bids by
+  position, runner-up gaps, rivals' budgets) and James's balance; "pass" beats a token bid; $0 for ESPN free agents.
+- **010 Fresh roster only:** roster/lineup advice needs evidence < 24h old (the daily ESPN pull provides it).
+- **011 Log only real decisions:** no restatements; a changed call names the DECISION it supersedes.
 
 - **Availability:** a target is claimable only if the ESPN snapshot lists it as FREEAGENT/WAIVERS
   (board label `ESPN_FREE_AGENT` / `ESPN_WAIVERS`) and say "as of <time>, re-check on ESPN".
@@ -72,15 +82,19 @@ Mongo only. Never read, cite or write Sparta, DFS or prop data here (AGENTS.md r
 1. Read `intelligence/board/latest.md` + `.json`, roster, FAAB, open spots, the scorecard.
 2. Research the top 5–8 targets (role, snaps/targets, injuries ahead of them, schedule) and
    James's weakest roster spots; check bye weeks and IR eligibility.
-3. Decide: claims in priority order with exact bid, drop (or open spot) and a backup if outbid;
+3. Check `intelligence/faab_market.md`: what this league paid for similar players, how much the
+   runner-up usually bid, and which rivals have the budget to outbid you.
+4. Decide: claims in priority order with exact bid, drop (or open spot) and a backup if outbid;
    $0 free-agent adds worth making now; IR moves; the week's lineup.
-4. Record each claim and the lineup as DECISIONs. Write `intelligence/brain/2026-wWW-plan.md`.
-5. Output: claims (bid $ / drop), lineup, IR moves, availability as-of time — ready to act on
+5. Record each claim and the lineup as DECISIONs. Write `intelligence/brain/2026-wWW-plan.md`.
+6. Output: claims (bid $ / drop), lineup, IR moves, availability as-of time — ready to act on
    from a phone before ESPN processes waivers early Wednesday.
 
 ## Session C — Saturday injury update (~10:35 AM ET)
 
 1. Read the Saturday board, Friday practice reports/designations (WebSearch), roster, Tuesday plan.
+   Use the board's **Matchup** section: if James is a big favorite prefer steady floors; if a big
+   underdog prefer upside in close calls.
 2. Flag every starter who is Q/D/O or on bye; give the replacement from the bench or a $0 free
    agent (ESPN-listed only).
 3. Record lineup changes as DECISIONs. Output "change X → Y" lines, or "no changes".
@@ -90,6 +104,14 @@ Mongo only. Never read, cite or write Sparta, DFS or prop data here (AGENTS.md r
 1. Search inactives, late scratches and weather for James's 1 PM, 4 PM and night starters.
 2. Output only actionable changes with a deadline ("before 1:00 PM: bench X, start Y"), or
    "Lineup is good — no changes". Record any change as a DECISION (urgency IMMEDIATE).
+
+## Data refresh schedule (GitHub Actions)
+
+- **Mongo ESPN daily** (~7:07 AM ET every day, plus Sunday ~12:37 PM): ESPN snapshot, season transaction
+  log, reconciliation, FAAB market.
+- **Mongo weekly board** (Tue and Sat ~9:23 AM ET): the above plus FantasyPros and the lineup/waiver board.
+- If a run says the ESPN snapshot failed, James's ESPN cookies expired: ask him to re-copy
+  `espn_s2` and `SWID` into the repository secrets.
 
 ## Output style
 

@@ -61,3 +61,5 @@ Mirrors the Sparta arrangement. Earlier rules stay in force; this section only a
 4. Record decisions with `scripts/record_decision.py`; it validates every event, never edits a prior line, and rebuilds `learning/season_scorecard.json`.
 5. `scripts/espn_sync.py` snapshots (`data/espn_api/`) are read-only ESPN current-ownership evidence as of `observed_at`. They inform availability on the board but never write ownership or transactions; ingest remains a separate step under rules 4, 8 and 12.
 6. The weekly board (`.github/workflows/mongo_weekly_board.yml`, `scripts/mongo_board.py`) is intelligence, not a recommendation. Waiver targets not in the ESPN pool snapshot stay `UNKNOWN`.
+7. Reconciliation (`scripts/espn_reconcile.py`, daily) compares ESPN's transaction log and roster with repository history and writes draft import records to `intelligence/reconcile/pending/`. Drafts are evidence for the ingest layer, not ingested history; the Brain never ingests them.
+8. The FAAB market report (`intelligence/faab_market.md`) is league price intelligence for bid sizing (learning rule mongo-learning-009), never ownership or availability.

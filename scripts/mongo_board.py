@@ -244,7 +244,28 @@ def build_board(week: int, root: Path = ROOT, now: datetime | None = None) -> di
         "unmatched_roster_players": [p["name"] for p in mine if not p["matched_fantasypros"]],
         "roster_notes": notes,
         "last_week": (espn or {}).get("last_week"),
+        "matchup": (espn or {}).get("matchup"),
+        "faab_market": _market_summary(root),
+        "reconcile_status": _reconcile_status(root),
     }
+
+
+def _market_summary(root: Path) -> dict | None:
+    f = root / "intelligence" / "faab_market.json"
+    if not f.exists():
+        return None
+    m = json.loads(f.read_text())
+    return {"by_position": m.get("by_position"), "budgets": m.get("budgets", [])[:12],
+            "median_overpay_vs_runner_up": m.get("median_overpay_vs_runner_up"), "observed_at": m.get("observed_at")}
+
+
+def _reconcile_status(root: Path) -> dict | None:
+    f = root / "intelligence" / "reconcile" / "latest.json"
+    if not f.exists():
+        return None
+    r = json.loads(f.read_text())
+    return {"status": r.get("status"), "unlogged_moves": len(r.get("unlogged_moves") or []),
+            "roster_diff": r.get("roster_diff")}
 
 
 def _fmt(v, pct=False):
@@ -278,6 +299,27 @@ def to_markdown(b: dict) -> str:
                  f"{t['replaces'] or '—'} | {t['availability']} |")
     if not b["waiver_targets"]:
         L.append("| — | No upgrades found | | | | | | | |")
+    mu = b.get("matchup")
+    if mu and mu.get("opponent"):
+        edge = round((mu["my_proj"] or 0) - (mu["opponent_proj"] or 0), 1)
+        L += ["", f"## Matchup — Week {mu['week']} vs {mu['opponent']} ({mu['opponent_record']})", "",
+              f"ESPN projections (current slots): you **{mu['my_proj']}** vs **{mu['opponent_proj']}** "
+              f"({'+' if edge >= 0 else ''}{edge}). "
+              + ("Favored: prefer steady floors." if edge >= 8 else "Underdog: prefer upside where it's close." if edge <= -8
+                 else "Close: start the best projection.")]
+        L.append("Their starters: " + ", ".join(f"{p['name']} {_fmt(p['proj'])}" for p in mu.get("opponent_starters", [])))
+    fm = b.get("faab_market")
+    if fm and fm.get("by_position"):
+        L += ["", "## FAAB market (league winning bids)", "",
+              " · ".join(f"{pos} median {'$%g' % s['median'] if s['median'] is not None else '—'} / max "
+                         f"{'$%g' % s['max'] if s['max'] is not None else '—'}" for pos, s in fm["by_position"].items())]
+        rich = [f"{x['abbrev']} ${x['remaining']}" for x in fm["budgets"][:4]]
+        if rich:
+            L.append("Most FAAB left: " + ", ".join(rich))
+    rs = b.get("reconcile_status")
+    if rs and rs.get("status") != "IN_SYNC":
+        L += ["", f"**Repository behind ESPN:** {rs['unlogged_moves']} unlogged move(s); roster diff {rs['roster_diff']}. "
+                  "Use ESPN state for advice; Codex should ingest intelligence/reconcile/pending/."]
     lw = b.get("last_week")
     if lw:
         L += ["", f"## Week {lw['week']} (ESPN league scoring)", "",

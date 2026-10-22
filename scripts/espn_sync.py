@@ -108,14 +108,53 @@ def fetch(params: list[tuple[str, str]], cookies: dict[str, str] | None, headers
 
 
 def fetch_all(cookies: dict | None, fetcher=fetch) -> dict:
-    league = fetcher([("view", v) for v in ("mTeam", "mRoster", "mSettings", "mStatus")], cookies)
+    league = fetcher([("view", v) for v in ("mTeam", "mRoster", "mSettings", "mStatus", "mMatchup")], cookies)
     period = int(league.get("scoringPeriodId") or (league.get("status") or {}).get("currentMatchupPeriod") or 1)
     pool = fetcher([("view", "kona_player_info"), ("scoringPeriodId", str(period))], cookies,
                    {"X-Fantasy-Filter": json.dumps(FREE_AGENT_FILTER)})
     last = None
     if period > 1:
         last = fetcher([("view", "mRoster"), ("view", "mTeam"), ("scoringPeriodId", str(period - 1))], cookies)
-    return {"league": league, "pool": pool, "last_week": last}
+    tx_pages, problems = [], []
+    for p in range(1, period + 1):        # whole season every run: deterministic, ~8 small requests
+        try:
+            tx_pages.append(fetcher([("view", "mTransactions2"), ("scoringPeriodId", str(p))], cookies))
+        except Exception as exc:  # transactions are an add-on; never block the snapshot
+            problems.append(f"transactions week {p}: {type(exc).__name__}")
+    known = _known_ids(league, pool)
+    missing = sorted({i for page in tx_pages for t in (page.get("transactions") or [])
+                      for i in (it.get("playerId") for it in (t.get("items") or [])) if i and i not in known})
+    lookup = []
+    for k in range(0, len(missing), 100):
+        try:
+            flt = {"players": {"filterIds": {"value": missing[k:k + 100]}, "limit": 100}}
+            lookup.append(fetcher([("view", "kona_player_info")], cookies, {"X-Fantasy-Filter": json.dumps(flt)}))
+        except Exception as exc:
+            problems.append(f"player lookup: {type(exc).__name__}")
+    return {"league": league, "pool": pool, "last_week": last, "transactions": tx_pages,
+            "player_lookup": lookup, "fetch_problems": problems}
+
+
+def _known_ids(*payloads) -> set:
+    ids = set()
+    for pl in _iter_players(*payloads):
+        ids.add(pl.get("id"))
+    return ids
+
+
+def _iter_players(*payloads):
+    for payload in payloads:
+        if not isinstance(payload, dict):
+            continue
+        for t in payload.get("teams") or []:
+            for e in ((t.get("roster") or {}).get("entries") or []):
+                pl = (e.get("playerPoolEntry") or {}).get("player")
+                if pl:
+                    yield pl
+        for item in payload.get("players") or []:
+            pl = item.get("player") if isinstance(item, dict) else None
+            if pl:
+                yield pl
 
 
 # ------------------------------------------------------------ normalization
@@ -173,8 +212,11 @@ def normalize(raw: dict, observed_at: str) -> dict:
         roster = _roster(t, period)
         entry = {"team_id": t.get("id"), "name": _team_name(t), "abbrev": t.get("abbrev"),
                  "record": f"{rec.get('wins', 0)}-{rec.get('losses', 0)}-{rec.get('ties', 0)}" if rec else None,
+                 "points_for": round(rec["pointsFor"], 2) if rec.get("pointsFor") is not None else None,
                  "faab_remaining": (budget - spent) if budget is not None and spent is not None else None,
-                 "roster": [r["name"] for r in roster]}
+                 "faab_spent": spent,
+                 "roster": [{k: r[k] for k in ("name", "position", "nfl_team", "slot", "proj", "injury_status")}
+                            for r in roster]}
         teams.append(entry)
         for r in roster:
             if r["key"]:
@@ -201,6 +243,7 @@ def normalize(raw: dict, observed_at: str) -> dict:
                 starters = [r for r in rows if r["slot"] not in ("BN", "IR")]
                 last_week = {"week": period - 1, "players": [{k: v for k, v in r.items() if k != "key"} for r in rows],
                              "starter_points": round(sum(r["actual"] or 0 for r in starters), 2)}
+    matchup = _matchup(league, teams)
     for r in me["roster"]:
         r.pop("key", None)
     for r in available:
@@ -213,8 +256,87 @@ def normalize(raw: dict, observed_at: str) -> dict:
         "faab_budget": budget, "waiver_settings": {k: (settings.get("acquisitionSettings") or {}).get(k)
                                                    for k in ("waiverProcessDays", "waiverProcessHour", "minimumBid", "isUsingAcquisitionBudget")},
         "my_team": me, "teams": teams, "owned_keys": owned,
-        "available": available, "last_week": last_week,
+        "available": available, "last_week": last_week, "matchup": matchup,
+        "fetch_problems": raw.get("fetch_problems") or [],
     }
+
+
+def _starter_proj(roster: list[dict]) -> float:
+    return round(sum(r.get("proj") or 0 for r in roster if r.get("slot") not in ("BN", "IR")), 2)
+
+
+def _matchup(league: dict, teams: list[dict]) -> dict | None:
+    """This week's opponent from the ESPN schedule (mMatchup view)."""
+    status = league.get("status") or {}
+    week = status.get("currentMatchupPeriod") or league.get("scoringPeriodId")
+    by_id = {t["team_id"]: t for t in teams}
+    for g in league.get("schedule") or []:
+        if g.get("matchupPeriodId") != week:
+            continue
+        home, away = (g.get("home") or {}).get("teamId"), (g.get("away") or {}).get("teamId")
+        if MY_TEAM_ID not in (home, away):
+            continue
+        opp_id = away if home == MY_TEAM_ID else home
+        me, opp = by_id.get(MY_TEAM_ID), by_id.get(opp_id)
+        if not opp:
+            return {"week": week, "opponent_team_id": opp_id, "bye": opp_id is None}
+        return {"week": week, "opponent_team_id": opp_id, "opponent": opp["name"], "opponent_abbrev": opp["abbrev"],
+                "opponent_record": opp["record"], "opponent_points_for": opp.get("points_for"),
+                "my_proj": _starter_proj(me["roster"]), "opponent_proj": _starter_proj(opp["roster"]),
+                "opponent_starters": [{k: r[k] for k in ("slot", "name", "nfl_team", "proj", "injury_status")}
+                                      for r in opp["roster"] if r["slot"] not in ("BN", "IR")]}
+    return None
+
+
+SKIP_TX_TYPES = {"ROSTER", "DRAFT", "FUTURE_ROSTER", "RETRO_ROSTER"}
+
+
+def _ms_to_iso(ms) -> str | None:
+    if not isinstance(ms, (int, float)) or ms <= 0:
+        return None
+    return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def normalize_transactions(raw: dict, snapshot: dict) -> dict:
+    """Season transactions (waivers incl. failed bids, free-agent moves, trades) with player names."""
+    names: dict = {}
+    for pl in _iter_players(raw.get("league"), raw.get("pool"), *(raw.get("player_lookup") or [])):
+        names[pl.get("id")] = _player(pl, snapshot["scoring_period"])
+    team_names = {t["team_id"]: t["name"] for t in snapshot["teams"]}
+    seen, rows, types = set(), [], {}
+    for page in raw.get("transactions") or []:
+        for t in (page or {}).get("transactions") or []:
+            tid = t.get("id")
+            if tid in seen:
+                continue
+            seen.add(tid)
+            ttype = t.get("type") or "?"
+            types[ttype] = types.get(ttype, 0) + 1
+            if ttype in SKIP_TX_TYPES:
+                continue
+            items = []
+            for it in t.get("items") or []:
+                kind = it.get("type")
+                if kind not in ("ADD", "DROP"):
+                    continue
+                pl = names.get(it.get("playerId")) or {}
+                items.append({"type": kind, "espn_id": str(it.get("playerId")), "name": pl.get("name"),
+                              "position": pl.get("position"), "nfl_team": pl.get("nfl_team"),
+                              "from_team_id": it.get("fromTeamId"), "to_team_id": it.get("toTeamId")})
+            if not items:
+                continue
+            rows.append({
+                "id": tid, "type": ttype, "status": t.get("status"), "team_id": t.get("teamId"),
+                "team": team_names.get(t.get("teamId")), "bid": t.get("bidAmount"),
+                "scoring_period": t.get("scoringPeriodId"),
+                "processed_at": _ms_to_iso(t.get("processDate")) or _ms_to_iso(t.get("proposedDate")),
+                "adds": [i for i in items if i["type"] == "ADD"], "drops": [i for i in items if i["type"] == "DROP"],
+            })
+    rows.sort(key=lambda r: (r["processed_at"] or "", str(r["id"])))
+    return {"league": "mongo", "observed_at": snapshot["observed_at"], "season": snapshot["season"],
+            "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; "
+                         "ingest into data/imports is a separate reviewed step.",
+            "raw_type_counts": dict(sorted(types.items())), "transactions": rows}
 
 
 def write(snapshot: dict, out_dir: Path = OUT_DIR) -> Path:
@@ -237,7 +359,7 @@ def main(argv=None) -> int:
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     if args.from_raw:
         raw = {k: (json.loads((args.from_raw / f"{k}.json").read_text()) if (args.from_raw / f"{k}.json").exists() else None)
-               for k in ("league", "pool", "last_week")}
+               for k in ("league", "pool", "last_week", "transactions", "player_lookup")}
     else:
         cookies = {"espn_s2": clean_cookie(os.environ.get("ESPN_S2"), "espn_s2"),
                    "SWID": clean_cookie(os.environ.get("ESPN_SWID"), "SWID")}
@@ -262,6 +384,14 @@ def main(argv=None) -> int:
         print(f"::error title=ESPN sync::could not read ESPN response ({type(exc).__name__}: {str(exc)[:200]}); league keys={keys}")
         return 1
     path = write(snap, args.out)
+    try:
+        tx = normalize_transactions(raw, snap)
+        (args.out / "transactions.json").write_text(json.dumps(tx, indent=1, ensure_ascii=False) + "\n")
+        print(f"ESPN TRANSACTIONS rows={len(tx['transactions'])} raw_types={tx['raw_type_counts']}")
+    except Exception as exc:
+        print(f"::warning title=ESPN transactions::could not normalize ({type(exc).__name__}: {str(exc)[:150]})")
+    for prob in snap.get("fetch_problems") or []:
+        print(f"::warning title=ESPN sync::{prob}")
     me = snap["my_team"]
     print(f"ESPN MONGO week={snap['scoring_period']} team={me['name']} record={me['record']} "
           f"faab=${me['faab_remaining']} roster={len(me['roster'])} available={len(snap['available'])} -> {path.name}")
