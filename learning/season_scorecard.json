@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-21T11:29:34-04:00",
+  "generated_at": "2026-10-22T18:13:50-04:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 6,
+  "total_decisions": 7,
   "reviewed_decisions": 0,
-  "pending_decisions": 6,
+  "pending_decisions": 7,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
@@ -27,7 +27,7 @@
       "reviewed_count": 0
     },
     "3": {
-      "count": 1,
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -55,9 +55,36 @@
       "average_outcome_grade": null,
       "average_process_grade": null,
       "reviewed_count": 0
+    },
+    "STREAM": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
     }
   },
   "signal_performance": {
+    "$0 free agent: no FAAB cost": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "ESPN and FantasyPros both rank Browns above Saints": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "Mongo Grok Pulse": {
       "count": 4,
       "success_rate": null,
@@ -187,6 +214,26 @@
       "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "trailing slightly in projected matchup": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "weak Titans offense": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     }
   },
   "major_error_counts": {},
@@ -281,6 +328,13 @@
     }
   },
   "system_performance": {
+    "CLAUDE_MONGO_BRAIN": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
     "PRIME_MONGO_FANTASY_WATCH": {
       "count": 6,
       "success_rate": null,
