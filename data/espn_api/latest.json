@@ -2,7 +2,7 @@
  "league": "mongo",
  "espn_league_id": "1470431049",
  "season": 2026,
- "observed_at": "2026-10-22T22:12:06Z",
+ "observed_at": "2026-10-22T22:27:33Z",
  "scoring_period": 7,
  "authority": "ESPN current ownership evidence as of observed_at (read-only API). Does not by itself write transactions; availability must be re-checked before a claim.",
  "faab_budget": 100,
@@ -119,16 +119,6 @@
     "slot": "BN"
    },
    {
-    "name": "Saints D/ST",
-    "position": "D/ST",
-    "nfl_team": "NO",
-    "espn_id": "-16018",
-    "injury_status": "NORMAL",
-    "proj": 6.69,
-    "pct_owned": 3.2,
-    "slot": "D/ST"
-   },
-   {
     "name": "Ryan Flournoy",
     "position": "WR",
     "nfl_team": "DAL",
@@ -146,36 +136,6 @@
     "injury_status": "NORMAL",
     "proj": 7.47,
     "pct_owned": 19.7,
-    "slot": "TE"
-   },
-   {
-    "name": "Jaleel McLaughlin",
-    "position": "RB",
-    "nfl_team": "CLE",
-    "espn_id": "4722893",
-    "injury_status": "NORMAL",
-    "proj": 0.0,
-    "pct_owned": 5.0,
-    "slot": "BN"
-   },
-   {
-    "name": "Jacob Cowing",
-    "position": "WR",
-    "nfl_team": "SF",
-    "espn_id": "4575665",
-    "injury_status": "NORMAL",
-    "proj": 4.75,
-    "pct_owned": 0.6,
-    "slot": "BN"
-   },
-   {
-    "name": "Audric Estime",
-    "position": "RB",
-    "nfl_team": "CLE",
-    "espn_id": "4569682",
-    "injury_status": "NORMAL",
-    "proj": 0.0,
-    "pct_owned": 0.2,
     "slot": "BN"
    },
    {
@@ -197,6 +157,46 @@
     "proj": 20.83,
     "pct_owned": 16.9,
     "slot": "BN"
+   },
+   {
+    "name": "Browns D/ST",
+    "position": "D/ST",
+    "nfl_team": "CLE",
+    "espn_id": "-16005",
+    "injury_status": "NORMAL",
+    "proj": 7.64,
+    "pct_owned": 57.3,
+    "slot": "D/ST"
+   },
+   {
+    "name": "Bam Knight",
+    "position": "RB",
+    "nfl_team": "ARI",
+    "espn_id": "4427728",
+    "injury_status": "NORMAL",
+    "proj": 7.08,
+    "pct_owned": 2.1,
+    "slot": "BN"
+   },
+   {
+    "name": "Dontayvion Wicks",
+    "position": "WR",
+    "nfl_team": "PHI",
+    "espn_id": "4428850",
+    "injury_status": "NORMAL",
+    "proj": 9.23,
+    "pct_owned": 33.2,
+    "slot": "BN"
+   },
+   {
+    "name": "Juwan Johnson",
+    "position": "TE",
+    "nfl_team": "NO",
+    "espn_id": "3929645",
+    "injury_status": "NORMAL",
+    "proj": 8.77,
+    "pct_owned": 71.3,
+    "slot": "TE"
    }
   ]
  },
@@ -430,14 +430,6 @@
      "injury_status": "NORMAL"
     },
     {
-     "name": "Saints D/ST",
-     "position": "D/ST",
-     "nfl_team": "NO",
-     "slot": "D/ST",
-     "proj": 6.69,
-     "injury_status": "NORMAL"
-    },
-    {
      "name": "Ryan Flournoy",
      "position": "WR",
      "nfl_team": "DAL",
@@ -449,32 +441,8 @@
      "name": "Tyler Higbee",
      "position": "TE",
      "nfl_team": "LAR",
-     "slot": "TE",
+     "slot": "BN",
      "proj": 7.47,
-     "injury_status": "NORMAL"
-    },
-    {
-     "name": "Jaleel McLaughlin",
-     "position": "RB",
-     "nfl_team": "CLE",
-     "slot": "BN",
-     "proj": 0.0,
-     "injury_status": "NORMAL"
-    },
-    {
-     "name": "Jacob Cowing",
-     "position": "WR",
-     "nfl_team": "SF",
-     "slot": "BN",
-     "proj": 4.75,
-     "injury_status": "NORMAL"
-    },
-    {
-     "name": "Audric Estime",
-     "position": "RB",
-     "nfl_team": "CLE",
-     "slot": "BN",
-     "proj": 0.0,
      "injury_status": "NORMAL"
     },
     {
@@ -491,6 +459,38 @@
      "nfl_team": "NYG",
      "slot": "BN",
      "proj": 20.83,
+     "injury_status": "NORMAL"
+    },
+    {
+     "name": "Browns D/ST",
+     "position": "D/ST",
+     "nfl_team": "CLE",
+     "slot": "D/ST",
+     "proj": 7.64,
+     "injury_status": "NORMAL"
+    },
+    {
+     "name": "Bam Knight",
+     "position": "RB",
+     "nfl_team": "ARI",
+     "slot": "BN",
+     "proj": 7.08,
+     "injury_status": "NORMAL"
+    },
+    {
+     "name": "Dontayvion Wicks",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "slot": "BN",
+     "proj": 9.23,
+     "injury_status": "NORMAL"
+    },
+    {
+     "name": "Juwan Johnson",
+     "position": "TE",
+     "nfl_team": "NO",
+     "slot": "TE",
+     "proj": 8.77,
      "injury_status": "NORMAL"
     }
    ]
@@ -1977,14 +1977,14 @@
   "kendre miller": 2,
   "kaelon black": 2,
   "keaton mitchell": 2,
-  "def:NO": 2,
   "ryan flournoy": 2,
   "tyler higbee": 2,
-  "jaleel mclaughlin": 2,
-  "jacob cowing": 2,
-  "audric estime": 2,
   "kyler murray": 2,
   "jj mccarthy": 2,
+  "def:CLE": 2,
+  "bam knight": 2,
+  "dontayvion wicks": 2,
+  "juwan johnson": 2,
   "derrick henry": 3,
   "joe burrow": 3,
   "david montgomery": 3,
@@ -2156,16 +2156,6 @@
  },
  "available": [
   {
-   "name": "Juwan Johnson",
-   "position": "TE",
-   "nfl_team": "NO",
-   "espn_id": "3929645",
-   "injury_status": "ACTIVE",
-   "proj": 8.77,
-   "pct_owned": 71.3,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Mark Andrews",
    "position": "TE",
    "nfl_team": "BAL",
@@ -2194,16 +2184,6 @@
    "proj": 19.65,
    "pct_owned": 59.4,
    "status": "WAIVERS"
-  },
-  {
-   "name": "Browns D/ST",
-   "position": "D/ST",
-   "nfl_team": "CLE",
-   "espn_id": "-16005",
-   "injury_status": "ACTIVE",
-   "proj": 7.64,
-   "pct_owned": 57.3,
-   "status": "FREEAGENT"
   },
   {
    "name": "Kirk Cousins",
@@ -2283,16 +2263,6 @@
    "injury_status": "ACTIVE",
    "proj": 16.17,
    "pct_owned": 33.3,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Dontayvion Wicks",
-   "position": "WR",
-   "nfl_team": "PHI",
-   "espn_id": "4428850",
-   "injury_status": "ACTIVE",
-   "proj": 9.23,
-   "pct_owned": 33.2,
    "status": "FREEAGENT"
   },
   {
@@ -2656,6 +2626,16 @@
    "status": "FREEAGENT"
   },
   {
+   "name": "Jaleel McLaughlin",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "espn_id": "4722893",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 5.0,
+   "status": "WAIVERS"
+  },
+  {
    "name": "Malachi Fields",
    "position": "WR",
    "nfl_team": "NYG",
@@ -2816,6 +2796,16 @@
    "status": "FREEAGENT"
   },
   {
+   "name": "Saints D/ST",
+   "position": "D/ST",
+   "nfl_team": "NO",
+   "espn_id": "-16018",
+   "injury_status": "ACTIVE",
+   "proj": 6.69,
+   "pct_owned": 3.2,
+   "status": "WAIVERS"
+  },
+  {
    "name": "Austin Ekeler",
    "position": "RB",
    "nfl_team": "WAS",
@@ -2932,16 +2922,6 @@
    "espn_id": "5123663",
    "injury_status": "ACTIVE",
    "proj": 7.42,
-   "pct_owned": 2.1,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Bam Knight",
-   "position": "RB",
-   "nfl_team": "ARI",
-   "espn_id": "4427728",
-   "injury_status": "ACTIVE",
-   "proj": 7.08,
    "pct_owned": 2.1,
    "status": "FREEAGENT"
   },
@@ -3304,6 +3284,16 @@
    "proj": 0.0,
    "pct_owned": 0.6,
    "status": "FREEAGENT"
+  },
+  {
+   "name": "Jacob Cowing",
+   "position": "WR",
+   "nfl_team": "SF",
+   "espn_id": "4575665",
+   "injury_status": "ACTIVE",
+   "proj": 4.75,
+   "pct_owned": 0.6,
+   "status": "WAIVERS"
   },
   {
    "name": "Myles Price",
@@ -3874,6 +3864,16 @@
    "proj": 0.0,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
+  },
+  {
+   "name": "Audric Estime",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "espn_id": "4569682",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.2,
+   "status": "WAIVERS"
   },
   {
    "name": "Jaydon Blue",
@@ -4856,7 +4856,7 @@
   "opponent_abbrev": "AAGD",
   "opponent_record": "1-5-0",
   "opponent_points_for": 687.0,
-  "my_proj": 123.26,
+  "my_proj": 125.51,
   "opponent_proj": 127.23,
   "opponent_starters": [
    {

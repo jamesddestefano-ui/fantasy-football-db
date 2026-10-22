@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-10-22T22:12:06Z",
+ "observed_at": "2026-10-22T22:27:33Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 87,
+  "FREEAGENT": 91,
   "FUTURE_ROSTER": 23,
-  "ROSTER": 321,
+  "ROSTER": 322,
   "TRADE_PROPOSAL": 2,
   "WAIVER": 149
  },
@@ -7312,6 +7312,134 @@
      "position": "QB",
      "nfl_team": "LV",
      "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "eee2ff45-80ec-494a-b443-c5e9d5b32e6f",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-22T22:13:59Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16005",
+     "name": "Browns D/ST",
+     "position": "D/ST",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16018",
+     "name": "Saints D/ST",
+     "position": "D/ST",
+     "nfl_team": "NO",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "daefc437-6173-4c20-93ec-9b7e2542d159",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-22T22:15:37Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4427728",
+     "name": "Bam Knight",
+     "position": "RB",
+     "nfl_team": "ARI",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4569682",
+     "name": "Audric Estime",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3837d910-ec8e-46c5-8840-caf565b76586",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-22T22:26:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428850",
+     "name": "Dontayvion Wicks",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4722893",
+     "name": "Jaleel McLaughlin",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "80e3ffe7-2097-4182-86c7-c8a4e0e4a38e",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-22T22:26:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3929645",
+     "name": "Juwan Johnson",
+     "position": "TE",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4575665",
+     "name": "Jacob Cowing",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 2,
      "to_team_id": 0
     }
    ]

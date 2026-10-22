@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_PENDING_INGEST",
+  "event_type": "ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Juwan Johnson",
+  "nfl_team": "NO",
+  "position": "TE",
+  "espn_id": "3929645",
+  "faab_amount": 0,
+  "dropped_player": "Jacob Cowing",
+  "dropped_nfl_team": "SF",
+  "dropped_position": "WR",
+  "observed_at": "2026-10-22T22:26:31Z",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "ADD_DROP",
+    "added": "Juwan Johnson",
+    "dropped": "Jacob Cowing",
+    "calendar_day_ET": "2026-10-22",
+    "faab_amount": 0
+  },
+  "sources": [
+    {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 80e3ffe7-2097-4182-86c7-c8a4e0e4a38e FREEAGENT EXECUTED processed Thu Oct 22, 6:26 PM ET: added Juwan Johnson, NO TE; dropped Jacob Cowing, SF WR."
+    }
+  ],
+  "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+}
