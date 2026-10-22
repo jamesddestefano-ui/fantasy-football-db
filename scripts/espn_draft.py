@@ -52,16 +52,33 @@ def _season_points(player: dict) -> tuple[float | None, float | None]:
 
 
 def fetch_draft(cookies: dict | None, fetcher=espn_sync.fetch) -> dict:
-    league = fetcher([("view", "mDraftDetail"), ("view", "mTeam"), ("view", "mSettings")], cookies)
+    try:
+        league = fetcher([("view", "mDraftDetail"), ("view", "mTeam"), ("view", "mSettings"), ("view", "mStatus")], cookies)
+    except espn_sync.EspnError as exc:
+        raise espn_sync.EspnError(f"draft results request: {exc}") from None
+    period = str(league.get("scoringPeriodId") or 1)
     picks = ((league.get("draftDetail") or {}).get("picks")) or []
     ids = sorted({p["playerId"] for p in picks if p.get("playerId")})
-    players = []
-    for k in range(0, len(ids), 100):
-        flt = {"players": {"filterIds": {"value": ids[k:k + 100]}, "limit": 100,
-                           "filterStatsForTopScoringPeriodIds": {"value": 2, "additionalValue": [f"00{SEASON}", f"10{SEASON}"]}}}
-        page = fetcher([("view", "kona_player_info")], cookies, {"X-Fantasy-Filter": json.dumps(flt)})
-        players.extend(page.get("players") or [])
-    return {"league": league, "players": players}
+    players, problems = [], []
+    for k in range(0, len(ids), 50):
+        chunk = ids[k:k + 50]
+        variants = [  # most detailed first; fall back if ESPN rejects a filter
+            {"players": {"filterIds": {"value": chunk}, "limit": len(chunk),
+                         "filterStatsForTopScoringPeriodIds": {"value": 2, "additionalValue": [f"00{SEASON}", f"10{SEASON}"]}}},
+            {"players": {"filterIds": {"value": chunk}, "limit": len(chunk)}},
+        ]
+        for i, flt in enumerate(variants):
+            try:
+                page = fetcher([("view", "kona_player_info"), ("scoringPeriodId", period)], cookies,
+                               {"X-Fantasy-Filter": json.dumps(flt)})
+                players.extend(page.get("players") or [])
+                if i:
+                    problems.append("season points unavailable for some players (stats filter rejected)")
+                break
+            except espn_sync.EspnError as exc:
+                if i == len(variants) - 1:
+                    problems.append(f"player lookup: {exc}")
+    return {"league": league, "players": players, "problems": sorted(set(problems))}
 
 
 def normalize_draft(raw: dict, observed_at: str) -> dict:
@@ -197,6 +214,8 @@ def main(argv=None) -> int:
             return 1
         now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
         draft = normalize_draft(raw, now)
+        for prob in raw.get("problems") or []:
+            print(f"::warning title=ESPN draft::{prob}")
         if not draft["picks"]:
             print(f"::error title=ESPN draft::no picks returned (draftDetail keys: {sorted(raw['league'].get('draftDetail') or {})})")
             return 1

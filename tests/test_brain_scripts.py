@@ -342,3 +342,20 @@ def test_auction_review():
     assert me["spent"] == 61 and me["one_dollar_players"] == 1 and me["position_split"]["RB"] == 60
     md = espn_draft.to_markdown(r)
     assert "James's auction" in md and "Bijan Robinson $60" in md
+
+
+def test_fetch_draft_falls_back_when_stats_filter_rejected():
+    calls = []
+
+    def fake(params, cookies, headers=None):
+        calls.append((params, headers))
+        if ("view", "mDraftDetail") in params:
+            return {"scoringPeriodId": 7, "draftDetail": {"picks": [{"playerId": 3, "teamId": 2, "bidAmount": 60}]}}
+        if headers and "filterStatsForTopScoringPeriodIds" in headers["X-Fantasy-Filter"]:
+            raise espn_sync.EspnError("ESPN HTTP 400")
+        return {"players": [{"player": {"id": 3, "fullName": "Bijan Robinson", "defaultPositionId": 2, "proTeamId": 1}}]}
+
+    raw = espn_draft.fetch_draft(None, fake)
+    assert raw["players"][0]["player"]["fullName"] == "Bijan Robinson"
+    assert raw["problems"] and "stats filter" in raw["problems"][0]
+    assert all(("scoringPeriodId", "7") in p for p, h in calls if h)

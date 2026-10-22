@@ -128,7 +128,8 @@ def fetch_all(cookies: dict | None, fetcher=fetch) -> dict:
     for k in range(0, len(missing), 100):
         try:
             flt = {"players": {"filterIds": {"value": missing[k:k + 100]}, "limit": 100}}
-            lookup.append(fetcher([("view", "kona_player_info")], cookies, {"X-Fantasy-Filter": json.dumps(flt)}))
+            lookup.append(fetcher([("view", "kona_player_info"), ("scoringPeriodId", str(period))], cookies,
+                                  {"X-Fantasy-Filter": json.dumps(flt)}))
         except Exception as exc:
             problems.append(f"player lookup: {type(exc).__name__}")
     return {"league": league, "pool": pool, "last_week": last, "transactions": tx_pages,
