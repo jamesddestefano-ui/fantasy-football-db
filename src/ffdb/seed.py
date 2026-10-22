@@ -38,6 +38,7 @@ COWING_ESTIME_AT = datetime(2026, 10, 15, 23, 10, 0, tzinfo=timezone.utc)  # Thu
 MCKEE_HURTS_AT = datetime(2026, 10, 16, 0, 19, 0, tzinfo=timezone.utc)  # Thu Oct 15, 8:19 pm ET
 ESTIME_MCKEE_AT = datetime(2026, 10, 18, 16, 18, 0, tzinfo=timezone.utc)  # Sun Oct 18, 12:18 pm ET
 MURRAY_ANDREWS_WAIVER_AT = datetime(2026, 10, 21, 8, 8, 0, tzinfo=timezone.utc)  # Wed Oct 21, 4:08 am ET
+MCCARTHY_WINSTON_AT = datetime(2026, 10, 21, 15, 17, 0, tzinfo=timezone.utc)  # Wed Oct 21, 11:17 am ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -1489,6 +1490,59 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
         observed_at=MURRAY_ANDREWS_WAIVER_AT, source_id=murray_source.id,
+    ))
+
+    # --- 2026-10-21 ESPN: FREE_AGENT ADD J.J. McCarthy $0 / DROP Jameis Winston ---
+    mccarthy_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Jameis Winston")))
+    mccarthy = _player(session, "J.J. McCarthy", "QB", "NYG")
+    mccarthy_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Added J.J. McCarthy (NYG QB) from free agency for $0; dropped Jameis Winston (NYG QB) to waivers (Wed Oct 21, 11:17 am ET)",
+        original_ref="data/imports/2026-10-21-jj-mccarthy-add-winston-drop.json",
+        platform="ESPN",
+        observed_at=MCCARTHY_WINSTON_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="Mongo Live Check 2026-10-22 08:16 ET; FAAB remained $66; no espn_id observed for J.J. McCarthy.",
+    )
+    session.add(mccarthy_source)
+    session.flush()
+    mccarthy_group = TransactionGroup(
+        id="jj-mccarthy-add-winston-drop-20261021-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=MCCARTHY_WINSTON_AT, source_id=mccarthy_source.id,
+        notes="ESPN-authoritative ADD_DROP: J.J. McCarthy $0 free add; Jameis Winston dropped to waivers (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(mccarthy_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=mccarthy_group.id, sequence=1, event_type="DROP", player_id=mccarthy_drop.id,
+            notes="Dropped to waivers when adding J.J. McCarthy.",
+        ),
+        TransactionEvent(
+            group_id=mccarthy_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=mccarthy.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=mccarthy_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=MCCARTHY_WINSTON_AT, source_id=mccarthy_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=mccarthy_group.id,
+            notes="Drop proves departure from roster, not current free agency; ESPN shows Waivers.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=mccarthy.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=MCCARTHY_WINSTON_AT, source_id=mccarthy_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=mccarthy_group.id,
+            notes="ESPN free add $0 dropping Jameis Winston.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=mccarthy.id,
+            slot="BN", placement="BENCH", effective_at=MCCARTHY_WINSTON_AT, source_id=mccarthy_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
+        observed_at=MCCARTHY_WINSTON_AT, source_id=mccarthy_source.id,
     ))
 
     for name, pos in NOT_MINE_UNKNOWN:

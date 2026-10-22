@@ -21,7 +21,7 @@ OCT14_GROUPS = [
 
 def test_seed_roster_is_exact(session):
     actual = {p.canonical_name for p, _ in roster(session, "mongo")}
-    expected = ({r[0] for r in ROSTER} | {"Keaton Mitchell", "Ryan Flournoy", "Saints D/ST", "Tyler Higbee", "Jaleel McLaughlin", "Audric Estime", "Jameis Winston", "Jacob Cowing", "Kyler Murray"}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders", "Eagles D/ST", "De'Von Achane", "Chris Bell", "Packers D/ST", "Rashod Bateman", "Isaac TeSlaa", "Raiders D/ST", "Oronde Gadsden", "George Holani", "Michael Penix Jr.", "Ray Davis", "Jalen Hurts", "Mark Andrews"}
+    expected = ({r[0] for r in ROSTER} | {"Keaton Mitchell", "Ryan Flournoy", "Saints D/ST", "Tyler Higbee", "Jaleel McLaughlin", "Audric Estime", "Jameis Winston", "Jacob Cowing", "Kyler Murray", "J.J. McCarthy"}) - {"Malik Davis", "Tre Tucker", "Emari Demercado", "Ja'Kobi Lane", "Raheim Sanders", "Eagles D/ST", "De'Von Achane", "Chris Bell", "Packers D/ST", "Rashod Bateman", "Isaac TeSlaa", "Raiders D/ST", "Oronde Gadsden", "George Holani", "Michael Penix Jr.", "Ray Davis", "Jalen Hurts", "Mark Andrews", "Jameis Winston"}
     assert actual == expected
     assert len(actual) == 17
     assert "Malik Davis" not in actual
@@ -29,13 +29,15 @@ def test_seed_roster_is_exact(session):
     # 2026-10-14 ESPN FA moves: Flournoy/TeSlaa, Saints/Raiders D/ST, Higbee/Gadsden, McLaughlin/Holani, Estime/Penix.
     assert {"Ryan Flournoy", "Saints D/ST", "Tyler Higbee", "Jaleel McLaughlin", "Audric Estime"} <= actual
     assert not ({"Michael Penix Jr.", "Oronde Gadsden", "Isaac TeSlaa", "George Holani", "Raiders D/ST"} & actual)
-    # 2026-10-14 8:22 am ET ESPN FA move: Jameis Winston in, Ray Davis out.
-    assert "Jameis Winston" in actual and "Ray Davis" not in actual
+    # 2026-10-14 8:22 am ET ESPN FA move: Jameis Winston in, Ray Davis out (Winston later dropped 2026-10-21).
+    assert "Ray Davis" not in actual
     # 2026-10-15/18 ESPN FA moves: Cowing/Estime, McKee/Hurts, Estime (re-add)/McKee.
     assert {"Jacob Cowing", "Audric Estime"} <= actual
     assert not ({"Jalen Hurts", "Tanner McKee"} & actual)
     # 2026-10-21 4:08 am ET ESPN waiver: Kyler Murray $8 in, Mark Andrews out.
     assert "Kyler Murray" in actual and "Mark Andrews" not in actual
+    # 2026-10-21 11:17 am ET ESPN FA: J.J. McCarthy $0 in, Jameis Winston out.
+    assert "J.J. McCarthy" in actual and "Jameis Winston" not in actual
     assert "Rashod Bateman" not in actual
     assert "Packers D/ST" not in actual
     assert "Chris Bell" not in actual
@@ -353,7 +355,8 @@ def test_oct14_espn_free_agent_add_drops(session):
 
 def test_oct14_winston_add_ray_davis_drop(session):
     gid = "jameis-winston-add-ray-davis-drop-20261014-espn-001"
-    assert ownership(session, "mongo", "Jameis Winston").state == OwnershipState.OWNED
+    # Winston added here; later dropped 2026-10-21 for J.J. McCarthy -> UNKNOWN. Add history preserved.
+    assert ownership(session, "mongo", "Jameis Winston").state == OwnershipState.UNKNOWN
     # Dropped to Waivers: departure only, never FREE_AGENT_CONFIRMED.
     assert ownership(session, "mongo", "Ray Davis").state == OwnershipState.UNKNOWN
     lg = session.scalar(select(League).where(League.slug == "mongo"))
@@ -430,6 +433,30 @@ def test_oct21_kyler_murray_waiver_andrews_drop(session):
     assert murray.espn_id is None
     assignment = session.scalar(select(LineupAssignment).where(
         LineupAssignment.league_id == lg.id, LineupAssignment.player_id == murray.id,
+        LineupAssignment.season == 2026, LineupAssignment.week == 2,
+    ))
+    assert assignment.slot == "BN" and assignment.placement == "BENCH"
+    assert faab_balance(session, "mongo") == Decimal("66.00")
+    assert len(roster(session, "mongo")) == 17
+    assert validate(session, "mongo") == []
+
+
+def test_oct21_jj_mccarthy_add_winston_drop(session):
+    lg = session.scalar(select(League).where(League.slug == "mongo"))
+    gid = "jj-mccarthy-add-winston-drop-20261021-espn-001"
+    mccarthy = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("J.J. McCarthy")))
+    winston = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Jameis Winston")))
+    events = {e.event_type: e for e in session.scalars(select(TransactionEvent).where(TransactionEvent.group_id == gid))}
+    assert events["FREE_AGENT_ADD"].player_id == mccarthy.id
+    assert events["FREE_AGENT_ADD"].faab_amount == Decimal("0.00")
+    assert events["DROP"].player_id == winston.id
+    assert session.scalar(select(FaabEntry).where(FaabEntry.transaction_group_id == gid)) is None
+    assert ownership(session, "mongo", "J.J. McCarthy").state == OwnershipState.OWNED
+    # Winston dropped to waivers -> UNKNOWN, never FREE_AGENT_CONFIRMED.
+    assert ownership(session, "mongo", "Jameis Winston").state == OwnershipState.UNKNOWN
+    assert mccarthy.espn_id is None
+    assignment = session.scalar(select(LineupAssignment).where(
+        LineupAssignment.league_id == lg.id, LineupAssignment.player_id == mccarthy.id,
         LineupAssignment.season == 2026, LineupAssignment.week == 2,
     ))
     assert assignment.slot == "BN" and assignment.placement == "BENCH"
