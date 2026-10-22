@@ -2,7 +2,7 @@
  "league": "mongo",
  "espn_league_id": "1470431049",
  "season": 2026,
- "observed_at": "2026-10-22T13:46:02Z",
+ "observed_at": "2026-10-22T13:48:12Z",
  "scoring_period": 7,
  "authority": "ESPN current ownership evidence as of observed_at (read-only API). Does not by itself write transactions; availability must be re-checked before a claim.",
  "faab_budget": 100,
@@ -21,7 +21,7 @@
  },
  "my_team": {
   "team_id": 2,
-  "name": "Tom Brady of Ass ",
+  "name": "Tom Brady of Ass",
   "abbrev": "JDD",
   "record": "3-3-0",
   "points_for": 735.9,
@@ -203,7 +203,7 @@
  "teams": [
   {
    "team_id": 1,
-   "name": "I Loveland Rice Krispies ",
+   "name": "I Loveland Rice Krispies",
    "abbrev": "AAGD",
    "record": "1-5-0",
    "points_for": 687.0,
@@ -350,7 +350,7 @@
   },
   {
    "team_id": 2,
-   "name": "Tom Brady of Ass ",
+   "name": "Tom Brady of Ass",
    "abbrev": "JDD",
    "record": "3-3-0",
    "points_for": 735.9,
@@ -636,7 +636,7 @@
   },
   {
    "team_id": 4,
-   "name": "You're a JaGoff ",
+   "name": "You're a JaGoff",
    "abbrev": "PbP",
    "record": "3-3-0",
    "points_for": 793.32,
@@ -1224,7 +1224,7 @@
   },
   {
    "team_id": 8,
-   "name": "    DeVonta Be Kidding Me",
+   "name": "DeVonta Be Kidding Me",
    "abbrev": "ME",
    "record": "5-1-0",
    "points_for": 885.26,
@@ -4852,7 +4852,7 @@
  "matchup": {
   "week": 7,
   "opponent_team_id": 1,
-  "opponent": "I Loveland Rice Krispies ",
+  "opponent": "I Loveland Rice Krispies",
   "opponent_abbrev": "AAGD",
   "opponent_record": "1-5-0",
   "opponent_points_for": 687.0,
