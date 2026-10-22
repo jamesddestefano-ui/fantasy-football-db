@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T18:13:50-04:00",
+  "generated_at": "2026-10-22T18:14:53-04:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 7,
+  "total_decisions": 8,
   "reviewed_decisions": 0,
-  "pending_decisions": 7,
+  "pending_decisions": 8,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
@@ -20,7 +20,7 @@
       "reviewed_count": 0
     },
     "2": {
-      "count": 0,
+      "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -49,6 +49,13 @@
     }
   },
   "decision_type_performance": {
+    "ADD": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
     "INJURY_CONTINGENCY": {
       "count": 6,
       "success_rate": null,
@@ -85,8 +92,28 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "Love likely out Week 7": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "Mongo Grok Pulse": {
       "count": 4,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Week 6 volume 15 carries": {
+      "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -186,6 +213,16 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "post-game injury evidence": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "replaces a zero-projection bench player at no cost": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -329,7 +366,7 @@
   },
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
-      "count": 1,
+      "count": 2,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
