@@ -1,0 +1,3578 @@
+{
+ "season": 2026,
+ "week": 6,
+ "scoring": "PPR",
+ "scoring_note": "FantasyPros standard PPR. Mongo is ESPN PPR with 6-pt pass TD and -2 INT, so QB and D/ST points differ from Mongo's. Prefer ESPN league-scored points (data/espn_api/latest.json last_week) for grading; use this file as a fallback.",
+ "players": {
+  "def:ARI": {
+   "name": "Arizona Cardinals",
+   "position": "DEF",
+   "nfl_team": "ARI",
+   "points": 6.0
+  },
+  "def:ATL": {
+   "name": "Atlanta Falcons",
+   "position": "DEF",
+   "nfl_team": "ATL",
+   "points": 5.0
+  },
+  "def:BAL": {
+   "name": "Baltimore Ravens",
+   "position": "DEF",
+   "nfl_team": "BAL",
+   "points": 9.0
+  },
+  "def:BUF": {
+   "name": "Buffalo Bills",
+   "position": "DEF",
+   "nfl_team": "BUF",
+   "points": 1.0
+  },
+  "def:CAR": {
+   "name": "Carolina Panthers",
+   "position": "DEF",
+   "nfl_team": "CAR",
+   "points": 4.0
+  },
+  "def:CHI": {
+   "name": "Chicago Bears",
+   "position": "DEF",
+   "nfl_team": "CHI",
+   "points": 11.0
+  },
+  "def:CIN": {
+   "name": "Cincinnati Bengals",
+   "position": "DEF",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "def:CLE": {
+   "name": "Cleveland Browns",
+   "position": "DEF",
+   "nfl_team": "CLE",
+   "points": 9.0
+  },
+  "def:DAL": {
+   "name": "Dallas Cowboys",
+   "position": "DEF",
+   "nfl_team": "DAL",
+   "points": 5.0
+  },
+  "def:DEN": {
+   "name": "Denver Broncos",
+   "position": "DEF",
+   "nfl_team": "DEN",
+   "points": 12.0
+  },
+  "def:DET": {
+   "name": "Detroit Lions",
+   "position": "DEF",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "def:GB": {
+   "name": "Green Bay Packers",
+   "position": "DEF",
+   "nfl_team": "GB",
+   "points": 9.0
+  },
+  "def:HOU": {
+   "name": "Houston Texans",
+   "position": "DEF",
+   "nfl_team": "HOU",
+   "points": 1.0
+  },
+  "def:IND": {
+   "name": "Indianapolis Colts",
+   "position": "DEF",
+   "nfl_team": "IND",
+   "points": 3.0
+  },
+  "def:JAX": {
+   "name": "Jacksonville Jaguars",
+   "position": "DEF",
+   "nfl_team": "JAC",
+   "points": 1.0
+  },
+  "def:KC": {
+   "name": "Kansas City Chiefs",
+   "position": "DEF",
+   "nfl_team": "KC",
+   "points": 15.0
+  },
+  "def:MIA": {
+   "name": "Miami Dolphins",
+   "position": "DEF",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "def:MIN": {
+   "name": "Minnesota Vikings",
+   "position": "DEF",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "def:NE": {
+   "name": "New England Patriots",
+   "position": "DEF",
+   "nfl_team": "NE",
+   "points": 6.0
+  },
+  "def:NO": {
+   "name": "New Orleans Saints",
+   "position": "DEF",
+   "nfl_team": "NO",
+   "points": 13.0
+  },
+  "def:NYG": {
+   "name": "New York Giants",
+   "position": "DEF",
+   "nfl_team": "NYG",
+   "points": 1.0
+  },
+  "def:NYJ": {
+   "name": "New York Jets",
+   "position": "DEF",
+   "nfl_team": "NYJ",
+   "points": 4.0
+  },
+  "def:LV": {
+   "name": "Las Vegas Raiders",
+   "position": "DEF",
+   "nfl_team": "LV",
+   "points": 1.0
+  },
+  "def:PHI": {
+   "name": "Philadelphia Eagles",
+   "position": "DEF",
+   "nfl_team": "PHI",
+   "points": 2.0
+  },
+  "def:PIT": {
+   "name": "Pittsburgh Steelers",
+   "position": "DEF",
+   "nfl_team": "PIT",
+   "points": 10.0
+  },
+  "def:LAC": {
+   "name": "Los Angeles Chargers",
+   "position": "DEF",
+   "nfl_team": "LAC",
+   "points": 4.0
+  },
+  "def:SEA": {
+   "name": "Seattle Seahawks",
+   "position": "DEF",
+   "nfl_team": "SEA",
+   "points": 3.0
+  },
+  "def:SF": {
+   "name": "San Francisco 49ers",
+   "position": "DEF",
+   "nfl_team": "SF",
+   "points": 5.0
+  },
+  "def:LAR": {
+   "name": "Los Angeles Rams",
+   "position": "DEF",
+   "nfl_team": "LAR",
+   "points": 3.0
+  },
+  "def:TB": {
+   "name": "Tampa Bay Buccaneers",
+   "position": "DEF",
+   "nfl_team": "TB",
+   "points": 7.0
+  },
+  "def:TEN": {
+   "name": "Tennessee Titans",
+   "position": "DEF",
+   "nfl_team": "TEN",
+   "points": 21.0
+  },
+  "def:WAS": {
+   "name": "Washington Commanders",
+   "position": "DEF",
+   "nfl_team": "WAS",
+   "points": 4.0
+  },
+  "daniel jones": {
+   "name": "Daniel Jones",
+   "position": "QB",
+   "nfl_team": "IND",
+   "points": 15.76
+  },
+  "aaron rodgers": {
+   "name": "Aaron Rodgers",
+   "position": "QB",
+   "nfl_team": "PIT",
+   "points": 17.02
+  },
+  "patrick mahomes": {
+   "name": "Patrick Mahomes II",
+   "position": "QB",
+   "nfl_team": "KC",
+   "points": 11.48
+  },
+  "sam darnold": {
+   "name": "Sam Darnold",
+   "position": "QB",
+   "nfl_team": "SEA",
+   "points": 13.02
+  },
+  "baker mayfield": {
+   "name": "Baker Mayfield",
+   "position": "QB",
+   "nfl_team": "TB",
+   "points": null
+  },
+  "joe burrow": {
+   "name": "Joe Burrow",
+   "position": "QB",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "joshua allen": {
+   "name": "Josh Allen",
+   "position": "QB",
+   "nfl_team": "BUF",
+   "points": 18.3
+  },
+  "bryce young": {
+   "name": "Bryce Young",
+   "position": "QB",
+   "nfl_team": "CAR",
+   "points": 19.84
+  },
+  "cameron ward": {
+   "name": "Cam Ward",
+   "position": "QB",
+   "nfl_team": "TEN",
+   "points": 7.78
+  },
+  "cooper rush": {
+   "name": "Cooper Rush",
+   "position": "QB",
+   "nfl_team": "FA",
+   "points": null
+  },
+  "caleb williams": {
+   "name": "Caleb Williams",
+   "position": "QB",
+   "nfl_team": "CHI",
+   "points": 16.5
+  },
+  "jaxson dart": {
+   "name": "Jaxson Dart",
+   "position": "QB",
+   "nfl_team": "NYG",
+   "points": null
+  },
+  "malik willis": {
+   "name": "Malik Willis",
+   "position": "QB",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "joe flacco": {
+   "name": "Joe Flacco",
+   "position": "QB",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "jalen hurts": {
+   "name": "Jalen Hurts",
+   "position": "QB",
+   "nfl_team": "PHI",
+   "points": null
+  },
+  "nicholas mullens": {
+   "name": "Nick Mullens",
+   "position": "QB",
+   "nfl_team": "JAC",
+   "points": null
+  },
+  "cj stroud": {
+   "name": "C.J. Stroud",
+   "position": "QB",
+   "nfl_team": "HOU",
+   "points": 23.98
+  },
+  "dak prescott": {
+   "name": "Dak Prescott",
+   "position": "QB",
+   "nfl_team": "DAL",
+   "points": 13.02
+  },
+  "drew lock": {
+   "name": "Drew Lock",
+   "position": "QB",
+   "nfl_team": "SEA",
+   "points": null
+  },
+  "tyler shough": {
+   "name": "Tyler Shough",
+   "position": "QB",
+   "nfl_team": "NO",
+   "points": 26.96
+  },
+  "stetson bennett": {
+   "name": "Stetson Bennett IV",
+   "position": "QB",
+   "nfl_team": "LAR",
+   "points": 0.0
+  },
+  "trevor lawrence": {
+   "name": "Trevor Lawrence",
+   "position": "QB",
+   "nfl_team": "JAC",
+   "points": 28.34
+  },
+  "jared goff": {
+   "name": "Jared Goff",
+   "position": "QB",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "jacoby brissett": {
+   "name": "Jacoby Brissett",
+   "position": "QB",
+   "nfl_team": "ARI",
+   "points": 7.92
+  },
+  "matthew stafford": {
+   "name": "Matthew Stafford",
+   "position": "QB",
+   "nfl_team": "LAR",
+   "points": 16.88
+  },
+  "jayden daniels": {
+   "name": "Jayden Daniels",
+   "position": "QB",
+   "nfl_team": "WAS",
+   "points": 21.0
+  },
+  "kirk cousins": {
+   "name": "Kirk Cousins",
+   "position": "QB",
+   "nfl_team": "LV",
+   "points": 19.52
+  },
+  "justin fields": {
+   "name": "Justin Fields",
+   "position": "QB",
+   "nfl_team": "KC",
+   "points": null
+  },
+  "geno smith": {
+   "name": "Geno Smith",
+   "position": "QB",
+   "nfl_team": "NYJ",
+   "points": 12.98
+  },
+  "drake maye": {
+   "name": "Drake Maye",
+   "position": "QB",
+   "nfl_team": "NE",
+   "points": 23.8
+  },
+  "brock purdy": {
+   "name": "Brock Purdy",
+   "position": "QB",
+   "nfl_team": "SF",
+   "points": 17.36
+  },
+  "kyler murray": {
+   "name": "Kyler Murray",
+   "position": "QB",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "lamar jackson": {
+   "name": "Lamar Jackson",
+   "position": "QB",
+   "nfl_team": "BAL",
+   "points": null
+  },
+  "jordan love": {
+   "name": "Jordan Love",
+   "position": "QB",
+   "nfl_team": "GB",
+   "points": 21.24
+  },
+  "carson wentz": {
+   "name": "Carson Wentz",
+   "position": "QB",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "deshaun watson": {
+   "name": "Deshaun Watson",
+   "position": "QB",
+   "nfl_team": "CLE",
+   "points": 9.46
+  },
+  "kenneth pickett": {
+   "name": "Kenny Pickett",
+   "position": "QB",
+   "nfl_team": "CAR",
+   "points": null
+  },
+  "bo nix": {
+   "name": "Bo Nix",
+   "position": "QB",
+   "nfl_team": "DEN",
+   "points": 4.48
+  },
+  "justin herbert": {
+   "name": "Justin Herbert",
+   "position": "QB",
+   "nfl_team": "LAC",
+   "points": 9.76
+  },
+  "taylen green": {
+   "name": "Taylen Green",
+   "position": "QB",
+   "nfl_team": "CLE",
+   "points": null
+  },
+  "mac jones": {
+   "name": "Mac Jones",
+   "position": "QB",
+   "nfl_team": "SF",
+   "points": null
+  },
+  "jack strand": {
+   "name": "Jack Strand",
+   "position": "QB",
+   "nfl_team": "ATL",
+   "points": null
+  },
+  "marcus mariota": {
+   "name": "Marcus Mariota",
+   "position": "QB",
+   "nfl_team": "WAS",
+   "points": null
+  },
+  "tyler huntley": {
+   "name": "Tyler Huntley",
+   "position": "QB",
+   "nfl_team": "BAL",
+   "points": 13.4
+  },
+  "sam hartman": {
+   "name": "Sam Hartman",
+   "position": "QB",
+   "nfl_team": "WAS",
+   "points": null
+  },
+  "tyson bagent": {
+   "name": "Tyson Bagent",
+   "position": "QB",
+   "nfl_team": "CHI",
+   "points": null
+  },
+  "mason rudolph": {
+   "name": "Mason Rudolph",
+   "position": "QB",
+   "nfl_team": "PIT",
+   "points": null
+  },
+  "jameis winston": {
+   "name": "Jameis Winston",
+   "position": "QB",
+   "nfl_team": "NYG",
+   "points": 8.48
+  },
+  "case keenum": {
+   "name": "Case Keenum",
+   "position": "QB",
+   "nfl_team": "CHI",
+   "points": null
+  },
+  "shedeur sanders": {
+   "name": "Shedeur Sanders",
+   "position": "QB",
+   "nfl_team": "CLE",
+   "points": null
+  },
+  "ty simpson": {
+   "name": "Ty Simpson",
+   "position": "QB",
+   "nfl_team": "LAR",
+   "points": null
+  },
+  "jalon daniels": {
+   "name": "Jalon Daniels",
+   "position": "QB",
+   "nfl_team": "TB",
+   "points": 13.16
+  },
+  "michael penix": {
+   "name": "Michael Penix Jr.",
+   "position": "QB",
+   "nfl_team": "ATL",
+   "points": 23.1
+  },
+  "tommy devito": {
+   "name": "Tommy DeVito",
+   "position": "QB",
+   "nfl_team": "NE",
+   "points": null
+  },
+  "andy dalton": {
+   "name": "Andy Dalton",
+   "position": "QB",
+   "nfl_team": "ATL",
+   "points": null
+  },
+  "quinn ewers": {
+   "name": "Quinn Ewers",
+   "position": "QB",
+   "nfl_team": "JAC",
+   "points": null
+  },
+  "athan kaliakmanis": {
+   "name": "Athan Kaliakmanis",
+   "position": "QB",
+   "nfl_team": "WAS",
+   "points": null
+  },
+  "joshua dobbs": {
+   "name": "Joshua Dobbs",
+   "position": "QB",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "tua tagovailoa": {
+   "name": "Tua Tagovailoa",
+   "position": "QB",
+   "nfl_team": "ATL",
+   "points": null
+  },
+  "jj mccarthy": {
+   "name": "J.J. McCarthy",
+   "position": "QB",
+   "nfl_team": "NYG",
+   "points": 17.32
+  },
+  "tyrod taylor": {
+   "name": "Tyrod Taylor",
+   "position": "QB",
+   "nfl_team": "GB",
+   "points": null
+  },
+  "fernando mendoza": {
+   "name": "Fernando Mendoza",
+   "position": "QB",
+   "nfl_team": "LV",
+   "points": null
+  },
+  "cole payton": {
+   "name": "Cole Payton",
+   "position": "QB",
+   "nfl_team": "PHI",
+   "points": null
+  },
+  "tanner mckee": {
+   "name": "Tanner McKee",
+   "position": "QB",
+   "nfl_team": "PHI",
+   "points": 12.6
+  },
+  "gardner minshew": {
+   "name": "Gardner Minshew II",
+   "position": "QB",
+   "nfl_team": "ARI",
+   "points": 0.0
+  },
+  "spencer rattler": {
+   "name": "Spencer Rattler",
+   "position": "QB",
+   "nfl_team": "NO",
+   "points": 0.0
+  },
+  "emanuel wilson": {
+   "name": "Emanuel Wilson",
+   "position": "RB",
+   "nfl_team": "SEA",
+   "points": 5.2
+  },
+  "raheim sanders": {
+   "name": "Raheim Sanders",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "points": null
+  },
+  "jonah coleman": {
+   "name": "Jonah Coleman",
+   "position": "RB",
+   "nfl_team": "DEN",
+   "points": null
+  },
+  "lequint allen": {
+   "name": "LeQuint Allen Jr.",
+   "position": "RB",
+   "nfl_team": "JAC",
+   "points": 0.1
+  },
+  "keaton mitchell": {
+   "name": "Keaton Mitchell",
+   "position": "RB",
+   "nfl_team": "LAC",
+   "points": 0.4
+  },
+  "cj donaldson": {
+   "name": "CJ Donaldson",
+   "position": "RB",
+   "nfl_team": "NO",
+   "points": 1.9
+  },
+  "jadarian price": {
+   "name": "Jadarian Price",
+   "position": "RB",
+   "nfl_team": "SEA",
+   "points": null
+  },
+  "seth mcgowan": {
+   "name": "Seth McGowan",
+   "position": "RB",
+   "nfl_team": "IND",
+   "points": 2.7
+  },
+  "kyren williams": {
+   "name": "Kyren Williams",
+   "position": "RB",
+   "nfl_team": "LAR",
+   "points": 9.7
+  },
+  "david montgomery": {
+   "name": "David Montgomery",
+   "position": "RB",
+   "nfl_team": "HOU",
+   "points": null
+  },
+  "jacory croskeymerritt": {
+   "name": "Jacory Croskey-Merritt",
+   "position": "RB",
+   "nfl_team": "WAS",
+   "points": null
+  },
+  "tank bigsby": {
+   "name": "Tank Bigsby",
+   "position": "RB",
+   "nfl_team": "PHI",
+   "points": null
+  },
+  "kenneth walker": {
+   "name": "Kenneth Walker III",
+   "position": "RB",
+   "nfl_team": "KC",
+   "points": 27.9
+  },
+  "ronnie rivers": {
+   "name": "Ronnie Rivers",
+   "position": "RB",
+   "nfl_team": "LAR",
+   "points": null
+  },
+  "quinshon judkins": {
+   "name": "Quinshon Judkins",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "points": null
+  },
+  "bhayshul tuten": {
+   "name": "Bhayshul Tuten",
+   "position": "RB",
+   "nfl_team": "JAC",
+   "points": 24.7
+  },
+  "aaron jones": {
+   "name": "Aaron Jones Sr.",
+   "position": "RB",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "british brooks": {
+   "name": "British Brooks",
+   "position": "RB",
+   "nfl_team": "HOU",
+   "points": null
+  },
+  "brashard smith": {
+   "name": "Brashard Smith",
+   "position": "RB",
+   "nfl_team": "KC",
+   "points": 0.0
+  },
+  "ashton jeanty": {
+   "name": "Ashton Jeanty",
+   "position": "RB",
+   "nfl_team": "LV",
+   "points": 15.8
+  },
+  "chuba hubbard": {
+   "name": "Chuba Hubbard",
+   "position": "RB",
+   "nfl_team": "CAR",
+   "points": 19.1
+  },
+  "anthony pollard": {
+   "name": "Tony Pollard",
+   "position": "RB",
+   "nfl_team": "TEN",
+   "points": 7.6
+  },
+  "christopher brooks": {
+   "name": "Chris Brooks",
+   "position": "RB",
+   "nfl_team": "GB",
+   "points": null
+  },
+  "omarion hampton": {
+   "name": "Omarion Hampton",
+   "position": "RB",
+   "nfl_team": "LAC",
+   "points": 7.9
+  },
+  "tyler goodson": {
+   "name": "Tyler Goodson",
+   "position": "RB",
+   "nfl_team": "DAL",
+   "points": 1.9
+  },
+  "ollie gordon": {
+   "name": "Ollie Gordon II",
+   "position": "RB",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "reggie gilliam": {
+   "name": "Reggie Gilliam",
+   "position": "RB",
+   "nfl_team": "NE",
+   "points": null
+  },
+  "emari demercado": {
+   "name": "Emari Demercado",
+   "position": "RB",
+   "nfl_team": "DAL",
+   "points": null
+  },
+  "deejay dallas": {
+   "name": "DeeJay Dallas",
+   "position": "RB",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "rachaad white": {
+   "name": "Rachaad White",
+   "position": "RB",
+   "nfl_team": "WAS",
+   "points": 15.7
+  },
+  "kaelon black": {
+   "name": "Kaelon Black",
+   "position": "RB",
+   "nfl_team": "SF",
+   "points": 4.7
+  },
+  "eli heidenreich": {
+   "name": "Eli Heidenreich",
+   "position": "RB",
+   "nfl_team": "PIT",
+   "points": null
+  },
+  "justice hill": {
+   "name": "Justice Hill",
+   "position": "RB",
+   "nfl_team": "BAL",
+   "points": 3.9
+  },
+  "bam knight": {
+   "name": "Bam Knight",
+   "position": "RB",
+   "nfl_team": "ARI",
+   "points": 11.8
+  },
+  "hunter luepke": {
+   "name": "Hunter Luepke",
+   "position": "RB",
+   "nfl_team": "DAL",
+   "points": 3.9
+  },
+  "jonathon brooks": {
+   "name": "Jonathon Brooks",
+   "position": "RB",
+   "nfl_team": "CAR",
+   "points": null
+  },
+  "rhamondre stevenson": {
+   "name": "Rhamondre Stevenson",
+   "position": "RB",
+   "nfl_team": "NE",
+   "points": 3.6
+  },
+  "kendre miller": {
+   "name": "Kendre Miller",
+   "position": "RB",
+   "nfl_team": "NO",
+   "points": 9.0
+  },
+  "kyle juszczyk": {
+   "name": "Kyle Juszczyk",
+   "position": "RB",
+   "nfl_team": "SF",
+   "points": 2.0
+  },
+  "dylan sampson": {
+   "name": "Dylan Sampson",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "points": null
+  },
+  "kyle monangai": {
+   "name": "Kyle Monangai",
+   "position": "RB",
+   "nfl_team": "CHI",
+   "points": null
+  },
+  "brian robinson": {
+   "name": "Brian Robinson Jr.",
+   "position": "RB",
+   "nfl_team": "ATL",
+   "points": 3.0
+  },
+  "will shipley": {
+   "name": "Will Shipley",
+   "position": "RB",
+   "nfl_team": "PHI",
+   "points": null
+  },
+  "kaytron allen": {
+   "name": "Kaytron Allen",
+   "position": "RB",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "alec ingold": {
+   "name": "Alec Ingold",
+   "position": "RB",
+   "nfl_team": "LAC",
+   "points": null
+  },
+  "marshawn lloyd": {
+   "name": "MarShawn Lloyd",
+   "position": "RB",
+   "nfl_team": "GB",
+   "points": 1.0
+  },
+  "jaylen warren": {
+   "name": "Jaylen Warren",
+   "position": "RB",
+   "nfl_team": "PIT",
+   "points": 9.8
+  },
+  "michael burton": {
+   "name": "Michael Burton",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "points": 0.2
+  },
+  "isaiah davis": {
+   "name": "Isaiah Davis",
+   "position": "RB",
+   "nfl_team": "NYJ",
+   "points": 3.6
+  },
+  "julius chestnut": {
+   "name": "Julius Chestnut",
+   "position": "RB",
+   "nfl_team": "TEN",
+   "points": 0.0
+  },
+  "derrick henry": {
+   "name": "Derrick Henry",
+   "position": "RB",
+   "nfl_team": "BAL",
+   "points": 5.0
+  },
+  "javonte williams": {
+   "name": "Javonte Williams",
+   "position": "RB",
+   "nfl_team": "DAL",
+   "points": 13.0
+  },
+  "tahj brooks": {
+   "name": "Tahj Brooks",
+   "position": "RB",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "jonathan taylor": {
+   "name": "Jonathan Taylor",
+   "position": "RB",
+   "nfl_team": "IND",
+   "points": 21.1
+  },
+  "blake corum": {
+   "name": "Blake Corum",
+   "position": "RB",
+   "nfl_team": "LAR",
+   "points": 14.0
+  },
+  "travis etienne": {
+   "name": "Travis Etienne Jr.",
+   "position": "RB",
+   "nfl_team": "NO",
+   "points": null
+  },
+  "george holani": {
+   "name": "George Holani",
+   "position": "RB",
+   "nfl_team": "SEA",
+   "points": 8.0
+  },
+  "kaleb johnson": {
+   "name": "Kaleb Johnson",
+   "position": "RB",
+   "nfl_team": "GB",
+   "points": -0.2
+  },
+  "saquon barkley": {
+   "name": "Saquon Barkley",
+   "position": "RB",
+   "nfl_team": "PHI",
+   "points": null
+  },
+  "jacob saylors": {
+   "name": "Jacob Saylors",
+   "position": "RB",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "rasheen ali": {
+   "name": "Rasheen Ali",
+   "position": "RB",
+   "nfl_team": "BAL",
+   "points": 0.0
+  },
+  "devon achane": {
+   "name": "De'Von Achane",
+   "position": "RB",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "jk dobbins": {
+   "name": "J.K. Dobbins",
+   "position": "RB",
+   "nfl_team": "DEN",
+   "points": 13.6
+  },
+  "ray davis": {
+   "name": "Ray Davis",
+   "position": "RB",
+   "nfl_team": "BUF",
+   "points": 1.9
+  },
+  "devin singletary": {
+   "name": "Devin Singletary",
+   "position": "RB",
+   "nfl_team": "NYG",
+   "points": 4.3
+  },
+  "christopher rodriguez": {
+   "name": "Chris Rodriguez Jr.",
+   "position": "RB",
+   "nfl_team": "JAC",
+   "points": 5.5
+  },
+  "tyjae spears": {
+   "name": "Tyjae Spears",
+   "position": "RB",
+   "nfl_team": "TEN",
+   "points": 1.8
+  },
+  "jordan mason": {
+   "name": "Jordan Mason",
+   "position": "RB",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "andrew beck": {
+   "name": "Andrew Beck",
+   "position": "RB",
+   "nfl_team": "NYJ",
+   "points": 0.0
+  },
+  "michael washington": {
+   "name": "Mike Washington Jr.",
+   "position": "RB",
+   "nfl_team": "LV",
+   "points": 6.0
+  },
+  "woody marks": {
+   "name": "Woody Marks",
+   "position": "RB",
+   "nfl_team": "HOU",
+   "points": 10.1
+  },
+  "jaylen wright": {
+   "name": "Jaylen Wright",
+   "position": "RB",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "rico dowdle": {
+   "name": "Rico Dowdle",
+   "position": "RB",
+   "nfl_team": "PIT",
+   "points": 7.9
+  },
+  "joshua williams": {
+   "name": "Josh Williams",
+   "position": "RB",
+   "nfl_team": "TB",
+   "points": null
+  },
+  "bucky irving": {
+   "name": "Bucky Irving",
+   "position": "RB",
+   "nfl_team": "TB",
+   "points": 6.9
+  },
+  "ameer abdullah": {
+   "name": "Ameer Abdullah",
+   "position": "RB",
+   "nfl_team": "JAC",
+   "points": 0.0
+  },
+  "corey kiner": {
+   "name": "Corey Kiner",
+   "position": "RB",
+   "nfl_team": "NE",
+   "points": 5.7
+  },
+  "jeremiyah love": {
+   "name": "Jeremiyah Love",
+   "position": "RB",
+   "nfl_team": "ARI",
+   "points": null
+  },
+  "patrick ricard": {
+   "name": "Patrick Ricard",
+   "position": "RB",
+   "nfl_team": "NYG",
+   "points": 0.0
+  },
+  "dandre swift": {
+   "name": "D'Andre Swift",
+   "position": "RB",
+   "nfl_team": "CHI",
+   "points": 23.0
+  },
+  "frank gore": {
+   "name": "Frank Gore Jr.",
+   "position": "RB",
+   "nfl_team": "BUF",
+   "points": null
+  },
+  "james cook": {
+   "name": "James Cook III",
+   "position": "RB",
+   "nfl_team": "BUF",
+   "points": 24.3
+  },
+  "chase brown": {
+   "name": "Chase Brown",
+   "position": "RB",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "braelon allen": {
+   "name": "Braelon Allen",
+   "position": "RB",
+   "nfl_team": "NYJ",
+   "points": 12.4
+  },
+  "breece hall": {
+   "name": "Breece Hall",
+   "position": "RB",
+   "nfl_team": "NYJ",
+   "points": null
+  },
+  "dylan laube": {
+   "name": "Dylan Laube",
+   "position": "RB",
+   "nfl_team": "LV",
+   "points": 0.9
+  },
+  "aj dillon": {
+   "name": "AJ Dillon",
+   "position": "RB",
+   "nfl_team": "CAR",
+   "points": null
+  },
+  "cameron skattebo": {
+   "name": "Cam Skattebo",
+   "position": "RB",
+   "nfl_team": "NYG",
+   "points": 0.0
+  },
+  "max bredeson": {
+   "name": "Max Bredeson",
+   "position": "RB",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "kenneth gainwell": {
+   "name": "Kenny Gainwell",
+   "position": "RB",
+   "nfl_team": "TB",
+   "points": 3.4
+  },
+  "lan larison": {
+   "name": "Lan Larison",
+   "position": "RB",
+   "nfl_team": "NE",
+   "points": null
+  },
+  "roschon johnson": {
+   "name": "Roschon Johnson",
+   "position": "RB",
+   "nfl_team": "CHI",
+   "points": 14.5
+  },
+  "adam prentice": {
+   "name": "Adam Prentice",
+   "position": "RB",
+   "nfl_team": "DEN",
+   "points": 0.0
+  },
+  "samaje perine": {
+   "name": "Samaje Perine",
+   "position": "RB",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "emmett johnson": {
+   "name": "Emmett Johnson",
+   "position": "RB",
+   "nfl_team": "KC",
+   "points": 4.4
+  },
+  "kimani vidal": {
+   "name": "Kimani Vidal",
+   "position": "RB",
+   "nfl_team": "LAC",
+   "points": 7.0
+  },
+  "tyler allgeier": {
+   "name": "Tyler Allgeier",
+   "position": "RB",
+   "nfl_team": "ARI",
+   "points": 5.8
+  },
+  "sione vaki": {
+   "name": "Sione Vaki",
+   "position": "RB",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "bijan robinson": {
+   "name": "Bijan Robinson",
+   "position": "RB",
+   "nfl_team": "ATL",
+   "points": 7.3
+  },
+  "christian mccaffrey": {
+   "name": "Christian McCaffrey",
+   "position": "RB",
+   "nfl_team": "SF",
+   "points": 30.7
+  },
+  "tyrone tracy": {
+   "name": "Tyrone Tracy Jr.",
+   "position": "RB",
+   "nfl_team": "NYG",
+   "points": 18.5
+  },
+  "rj harvey": {
+   "name": "RJ Harvey",
+   "position": "RB",
+   "nfl_team": "DEN",
+   "points": 14.6
+  },
+  "jahmyr gibbs": {
+   "name": "Jahmyr Gibbs",
+   "position": "RB",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "nicholas singleton": {
+   "name": "Nicholas Singleton",
+   "position": "RB",
+   "nfl_team": "TEN",
+   "points": null
+  },
+  "treveyon henderson": {
+   "name": "TreVeyon Henderson",
+   "position": "RB",
+   "nfl_team": "NE",
+   "points": 3.0
+  },
+  "najee harris": {
+   "name": "Najee Harris",
+   "position": "RB",
+   "nfl_team": "FA",
+   "points": 0.2
+  },
+  "travis homer": {
+   "name": "Travis Homer",
+   "position": "RB",
+   "nfl_team": "PIT",
+   "points": 0.0
+  },
+  "jaleel mclaughlin": {
+   "name": "Jaleel McLaughlin",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "points": 9.5
+  },
+  "sean tucker": {
+   "name": "Sean Tucker",
+   "position": "RB",
+   "nfl_team": "TB",
+   "points": null
+  },
+  "demond claiborne": {
+   "name": "Demond Claiborne",
+   "position": "RB",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "jordan james": {
+   "name": "Jordan James",
+   "position": "RB",
+   "nfl_team": "SF",
+   "points": 0.0
+  },
+  "alvin kamara": {
+   "name": "Alvin Kamara",
+   "position": "RB",
+   "nfl_team": "NO",
+   "points": 14.9
+  },
+  "tyler badie": {
+   "name": "Tyler Badie",
+   "position": "RB",
+   "nfl_team": "DEN",
+   "points": 0.6
+  },
+  "evan hull": {
+   "name": "Evan Hull",
+   "position": "RB",
+   "nfl_team": "ARI",
+   "points": 0.0
+  },
+  "lew nichols": {
+   "name": "Lew Nichols III",
+   "position": "RB",
+   "nfl_team": "PIT",
+   "points": 0.0
+  },
+  "ty johnson": {
+   "name": "Ty Johnson",
+   "position": "RB",
+   "nfl_team": "BUF",
+   "points": 4.7
+  },
+  "anthony tyus": {
+   "name": "Anthony Tyus III",
+   "position": "RB",
+   "nfl_team": "CAR",
+   "points": 0.0
+  },
+  "dean connors": {
+   "name": "Dean Connors",
+   "position": "RB",
+   "nfl_team": "LAR",
+   "points": 0.0
+  },
+  "craig reynolds": {
+   "name": "Craig Reynolds",
+   "position": "RB",
+   "nfl_team": "WAS",
+   "points": null
+  },
+  "dare ogunbowale": {
+   "name": "Dare Ogunbowale",
+   "position": "RB",
+   "nfl_team": "HOU",
+   "points": 0.0
+  },
+  "kene nwangwu": {
+   "name": "Kene Nwangwu",
+   "position": "RB",
+   "nfl_team": "NYJ",
+   "points": 0.0
+  },
+  "cash jones": {
+   "name": "Cash Jones",
+   "position": "RB",
+   "nfl_team": "FA",
+   "points": null
+  },
+  "austin ekeler": {
+   "name": "Austin Ekeler",
+   "position": "RB",
+   "nfl_team": "WAS",
+   "points": 2.7
+  },
+  "zavier scott": {
+   "name": "Zavier Scott",
+   "position": "RB",
+   "nfl_team": "CHI",
+   "points": 0.0
+  },
+  "carlos washington": {
+   "name": "Carlos Washington Jr.",
+   "position": "RB",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "carson steele": {
+   "name": "Carson Steele",
+   "position": "RB",
+   "nfl_team": "FA",
+   "points": 1.4
+  },
+  "dameon pierce": {
+   "name": "Dameon Pierce",
+   "position": "RB",
+   "nfl_team": "PHI",
+   "points": 15.0
+  },
+  "christopher collier": {
+   "name": "Chris Collier",
+   "position": "RB",
+   "nfl_team": "LV",
+   "points": null
+  },
+  "pierre strong": {
+   "name": "Pierre Strong Jr.",
+   "position": "RB",
+   "nfl_team": "GB",
+   "points": 11.7
+  },
+  "kalel mullings": {
+   "name": "Kalel Mullings",
+   "position": "RB",
+   "nfl_team": "TEN",
+   "points": null
+  },
+  "israel abanikanda": {
+   "name": "Israel Abanikanda",
+   "position": "RB",
+   "nfl_team": "DAL",
+   "points": 0.0
+  },
+  "jeremy mcnichols": {
+   "name": "Jeremy McNichols",
+   "position": "RB",
+   "nfl_team": "WAS",
+   "points": 1.3
+  },
+  "trevor etienne": {
+   "name": "Trevor Etienne",
+   "position": "RB",
+   "nfl_team": "CAR",
+   "points": -0.1
+  },
+  "audric estime": {
+   "name": "Audric Estime",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "points": 7.9
+  },
+  "michael carter": {
+   "name": "Michael Carter",
+   "position": "RB",
+   "nfl_team": "TEN",
+   "points": 0.0
+  },
+  "jawhar jordan": {
+   "name": "Jawhar Jordan",
+   "position": "RB",
+   "nfl_team": "HOU",
+   "points": 12.0
+  },
+  "christopher myarick": {
+   "name": "Chris Myarick",
+   "position": "TE",
+   "nfl_team": "FA",
+   "points": null
+  },
+  "juwan johnson": {
+   "name": "Juwan Johnson",
+   "position": "TE",
+   "nfl_team": "NO",
+   "points": 0.0
+  },
+  "davis allen": {
+   "name": "Davis Allen",
+   "position": "TE",
+   "nfl_team": "LAR",
+   "points": 0.0
+  },
+  "cole kmet": {
+   "name": "Cole Kmet",
+   "position": "TE",
+   "nfl_team": "CHI",
+   "points": 2.3
+  },
+  "patrick freiermuth": {
+   "name": "Pat Freiermuth",
+   "position": "TE",
+   "nfl_team": "PIT",
+   "points": 3.1
+  },
+  "mark andrews": {
+   "name": "Mark Andrews",
+   "position": "TE",
+   "nfl_team": "BAL",
+   "points": 1.4
+  },
+  "treyton welch": {
+   "name": "Treyton Welch",
+   "position": "TE",
+   "nfl_team": "NO",
+   "points": 0.0
+  },
+  "mason taylor": {
+   "name": "Mason Taylor",
+   "position": "TE",
+   "nfl_team": "NYJ",
+   "points": 7.3
+  },
+  "tyler higbee": {
+   "name": "Tyler Higbee",
+   "position": "TE",
+   "nfl_team": "LAR",
+   "points": 4.2
+  },
+  "michael gesicki": {
+   "name": "Mike Gesicki",
+   "position": "TE",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "luke schoonmaker": {
+   "name": "Luke Schoonmaker",
+   "position": "TE",
+   "nfl_team": "DAL",
+   "points": 0.0
+  },
+  "darren waller": {
+   "name": "Darren Waller",
+   "position": "TE",
+   "nfl_team": "CAR",
+   "points": 0.0
+  },
+  "chigoziem okonkwo": {
+   "name": "Chig Okonkwo",
+   "position": "TE",
+   "nfl_team": "WAS",
+   "points": 13.9
+  },
+  "drew sample": {
+   "name": "Drew Sample",
+   "position": "TE",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "darnell washington": {
+   "name": "Darnell Washington",
+   "position": "TE",
+   "nfl_team": "PIT",
+   "points": 12.5
+  },
+  "colby parkinson": {
+   "name": "Colby Parkinson",
+   "position": "TE",
+   "nfl_team": "LAR",
+   "points": 14.1
+  },
+  "kyle pitts": {
+   "name": "Kyle Pitts Sr.",
+   "position": "TE",
+   "nfl_team": "ATL",
+   "points": 23.0
+  },
+  "jeremy ruckert": {
+   "name": "Jeremy Ruckert",
+   "position": "TE",
+   "nfl_team": "NYJ",
+   "points": 0.0
+  },
+  "george kittle": {
+   "name": "George Kittle",
+   "position": "TE",
+   "nfl_team": "SF",
+   "points": 17.9
+  },
+  "tanner hudson": {
+   "name": "Tanner Hudson",
+   "position": "TE",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "sam laporta": {
+   "name": "Sam LaPorta",
+   "position": "TE",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "michael mayer": {
+   "name": "Michael Mayer",
+   "position": "TE",
+   "nfl_team": "LV",
+   "points": 16.5
+  },
+  "john bates": {
+   "name": "John Bates",
+   "position": "TE",
+   "nfl_team": "WAS",
+   "points": 1.4
+  },
+  "jelani woods": {
+   "name": "Jelani Woods",
+   "position": "TE",
+   "nfl_team": "NYJ",
+   "points": 1.9
+  },
+  "cameron latu": {
+   "name": "Cameron Latu",
+   "position": "TE",
+   "nfl_team": "NE",
+   "points": 0.0
+  },
+  "joshua cuevas": {
+   "name": "Josh Cuevas",
+   "position": "TE",
+   "nfl_team": "BAL",
+   "points": 14.4
+  },
+  "tucker kraft": {
+   "name": "Tucker Kraft",
+   "position": "TE",
+   "nfl_team": "GB",
+   "points": 8.7
+  },
+  "charlie kolar": {
+   "name": "Charlie Kolar",
+   "position": "TE",
+   "nfl_team": "LAC",
+   "points": 5.0
+  },
+  "tanner arkin": {
+   "name": "Tanner Arkin",
+   "position": "TE",
+   "nfl_team": "NE",
+   "points": null
+  },
+  "daniel bellinger": {
+   "name": "Daniel Bellinger",
+   "position": "TE",
+   "nfl_team": "TEN",
+   "points": 0.0
+  },
+  "jake briningstool": {
+   "name": "Jake Briningstool",
+   "position": "TE",
+   "nfl_team": "KC",
+   "points": 0.0
+  },
+  "adam trautman": {
+   "name": "Adam Trautman",
+   "position": "TE",
+   "nfl_team": "DEN",
+   "points": 0.0
+  },
+  "charlie woerner": {
+   "name": "Charlie Woerner",
+   "position": "TE",
+   "nfl_team": "ATL",
+   "points": 0.0
+  },
+  "erick all": {
+   "name": "Erick All Jr.",
+   "position": "TE",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "kenyon sadiq": {
+   "name": "Kenyon Sadiq",
+   "position": "TE",
+   "nfl_team": "NYJ",
+   "points": 2.2
+  },
+  "cade stover": {
+   "name": "Cade Stover",
+   "position": "TE",
+   "nfl_team": "HOU",
+   "points": 0.5
+  },
+  "eric saubert": {
+   "name": "Eric Saubert",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "points": 0.0
+  },
+  "drew ogletree": {
+   "name": "Drew Ogletree",
+   "position": "TE",
+   "nfl_team": "IND",
+   "points": 0.0
+  },
+  "dawson knox": {
+   "name": "Dawson Knox",
+   "position": "TE",
+   "nfl_team": "BUF",
+   "points": 1.0
+  },
+  "joshua whyle": {
+   "name": "Josh Whyle",
+   "position": "TE",
+   "nfl_team": "GB",
+   "points": 0.0
+  },
+  "bauer sharp": {
+   "name": "Bauer Sharp",
+   "position": "TE",
+   "nfl_team": "TB",
+   "points": 3.1
+  },
+  "ej jenkins": {
+   "name": "E.J. Jenkins",
+   "position": "TE",
+   "nfl_team": "PHI",
+   "points": 0.0
+  },
+  "colston loveland": {
+   "name": "Colston Loveland",
+   "position": "TE",
+   "nfl_team": "CHI",
+   "points": 18.5
+  },
+  "connor heyward": {
+   "name": "Connor Heyward",
+   "position": "TE",
+   "nfl_team": "LV",
+   "points": 0.0
+  },
+  "johnny mundt": {
+   "name": "Johnny Mundt",
+   "position": "TE",
+   "nfl_team": "PHI",
+   "points": 1.4
+  },
+  "nate boerkircher": {
+   "name": "Nate Boerkircher",
+   "position": "TE",
+   "nfl_team": "JAC",
+   "points": 8.8
+  },
+  "oronde gadsden": {
+   "name": "Oronde Gadsden II",
+   "position": "TE",
+   "nfl_team": "LAC",
+   "points": 4.7
+  },
+  "nicholas muse": {
+   "name": "Nick Muse",
+   "position": "TE",
+   "nfl_team": "ATL",
+   "points": 0.0
+  },
+  "hunter henry": {
+   "name": "Hunter Henry",
+   "position": "TE",
+   "nfl_team": "NE",
+   "points": 14.8
+  },
+  "trey mcbride": {
+   "name": "Trey McBride",
+   "position": "TE",
+   "nfl_team": "ARI",
+   "points": 12.3
+  },
+  "mitchell evans": {
+   "name": "Mitchell Evans",
+   "position": "TE",
+   "nfl_team": "CAR",
+   "points": 0.1
+  },
+  "feleipe franks": {
+   "name": "Feleipe Franks",
+   "position": "TE",
+   "nfl_team": "CAR",
+   "points": 0.0
+  },
+  "christopher manhertz": {
+   "name": "Chris Manhertz",
+   "position": "TE",
+   "nfl_team": "NYG",
+   "points": 0.0
+  },
+  "robert tonyan": {
+   "name": "Robert Tonyan",
+   "position": "TE",
+   "nfl_team": "PIT",
+   "points": 0.0
+  },
+  "durham smythe": {
+   "name": "Durham Smythe",
+   "position": "TE",
+   "nfl_team": "BAL",
+   "points": null
+  },
+  "colson yankoff": {
+   "name": "Colson Yankoff",
+   "position": "TE",
+   "nfl_team": "WAS",
+   "points": 0.0
+  },
+  "keleki latu": {
+   "name": "Keleki Latu",
+   "position": "TE",
+   "nfl_team": "BUF",
+   "points": 0.0
+  },
+  "jackson hawes": {
+   "name": "Jackson Hawes",
+   "position": "TE",
+   "nfl_team": "BUF",
+   "points": 0.0
+  },
+  "mo aliecox": {
+   "name": "Mo Alie-Cox",
+   "position": "TE",
+   "nfl_team": "IND",
+   "points": 7.1
+  },
+  "luke farrell": {
+   "name": "Luke Farrell",
+   "position": "TE",
+   "nfl_team": "SF",
+   "points": 0.0
+  },
+  "harold fannin": {
+   "name": "Harold Fannin Jr.",
+   "position": "TE",
+   "nfl_team": "CLE",
+   "points": 1.9
+  },
+  "dalton schultz": {
+   "name": "Dalton Schultz",
+   "position": "TE",
+   "nfl_team": "HOU",
+   "points": 7.3
+  },
+  "jake tonges": {
+   "name": "Jake Tonges",
+   "position": "TE",
+   "nfl_team": "SF",
+   "points": null
+  },
+  "matthew hibner": {
+   "name": "Matt Hibner",
+   "position": "TE",
+   "nfl_team": "BAL",
+   "points": null
+  },
+  "brock wright": {
+   "name": "Brock Wright",
+   "position": "TE",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "will kacmarek": {
+   "name": "Will Kacmarek",
+   "position": "TE",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "david njoku": {
+   "name": "David Njoku",
+   "position": "TE",
+   "nfl_team": "LAC",
+   "points": null
+  },
+  "brevin jordan": {
+   "name": "Brevin Jordan",
+   "position": "TE",
+   "nfl_team": "HOU",
+   "points": 0.9
+  },
+  "austin hooper": {
+   "name": "Austin Hooper",
+   "position": "TE",
+   "nfl_team": "ATL",
+   "points": 1.6
+  },
+  "zachary wood": {
+   "name": "Zach Wood",
+   "position": "TE",
+   "nfl_team": "NO",
+   "points": 0.0
+  },
+  "brenton strange": {
+   "name": "Brenton Strange",
+   "position": "TE",
+   "nfl_team": "JAC",
+   "points": 9.4
+  },
+  "elijah arroyo": {
+   "name": "Elijah Arroyo",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "points": 0.0
+  },
+  "james winchester": {
+   "name": "James Winchester",
+   "position": "TE",
+   "nfl_team": "KC",
+   "points": 0.0
+  },
+  "blake whiteheart": {
+   "name": "Blake Whiteheart",
+   "position": "TE",
+   "nfl_team": "CLE",
+   "points": 1.8
+  },
+  "foster moreau": {
+   "name": "Foster Moreau",
+   "position": "TE",
+   "nfl_team": "HOU",
+   "points": 14.7
+  },
+  "carsen ryan": {
+   "name": "Carsen Ryan",
+   "position": "TE",
+   "nfl_team": "CLE",
+   "points": 0.0
+  },
+  "elijah higgins": {
+   "name": "Elijah Higgins",
+   "position": "TE",
+   "nfl_team": "ARI",
+   "points": 5.8
+  },
+  "seydou traore": {
+   "name": "Seydou Traore",
+   "position": "TE",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "theo johnson": {
+   "name": "Theo Johnson",
+   "position": "TE",
+   "nfl_team": "NYG",
+   "points": null
+  },
+  "eli raridon": {
+   "name": "Eli Raridon",
+   "position": "TE",
+   "nfl_team": "NE",
+   "points": 2.1
+  },
+  "ben sinnott": {
+   "name": "Ben Sinnott",
+   "position": "TE",
+   "nfl_team": "WAS",
+   "points": 0.0
+  },
+  "sam roush": {
+   "name": "Sam Roush",
+   "position": "TE",
+   "nfl_team": "CHI",
+   "points": 0.0
+  },
+  "dalton kincaid": {
+   "name": "Dalton Kincaid",
+   "position": "TE",
+   "nfl_team": "BUF",
+   "points": 10.8
+  },
+  "greg dulcich": {
+   "name": "Greg Dulcich",
+   "position": "TE",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "marlin klein": {
+   "name": "Marlin Klein",
+   "position": "TE",
+   "nfl_team": "HOU",
+   "points": null
+  },
+  "kylen granson": {
+   "name": "Kylen Granson",
+   "position": "TE",
+   "nfl_team": "TEN",
+   "points": null
+  },
+  "nate adkins": {
+   "name": "Nate Adkins",
+   "position": "TE",
+   "nfl_team": "DEN",
+   "points": 0.0
+  },
+  "tj hockenson": {
+   "name": "T.J. Hockenson",
+   "position": "TE",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "gunnar helm": {
+   "name": "Gunnar Helm",
+   "position": "TE",
+   "nfl_team": "TEN",
+   "points": 0.0
+  },
+  "gavin bartholomew": {
+   "name": "Gavin Bartholomew",
+   "position": "TE",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "travis kelce": {
+   "name": "Travis Kelce",
+   "position": "TE",
+   "nfl_team": "KC",
+   "points": 9.3
+  },
+  "brady russell": {
+   "name": "Brady Russell",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "points": 0.0
+  },
+  "payne durham": {
+   "name": "Payne Durham",
+   "position": "TE",
+   "nfl_team": "TB",
+   "points": 0.0
+  },
+  "tyler warren": {
+   "name": "Tyler Warren",
+   "position": "TE",
+   "nfl_team": "IND",
+   "points": null
+  },
+  "noah gray": {
+   "name": "Noah Gray",
+   "position": "TE",
+   "nfl_team": "KC",
+   "points": 8.3
+  },
+  "tommy tremble": {
+   "name": "Tommy Tremble",
+   "position": "TE",
+   "nfl_team": "CAR",
+   "points": 20.6
+  },
+  "noah fant": {
+   "name": "Noah Fant",
+   "position": "TE",
+   "nfl_team": "NO",
+   "points": 0.0
+  },
+  "riley nowakowski": {
+   "name": "Riley Nowakowski",
+   "position": "TE",
+   "nfl_team": "PIT",
+   "points": 0.0
+  },
+  "david martinrobinson": {
+   "name": "David Martin-Robinson",
+   "position": "TE",
+   "nfl_team": "TEN",
+   "points": 0.0
+  },
+  "joshua oliver": {
+   "name": "Josh Oliver",
+   "position": "TE",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "evan engram": {
+   "name": "Evan Engram",
+   "position": "TE",
+   "nfl_team": "DEN",
+   "points": 3.3
+  },
+  "jonnu smith": {
+   "name": "Jonnu Smith",
+   "position": "TE",
+   "nfl_team": "GB",
+   "points": 0.0
+  },
+  "dallas goedert": {
+   "name": "Dallas Goedert",
+   "position": "TE",
+   "nfl_team": "PHI",
+   "points": 12.1
+  },
+  "aj barner": {
+   "name": "AJ Barner",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "points": 4.6
+  },
+  "quintin morris": {
+   "name": "Quintin Morris",
+   "position": "TE",
+   "nfl_team": "JAC",
+   "points": 0.0
+  },
+  "hunter long": {
+   "name": "Hunter Long",
+   "position": "TE",
+   "nfl_team": "ARI",
+   "points": null
+  },
+  "ian thomas": {
+   "name": "Ian Thomas",
+   "position": "TE",
+   "nfl_team": "LV",
+   "points": 0.0
+  },
+  "brevyn spannford": {
+   "name": "Brevyn Spann-Ford",
+   "position": "TE",
+   "nfl_team": "DAL",
+   "points": 7.5
+  },
+  "tyler conklin": {
+   "name": "Tyler Conklin",
+   "position": "TE",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "cade otton": {
+   "name": "Cade Otton",
+   "position": "TE",
+   "nfl_team": "TB",
+   "points": 1.4
+  },
+  "jake ferguson": {
+   "name": "Jake Ferguson",
+   "position": "TE",
+   "nfl_team": "DAL",
+   "points": 3.3
+  },
+  "isaiah likely": {
+   "name": "Isaiah Likely",
+   "position": "TE",
+   "nfl_team": "NYG",
+   "points": 23.9
+  },
+  "ko kieft": {
+   "name": "Ko Kieft",
+   "position": "TE",
+   "nfl_team": "TB",
+   "points": 0.0
+  },
+  "mark redman": {
+   "name": "Mark Redman",
+   "position": "TE",
+   "nfl_team": "GB",
+   "points": 0.0
+  },
+  "terrance ferguson": {
+   "name": "Terrance Ferguson",
+   "position": "TE",
+   "nfl_team": "LAR",
+   "points": null
+  },
+  "jack endries": {
+   "name": "Jack Endries",
+   "position": "TE",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "max klare": {
+   "name": "Max Klare",
+   "position": "TE",
+   "nfl_team": "LAR",
+   "points": 0.0
+  },
+  "brayden willis": {
+   "name": "Brayden Willis",
+   "position": "TE",
+   "nfl_team": "SF",
+   "points": 0.0
+  },
+  "nicholas kallerup": {
+   "name": "Nick Kallerup",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "points": 0.0
+  },
+  "oscar delp": {
+   "name": "Oscar Delp",
+   "position": "TE",
+   "nfl_team": "NO",
+   "points": 3.0
+  },
+  "justin joly": {
+   "name": "Justin Joly",
+   "position": "TE",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "hayden rucci": {
+   "name": "Hayden Rucci",
+   "position": "TE",
+   "nfl_team": "LAC",
+   "points": 0.0
+  },
+  "patrick herbert": {
+   "name": "Patrick Herbert",
+   "position": "TE",
+   "nfl_team": "LAC",
+   "points": null
+  },
+  "tanner koziol": {
+   "name": "Tanner Koziol",
+   "position": "TE",
+   "nfl_team": "JAC",
+   "points": 0.0
+  },
+  "brock bowers": {
+   "name": "Brock Bowers",
+   "position": "TE",
+   "nfl_team": "LV",
+   "points": 11.0
+  },
+  "zachary ertz": {
+   "name": "Zach Ertz",
+   "position": "TE",
+   "nfl_team": "PHI",
+   "points": null
+  },
+  "josiah deguara": {
+   "name": "Josiah Deguara",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "points": null
+  },
+  "jack stoll": {
+   "name": "Jack Stoll",
+   "position": "TE",
+   "nfl_team": "SF",
+   "points": null
+  },
+  "teagan quitoriano": {
+   "name": "Teagan Quitoriano",
+   "position": "TE",
+   "nfl_team": "ARI",
+   "points": 0.0
+  },
+  "thomas fidone": {
+   "name": "Thomas Fidone II",
+   "position": "TE",
+   "nfl_team": "NYG",
+   "points": 0.0
+  },
+  "ben yurosek": {
+   "name": "Ben Yurosek",
+   "position": "TE",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "nicholas vannett": {
+   "name": "Nick Vannett",
+   "position": "TE",
+   "nfl_team": "BAL",
+   "points": 0.0
+  },
+  "will mallory": {
+   "name": "Will Mallory",
+   "position": "TE",
+   "nfl_team": "IND",
+   "points": 4.0
+  },
+  "shawn bowman": {
+   "name": "Shawn Bowman",
+   "position": "TE",
+   "nfl_team": "ARI",
+   "points": 0.0
+  },
+  "pharaoh brown": {
+   "name": "Pharaoh Brown",
+   "position": "TE",
+   "nfl_team": "IND",
+   "points": 1.7
+  },
+  "hayden large": {
+   "name": "Hayden Large",
+   "position": "TE",
+   "nfl_team": "CHI",
+   "points": 0.0
+  },
+  "robbie ouzts": {
+   "name": "Robbie Ouzts",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "points": 0.0
+  },
+  "emeka egbuka": {
+   "name": "Emeka Egbuka",
+   "position": "WR",
+   "nfl_team": "TB",
+   "points": 17.8
+  },
+  "jack bech": {
+   "name": "Jack Bech",
+   "position": "WR",
+   "nfl_team": "LV",
+   "points": null
+  },
+  "george pickens": {
+   "name": "George Pickens",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "points": 13.3
+  },
+  "colbie young": {
+   "name": "Colbie Young",
+   "position": "WR",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "christopher moore": {
+   "name": "Chris Moore",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "points": null
+  },
+  "kevin coleman": {
+   "name": "Kevin Coleman Jr.",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "xavier legette": {
+   "name": "Xavier Legette",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "points": null
+  },
+  "khalil shakir": {
+   "name": "Khalil Shakir",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "points": 13.4
+  },
+  "jalen royals": {
+   "name": "Jalen Royals",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": 4.4
+  },
+  "dyami brown": {
+   "name": "Dyami Brown",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": 1.6
+  },
+  "jaylen waddle": {
+   "name": "Jaylen Waddle",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "points": 6.4
+  },
+  "puka nacua": {
+   "name": "Puka Nacua",
+   "position": "WR",
+   "nfl_team": "LAR",
+   "points": 14.0
+  },
+  "braxton berrios": {
+   "name": "Braxton Berrios",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "points": null
+  },
+  "adonai mitchell": {
+   "name": "Adonai Mitchell",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": null
+  },
+  "michael pittman": {
+   "name": "Michael Pittman Jr.",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": null
+  },
+  "skyy moore": {
+   "name": "Skyy Moore",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": null
+  },
+  "chimere dike": {
+   "name": "Chimere Dike",
+   "position": "WR",
+   "nfl_team": "TEN",
+   "points": 0.0
+  },
+  "tai felton": {
+   "name": "Tai Felton",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "skyler bell": {
+   "name": "Skyler Bell",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "points": 0.0
+  },
+  "derius davis": {
+   "name": "Derius Davis",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": 0.4
+  },
+  "christopher olave": {
+   "name": "Chris Olave",
+   "position": "WR",
+   "nfl_team": "NO",
+   "points": 14.3
+  },
+  "jayden reed": {
+   "name": "Jayden Reed",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": null
+  },
+  "amonra st brown": {
+   "name": "Amon-Ra St. Brown",
+   "position": "WR",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "brian thomas": {
+   "name": "Brian Thomas Jr.",
+   "position": "WR",
+   "nfl_team": "JAC",
+   "points": 0.0
+  },
+  "malik benson": {
+   "name": "Malik Benson",
+   "position": "WR",
+   "nfl_team": "LV",
+   "points": 0.0
+  },
+  "cooper kupp": {
+   "name": "Cooper Kupp",
+   "position": "WR",
+   "nfl_team": "SEA",
+   "points": 10.0
+  },
+  "patrick bryant": {
+   "name": "Pat Bryant",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "points": null
+  },
+  "jared wayne": {
+   "name": "Jared Wayne",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "tylan wallace": {
+   "name": "Tylan Wallace",
+   "position": "WR",
+   "nfl_team": "CLE",
+   "points": 2.2
+  },
+  "joshua cameron": {
+   "name": "Josh Cameron",
+   "position": "WR",
+   "nfl_team": "JAC",
+   "points": 0.0
+  },
+  "brycen tremayne": {
+   "name": "Brycen Tremayne",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "points": 0.0
+  },
+  "devaughn vele": {
+   "name": "Devaughn Vele",
+   "position": "WR",
+   "nfl_team": "NO",
+   "points": 7.2
+  },
+  "darius cooper": {
+   "name": "Darius Cooper",
+   "position": "WR",
+   "nfl_team": "PHI",
+   "points": 1.9
+  },
+  "zay flowers": {
+   "name": "Zay Flowers",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "points": 12.7
+  },
+  "dareke young": {
+   "name": "Dareke Young",
+   "position": "WR",
+   "nfl_team": "LV",
+   "points": 0.0
+  },
+  "isaiah williams": {
+   "name": "Isaiah Williams",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": 0.4
+  },
+  "kavontae turpin": {
+   "name": "KaVontae Turpin",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "points": 0.0
+  },
+  "laquon treadwell": {
+   "name": "Laquon Treadwell",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": 4.1
+  },
+  "jaylin lane": {
+   "name": "Jaylin Lane",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": null
+  },
+  "keandre lambertsmith": {
+   "name": "KeAndre Lambert-Smith",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": 6.2
+  },
+  "andrei iosivas": {
+   "name": "Andrei Iosivas",
+   "position": "WR",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "kevin austin": {
+   "name": "Kevin Austin Jr.",
+   "position": "WR",
+   "nfl_team": "FA",
+   "points": null
+  },
+  "velus jones": {
+   "name": "Velus Jones Jr.",
+   "position": "WR",
+   "nfl_team": "SEA",
+   "points": 2.9
+  },
+  "odell beckham": {
+   "name": "Odell Beckham Jr.",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "devonta smith": {
+   "name": "DeVonta Smith",
+   "position": "WR",
+   "nfl_team": "PHI",
+   "points": 20.5
+  },
+  "bo melton": {
+   "name": "Bo Melton",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": 0.0
+  },
+  "simi fehoko": {
+   "name": "Simi Fehoko",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "points": 0.0
+  },
+  "kc concepcion": {
+   "name": "KC Concepcion Jr.",
+   "position": "WR",
+   "nfl_team": "CLE",
+   "points": 7.9
+  },
+  "kyle williams": {
+   "name": "Kyle Williams",
+   "position": "WR",
+   "nfl_team": "NE",
+   "points": 2.2
+  },
+  "jauan jennings": {
+   "name": "Jauan Jennings",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "zavion thomas": {
+   "name": "Zavion Thomas",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "points": 5.5
+  },
+  "jalen nailor": {
+   "name": "Jalen Nailor",
+   "position": "WR",
+   "nfl_team": "LV",
+   "points": 1.9
+  },
+  "justin jefferson": {
+   "name": "Justin Jefferson",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "isaac teslaa": {
+   "name": "Isaac TeSlaa",
+   "position": "WR",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "zachariah branch": {
+   "name": "Zachariah Branch",
+   "position": "WR",
+   "nfl_team": "ATL",
+   "points": 0.9
+  },
+  "roman wilson": {
+   "name": "Roman Wilson",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": null
+  },
+  "greg dortch": {
+   "name": "Greg Dortch",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "points": 0.0
+  },
+  "jahdae walker": {
+   "name": "Jahdae Walker",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "points": 0.0
+  },
+  "demarcus robinson": {
+   "name": "Demarcus Robinson",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": null
+  },
+  "ladd mcconkey": {
+   "name": "Ladd McConkey",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": 2.7
+  },
+  "christian watson": {
+   "name": "Christian Watson",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": 9.4
+  },
+  "travis hunter": {
+   "name": "Travis Hunter",
+   "position": "WR",
+   "nfl_team": "JAC",
+   "points": 15.9
+  },
+  "bryce lance": {
+   "name": "Bryce Lance",
+   "position": "WR",
+   "nfl_team": "NO",
+   "points": 8.9
+  },
+  "drake london": {
+   "name": "Drake London",
+   "position": "WR",
+   "nfl_team": "ATL",
+   "points": 12.2
+  },
+  "nikko remigio": {
+   "name": "Nikko Remigio",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": -2.0
+  },
+  "xavier worthy": {
+   "name": "Xavier Worthy",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": 14.3
+  },
+  "ben skowronek": {
+   "name": "Ben Skowronek",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": null
+  },
+  "malik nabers": {
+   "name": "Malik Nabers",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "points": 28.5
+  },
+  "wandale robinson": {
+   "name": "Wan'Dale Robinson",
+   "position": "WR",
+   "nfl_team": "TEN",
+   "points": 5.2
+  },
+  "jameson williams": {
+   "name": "Jameson Williams",
+   "position": "WR",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "kendrick bourne": {
+   "name": "Kendrick Bourne",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "points": 9.7
+  },
+  "keenan allen": {
+   "name": "Keenan Allen",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": 16.2
+  },
+  "romeo doubs": {
+   "name": "Romeo Doubs",
+   "position": "WR",
+   "nfl_team": "NE",
+   "points": 11.2
+  },
+  "jaxon smithnjigba": {
+   "name": "Jaxon Smith-Njigba",
+   "position": "WR",
+   "nfl_team": "SEA",
+   "points": 25.4
+  },
+  "deebo samuel": {
+   "name": "Deebo Samuel Sr.",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": null
+  },
+  "jordan addison": {
+   "name": "Jordan Addison",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "jalen brooks": {
+   "name": "Jalen Brooks",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "points": 5.0
+  },
+  "keon coleman": {
+   "name": "Keon Coleman",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "points": 15.9
+  },
+  "jalen coker": {
+   "name": "Jalen Coker",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "points": 15.7
+  },
+  "garrett wilson": {
+   "name": "Garrett Wilson",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": 8.4
+  },
+  "barion brown": {
+   "name": "Barion Brown",
+   "position": "WR",
+   "nfl_team": "NO",
+   "points": 1.5
+  },
+  "elic ayomanor": {
+   "name": "Elic Ayomanor",
+   "position": "WR",
+   "nfl_team": "TEN",
+   "points": 1.3
+  },
+  "isaiah bond": {
+   "name": "Isaiah Bond",
+   "position": "WR",
+   "nfl_team": "CLE",
+   "points": 0.0
+  },
+  "jonathan mingo": {
+   "name": "Jonathan Mingo",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "points": 0.0
+  },
+  "khadarel hodge": {
+   "name": "KhaDarel Hodge",
+   "position": "WR",
+   "nfl_team": "FA",
+   "points": null
+  },
+  "omar cooper": {
+   "name": "Omar Cooper Jr.",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": 22.3
+  },
+  "jakobi meyers": {
+   "name": "Jakobi Meyers",
+   "position": "WR",
+   "nfl_team": "JAC",
+   "points": 13.3
+  },
+  "tyquan thornton": {
+   "name": "Tyquan Thornton",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": null
+  },
+  "dk metcalf": {
+   "name": "DK Metcalf",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": 20.3
+  },
+  "britain covey": {
+   "name": "Britain Covey",
+   "position": "WR",
+   "nfl_team": "PHI",
+   "points": 0.0
+  },
+  "troy franklin": {
+   "name": "Troy Franklin",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "points": 1.2
+  },
+  "tee higgins": {
+   "name": "Tee Higgins",
+   "position": "WR",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "jordan whittington": {
+   "name": "Jordan Whittington",
+   "position": "WR",
+   "nfl_team": "LAR",
+   "points": 0.0
+  },
+  "terry mclaurin": {
+   "name": "Terry McLaurin",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": 3.7
+  },
+  "joshua palmer": {
+   "name": "Joshua Palmer",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "points": 4.7
+  },
+  "tetairoa mcmillan": {
+   "name": "Tetairoa McMillan",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "points": 14.6
+  },
+  "kaden wetjen": {
+   "name": "Kaden Wetjen",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": 0.0
+  },
+  "arian smith": {
+   "name": "Arian Smith",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": null
+  },
+  "tay martin": {
+   "name": "Tay Martin",
+   "position": "WR",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "ted hurst": {
+   "name": "Ted Hurst III",
+   "position": "WR",
+   "nfl_team": "TB",
+   "points": 7.0
+  },
+  "calvin ridley": {
+   "name": "Calvin Ridley",
+   "position": "WR",
+   "nfl_team": "TEN",
+   "points": 0.0
+  },
+  "christopher blair": {
+   "name": "Chris Blair",
+   "position": "WR",
+   "nfl_team": "ATL",
+   "points": 0.0
+  },
+  "mack hollins": {
+   "name": "Mack Hollins",
+   "position": "WR",
+   "nfl_team": "NE",
+   "points": null
+  },
+  "kameron johnson": {
+   "name": "Kameron Johnson",
+   "position": "WR",
+   "nfl_team": "TB",
+   "points": 0.0
+  },
+  "demario douglas": {
+   "name": "DeMario Douglas",
+   "position": "WR",
+   "nfl_team": "NE",
+   "points": 19.6
+  },
+  "xavier smith": {
+   "name": "Xavier Smith",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": null
+  },
+  "tre tucker": {
+   "name": "Tre Tucker",
+   "position": "WR",
+   "nfl_team": "LV",
+   "points": 26.7
+  },
+  "kayshon boutte": {
+   "name": "Kayshon Boutte",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "points": 3.6
+  },
+  "jacob cowing": {
+   "name": "Jacob Cowing",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": 0.0
+  },
+  "caleb douglas": {
+   "name": "Caleb Douglas",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "cyrus allen": {
+   "name": "Cyrus Allen",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": 4.7
+  },
+  "denzel boston": {
+   "name": "Denzel Boston",
+   "position": "WR",
+   "nfl_team": "CLE",
+   "points": 2.5
+  },
+  "stefon diggs": {
+   "name": "Stefon Diggs",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": 16.4
+  },
+  "tre harris": {
+   "name": "Tre' Harris",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": null
+  },
+  "luther burden": {
+   "name": "Luther Burden III",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "points": 17.5
+  },
+  "alec pierce": {
+   "name": "Alec Pierce",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": null
+  },
+  "makai lemon": {
+   "name": "Makai Lemon",
+   "position": "WR",
+   "nfl_team": "PHI",
+   "points": 4.9
+  },
+  "ceedee lamb": {
+   "name": "CeeDee Lamb",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "points": 16.0
+  },
+  "carnell tate": {
+   "name": "Carnell Tate",
+   "position": "WR",
+   "nfl_team": "TEN",
+   "points": 19.0
+  },
+  "cj williams": {
+   "name": "CJ Williams",
+   "position": "WR",
+   "nfl_team": "JAC",
+   "points": null
+  },
+  "aj brown": {
+   "name": "A.J. Brown",
+   "position": "WR",
+   "nfl_team": "NE",
+   "points": 5.7
+  },
+  "kaden davis": {
+   "name": "Kaden Davis",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "points": null
+  },
+  "tez johnson": {
+   "name": "Tez Johnson",
+   "position": "WR",
+   "nfl_team": "TB",
+   "points": 2.7
+  },
+  "dohnte meyers": {
+   "name": "Dohnte Meyers",
+   "position": "WR",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "xavier hutchinson": {
+   "name": "Xavier Hutchinson",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "points": 3.0
+  },
+  "courtland sutton": {
+   "name": "Courtland Sutton",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "points": 3.9
+  },
+  "michael wilson": {
+   "name": "Michael Wilson",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "points": 7.2
+  },
+  "christopher godwin": {
+   "name": "Chris Godwin Jr.",
+   "position": "WR",
+   "nfl_team": "TB",
+   "points": 7.7
+  },
+  "malachi corley": {
+   "name": "Malachi Corley",
+   "position": "WR",
+   "nfl_team": "CLE",
+   "points": 0.0
+  },
+  "darnell mooney": {
+   "name": "Darnell Mooney",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "points": 2.0
+  },
+  "nico collins": {
+   "name": "Nico Collins",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "points": 10.9
+  },
+  "jackson meeks": {
+   "name": "Jackson Meeks",
+   "position": "WR",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "parker washington": {
+   "name": "Parker Washington",
+   "position": "WR",
+   "nfl_team": "JAC",
+   "points": 10.4
+  },
+  "myles price": {
+   "name": "Myles Price",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "montorie foster": {
+   "name": "Montorie Foster Jr.",
+   "position": "WR",
+   "nfl_team": "SEA",
+   "points": null
+  },
+  "michael evans": {
+   "name": "Mike Evans",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": 12.4
+  },
+  "jaylin noel": {
+   "name": "Jaylin Noel",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "points": 20.7
+  },
+  "brenen thompson": {
+   "name": "Brenen Thompson",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": null
+  },
+  "dezhaun stribling": {
+   "name": "De'Zhaun Stribling",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": null
+  },
+  "rashee rice": {
+   "name": "Rashee Rice",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": null
+  },
+  "konata mumpfield": {
+   "name": "Konata Mumpfield",
+   "position": "WR",
+   "nfl_team": "LAR",
+   "points": 3.5
+  },
+  "matthew golden": {
+   "name": "Matthew Golden",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": 22.4
+  },
+  "cody white": {
+   "name": "Cody White",
+   "position": "WR",
+   "nfl_team": "LV",
+   "points": 0.0
+  },
+  "germie bernard": {
+   "name": "Germie Bernard",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": 25.7
+  },
+  "jahan dotson": {
+   "name": "Jahan Dotson",
+   "position": "WR",
+   "nfl_team": "ATL",
+   "points": 17.7
+  },
+  "deion burks": {
+   "name": "Deion Burks",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": 6.8
+  },
+  "malik washington": {
+   "name": "Malik Washington",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "antonio williams": {
+   "name": "Antonio Williams",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": 8.0
+  },
+  "dj moore": {
+   "name": "DJ Moore",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "points": null
+  },
+  "olamide zaccheaus": {
+   "name": "Olamide Zaccheaus",
+   "position": "WR",
+   "nfl_team": "ATL",
+   "points": 0.0
+  },
+  "devin duvernay": {
+   "name": "Devin Duvernay",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "points": 0.0
+  },
+  "rashod bateman": {
+   "name": "Rashod Bateman",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "points": 0.0
+  },
+  "tom kennedy": {
+   "name": "Tom Kennedy",
+   "position": "WR",
+   "nfl_team": "DET",
+   "points": null
+  },
+  "joshua downs": {
+   "name": "Josh Downs",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": 8.7
+  },
+  "kalif raymond": {
+   "name": "Kalif Raymond",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "points": 3.8
+  },
+  "christopher bell": {
+   "name": "Chris Bell",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "rashid shaheed": {
+   "name": "Rashid Shaheed",
+   "position": "WR",
+   "nfl_team": "SEA",
+   "points": 11.8
+  },
+  "quentin johnston": {
+   "name": "Quentin Johnston",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": 6.7
+  },
+  "davante adams": {
+   "name": "Davante Adams",
+   "position": "WR",
+   "nfl_team": "LAR",
+   "points": 6.9
+  },
+  "marvin harrison": {
+   "name": "Marvin Harrison Jr.",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "points": 6.4
+  },
+  "jakobi lane": {
+   "name": "Ja'Kobi Lane",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "points": 8.0
+  },
+  "dontayvion wicks": {
+   "name": "Dontayvion Wicks",
+   "position": "WR",
+   "nfl_team": "PHI",
+   "points": 4.4
+  },
+  "jerry jeudy": {
+   "name": "Jerry Jeudy",
+   "position": "WR",
+   "nfl_team": "CLE",
+   "points": 10.9
+  },
+  "ryan flournoy": {
+   "name": "Ryan Flournoy",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "points": 17.0
+  },
+  "malachi fields": {
+   "name": "Malachi Fields",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "points": 3.9
+  },
+  "ryan miller": {
+   "name": "Ryan Miller",
+   "position": "WR",
+   "nfl_team": "NE",
+   "points": null
+  },
+  "jimmy horn": {
+   "name": "Jimmy Horn Jr.",
+   "position": "WR",
+   "nfl_team": "CLE",
+   "points": null
+  },
+  "ashton dulin": {
+   "name": "Ashton Dulin",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": null
+  },
+  "lajohntay wester": {
+   "name": "LaJohntay Wester",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "points": 0.0
+  },
+  "rome odunze": {
+   "name": "Rome Odunze",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "points": 6.9
+  },
+  "jamarr chase": {
+   "name": "Ja'Marr Chase",
+   "position": "WR",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "marvin mims": {
+   "name": "Marvin Mims Jr.",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "points": 3.3
+  },
+  "jeff caldwell": {
+   "name": "Jeff Caldwell",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": 0.0
+  },
+  "john metchie": {
+   "name": "John Metchie III",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "points": 4.4
+  },
+  "j michael sturdivant": {
+   "name": "J. Michael Sturdivant",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": 0.0
+  },
+  "treylon burks": {
+   "name": "Treylon Burks",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": 10.6
+  },
+  "gary jennings": {
+   "name": "Gary Jennings Jr.",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": null
+  },
+  "lewis bond": {
+   "name": "Lewis Bond",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "points": null
+  },
+  "tory horton": {
+   "name": "Tory Horton",
+   "position": "WR",
+   "nfl_team": "SEA",
+   "points": 2.3
+  },
+  "efton chism": {
+   "name": "Efton Chism III",
+   "position": "WR",
+   "nfl_team": "NE",
+   "points": 0.0
+  },
+  "tutu atwell": {
+   "name": "Tutu Atwell",
+   "position": "WR",
+   "nfl_team": "LAR",
+   "points": null
+  },
+  "dillon bell": {
+   "name": "Dillon Bell",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "devontez walker": {
+   "name": "Devontez Walker",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "points": 0.0
+  },
+  "liljordan humphrey": {
+   "name": "Lil'Jordan Humphrey",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "points": 0.0
+  },
+  "jalen mcmillan": {
+   "name": "Jalen McMillan",
+   "position": "WR",
+   "nfl_team": "TB",
+   "points": null
+  },
+  "anthony gould": {
+   "name": "Anthony Gould",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": 0.0
+  },
+  "hollywood brown": {
+   "name": "Hollywood Brown",
+   "position": "WR",
+   "nfl_team": "PHI",
+   "points": null
+  },
+  "kolbe katsis": {
+   "name": "Kolbe Katsis",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "points": null
+  },
+  "keshawn williams": {
+   "name": "Ke'Shawn Williams",
+   "position": "WR",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "malik mcclain": {
+   "name": "Malik McClain",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": 0.0
+  },
+  "sterling shepard": {
+   "name": "Sterling Shepard",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": null
+  },
+  "luke mccaffrey": {
+   "name": "Luke McCaffrey",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": 0.0
+  },
+  "nicholas westbrookikhine": {
+   "name": "Nick Westbrook-Ikhine",
+   "position": "WR",
+   "nfl_team": "IND",
+   "points": null
+  },
+  "david moore": {
+   "name": "David Moore",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "points": 3.7
+  },
+  "elijah moore": {
+   "name": "Elijah Moore",
+   "position": "WR",
+   "nfl_team": "PHI",
+   "points": 1.4
+  },
+  "jordan watkins": {
+   "name": "Jordan Watkins",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": 3.2
+  },
+  "jalen tolbert": {
+   "name": "Jalen Tolbert",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "points": null
+  },
+  "jalen cropper": {
+   "name": "Jalen Cropper",
+   "position": "WR",
+   "nfl_team": "NO",
+   "points": null
+  },
+  "jamaal pritchett": {
+   "name": "Jamaal Pritchett",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": null
+  },
+  "marquez valdesscantling": {
+   "name": "Marquez Valdes-Scantling",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": null
+  },
+  "mitch tinsley": {
+   "name": "Mitch Tinsley",
+   "position": "WR",
+   "nfl_team": "CIN",
+   "points": null
+  },
+  "alex bachman": {
+   "name": "Alex Bachman",
+   "position": "WR",
+   "nfl_team": "LAR",
+   "points": 0.0
+  },
+  "malik turner": {
+   "name": "Malik Turner",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": 0.0
+  },
+  "elijah sarratt": {
+   "name": "Elijah Sarratt",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "points": null
+  },
+  "brandin cooks": {
+   "name": "Brandin Cooks",
+   "position": "WR",
+   "nfl_team": "SF",
+   "points": 2.3
+  },
+  "jeshaun jones": {
+   "name": "Jeshaun Jones",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "points": null
+  },
+  "jaseem reed": {
+   "name": "Ja'seem Reed",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "points": null
+  },
+  "charlie jones": {
+   "name": "Charlie Jones",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "points": 6.6
+  },
+  "dalen cambre": {
+   "name": "Dalen Cambre",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "points": null
+  },
+  "cedric tillman": {
+   "name": "Cedric Tillman",
+   "position": "WR",
+   "nfl_team": "NO",
+   "points": 0.0
+  },
+  "trent sherfield": {
+   "name": "Trent Sherfield Sr.",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "points": null
+  },
+  "theo wease": {
+   "name": "Theo Wease Jr.",
+   "position": "WR",
+   "nfl_team": "LAC",
+   "points": 4.1
+  },
+  "tim patrick": {
+   "name": "Tim Patrick",
+   "position": "WR",
+   "nfl_team": "NYJ",
+   "points": 2.5
+  },
+  "deven thompkins": {
+   "name": "Deven Thompkins",
+   "position": "WR",
+   "nfl_team": "LV",
+   "points": null
+  },
+  "reggie virgil": {
+   "name": "Reggie Virgil",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "points": 0.0
+  },
+  "van jefferson": {
+   "name": "Van Jefferson",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "points": null
+  },
+  "brandon smith": {
+   "name": "Brandon Smith",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": 0.0
+  },
+  "savion williams": {
+   "name": "Savion Williams",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": 8.1
+  },
+  "juice wells": {
+   "name": "Juice Wells Jr.",
+   "position": "WR",
+   "nfl_team": "ATL",
+   "points": 0.0
+  },
+  "andrew armstrong": {
+   "name": "Andrew Armstrong",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": 2.3
+  },
+  "coleman owen": {
+   "name": "Coleman Owen",
+   "position": "WR",
+   "nfl_team": "GB",
+   "points": 0.0
+  },
+  "justin watson": {
+   "name": "Justin Watson",
+   "position": "WR",
+   "nfl_team": "KC",
+   "points": 0.0
+  },
+  "brandon johnson": {
+   "name": "Brandon Johnson",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "points": 0.0
+  },
+  "irvin charles": {
+   "name": "Irvin Charles",
+   "position": "WR",
+   "nfl_team": "SEA",
+   "points": 0.0
+  }
+ }
+}
