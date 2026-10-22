@@ -347,15 +347,21 @@ def test_auction_review():
 def test_fetch_draft_falls_back_when_stats_filter_rejected():
     calls = []
 
-    def fake(params, cookies, headers=None):
-        calls.append((params, headers))
+    def fake(params, cookies, headers=None, base=None):
+        calls.append((params, headers, base))
         if ("view", "mDraftDetail") in params:
-            return {"scoringPeriodId": 7, "draftDetail": {"picks": [{"playerId": 3, "teamId": 2, "bidAmount": 60}]}}
-        if headers and "filterStatsForTopScoringPeriodIds" in headers["X-Fantasy-Filter"]:
+            return {"scoringPeriodId": 7, "draftDetail": {"picks": [{"playerId": 3, "teamId": 2, "bidAmount": 60},
+                                                                    {"playerId": 9, "teamId": 2, "bidAmount": 1}]}}
+        if base:   # players_wl: plain list, names only
+            return [{"id": 9, "fullName": "Josh Downs", "defaultPositionId": 3, "proTeamId": 11}]
+        if ("view", "kona_playercard") in params:
             raise espn_sync.EspnError("ESPN HTTP 400")
         return {"players": [{"player": {"id": 3, "fullName": "Bijan Robinson", "defaultPositionId": 2, "proTeamId": 1}}]}
 
     raw = espn_draft.fetch_draft(None, fake)
-    assert raw["players"][0]["player"]["fullName"] == "Bijan Robinson"
-    assert raw["problems"] and "stats filter" in raw["problems"][0]
-    assert all(("scoringPeriodId", "7") in p for p, h in calls if h)
+    names = {(x.get("player") or x)["fullName"] for x in raw["players"]}
+    assert names == {"Bijan Robinson", "Josh Downs"}
+    assert any("kona_playercard" in p for p in raw["problems"])
+    assert all(("scoringPeriodId", "7") in p for p, h, b in calls if h and not b)
+    d = espn_draft.normalize_draft(raw, "2026-10-22T15:00:00Z")
+    assert [x["name"] for x in d["picks"]] == ["Bijan Robinson", "Josh Downs"]

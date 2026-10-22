@@ -86,9 +86,12 @@ def redact(text: str, secrets: list[str]) -> str:
     return re.sub(r"[A-Za-z0-9%+/=]{40,}", "[redacted]", text)
 
 
+PLAYERS_BASE = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{season}/players"
+
+
 def fetch(params: list[tuple[str, str]], cookies: dict[str, str] | None, headers: dict | None = None,
-          timeout: int = 30) -> dict:
-    url = BASE.format(season=SEASON, league=LEAGUE_ID) + "?" + urllib.parse.urlencode(params)
+          timeout: int = 30, base: str | None = None):
+    url = (base or BASE).format(season=SEASON, league=LEAGUE_ID) + "?" + urllib.parse.urlencode(params)
     h = {"Accept": "application/json", "User-Agent": "fantasy-football-db/1.0 (read-only)"}
     if cookies and cookies.get("espn_s2") and cookies.get("SWID"):
         h["Cookie"] = f"espn_s2={cookies['espn_s2']}; SWID={cookies['SWID']}"
@@ -102,7 +105,7 @@ def fetch(params: list[tuple[str, str]], cookies: dict[str, str] | None, headers
                 if exc.code in (401, 403) else "")
         raise EspnError(f"ESPN HTTP {exc.code}{hint}") from None
     try:
-        return json.loads(body)
+        return json.loads(body)  # dict for league views; list for the players endpoint
     except json.JSONDecodeError:
         raise EspnError("ESPN returned non-JSON (often an expired/invalid espn_s2 cookie)") from None
 

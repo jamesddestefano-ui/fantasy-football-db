@@ -62,22 +62,34 @@ def fetch_draft(cookies: dict | None, fetcher=espn_sync.fetch) -> dict:
     players, problems = [], []
     for k in range(0, len(ids), 50):
         chunk = ids[k:k + 50]
-        variants = [  # most detailed first; fall back if ESPN rejects a filter
-            {"players": {"filterIds": {"value": chunk}, "limit": len(chunk),
-                         "filterStatsForTopScoringPeriodIds": {"value": 2, "additionalValue": [f"00{SEASON}", f"10{SEASON}"]}}},
-            {"players": {"filterIds": {"value": chunk}, "limit": len(chunk)}},
+        stats = {"value": 17, "additionalValue": [f"00{SEASON}", f"10{SEASON}"]}
+        variants = [  # ESPN's player card first (made for id lookups), then lighter fallbacks
+            ("kona_playercard", {"players": {"filterIds": {"value": chunk}, "filterStatsForTopScoringPeriodIds": stats}}),
+            ("kona_player_info", {"players": {"filterIds": {"value": chunk}, "limit": len(chunk),
+                                              "filterStatsForTopScoringPeriodIds": stats}}),
         ]
-        for i, flt in enumerate(variants):
+        got = []
+        for view, flt in variants:
             try:
-                page = fetcher([("view", "kona_player_info"), ("scoringPeriodId", period)], cookies,
-                               {"X-Fantasy-Filter": json.dumps(flt)})
-                players.extend(page.get("players") or [])
-                if i:
-                    problems.append("season points unavailable for some players (stats filter rejected)")
-                break
+                page = fetcher([("view", view), ("scoringPeriodId", period)], cookies, {"X-Fantasy-Filter": json.dumps(flt)})
+                got = (page or {}).get("players") or []
             except espn_sync.EspnError as exc:
-                if i == len(variants) - 1:
-                    problems.append(f"player lookup: {exc}")
+                problems.append(f"{view}: {exc}")
+                continue
+            if got:
+                break
+        players.extend(got)
+    found = {(it.get("player") or it).get("id") for it in players if isinstance(it, dict)}
+    if len(found & set(ids)) < len(ids):
+        # names for anyone still missing: ESPN's season player list (one request, no stats)
+        try:
+            allp = fetcher([("view", "players_wl")], cookies, {"X-Fantasy-Filter": json.dumps({"filterActive": {"value": True}})},
+                           base=espn_sync.PLAYERS_BASE)
+            extra = [x for x in (allp if isinstance(allp, list) else []) if x.get("id") in set(ids) - found]
+            players.extend({"player": x} for x in extra)
+            problems.append(f"season points missing for {len(extra)} player(s) (names from player list)")
+        except Exception as exc:
+            problems.append(f"players_wl: {type(exc).__name__}")
     return {"league": league, "players": players, "problems": sorted(set(problems))}
 
 
@@ -216,6 +228,10 @@ def main(argv=None) -> int:
         draft = normalize_draft(raw, now)
         for prob in raw.get("problems") or []:
             print(f"::warning title=ESPN draft::{prob}")
+        named = sum(1 for p in draft["picks"] if p["name"])
+        if named < len(draft["picks"]):
+            print(f"::warning title=ESPN draft::{len(draft['picks']) - named} pick(s) without a player name; "
+                  f"lookup returned {len(raw.get('players') or [])} player rows")
         if not draft["picks"]:
             print(f"::error title=ESPN draft::no picks returned (draftDetail keys: {sorted(raw['league'].get('draftDetail') or {})})")
             return 1
