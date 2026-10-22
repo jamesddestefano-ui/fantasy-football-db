@@ -19,6 +19,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+OUTBID = "FAILED_INVALIDPLAYERSOURCE"
+
+
 def _pct(values: list[float], q: float) -> float | None:
     if not values:
         return None
@@ -32,19 +35,23 @@ def build(root: Path = ROOT) -> dict:
     tx = json.loads((root / "data" / "espn_api" / "transactions.json").read_text())
     snap = json.loads((root / "data" / "espn_api" / "latest.json").read_text())
     waivers = [t for t in tx["transactions"] if t["type"] == "WAIVER" and t["adds"]]
-    # group by (scoring period, player) so losing bids sit next to the winner
+    # group by (waiver run, player) so losing bids sit next to the winner. Only FAILED_INVALIDPLAYERSOURCE
+    # (player already awarded = outbid) counts as a losing bid; PENDING/CANCELED and other failures
+    # (e.g. the bidder's drop was gone) are not evidence of the market price.
     groups = defaultdict(list)
     for t in waivers:
+        if t["status"] in ("PENDING", "CANCELED") or not t["processed_at"]:
+            continue
         a = t["adds"][0]
-        groups[(t["scoring_period"], a["espn_id"])].append(t)
+        groups[(t["processed_at"][:13], a["espn_id"])].append(t)
     claims = []
     for (_, _), rows in groups.items():
         win = next((r for r in rows if r["status"] == "EXECUTED"), None)
         if not win:
             continue
         a = win["adds"][0]
-        losers = sorted((r["bid"] for r in rows if r is not win and r["bid"] is not None and r["status"] != "EXECUTED"),
-                        reverse=True)
+        losers = sorted((r["bid"] for r in rows if r is not win and r["bid"] is not None
+                         and r["status"] == OUTBID), reverse=True)
         claims.append({"processed_at": win["processed_at"], "week": win["scoring_period"], "player": a["name"],
                        "position": a["position"], "nfl_team": a["nfl_team"], "team": win["team"],
                        "team_id": win["team_id"], "winning_bid": win["bid"], "losing_bids": losers,
@@ -64,7 +71,7 @@ def build(root: Path = ROOT) -> dict:
                            "max": max(bids) if bids else None}
     top = sorted([c for c in claims if c["winning_bid"]], key=lambda c: -c["winning_bid"])[:15]
     mine = [c for c in claims if c["team_id"] == 2]
-    mine_lost = [t for t in waivers if t["team_id"] == 2 and t["status"] != "EXECUTED"]
+    mine_lost = [t for t in waivers if t["team_id"] == 2 and str(t["status"]).startswith("FAILED")]
     over = [c["overpay_vs_runner_up"] for c in claims if c["overpay_vs_runner_up"] is not None]
     return {
         "league": "mongo", "observed_at": tx["observed_at"],

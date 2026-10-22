@@ -237,8 +237,13 @@ def raw_with_transactions():
         {"id": "t1", "type": "WAIVER", "status": "EXECUTED", "teamId": 2, "bidAmount": 8, "scoringPeriodId": 7,
          "processDate": _ms("2026-10-21T08:08:00Z"),
          "items": [{"type": "ADD", "playerId": murray, "toTeamId": 2}, {"type": "DROP", "playerId": andrews, "fromTeamId": 2}]},
-        {"id": "t2", "type": "WAIVER", "status": "FAILED_BIDTOOLOW", "teamId": 5, "bidAmount": 5, "scoringPeriodId": 7,
+        {"id": "t2", "type": "WAIVER", "status": "FAILED_INVALIDPLAYERSOURCE", "teamId": 5, "bidAmount": 5, "scoringPeriodId": 7,
          "processDate": _ms("2026-10-21T08:08:00Z"), "items": [{"type": "ADD", "playerId": murray, "toTeamId": 5}]},
+        # stale pending and other-failure bids must not count as the market
+        {"id": "t5", "type": "WAIVER", "status": "PENDING", "teamId": 2, "bidAmount": 30, "scoringPeriodId": 7,
+         "processDate": _ms("2026-10-20T12:00:00Z"), "items": [{"type": "ADD", "playerId": murray, "toTeamId": 2}]},
+        {"id": "t6", "type": "WAIVER", "status": "FAILED_PLAYERALREADYDROPPED", "teamId": 9, "bidAmount": 20,
+         "scoringPeriodId": 7, "processDate": _ms("2026-10-21T08:08:00Z"), "items": [{"type": "ADD", "playerId": murray, "toTeamId": 9}]},
         # an ESPN move the repository has not ingested
         {"id": "t3", "type": "FREEAGENT", "status": "EXECUTED", "teamId": 2, "bidAmount": 0, "scoringPeriodId": 7,
          "processDate": _ms("2026-10-22T14:00:00Z"),
@@ -265,7 +270,7 @@ def test_transactions_normalized_named_and_deduped():
     snap = espn_sync.normalize(raw, "2026-10-22T15:00:00Z")
     tx = espn_sync.normalize_transactions(raw, snap)
     rows = {t["id"]: t for t in tx["transactions"]}
-    assert set(rows) == {"t1", "t2", "t3"}                     # ROSTER skipped, t1 once
+    assert set(rows) == {"t1", "t2", "t3", "t5", "t6"}         # ROSTER skipped, t1 once
     assert rows["t1"]["drops"][0]["name"] == "Mark Andrews"     # resolved via player lookup
     assert rows["t1"]["processed_at"] == "2026-10-21T08:08:00Z"
     assert rows["t2"]["bid"] == 5 and rows["t2"]["team"] == "Rival"

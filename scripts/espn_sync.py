@@ -182,7 +182,8 @@ def _player(p: dict, period: int) -> dict:
 
 
 def _team_name(t: dict) -> str:
-    return t.get("name") or f"{t.get('location', '')} {t.get('nickname', '')}".strip() or t.get("abbrev") or str(t.get("id"))
+    name = (t.get("name") or f"{t.get('location', '')} {t.get('nickname', '')}").strip()
+    return " ".join(name.split()) or t.get("abbrev") or str(t.get("id"))
 
 
 def _roster(team: dict, period: int, actual: bool = False) -> list[dict]:
