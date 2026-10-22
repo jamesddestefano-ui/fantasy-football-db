@@ -3,13 +3,13 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-22T022000Z",
-  "generated_at": "2026-10-22T02:10:00Z",
-  "completed_at": "2026-10-22T02:20:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-22T061500Z",
+  "generated_at": "2026-10-22T06:10:00Z",
+  "completed_at": "2026-10-22T06:15:00Z",
   "week": 7,
   "season": 2026,
-  "run_type": "hourly",
-  "as_of": "2026-10-22T02:20:00Z",
+  "run_type": "overnight",
+  "as_of": "2026-10-22T06:15:00Z",
   "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "OK", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {
@@ -24,25 +24,22 @@
     "free_agent_scan_note": "Hurts and McKee availability UNKNOWN; not FREE_AGENT_CONFIRMED."
   },
   "player_signals": [
-    {"player": "Jameis Winston", "team": "NYG", "slot": "rostered QB", "status": "CONFIRMED_FACT", "summary": "John Harbaugh announced Wednesday afternoon that J.J. McCarthy will start Week 7 at HOU over Winston. Winston returns to backup. Confirmed by team/Harbaugh (The Athletic, NFL.com, ESPN).", "mongo_impact": "Rostered QB benched; will not start Week 7. High urgency for QB evaluation/waiver (Stroud/Murray still WAIVERS_CONFIRMED per prior).", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.nytimes.com/athletic/7704945/2026/10/21/new-york-giants-j-j-mccarthy-jameis-winston/", "https://www.nfl.com/news/giants-start-jj-mccarthy-quarterback-week-7-texans", "https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week"]},
-    {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "ATTRIBUTED_REPORT", "summary": "Judkins (ankle) limited in Wednesday practice. Monken optimistic he plays Week 7 at TEN. Sampson (knee, IR) also limited/optimistic.", "mongo_impact": "Handcuff value reduced if Judkins plays; monitor Thursday/Friday reports.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.fantasypros.com/nfl/news/615064/quinshon-judkins-ankle-optimistic-week-7.php", "https://x.com/RotoWireNFL/status/2112996086142894356"]},
+    {"player": "Jameis Winston", "team": "NYG", "slot": "rostered QB", "status": "CONFIRMED_FACT", "summary": "John Harbaugh announced Wednesday afternoon that J.J. McCarthy will start Week 7 at HOU over Winston. Winston returns to backup. Confirmed by team/Harbaugh (The Athletic, NFL.com, ESPN). No new overnight developments.", "mongo_impact": "Rostered QB benched; will not start Week 7. High urgency for QB evaluation/waiver (Stroud/Murray still WAIVERS_CONFIRMED per prior).", "urgency": "HIGH", "availability": "OWNED", "sources": ["https://www.nytimes.com/athletic/7704945/2026/10/21/new-york-giants-j-j-mccarthy-jameis-winston/", "https://www.nfl.com/news/giants-start-jj-mccarthy-quarterback-week-7-texans", "https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week"]},
+    {"player": "Jaleel McLaughlin / Audric Estime", "team": "CLE", "slot": "bench", "status": "ATTRIBUTED_REPORT", "summary": "Judkins (ankle) limited in Wednesday practice. Monken optimistic he plays Week 7 at TEN. Sampson (knee, IR) also limited/optimistic. No Thursday practice reports yet (as of 2:15 AM ET).", "mongo_impact": "Handcuff value reduced if Judkins plays; monitor Thursday/Friday reports.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.fantasypros.com/nfl/news/615064/quinshon-judkins-ankle-optimistic-week-7.php", "https://x.com/RotoWireNFL/status/2112996086142894356"]},
     {"player": "CeeDee Lamb", "team": "DAL", "slot": "rostered WR", "status": "CONFIRMED_FACT", "summary": "No injury designation for Week 7. No practice issues noted.", "mongo_impact": "Low.", "urgency": "LOW", "availability": "OWNED", "sources": []},
-    {"player": "Mark Andrews", "team": "BAL", "slot": "rostered TE", "status": "CONFIRMED_FACT", "summary": "Full participation Wednesday (hand). No new major designation.", "mongo_impact": "Low.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Mark Andrews", "team": "BAL", "slot": "rostered TE", "status": "CONFIRMED_FACT", "summary": "Full participation Wednesday (hand). No new major designation. No overnight change.", "mongo_impact": "Low.", "urgency": "LOW", "availability": "OWNED", "sources": []},
     {"player": "Kendre Miller / Saints D/ST", "team": "NO", "slot": "rostered", "status": "CONFIRMED_FACT", "summary": "Week 7 Steelers-Saints in Paris at 9:30 AM ET Sunday. Lineup slots lock early.", "mongo_impact": "Set lineup decisions before 9:30 AM ET Sunday.", "urgency": "MEDIUM", "availability": "OWNED", "sources": []}
   ],
   "waiver_signals": [
     {"player": "C.J. Stroud / Kyler Murray", "status": "CONFIRMED_FACT", "availability": "WAIVERS_CONFIRMED", "summary": "On waivers per authenticated live ESPN check ~8:09 AM ET Oct 20. Not re-checked this run. Not FREE_AGENT_CONFIRMED.", "recommendation": "CONSIDER_QB_CLAIM (recommendation only; James decides; no ESPN action)"}
   ],
   "lineup_signals": [{"type": "early_lock", "status": "CONFIRMED_FACT", "summary": "Miller and Saints D/ST lock at 9:30 AM ET Sunday (Paris). Lineup is James's call; no ESPN action."}],
-  "expert_signals": [{"player": "Jameis Winston / J.J. McCarthy", "status": "CONFIRMED_FACT", "summary": "Harbaugh confirmed McCarthy starts Week 7. Winston benched. Prior attributed report upgraded to official.", "sources": ["https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week"]}],
-  "material_changes": [
-    {"type": "player_status", "player": "Jameis Winston", "description": "Upgrade from attributed report of planned McCarthy start to official Harbaugh confirmation that McCarthy starts Week 7, Winston benched.", "status": "CONFIRMED_FACT"},
-    {"type": "injury_practice", "player": "Quinshon Judkins", "description": "Limited in Wednesday practice; Monken optimistic for Week 7 return.", "status": "ATTRIBUTED_REPORT"}
-  ],
-  "no_material_change": false,
-  "summary": "10:20 PM ET Wednesday hourly (Week 7 prep). Material changes: Harbaugh confirmed J.J. McCarthy starts over Winston vs. Texans (official). Judkins limited Wednesday practice, Monken optimistic. Stroud/Murray still WAIVERS_CONFIRMED per Oct 20 ESPN. Miller/Saints D/ST early Paris lock. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-21T162500Z",
-  "prior_completed_at": "2026-10-21T16:25:00Z",
-  "prior_commit": "263e34d9ac6558cac1b060ffb85fea8c8d2de25a",
-  "source_status_notes": "Official team announcement (Harbaugh) on McCarthy start. Beat/X confirming. Judkins limited practice confirmed by reports. Limited experts. No analytics. Roster context carried from fc7ded0. No ownership changes."
+  "expert_signals": [{"player": "Jameis Winston / J.J. McCarthy", "status": "CONFIRMED_FACT", "summary": "Harbaugh confirmed McCarthy starts Week 7. Winston benched. Prior attributed report upgraded to official. No new overnight reports.", "sources": ["https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week"]}],
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "2:15 AM ET Thursday overnight (Week 7 prep). No material changes since prior 10:20 PM ET Pulse. Winston remains benched (McCarthy confirmed starter). Judkins limited Wednesday, optimistic; Thursday practice reports not yet out. Stroud/Murray still WAIVERS_CONFIRMED per Oct 20 ESPN. Miller/Saints D/ST early Paris lock. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-22T022000Z",
+  "prior_completed_at": "2026-10-22T02:20:00Z",
+  "prior_commit": "2f577b341cc6d0a53507712ab8e5ac41c088373a",
+  "source_status_notes": "Wednesday practice reports confirmed via NFL.com/beat/X. No Thursday reports yet (early AM). Limited experts. No analytics. Roster context carried from fc7ded0. No ownership changes. Overnight scan found no new Mongo-relevant facts."
 }
