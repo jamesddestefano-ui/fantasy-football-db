@@ -35,6 +35,13 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: python scripts/espn_sync.py
 
+      - name: 2026 auction results + value review (for the 2027 draft)
+        continue-on-error: true
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python scripts/espn_draft.py
+
       - name: Reconcile with repository + FAAB market
         run: |
           python scripts/espn_reconcile.py > "$RUNNER_TEMP/reconcile.md"
@@ -45,7 +52,7 @@ jobs:
         run: |
           git config user.name "mongo-espn[bot]"
           git config user.email "mongo-espn@users.noreply.github.com"
-          for p in data/espn_api intelligence/reconcile intelligence/faab_market.json intelligence/faab_market.md; do
+          for p in data/espn_api intelligence/reconcile intelligence/draft intelligence/faab_market.json intelligence/faab_market.md; do
             if [ -e "$p" ]; then git add -A "$p"; fi
           done
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi

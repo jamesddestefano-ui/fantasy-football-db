@@ -304,3 +304,41 @@ def test_faab_market_pairs_winner_with_losing_bid(tmp_path):
     assert c["overpay_vs_runner_up"] == 3 and m["by_position"]["QB"]["median"] == 8
     assert m["budgets"][0]["remaining"] == 90 and m["james"]["won"] == 1
     assert "Kyler Murray" in faab_market.to_markdown(m)
+
+
+# ------------------------------------------------------------ 2026 auction review (for the 2027 draft)
+
+import espn_draft  # noqa: E402
+
+
+def _season_pl(pid, name, pos, team, actual, proj=None):
+    stats = [{"seasonId": 2026, "scoringPeriodId": 0, "statSplitTypeId": 0, "statSourceId": 0, "appliedTotal": actual}]
+    if proj is not None:
+        stats.append({"seasonId": 2026, "scoringPeriodId": 0, "statSplitTypeId": 0, "statSourceId": 1, "appliedTotal": proj})
+    stats.append({"seasonId": 2026, "scoringPeriodId": 6, "statSplitTypeId": 1, "statSourceId": 0, "appliedTotal": 99})
+    return {"player": {"id": pid, "fullName": name, "defaultPositionId": pos, "proTeamId": team, "stats": stats}}
+
+
+def test_auction_review():
+    raw = {"league": {
+        "settings": {"draftSettings": {"auctionBudget": 200}},
+        "teams": [{"id": 2, "name": "Tom Brady of Ass ", "abbrev": "JDD"}, {"id": 5, "name": "Rival", "abbrev": "RIV"}],
+        "draftDetail": {"drafted": True, "picks": [
+            {"overallPickNumber": 1, "playerId": 3, "teamId": 2, "bidAmount": 60, "nominatingTeamId": 5},
+            {"overallPickNumber": 2, "playerId": 6, "teamId": 5, "bidAmount": 45, "nominatingTeamId": 2},
+            {"overallPickNumber": 3, "playerId": 7, "teamId": 2, "bidAmount": 1, "nominatingTeamId": 2},
+            {"overallPickNumber": 4, "playerId": 4, "teamId": 5, "bidAmount": 2, "nominatingTeamId": 5},
+        ]}},
+        "players": [_season_pl(3, "Bijan Robinson", 2, 1, 140.5, 300), _season_pl(6, "CeeDee Lamb", 3, 6, 70.0),
+                    _season_pl(7, "Tetairoa McMillan", 3, 29, 95.0), _season_pl(4, "Jaleel McLaughlin", 2, 7, 30.0)]}
+    d = espn_draft.normalize_draft(raw, "2026-10-22T15:00:00Z")
+    assert [p["price"] for p in d["picks"]] == [60, 45, 1, 2] and d["auction_budget"] == 200
+    assert d["picks"][0]["season_points"] == 140.5 and d["picks"][0]["season_proj"] == 300   # season, not week
+    assert d["picks"][0]["team"] == "Tom Brady of Ass"
+    r = espn_draft.build_review(d)
+    assert r["best_buys"][0]["name"] == "Tetairoa McMillan"
+    assert r["worst_buys"][0]["name"] == "CeeDee Lamb"
+    me = r["james"]["profile"]
+    assert me["spent"] == 61 and me["one_dollar_players"] == 1 and me["position_split"]["RB"] == 60
+    md = espn_draft.to_markdown(r)
+    assert "James's auction" in md and "Bijan Robinson $60" in md
