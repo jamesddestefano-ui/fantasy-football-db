@@ -182,13 +182,19 @@ def build_board(week: int, root: Path = ROOT, now: datetime | None = None) -> di
         week_gain = (proj - starter_proj.get(pos, 0.0)) if proj is not None else None
         wr = f.get("waiver_rank")
         flex_list = (f.get("waiver_list") or "FLX") == "FLX"
-        if not ((ros_gain and ros_gain > 0) or (week_gain and week_gain > 1.0) or (wr and wr <= 15)):
+        ros = f.get("ros_rank")
+        # Beating James's worst bench body is not enough: a target must be a real asset
+        # (top-150 ROS FLEX), help this week's lineup, or be on FantasyPros' waiver list.
+        relevant_ros = bool(ros_gain and ros_gain > 0 and ros and ros <= 150)
+        if not (relevant_ros or (week_gain and week_gain > 1.0) or (wr and wr <= 15)):
             continue
         if not flex_list and not (week_gain and week_gain > 0):
             tier = "STREAM"
         else:
-            tier = ("HIGH" if (ros_gain or 0) >= 40 or (week_gain or 0) >= 6 or (flex_list and wr and wr <= 5)
-                    else "MEDIUM" if (ros_gain or 0) >= 15 or (week_gain or 0) >= 3 or (flex_list and wr and wr <= 12)
+            tier = ("HIGH" if (week_gain or 0) >= 6 or (flex_list and wr and wr <= 5)
+                    or (ros and ros <= 60 and (ros_gain or 0) >= 40)
+                    else "MEDIUM" if (week_gain or 0) >= 3 or (flex_list and wr and wr <= 12)
+                    or (ros and ros <= 100 and (ros_gain or 0) >= 15)
                     else "LOW")
         availability = ({"FREEAGENT": "ESPN_FREE_AGENT"}.get(a["status"], f"ESPN_{a['status']}") if a else "UNKNOWN")
         targets.append({

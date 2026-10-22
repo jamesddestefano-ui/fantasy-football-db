@@ -200,6 +200,8 @@ def test_clean_cookie_handles_pasted_devtools_rows():
     swid = "{1A2B3C4D-1111-2222-3333-444455556666}"
     assert espn_sync.clean_cookie(f" SWID\t{swid}\t.espn.com ", "SWID") == swid
     assert espn_sync.clean_cookie(None, "SWID") == ""
+    assert espn_sync.clean_cookie(swid[1:-1], "SWID") == swid
+    assert espn_sync.clean_cookie("%7B" + swid[1:-1] + "%7D", "SWID") == swid
 
 
 def test_redact_never_leaks_cookie():

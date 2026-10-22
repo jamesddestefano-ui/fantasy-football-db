@@ -25,31 +25,13 @@ Changes: start Ryan Flournoy; bench Josh Downs
 
 | Pri | Player | Pos | Proj | FP waiver # | ROS | ESPN % | Replaces | Availability |
 |---|---|---|---|---|---|---|---|---|
-| HIGH | Emmett Johnson (KC) | RB | 5.35 | 20 | 136 | 14% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Jaylen Wright (MIA) | RB | 4.74 | 34 | 171 | 5% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Chris Rodriguez Jr. (JAC) | RB | 0 | — | 173 | 12% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Ray Davis (BUF) | RB | 0 | — | 193 | 3% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Tank Bigsby (PHI) | RB | 0 | — | 200 | 7% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Austin Ekeler (WAS) | RB | 0 | — | 204 | 3% | Audric Estime | ESPN_WAIVERS |
-| HIGH | Sean Tucker (TB) | RB | 2.28 | — | 208 | 0% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Devin Singletary (NYG) | RB | 4.89 | — | 210 | 2% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Najee Harris (FA) | RB | 0 | — | 215 | 5% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Kaleb Johnson (GB) | RB | 0 | — | 219 | 2% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | George Holani (SEA) | RB | 3.69 | — | 221 | 7% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Nicholas Singleton (TEN) | RB | 0 | — | 222 | 0% | Audric Estime | ESPN_FREE_AGENT |
-| HIGH | Kaytron Allen (MIA) | RB | 0 | — | 229 | 0% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Bam Knight (ARI) | RB | 0 | 29 | 249 | 1% | Audric Estime | ESPN_FREE_AGENT |
 | MEDIUM | Dontayvion Wicks (PHI) | WR | 9.23 | — | 88 | 34% | Ryan Flournoy | ESPN_FREE_AGENT |
-| MEDIUM | Juwan Johnson (NO) | TE | 8.77 | — | 103 | 72% | Tyler Higbee | ESPN_FREE_AGENT |
-| MEDIUM | Chig Okonkwo (WAS) | TE | 0 | — | 115 | 5% | Tyler Higbee | ESPN_FREE_AGENT |
-| MEDIUM | Jordan James (SF) | RB | 0 | — | 236 | 1% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Ty Johnson (BUF) | RB | 0 | — | 237 | 3% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Will Shipley (PHI) | RB | 0 | — | 239 | 7% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Demond Claiborne (MIN) | RB | 0 | — | 240 | 0% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Isaiah Davis (NYJ) | RB | 0 | — | 242 | 2% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Chris Brooks (GB) | RB | 0 | — | 244 | 3% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Sione Vaki (DET) | RB | 4.47 | — | 246 | 1% | Audric Estime | ESPN_FREE_AGENT |
-| MEDIUM | Emari Demercado (DAL) | RB | 0 | — | 254 | 0% | Audric Estime | ESPN_FREE_AGENT |
+| LOW | Emmett Johnson (KC) | RB | 5.35 | 20 | 136 | 14% | Audric Estime | ESPN_FREE_AGENT |
+| LOW | Juwan Johnson (NO) | TE | 8.77 | — | 103 | 72% | Tyler Higbee | ESPN_FREE_AGENT |
+| LOW | Chig Okonkwo (WAS) | TE | 0 | — | 115 | 5% | Tyler Higbee | ESPN_FREE_AGENT |
+| LOW | Mark Andrews (BAL) | TE | 8.21 | — | 124 | 70% | Tyler Higbee | ESPN_FREE_AGENT |
+| LOW | Jake Ferguson (DAL) | TE | 5.97 | — | 132 | 57% | Tyler Higbee | ESPN_FREE_AGENT |
+| LOW | Dallas Cowboys (DAL) | D/ST | 7.97 | — | — | 14% | Saints D/ST | ESPN_FREE_AGENT |
 
 ## Week 6 (ESPN league scoring)
 

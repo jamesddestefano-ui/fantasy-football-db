@@ -70,8 +70,12 @@ def clean_cookie(raw: str | None, name: str) -> str:
     tokens = [t for t in tokens if t.lower() != name.lower()]
     if tokens and "=" in tokens[0] and tokens[0].split("=", 1)[0].lower() == name.lower():
         tokens[0] = tokens[0].split("=", 1)[1]
-    value = tokens[0] if tokens else ""
-    return value.strip().strip('"').strip(";")
+    value = (tokens[0] if tokens else "").strip().strip('"').strip(";")
+    if name.upper() == "SWID":
+        value = value.replace("%7B", "{").replace("%7b", "{").replace("%7D", "}").replace("%7d", "}")
+        if re.fullmatch(r"[0-9A-Fa-f-]{36}", value):
+            value = "{" + value + "}"
+    return value
 
 
 def redact(text: str, secrets: list[str]) -> str:
