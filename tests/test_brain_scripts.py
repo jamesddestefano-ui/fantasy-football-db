@@ -190,3 +190,20 @@ def test_record_decision_rejects_bad_confidence(tmp_path):
 
 def test_repository_ledger_still_materializes():
     assert len(materialize_decisions(ROOT / "learning" / "decision_ledger.jsonl")) >= 6
+
+
+def test_clean_cookie_handles_pasted_devtools_rows():
+    s2 = "AEBkmZ%2FO0kLdPDgzJ7dctB%2Bxyz"
+    assert espn_sync.clean_cookie(s2, "espn_s2") == s2
+    assert espn_sync.clean_cookie(f"espn_s2\t{s2}\t.espn.com\t/\t2027-10-22", "espn_s2") == s2
+    assert espn_sync.clean_cookie(f"espn_s2={s2};", "espn_s2") == s2
+    swid = "{1A2B3C4D-1111-2222-3333-444455556666}"
+    assert espn_sync.clean_cookie(f" SWID\t{swid}\t.espn.com ", "SWID") == swid
+    assert espn_sync.clean_cookie(None, "SWID") == ""
+
+
+def test_redact_never_leaks_cookie():
+    s2 = "AEBkmZ%2FO0kLdPDgzJ7dctBcb4vnGhEBCQaX9D6ke1GcJTGCEUoumPdIl8D"
+    msg = f"Invalid header value b'espn_s2={s2}; SWID={{1A2B}}'"
+    out = espn_sync.redact(msg, [s2])
+    assert s2 not in out and "AEBkmZ" not in out

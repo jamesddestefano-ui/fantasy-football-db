@@ -21,6 +21,7 @@ tries an anonymous read, which works only if the league is viewable publicly.
 from __future__ import annotations
 
 import argparse
+import re
 import json
 import os
 import sys
@@ -58,6 +59,27 @@ FREE_AGENT_FILTER = {"players": {
 
 class EspnError(RuntimeError):
     pass
+
+
+def clean_cookie(raw: str | None, name: str) -> str:
+    """Return just the cookie value, even if a whole DevTools row was pasted
+    ("espn_s2<TAB>AEB...<TAB>.espn.com<TAB>/ ..."). Never logs the value."""
+    if not raw:
+        return ""
+    tokens = [t for t in re.split(r"\s+", raw.strip()) if t]
+    tokens = [t for t in tokens if t.lower() != name.lower()]
+    if tokens and "=" in tokens[0] and tokens[0].split("=", 1)[0].lower() == name.lower():
+        tokens[0] = tokens[0].split("=", 1)[1]
+    value = tokens[0] if tokens else ""
+    return value.strip().strip('"').strip(";")
+
+
+def redact(text: str, secrets: list[str]) -> str:
+    for sec in secrets:
+        if sec and len(sec) >= 6:
+            text = text.replace(sec, "[redacted]")
+    text = re.sub(r"(espn_s2|SWID)=\S+", r"\1=[redacted]", text)
+    return re.sub(r"[A-Za-z0-9%+/=]{40,}", "[redacted]", text)
 
 
 def fetch(params: list[tuple[str, str]], cookies: dict[str, str] | None, headers: dict | None = None,
@@ -213,14 +235,18 @@ def main(argv=None) -> int:
         raw = {k: (json.loads((args.from_raw / f"{k}.json").read_text()) if (args.from_raw / f"{k}.json").exists() else None)
                for k in ("league", "pool", "last_week")}
     else:
-        cookies = {"espn_s2": os.environ.get("ESPN_S2", "").strip(), "SWID": os.environ.get("ESPN_SWID", "").strip()}
+        cookies = {"espn_s2": clean_cookie(os.environ.get("ESPN_S2"), "espn_s2"),
+                   "SWID": clean_cookie(os.environ.get("ESPN_SWID"), "SWID")}
+        if cookies["SWID"] and not re.fullmatch(r"\{[0-9A-Fa-f-]{36}\}", cookies["SWID"]):
+            print("::warning title=ESPN sync::ESPN_SWID does not look like {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}; re-copy it")
+        secrets = [os.environ.get("ESPN_S2", ""), os.environ.get("ESPN_SWID", ""), *cookies.values()]
         try:
             raw = fetch_all(cookies if cookies["espn_s2"] else None)
         except EspnError as exc:
             print(f"::error title=ESPN sync::{exc}")
             return 1
         except Exception as exc:  # network/TLS/etc.: report the type, never the cookies
-            print(f"::error title=ESPN sync::{type(exc).__name__}: {str(exc)[:300]}")
+            print(f"::error title=ESPN sync::{type(exc).__name__}: {redact(str(exc), secrets)[:200]}")
             return 1
     try:
         snap = normalize(raw, now)
