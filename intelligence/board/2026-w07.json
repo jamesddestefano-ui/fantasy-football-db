@@ -5,10 +5,10 @@
  "team": "Tom Brady of Ass (JDD)",
  "kind": "INTELLIGENCE_BOARD_NOT_A_RECORDED_RECOMMENDATION",
  "generated_from": {
-  "fantasypros_pulled_at": "2026-10-22T13:36:23+00:00",
+  "fantasypros_pulled_at": "2026-10-22T13:46:34+00:00",
   "roster_source": "ESPN_API",
-  "roster_observed_at": "2026-10-22T13:35:53Z",
-  "espn_observed_at": "2026-10-22T13:35:53Z"
+  "roster_observed_at": "2026-10-22T13:46:02Z",
+  "espn_observed_at": "2026-10-22T13:46:02Z"
  },
  "faab": {
   "balance": 66
@@ -647,5 +647,203 @@
    }
   ],
   "starter_points": 102.28
+ },
+ "matchup": {
+  "week": 7,
+  "opponent_team_id": 1,
+  "opponent": "I Loveland Rice Krispies ",
+  "opponent_abbrev": "AAGD",
+  "opponent_record": "1-5-0",
+  "opponent_points_for": 687.0,
+  "my_proj": 123.26,
+  "opponent_proj": 114.95,
+  "opponent_starters": [
+   {
+    "slot": "RB",
+    "name": "Chase Brown",
+    "nfl_team": "CIN",
+    "proj": 15.22,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "FLEX",
+    "name": "Javonte Williams",
+    "nfl_team": "DAL",
+    "proj": 17.11,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "FLEX",
+    "name": "Rashee Rice",
+    "nfl_team": "KC",
+    "proj": 0.0,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "TE",
+    "name": "Colston Loveland",
+    "nfl_team": "CHI",
+    "proj": 11.73,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "RB",
+    "name": "Jaylen Warren",
+    "nfl_team": "PIT",
+    "proj": 18.4,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "WR",
+    "name": "Jalen Coker",
+    "nfl_team": "CAR",
+    "proj": 16.05,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "D/ST",
+    "name": "Jets D/ST",
+    "nfl_team": "NYJ",
+    "proj": 8.84,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "QB",
+    "name": "Geno Smith",
+    "nfl_team": "NYJ",
+    "proj": 20.05,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "WR",
+    "name": "Omar Cooper Jr.",
+    "nfl_team": "NYJ",
+    "proj": 7.55,
+    "injury_status": "NORMAL"
+   }
+  ]
+ },
+ "faab_market": {
+  "by_position": {
+   "D/ST": {
+    "claims": 11,
+    "paid_claims": 11,
+    "median": 3.0,
+    "p75": 4.5,
+    "max": 7
+   },
+   "QB": {
+    "claims": 10,
+    "paid_claims": 10,
+    "median": 2.5,
+    "p75": 8.0,
+    "max": 13
+   },
+   "RB": {
+    "claims": 16,
+    "paid_claims": 16,
+    "median": 6.0,
+    "p75": 13.2,
+    "max": 23
+   },
+   "TE": {
+    "claims": 7,
+    "paid_claims": 7,
+    "median": 6.0,
+    "p75": 7.0,
+    "max": 9
+   },
+   "WR": {
+    "claims": 16,
+    "paid_claims": 16,
+    "median": 4.5,
+    "p75": 9.5,
+    "max": 19
+   }
+  },
+  "budgets": [
+   {
+    "team": "Joe's Finest Team",
+    "abbrev": "JFT",
+    "remaining": 100,
+    "spent": 0
+   },
+   {
+    "team": "Geno Smith",
+    "abbrev": "GENO",
+    "remaining": 94,
+    "spent": 6
+   },
+   {
+    "team": "Horton",
+    "abbrev": "CCT",
+    "remaining": 92,
+    "spent": 8
+   },
+   {
+    "team": "    DeVonta Be Kidding Me",
+    "abbrev": "ME",
+    "remaining": 85,
+    "spent": 15
+   },
+   {
+    "team": "Bills Mafia",
+    "abbrev": "BM",
+    "remaining": 83,
+    "spent": 17
+   },
+   {
+    "team": "Justmyluck3",
+    "abbrev": "J3",
+    "remaining": 76,
+    "spent": 24
+   },
+   {
+    "team": "$Cmoney$",
+    "abbrev": "C$",
+    "remaining": 70,
+    "spent": 30
+   },
+   {
+    "team": "Tom Brady of Ass ",
+    "abbrev": "JDD",
+    "remaining": 66,
+    "spent": 34
+   },
+   {
+    "team": "You're a JaGoff ",
+    "abbrev": "PbP",
+    "remaining": 50,
+    "spent": 50
+   },
+   {
+    "team": "I Loveland Rice Krispies ",
+    "abbrev": "AAGD",
+    "remaining": 44,
+    "spent": 56
+   },
+   {
+    "team": "T.N.T",
+    "abbrev": "FFT",
+    "remaining": 44,
+    "spent": 56
+   },
+   {
+    "team": "SHOWSTOPPERS",
+    "abbrev": "BE3",
+    "remaining": 42,
+    "spent": 58
+   }
+  ],
+  "median_overpay_vs_runner_up": 1.0,
+  "observed_at": "2026-10-22T13:46:02Z"
+ },
+ "reconcile_status": {
+  "status": "IN_SYNC",
+  "unlogged_moves": 0,
+  "roster_diff": {
+   "on_espn_not_in_repo": [],
+   "in_repo_not_on_espn": []
+  }
  }
 }

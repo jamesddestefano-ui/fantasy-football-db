@@ -1,0 +1,7320 @@
+{
+ "league": "mongo",
+ "observed_at": "2026-10-22T13:46:02Z",
+ "season": 2026,
+ "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
+ "raw_type_counts": {
+  "DRAFT": 192,
+  "FREEAGENT": 87,
+  "FUTURE_ROSTER": 23,
+  "ROSTER": 317,
+  "TRADE_PROPOSAL": 2,
+  "WAIVER": 149
+ },
+ "transactions": [
+  {
+   "id": "e2671fb6-639b-44cf-8308-8e3a9921ef82",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 1,
+   "scoring_period": 1,
+   "processed_at": "2026-09-02T03:10:20Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "2c04d156-5671-4082-82a0-4eb168f16b1f",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-02T23:49:08Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "441ea19a-9818-46ab-b974-fb18136b172c",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 6,
+   "scoring_period": 1,
+   "processed_at": "2026-09-02T23:50:10Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4383429",
+     "name": "Jacob Saylors",
+     "position": "RB",
+     "nfl_team": "DET",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "69b02b01-fd23-450d-82ca-12c984ea1ffb",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 6,
+   "scoring_period": 1,
+   "processed_at": "2026-09-03T07:13:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4383429",
+     "name": "Jacob Saylors",
+     "position": "RB",
+     "nfl_team": "DET",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "a318430d-6804-41b3-8b7e-50d262d36a3c",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 1,
+   "processed_at": "2026-09-03T07:13:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3149687",
+     "name": "Chris Brooks",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "3b2a1f85-1455-4f94-ba4d-03ade3a50f04",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-03T10:40:42Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4870612",
+     "name": "Zachariah Branch",
+     "position": "WR",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "88abd758-8cfb-4915-8aa8-59a8116674b1",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-03T12:10:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4869645",
+     "name": "Caleb Douglas",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16006",
+     "name": "Cowboys D/ST",
+     "position": "D/ST",
+     "nfl_team": "DAL",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "421f4daa-64ef-43b1-b23d-afd18c6729d9",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-03T13:05:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4686468",
+     "name": "Seth McGowan",
+     "position": "RB",
+     "nfl_team": "IND",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "16733",
+     "name": "Odell Beckham Jr.",
+     "position": "WR",
+     "nfl_team": "MIN",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "0fd864d4-39b1-47c2-89cc-9e1c5a483303",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-03T13:31:12Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4685555",
+     "name": "Nicholas Singleton",
+     "position": "RB",
+     "nfl_team": "TEN",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7b6341d7-ebd7-42c9-a918-05fbce155144",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-03T19:02:22Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4696044",
+     "name": "Kaelon Black",
+     "position": "RB",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e6e21346-4b35-4aa3-b635-e362210e17bd",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-04T00:06:59Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4569559",
+     "name": "Devaughn Vele",
+     "position": "WR",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "ff5c5fcf-1721-417f-a39c-44b5c3b89b42",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-04T00:07:21Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3116389",
+     "name": "Samaje Perine",
+     "position": "RB",
+     "nfl_team": "CIN",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4361529",
+     "name": "Isiah Pacheco",
+     "position": "RB",
+     "nfl_team": "DET",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7e2d44a1-befa-4508-85a7-6c1d05eb9ab6",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-04T01:34:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16030",
+     "name": "Jaguars D/ST",
+     "position": "D/ST",
+     "nfl_team": "JAX",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16016",
+     "name": "Vikings D/ST",
+     "position": "D/ST",
+     "nfl_team": "MIN",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3808b3ca-26bb-4047-b389-398898143406",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-08T11:59:19Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4240603",
+     "name": "Malik Davis",
+     "position": "RB",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4383429",
+     "name": "Jacob Saylors",
+     "position": "RB",
+     "nfl_team": "DET",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6ffd3c8b-864a-42a8-b0c2-869af02dcaff",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-08T15:21:08Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429022",
+     "name": "Kayshon Boutte",
+     "position": "WR",
+     "nfl_team": "HOU",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f25ae99b-998c-4435-a1d4-dfb935771beb",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-09T10:04:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16010",
+     "name": "Titans D/ST",
+     "position": "D/ST",
+     "nfl_team": "TEN",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c5dcb354-1b99-4a75-85e3-20cf648ed39d",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-10T00:18:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4036133",
+     "name": "T.J. Hockenson",
+     "position": "TE",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4832955",
+     "name": "Emmett Johnson",
+     "position": "RB",
+     "nfl_team": "KC",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7fa669e2-a47a-4303-a2c3-c2ade25b4945",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-11T21:40:04Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4362478",
+     "name": "Emari Demercado",
+     "position": "RB",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "f04ce2d3-0d50-4202-b5e9-cb750a00922b",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 1,
+   "processed_at": "2026-09-13T13:00:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3929645",
+     "name": "Juwan Johnson",
+     "position": "TE",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4242355",
+     "name": "Jake Ferguson",
+     "position": "TE",
+     "nfl_team": "DAL",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "dfde31a0-93a0-41a5-ac3f-469998cd48ab",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 2,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T00:21:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "004ffb01-35d2-4953-98ea-abedd52247b2",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T00:22:53Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16025",
+     "name": "49ers D/ST",
+     "position": "D/ST",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16009",
+     "name": "Packers D/ST",
+     "position": "D/ST",
+     "nfl_team": "GB",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "794472cb-f6cc-45ad-97e3-58349db7b1e3",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 2,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T00:23:25Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4869961",
+     "name": "Chris Bell",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "24cc6338-416e-40b6-a249-677871ac59c6",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4242355",
+     "name": "Jake Ferguson",
+     "position": "TE",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3117256",
+     "name": "Dalton Schultz",
+     "position": "TE",
+     "nfl_team": "HOU",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4c5b8e1b-d03e-4d19-ad8c-5df94a4cab6c",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 1,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16004",
+     "name": "Bengals D/ST",
+     "position": "D/ST",
+     "nfl_team": "CIN",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16010",
+     "name": "Titans D/ST",
+     "position": "D/ST",
+     "nfl_team": "TEN",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5a370f65-b386-4c86-b76b-31f3ee6cc303",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 4,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16027",
+     "name": "Buccaneers D/ST",
+     "position": "D/ST",
+     "nfl_team": "TB",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16010",
+     "name": "Titans D/ST",
+     "position": "D/ST",
+     "nfl_team": "TEN",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5bedda0c-f2a0-493f-ab23-72580402c3a8",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 3,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3917792",
+     "name": "Daniel Jones",
+     "position": "QB",
+     "nfl_team": "IND",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "676d6c33-d516-4915-bcde-fcddf71f251b",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 5,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16025",
+     "name": "49ers D/ST",
+     "position": "D/ST",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16030",
+     "name": "Jaguars D/ST",
+     "position": "D/ST",
+     "nfl_team": "JAX",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7e2ba57d-7b55-470e-b156-e75ce737e2be",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 1,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16010",
+     "name": "Titans D/ST",
+     "position": "D/ST",
+     "nfl_team": "TEN",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "89290f1b-51fc-4f6e-928a-f29939328e9a",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 4,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16025",
+     "name": "49ers D/ST",
+     "position": "D/ST",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16010",
+     "name": "Titans D/ST",
+     "position": "D/ST",
+     "nfl_team": "TEN",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8ff34b67-17b1-4855-b27d-e55b8421362d",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16025",
+     "name": "49ers D/ST",
+     "position": "D/ST",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4683153",
+     "name": "Skyler Bell",
+     "position": "WR",
+     "nfl_team": "BUF",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9aeea38b-60ad-4af7-be50-d272cab4758d",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2991662",
+     "name": "Mack Hollins",
+     "position": "WR",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4683153",
+     "name": "Skyler Bell",
+     "position": "WR",
+     "nfl_team": "BUF",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9f5c3656-100f-4a03-8a87-8367b180258c",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 2,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4832955",
+     "name": "Emmett Johnson",
+     "position": "RB",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4241463",
+     "name": "Jerry Jeudy",
+     "position": "WR",
+     "nfl_team": "CLE",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a21b9931-3c04-467f-bad8-2e0a1cd313e4",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 4,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360689",
+     "name": "Tyler Shough",
+     "position": "QB",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "ad8147ab-7128-4ca6-8863-986424d5f872",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 4,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16025",
+     "name": "49ers D/ST",
+     "position": "D/ST",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16007",
+     "name": "Broncos D/ST",
+     "position": "D/ST",
+     "nfl_team": "DEN",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "b7c479e8-3797-4752-b5a7-21b729ed9a35",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 4,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360689",
+     "name": "Tyler Shough",
+     "position": "QB",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "d0c910cb-d2fc-4195-bed4-55b5a5750999",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 2,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4869961",
+     "name": "Chris Bell",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "dfbab329-2b62-432f-a46f-65daf37167a4",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 1,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4242355",
+     "name": "Jake Ferguson",
+     "position": "TE",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "f2276ddc-559c-4e52-875d-ce5f0566cd7c",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 5,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4832955",
+     "name": "Emmett Johnson",
+     "position": "RB",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4702555",
+     "name": "Jonah Coleman",
+     "position": "RB",
+     "nfl_team": "DEN",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f312cc94-fa5a-4dc7-b2a0-302d0f54c6ae",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 2,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:23:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "1e4a915f-94cd-48bc-85a9-ea73c911616d",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T07:48:41Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4427095",
+     "name": "DeMario Douglas",
+     "position": "WR",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4241457",
+     "name": "Najee Harris",
+     "position": "RB",
+     "nfl_team": "FA",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "da5a07a5-001c-4d40-b822-8dba077704d3",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T10:12:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685720",
+     "name": "Bryce Young",
+     "position": "QB",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4912218",
+     "name": "Cyrus Allen",
+     "position": "WR",
+     "nfl_team": "KC",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "af1ed4fd-9859-4a7a-b0e6-14cce2f2a136",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-16T19:48:38Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3116164",
+     "name": "Mike Gesicki",
+     "position": "TE",
+     "nfl_team": "CIN",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4710714",
+     "name": "De'Zhaun Stribling",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ea63feac-25f5-4d06-b99e-e627717ffa12",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-17T07:43:19Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4427095",
+     "name": "DeMario Douglas",
+     "position": "WR",
+     "nfl_team": "NE",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1c441c11-995d-44b5-9c41-e954b1dab82e",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-17T18:14:47Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360939",
+     "name": "Rashod Bateman",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4362478",
+     "name": "Emari Demercado",
+     "position": "RB",
+     "nfl_team": "DAL",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6e880d7f-092d-4661-b269-5d993049e72c",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-19T11:53:16Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4040761",
+     "name": "Devin Singletary",
+     "position": "RB",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4819231",
+     "name": "Kaleb Johnson",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3f5b13a0-49e9-45f3-b0e3-6a656d6970c5",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-19T14:22:22Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "5081432",
+     "name": "Antonio Williams",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429013",
+     "name": "Tank Bigsby",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "0ea7653c-ad39-4ad6-b875-eb3a2a3181d8",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-19T20:00:09Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3117256",
+     "name": "Dalton Schultz",
+     "position": "TE",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4241463",
+     "name": "Jerry Jeudy",
+     "position": "WR",
+     "nfl_team": "CLE",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "224ab019-4454-41fc-8570-788f482fb8da",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-19T20:37:10Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4040655",
+     "name": "Darnell Mooney",
+     "position": "WR",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16003",
+     "name": "Bears D/ST",
+     "position": "D/ST",
+     "nfl_team": "CHI",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "2c741b44-df9f-4be4-825f-d0baabe24fed",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 2,
+   "processed_at": "2026-09-20T00:28:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4429835",
+     "name": "George Holani",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "b180081f-4749-4bab-8ed1-74c86b7cea4f",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 4,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T00:51:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16029",
+     "name": "Panthers D/ST",
+     "position": "D/ST",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16021",
+     "name": "Eagles D/ST",
+     "position": "D/ST",
+     "nfl_team": "PHI",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8265753a-0f60-4414-b69b-732058ffa8a0",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T00:53:27Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16029",
+     "name": "Panthers D/ST",
+     "position": "D/ST",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16021",
+     "name": "Eagles D/ST",
+     "position": "D/ST",
+     "nfl_team": "PHI",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6b0bddfa-d039-4e13-b2d9-7ece8d42cd4c",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 6,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T00:53:47Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4887558",
+     "name": "Emanuel Wilson",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429835",
+     "name": "George Holani",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ad6638d0-a51c-4ca9-9c15-998c6455bc89",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 8,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T00:56:36Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4595342",
+     "name": "Oronde Gadsden",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6c5fd40e-6ec0-4b31-8620-d59c6ff871c9",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 4,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T00:57:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4869961",
+     "name": "Chris Bell",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "89d8f7ee-0de2-4b48-8d7d-973952fbbe4f",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T04:49:34Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4887558",
+     "name": "Emanuel Wilson",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4035687",
+     "name": "Michael Pittman Jr.",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "024853c9-1ce9-4b80-a101-a028cd0cc22e",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 11,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4702555",
+     "name": "Jonah Coleman",
+     "position": "RB",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4596334",
+     "name": "Keaton Mitchell",
+     "position": "RB",
+     "nfl_team": "LAC",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "078103e1-39c9-445a-ad6f-866eefded573",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 4,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4869961",
+     "name": "Chris Bell",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "08cdf017-d496-4043-97e8-e9e9d033bf2d",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 6,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4570037",
+     "name": "Terrance Ferguson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3116164",
+     "name": "Mike Gesicki",
+     "position": "TE",
+     "nfl_team": "CIN",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1a6287c5-093e-491f-b4e0-b022962304ce",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 8,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4595342",
+     "name": "Oronde Gadsden",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1d0094e1-99d9-4725-9b48-bd183809708f",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16030",
+     "name": "Jaguars D/ST",
+     "position": "D/ST",
+     "nfl_team": "JAX",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4685415",
+     "name": "Travis Hunter",
+     "position": "WR",
+     "nfl_team": "JAX",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "29ffa425-806c-4d1a-a25c-e9d1f19edb6a",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 2,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "15835",
+     "name": "Zach Ertz",
+     "position": "TE",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3116164",
+     "name": "Mike Gesicki",
+     "position": "TE",
+     "nfl_team": "CIN",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "37069e92-12f7-430c-8319-faad9169e389",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 13,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4702555",
+     "name": "Jonah Coleman",
+     "position": "RB",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "475bf596-6d7f-4905-ac82-b68e5584c9a2",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 1,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16016",
+     "name": "Vikings D/ST",
+     "position": "D/ST",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16027",
+     "name": "Buccaneers D/ST",
+     "position": "D/ST",
+     "nfl_team": "TB",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4c4336f1-8777-4ebe-8930-201e16818816",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 7,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16016",
+     "name": "Vikings D/ST",
+     "position": "D/ST",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16024",
+     "name": "Chargers D/ST",
+     "position": "D/ST",
+     "nfl_team": "LAC",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "533f54b6-4749-4207-924d-955b6e1bdea9",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 1,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16027",
+     "name": "Buccaneers D/ST",
+     "position": "D/ST",
+     "nfl_team": "TB",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5ad9f587-b7cd-4899-80d4-5df00040aaf7",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 6,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4595342",
+     "name": "Oronde Gadsden",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4686468",
+     "name": "Seth McGowan",
+     "position": "RB",
+     "nfl_team": "IND",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5ed86649-b356-492d-ad8c-02d1af100a7f",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 10,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4887558",
+     "name": "Emanuel Wilson",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4040761",
+     "name": "Devin Singletary",
+     "position": "RB",
+     "nfl_team": "NYG",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7cbe6ee7-cfa0-4cca-800f-410872fcb350",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 1,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16029",
+     "name": "Panthers D/ST",
+     "position": "D/ST",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16027",
+     "name": "Buccaneers D/ST",
+     "position": "D/ST",
+     "nfl_team": "TB",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7d98cf20-14ef-4efb-a2b5-24222dcb534f",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 10,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4702555",
+     "name": "Jonah Coleman",
+     "position": "RB",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3925357",
+     "name": "Calvin Ridley",
+     "position": "WR",
+     "nfl_team": "TEN",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8c472e23-98de-4aeb-876e-50f3dccfe8d6",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 6,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16016",
+     "name": "Vikings D/ST",
+     "position": "D/ST",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4035687",
+     "name": "Michael Pittman Jr.",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "95564f0d-d576-42cc-bef3-e914c65fd29e",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 3,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3916945",
+     "name": "Darius Slayton",
+     "position": "WR",
+     "nfl_team": "FA",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4596334",
+     "name": "Keaton Mitchell",
+     "position": "RB",
+     "nfl_team": "LAC",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ac4be2a4-8a57-4772-ac5e-bdb83b43bdbd",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 6,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4887558",
+     "name": "Emanuel Wilson",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429835",
+     "name": "George Holani",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "acffb51e-fb93-4420-9484-2c7a7c360d79",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 6,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "5081432",
+     "name": "Antonio Williams",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "b427835f-edc0-446b-9314-cc3ad85dfdda",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 3,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16016",
+     "name": "Vikings D/ST",
+     "position": "D/ST",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16014",
+     "name": "Rams D/ST",
+     "position": "D/ST",
+     "nfl_team": "LAR",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c637a02e-e4bd-46b1-8e50-e38d45189992",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 3,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4595342",
+     "name": "Oronde Gadsden",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3116164",
+     "name": "Mike Gesicki",
+     "position": "TE",
+     "nfl_team": "CIN",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f0698530-55e4-4789-bc34-683d86f673ab",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 1,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:27:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16030",
+     "name": "Jaguars D/ST",
+     "position": "D/ST",
+     "nfl_team": "JAX",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16027",
+     "name": "Buccaneers D/ST",
+     "position": "D/ST",
+     "nfl_team": "TB",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1d9ee358-6849-464d-9524-9b1e90b84afc",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T07:43:54Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16004",
+     "name": "Bengals D/ST",
+     "position": "D/ST",
+     "nfl_team": "CIN",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16007",
+     "name": "Broncos D/ST",
+     "position": "D/ST",
+     "nfl_team": "DEN",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c941cb7e-563a-464e-aed7-21684bdc7ab6",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T09:11:57Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4429013",
+     "name": "Tank Bigsby",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4362249",
+     "name": "Jayden Reed",
+     "position": "WR",
+     "nfl_team": "GB",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ae07ec84-8d18-4052-a954-72db67ab5157",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T11:20:54Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4635008",
+     "name": "Keon Coleman",
+     "position": "WR",
+     "nfl_team": "BUF",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3925357",
+     "name": "Calvin Ridley",
+     "position": "WR",
+     "nfl_team": "TEN",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "79cec702-2d5b-4101-b8c0-0bbf61f060c0",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T11:26:45Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4819231",
+     "name": "Kaleb Johnson",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3123076",
+     "name": "David Njoku",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a6ee8086-c36c-4389-acda-58a24524eb7d",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-23T19:56:55Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2969939",
+     "name": "Jameis Winston",
+     "position": "QB",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4689114",
+     "name": "Jaxson Dart",
+     "position": "QB",
+     "nfl_team": "NYG",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8e0b18bd-9df7-4c84-a8fa-a0c99c46317b",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-24T13:06:54Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16009",
+     "name": "Packers D/ST",
+     "position": "D/ST",
+     "nfl_team": "GB",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7a9f4a48-6d21-46a2-aac6-a541c518ee09",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 1,
+   "scoring_period": 3,
+   "processed_at": "2026-09-25T07:22:09Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16007",
+     "name": "Broncos D/ST",
+     "position": "D/ST",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16008",
+     "name": "Lions D/ST",
+     "position": "D/ST",
+     "nfl_team": "DET",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ddd84387-e360-496c-9c72-3f3334d6e189",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-26T19:29:10Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4710714",
+     "name": "De'Zhaun Stribling",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "0157548e-2b16-4592-87b4-0e77874f46e8",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 3,
+   "processed_at": "2026-09-26T22:49:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4239934",
+     "name": "AJ Dillon",
+     "position": "RB",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "7c1cb966-4396-4fa8-b5a4-980f4a807875",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 25,
+   "scoring_period": 4,
+   "processed_at": "2026-09-29T12:31:05Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429160",
+     "name": "De'Von Achane",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "2f6b7303-5669-4664-95f4-ede85ca6edca",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-29T22:57:01Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "cc13cedd-db47-4141-b641-e6c241d6b64e",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T00:04:41Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4869645",
+     "name": "Caleb Douglas",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "b35c7d1e-51c9-4325-9774-ff99d288f801",
+   "type": "TRADE_PROPOSAL",
+   "status": "CANCELED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T00:14:38Z",
+   "adds": [],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4036378",
+     "name": "Jordan Love",
+     "position": "QB",
+     "nfl_team": "GB",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "138951d5-c2a4-484d-91dd-f2f439b1134b",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 8,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3149687",
+     "name": "Chris Brooks",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1888052f-a97b-42ed-94f3-be31cb9ec63d",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 7,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4570037",
+     "name": "Terrance Ferguson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1d1f94b0-794e-4e4e-8bd3-911a48af4edc",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 23,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4682745",
+     "name": "Jaylen Wright",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4239934",
+     "name": "AJ Dillon",
+     "position": "RB",
+     "nfl_team": "CAR",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "2213354c-3821-45f7-bfef-9e208a0d491a",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 2,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16003",
+     "name": "Bears D/ST",
+     "position": "D/ST",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4686468",
+     "name": "Seth McGowan",
+     "position": "RB",
+     "nfl_team": "IND",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "26428f48-478a-4699-bb7a-5c5f25ced01e",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 4,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "32661b2d-3c0c-467b-99bb-f7d731a88721",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 11,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428557",
+     "name": "Tyjae Spears",
+     "position": "RB",
+     "nfl_team": "TEN",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "559ad6c2-b8ec-4e4a-a628-5ea7f41275bf",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 7,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4430834",
+     "name": "Jalen McMillan",
+     "position": "WR",
+     "nfl_team": "TB",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "566a6efb-d4fb-406b-bb23-e0dc5d68a0e3",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 12,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4682745",
+     "name": "Jaylen Wright",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5cef84d9-c244-4ac6-899f-786014d1defa",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 6,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4682745",
+     "name": "Jaylen Wright",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "7c60c3c0-cf96-4132-aacb-149751e8a4bb",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 15,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429160",
+     "name": "De'Von Achane",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "85ea6995-06cc-4288-9e2d-c746bb9bae84",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 9,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4870612",
+     "name": "Zachariah Branch",
+     "position": "WR",
+     "nfl_team": "ATL",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8a45c5a9-d478-4815-bb24-63bac5d5f86f",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 9,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4035687",
+     "name": "Michael Pittman Jr.",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a033e3e8-6bc2-4eba-9c75-63a8e41dbe0c",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 23,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4239934",
+     "name": "AJ Dillon",
+     "position": "RB",
+     "nfl_team": "CAR",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a34f2449-016c-4d8e-b00d-60c850a1d482",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 21,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4036133",
+     "name": "T.J. Hockenson",
+     "position": "TE",
+     "nfl_team": "MIN",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "b802da72-e6ad-48e0-9b42-e59fb60aa656",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 3,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16020",
+     "name": "Jets D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16029",
+     "name": "Panthers D/ST",
+     "position": "D/ST",
+     "nfl_team": "CAR",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "d4b43f12-84a6-4f30-b93d-1743721d87f8",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3052587",
+     "name": "Baker Mayfield",
+     "position": "QB",
+     "nfl_team": "TB",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ddfb3566-e3dd-4473-8f5d-d3078e2d6803",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 3,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4600981",
+     "name": "Pat Bryant",
+     "position": "WR",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4570037",
+     "name": "Terrance Ferguson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "dfefbc6a-877b-4481-8641-ed24ec77a909",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 13,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3912547",
+     "name": "Sam Darnold",
+     "position": "QB",
+     "nfl_team": "SEA",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2969939",
+     "name": "Jameis Winston",
+     "position": "QB",
+     "nfl_team": "NYG",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f15ad25e-e7ed-4768-b04d-d4789c7572c5",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 12,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:20:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4711533",
+     "name": "Ollie Gordon II",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "170922c9-4cc8-4304-8300-21b0e86381d5",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T07:23:42Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4569603",
+     "name": "Malik Washington",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4035687",
+     "name": "Michael Pittman Jr.",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7d2ada92-d58b-48e0-907d-42b4636b3fd1",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T09:39:46Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16002",
+     "name": "Bills D/ST",
+     "position": "D/ST",
+     "nfl_team": "BUF",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4887558",
+     "name": "Emanuel Wilson",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "eddc2dcd-c3a4-44fc-b241-b527c402a9f9",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T15:58:23Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16009",
+     "name": "Packers D/ST",
+     "position": "D/ST",
+     "nfl_team": "GB",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16021",
+     "name": "Eagles D/ST",
+     "position": "D/ST",
+     "nfl_team": "PHI",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "af94bfcd-a496-4b6c-815e-3e2477b1f6eb",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T15:59:09Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4596334",
+     "name": "Keaton Mitchell",
+     "position": "RB",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429160",
+     "name": "De'Von Achane",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "73db78f3-9e8e-4d74-82e8-b985ded7506a",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T23:27:21Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2576925",
+     "name": "Darren Waller",
+     "position": "TE",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "9bbba115-ee1a-4f0b-96ae-b5725617b3b1",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T23:28:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4695404",
+     "name": "Isaiah Davis",
+     "position": "RB",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "cf28a0dd-fd09-4804-a989-08eaf2ca5caf",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-09-30T23:31:52Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4686612",
+     "name": "Tre' Harris",
+     "position": "WR",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e36d4a6e-7c73-4a05-bd07-e0aecdf956b0",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-10-01T12:44:50Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4241457",
+     "name": "Najee Harris",
+     "position": "RB",
+     "nfl_team": "FA",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4036378",
+     "name": "Jordan Love",
+     "position": "QB",
+     "nfl_team": "GB",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8b3bbd15-94db-45cc-9fa8-9877a650a69b",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-10-01T21:09:23Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3916945",
+     "name": "Darius Slayton",
+     "position": "WR",
+     "nfl_team": "FA",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f930c621-9e1c-423f-9e28-48f5aaa1e112",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-10-01T23:27:58Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431492",
+     "name": "Roman Wilson",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4dd226c9-1e5c-489e-b2bf-76eb7b5e9bcd",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 1,
+   "scoring_period": 4,
+   "processed_at": "2026-10-02T07:11:12Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4887558",
+     "name": "Emanuel Wilson",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4869645",
+     "name": "Caleb Douglas",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "d3e27245-5da3-4ff5-b164-a8fdcea9898a",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 4,
+   "processed_at": "2026-10-04T11:45:06Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360763",
+     "name": "Brycen Tremayne",
+     "position": "WR",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360248",
+     "name": "Kyle Pitts Sr.",
+     "position": "TE",
+     "nfl_team": "ATL",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "637854da-05d8-4928-b504-1ee186302db6",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 8,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T03:49:01Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360423",
+     "name": "Michael Penix Jr.",
+     "position": "QB",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4869961",
+     "name": "Chris Bell",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "0fde3a6a-1907-41db-b6f4-5ed6f135bea8",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 6,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4036133",
+     "name": "T.J. Hockenson",
+     "position": "TE",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360763",
+     "name": "Brycen Tremayne",
+     "position": "WR",
+     "nfl_team": "CAR",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "132c422e-90cb-4ca1-bbab-9f89a0104cd1",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 2,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16006",
+     "name": "Cowboys D/ST",
+     "position": "D/ST",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16014",
+     "name": "Rams D/ST",
+     "position": "D/ST",
+     "nfl_team": "LAR",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1576a617-aa81-4753-9833-c90ffa67ad67",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 11,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360248",
+     "name": "Kyle Pitts Sr.",
+     "position": "TE",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428557",
+     "name": "Tyjae Spears",
+     "position": "RB",
+     "nfl_team": "TEN",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1a517a3f-dbbd-4b37-8eac-4a95c5ad0c6f",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 4,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16006",
+     "name": "Cowboys D/ST",
+     "position": "D/ST",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16002",
+     "name": "Bills D/ST",
+     "position": "D/ST",
+     "nfl_team": "BUF",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1ac34d62-9486-42e1-bf33-2349d20637a6",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 2,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4036133",
+     "name": "T.J. Hockenson",
+     "position": "TE",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4242355",
+     "name": "Jake Ferguson",
+     "position": "TE",
+     "nfl_team": "DAL",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "43bbdbd5-0cbb-4102-9e3d-ef10da80dece",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 1,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4036378",
+     "name": "Jordan Love",
+     "position": "QB",
+     "nfl_team": "GB",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429025",
+     "name": "Quentin Johnston",
+     "position": "WR",
+     "nfl_team": "LAC",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4c5d5074-390b-4ae4-82be-84ad54f86d8e",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 1,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "14880",
+     "name": "Kirk Cousins",
+     "position": "QB",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429025",
+     "name": "Quentin Johnston",
+     "position": "WR",
+     "nfl_team": "LAC",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5599b562-444d-41af-b4d8-3f74e1b8b3eb",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 14,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431545",
+     "name": "Will Shipley",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428557",
+     "name": "Tyjae Spears",
+     "position": "RB",
+     "nfl_team": "TEN",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5d606d5d-8052-4ebf-bd42-9d7fdf1233e5",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 10,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431545",
+     "name": "Will Shipley",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4695404",
+     "name": "Isaiah Davis",
+     "position": "RB",
+     "nfl_team": "NYJ",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5e6dcfa1-1b1d-4ead-95e1-47b0a6c48170",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 9,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360248",
+     "name": "Kyle Pitts Sr.",
+     "position": "TE",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4600981",
+     "name": "Pat Bryant",
+     "position": "WR",
+     "nfl_team": "DEN",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "645f46d9-699e-4560-9eb6-e08fabd179ae",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 3,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3116164",
+     "name": "Mike Gesicki",
+     "position": "TE",
+     "nfl_team": "CIN",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4600981",
+     "name": "Pat Bryant",
+     "position": "WR",
+     "nfl_team": "DEN",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "650813fd-b629-43a9-a5fd-cfebb9cf75e9",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 3,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4036133",
+     "name": "T.J. Hockenson",
+     "position": "TE",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4600981",
+     "name": "Pat Bryant",
+     "position": "WR",
+     "nfl_team": "DEN",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "792def0c-fad7-4a5f-b4cc-613044e09d56",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 10,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431545",
+     "name": "Will Shipley",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4819231",
+     "name": "Kaleb Johnson",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "863c3960-a82a-45a3-8964-ce963cb457d3",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 8,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360423",
+     "name": "Michael Penix Jr.",
+     "position": "QB",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4869961",
+     "name": "Chris Bell",
+     "position": "WR",
+     "nfl_team": "MIA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "87db474c-1e50-430e-b2d5-5805c2dd5505",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 11,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4384852",
+     "name": "Dohnte Meyers",
+     "position": "WR",
+     "nfl_team": "CIN",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4038815",
+     "name": "Rico Dowdle",
+     "position": "RB",
+     "nfl_team": "PIT",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "92b4fada-669c-4648-a4b5-fac7fa21dfcc",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 13,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431545",
+     "name": "Will Shipley",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "ba45a303-5abb-4160-887d-13bc7f1cee28",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "8439",
+     "name": "Aaron Rodgers",
+     "position": "QB",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3149687",
+     "name": "Chris Brooks",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e5bdef5f-f67f-45b3-8a0c-51cf91b57c5c",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 1,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429013",
+     "name": "Tank Bigsby",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ee2b71dc-d1c3-4914-b2f0-4fd57ff6ff34",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 4,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431545",
+     "name": "Will Shipley",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4832955",
+     "name": "Emmett Johnson",
+     "position": "RB",
+     "nfl_team": "KC",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "fa0b120c-dba1-47b7-80cf-53e94b62fad2",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 1,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T07:34:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2578570",
+     "name": "Jacoby Brissett",
+     "position": "QB",
+     "nfl_team": "ARI",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429025",
+     "name": "Quentin Johnston",
+     "position": "WR",
+     "nfl_team": "LAC",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3e270496-9276-4ec8-b28a-a1535e536aab",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T10:16:57Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4038815",
+     "name": "Rico Dowdle",
+     "position": "RB",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4695404",
+     "name": "Isaiah Davis",
+     "position": "RB",
+     "nfl_team": "NYJ",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "cb8e8c89-b3cc-4b32-99a4-bc13ddd5105e",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T10:17:36Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4695404",
+     "name": "Isaiah Davis",
+     "position": "RB",
+     "nfl_team": "NYJ",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f5c49332-ee5c-4867-89c0-f0e3ad25464c",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T10:52:19Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2578570",
+     "name": "Jacoby Brissett",
+     "position": "QB",
+     "nfl_team": "ARI",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4038941",
+     "name": "Justin Herbert",
+     "position": "QB",
+     "nfl_team": "LAC",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a94f2596-a1d1-4a17-a137-c112ae6f198f",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T10:53:19Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16012",
+     "name": "Chiefs D/ST",
+     "position": "D/ST",
+     "nfl_team": "KC",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4418187e-8cc2-48cc-b42d-1f729bde7ff0",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T11:57:46Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4430968",
+     "name": "Kimani Vidal",
+     "position": "RB",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3117256",
+     "name": "Dalton Schultz",
+     "position": "TE",
+     "nfl_team": "HOU",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8342bba9-658f-48b1-baf6-59160ae4a4ad",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T12:17:33Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3068267",
+     "name": "Austin Ekeler",
+     "position": "RB",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "0b8020ca-a083-4329-a97f-52c100d283c3",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T12:18:21Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4038815",
+     "name": "Rico Dowdle",
+     "position": "RB",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "06b1968a-641d-4296-9600-9fafef0ea7c0",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-07T20:46:27Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360238",
+     "name": "Dameon Pierce",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3068267",
+     "name": "Austin Ekeler",
+     "position": "RB",
+     "nfl_team": "WAS",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "556c678a-84e4-4c7b-b6f7-4d4945f3aeff",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 5,
+   "scoring_period": 5,
+   "processed_at": "2026-10-08T07:43:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4038815",
+     "name": "Rico Dowdle",
+     "position": "RB",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4819231",
+     "name": "Kaleb Johnson",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ae7c4ab3-c440-4428-b95b-05d45d4e7b29",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 5,
+   "scoring_period": 5,
+   "processed_at": "2026-10-08T07:43:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4038815",
+     "name": "Rico Dowdle",
+     "position": "RB",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ea043191-c2b9-4bd3-82ec-c657b48582bd",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 7,
+   "scoring_period": 5,
+   "processed_at": "2026-10-08T07:43:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4038815",
+     "name": "Rico Dowdle",
+     "position": "RB",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360238",
+     "name": "Dameon Pierce",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "58c93871-dd8a-42bb-a3aa-d512919e2dd7",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-08T22:13:40Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16013",
+     "name": "Raiders D/ST",
+     "position": "D/ST",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16009",
+     "name": "Packers D/ST",
+     "position": "D/ST",
+     "nfl_team": "GB",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6c0d64f0-7090-4a14-b952-db97b70595f8",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-09T13:28:18Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "5123663",
+     "name": "Isaac TeSlaa",
+     "position": "WR",
+     "nfl_team": "DET",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360939",
+     "name": "Rashod Bateman",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8654d8fd-8226-4856-9031-b44cebf2f980",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-09T19:37:00Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4426386",
+     "name": "Roschon Johnson",
+     "position": "RB",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f91a1359-2fc4-449b-88c4-3a390396b276",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-10T00:00:58Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "5081432",
+     "name": "Antonio Williams",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4241457",
+     "name": "Najee Harris",
+     "position": "RB",
+     "nfl_team": "FA",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e580d0a0-a582-45b5-9e03-f95f5474f969",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-10T01:12:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3116164",
+     "name": "Mike Gesicki",
+     "position": "TE",
+     "nfl_team": "CIN",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16003",
+     "name": "Bears D/ST",
+     "position": "D/ST",
+     "nfl_team": "CHI",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "2df66d9d-b960-4b01-84f7-bf18bc4dc3fa",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 0,
+   "scoring_period": 5,
+   "processed_at": "2026-10-11T04:37:30Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3045523",
+     "name": "Kendrick Bourne",
+     "position": "WR",
+     "nfl_team": "ARI",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2991662",
+     "name": "Mack Hollins",
+     "position": "WR",
+     "nfl_team": "NE",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "15d8c843-8336-44d4-901f-5ba987f918a0",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T00:15:54Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16012",
+     "name": "Chiefs D/ST",
+     "position": "D/ST",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16020",
+     "name": "Jets D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYJ",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c1cd03ac-5597-4d01-98f2-abaad764cbb3",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T00:19:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "5083754",
+     "name": "Ryan Flournoy",
+     "position": "WR",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3912547",
+     "name": "Sam Darnold",
+     "position": "QB",
+     "nfl_team": "SEA",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1ad640bf-1d03-4e70-abe4-22d6b788973e",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 1,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T01:41:43Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4361411",
+     "name": "Pat Freiermuth",
+     "position": "TE",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4595342",
+     "name": "Oronde Gadsden",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e6083fa8-ace0-47e4-bdf8-88afa5605d78",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T02:43:45Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360238",
+     "name": "Dameon Pierce",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4384852",
+     "name": "Dohnte Meyers",
+     "position": "WR",
+     "nfl_team": "CIN",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1dc1bd85-e83d-4119-9212-31d993c11380",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 4,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685261",
+     "name": "Germie Bernard",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "20304923-1401-4ac2-bf52-a6a169c9fbe5",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 6,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428557",
+     "name": "Tyjae Spears",
+     "position": "RB",
+     "nfl_team": "TEN",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16006",
+     "name": "Cowboys D/ST",
+     "position": "D/ST",
+     "nfl_team": "DAL",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "32df8a86-644b-4f4e-a4e7-5bd606b92981",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 5,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685261",
+     "name": "Germie Bernard",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4819231",
+     "name": "Kaleb Johnson",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "365e20c4-1836-44e9-b809-5f302f50f2d5",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 1,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4722893",
+     "name": "Jaleel McLaughlin",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3a0f4c0e-e18e-44c1-a617-0fa900baae33",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 4,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4427095",
+     "name": "DeMario Douglas",
+     "position": "WR",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3d11e876-9d77-4973-aa10-eef7f727a0b3",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 1,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4361411",
+     "name": "Pat Freiermuth",
+     "position": "TE",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4595342",
+     "name": "Oronde Gadsden",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "41bf5f71-5825-46d7-a854-df5156937ff3",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 1,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "15864",
+     "name": "Geno Smith",
+     "position": "QB",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4426386",
+     "name": "Roschon Johnson",
+     "position": "RB",
+     "nfl_team": "CHI",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5d55f2c5-e9ae-4ede-b51b-089919ae0972",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 2,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4361411",
+     "name": "Pat Freiermuth",
+     "position": "TE",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4242355",
+     "name": "Jake Ferguson",
+     "position": "TE",
+     "nfl_team": "DAL",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "685aa82a-fbe6-458f-9b97-f5444df27b3d",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 3,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16012",
+     "name": "Chiefs D/ST",
+     "position": "D/ST",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8411733d-7e24-4dd3-82ac-3cea46e55cf9",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 8,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3126486",
+     "name": "Deebo Samuel Sr.",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "87bdfba6-12af-475b-a767-87a8c7e17be5",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 2,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431431",
+     "name": "Corey Kiner",
+     "position": "RB",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4601080",
+     "name": "Raheim Sanders",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "89b37398-559c-4490-8b07-cc40994d97ab",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 2,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16012",
+     "name": "Chiefs D/ST",
+     "position": "D/ST",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9d3296ab-18a0-4b30-be64-91fb14a8fd34",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 6,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685261",
+     "name": "Germie Bernard",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "b28f555e-a89e-4d23-8955-c30120c70b39",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 2,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "16731",
+     "name": "Brandin Cooks",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4362619",
+     "name": "Chris Rodriguez Jr.",
+     "position": "RB",
+     "nfl_team": "JAX",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "bd7902e5-7200-4d9a-a4d0-1e26bca3f7d8",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 8,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685261",
+     "name": "Germie Bernard",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4431545",
+     "name": "Will Shipley",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c361e15a-528e-4b58-845c-30404b903c7a",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 8,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685261",
+     "name": "Germie Bernard",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "5081432",
+     "name": "Antonio Williams",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c8da5ed1-5139-482f-8bb6-3e1e3e97dd9e",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 8,
+   "team": "    DeVonta Be Kidding Me",
+   "bid": 15,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360238",
+     "name": "Dameon Pierce",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 8
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "d53eb6d7-c3ef-48ef-a325-2131ea64e8a5",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 6,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16012",
+     "name": "Chiefs D/ST",
+     "position": "D/ST",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e85c0a15-ac69-4ca6-bd11-62a867802f09",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 13,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685261",
+     "name": "Germie Bernard",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4384852",
+     "name": "Dohnte Meyers",
+     "position": "WR",
+     "nfl_team": "CIN",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ea4c061d-33ad-479c-98ef-3e2439b69274",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 1,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "14880",
+     "name": "Kirk Cousins",
+     "position": "QB",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4702555",
+     "name": "Jonah Coleman",
+     "position": "RB",
+     "nfl_team": "DEN",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f2cb812e-9b49-489b-8a78-e4e6dea9686c",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 11,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T07:39:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685261",
+     "name": "Germie Bernard",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "0262edfa-dc25-41d6-91c5-c92f8da7a4f2",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T10:43:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4241463",
+     "name": "Jerry Jeudy",
+     "position": "WR",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4040655",
+     "name": "Darnell Mooney",
+     "position": "WR",
+     "nfl_team": "NYG",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "26454ed1-1059-443c-98e1-08f518f1c91e",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T10:49:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16001",
+     "name": "Falcons D/ST",
+     "position": "D/ST",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9a4e92d0-9fb3-4404-ad8b-f02688abd0d0",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T11:30:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16018",
+     "name": "Saints D/ST",
+     "position": "D/ST",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16013",
+     "name": "Raiders D/ST",
+     "position": "D/ST",
+     "nfl_team": "LV",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "aac4e206-2eeb-4263-9aa4-69aad5a25197",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T11:30:54Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "5083754",
+     "name": "Ryan Flournoy",
+     "position": "WR",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "5123663",
+     "name": "Isaac TeSlaa",
+     "position": "WR",
+     "nfl_team": "DET",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "baeca0da-121a-4b6c-82ec-2f40c5d956ea",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T11:31:38Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4c085624-53ea-4440-b976-263cc5cc9d80",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T12:00:43Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2573401",
+     "name": "Tyler Higbee",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4595342",
+     "name": "Oronde Gadsden",
+     "position": "TE",
+     "nfl_team": "LAC",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "24886326-098f-4aae-9b09-fb25120f9523",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T12:18:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4722893",
+     "name": "Jaleel McLaughlin",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429835",
+     "name": "George Holani",
+     "position": "RB",
+     "nfl_team": "SEA",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "13ae04e8-1cc3-4aa6-819b-66b614c57798",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T12:18:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4569682",
+     "name": "Audric Estime",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360423",
+     "name": "Michael Penix Jr.",
+     "position": "QB",
+     "nfl_team": "ATL",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3bdd4f59-5259-4e33-a7a3-a01d41c30da7",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T12:22:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2969939",
+     "name": "Jameis Winston",
+     "position": "QB",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429501",
+     "name": "Ray Davis",
+     "position": "RB",
+     "nfl_team": "BUF",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6af7586d-632c-4314-a392-baf6fd45ca2e",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-14T13:14:51Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3126486",
+     "name": "Deebo Samuel Sr.",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4431492",
+     "name": "Roman Wilson",
+     "position": "WR",
+     "nfl_team": "PIT",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9c7080e4-57fc-4dcd-9219-485eb755971b",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 2,
+   "scoring_period": 6,
+   "processed_at": "2026-10-15T07:33:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4426386",
+     "name": "Roschon Johnson",
+     "position": "RB",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3912547",
+     "name": "Sam Darnold",
+     "position": "QB",
+     "nfl_team": "SEA",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1d1d41ca-c942-4b77-9b83-801dc5e63920",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-15T11:23:57Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4702555",
+     "name": "Jonah Coleman",
+     "position": "RB",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "5081432",
+     "name": "Antonio Williams",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5eb887bc-2050-47e3-82e0-e7a59cec49af",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-15T23:05:38Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4249836",
+     "name": "Pierre Strong Jr.",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4431545",
+     "name": "Will Shipley",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "fe902c3d-6293-443e-b7ea-ed62dea42378",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-15T23:10:32Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4575665",
+     "name": "Jacob Cowing",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4569682",
+     "name": "Audric Estime",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5650bcf2-96b8-4b59-8864-918f50115c4d",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-16T00:08:00Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4819231",
+     "name": "Kaleb Johnson",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "dc455653-1515-41f8-affa-60402a0dce4f",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-16T00:19:13Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685201",
+     "name": "Tanner McKee",
+     "position": "QB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4040715",
+     "name": "Jalen Hurts",
+     "position": "QB",
+     "nfl_team": "PHI",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f3fd54ba-0e59-4843-878f-a8bc7b8175ca",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-16T20:14:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3895856",
+     "name": "Christian Kirk",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4682648",
+     "name": "Malachi Fields",
+     "position": "WR",
+     "nfl_team": "NYG",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "45fd42fc-c485-41f6-8ed5-c379e3c2acbf",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-17T00:34:23Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4242355",
+     "name": "Jake Ferguson",
+     "position": "TE",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "87d0556d-ffd4-46b8-b9e5-3d4dd8059b87",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-18T12:52:52Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "5082630",
+     "name": "Jalen Royals",
+     "position": "WR",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "16731",
+     "name": "Brandin Cooks",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c8b02f3d-d988-4d6c-8f19-56f0b14b6d01",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-18T13:15:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685350",
+     "name": "Trevor Etienne",
+     "position": "RB",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2578570",
+     "name": "Jacoby Brissett",
+     "position": "QB",
+     "nfl_team": "ARI",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c26f1cfe-80d8-41fe-a9d5-3462c4a362e0",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-18T16:02:40Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3068267",
+     "name": "Austin Ekeler",
+     "position": "RB",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4682745",
+     "name": "Jaylen Wright",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "fe5222f3-65dd-4ef6-a755-97a0f1bf6d1a",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-18T16:18:30Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4569682",
+     "name": "Audric Estime",
+     "position": "RB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4685201",
+     "name": "Tanner McKee",
+     "position": "QB",
+     "nfl_team": "PHI",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c1514ad5-3821-4bf7-b5f7-87af979821c6",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 0,
+   "scoring_period": 6,
+   "processed_at": "2026-10-18T16:45:32Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4241457",
+     "name": "Najee Harris",
+     "position": "RB",
+     "nfl_team": "FA",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "bb598008-5f86-4348-9d4e-d8b8ae99016b",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 10,
+   "scoring_period": 7,
+   "processed_at": "2026-10-20T14:03:16Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4575665",
+     "name": "Jacob Cowing",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7e643f86-bb7e-4e85-9d14-fa2647465fce",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 1,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T02:24:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4723820",
+     "name": "Omar Cooper Jr.",
+     "position": "WR",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4596334",
+     "name": "Keaton Mitchell",
+     "position": "RB",
+     "nfl_team": "LAC",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "d680ae91-2c7d-4755-9e60-21d3cdbf24dd",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 8,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T02:24:44Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3116365",
+     "name": "Mark Andrews",
+     "position": "TE",
+     "nfl_team": "BAL",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "04ea64fe-0185-44f3-adef-f9251702065f",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 4,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428850",
+     "name": "Dontayvion Wicks",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "185569a8-ed34-475c-beb9-64991ad5fc9a",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 6,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360516",
+     "name": "Tyrone Tracy Jr.",
+     "position": "RB",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4426338",
+     "name": "Bo Nix",
+     "position": "QB",
+     "nfl_team": "DEN",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "27754ccc-e8f9-4612-9cff-33114a5a6fc0",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 12,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "3a674544-3156-4129-bce6-a05f1b4cd2f2",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 2,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4586312",
+     "name": "Jaylin Noel",
+     "position": "WR",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428850",
+     "name": "Dontayvion Wicks",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "486101ef-8a44-4651-9b68-2ff0e7612c47",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 19,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4723820",
+     "name": "Omar Cooper Jr.",
+     "position": "WR",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "4a16df43-9813-4b9d-890f-c8a3e8cf7fde",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 6,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "15864",
+     "name": "Geno Smith",
+     "position": "QB",
+     "nfl_team": "NYJ",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4dfee68d-f751-45f9-a84e-80c91301c3eb",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 6,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360516",
+     "name": "Tyrone Tracy Jr.",
+     "position": "RB",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4832955",
+     "name": "Emmett Johnson",
+     "position": "RB",
+     "nfl_team": "KC",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6c0f1f0d-a90b-4f1d-9726-6c47f51f7424",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 2,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4570037",
+     "name": "Terrance Ferguson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3929645",
+     "name": "Juwan Johnson",
+     "position": "TE",
+     "nfl_team": "NO",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7372bc3f-9528-43f5-acdd-e49312762d43",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies ",
+   "bid": 7,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "15864",
+     "name": "Geno Smith",
+     "position": "QB",
+     "nfl_team": "NYJ",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "839ee837-537f-476f-9628-e01bb0e0d6c2",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 8,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4723820",
+     "name": "Omar Cooper Jr.",
+     "position": "WR",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16001",
+     "name": "Falcons D/ST",
+     "position": "D/ST",
+     "nfl_team": "ATL",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "92e22ccf-f942-4588-9941-5f6a97f53e91",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 10,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4242355",
+     "name": "Jake Ferguson",
+     "position": "TE",
+     "nfl_team": "DAL",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "99408d76-eee3-49ee-be9d-631558570a08",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 10,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4575665",
+     "name": "Jacob Cowing",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "99fbec5d-5c29-4951-97ae-407087b7d1bf",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 8,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3116365",
+     "name": "Mark Andrews",
+     "position": "TE",
+     "nfl_team": "BAL",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9da2cfff-1195-444f-aebd-6cb6cb29d176",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 5,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3126486",
+     "name": "Deebo Samuel Sr.",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3045523",
+     "name": "Kendrick Bourne",
+     "position": "WR",
+     "nfl_team": "ARI",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a7eb19a8-3510-4192-a0e1-d09b52090078",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 3,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4723820",
+     "name": "Omar Cooper Jr.",
+     "position": "WR",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "b871a2d2-8c7c-4cce-9625-3c94c1355501",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 10,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4723820",
+     "name": "Omar Cooper Jr.",
+     "position": "WR",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3068267",
+     "name": "Austin Ekeler",
+     "position": "RB",
+     "nfl_team": "WAS",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e13b4934-9193-4017-a1aa-183fe79357cf",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 3,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T08:08:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4723820",
+     "name": "Omar Cooper Jr.",
+     "position": "WR",
+     "nfl_team": "NYJ",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4596334",
+     "name": "Keaton Mitchell",
+     "position": "RB",
+     "nfl_team": "LAC",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6b9c0fcf-0142-4029-a8ff-9dd18164a095",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T09:00:57Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16010",
+     "name": "Titans D/ST",
+     "position": "D/ST",
+     "nfl_team": "TEN",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4032473",
+     "name": "Rashid Shaheed",
+     "position": "WR",
+     "nfl_team": "SEA",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "40b257e6-cea3-4bbe-8de2-a0220516d014",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T10:13:00Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4429086",
+     "name": "Michael Mayer",
+     "position": "TE",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "7297b466-b9cf-44b6-9bbd-ad0c80e9c83a",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T10:13:46Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4686468",
+     "name": "Seth McGowan",
+     "position": "RB",
+     "nfl_team": "IND",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4426338",
+     "name": "Bo Nix",
+     "position": "QB",
+     "nfl_team": "DEN",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ef3a1bc8-6103-4bcd-b93f-e474477d8b19",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T10:49:59Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3045147",
+     "name": "James Conner",
+     "position": "RB",
+     "nfl_team": "ARI",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16001",
+     "name": "Falcons D/ST",
+     "position": "D/ST",
+     "nfl_team": "ATL",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3fd53a65-7af0-495b-b5c6-edd8fde78aff",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T11:27:34Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16029",
+     "name": "Panthers D/ST",
+     "position": "D/ST",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a728e02e-a96c-4cfe-ace2-0a63fb6e344c",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass ",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T15:17:53Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4433970",
+     "name": "J.J. McCarthy",
+     "position": "QB",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2969939",
+     "name": "Jameis Winston",
+     "position": "QB",
+     "nfl_team": "NYG",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ec4f689d-7ac6-464c-bbdd-aac808663adc",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T16:18:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3117256",
+     "name": "Dalton Schultz",
+     "position": "TE",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2576925",
+     "name": "Darren Waller",
+     "position": "TE",
+     "nfl_team": "CAR",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5be1b7c9-7683-4fc9-bdd7-11da675ffd16",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T16:21:45Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16003",
+     "name": "Bears D/ST",
+     "position": "D/ST",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16017",
+     "name": "Patriots D/ST",
+     "position": "D/ST",
+     "nfl_team": "NE",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "28a4edf9-50fc-4099-bbe6-b9352fcfffcb",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-21T16:27:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360423",
+     "name": "Michael Penix Jr.",
+     "position": "QB",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4685350",
+     "name": "Trevor Etienne",
+     "position": "RB",
+     "nfl_team": "CAR",
+     "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8dd27099-dec4-4470-9f0d-546f72cba0ec",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-22T00:20:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4710855",
+     "name": "Konata Mumpfield",
+     "position": "WR",
+     "nfl_team": "LAR",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3068267",
+     "name": "Austin Ekeler",
+     "position": "RB",
+     "nfl_team": "WAS",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "948a0b67-b813-491d-87c3-0ee1122b9d72",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff ",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-22T00:45:50Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "5081432",
+     "name": "Antonio Williams",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "14880",
+     "name": "Kirk Cousins",
+     "position": "QB",
+     "nfl_team": "LV",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  }
+ ]
+}
