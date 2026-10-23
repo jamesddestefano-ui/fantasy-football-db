@@ -39,6 +39,10 @@ MCKEE_HURTS_AT = datetime(2026, 10, 16, 0, 19, 0, tzinfo=timezone.utc)  # Thu Oc
 ESTIME_MCKEE_AT = datetime(2026, 10, 18, 16, 18, 0, tzinfo=timezone.utc)  # Sun Oct 18, 12:18 pm ET
 MURRAY_ANDREWS_WAIVER_AT = datetime(2026, 10, 21, 8, 8, 0, tzinfo=timezone.utc)  # Wed Oct 21, 4:08 am ET
 MCCARTHY_WINSTON_AT = datetime(2026, 10, 21, 15, 17, 0, tzinfo=timezone.utc)  # Wed Oct 21, 11:17 am ET
+BROWNS_SAINTS_DST_AT = datetime(2026, 10, 22, 22, 13, 59, tzinfo=timezone.utc)  # Thu Oct 22, 6:13:59 pm ET
+KNIGHT_ESTIME_AT = datetime(2026, 10, 22, 22, 15, 37, tzinfo=timezone.utc)  # Thu Oct 22, 6:15:37 pm ET
+WICKS_MCLAUGHLIN_AT = datetime(2026, 10, 22, 22, 26, 17, tzinfo=timezone.utc)  # Thu Oct 22, 6:26:17 pm ET
+JOHNSON_COWING_AT = datetime(2026, 10, 22, 22, 26, 31, tzinfo=timezone.utc)  # Thu Oct 22, 6:26:31 pm ET
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -1543,6 +1547,226 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
         observed_at=MCCARTHY_WINSTON_AT, source_id=mccarthy_source.id,
+    ))
+
+    # --- 2026-10-22 ESPN: FREE_AGENT ADD Browns D/ST $0 / DROP Saints D/ST ---
+    browns_dst_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Saints D/ST")))
+    browns_dst = _player(session, "Browns D/ST", "D/ST", "CLE")
+    if browns_dst.espn_id is None:
+        browns_dst.espn_id = "-16005"  # from ESPN API transaction log / roster snapshot 2026-10-22T22:27Z
+    browns_dst_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_API_TRANSACTION",
+        description="ESPN transaction log (read-only API) eee2ff45-80ec-494a-b443-c5e9d5b32e6f FREEAGENT EXECUTED: added Browns D/ST (CLE D/ST) for $0; dropped Saints D/ST (NO D/ST) (Thu Oct 22, 6:13:59 pm ET)",
+        original_ref="data/imports/2026-10-22-browns-dst-add-saints-dst-drop.json",
+        platform="ESPN",
+        observed_at=BROWNS_SAINTS_DST_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="ESPN API snapshot data/espn_api/2026-10-22T2227Z.json (observed 2026-10-22T22:27:33Z); FAAB remained $66; espn_id -16005 from ESPN data.",
+    )
+    session.add(browns_dst_source)
+    session.flush()
+    browns_dst_group = TransactionGroup(
+        id="browns-dst-add-saints-dst-drop-20261022-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=BROWNS_SAINTS_DST_AT, source_id=browns_dst_source.id,
+        notes="ESPN-authoritative ADD_DROP: Browns D/ST $0 free add; Saints D/ST dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(browns_dst_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=browns_dst_group.id, sequence=1, event_type="DROP", player_id=browns_dst_drop.id,
+            notes="Dropped when adding Browns D/ST.",
+        ),
+        TransactionEvent(
+            group_id=browns_dst_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=browns_dst.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=browns_dst_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=BROWNS_SAINTS_DST_AT, source_id=browns_dst_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=browns_dst_group.id,
+            notes="Drop proves departure from roster, not current free agency.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=browns_dst.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=BROWNS_SAINTS_DST_AT, source_id=browns_dst_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=browns_dst_group.id,
+            notes="ESPN free add $0 dropping Saints D/ST.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=browns_dst.id,
+            slot="D/ST", placement="STARTER", effective_at=BROWNS_SAINTS_DST_AT, source_id=browns_dst_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
+        observed_at=BROWNS_SAINTS_DST_AT, source_id=browns_dst_source.id,
+    ))
+
+    # --- 2026-10-22 ESPN: FREE_AGENT ADD Bam Knight $0 / DROP Audric Estime ---
+    knight_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Audric Estime")))
+    knight = _player(session, "Bam Knight", "RB", "ARI")
+    if knight.espn_id is None:
+        knight.espn_id = "4427728"  # from ESPN API transaction log / roster snapshot 2026-10-22T22:27Z
+    knight_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_API_TRANSACTION",
+        description="ESPN transaction log (read-only API) daefc437-6173-4c20-93ec-9b7e2542d159 FREEAGENT EXECUTED: added Bam Knight (ARI RB) for $0; dropped Audric Estime (CLE RB) (Thu Oct 22, 6:15:37 pm ET)",
+        original_ref="data/imports/2026-10-22-bam-knight-add-estime-drop.json",
+        platform="ESPN",
+        observed_at=KNIGHT_ESTIME_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="ESPN API snapshot data/espn_api/2026-10-22T2227Z.json (observed 2026-10-22T22:27:33Z); FAAB remained $66; espn_id 4427728 from ESPN data.",
+    )
+    session.add(knight_source)
+    session.flush()
+    knight_group = TransactionGroup(
+        id="bam-knight-add-estime-drop-20261022-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=KNIGHT_ESTIME_AT, source_id=knight_source.id,
+        notes="ESPN-authoritative ADD_DROP: Bam Knight $0 free add; Audric Estime dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(knight_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=knight_group.id, sequence=1, event_type="DROP", player_id=knight_drop.id,
+            notes="Dropped when adding Bam Knight.",
+        ),
+        TransactionEvent(
+            group_id=knight_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=knight.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=knight_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=KNIGHT_ESTIME_AT, source_id=knight_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=knight_group.id,
+            notes="Drop proves departure from roster, not current free agency.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=knight.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=KNIGHT_ESTIME_AT, source_id=knight_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=knight_group.id,
+            notes="ESPN free add $0 dropping Audric Estime.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=knight.id,
+            slot="BN", placement="BENCH", effective_at=KNIGHT_ESTIME_AT, source_id=knight_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
+        observed_at=KNIGHT_ESTIME_AT, source_id=knight_source.id,
+    ))
+
+    # --- 2026-10-22 ESPN: FREE_AGENT ADD Dontayvion Wicks $0 / DROP Jaleel McLaughlin ---
+    wicks_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Jaleel McLaughlin")))
+    wicks = _player(session, "Dontayvion Wicks", "WR", "PHI")
+    if wicks.espn_id is None:
+        wicks.espn_id = "4428850"  # from ESPN API transaction log / roster snapshot 2026-10-22T22:27Z
+    wicks_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_API_TRANSACTION",
+        description="ESPN transaction log (read-only API) 3837d910-ec8e-46c5-8840-caf565b76586 FREEAGENT EXECUTED: added Dontayvion Wicks (PHI WR) for $0; dropped Jaleel McLaughlin (CLE RB) (Thu Oct 22, 6:26:17 pm ET)",
+        original_ref="data/imports/2026-10-22-dontayvion-wicks-add-mclaughlin-drop.json",
+        platform="ESPN",
+        observed_at=WICKS_MCLAUGHLIN_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="ESPN API snapshot data/espn_api/2026-10-22T2227Z.json (observed 2026-10-22T22:27:33Z); FAAB remained $66; espn_id 4428850 from ESPN data.",
+    )
+    session.add(wicks_source)
+    session.flush()
+    wicks_group = TransactionGroup(
+        id="dontayvion-wicks-add-mclaughlin-drop-20261022-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=WICKS_MCLAUGHLIN_AT, source_id=wicks_source.id,
+        notes="ESPN-authoritative ADD_DROP: Dontayvion Wicks $0 free add; Jaleel McLaughlin dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(wicks_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=wicks_group.id, sequence=1, event_type="DROP", player_id=wicks_drop.id,
+            notes="Dropped when adding Dontayvion Wicks.",
+        ),
+        TransactionEvent(
+            group_id=wicks_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=wicks.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=wicks_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=WICKS_MCLAUGHLIN_AT, source_id=wicks_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=wicks_group.id,
+            notes="Drop proves departure from roster, not current free agency.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=wicks.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=WICKS_MCLAUGHLIN_AT, source_id=wicks_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=wicks_group.id,
+            notes="ESPN free add $0 dropping Jaleel McLaughlin.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=wicks.id,
+            slot="BN", placement="BENCH", effective_at=WICKS_MCLAUGHLIN_AT, source_id=wicks_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
+        observed_at=WICKS_MCLAUGHLIN_AT, source_id=wicks_source.id,
+    ))
+
+    # --- 2026-10-22 ESPN: FREE_AGENT ADD Juwan Johnson $0 / DROP Jacob Cowing ---
+    juwan_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Jacob Cowing")))
+    juwan = _player(session, "Juwan Johnson", "TE", "NO")
+    if juwan.espn_id is None:
+        juwan.espn_id = "3929645"  # from ESPN API transaction log / roster snapshot 2026-10-22T22:27Z
+    juwan_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_API_TRANSACTION",
+        description="ESPN transaction log (read-only API) 80e3ffe7-2097-4182-86c7-c8a4e0e4a38e FREEAGENT EXECUTED: added Juwan Johnson (NO TE) for $0; dropped Jacob Cowing (SF WR) (Thu Oct 22, 6:26:31 pm ET)",
+        original_ref="data/imports/2026-10-22-juwan-johnson-add-cowing-drop.json",
+        platform="ESPN",
+        observed_at=JOHNSON_COWING_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="ESPN API snapshot data/espn_api/2026-10-22T2227Z.json (observed 2026-10-22T22:27:33Z); FAAB remained $66; espn_id 3929645 from ESPN data.",
+    )
+    session.add(juwan_source)
+    session.flush()
+    juwan_group = TransactionGroup(
+        id="juwan-johnson-add-cowing-drop-20261022-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=JOHNSON_COWING_AT, source_id=juwan_source.id,
+        notes="ESPN-authoritative ADD_DROP: Juwan Johnson $0 free add; Jacob Cowing dropped (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(juwan_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=juwan_group.id, sequence=1, event_type="DROP", player_id=juwan_drop.id,
+            notes="Dropped when adding Juwan Johnson.",
+        ),
+        TransactionEvent(
+            group_id=juwan_group.id, sequence=2, event_type="FREE_AGENT_ADD", player_id=juwan.id,
+            faab_amount=Decimal("0"), notes="Free add $0.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=juwan_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=JOHNSON_COWING_AT, source_id=juwan_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=juwan_group.id,
+            notes="Drop proves departure from roster, not current free agency.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=juwan.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+            event_type="ADDED", effective_at=JOHNSON_COWING_AT, source_id=juwan_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=juwan_group.id,
+            notes="ESPN free add $0 dropping Jacob Cowing.",
+        ),
+        LineupAssignment(
+            league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=juwan.id,
+            slot="BN", placement="BENCH", effective_at=JOHNSON_COWING_AT, source_id=juwan_source.id,
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
+        observed_at=JOHNSON_COWING_AT, source_id=juwan_source.id,
     ))
 
     for name, pos in NOT_MINE_UNKNOWN:
