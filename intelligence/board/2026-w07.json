@@ -5,10 +5,10 @@
  "team": "Tom Brady of Ass (JDD)",
  "kind": "INTELLIGENCE_BOARD_NOT_A_RECORDED_RECOMMENDATION",
  "generated_from": {
-  "fantasypros_pulled_at": "2026-10-22T13:46:34+00:00",
+  "fantasypros_pulled_at": "2026-10-24T16:42:58+00:00",
   "roster_source": "ESPN_API",
-  "roster_observed_at": "2026-10-22T13:46:02Z",
-  "espn_observed_at": "2026-10-22T13:46:02Z"
+  "roster_observed_at": "2026-10-24T16:42:25Z",
+  "espn_observed_at": "2026-10-24T16:42:25Z"
  },
  "faab": {
   "balance": 66
@@ -25,7 +25,7 @@
    {
     "slot": "RB",
     "player": "Bijan Robinson",
-    "proj": 19.99,
+    "proj": 22.11,
     "basis": "espn"
    },
    {
@@ -37,7 +37,7 @@
    {
     "slot": "WR",
     "player": "CeeDee Lamb",
-    "proj": 19.28,
+    "proj": 19.17,
     "basis": "espn"
    },
    {
@@ -48,8 +48,8 @@
    },
    {
     "slot": "TE",
-    "player": "Tyler Higbee",
-    "proj": 7.47,
+    "player": "Juwan Johnson",
+    "proj": 8.77,
     "basis": "espn"
    },
    {
@@ -61,13 +61,13 @@
    {
     "slot": "FLEX",
     "player": "Ryan Flournoy",
-    "proj": 9.05,
+    "proj": 9.0,
     "basis": "espn"
    },
    {
     "slot": "D/ST",
-    "player": "Saints D/ST",
-    "proj": 6.69,
+    "player": "Browns D/ST",
+    "proj": 7.61,
     "basis": "espn"
    }
   ],
@@ -79,8 +79,8 @@
     "Josh Downs"
    ]
   },
-  "proj_current_starters": 123.26,
-  "proj_suggested": 123.75
+  "proj_current_starters": 127.49,
+  "proj_suggested": 127.93
  },
  "roster": [
   {
@@ -104,9 +104,9 @@
    "nfl_team": "NYG",
    "current_slot": "BN",
    "status": "NORMAL",
-   "proj_espn": 20.83,
-   "proj_ppr": 14.36,
-   "ecr_rank": 25.0,
+   "proj_espn": 20.85,
+   "proj_ppr": 14.08,
+   "ecr_rank": 26.0,
    "ros_rank": null,
    "opponent": "at HOU",
    "matched_fantasypros": true,
@@ -119,9 +119,9 @@
    "nfl_team": "ATL",
    "current_slot": "RB",
    "status": "NORMAL",
-   "proj_espn": 19.99,
-   "proj_ppr": 21.0,
-   "ecr_rank": 4.0,
+   "proj_espn": 22.11,
+   "proj_ppr": 22.5,
+   "ecr_rank": 3.0,
    "ros_rank": 3.0,
    "opponent": "vs. SF",
    "matched_fantasypros": true,
@@ -135,10 +135,25 @@
    "current_slot": "RB",
    "status": "NORMAL",
    "proj_espn": 9.79,
-   "proj_ppr": 7.63,
-   "ecr_rank": 82.0,
+   "proj_ppr": 7.61,
+   "ecr_rank": 78.0,
    "ros_rank": 156.0,
    "opponent": "vs. PIT",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Bam Knight",
+   "position": "RB",
+   "nfl_team": "ARI",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 8.38,
+   "proj_ppr": 6.85,
+   "ecr_rank": 110.0,
+   "ros_rank": 249.0,
+   "opponent": "vs. DEN",
    "matched_fantasypros": true,
    "unavailable": false,
    "on_bye": false
@@ -150,7 +165,7 @@
    "current_slot": "BN",
    "status": "NORMAL",
    "proj_espn": 6.57,
-   "proj_ppr": 5.37,
+   "proj_ppr": 5.39,
    "ecr_rank": 138.0,
    "ros_rank": 157.0,
    "opponent": "at ATL",
@@ -165,9 +180,9 @@
    "current_slot": "IR",
    "status": "NORMAL",
    "proj_espn": 6.15,
-   "proj_ppr": 6.54,
-   "ecr_rank": 181.0,
-   "ros_rank": 190.0,
+   "proj_ppr": 6.53,
+   "ecr_rank": 162.0,
+   "ros_rank": 191.0,
    "opponent": "at TEN",
    "matched_fantasypros": true,
    "unavailable": true,
@@ -182,38 +197,8 @@
    "proj_espn": 0.0,
    "proj_ppr": 0.0,
    "ecr_rank": null,
-   "ros_rank": 163.0,
+   "ros_rank": 164.0,
    "opponent": null,
-   "matched_fantasypros": true,
-   "unavailable": false,
-   "on_bye": false
-  },
-  {
-   "name": "Jaleel McLaughlin",
-   "position": "RB",
-   "nfl_team": "CLE",
-   "current_slot": "BN",
-   "status": "NORMAL",
-   "proj_espn": 0.0,
-   "proj_ppr": 1.83,
-   "ecr_rank": 140.0,
-   "ros_rank": 245.0,
-   "opponent": "at TEN",
-   "matched_fantasypros": true,
-   "unavailable": false,
-   "on_bye": false
-  },
-  {
-   "name": "Audric Estime",
-   "position": "RB",
-   "nfl_team": "CLE",
-   "current_slot": "BN",
-   "status": "NORMAL",
-   "proj_espn": 0.0,
-   "proj_ppr": 0.6,
-   "ecr_rank": 152.0,
-   "ros_rank": 274.0,
-   "opponent": "at TEN",
    "matched_fantasypros": true,
    "unavailable": false,
    "on_bye": false
@@ -224,9 +209,9 @@
    "nfl_team": "DAL",
    "current_slot": "WR",
    "status": "NORMAL",
-   "proj_espn": 19.28,
-   "proj_ppr": 17.94,
-   "ecr_rank": 9.0,
+   "proj_espn": 19.17,
+   "proj_ppr": 17.87,
+   "ecr_rank": 10.0,
    "ros_rank": 11.0,
    "opponent": "at PHI",
    "matched_fantasypros": true,
@@ -241,7 +226,7 @@
    "status": "NORMAL",
    "proj_espn": 16.44,
    "proj_ppr": 14.94,
-   "ecr_rank": 30.0,
+   "ecr_rank": 28.0,
    "ros_rank": 29.0,
    "opponent": "vs. TB",
    "matched_fantasypros": true,
@@ -255,9 +240,9 @@
    "current_slot": "FLEX",
    "status": "NORMAL",
    "proj_espn": 13.07,
-   "proj_ppr": 12.57,
-   "ecr_rank": 42.0,
-   "ros_rank": 42.0,
+   "proj_ppr": 12.6,
+   "ecr_rank": 44.0,
+   "ros_rank": 41.0,
    "opponent": "vs. NE",
    "matched_fantasypros": true,
    "unavailable": false,
@@ -269,9 +254,9 @@
    "nfl_team": "DAL",
    "current_slot": "BN",
    "status": "NORMAL",
-   "proj_espn": 9.05,
+   "proj_espn": 9.0,
    "proj_ppr": 7.97,
-   "ecr_rank": 88.0,
+   "ecr_rank": 90.0,
    "ros_rank": 114.0,
    "opponent": "at PHI",
    "matched_fantasypros": true,
@@ -285,8 +270,8 @@
    "current_slot": "FLEX",
    "status": "NORMAL",
    "proj_espn": 8.56,
-   "proj_ppr": 9.6,
-   "ecr_rank": 70.0,
+   "proj_ppr": 9.81,
+   "ecr_rank": 69.0,
    "ros_rank": 60.0,
    "opponent": "at MIN",
    "matched_fantasypros": true,
@@ -294,16 +279,31 @@
    "on_bye": false
   },
   {
-   "name": "Jacob Cowing",
+   "name": "Dontayvion Wicks",
    "position": "WR",
-   "nfl_team": "SF",
+   "nfl_team": "PHI",
    "current_slot": "BN",
    "status": "NORMAL",
-   "proj_espn": 4.75,
-   "proj_ppr": 4.24,
-   "ecr_rank": 167.0,
-   "ros_rank": null,
-   "opponent": "at ATL",
+   "proj_espn": 0.0,
+   "proj_ppr": 5.52,
+   "ecr_rank": 95.0,
+   "ros_rank": 88.0,
+   "opponent": "vs. DAL",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Juwan Johnson",
+   "position": "TE",
+   "nfl_team": "NO",
+   "current_slot": "TE",
+   "status": "NORMAL",
+   "proj_espn": 8.77,
+   "proj_ppr": 9.58,
+   "ecr_rank": 77.0,
+   "ros_rank": 103.0,
+   "opponent": "vs. PIT",
    "matched_fantasypros": true,
    "unavailable": false,
    "on_bye": false
@@ -312,11 +312,11 @@
    "name": "Tyler Higbee",
    "position": "TE",
    "nfl_team": "LAR",
-   "current_slot": "TE",
+   "current_slot": "BN",
    "status": "NORMAL",
-   "proj_espn": 7.47,
-   "proj_ppr": 8.83,
-   "ecr_rank": 69.0,
+   "proj_espn": 8.5,
+   "proj_ppr": 8.99,
+   "ecr_rank": 68.0,
    "ros_rank": 137.0,
    "opponent": "at LV",
    "matched_fantasypros": true,
@@ -324,38 +324,22 @@
    "on_bye": false
   },
   {
-   "name": "Saints D/ST",
+   "name": "Browns D/ST",
    "position": "D/ST",
-   "nfl_team": "NO",
+   "nfl_team": "CLE",
    "current_slot": "D/ST",
    "status": "NORMAL",
-   "proj_espn": 6.69,
-   "proj_ppr": 5.3,
-   "ecr_rank": 14.0,
+   "proj_espn": 7.61,
+   "proj_ppr": 7.03,
+   "ecr_rank": 4.0,
    "ros_rank": null,
-   "opponent": "vs. PIT",
+   "opponent": "at TEN",
    "matched_fantasypros": true,
    "unavailable": false,
    "on_bye": false
   }
  ],
  "waiver_targets": [
-  {
-   "name": "Dontayvion Wicks",
-   "position": "WR",
-   "nfl_team": "PHI",
-   "proj": 9.23,
-   "ros_rank": 88.0,
-   "fp_waiver_rank": null,
-   "injury": "ACTIVE",
-   "replaces": "Ryan Flournoy",
-   "ros_rank_gain": 26.0,
-   "week_proj_gain": 0.18,
-   "priority": "MEDIUM",
-   "availability": "ESPN_FREE_AGENT",
-   "espn_pct_owned": 33.5,
-   "fp_waiver_note": null
-  },
   {
    "name": "Emmett Johnson",
    "position": "RB",
@@ -364,29 +348,13 @@
    "ros_rank": 136.0,
    "fp_waiver_rank": 20.0,
    "injury": "ACTIVE",
-   "replaces": "Audric Estime",
-   "ros_rank_gain": 138.0,
+   "replaces": "Bam Knight",
+   "ros_rank_gain": 113.0,
    "week_proj_gain": -4.44,
    "priority": "LOW",
    "availability": "ESPN_FREE_AGENT",
-   "espn_pct_owned": 13.7,
+   "espn_pct_owned": 13.4,
    "fp_waiver_note": "Chiefs rookie Emmett Johnson is a dual run-catch threat who would inherit a big workload in a top offense if anything happened to Kenneth Walker III. Johnson is rostered in only 23% of Yahoo leagues."
-  },
-  {
-   "name": "Juwan Johnson",
-   "position": "TE",
-   "nfl_team": "NO",
-   "proj": 8.77,
-   "ros_rank": 103.0,
-   "fp_waiver_rank": null,
-   "injury": "ACTIVE",
-   "replaces": "Tyler Higbee",
-   "ros_rank_gain": 34.0,
-   "week_proj_gain": 1.3,
-   "priority": "LOW",
-   "availability": "ESPN_FREE_AGENT",
-   "espn_pct_owned": 71.8,
-   "fp_waiver_note": null
   },
   {
    "name": "Chig Okonkwo",
@@ -398,7 +366,7 @@
    "injury": "ACTIVE",
    "replaces": "Tyler Higbee",
    "ros_rank_gain": 22.0,
-   "week_proj_gain": -7.47,
+   "week_proj_gain": -8.77,
    "priority": "LOW",
    "availability": "ESPN_FREE_AGENT",
    "espn_pct_owned": 4.9,
@@ -408,48 +376,48 @@
    "name": "Mark Andrews",
    "position": "TE",
    "nfl_team": "BAL",
-   "proj": 8.21,
+   "proj": 8.94,
    "ros_rank": 124.0,
    "fp_waiver_rank": null,
    "injury": "ACTIVE",
    "replaces": "Tyler Higbee",
    "ros_rank_gain": 13.0,
-   "week_proj_gain": 0.74,
+   "week_proj_gain": 0.17,
    "priority": "LOW",
    "availability": "ESPN_FREE_AGENT",
-   "espn_pct_owned": 69.8,
+   "espn_pct_owned": 69.1,
    "fp_waiver_note": null
   },
   {
    "name": "Jake Ferguson",
    "position": "TE",
    "nfl_team": "DAL",
-   "proj": 5.97,
+   "proj": 5.93,
    "ros_rank": 132.0,
    "fp_waiver_rank": null,
    "injury": "ACTIVE",
    "replaces": "Tyler Higbee",
    "ros_rank_gain": 5.0,
-   "week_proj_gain": -1.5,
+   "week_proj_gain": -2.84,
    "priority": "LOW",
    "availability": "ESPN_FREE_AGENT",
-   "espn_pct_owned": 57.1,
+   "espn_pct_owned": 54.8,
    "fp_waiver_note": null
   },
   {
-   "name": "Dallas Cowboys",
-   "position": "D/ST",
-   "nfl_team": "DAL",
-   "proj": 7.97,
-   "ros_rank": null,
+   "name": "Ted Hurst III",
+   "position": "WR",
+   "nfl_team": "TB",
+   "proj": 10.8,
+   "ros_rank": 159.0,
    "fp_waiver_rank": null,
    "injury": "ACTIVE",
-   "replaces": "Saints D/ST",
-   "ros_rank_gain": null,
-   "week_proj_gain": 1.28,
+   "replaces": "Ryan Flournoy",
+   "ros_rank_gain": -45.0,
+   "week_proj_gain": 1.8,
    "priority": "LOW",
    "availability": "ESPN_FREE_AGENT",
-   "espn_pct_owned": 14.0,
+   "espn_pct_owned": 4.3,
    "fp_waiver_note": null
   }
  ],
@@ -487,7 +455,7 @@
     "espn_id": "3116365",
     "injury_status": "NORMAL",
     "proj": 8.78,
-    "pct_owned": 69.8,
+    "pct_owned": 69.1,
     "slot": "BN",
     "actual": 1.4
    },
@@ -498,7 +466,7 @@
     "espn_id": "4685472",
     "injury_status": "NORMAL",
     "proj": 16.61,
-    "pct_owned": 98.5,
+    "pct_owned": 98.6,
     "slot": "WR",
     "actual": 14.6
    },
@@ -509,7 +477,7 @@
     "espn_id": "4685278",
     "injury_status": "NORMAL",
     "proj": 12.83,
-    "pct_owned": 90.4,
+    "pct_owned": 90.5,
     "slot": "FLEX",
     "actual": 17.5
    },
@@ -520,7 +488,7 @@
     "espn_id": "4688813",
     "injury_status": "NORMAL",
     "proj": 10.19,
-    "pct_owned": 70.2,
+    "pct_owned": 68.3,
     "slot": "FLEX",
     "actual": 8.7
    },
@@ -531,7 +499,7 @@
     "espn_id": "5081397",
     "injury_status": "NORMAL",
     "proj": 0.0,
-    "pct_owned": 8.5,
+    "pct_owned": 8.6,
     "slot": "IR",
     "actual": 0.0
    },
@@ -542,7 +510,7 @@
     "espn_id": "4599739",
     "injury_status": "NORMAL",
     "proj": 9.34,
-    "pct_owned": 40.1,
+    "pct_owned": 42.6,
     "slot": "BN",
     "actual": 9.0
    },
@@ -564,7 +532,7 @@
     "espn_id": "4596334",
     "injury_status": "NORMAL",
     "proj": 7.78,
-    "pct_owned": 16.7,
+    "pct_owned": 15.0,
     "slot": "BN",
     "actual": 0.4
    },
@@ -575,7 +543,7 @@
     "espn_id": "-16018",
     "injury_status": "NORMAL",
     "proj": 6.99,
-    "pct_owned": 3.2,
+    "pct_owned": 3.1,
     "slot": "D/ST",
     "actual": 14.0
    },
@@ -586,7 +554,7 @@
     "espn_id": "5083754",
     "injury_status": "NORMAL",
     "proj": 8.28,
-    "pct_owned": 12.3,
+    "pct_owned": 14.8,
     "slot": "BN",
     "actual": 17.0
    },
@@ -597,7 +565,7 @@
     "espn_id": "2573401",
     "injury_status": "NORMAL",
     "proj": 7.28,
-    "pct_owned": 19.6,
+    "pct_owned": 21.9,
     "slot": "TE",
     "actual": 6.2
    },
@@ -608,7 +576,7 @@
     "espn_id": "4722893",
     "injury_status": "NORMAL",
     "proj": 10.81,
-    "pct_owned": 5.5,
+    "pct_owned": 3.9,
     "slot": "RB",
     "actual": 9.5
    },
@@ -619,7 +587,7 @@
     "espn_id": "2969939",
     "injury_status": "NORMAL",
     "proj": 22.95,
-    "pct_owned": 14.4,
+    "pct_owned": 10.1,
     "slot": "QB",
     "actual": 8.48
    },
@@ -630,7 +598,7 @@
     "espn_id": "4575665",
     "injury_status": "NORMAL",
     "proj": 6.76,
-    "pct_owned": 0.7,
+    "pct_owned": 0.5,
     "slot": "BN",
     "actual": 0.0
    },
@@ -651,32 +619,25 @@
  "matchup": {
   "week": 7,
   "opponent_team_id": 1,
-  "opponent": "I Loveland Rice Krispies ",
+  "opponent": "I Loveland Rice Krispies",
   "opponent_abbrev": "AAGD",
   "opponent_record": "1-5-0",
   "opponent_points_for": 687.0,
-  "my_proj": 123.26,
-  "opponent_proj": 114.95,
+  "my_proj": 127.49,
+  "opponent_proj": 126.36,
   "opponent_starters": [
    {
     "slot": "RB",
     "name": "Chase Brown",
     "nfl_team": "CIN",
-    "proj": 15.22,
+    "proj": 15.05,
     "injury_status": "NORMAL"
    },
    {
     "slot": "FLEX",
     "name": "Javonte Williams",
     "nfl_team": "DAL",
-    "proj": 17.11,
-    "injury_status": "NORMAL"
-   },
-   {
-    "slot": "FLEX",
-    "name": "Rashee Rice",
-    "nfl_team": "KC",
-    "proj": 0.0,
+    "proj": 17.2,
     "injury_status": "NORMAL"
    },
    {
@@ -690,7 +651,14 @@
     "slot": "RB",
     "name": "Jaylen Warren",
     "nfl_team": "PIT",
-    "proj": 18.4,
+    "proj": 18.39,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "FLEX",
+    "name": "Tyler Allgeier",
+    "nfl_team": "ARI",
+    "proj": 11.5,
     "injury_status": "NORMAL"
    },
    {
@@ -781,7 +749,7 @@
     "spent": 8
    },
    {
-    "team": "    DeVonta Be Kidding Me",
+    "team": "DeVonta Be Kidding Me",
     "abbrev": "ME",
     "remaining": 85,
     "spent": 15
@@ -805,19 +773,19 @@
     "spent": 30
    },
    {
-    "team": "Tom Brady of Ass ",
+    "team": "Tom Brady of Ass",
     "abbrev": "JDD",
     "remaining": 66,
     "spent": 34
    },
    {
-    "team": "You're a JaGoff ",
+    "team": "You're a JaGoff",
     "abbrev": "PbP",
     "remaining": 50,
     "spent": 50
    },
    {
-    "team": "I Loveland Rice Krispies ",
+    "team": "I Loveland Rice Krispies",
     "abbrev": "AAGD",
     "remaining": 44,
     "spent": 56
@@ -835,8 +803,8 @@
     "spent": 58
    }
   ],
-  "median_overpay_vs_runner_up": 1.0,
-  "observed_at": "2026-10-22T13:46:02Z"
+  "median_overpay_vs_runner_up": 2.0,
+  "observed_at": "2026-10-24T16:42:25Z"
  },
  "reconcile_status": {
   "status": "IN_SYNC",
