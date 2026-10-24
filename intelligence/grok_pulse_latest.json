@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-24T081500Z",
-  "generated_at": "2026-10-24T08:05:00Z",
-  "completed_at": "2026-10-24T08:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-24T100500Z",
+  "generated_at": "2026-10-24T10:00:00Z",
+  "completed_at": "2026-10-24T10:05:00Z",
   "week": 7,
   "season": 2026,
   "run_type": "overnight",
@@ -38,7 +38,7 @@
     {"player": "Quinshon Judkins / Dylan Sampson", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "Judkins (ankle) off final injury report, cleared to play. Sampson (knee) listed questionable but Monken anticipates activation and play (ESPN: both expected to play). Sampson on Mongo IR. No overnight change.", "mongo_impact": "Judkins returns as lead back; Sampson return may affect passing-down work. Ownership of related names UNKNOWN.", "urgency": "MEDIUM", "availability": "UNKNOWN", "sources": ["https://www.espn.com/nfl/story/_/id/50259999/browns-rbs-quinshon-judkins-dylan-sampson-expected-play", "https://www.nbcsports.com/fantasy/football/player-news/2026-10-23/judkins-not-on-final-report-sampson-questionable"]},
     {"player": "Josh Downs", "team": "IND", "status": "CONFIRMED_FACT", "summary": "Tyler Warren (groin) ruled OUT for Week 7 after DNPs all week (ESPN, NBC, Rotowire). Downs not on report. No overnight change.", "mongo_impact": "Downs may see extra targets with Warren out (EXPERT_OPINION / SPECULATION on volume).", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://africa.espn.com/nfl/story/_/id/50259536/colts-tyler-warren-miss-second-game-groin-injury"]},
     {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "Not on injury report. No new news.", "mongo_impact": "No concern.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/injuries/"]},
-    {"player": "Saints D/ST", "team": "NO", "status": "CONFIRMED_FACT", "summary": "Paris game 9:30 AM ET Sunday. Early lock. Kamara cleared as above. No overnight change.", "mongo_impact": "Early lock for Miller (and Saints D/ST if still rostered).", "urgency": "MEDIUM", "availability": "UNKNOWN", "sources": ["https://www.nfl.com/injuries/"]},
+    {"player": "Saints D/ST", "team": "NO", "status": "CONFIRMED_FACT", "summary": "Paris game 9:30 AM ET Sunday. Early lock. Kamara cleared as above. No overnight change. Note: recent imports show Browns D/ST added; availability of Saints D/ST UNKNOWN.", "mongo_impact": "Early lock for Miller (and Saints D/ST if still rostered).", "urgency": "MEDIUM", "availability": "UNKNOWN", "sources": ["https://www.nfl.com/injuries/"]},
     {"player": "Tyler Higbee", "team": "LAR", "status": "ATTRIBUTED_REPORT", "summary": "Puka Nacua (calf) limited/exited Thursday, questionable, believed minor (Rapoport). Game-time decision possible. No new Higbee-specific or overnight news.", "mongo_impact": "Minor for Higbee; Nacua status is game-time.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://theramswire.usatoday.com/story/sports/nfl/rams/2026/10/23/rams-puka-nacua-injury-update-minor-rapoport/92394353007/"]}
   ],
   "waiver_signals": [
@@ -50,9 +50,9 @@
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "4:15 AM ET Saturday overnight (Week 7). No material changes since prior 2:10 AM ET Pulse. Friday designations already recorded (Kamara cleared no designation after LP all week; Judkins cleared, Sampson expected to play; Warren OUT; Nacua Q minor calf). No overnight updates from official NFL.com injuries, beat reporting, or X. TNF Burden final and McCarthy start already recorded. Paris early lock. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-24T061000Z",
-  "prior_completed_at": "2026-10-24T06:10:00Z",
+  "summary": "6:00 AM ET Saturday overnight (Week 7). No material changes since prior 4:15 AM ET Pulse. Friday designations already recorded (Kamara cleared no designation after LP all week; Judkins cleared, Sampson expected to play; Warren OUT; Nacua Q minor calf). No overnight updates from official NFL.com injuries, beat reporting, or X. TNF Burden final and McCarthy start already recorded. Paris early lock. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-24T081500Z",
+  "prior_completed_at": "2026-10-24T08:15:00Z",
   "prior_commit": "PENDING_SHA",
   "source_status_notes": "Scan of NFL.com injuries (https://www.nfl.com/injuries/), CBS, ESPN, NBC Sports, X keyword search (since 2026-10-24). No new designations or status changes overnight. Official and beat confirm continuity. x_direct LIMITED. analytics UNAVAILABLE. History carried exactly, one line appended."
 }
