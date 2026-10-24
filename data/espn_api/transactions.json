@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-10-23T15:43:30Z",
+ "observed_at": "2026-10-24T14:27:46Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 91,
+  "FREEAGENT": 92,
   "FUTURE_ROSTER": 23,
-  "ROSTER": 322,
+  "ROSTER": 324,
   "TRADE_PROPOSAL": 2,
   "WAIVER": 149
  },
@@ -7440,6 +7440,38 @@
      "position": "WR",
      "nfl_team": "SF",
      "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "080f62e2-d792-4b64-abc5-f0376c13e604",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-24T02:53:54Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4428557",
+     "name": "Tyjae Spears",
+     "position": "RB",
+     "nfl_team": "TEN",
+     "from_team_id": 6,
      "to_team_id": 0
     }
    ]
