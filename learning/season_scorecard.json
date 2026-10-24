@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T18:17:03-04:00",
+  "generated_at": "2026-10-24T10:23:42-04:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 10,
+  "total_decisions": 11,
   "reviewed_decisions": 0,
-  "pending_decisions": 10,
+  "pending_decisions": 11,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
@@ -27,7 +27,7 @@
       "reviewed_count": 0
     },
     "3": {
-      "count": 3,
+      "count": 4,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -58,6 +58,13 @@
     },
     "INJURY_CONTINGENCY": {
       "count": 6,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0
+    },
+    "START_SIT": {
+      "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
@@ -102,7 +109,37 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "Kamara cleared caps Miller's role": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Knight out-touched efficiency vs Allgeier in W6 and faces a bottom-two run defense": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "Love likely out Week 7": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Love ruled out; confirmed Knight/Allgeier tandem": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -312,6 +349,16 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "slight underdog favors Knight's upside": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "trailing slightly in projected matchup": {
       "count": 1,
       "success_rate": null,
@@ -386,20 +433,30 @@
     }
   },
   "nfl_pulse_performance": {
-    "pulses_considered": 6,
-    "pulses_used": 5,
+    "pulses_considered": 7,
+    "pulses_used": 6,
     "pulses_rejected": 1,
-    "decision_lineages_considered": 6,
-    "decision_lineages_used": 5,
+    "decision_lineages_considered": 7,
+    "decision_lineages_used": 6,
     "actions_changed_by_pulse": 5,
     "successful_actions_changed_by_pulse": 0,
     "unsuccessful_actions_changed_by_pulse": 0,
-    "average_information_lead_time_minutes": 97.2,
+    "average_information_lead_time_minutes": 182.667,
     "highly_useful_pulses": 0,
     "misleading_pulses": 0,
     "too_late_pulses": 0,
     "usefulness_grade_distribution": {},
     "pulse_category_performance": {
+      "INJURY_DESIGNATION": {
+        "count": 1,
+        "success_rate": null,
+        "average_outcome_grade": null,
+        "average_process_grade": null,
+        "reviewed_count": 0,
+        "used_count": 1,
+        "changed_decision_count": 0,
+        "usefulness_grade_distribution": {}
+      },
       "injury": {
         "count": 6,
         "success_rate": null,
@@ -412,6 +469,16 @@
       }
     },
     "pulse_source_performance": {
+      "Grok Pulse overnight": {
+        "count": 1,
+        "success_rate": null,
+        "average_outcome_grade": null,
+        "average_process_grade": null,
+        "reviewed_count": 0,
+        "used_count": 1,
+        "changed_decision_count": 0,
+        "usefulness_grade_distribution": {}
+      },
       "Mongo Grok Pulse": {
         "count": 6,
         "success_rate": null,
@@ -426,7 +493,7 @@
   },
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
-      "count": 4,
+      "count": 5,
       "success_rate": null,
       "average_outcome_grade": null,
       "average_process_grade": null,
