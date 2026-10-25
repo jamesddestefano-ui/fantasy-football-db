@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-10-24T16:42:25Z",
+ "observed_at": "2026-10-25T14:56:01Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 92,
+  "FREEAGENT": 94,
   "FUTURE_ROSTER": 23,
-  "ROSTER": 324,
+  "ROSTER": 329,
   "TRADE_PROPOSAL": 2,
   "WAIVER": 149
  },
@@ -7472,6 +7472,70 @@
      "position": "RB",
      "nfl_team": "TEN",
      "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5ea225f2-df9d-4c6f-9e4e-37af3ab334e2",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 8,
+   "team": "DeVonta Be Kidding Me",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-24T21:22:18Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4832955",
+     "name": "Emmett Johnson",
+     "position": "RB",
+     "nfl_team": "KC",
+     "from_team_id": 0,
+     "to_team_id": 8
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4429023",
+     "name": "MarShawn Lloyd",
+     "position": "RB",
+     "nfl_team": "GB",
+     "from_team_id": 8,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5f5963eb-23b5-41fe-8782-90cabb4b13c6",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 0,
+   "scoring_period": 7,
+   "processed_at": "2026-10-25T13:28:28Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "14880",
+     "name": "Kirk Cousins",
+     "position": "QB",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "15864",
+     "name": "Geno Smith",
+     "position": "QB",
+     "nfl_team": "NYJ",
+     "from_team_id": 1,
      "to_team_id": 0
     }
    ]

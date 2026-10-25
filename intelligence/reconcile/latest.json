@@ -1,16 +1,18 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-10-24T16:42:25Z",
+ "espn_observed_at": "2026-10-25T14:56:01Z",
  "repo_observed_at": "2026-10-22T22:26:31Z",
- "status": "IN_SYNC",
+ "status": "NEEDS_INGEST",
  "unlogged_moves": [],
  "roster_diff": {
   "on_espn_not_in_repo": [],
-  "in_repo_not_on_espn": []
+  "in_repo_not_on_espn": [
+   "Dontayvion Wicks"
+  ]
  },
  "faab": {
   "espn": 66,
   "repository": 66.0
  },
- "transactions_checked": 242
+ "transactions_checked": 244
 }
