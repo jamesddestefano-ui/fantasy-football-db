@@ -829,4 +829,14 @@ KNOWN_ESPN_EVENTS: list[dict[str, Any]] = [
         "calendar_day_ET": "2026-10-22",
         "faab_amount": 0,
     },
+    {
+        "description": "2026-10-25 ET DROP Dontayvion Wicks (ESPN activity 8:50 am)",
+        "league": "mongo",
+        "team": "jdd",
+        "transaction_type": "drop",
+        "added_player": None,
+        "dropped_player": "Dontayvion Wicks",
+        "calendar_day_ET": "2026-10-25",
+        "faab_amount": 0,
+    },
 ]

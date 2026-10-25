@@ -43,6 +43,7 @@ BROWNS_SAINTS_DST_AT = datetime(2026, 10, 22, 22, 13, 59, tzinfo=timezone.utc)  
 KNIGHT_ESTIME_AT = datetime(2026, 10, 22, 22, 15, 37, tzinfo=timezone.utc)  # Thu Oct 22, 6:15:37 pm ET
 WICKS_MCLAUGHLIN_AT = datetime(2026, 10, 22, 22, 26, 17, tzinfo=timezone.utc)  # Thu Oct 22, 6:26:17 pm ET
 JOHNSON_COWING_AT = datetime(2026, 10, 22, 22, 26, 31, tzinfo=timezone.utc)  # Thu Oct 22, 6:26:31 pm ET
+WICKS_DROP_AT = datetime(2026, 10, 25, 12, 50, 0, tzinfo=timezone.utc)  # Sun Oct 25, 8:50 am ET (ESPN activity, minute precision)
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -1767,6 +1768,46 @@ def seed_mongo(session: Session):
     session.add(FaabBalanceObservation(
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
         observed_at=JOHNSON_COWING_AT, source_id=juwan_source.id,
+    ))
+
+    # --- 2026-10-25 ESPN: DROP Dontayvion Wicks (plain drop, no add) ---
+    wicks_plain_drop = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name("Dontayvion Wicks")))
+    wicks_drop_source = Source(
+        league_id=lg.id,
+        source_type="ESPN_ACTIVITY",
+        description="Authenticated ESPN activity: Dropped Dontayvion Wicks, PHI WR (Sun Oct 25, 8:50 am)",
+        original_ref="data/imports/2026-10-25-dontayvion-wicks-drop.json",
+        platform="ESPN",
+        observed_at=WICKS_DROP_AT,
+        authority=Authority.CONFIRMED_TRANSACTION,
+        notes="ESPN activity read ~12:56 pm ET 2026-10-25; corroborated by ESPN API snapshot data/espn_api/2026-10-25T1456Z.json "
+              "(observed 2026-10-25T14:56:01Z, Wicks absent, 16 players). Plain drop is an ESPN ROSTER-type transaction not "
+              "captured in transactions.json (no transaction id); minute precision. FAAB remained $66; no paired add.",
+    )
+    session.add(wicks_drop_source)
+    session.flush()
+    wicks_drop_group = TransactionGroup(
+        id="dontayvion-wicks-drop-20261025-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+        effective_at=WICKS_DROP_AT, source_id=wicks_drop_source.id,
+        notes="ESPN-authoritative DROP of Dontayvion Wicks; ownership ends (not FREE_AGENT_CONFIRMED).",
+    )
+    session.add(wicks_drop_group)
+    session.flush()
+    session.add_all([
+        TransactionEvent(
+            group_id=wicks_drop_group.id, sequence=1, event_type="DROP", player_id=wicks_plain_drop.id,
+            notes="Dropped from roster per ESPN activity Sun Oct 25, 8:50 am ET.",
+        ),
+        OwnershipEvent(
+            league_id=lg.id, player_id=wicks_plain_drop.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+            effective_at=WICKS_DROP_AT, source_id=wicks_drop_source.id,
+            authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=wicks_drop_group.id,
+            notes="Drop proves departure from roster, not current free agency.",
+        ),
+    ])
+    session.add(FaabBalanceObservation(
+        league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
+        observed_at=WICKS_DROP_AT, source_id=wicks_drop_source.id,
     ))
 
     for name, pos in NOT_MINE_UNKNOWN:

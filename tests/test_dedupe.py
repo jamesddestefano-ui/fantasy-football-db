@@ -54,7 +54,7 @@ def test_player_aliases_seeded_for_known_gaps(session):
 
 def test_all_known_espn_events_classify_already_recorded(session):
     results = dry_run_classify(session, KNOWN_ESPN_EVENTS)
-    assert len(results) == 32
+    assert len(results) == 33
     for r, event in zip(results, KNOWN_ESPN_EVENTS):
         assert r.classification == Classification.ALREADY_RECORDED, (
             f"{event['description']} → {r.classification} {r.reasons}"
@@ -106,6 +106,7 @@ def test_six_espn_live_plus_ir_confirmation_match_expected_groups(session):
     assert by_desc[KNOWN_ESPN_EVENTS[29]["description"]].matched_group_id == "bam-knight-add-estime-drop-20261022-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[30]["description"]].matched_group_id == "dontayvion-wicks-add-mclaughlin-drop-20261022-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[31]["description"]].matched_group_id == "juwan-johnson-add-cowing-drop-20261022-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[32]["description"]].matched_group_id == "dontayvion-wicks-drop-20261025-espn-001"
 
 
 def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):
