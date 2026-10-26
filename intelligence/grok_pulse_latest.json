@@ -1,1 +1,61 @@
-PLACEHOLDER_LATEST
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-10-26T041200Z",
+  "generated_at": "2026-10-26T04:00:00Z",
+  "completed_at": "2026-10-26T04:12:00Z",
+  "week": 7,
+  "season": 2026,
+  "run_type": "overnight",
+  "source_status": {
+    "official_nfl_team": "OK",
+    "beat_reporting": "OK",
+    "x_direct": "LIMITED",
+    "experts": "LIMITED",
+    "analytics": "UNAVAILABLE"
+  },
+  "scope": {
+    "repository": "jamesddestefano-ui/fantasy-football-db",
+    "branch": "main",
+    "internal_league_id": "mongo",
+    "intelligence_only": true,
+    "sparta_touched": false,
+    "dfs_touched": false,
+    "props_touched": false
+  },
+  "roster_context": {
+    "source": "ESPN API snapshot data/espn_api/latest.json (observed_at 2026-10-25T19:13:21Z) and prior continuity. FAAB 66, 17 players, record 3-3. Dylan Sampson on roster (returned from IR). No Pulse ownership/FAAB/lineup action. Authenticated ESPN remains authoritative.",
+    "faab_remaining": 66,
+    "roster_count": 17,
+    "pulse_note": "Recommendations belong to Mongo Brain; Pulse is intelligence-only. No ownership/FAAB/lineup change."
+  },
+  "player_signals": [
+    {"player": "Luther Burden III", "team": "CHI", "status": "CONFIRMED_FACT", "summary": "TNF final already recorded: Bears 30-24 Patriots. Burden 4-130-1. No further update.", "mongo_impact": "Week 7 score locked.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/boxscore/_/gameId/401873010"]},
+    {"player": "J.J. McCarthy", "team": "NYG", "status": "CONFIRMED_FACT", "summary": "Started Week 7 at HOU. Giants won 27-21. No injury reported.", "mongo_impact": "Rostered QB started and team won. No status change.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/scoreboard"]},
+    {"player": "Kendre Miller", "team": "NO", "status": "CONFIRMED_FACT", "summary": "Week 7 Paris vs PIT: 8 rush for 6 yards, 3 rec for 22 yards in 16-10 loss. Kamara cleared pre-game. No post-game injury.", "mongo_impact": "Limited production; touch share remains shared. Bye next.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.statmuse.com/nfl/player/kendre-miller-30314/game-log", "https://www.cbssports.com/nfl/players/3162256/kendre-miller/game-log/"]},
+    {"player": "Dylan Sampson", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "Activated from IR Saturday, played Week 7 vs TEN: 6 rush for 45 yards, 3 rec for 32 yards (79 total) in 27-24 win. Looked healthy as No. 2 behind Judkins (96 rush yds, 2 TD). No new injury.", "mongo_impact": "Successful return with receiving involvement. Rostered on bench.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/sampson-has-79-total-yards-vs-titans", "https://www.clevelandbrowns.com/news/browns-activate-rb-dylan-sampson"]},
+    {"player": "Bam Knight", "team": "ARI", "status": "CONFIRMED_FACT", "summary": "Week 7 vs DEN (Love out): 7 rush for 48 yards, 3 rec for 15 yards in 30-16 loss. Split work with Allgeier.", "mongo_impact": "Continued committee role with Love sidelined. No injury.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/bam-knight-leads-cards-in-rushing-once-again"]},
+    {"player": "Josh Downs", "team": "IND", "status": "CONFIRMED_FACT", "summary": "Played Week 7 at MIN (Warren OUT pre-game). Colts lost 16-10. No new injury designation overnight.", "mongo_impact": "No status change reported.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/injuries/"]},
+    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "Not on injury report. Plays MNF vs PHI tonight. No overnight change.", "mongo_impact": "Active for Monday night.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/injuries/"]},
+    {"player": "Tyler Higbee", "team": "LAR", "status": "CONFIRMED_FACT", "summary": "Played Week 7. Rams won vs LV. No new Higbee-specific injury overnight. Nacua was Q pre-game.", "mongo_impact": "No concern.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/injuries/"]}
+  ],
+  "waiver_signals": [
+    {"player": "All non-rostered players", "status": "CONFIRMED_FACT", "availability": "UNKNOWN", "summary": "No ownership-confirmed availability checked by Pulse. ESPN snapshot is current-ownership evidence only.", "recommendation": "NONE (recommendations belong to Mongo Brain)"}
+  ],
+  "lineup_signals": [
+    {"type": "week7_complete", "status": "CONFIRMED_FACT", "summary": "Sunday slate complete (Paris early lock played). MNF DAL@PHI tonight. No lineup action by Pulse."}
+  ],
+  "expert_signals": [],
+  "material_changes": [
+    "Week 7 Sunday games completed with results for rostered players (Miller limited 8-6-0 rush + 3-22; Sampson return 6-45 + 3-32; Knight 7-48 + 3-15; McCarthy started, Giants won).",
+    "Dylan Sampson activated from IR and produced in first 2026 action with no post-game injury."
+  ],
+  "no_material_change": false,
+  "summary": "12:12 AM ET Monday overnight (post-Week 7 Sunday). Material: Sunday slate finished. Sampson returned from IR with 79 total yards (healthy). Miller limited in Paris loss. Knight continued committee. McCarthy started, Giants won. No overnight new injuries or designations affecting Mongo roster from NFL.com, beat, or box scores. MNF tonight for Lamb. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-25T100500Z",
+  "prior_completed_at": "2026-10-25T10:05:00Z",
+  "prior_commit": "PENDING_FROM_HISTORY",
+  "source_status_notes": "Scan of NFL.com injuries, ESPN/CBS/StatMuse box scores and game logs for Week 7 Sunday results, Browns official activation and post-game reports on Sampson, NBC Sports player news. No new designations overnight. Official and beat confirm Sunday results and healthy returns. x_direct LIMITED. analytics UNAVAILABLE."
+}
