@@ -3,32 +3,32 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-26T100100Z",
-  "generated_at": "2026-10-26T10:00:30Z",
-  "completed_at": "2026-10-26T10:01:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-27T041200Z",
+  "generated_at": "2026-10-27T04:10:00Z",
+  "completed_at": "2026-10-27T04:12:00Z",
   "week": 7,
   "season": 2026,
   "run_type": "overnight",
   "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "UNAVAILABLE"},
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
-  "roster_context": {"source": "Repo state per d914efe (ESPN-authoritative plain DROP Dontayvion Wicks Oct 25 8:50 AM ET) and mongo-espn snapshot 543e278: 16 players, IR empty, Sampson on bench, FAAB $66, record 3-3. Pulse did no ESPN pull.", "faab_remaining": 66, "roster_count": 16, "ir": [], "record": "3-3"},
+  "roster_context": {"source": "Repo state per prior pulses and ESPN-authoritative snapshots; no new ESPN pull this run. 16 players, IR empty, Sampson on bench, FAAB $66, record 3-3. Intelligence only.", "faab_remaining": 66, "roster_count": 16, "ir": [], "record": "3-3"},
   "player_signals": [
-    {"player": "Kaelon Black", "team": "SF", "status": "ATTRIBUTED_REPORT", "summary": "With McCaffrey out for much of the first half at ATL (SF lost 29-20), rookie Black took the lead role: 12 carries, 63 yards, including a 30-yard TD (AP, SF Chronicle). The 49ers are on bye in Week 8.", "mongo_impact": "Good Week 7 score; no Week 8 game. Value as McCaffrey's handcuff confirmed.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://apnews.com/article/christian-mccaffrey-49ers-a030a8ae05fcf21060dfb05c5e848a34", "https://www.sfchronicle.com/sports/49ers/article/49ers-mccaffrey-exits-game-thigh-injury-22493529.php"]},
-    {"player": "Christian McCaffrey", "team": "SF", "status": "ATTRIBUTED_REPORT", "summary": "Thigh injury in Q1/Q2, returned in the second half and finished the game. Said his leg 'died' on him but 'I know I'll be all right.' Shanahan: 'It looked all right.' Week 8 bye. No official injury designation yet.", "mongo_impact": "Appears minor; recheck at SF's Week 9 practices.", "urgency": "LOW", "availability": "UNKNOWN", "sources": ["https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/christian-mccaffrey-thigh-injury-update/1974376/"]},
-    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "No injury designation for MNF DAL @ PHI tonight at 8:15 PM ET; reported set to play. Eagles have DeVonta Smith and Dontayvion Wicks OUT.", "mongo_impact": "Starts as normal.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://cowboyswire.usatoday.com/story/sports/nfl/cowboys/2026/10/25/cowboys-eagles-final-injury-week-7/92429311007/"]},
-    {"player": "Dylan Sampson / Quinshon Judkins", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "Sampson's return (79 total yards) and Judkins's workload already recorded in the 041200Z pulse. No new information.", "mongo_impact": "Unchanged.", "urgency": "LOW", "availability": "OWNED", "sources": []}
+    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "MNF DAL 38-21 PHI: 5 receptions, 74 yards, 2 TDs on 12 targets (ESPN/AP box scores). No injury designation; played full game. Next: Week 8 home vs ARI.", "mongo_impact": "Strong Week 7 finish with volume and scores; remains locked-in starter.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/boxscore/_/gameId/401873009", "https://www.espn.com/nfl/recap?gameId=401873009"]},
+    {"player": "Christian McCaffrey", "team": "SF", "status": "ATTRIBUTED_REPORT", "summary": "Official update: mild hamstring strain (initially reported as thigh). Shanahan: 'pretty optimistic' he'll be fine coming out of Week 8 bye (49ers.com, NFL.com). Black already recorded as lead-role backup.", "mongo_impact": "Bye week recovery time; recheck Week 9 practices. Handcuff value for Black remains.", "urgency": "LOW", "availability": "UNKNOWN", "sources": ["https://www.49ers.com/news/after-further-review-shanahan-provides-mccaffrey-injury-update-breaks-down-week-7-game", "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-monday-oct-26"]},
+    {"player": "Kaelon Black", "team": "SF", "status": "ATTRIBUTED_REPORT", "summary": "Week 7 lead role already recorded (12-63-1). SF on bye Week 8. No new information.", "mongo_impact": "Unchanged; bye week.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Dylan Sampson / Quinshon Judkins", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "Sunday returns and workloads already recorded in prior pulses. No overnight updates.", "mongo_impact": "Unchanged.", "urgency": "LOW", "availability": "OWNED", "sources": []}
   ],
-  "waiver_signals": [{"player": "Dontayvion Wicks", "status": "CONFIRMED_FACT", "availability": "UNKNOWN", "summary": "Dropped by JDD (d914efe); OUT (ankle) for MNF. Not FREE_AGENT_CONFIRMED.", "recommendation": "NONE (Mongo Brain owns recommendations)"}],
-  "lineup_signals": [{"type": "bye_week", "status": "CONFIRMED_FACT", "summary": "SF on bye in Week 8 (Black and any SF players). Lineup is James's call; no ESPN action."}],
+  "waiver_signals": [{"player": "Dontayvion Wicks", "status": "CONFIRMED_FACT", "availability": "UNKNOWN", "summary": "Dropped by JDD previously; was OUT for MNF. Not FREE_AGENT_CONFIRMED.", "recommendation": "NONE (Mongo Brain owns recommendations)"}],
+  "lineup_signals": [{"type": "bye_week", "status": "CONFIRMED_FACT", "summary": "SF on bye in Week 8 (Black). Week 8 practices begin Wednesday. Lineup is James's call; no ESPN action."}],
   "expert_signals": [],
   "material_changes": [
-    {"type": "game_result", "player": "Kaelon Black", "status": "ATTRIBUTED_REPORT", "summary": "Lead back after McCaffrey's injury: 12-63-1 (30-yd TD)."},
-    {"type": "injury", "player": "Christian McCaffrey", "status": "ATTRIBUTED_REPORT", "summary": "Thigh injury; returned and finished the game; expects to be fine; SF bye in Week 8."}
+    {"type": "game_result", "player": "CeeDee Lamb", "status": "CONFIRMED_FACT", "summary": "MNF: 5-74-2 TDs in DAL 38-21 win over PHI."},
+    {"type": "injury", "player": "Christian McCaffrey", "status": "ATTRIBUTED_REPORT", "summary": "Mild hamstring strain; optimistic after Week 8 bye."}
   ],
   "no_material_change": false,
-  "summary": "6:01 AM ET Monday overnight (post-Week 7 Sunday). Material: Kaelon Black 12-63-1 lead role after McCaffrey's thigh injury (McCaffrey returned and expects to be OK); SF on bye in Week 8. Lamb no designation for MNF @ PHI. Sampson/Judkins already recorded. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-26T081800Z",
-  "prior_completed_at": "2026-10-26T08:18:00Z",
+  "summary": "12:12 AM ET Tuesday overnight (post-MNF). Material: MNF final DAL 38-21 PHI, Lamb 5-74-2 TDs (no injury). CMC updated to mild hamstring strain, Shanahan optimistic post-bye. Black/Sampson/Judkins already recorded. SF bye Week 8. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-26T100100Z",
+  "prior_completed_at": "2026-10-26T10:01:00Z",
   "prior_commit": "7ac55f9440fd7ba4541922c6f9a8a6c04a4c7a04",
-  "source_status_notes": "Black's line is from AP/SF Chronicle reports, not a full box score read. No direct X reads; no analytics."
+  "source_status_notes": "Lamb stats from ESPN box score and multiple recaps. CMC update from official 49ers.com and NFL.com. Limited direct X; no analytics."
 }
