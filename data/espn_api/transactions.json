@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-10-27T13:05:27Z",
+ "observed_at": "2026-10-27T16:29:33Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
   "FREEAGENT": 94,
   "FUTURE_ROSTER": 33,
-  "ROSTER": 342,
+  "ROSTER": 344,
   "TRADE_PROPOSAL": 2,
   "WAIVER": 149
  },
