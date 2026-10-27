@@ -1,0 +1,400 @@
+{
+ "season": "2026",
+ "scoring": "PPR",
+ "players": [
+  {
+   "player_id": 8260,
+   "player_name": "Seattle Seahawks",
+   "position_id": "DST",
+   "team_id": "SEA",
+   "filename": "seattle-defense.php",
+   "games": 1,
+   "points": 10,
+   "average": 10,
+   "weeks": {
+    "7": 10
+   }
+  },
+  {
+   "player_id": 8180,
+   "player_name": "New England Patriots",
+   "position_id": "DST",
+   "team_id": "NE",
+   "filename": "new-england-defense.php",
+   "games": 1,
+   "points": 2,
+   "average": 2,
+   "weeks": {
+    "7": 2
+   }
+  },
+  {
+   "player_id": 8280,
+   "player_name": "Los Angeles Rams",
+   "position_id": "DST",
+   "team_id": "LAR",
+   "filename": "los-angeles-rams-defense.php",
+   "games": 1,
+   "points": 2,
+   "average": 2,
+   "weeks": {
+    "7": 2
+   }
+  },
+  {
+   "player_id": 8270,
+   "player_name": "San Francisco 49ers",
+   "position_id": "DST",
+   "team_id": "SF",
+   "filename": "san-francisco-defense.php",
+   "games": 1,
+   "points": -1,
+   "average": -1,
+   "weeks": {
+    "7": -1
+   }
+  },
+  {
+   "player_id": 8040,
+   "player_name": "Carolina Panthers",
+   "position_id": "DST",
+   "team_id": "CAR",
+   "filename": "carolina-defense.php",
+   "games": 1,
+   "points": -4,
+   "average": -4,
+   "weeks": {
+    "7": -4
+   }
+  },
+  {
+   "player_id": 8050,
+   "player_name": "Chicago Bears",
+   "position_id": "DST",
+   "team_id": "CHI",
+   "filename": "chicago-defense.php",
+   "games": 1,
+   "points": 4,
+   "average": 4,
+   "weeks": {
+    "7": 4
+   }
+  },
+  {
+   "player_id": 8060,
+   "player_name": "Cincinnati Bengals",
+   "position_id": "DST",
+   "team_id": "CIN",
+   "filename": "cincinnati-defense.php",
+   "games": 1,
+   "points": 10,
+   "average": 10,
+   "weeks": {
+    "7": 10
+   }
+  },
+  {
+   "player_id": 8290,
+   "player_name": "Tampa Bay Buccaneers",
+   "position_id": "DST",
+   "team_id": "TB",
+   "filename": "tampa-bay-defense.php",
+   "games": 1,
+   "points": 25,
+   "average": 25,
+   "weeks": {
+    "7": 25
+   }
+  },
+  {
+   "player_id": 8100,
+   "player_name": "Detroit Lions",
+   "position_id": "DST",
+   "team_id": "DET",
+   "filename": "detroit-defense.php",
+   "games": 1,
+   "points": 6,
+   "average": 6,
+   "weeks": {
+    "7": 6
+   }
+  },
+  {
+   "player_id": 8190,
+   "player_name": "New Orleans Saints",
+   "position_id": "DST",
+   "team_id": "NO",
+   "filename": "new-orleans-defense.php",
+   "games": 1,
+   "points": 4,
+   "average": 4,
+   "weeks": {
+    "7": 4
+   }
+  },
+  {
+   "player_id": 8120,
+   "player_name": "Houston Texans",
+   "position_id": "DST",
+   "team_id": "HOU",
+   "filename": "houston-defense.php",
+   "games": 1,
+   "points": 3,
+   "average": 3,
+   "weeks": {
+    "7": 3
+   }
+  },
+  {
+   "player_id": 8030,
+   "player_name": "Buffalo Bills",
+   "position_id": "DST",
+   "team_id": "BUF",
+   "filename": "buffalo-defense.php"
+  },
+  {
+   "player_id": 8130,
+   "player_name": "Indianapolis Colts",
+   "position_id": "DST",
+   "team_id": "IND",
+   "filename": "indianapolis-defense.php",
+   "games": 1,
+   "points": 6,
+   "average": 6,
+   "weeks": {
+    "7": 6
+   }
+  },
+  {
+   "player_id": 8020,
+   "player_name": "Baltimore Ravens",
+   "position_id": "DST",
+   "team_id": "BAL",
+   "filename": "baltimore-defense.php",
+   "games": 1,
+   "points": -3,
+   "average": -3,
+   "weeks": {
+    "7": -3
+   }
+  },
+  {
+   "player_id": 8140,
+   "player_name": "Jacksonville Jaguars",
+   "position_id": "DST",
+   "team_id": "JAC",
+   "filename": "jacksonville-defense.php"
+  },
+  {
+   "player_id": 8070,
+   "player_name": "Cleveland Browns",
+   "position_id": "DST",
+   "team_id": "CLE",
+   "filename": "cleveland-defense.php",
+   "games": 1,
+   "points": 5,
+   "average": 5,
+   "weeks": {
+    "7": 5
+   }
+  },
+  {
+   "player_id": 8240,
+   "player_name": "Pittsburgh Steelers",
+   "position_id": "DST",
+   "team_id": "PIT",
+   "filename": "pittsburgh-defense.php",
+   "games": 1,
+   "points": 8,
+   "average": 8,
+   "weeks": {
+    "7": 8
+   }
+  },
+  {
+   "player_id": 8010,
+   "player_name": "Atlanta Falcons",
+   "position_id": "DST",
+   "team_id": "ATL",
+   "filename": "atlanta-defense.php",
+   "games": 1,
+   "points": 11,
+   "average": 11,
+   "weeks": {
+    "7": 11
+   }
+  },
+  {
+   "player_id": 8300,
+   "player_name": "Tennessee Titans",
+   "position_id": "DST",
+   "team_id": "TEN",
+   "filename": "tennessee-defense.php",
+   "games": 1,
+   "points": 5,
+   "average": 5,
+   "weeks": {
+    "7": 5
+   }
+  },
+  {
+   "player_id": 8210,
+   "player_name": "New York Jets",
+   "position_id": "DST",
+   "team_id": "NYJ",
+   "filename": "new-york-jets-defense.php",
+   "games": 1,
+   "points": 1,
+   "average": 1,
+   "weeks": {
+    "7": 1
+   }
+  },
+  {
+   "player_id": 8250,
+   "player_name": "Los Angeles Chargers",
+   "position_id": "DST",
+   "team_id": "LAC",
+   "filename": "los-angeles-chargers-defense.php"
+  },
+  {
+   "player_id": 8000,
+   "player_name": "Arizona Cardinals",
+   "position_id": "DST",
+   "team_id": "ARI",
+   "filename": "arizona-defense.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 8220,
+   "player_name": "Las Vegas Raiders",
+   "position_id": "DST",
+   "team_id": "LV",
+   "filename": "las-vegas-defense.php",
+   "games": 1,
+   "points": 1,
+   "average": 1,
+   "weeks": {
+    "7": 1
+   }
+  },
+  {
+   "player_id": 8170,
+   "player_name": "Minnesota Vikings",
+   "position_id": "DST",
+   "team_id": "MIN",
+   "filename": "minnesota-defense.php",
+   "games": 1,
+   "points": 10,
+   "average": 10,
+   "weeks": {
+    "7": 10
+   }
+  },
+  {
+   "player_id": 8110,
+   "player_name": "Green Bay Packers",
+   "position_id": "DST",
+   "team_id": "GB",
+   "filename": "green-bay-defense.php",
+   "games": 1,
+   "points": 6,
+   "average": 6,
+   "weeks": {
+    "7": 6
+   }
+  },
+  {
+   "player_id": 8230,
+   "player_name": "Philadelphia Eagles",
+   "position_id": "DST",
+   "team_id": "PHI",
+   "filename": "philadelphia-defense.php",
+   "games": 1,
+   "points": -4,
+   "average": -4,
+   "weeks": {
+    "7": -4
+   }
+  },
+  {
+   "player_id": 8310,
+   "player_name": "Washington Commanders",
+   "position_id": "DST",
+   "team_id": "WAS",
+   "filename": "washington-defense.php"
+  },
+  {
+   "player_id": 8200,
+   "player_name": "New York Giants",
+   "position_id": "DST",
+   "team_id": "NYG",
+   "filename": "new-york-giants-defense.php",
+   "games": 1,
+   "points": 1,
+   "average": 1,
+   "weeks": {
+    "7": 1
+   }
+  },
+  {
+   "player_id": 8080,
+   "player_name": "Dallas Cowboys",
+   "position_id": "DST",
+   "team_id": "DAL",
+   "filename": "dallas-defense.php",
+   "games": 1,
+   "points": 4,
+   "average": 4,
+   "weeks": {
+    "7": 4
+   }
+  },
+  {
+   "player_id": 8150,
+   "player_name": "Kansas City Chiefs",
+   "position_id": "DST",
+   "team_id": "KC",
+   "filename": "kansas-city-defense.php",
+   "games": 1,
+   "points": 3,
+   "average": 3,
+   "weeks": {
+    "7": 3
+   }
+  },
+  {
+   "player_id": 8090,
+   "player_name": "Denver Broncos",
+   "position_id": "DST",
+   "team_id": "DEN",
+   "filename": "denver-defense.php",
+   "games": 1,
+   "points": 4,
+   "average": 4,
+   "weeks": {
+    "7": 4
+   }
+  },
+  {
+   "player_id": 8160,
+   "player_name": "Miami Dolphins",
+   "position_id": "DST",
+   "team_id": "MIA",
+   "filename": "miami-defense.php",
+   "games": 1,
+   "points": 4,
+   "average": 4,
+   "weeks": {
+    "7": 4
+   }
+  }
+ ],
+ "public_api": true,
+ "tier": "premium"
+}

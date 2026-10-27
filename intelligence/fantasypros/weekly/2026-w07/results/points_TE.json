@@ -1,0 +1,1607 @@
+{
+ "season": "2026",
+ "scoring": "PPR",
+ "players": [
+  {
+   "player_id": 19098,
+   "player_name": "Chris Myarick",
+   "position_id": "TE",
+   "team_id": "FA",
+   "filename": "chris-myarick.php"
+  },
+  {
+   "player_id": 19562,
+   "player_name": "Juwan Johnson",
+   "position_id": "TE",
+   "team_id": "NO",
+   "filename": "juwan-johnson.php",
+   "games": 1,
+   "points": 1.7,
+   "average": 1.7,
+   "weeks": {
+    "7": 1.7
+   }
+  },
+  {
+   "player_id": 23761,
+   "player_name": "Davis Allen",
+   "position_id": "TE",
+   "team_id": "LAR",
+   "filename": "davis-allen.php",
+   "games": 1,
+   "points": 18,
+   "average": 18,
+   "weeks": {
+    "7": 18
+   }
+  },
+  {
+   "player_id": 19229,
+   "player_name": "Cole Kmet",
+   "position_id": "TE",
+   "team_id": "CHI",
+   "filename": "cole-kmet.php",
+   "games": 1,
+   "points": 5.8,
+   "average": 5.8,
+   "weeks": {
+    "7": 5.8
+   }
+  },
+  {
+   "player_id": 20163,
+   "player_name": "Pat Freiermuth",
+   "position_id": "TE",
+   "team_id": "PIT",
+   "filename": "pat-freiermuth.php",
+   "games": 1,
+   "points": 4,
+   "average": 4,
+   "weeks": {
+    "7": 4
+   }
+  },
+  {
+   "player_id": 17269,
+   "player_name": "Mark Andrews",
+   "position_id": "TE",
+   "team_id": "BAL",
+   "filename": "mark-andrews.php",
+   "games": 1,
+   "points": 5.3,
+   "average": 5.3,
+   "weeks": {
+    "7": 5.3
+   }
+  },
+  {
+   "player_id": 26661,
+   "player_name": "Treyton Welch",
+   "position_id": "TE",
+   "team_id": "NO",
+   "filename": "treyton-welch.php"
+  },
+  {
+   "player_id": 26005,
+   "player_name": "Mason Taylor",
+   "position_id": "TE",
+   "team_id": "NYJ",
+   "filename": "mason-taylor.php",
+   "games": 1,
+   "points": 25.2,
+   "average": 25.2,
+   "weeks": {
+    "7": 25.2
+   }
+  },
+  {
+   "player_id": 15623,
+   "player_name": "Tyler Higbee",
+   "position_id": "TE",
+   "team_id": "LAR",
+   "filename": "tyler-higbee.php",
+   "games": 1,
+   "points": 3.4,
+   "average": 3.4,
+   "weeks": {
+    "7": 3.4
+   }
+  },
+  {
+   "player_id": 17272,
+   "player_name": "Mike Gesicki",
+   "position_id": "TE",
+   "team_id": "CIN",
+   "filename": "mike-gesicki.php",
+   "games": 1,
+   "points": 7.6,
+   "average": 7.6,
+   "weeks": {
+    "7": 7.6
+   }
+  },
+  {
+   "player_id": 25267,
+   "player_name": "Luke Schoonmaker",
+   "position_id": "TE",
+   "team_id": "DAL",
+   "filename": "luke-schoonmaker.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 14104,
+   "player_name": "Darren Waller",
+   "position_id": "TE",
+   "team_id": "CAR",
+   "filename": "darren-waller.php",
+   "games": 1,
+   "points": 12,
+   "average": 12,
+   "weeks": {
+    "7": 12
+   }
+  },
+  {
+   "player_id": 23982,
+   "player_name": "Chig Okonkwo",
+   "position_id": "TE",
+   "team_id": "WAS",
+   "filename": "chigoziem-okonkwo.php"
+  },
+  {
+   "player_id": 18561,
+   "player_name": "Drew Sample",
+   "position_id": "TE",
+   "team_id": "CIN",
+   "filename": "drew-sample.php",
+   "games": 1,
+   "points": 10.4,
+   "average": 10.4,
+   "weeks": {
+    "7": 10.4
+   }
+  },
+  {
+   "player_id": 22967,
+   "player_name": "Darnell Washington",
+   "position_id": "TE",
+   "team_id": "PIT",
+   "filename": "darnell-washington.php",
+   "games": 1,
+   "points": 7.4,
+   "average": 7.4,
+   "weeks": {
+    "7": 7.4
+   }
+  },
+  {
+   "player_id": 19372,
+   "player_name": "Colby Parkinson",
+   "position_id": "TE",
+   "team_id": "LAR",
+   "filename": "colby-parkinson.php",
+   "games": 1,
+   "points": 9.8,
+   "average": 9.8,
+   "weeks": {
+    "7": 9.8
+   }
+  },
+  {
+   "player_id": 20164,
+   "player_name": "Kyle Pitts Sr.",
+   "position_id": "TE",
+   "team_id": "ATL",
+   "filename": "kyle-pitts.php",
+   "games": 1,
+   "points": 13.2,
+   "average": 13.2,
+   "weeks": {
+    "7": 13.2
+   }
+  },
+  {
+   "player_id": 23742,
+   "player_name": "Jeremy Ruckert",
+   "position_id": "TE",
+   "team_id": "NYJ",
+   "filename": "jeremy-ruckert.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 16499,
+   "player_name": "George Kittle",
+   "position_id": "TE",
+   "team_id": "SF",
+   "filename": "george-kittle.php",
+   "games": 1,
+   "points": 14.8,
+   "average": 14.8,
+   "weeks": {
+    "7": 14.8
+   }
+  },
+  {
+   "player_id": 17826,
+   "player_name": "Tanner Hudson",
+   "position_id": "TE",
+   "team_id": "CIN",
+   "filename": "tanner-hudson.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 22978,
+   "player_name": "Sam LaPorta",
+   "position_id": "TE",
+   "team_id": "DET",
+   "filename": "sam-laporta.php",
+   "games": 1,
+   "points": 2.8,
+   "average": 2.8,
+   "weeks": {
+    "7": 2.8
+   }
+  },
+  {
+   "player_id": 23056,
+   "player_name": "Michael Mayer",
+   "position_id": "TE",
+   "team_id": "LV",
+   "filename": "michael-mayer.php",
+   "games": 1,
+   "points": 6.2,
+   "average": 6.2,
+   "weeks": {
+    "7": 6.2
+   }
+  },
+  {
+   "player_id": 22833,
+   "player_name": "John Bates",
+   "position_id": "TE",
+   "team_id": "WAS",
+   "filename": "john-bates.php"
+  },
+  {
+   "player_id": 23829,
+   "player_name": "Jelani Woods",
+   "position_id": "TE",
+   "team_id": "NYJ",
+   "filename": "jelani-woods.php",
+   "games": 1,
+   "points": 0.9,
+   "average": 0.9,
+   "weeks": {
+    "7": 0.9
+   }
+  },
+  {
+   "player_id": 24331,
+   "player_name": "Cameron Latu",
+   "position_id": "TE",
+   "team_id": "NE",
+   "filename": "cameron-latu.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 28155,
+   "player_name": "Josh Cuevas",
+   "position_id": "TE",
+   "team_id": "BAL",
+   "filename": "josh-cuevas.php",
+   "games": 1,
+   "points": 5.5,
+   "average": 5.5,
+   "weeks": {
+    "7": 5.5
+   }
+  },
+  {
+   "player_id": 25298,
+   "player_name": "Tucker Kraft",
+   "position_id": "TE",
+   "team_id": "GB",
+   "filename": "tucker-kraft.php",
+   "games": 1,
+   "points": 14.8,
+   "average": 14.8,
+   "weeks": {
+    "7": 14.8
+   }
+  },
+  {
+   "player_id": 22756,
+   "player_name": "Charlie Kolar",
+   "position_id": "TE",
+   "team_id": "LAC",
+   "filename": "charlie-kolar.php"
+  },
+  {
+   "player_id": 28166,
+   "player_name": "Tanner Arkin",
+   "position_id": "TE",
+   "team_id": "NE",
+   "filename": "tanner-arkin.php"
+  },
+  {
+   "player_id": 24238,
+   "player_name": "Daniel Bellinger",
+   "position_id": "TE",
+   "team_id": "TEN",
+   "filename": "daniel-bellinger.php",
+   "games": 1,
+   "points": 1.4,
+   "average": 1.4,
+   "weeks": {
+    "7": 1.4
+   }
+  },
+  {
+   "player_id": 22924,
+   "player_name": "Jake Briningstool",
+   "position_id": "TE",
+   "team_id": "KC",
+   "filename": "jake-briningstool.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 19423,
+   "player_name": "Adam Trautman",
+   "position_id": "TE",
+   "team_id": "DEN",
+   "filename": "adam-trautman.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 19665,
+   "player_name": "Charlie Woerner",
+   "position_id": "TE",
+   "team_id": "ATL",
+   "filename": "charlie-woerner.php",
+   "games": 1,
+   "points": 2.2,
+   "average": 2.2,
+   "weeks": {
+    "7": 2.2
+   }
+  },
+  {
+   "player_id": 23837,
+   "player_name": "Erick All Jr.",
+   "position_id": "TE",
+   "team_id": "CIN",
+   "filename": "erick-all.php",
+   "games": 1,
+   "points": 5.6,
+   "average": 5.6,
+   "weeks": {
+    "7": 5.6
+   }
+  },
+  {
+   "player_id": 26055,
+   "player_name": "Kenyon Sadiq",
+   "position_id": "TE",
+   "team_id": "NYJ",
+   "filename": "kenyon-sadiq.php",
+   "games": 1,
+   "points": 1.6,
+   "average": 1.6,
+   "weeks": {
+    "7": 1.6
+   }
+  },
+  {
+   "player_id": 25269,
+   "player_name": "Cade Stover",
+   "position_id": "TE",
+   "team_id": "HOU",
+   "filename": "cade-stover.php",
+   "games": 1,
+   "points": 2.9,
+   "average": 2.9,
+   "weeks": {
+    "7": 2.9
+   }
+  },
+  {
+   "player_id": 16706,
+   "player_name": "Eric Saubert",
+   "position_id": "TE",
+   "team_id": "SEA",
+   "filename": "eric-saubert.php",
+   "games": 1,
+   "points": 2.7,
+   "average": 2.7,
+   "weeks": {
+    "7": 2.7
+   }
+  },
+  {
+   "player_id": 24561,
+   "player_name": "Drew Ogletree",
+   "position_id": "TE",
+   "team_id": "IND",
+   "filename": "andrew-ogletree.php",
+   "games": 1,
+   "points": 3.2,
+   "average": 3.2,
+   "weeks": {
+    "7": 3.2
+   }
+  },
+  {
+   "player_id": 18631,
+   "player_name": "Dawson Knox",
+   "position_id": "TE",
+   "team_id": "BUF",
+   "filename": "dawson-knox.php"
+  },
+  {
+   "player_id": 22923,
+   "player_name": "Josh Whyle",
+   "position_id": "TE",
+   "team_id": "GB",
+   "filename": "josh-whyle.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 28165,
+   "player_name": "Bauer Sharp",
+   "position_id": "TE",
+   "team_id": "TB",
+   "filename": "bauer-sharp.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 25756,
+   "player_name": "E.J. Jenkins",
+   "position_id": "TE",
+   "team_id": "ATL",
+   "filename": "ej-jenkins.php"
+  },
+  {
+   "player_id": 26006,
+   "player_name": "Colston Loveland",
+   "position_id": "TE",
+   "team_id": "CHI",
+   "filename": "colston-loveland.php",
+   "games": 1,
+   "points": 19.9,
+   "average": 19.9,
+   "weeks": {
+    "7": 19.9
+   }
+  },
+  {
+   "player_id": 24562,
+   "player_name": "Connor Heyward",
+   "position_id": "TE",
+   "team_id": "LV",
+   "filename": "connor-heyward.php",
+   "games": 1,
+   "points": 2.3,
+   "average": 2.3,
+   "weeks": {
+    "7": 2.3
+   }
+  },
+  {
+   "player_id": 16743,
+   "player_name": "Johnny Mundt",
+   "position_id": "TE",
+   "team_id": "PHI",
+   "filename": "johnny-mundt.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 28427,
+   "player_name": "Nate Boerkircher",
+   "position_id": "TE",
+   "team_id": "JAC",
+   "filename": "nate-boerkircher.php"
+  },
+  {
+   "player_id": 25997,
+   "player_name": "Oronde Gadsden II",
+   "position_id": "TE",
+   "team_id": "LAC",
+   "filename": "oronde-gadsden-ii.php"
+  },
+  {
+   "player_id": 24239,
+   "player_name": "Nick Muse",
+   "position_id": "TE",
+   "team_id": "ATL",
+   "filename": "nick-muse.php",
+   "games": 1,
+   "points": 8.2,
+   "average": 8.2,
+   "weeks": {
+    "7": 8.2
+   }
+  },
+  {
+   "player_id": 15561,
+   "player_name": "Hunter Henry",
+   "position_id": "TE",
+   "team_id": "NE",
+   "filename": "hunter-henry.php",
+   "games": 1,
+   "points": 14.1,
+   "average": 14.1,
+   "weeks": {
+    "7": 14.1
+   }
+  },
+  {
+   "player_id": 22936,
+   "player_name": "Trey McBride",
+   "position_id": "TE",
+   "team_id": "ARI",
+   "filename": "trey-mcbride.php",
+   "games": 1,
+   "points": 27.1,
+   "average": 27.1,
+   "weeks": {
+    "7": 27.1
+   }
+  },
+  {
+   "player_id": 27138,
+   "player_name": "Mitchell Evans",
+   "position_id": "TE",
+   "team_id": "CAR",
+   "filename": "mitchell-evans.php",
+   "games": 1,
+   "points": 5.9,
+   "average": 5.9,
+   "weeks": {
+    "7": 5.9
+   }
+  },
+  {
+   "player_id": 20081,
+   "player_name": "Feleipe Franks",
+   "position_id": "TE",
+   "team_id": "CAR",
+   "filename": "feleipe-franks.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 14014,
+   "player_name": "Chris Manhertz",
+   "position_id": "TE",
+   "team_id": "NYG",
+   "filename": "chris-manhertz.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 16502,
+   "player_name": "Robert Tonyan",
+   "position_id": "TE",
+   "team_id": "PIT",
+   "filename": "robert-tonyan.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 17508,
+   "player_name": "Durham Smythe",
+   "position_id": "TE",
+   "team_id": "BAL",
+   "filename": "durham-smythe.php"
+  },
+  {
+   "player_id": 26576,
+   "player_name": "Colson Yankoff",
+   "position_id": "TE",
+   "team_id": "WAS",
+   "filename": "colson-yankoff.php"
+  },
+  {
+   "player_id": 27287,
+   "player_name": "Keleki Latu",
+   "position_id": "TE",
+   "team_id": "BUF",
+   "filename": "keleki-latu.php"
+  },
+  {
+   "player_id": 27469,
+   "player_name": "Jackson Hawes",
+   "position_id": "TE",
+   "team_id": "BUF",
+   "filename": "jackson-hawes.php"
+  },
+  {
+   "player_id": 16579,
+   "player_name": "Mo Alie-Cox",
+   "position_id": "TE",
+   "team_id": "IND",
+   "filename": "mo-alie-cox.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 19501,
+   "player_name": "Luke Farrell",
+   "position_id": "TE",
+   "team_id": "SF",
+   "filename": "luke-farrell.php",
+   "games": 1,
+   "points": 2.4,
+   "average": 2.4,
+   "weeks": {
+    "7": 2.4
+   }
+  },
+  {
+   "player_id": 27050,
+   "player_name": "Harold Fannin Jr.",
+   "position_id": "TE",
+   "team_id": "CLE",
+   "filename": "harold-fannin-jr.php",
+   "games": 1,
+   "points": 13.1,
+   "average": 13.1,
+   "weeks": {
+    "7": 13.1
+   }
+  },
+  {
+   "player_id": 17349,
+   "player_name": "Dalton Schultz",
+   "position_id": "TE",
+   "team_id": "HOU",
+   "filename": "dalton-schultz.php",
+   "games": 1,
+   "points": 9.5,
+   "average": 9.5,
+   "weeks": {
+    "7": 9.5
+   }
+  },
+  {
+   "player_id": 24778,
+   "player_name": "Jake Tonges",
+   "position_id": "TE",
+   "team_id": "SF",
+   "filename": "jake-tonges.php"
+  },
+  {
+   "player_id": 28168,
+   "player_name": "Matt Hibner",
+   "position_id": "TE",
+   "team_id": "BAL",
+   "filename": "matthew-hibner.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23341,
+   "player_name": "Brock Wright",
+   "position_id": "TE",
+   "team_id": "DET",
+   "filename": "brock-wright.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 28403,
+   "player_name": "Will Kacmarek",
+   "position_id": "TE",
+   "team_id": "MIA",
+   "filename": "will-kacmarek.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 16399,
+   "player_name": "David Njoku",
+   "position_id": "TE",
+   "team_id": "LAC",
+   "filename": "david-njoku.php"
+  },
+  {
+   "player_id": 20162,
+   "player_name": "Brevin Jordan",
+   "position_id": "TE",
+   "team_id": "HOU",
+   "filename": "brevin-jordan.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 15581,
+   "player_name": "Austin Hooper",
+   "position_id": "TE",
+   "team_id": "ATL",
+   "filename": "austin-hooper.php",
+   "games": 1,
+   "points": 4.1,
+   "average": 4.1,
+   "weeks": {
+    "7": 4.1
+   }
+  },
+  {
+   "player_id": 16132,
+   "player_name": "Zach Wood",
+   "position_id": "TE",
+   "team_id": "NO",
+   "filename": "zach-wood.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 25345,
+   "player_name": "Brenton Strange",
+   "position_id": "TE",
+   "team_id": "JAC",
+   "filename": "brenton-strange.php"
+  },
+  {
+   "player_id": 23004,
+   "player_name": "Elijah Arroyo",
+   "position_id": "TE",
+   "team_id": "SEA",
+   "filename": "elijah-arroyo.php"
+  },
+  {
+   "player_id": 15246,
+   "player_name": "James Winchester",
+   "position_id": "TE",
+   "team_id": "KC",
+   "filename": "james-winchester.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 25657,
+   "player_name": "Blake Whiteheart",
+   "position_id": "TE",
+   "team_id": "CLE",
+   "filename": "blake-whiteheart.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 18397,
+   "player_name": "Foster Moreau",
+   "position_id": "TE",
+   "team_id": "HOU",
+   "filename": "foster-moreau.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 28399,
+   "player_name": "Carsen Ryan",
+   "position_id": "TE",
+   "team_id": "FA",
+   "filename": "carsen-ryan.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23119,
+   "player_name": "Elijah Higgins",
+   "position_id": "TE",
+   "team_id": "ARI",
+   "filename": "elijah-higgins.php",
+   "games": 1,
+   "points": 4.7,
+   "average": 4.7,
+   "weeks": {
+    "7": 4.7
+   }
+  },
+  {
+   "player_id": 28163,
+   "player_name": "Seydou Traore",
+   "position_id": "TE",
+   "team_id": "MIA",
+   "filename": "seydou-traore.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23104,
+   "player_name": "Theo Johnson",
+   "position_id": "TE",
+   "team_id": "NYG",
+   "filename": "theo-johnson.php"
+  },
+  {
+   "player_id": 28154,
+   "player_name": "Eli Raridon",
+   "position_id": "TE",
+   "team_id": "NE",
+   "filename": "eli-raridon.php",
+   "games": 1,
+   "points": 14.6,
+   "average": 14.6,
+   "weeks": {
+    "7": 14.6
+   }
+  },
+  {
+   "player_id": 26310,
+   "player_name": "Ben Sinnott",
+   "position_id": "TE",
+   "team_id": "WAS",
+   "filename": "ben-sinnott.php"
+  },
+  {
+   "player_id": 28161,
+   "player_name": "Sam Roush",
+   "position_id": "TE",
+   "team_id": "CHI",
+   "filename": "sam-roush.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 25247,
+   "player_name": "Dalton Kincaid",
+   "position_id": "TE",
+   "team_id": "BUF",
+   "filename": "dalton-kincaid.php"
+  },
+  {
+   "player_id": 23153,
+   "player_name": "Greg Dulcich",
+   "position_id": "TE",
+   "team_id": "MIA",
+   "filename": "greg-dulcich.php",
+   "games": 1,
+   "points": 13.6,
+   "average": 13.6,
+   "weeks": {
+    "7": 13.6
+   }
+  },
+  {
+   "player_id": 28157,
+   "player_name": "Marlin Klein",
+   "position_id": "TE",
+   "team_id": "HOU",
+   "filename": "marlin-klein.php"
+  },
+  {
+   "player_id": 22841,
+   "player_name": "Kylen Granson",
+   "position_id": "TE",
+   "team_id": "TEN",
+   "filename": "kylen-granson.php"
+  },
+  {
+   "player_id": 25881,
+   "player_name": "Nate Adkins",
+   "position_id": "TE",
+   "team_id": "DEN",
+   "filename": "nate-adkins.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 18290,
+   "player_name": "T.J. Hockenson",
+   "position_id": "TE",
+   "team_id": "MIN",
+   "filename": "tj-hockenson.php",
+   "games": 1,
+   "points": 13.5,
+   "average": 13.5,
+   "weeks": {
+    "7": 13.5
+   }
+  },
+  {
+   "player_id": 27109,
+   "player_name": "Gunnar Helm",
+   "position_id": "TE",
+   "team_id": "TEN",
+   "filename": "gunnar-helm.php",
+   "games": 1,
+   "points": 5.4,
+   "average": 5.4,
+   "weeks": {
+    "7": 5.4
+   }
+  },
+  {
+   "player_id": 26002,
+   "player_name": "Gavin Bartholomew",
+   "position_id": "TE",
+   "team_id": "MIN",
+   "filename": "gavin-bartholomew.php",
+   "games": 1,
+   "points": 2.7,
+   "average": 2.7,
+   "weeks": {
+    "7": 2.7
+   }
+  },
+  {
+   "player_id": 11594,
+   "player_name": "Travis Kelce",
+   "position_id": "TE",
+   "team_id": "KC",
+   "filename": "travis-kelce.php",
+   "games": 1,
+   "points": 8.4,
+   "average": 8.4,
+   "weeks": {
+    "7": 8.4
+   }
+  },
+  {
+   "player_id": 25731,
+   "player_name": "Brady Russell",
+   "position_id": "TE",
+   "team_id": "SEA",
+   "filename": "brady-russell.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 25346,
+   "player_name": "Payne Durham",
+   "position_id": "TE",
+   "team_id": "TB",
+   "filename": "payne-durham.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 26434,
+   "player_name": "Tyler Warren",
+   "position_id": "TE",
+   "team_id": "IND",
+   "filename": "tyler-warren.php"
+  },
+  {
+   "player_id": 19539,
+   "player_name": "Noah Gray",
+   "position_id": "TE",
+   "team_id": "KC",
+   "filename": "noah-gray.php",
+   "games": 1,
+   "points": 7.4,
+   "average": 7.4,
+   "weeks": {
+    "7": 7.4
+   }
+  },
+  {
+   "player_id": 22795,
+   "player_name": "Tommy Tremble",
+   "position_id": "TE",
+   "team_id": "CAR",
+   "filename": "tommy-tremble.php",
+   "games": 1,
+   "points": 1.8,
+   "average": 1.8,
+   "weeks": {
+    "7": 1.8
+   }
+  },
+  {
+   "player_id": 17527,
+   "player_name": "Noah Fant",
+   "position_id": "TE",
+   "team_id": "NO",
+   "filename": "noah-fant.php",
+   "games": 1,
+   "points": 3.1,
+   "average": 3.1,
+   "weeks": {
+    "7": 3.1
+   }
+  },
+  {
+   "player_id": 28437,
+   "player_name": "Riley Nowakowski",
+   "position_id": "TE",
+   "team_id": "PIT",
+   "filename": "riley-nowakowski.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 26922,
+   "player_name": "David Martin-Robinson",
+   "position_id": "TE",
+   "team_id": "TEN",
+   "filename": "david-martin-robinson.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 18487,
+   "player_name": "Josh Oliver",
+   "position_id": "TE",
+   "team_id": "MIN",
+   "filename": "josh-oliver.php"
+  },
+  {
+   "player_id": 16411,
+   "player_name": "Evan Engram",
+   "position_id": "TE",
+   "team_id": "DEN",
+   "filename": "evan-engram.php",
+   "games": 1,
+   "points": 1.2,
+   "average": 1.2,
+   "weeks": {
+    "7": 1.2
+   }
+  },
+  {
+   "player_id": 16460,
+   "player_name": "Jonnu Smith",
+   "position_id": "TE",
+   "team_id": "GB",
+   "filename": "jonnu-smith.php",
+   "games": 1,
+   "points": 1.9,
+   "average": 1.9,
+   "weeks": {
+    "7": 1.9
+   }
+  },
+  {
+   "player_id": 17270,
+   "player_name": "Dallas Goedert",
+   "position_id": "TE",
+   "team_id": "PHI",
+   "filename": "dallas-goedert.php",
+   "games": 1,
+   "points": 9.8,
+   "average": 9.8,
+   "weeks": {
+    "7": 9.8
+   }
+  },
+  {
+   "player_id": 26335,
+   "player_name": "AJ Barner",
+   "position_id": "TE",
+   "team_id": "SEA",
+   "filename": "aj-barner.php",
+   "games": 1,
+   "points": 8.6,
+   "average": 8.6,
+   "weeks": {
+    "7": 8.6
+   }
+  },
+  {
+   "player_id": 22820,
+   "player_name": "Quintin Morris",
+   "position_id": "TE",
+   "team_id": "JAC",
+   "filename": "quintin-morris.php"
+  },
+  {
+   "player_id": 22783,
+   "player_name": "Hunter Long",
+   "position_id": "TE",
+   "team_id": "ARI",
+   "filename": "hunter-long.php"
+  },
+  {
+   "player_id": 17387,
+   "player_name": "Ian Thomas",
+   "position_id": "TE",
+   "team_id": "LV",
+   "filename": "ian-thomas.php",
+   "games": 1,
+   "points": 1.8,
+   "average": 1.8,
+   "weeks": {
+    "7": 1.8
+   }
+  },
+  {
+   "player_id": 26003,
+   "player_name": "Brevyn Spann-Ford",
+   "position_id": "TE",
+   "team_id": "DAL",
+   "filename": "brevyn-spann-ford.php",
+   "games": 1,
+   "points": 3.1,
+   "average": 3.1,
+   "weeks": {
+    "7": 3.1
+   }
+  },
+  {
+   "player_id": 17598,
+   "player_name": "Tyler Conklin",
+   "position_id": "TE",
+   "team_id": "DET",
+   "filename": "tyler-conklin.php",
+   "games": 1,
+   "points": 1.4,
+   "average": 1.4,
+   "weeks": {
+    "7": 1.4
+   }
+  },
+  {
+   "player_id": 23181,
+   "player_name": "Cade Otton",
+   "position_id": "TE",
+   "team_id": "TB",
+   "filename": "cade-otton.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 22718,
+   "player_name": "Jake Ferguson",
+   "position_id": "TE",
+   "team_id": "DAL",
+   "filename": "jake-ferguson.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23781,
+   "player_name": "Isaiah Likely",
+   "position_id": "TE",
+   "team_id": "NYG",
+   "filename": "isaiah-likely.php",
+   "games": 1,
+   "points": 3.2,
+   "average": 3.2,
+   "weeks": {
+    "7": 3.2
+   }
+  },
+  {
+   "player_id": 24568,
+   "player_name": "Ko Kieft",
+   "position_id": "TE",
+   "team_id": "TB",
+   "filename": "ko-kieft.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23182,
+   "player_name": "Mark Redman",
+   "position_id": "TE",
+   "team_id": "GB",
+   "filename": "mark-redman.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23091,
+   "player_name": "Terrance Ferguson",
+   "position_id": "TE",
+   "team_id": "LAR",
+   "filename": "terrance-ferguson.php"
+  },
+  {
+   "player_id": 27501,
+   "player_name": "Jack Endries",
+   "position_id": "TE",
+   "team_id": "CIN",
+   "filename": "jack-endries.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 27993,
+   "player_name": "Max Klare",
+   "position_id": "TE",
+   "team_id": "LAR",
+   "filename": "max-klare.php"
+  },
+  {
+   "player_id": 25469,
+   "player_name": "Brayden Willis",
+   "position_id": "TE",
+   "team_id": "SF",
+   "filename": "brayden-willis.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 27867,
+   "player_name": "Nick Kallerup",
+   "position_id": "TE",
+   "team_id": "SEA",
+   "filename": "nick-kallerup.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 25430,
+   "player_name": "Oscar Delp",
+   "position_id": "TE",
+   "team_id": "NO",
+   "filename": "oscar-delp.php",
+   "games": 1,
+   "points": 1.2,
+   "average": 1.2,
+   "weeks": {
+    "7": 1.2
+   }
+  },
+  {
+   "player_id": 28079,
+   "player_name": "Justin Joly",
+   "position_id": "TE",
+   "team_id": "MIA",
+   "filename": "justin-joly.php"
+  },
+  {
+   "player_id": 26946,
+   "player_name": "Hayden Rucci",
+   "position_id": "TE",
+   "team_id": "LAC",
+   "filename": "hayden-rucci.php"
+  },
+  {
+   "player_id": 27672,
+   "player_name": "Patrick Herbert",
+   "position_id": "TE",
+   "team_id": "LAC",
+   "filename": "patrick-herbert.php"
+  },
+  {
+   "player_id": 27499,
+   "player_name": "Tanner Koziol",
+   "position_id": "TE",
+   "team_id": "JAC",
+   "filename": "tanner-koziol.php"
+  },
+  {
+   "player_id": 22955,
+   "player_name": "Brock Bowers",
+   "position_id": "TE",
+   "team_id": "LV",
+   "filename": "brock-bowers.php",
+   "games": 1,
+   "points": 13.3,
+   "average": 13.3,
+   "weeks": {
+    "7": 13.3
+   }
+  },
+  {
+   "player_id": 11689,
+   "player_name": "Zach Ertz",
+   "position_id": "TE",
+   "team_id": "PHI",
+   "filename": "zach-ertz.php"
+  },
+  {
+   "player_id": 19456,
+   "player_name": "Josiah Deguara",
+   "position_id": "TE",
+   "team_id": "SEA",
+   "filename": "josiah-deguara.php"
+  },
+  {
+   "player_id": 23193,
+   "player_name": "Jack Stoll",
+   "position_id": "TE",
+   "team_id": "SF",
+   "filename": "jack-stoll.php"
+  },
+  {
+   "player_id": 24182,
+   "player_name": "Teagan Quitoriano",
+   "position_id": "TE",
+   "team_id": "ARI",
+   "filename": "teagan-quitoriano.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23039,
+   "player_name": "Thomas Fidone II",
+   "position_id": "TE",
+   "team_id": "NYG",
+   "filename": "thomas-fidone.php",
+   "games": 1,
+   "points": 3.9,
+   "average": 3.9,
+   "weeks": {
+    "7": 3.9
+   }
+  },
+  {
+   "player_id": 27843,
+   "player_name": "Ben Yurosek",
+   "position_id": "TE",
+   "team_id": "MIN",
+   "filename": "ben-yurosek.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 15645,
+   "player_name": "Nick Vannett",
+   "position_id": "TE",
+   "team_id": "BAL",
+   "filename": "nick-vannett.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 23821,
+   "player_name": "Will Mallory",
+   "position_id": "TE",
+   "team_id": "IND",
+   "filename": "will-mallory.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 26785,
+   "player_name": "Shawn Bowman",
+   "position_id": "TE",
+   "team_id": "ARI",
+   "filename": "shawn-bowman.php"
+  },
+  {
+   "player_id": 16937,
+   "player_name": "Pharaoh Brown",
+   "position_id": "TE",
+   "team_id": "IND",
+   "filename": "pharaoh-brown.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 28597,
+   "player_name": "Hayden Large",
+   "position_id": "TE",
+   "team_id": "CHI",
+   "filename": "hayden-large.php"
+  },
+  {
+   "player_id": 27473,
+   "player_name": "Robbie Ouzts",
+   "position_id": "TE",
+   "team_id": "SEA",
+   "filename": "robbie-ouzts.php"
+  },
+  {
+   "player_id": 23144,
+   "player_name": "Eli Stowers",
+   "position_id": "TE",
+   "team_id": "PHI",
+   "filename": "eli-stowers.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 24144,
+   "player_name": "Nikola Kalinic",
+   "position_id": "TE",
+   "team_id": "CHI",
+   "filename": "nikola-kalinic.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 26343,
+   "player_name": "Jared Wiley",
+   "position_id": "TE",
+   "team_id": "KC",
+   "filename": "jared-wiley.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  },
+  {
+   "player_id": 24180,
+   "player_name": "Grant Calcaterra",
+   "position_id": "TE",
+   "team_id": "PHI",
+   "filename": "grant-calcaterra.php",
+   "games": 1,
+   "points": 0,
+   "average": 0,
+   "weeks": {
+    "7": 0
+   }
+  }
+ ],
+ "public_api": true,
+ "tier": "premium"
+}
