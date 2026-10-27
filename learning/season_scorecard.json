@@ -1,16 +1,24 @@
 {
-  "generated_at": "2026-10-24T10:23:42-04:00",
+  "generated_at": "2026-10-27T10:46:11-04:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
   "total_decisions": 11,
-  "reviewed_decisions": 0,
-  "pending_decisions": 11,
-  "wins": 0,
-  "losses": 0,
-  "neutral": 0,
-  "outcome_grade_distribution": {},
-  "process_grade_distribution": {},
+  "reviewed_decisions": 11,
+  "pending_decisions": 0,
+  "wins": 6,
+  "losses": 1,
+  "neutral": 4,
+  "outcome_grade_distribution": {
+    "B": 6,
+    "C": 4,
+    "D": 1
+  },
+  "process_grade_distribution": {
+    "A": 1,
+    "B": 9,
+    "C": 1
+  },
   "confidence_calibration": {
     "1": {
       "count": 0,
@@ -21,24 +29,24 @@
     },
     "2": {
       "count": 2,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 2
     },
     "3": {
       "count": 4,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.25,
+      "average_process_grade": 3.0,
+      "reviewed_count": 4
     },
     "4": {
       "count": 5,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 0.6,
+      "average_outcome_grade": 2.6,
+      "average_process_grade": 3.0,
+      "reviewed_count": 5
     },
     "5": {
       "count": 0,
@@ -51,345 +59,349 @@
   "decision_type_performance": {
     "ADD": {
       "count": 3,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 0.333,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.667,
+      "reviewed_count": 3
     },
     "INJURY_CONTINGENCY": {
       "count": 6,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 6
     },
     "START_SIT": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 4.0,
+      "reviewed_count": 1
     },
     "STREAM": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1
     }
   },
   "signal_performance": {
     "$0 free agent": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "$0 free agent: no FAAB cost": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "ESPN and FantasyPros both rank Browns above Saints": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Kamara cleared caps Miller's role": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 4.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Knight out-touched efficiency vs Allgeier in W6 and faces a bottom-two run defense": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 4.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Love likely out Week 7": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Love ruled out; confirmed Knight/Allgeier tandem": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 4.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Mongo Grok Pulse": {
       "count": 4,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 4,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Week 6 volume 15 carries": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "authenticated league state": {
       "count": 6,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 6,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "backfield vacancy/role contingency": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "best available ROS rank in Mongo pool": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "better ROS rank": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "both ESPN and FantasyPros project Johnson above Higbee": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "credible beat reporting": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "current starter comparison": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "high-confidence insider injury reporting": {
       "count": 3,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 3,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "in-game injury exit": {
       "count": 2,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 2,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "injury replacement role": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "official team injury report": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "official team report": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "post-game injury evidence": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "replaces a near-zero bench RB": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "replaces a zero-projection bench player at no cost": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "replaces lowest-ranked WR": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "roster/IR slot optimization": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "scheduled medical testing": {
       "count": 2,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 2,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "slight underdog favors Knight's upside": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 4.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "trailing slightly in projected matchup": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "weak Titans offense": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     }
   },
-  "major_error_counts": {},
-  "timing_failures": 0,
+  "major_error_counts": {
+    "INJURY_MISREAD": 1,
+    "NEWS_REACTION_TOO_SLOW": 1,
+    "PROCESS_GOOD_VARIANCE_BAD": 1
+  },
+  "timing_failures": 1,
   "data_quality_failures": 0,
   "user_action_performance": {
     "followed": {
-      "count": 0,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "count": 9,
+      "success_rate": 0.667,
+      "average_outcome_grade": 2.667,
+      "average_process_grade": 3.111,
+      "reviewed_count": 9
     },
     "ignored": {
       "count": 0,
@@ -399,36 +411,36 @@
       "reviewed_count": 0
     },
     "overrode": {
-      "count": 0,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "count": 2,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.5,
+      "average_process_grade": 2.5,
+      "reviewed_count": 2
     }
   },
   "mongo_outcome_metrics": {
-    "reviewed_decisions": 0,
-    "actual_acquisitions": 0,
+    "reviewed_decisions": 11,
+    "actual_acquisitions": 4,
     "tracked_value_count": {
-      "recommended_faab": 0,
-      "actual_faab_cost": 0,
+      "recommended_faab": 4,
+      "actual_faab_cost": 4,
       "winning_faab": 0,
       "next_highest_bid": 0,
       "faab_saved_or_overspent": 0,
-      "points_added_above_replacement": 0,
+      "points_added_above_replacement": 1,
       "starter_bench_differential": 0,
-      "weeks_retained": 0,
+      "weeks_retained": 1,
       "roster_value_improvement": 0
     },
     "averages": {
-      "recommended_faab": null,
-      "actual_faab_cost": null,
+      "recommended_faab": 0.0,
+      "actual_faab_cost": 0.0,
       "winning_faab": null,
       "next_highest_bid": null,
       "faab_saved_or_overspent": null,
-      "points_added_above_replacement": null,
+      "points_added_above_replacement": 0.0,
       "starter_bench_differential": null,
-      "weeks_retained": null,
+      "weeks_retained": 0.0,
       "roster_value_improvement": null
     }
   },
@@ -439,72 +451,88 @@
     "decision_lineages_considered": 7,
     "decision_lineages_used": 6,
     "actions_changed_by_pulse": 5,
-    "successful_actions_changed_by_pulse": 0,
+    "successful_actions_changed_by_pulse": 2,
     "unsuccessful_actions_changed_by_pulse": 0,
     "average_information_lead_time_minutes": 182.667,
     "highly_useful_pulses": 0,
     "misleading_pulses": 0,
     "too_late_pulses": 0,
-    "usefulness_grade_distribution": {},
+    "usefulness_grade_distribution": {
+      "ACCURATE_NOT_ACTIONABLE": 3,
+      "DUPLICATIVE": 1,
+      "USEFUL": 3
+    },
     "pulse_category_performance": {
       "INJURY_DESIGNATION": {
         "count": 1,
-        "success_rate": null,
-        "average_outcome_grade": null,
-        "average_process_grade": null,
-        "reviewed_count": 0,
+        "success_rate": 1.0,
+        "average_outcome_grade": 3.0,
+        "average_process_grade": 4.0,
+        "reviewed_count": 1,
         "used_count": 1,
         "changed_decision_count": 0,
-        "usefulness_grade_distribution": {}
+        "usefulness_grade_distribution": {
+          "USEFUL": 1
+        }
       },
       "injury": {
         "count": 6,
-        "success_rate": null,
-        "average_outcome_grade": null,
-        "average_process_grade": null,
-        "reviewed_count": 0,
+        "success_rate": 0.5,
+        "average_outcome_grade": 2.5,
+        "average_process_grade": 3.0,
+        "reviewed_count": 6,
         "used_count": 5,
         "changed_decision_count": 5,
-        "usefulness_grade_distribution": {}
+        "usefulness_grade_distribution": {
+          "ACCURATE_NOT_ACTIONABLE": 3,
+          "DUPLICATIVE": 1,
+          "USEFUL": 2
+        }
       }
     },
     "pulse_source_performance": {
       "Grok Pulse overnight": {
         "count": 1,
-        "success_rate": null,
-        "average_outcome_grade": null,
-        "average_process_grade": null,
-        "reviewed_count": 0,
+        "success_rate": 1.0,
+        "average_outcome_grade": 3.0,
+        "average_process_grade": 4.0,
+        "reviewed_count": 1,
         "used_count": 1,
         "changed_decision_count": 0,
-        "usefulness_grade_distribution": {}
+        "usefulness_grade_distribution": {
+          "USEFUL": 1
+        }
       },
       "Mongo Grok Pulse": {
         "count": 6,
-        "success_rate": null,
-        "average_outcome_grade": null,
-        "average_process_grade": null,
-        "reviewed_count": 0,
+        "success_rate": 0.5,
+        "average_outcome_grade": 2.5,
+        "average_process_grade": 3.0,
+        "reviewed_count": 6,
         "used_count": 5,
         "changed_decision_count": 5,
-        "usefulness_grade_distribution": {}
+        "usefulness_grade_distribution": {
+          "ACCURATE_NOT_ACTIONABLE": 3,
+          "DUPLICATIVE": 1,
+          "USEFUL": 2
+        }
       }
     }
   },
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
       "count": 5,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 0.6,
+      "average_outcome_grade": 2.4,
+      "average_process_grade": 3.0,
+      "reviewed_count": 5
     },
     "PRIME_MONGO_FANTASY_WATCH": {
       "count": 6,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 6
     }
   }
 }

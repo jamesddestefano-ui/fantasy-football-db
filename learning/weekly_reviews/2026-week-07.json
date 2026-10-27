@@ -1,0 +1,148 @@
+{
+  "system": "CLAUDE_MONGO_BRAIN",
+  "season": 2026,
+  "week": 7,
+  "reviewed_at": "2026-10-27T10:50:00-04:00",
+  "best_decisions": [
+    "mongo-2026-w07-lineup-knight-over-miller-001: started Knight over Miller on late injury news, +3.5"
+  ],
+  "worst_decisions": [
+    "mongo-2026-w07-add-dontayvion-wicks-001: recommended Wicks while he was a Thursday DNP (ankle); ruled out, 0 points, dropped 3 days later"
+  ],
+  "good_process_bad_result": [
+    "mongo-2026-w07-add-juwan-johnson-001: two-source projection edge at TE lost by 1.7"
+  ],
+  "bad_process_good_result": [],
+  "missed_opportunities": [
+    "Flournoy (11.0) over Downs (3.8) at FLEX: projections near even (9.05 vs 8.56), not ranked as a recorded decision"
+  ],
+  "signals_that_worked": [
+    "Confirmed late injury news (Love OUT, Kamara cleared) over stale projections",
+    "Two-source D/ST agreement"
+  ],
+  "signals_that_failed": [
+    "Board/projection-only add evaluation without practice-report check (Wicks)"
+  ],
+  "data_quality_issues": [
+    "Saints D/ST W7 points not in repository (only Browns score available from ESPN last_week)",
+    "FantasyPros w07 results.json absent (ESPN last_week used instead)",
+    "Wicks plain drop is an ESPN ROSTER-type transaction skipped by espn_sync; captured via manual import",
+    "W1 Prime decisions left unreviewed for 6 weeks; reviewed today with partial outcome data"
+  ],
+  "timing_issues": [
+    "Wicks add recommended at 6:17 PM ET Oct 22, after that day's practice report listed him DNP"
+  ],
+  "rule_changes_proposed": [
+    "Check that day's NFL practice report for every add target Wed-Sat before recommending (1 occurrence; monitor)"
+  ],
+  "rule_changes_adopted": [],
+  "rules_rejected_due_to_insufficient_sample": [
+    "Practice-report rule: single occurrence, held for repeat evidence (AGENTS learning rule 8)"
+  ],
+  "mongo_metrics": {
+    "recommended_acquisition_vs_actual": [
+      "Browns D/ST: rec=actual",
+      "Knight: rec=actual",
+      "Wicks: rec=actual add, drop McLaughlin not Cowing",
+      "Juwan Johnson: rec=actual add, drop Cowing not McLaughlin"
+    ],
+    "recommended_faab_vs_actual_and_winning": [
+      "All four W7 adds $0 recommended, $0 paid"
+    ],
+    "points_added_above_replacement": [
+      "Knight +9.3 vs Estime ~0",
+      "Browns 6.0 vs Saints (unknown)",
+      "Wicks 0 (OUT)",
+      "Johnson 1.7 vs Higbee 3.4"
+    ],
+    "starter_bench_differential": [
+      "Week 7: 112.0 started vs 127.2 optimal = 15.2 left on bench"
+    ],
+    "weeks_retained": [
+      "Wicks 0 weeks",
+      "Knight, Johnson, Browns 1+"
+    ],
+    "drop_timing_and_regret": [
+      "Wicks dropped pre-kickoff for Sampson off IR; no regret (ruled out)"
+    ],
+    "missed_waiver_opportunities": [],
+    "roster_value_improvement": [
+      "Knight short-term RB depth until Love returns; Johnson ~ Higbee"
+    ]
+  },
+  "result": {
+    "james_points": 112.0,
+    "opponent": "I Loveland Rice Krispies (AAGD)",
+    "opponent_points": 133.1,
+    "outcome": "LOSS",
+    "record_after": "3-4-0",
+    "margin": -21.1,
+    "source": "data/espn_api/latest.json last_week + team points_for delta vs data/espn_api/2026-10-26T1718Z.json"
+  },
+  "week_grade": "C",
+  "lineup_efficiency": {
+    "starter_points": 112.0,
+    "optimal_points": 127.2,
+    "points_left_on_bench": 15.2,
+    "efficiency_pct": 88.1,
+    "optimal_lineup": "QB Murray 15.9; RB Bijan 17.2 / Kaelon Black 12.9; WR Lamb 24.4 / Burden 25.7; TE Higbee 3.4; FLEX Flournoy 11.0 / Sampson 10.7; D/ST Browns 6.0",
+    "biggest_misses": [
+      "Josh Downs FLEX 3.8 vs Flournoy 11.0 bench (-7.2)",
+      "McMillan WR 8.0 vs Black/Sampson (hindsight; McMillan proj 16.44)",
+      "Juwan Johnson TE 1.7 vs Higbee 3.4 (-1.7)"
+    ],
+    "note": "Optimal lineup still loses (127.2 < 133.1). Most bench points came from low-projection players (Black 6.57, Sampson 6.15); only Downs vs Flournoy (8.56 vs 9.05 ESPN proj) was a near-even call that went wrong."
+  },
+  "waiver_faab_results": {
+    "faab_start": 66,
+    "faab_end": 66,
+    "paid_claims": 0,
+    "moves": [
+      "Browns D/ST for Saints D/ST $0 (followed)",
+      "Bam Knight for Audric Estime $0 (followed) -> started, 9.3",
+      "Dontayvion Wicks for Jaleel McLaughlin $0 (drop swapped vs advice) -> Wicks ruled out, dropped Sun 8:50 AM",
+      "Juwan Johnson for Jacob Cowing $0 (drop swapped vs advice) -> 1.7 started",
+      "Dylan Sampson IR->BN; Wicks dropped to make room"
+    ],
+    "failed_claims": "C.J. Stroud $10 claim (drop Cowing) FAILED_INVALIDPLAYERSOURCE 2026-10-21"
+  },
+  "advice_followed": {
+    "followed": 3,
+    "overrode_partially": 2,
+    "ignored": 0,
+    "detail": "Both overrides were drop-target swaps (McLaughlin and Cowing reversed); no scoring impact."
+  },
+  "nfl_pulse_performance": {
+    "pulses_considered": 1,
+    "pulses_used": 1,
+    "pulses_rejected": 0,
+    "actions_changed_by_pulse": 0,
+    "successful_changed_actions": 0,
+    "unsuccessful_changed_actions": 0,
+    "average_information_lead_time_minutes": 610,
+    "highly_useful": 0,
+    "useful": 1,
+    "misleading": 0,
+    "late": 0,
+    "category_source_performance": {
+      "INJURY_DESIGNATION": "1 USEFUL (confirmed Kamara cleared thesis)"
+    },
+    "note": "W1 Prime Pulse events also graded today: 2 USEFUL, 3 ACCURATE_NOT_ACTIONABLE, 1 DUPLICATIVE"
+  },
+  "season_trend": {
+    "reviewed_decisions": 11,
+    "claude": {
+      "count": 5,
+      "avg_outcome": 2.4,
+      "avg_process": 3.0,
+      "success_rate": 0.6
+    },
+    "prime": {
+      "count": 6,
+      "avg_outcome": 2.5,
+      "avg_process": 3.0,
+      "success_rate": 0.5
+    },
+    "team": "3-4-0, 847.9 PF"
+  }
+}
