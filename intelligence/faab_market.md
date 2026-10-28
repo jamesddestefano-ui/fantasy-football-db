@@ -1,4 +1,4 @@
-# Mongo FAAB market (as of 2026-10-27T18:44:51Z)
+# Mongo FAAB market (as of 2026-10-28T17:08:27Z)
 
 _What Mongo managers actually pay. Use for bid sizing; never availability._
 
@@ -11,23 +11,23 @@ _What Mongo managers actually pay. Use for bid sizing; never availability._
 | Horton (CCT) | $92 | $8 |
 | DeVonta Be Kidding Me (ME) | $85 | $15 |
 | Bills Mafia (BM) | $83 | $17 |
-| Justmyluck3 (J3) | $76 | $24 |
+| Justmyluck3 (J3) | $73 | $27 |
 | $Cmoney$ (C$) | $70 | $30 |
-| Tom Brady of Ass (JDD) | $66 | $34 |
-| You're a JaGoff (PbP) | $50 | $50 |
-| I Loveland Rice Krispies (AAGD) | $44 | $56 |
-| T.N.T (FFT) | $44 | $56 |
-| SHOWSTOPPERS (BE3) | $42 | $58 |
+| Tom Brady of Ass (JDD) | $54 | $46 |
+| I Loveland Rice Krispies (AAGD) | $42 | $58 |
+| T.N.T (FFT) | $42 | $58 |
+| You're a JaGoff (PbP) | $41 | $59 |
+| SHOWSTOPPERS (BE3) | $39 | $61 |
 
 ## Winning bids by position (paid claims)
 
 | Pos | Claims | Paid | Median | 75th % | Max |
 |---|---|---|---|---|---|
-| D/ST | 11 | 11 | $3 | $4.5 | $7 |
-| QB | 10 | 10 | $2.5 | $8 | $13 |
-| RB | 16 | 16 | $6 | $13.2 | $23 |
-| TE | 7 | 7 | $6 | $7 | $9 |
-| WR | 16 | 16 | $4.5 | $9.5 | $19 |
+| D/ST | 15 | 15 | $2 | $4 | $7 |
+| QB | 11 | 11 | $1 | $8 | $13 |
+| RB | 17 | 17 | $6 | $13 | $23 |
+| TE | 9 | 9 | $6 | $8 | $9 |
+| WR | 18 | 18 | $4.5 | $8.8 | $19 |
 
 Winners typically beat the runner-up bid by **$2.0** (median).
 
@@ -51,10 +51,11 @@ Winners typically beat the runner-up bid by **$2.0** (median).
 | 5 | Kyle Pitts Sr. (ATL) | TE | SHOWSTOPPERS | $9 | — |
 | 3 | Oronde Gadsden (LAC) | TE | Tom Brady of Ass | $8 | $6 |
 
-James: won 6 claim(s) for $34; lost 6.
+James: won 9 claim(s) for $46; lost 7.
 - Week 3: Tre Tucker at $4 (FAILED_INVALIDPLAYERSOURCE)
 - Week 3: Emanuel Wilson at $6 (FAILED_INVALIDPLAYERSOURCE)
 - Week 4: Ollie Gordon II at $15 (FAILED_INVALIDPLAYERSOURCE)
 - Week 6: Pat Freiermuth at $1 (FAILED_INVALIDPLAYERSOURCE)
 - Week 7: C.J. Stroud at $10 (FAILED_INVALIDPLAYERSOURCE)
 - Week 7: Omar Cooper Jr. at $3 (FAILED_INVALIDPLAYERSOURCE)
+- Week 8: Caleb Douglas at $5 (FAILED_INVALIDPLAYERSOURCE)

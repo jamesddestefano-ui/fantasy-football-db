@@ -1,7 +1,17 @@
-# Mongo reconciliation — IN_SYNC
+# Mongo reconciliation — NEEDS_INGEST
 
-ESPN 2026-10-27T18:44:51Z vs repository (newest import 2026-10-25T12:50:00Z). Transactions checked: 244.
+ESPN 2026-10-28T17:08:27Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 269.
 
-FAAB: ESPN $66 · repository $66.0
+## Completed on ESPN, not in the repository
 
-Repository matches ESPN.
+- 2026-10-28T12:31:48Z FREEAGENT +Mason Taylor, -J.J. McCarthy
+- 2026-10-28T12:32:32Z FREEAGENT +Geno Smith
+
+## Roster differences
+
+- On ESPN, not in repo: Geno Smith, Mason Taylor
+- In repo, not on ESPN: J.J. McCarthy, Kyler Murray
+
+FAAB: ESPN $54 · repository $54.0
+
+Codex: ingest the drafts in intelligence/reconcile/pending/ (Mongo Live Check workflow).

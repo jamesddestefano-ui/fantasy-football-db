@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_PENDING_INGEST",
+  "event_type": "ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Mason Taylor",
+  "nfl_team": "NYJ",
+  "position": "TE",
+  "espn_id": "4808766",
+  "faab_amount": 0,
+  "dropped_player": "J.J. McCarthy",
+  "dropped_nfl_team": "NYG",
+  "dropped_position": "QB",
+  "observed_at": "2026-10-28T12:31:48Z",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "ADD_DROP",
+    "added": "Mason Taylor",
+    "dropped": "J.J. McCarthy",
+    "calendar_day_ET": "2026-10-28",
+    "faab_amount": 0
+  },
+  "sources": [
+    {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 399544b6-dba3-4218-9e94-71e1283cb4d7 FREEAGENT EXECUTED processed Wed Oct 28, 8:31 AM ET: added Mason Taylor, NYJ TE; dropped J.J. McCarthy, NYG QB."
+    }
+  ],
+  "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+}

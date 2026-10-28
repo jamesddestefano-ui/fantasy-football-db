@@ -1,16 +1,143 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-10-27T18:44:51Z",
- "repo_observed_at": "2026-10-25T12:50:00Z",
- "status": "IN_SYNC",
- "unlogged_moves": [],
+ "espn_observed_at": "2026-10-28T17:08:27Z",
+ "repo_observed_at": "2026-10-28T08:11:00Z",
+ "status": "NEEDS_INGEST",
+ "unlogged_moves": [
+  {
+   "transaction": {
+    "id": "399544b6-dba3-4218-9e94-71e1283cb4d7",
+    "type": "FREEAGENT",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 0,
+    "scoring_period": 8,
+    "processed_at": "2026-10-28T12:31:48Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "4808766",
+      "name": "Mason Taylor",
+      "position": "TE",
+      "nfl_team": "NYJ",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "4433970",
+      "name": "J.J. McCarthy",
+      "position": "QB",
+      "nfl_team": "NYG",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Mason Taylor",
+    "nfl_team": "NYJ",
+    "position": "TE",
+    "espn_id": "4808766",
+    "faab_amount": 0,
+    "dropped_player": "J.J. McCarthy",
+    "dropped_nfl_team": "NYG",
+    "dropped_position": "QB",
+    "observed_at": "2026-10-28T12:31:48Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "ADD_DROP",
+     "added": "Mason Taylor",
+     "dropped": "J.J. McCarthy",
+     "calendar_day_ET": "2026-10-28",
+     "faab_amount": 0
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 399544b6-dba3-4218-9e94-71e1283cb4d7 FREEAGENT EXECUTED processed Wed Oct 28, 8:31 AM ET: added Mason Taylor, NYJ TE; dropped J.J. McCarthy, NYG QB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
+  },
+  {
+   "transaction": {
+    "id": "490a42eb-6e68-4420-86f5-927e9de29704",
+    "type": "FREEAGENT",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 0,
+    "scoring_period": 8,
+    "processed_at": "2026-10-28T12:32:32Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "15864",
+      "name": "Geno Smith",
+      "position": "QB",
+      "nfl_team": "NYJ",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": []
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "FREE_AGENT_ADD",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Geno Smith",
+    "nfl_team": "NYJ",
+    "position": "QB",
+    "espn_id": "15864",
+    "faab_amount": 0,
+    "dropped_player": null,
+    "dropped_nfl_team": null,
+    "dropped_position": null,
+    "observed_at": "2026-10-28T12:32:32Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "FREE_AGENT_ADD",
+     "added": "Geno Smith",
+     "dropped": null,
+     "calendar_day_ET": "2026-10-28",
+     "faab_amount": 0
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 490a42eb-6e68-4420-86f5-927e9de29704 FREEAGENT EXECUTED processed Wed Oct 28, 8:32 AM ET: added Geno Smith, NYJ QB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
+  }
+ ],
  "roster_diff": {
-  "on_espn_not_in_repo": [],
-  "in_repo_not_on_espn": []
+  "on_espn_not_in_repo": [
+   "Geno Smith",
+   "Mason Taylor"
+  ],
+  "in_repo_not_on_espn": [
+   "J.J. McCarthy",
+   "Kyler Murray"
+  ]
  },
  "faab": {
-  "espn": 66,
-  "repository": 66.0
+  "espn": 54,
+  "repository": 54.0
  },
- "transactions_checked": 244
+ "transactions_checked": 269
 }
