@@ -44,6 +44,7 @@ KNIGHT_ESTIME_AT = datetime(2026, 10, 22, 22, 15, 37, tzinfo=timezone.utc)  # Th
 WICKS_MCLAUGHLIN_AT = datetime(2026, 10, 22, 22, 26, 17, tzinfo=timezone.utc)  # Thu Oct 22, 6:26:17 pm ET
 JOHNSON_COWING_AT = datetime(2026, 10, 22, 22, 26, 31, tzinfo=timezone.utc)  # Thu Oct 22, 6:26:31 pm ET
 WICKS_DROP_AT = datetime(2026, 10, 25, 12, 50, 0, tzinfo=timezone.utc)  # Sun Oct 25, 8:50 am ET (ESPN activity, minute precision)
+WAIVERS_OCT28_AT = datetime(2026, 10, 28, 8, 11, 0, tzinfo=timezone.utc)  # Wed Oct 28, ~4:11 am ET waiver run (ESPN Live Check 8:20 am ET; approximate minute)
 ROSTER = [
     ("Jalen Hurts", "QB", "QB", "STARTER"), ("De'Von Achane", "RB", "RB", "STARTER"),
     ("Bijan Robinson", "RB", "RB", "STARTER"), ("Luther Burden III", "WR", "WR", "STARTER"),
@@ -1809,6 +1810,75 @@ def seed_mongo(session: Session):
         league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("66"),
         observed_at=WICKS_DROP_AT, source_id=wicks_drop_source.id,
     ))
+
+    # --- 2026-10-28 ESPN: 3 WAIVER ADD/DROPs (~4:11 am ET run): Okonkwo $8/Higbee, Commanders D/ST $3/Browns D/ST, Darnold $1/Juwan Johnson ---
+    # Order of the three claims within the run is unknown; one FAAB checkpoint ($54, ESPN-observed) is recorded on the last group only.
+    # Caleb Douglas claim (lost at $8) is not tracked by the schema and is not recorded.
+    oct28_claims = [
+        # (slug, add name, pos, nfl, espn_id, add slot, placement, FAAB, drop name, drop desc, add desc)
+        ("chig-okonkwo-waiver-higbee-drop", "Chig Okonkwo", "TE", "WAS", "4360635", "BN", "BENCH", 8, "Tyler Higbee", "LAR TE"),
+        ("commanders-dst-waiver-browns-dst-drop", "Commanders D/ST", "D/ST", "WAS", "-16028", "D/ST", "STARTER", 3, "Browns D/ST", "CLE D/ST"),
+        ("sam-darnold-waiver-juwan-johnson-drop", "Sam Darnold", "QB", "SEA", "3912547", "BN", "BENCH", 1, "Juwan Johnson", "NO TE"),
+    ]
+    for idx, (slug, add_name, add_pos, add_nfl, add_espn_id, add_slot, add_placement, bid, drop_name, drop_desc) in enumerate(oct28_claims):
+        drop_p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(drop_name)))
+        add_p = _player(session, add_name, add_pos, add_nfl)
+        if add_p.espn_id is None:
+            add_p.espn_id = add_espn_id  # from repo ESPN API snapshot data/espn_api/latest.json (observed 2026-10-27T18:44:51Z)
+        oct28_source = Source(
+            league_id=lg.id,
+            source_type="ESPN_ACTIVITY",
+            description=f"Authenticated ESPN activity: Added {add_name} ({add_nfl} {add_pos}) from waivers for ${bid}; dropped {drop_name} ({drop_desc}) (Wed Oct 28, ~4:11 am ET)",
+            original_ref=f"data/imports/2026-10-28-{slug}.json",
+            platform="ESPN",
+            observed_at=WAIVERS_OCT28_AT,
+            authority=Authority.CONFIRMED_TRANSACTION,
+            notes=f"Mongo Live Check 2026-10-28 08:20 ET; FAAB $66 -> $54 across three claims; minute-approximate time, no ESPN transaction id; espn_id {add_espn_id} from repo ESPN API snapshot.",
+        )
+        session.add(oct28_source)
+        session.flush()
+        oct28_group = TransactionGroup(
+            id=f"{slug}-20261028-espn-001", league_id=lg.id, fantasy_team_id=tm.id,
+            effective_at=WAIVERS_OCT28_AT, source_id=oct28_source.id,
+            notes=f"ESPN-authoritative WAIVER_ADD_DROP: {add_name} ${bid} waiver; {drop_name} dropped (not FREE_AGENT_CONFIRMED).",
+        )
+        session.add(oct28_group)
+        session.flush()
+        session.add_all([
+            TransactionEvent(
+                group_id=oct28_group.id, sequence=1, event_type="DROP", player_id=drop_p.id,
+                notes=f"Dropped when claiming {add_name} on waivers.",
+            ),
+            TransactionEvent(
+                group_id=oct28_group.id, sequence=2, event_type="WAIVER_ADD", player_id=add_p.id,
+                faab_amount=Decimal(str(bid)), notes=f"Waiver claim ${bid}.",
+            ),
+            OwnershipEvent(
+                league_id=lg.id, player_id=drop_p.id, state=OwnershipState.UNKNOWN, event_type="DROPPED",
+                effective_at=WAIVERS_OCT28_AT, source_id=oct28_source.id,
+                authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=oct28_group.id,
+                notes="Drop proves departure from roster, not current free agency; drop destination not captured.",
+            ),
+            OwnershipEvent(
+                league_id=lg.id, player_id=add_p.id, fantasy_team_id=tm.id, state=OwnershipState.OWNED,
+                event_type="ADDED", effective_at=WAIVERS_OCT28_AT, source_id=oct28_source.id,
+                authority=Authority.CONFIRMED_TRANSACTION, transaction_group_id=oct28_group.id,
+                notes=f"ESPN waiver claim ${bid} dropping {drop_name}.",
+            ),
+            LineupAssignment(
+                league_id=lg.id, season=2026, week=2, fantasy_team_id=tm.id, player_id=add_p.id,
+                slot=add_slot, placement=add_placement, effective_at=WAIVERS_OCT28_AT, source_id=oct28_source.id,
+            ),
+            FaabEntry(
+                league_id=lg.id, fantasy_team_id=tm.id, amount=Decimal(str(-bid)), kind="WAIVER_EXPENDITURE",
+                effective_at=WAIVERS_OCT28_AT, transaction_group_id=oct28_group.id, source_id=oct28_source.id,
+            ),
+        ])
+        if idx == len(oct28_claims) - 1:
+            session.add(FaabBalanceObservation(
+                league_id=lg.id, fantasy_team_id=tm.id, balance=Decimal("54"),
+                observed_at=WAIVERS_OCT28_AT, source_id=oct28_source.id,
+            ))
 
     for name, pos in NOT_MINE_UNKNOWN:
         p = session.scalar(select(NFLPlayer).where(NFLPlayer.normalized_name == normalize_name(name)))

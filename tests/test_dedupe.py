@@ -54,7 +54,7 @@ def test_player_aliases_seeded_for_known_gaps(session):
 
 def test_all_known_espn_events_classify_already_recorded(session):
     results = dry_run_classify(session, KNOWN_ESPN_EVENTS)
-    assert len(results) == 33
+    assert len(results) == 36
     for r, event in zip(results, KNOWN_ESPN_EVENTS):
         assert r.classification == Classification.ALREADY_RECORDED, (
             f"{event['description']} → {r.classification} {r.reasons}"
@@ -107,6 +107,9 @@ def test_six_espn_live_plus_ir_confirmation_match_expected_groups(session):
     assert by_desc[KNOWN_ESPN_EVENTS[30]["description"]].matched_group_id == "dontayvion-wicks-add-mclaughlin-drop-20261022-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[31]["description"]].matched_group_id == "juwan-johnson-add-cowing-drop-20261022-espn-001"
     assert by_desc[KNOWN_ESPN_EVENTS[32]["description"]].matched_group_id == "dontayvion-wicks-drop-20261025-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[33]["description"]].matched_group_id == "chig-okonkwo-waiver-higbee-drop-20261028-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[34]["description"]].matched_group_id == "commanders-dst-waiver-browns-dst-drop-20261028-espn-001"
+    assert by_desc[KNOWN_ESPN_EVENTS[35]["description"]].matched_group_id == "sam-darnold-waiver-juwan-johnson-drop-20261028-espn-001"
 
 
 def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):
@@ -129,9 +132,9 @@ def test_hypothetical_new_fa_add_on_new_day_classifies_new(session):
 
 def test_reclassifying_saylors_waiver_does_not_recommend_second_faab_debit(session):
     before = faab_balance(session, "mongo")
-    assert before == Decimal("66.00")
+    assert before == Decimal("54.00")
     debit_count = len(session.scalars(select(FaabEntry).where(FaabEntry.kind == "WAIVER_EXPENDITURE")).all())
-    assert debit_count == 6
+    assert debit_count == 9
 
     result = find_existing_transaction(
         session,
@@ -148,8 +151,8 @@ def test_reclassifying_saylors_waiver_does_not_recommend_second_faab_debit(sessi
     assert result.would_append_faab is False
     assert result.matched_group_id == "saylors-waiver-20260903-faab6-001"
     # No write occurred — balance and debit count unchanged.
-    assert faab_balance(session, "mongo") == Decimal("66.00")
-    assert len(session.scalars(select(FaabEntry).where(FaabEntry.kind == "WAIVER_EXPENDITURE")).all()) == 6
+    assert faab_balance(session, "mongo") == Decimal("54.00")
+    assert len(session.scalars(select(FaabEntry).where(FaabEntry.kind == "WAIVER_EXPENDITURE")).all()) == 9
 
 
 def test_semantic_key_ignores_source_label_and_exact_timestamp(session):

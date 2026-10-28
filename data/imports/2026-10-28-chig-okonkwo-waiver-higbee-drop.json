@@ -1,0 +1,37 @@
+{
+  "event_type": "WAIVER_ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Chig Okonkwo",
+  "nfl_team": "WAS",
+  "position": "TE",
+  "espn_id": "4360635",
+  "faab_amount": 8,
+  "dropped_player": "Tyler Higbee",
+  "dropped_nfl_team": "LAR",
+  "dropped_position": "TE",
+  "dropped_espn_id": "2573401",
+  "observed_at": "2026-10-28T08:11:00Z",
+  "espn_activity_display": "Wed Oct 28, ~4:11 am",
+  "espn_transaction_id": null,
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "WAIVER_ADD_DROP",
+    "added": "Chig Okonkwo",
+    "dropped": "Tyler Higbee",
+    "calendar_day_ET": "2026-10-28",
+    "faab_amount": 8
+  },
+  "sources": [
+    {
+      "type": "ESPN_ACTIVITY",
+      "statement": "Authenticated ESPN Live Check for Tom Brady of Ass (teamId 2), read Wed Oct 28 2026 ~8:20 am ET; waivers processed ~4:11 am ET (minute precision, approximate): added Chig Okonkwo, WAS TE from Waivers for $8; dropped Tyler Higbee, LAR TE."
+    },
+    {
+      "type": "ESPN_CURRENT",
+      "observation": "Authenticated ESPN Live Check Wed Oct 28 2026 8:20 am ET (read-only; no ESPN actions taken): three waiver claims processed ~4:11 am ET; Free Agent Budget now $54 ($66 - $8 - $3 - $1). Caleb Douglas claim (lost at $8 to another team) is not a transaction on this team and the repo schema has no failed-claim record; noted here only. espn_ids come from repo ESPN API pool/roster snapshot data/espn_api/latest.json (observed 2026-10-27T18:44:51Z), not from the Live Check text."
+    }
+  ],
+  "notes": "ESPN-authoritative WAIVER_ADD_DROP ingested from the Mongo Live Check (Wed Oct 28 2026 8:20 am ET). Minute-level approximate time (~4:11 am ET = 08:11Z); no ESPN transaction id observed (left null); order of the three claims within the 4:11 am run unknown. Tyler Higbee drop does not prove FREE_AGENT_CONFIRMED (availability UNKNOWN). Add-time assignment BN (week=2 convention). Post-move ESPN lineup not mutated. NFL teams as displayed by ESPN. FAAB after all three claims: $54."
+}
