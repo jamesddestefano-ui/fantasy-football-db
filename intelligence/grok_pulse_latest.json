@@ -3,9 +3,9 @@
   "espn_league_id": "1470431049",
   "espn_team_id": 2,
   "team": "Tom Brady of Ass / JDD",
-  "pulse_id": "mongo-grok-pulse-2026-10-28T061500Z",
-  "generated_at": "2026-10-28T06:00:00Z",
-  "completed_at": "2026-10-28T06:15:00Z",
+  "pulse_id": "mongo-grok-pulse-2026-10-28T100500Z",
+  "generated_at": "2026-10-28T10:00:00Z",
+  "completed_at": "2026-10-28T10:05:00Z",
   "week": 8,
   "season": 2026,
   "run_type": "overnight",
@@ -13,19 +13,20 @@
   "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
   "roster_context": {"source": "Mongo board latest.md and ESPN snapshot 2026-10-27T18:44:51Z; no new ESPN pull this run. FAAB $66, record 3-4, IR empty. Intelligence only.", "faab_remaining": 66, "roster_count": 16, "ir": [], "record": "3-4"},
   "player_signals": [
-    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "MNF DAL 38-21 PHI: 5 receptions, 74 yards, 2 TDs on 12 targets. No injury designation. Week 8 practices start Wednesday Oct 28; no reports yet as of ~2 AM ET. Next: home vs ARI. Already recorded.", "mongo_impact": "Locked-in starter; no overnight change.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/boxscore/_/gameId/401873009"]},
+    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "MNF DAL 38-21 PHI: 5 receptions, 74 yards, 2 TDs on 12 targets. No injury designation. Week 8 practices start Wednesday Oct 28; no reports yet as of ~6 AM ET. Next: home vs ARI. Already recorded.", "mongo_impact": "Locked-in starter; no overnight change.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/boxscore/_/gameId/401873009"]},
     {"player": "Christian McCaffrey", "team": "SF", "status": "ATTRIBUTED_REPORT", "summary": "Mild hamstring strain. Shanahan/Lynch optimistic for return after Week 8 bye (Week 9 vs LV). No new overnight updates. SF on bye.", "mongo_impact": "Bye week recovery; recheck later.", "urgency": "LOW", "availability": "UNKNOWN", "sources": ["https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/10/27/christian-mccaffrey-injury-update-49ers-gm-john-lynch/92463062007/"]},
     {"player": "Kaelon Black", "team": "SF", "status": "ATTRIBUTED_REPORT", "summary": "SF bye Week 8. No new info overnight. Practices resume post-bye.", "mongo_impact": "Unchanged; bye.", "urgency": "LOW", "availability": "OWNED", "sources": []},
-    {"player": "Dylan Sampson / Quinshon Judkins", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "No overnight updates. Week 8 practices start Wednesday; Browns no injuries reported yet on early reports.", "mongo_impact": "Unchanged.", "urgency": "LOW", "availability": "OWNED", "sources": []}
+    {"player": "Dylan Sampson / Quinshon Judkins", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "No overnight updates. Week 8 practices start Wednesday; Browns no injuries reported yet on early reports (NFL.com).",
+ "mongo_impact": "Unchanged.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/injuries/"]}
   ],
   "waiver_signals": [{"player": "Dontayvion Wicks", "status": "CONFIRMED_FACT", "availability": "UNKNOWN", "summary": "Previously dropped; availability not reconfirmed. No new info. Not FREE_AGENT_CONFIRMED. Currently on PHI roster per public reports.", "recommendation": "NONE"}],
   "lineup_signals": [{"type": "bye_week", "status": "CONFIRMED_FACT", "summary": "SF on bye Week 8. Wednesday practices begin for other teams. No overnight material lineup impacts. Lineup is James's call."}],
   "expert_signals": [],
   "material_changes": [],
   "no_material_change": true,
-  "summary": "~2 AM ET Wednesday overnight Oct 28 (Week 8 prep, post-MNF). No material changes since prior 12:12 AM ET Oct 28 Pulse. Lamb MNF performance and no designation already recorded. CMC mild hamstring optimistic post-bye already recorded. Black/Sampson/Judkins unchanged. SF bye. No Wednesday practice reports yet for most teams as of early Wednesday ET. Intelligence only; no ESPN action.",
-  "prior_pulse_id": "mongo-grok-pulse-2026-10-28T041200Z",
-  "prior_completed_at": "2026-10-28T04:12:00Z",
+  "summary": "6:00 AM ET Wednesday overnight Oct 28 (Week 8 prep, post-MNF). No material changes since prior 06:15Z Oct 28 Pulse. Lamb MNF performance and no designation already recorded. CMC mild hamstring optimistic post-bye already recorded. Black/Sampson/Judkins unchanged. SF bye. No Wednesday practice reports yet for most teams as of early Wednesday ET. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-10-28T061500Z",
+  "prior_completed_at": "2026-10-28T06:15:00Z",
   "prior_commit": "pending",
-  "source_status_notes": "Official NFL injury pages show limited early Wednesday reports (TNF teams). No new designations for Mongo-owned players. No direct X from Rap/Schefter on owned. Analytics limited."
+  "source_status_notes": "Official NFL injury pages show limited early Wednesday reports (TNF teams Panthers/Packers). No new designations for Mongo-owned players. No direct X from Rap/Schefter on owned. Analytics limited."
 }
