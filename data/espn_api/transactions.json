@@ -1,15 +1,15 @@
 {
  "league": "mongo",
- "observed_at": "2026-10-28T17:08:27Z",
+ "observed_at": "2026-10-29T17:24:09Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 100,
+  "FREEAGENT": 103,
   "FUTURE_ROSTER": 33,
-  "ROSTER": 363,
+  "ROSTER": 368,
   "TRADE_PROPOSAL": 2,
-  "WAIVER": 168
+  "WAIVER": 170
  },
  "transactions": [
   {
@@ -8316,6 +8316,166 @@
      "position": "TE",
      "nfl_team": "LV",
      "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "0e04fb47-a8b0-4e27-88f8-c4b6adc7f2cb",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 0,
+   "scoring_period": 8,
+   "processed_at": "2026-10-28T19:14:05Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3915411",
+     "name": "Ty Johnson",
+     "position": "RB",
+     "nfl_team": "BUF",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4361411",
+     "name": "Pat Freiermuth",
+     "position": "TE",
+     "nfl_team": "PIT",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "6bc74857-ea0f-430d-b966-e6ed6c1d75a4",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 8,
+   "processed_at": "2026-10-28T21:33:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431487",
+     "name": "Savion Williams",
+     "position": "WR",
+     "nfl_team": "GB",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4586312",
+     "name": "Jaylin Noel",
+     "position": "WR",
+     "nfl_team": "HOU",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4d7a7ff0-7579-4e85-ba58-df142a42c9cf",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 8,
+   "team": "DeVonta Be Kidding Me",
+   "bid": 3,
+   "scoring_period": 8,
+   "processed_at": "2026-10-29T07:06:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16005",
+     "name": "Browns D/ST",
+     "position": "D/ST",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 8
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360238",
+     "name": "Dameon Pierce",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 8,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "cb83c10e-d960-4220-92df-2f97d766cbcc",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 1,
+   "scoring_period": 8,
+   "processed_at": "2026-10-29T07:06:26Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16005",
+     "name": "Browns D/ST",
+     "position": "D/ST",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16001",
+     "name": "Falcons D/ST",
+     "position": "D/ST",
+     "nfl_team": "ATL",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5557c3b7-6cc8-4e86-9474-30e224b9229f",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff",
+   "bid": 0,
+   "scoring_period": 8,
+   "processed_at": "2026-10-29T15:52:32Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4685279",
+     "name": "Jaydon Blue",
+     "position": "RB",
+     "nfl_team": "FA",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4686612",
+     "name": "Tre' Harris",
+     "position": "WR",
+     "nfl_team": "LAC",
+     "from_team_id": 4,
      "to_team_id": 0
     }
    ]

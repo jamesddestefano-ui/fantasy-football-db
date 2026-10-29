@@ -1,4 +1,4 @@
-# Mongo FAAB market (as of 2026-10-28T17:08:27Z)
+# Mongo FAAB market (as of 2026-10-29T17:24:09Z)
 
 _What Mongo managers actually pay. Use for bid sizing; never availability._
 
@@ -9,8 +9,8 @@ _What Mongo managers actually pay. Use for bid sizing; never availability._
 | Joe's Finest Team (JFT) | $100 | $0 |
 | Geno Smith (GENO) | $94 | $6 |
 | Horton (CCT) | $92 | $8 |
-| DeVonta Be Kidding Me (ME) | $85 | $15 |
 | Bills Mafia (BM) | $83 | $17 |
+| DeVonta Be Kidding Me (ME) | $82 | $18 |
 | Justmyluck3 (J3) | $73 | $27 |
 | $Cmoney$ (C$) | $70 | $30 |
 | Tom Brady of Ass (JDD) | $54 | $46 |
@@ -23,7 +23,7 @@ _What Mongo managers actually pay. Use for bid sizing; never availability._
 
 | Pos | Claims | Paid | Median | 75th % | Max |
 |---|---|---|---|---|---|
-| D/ST | 15 | 15 | $2 | $4 | $7 |
+| D/ST | 16 | 16 | $2.5 | $4 | $7 |
 | QB | 11 | 11 | $1 | $8 | $13 |
 | RB | 17 | 17 | $6 | $13 | $23 |
 | TE | 9 | 9 | $6 | $8 | $9 |

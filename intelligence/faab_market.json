@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "observed_at": "2026-10-28T17:08:27Z",
+ "observed_at": "2026-10-29T17:24:09Z",
  "kind": "INTELLIGENCE_FAAB_MARKET",
  "budgets": [
   {
@@ -22,16 +22,16 @@
    "spent": 8
   },
   {
-   "team": "DeVonta Be Kidding Me",
-   "abbrev": "ME",
-   "remaining": 85,
-   "spent": 15
-  },
-  {
    "team": "Bills Mafia",
    "abbrev": "BM",
    "remaining": 83,
    "spent": 17
+  },
+  {
+   "team": "DeVonta Be Kidding Me",
+   "abbrev": "ME",
+   "remaining": 82,
+   "spent": 18
   },
   {
    "team": "Justmyluck3",
@@ -78,9 +78,9 @@
  ],
  "by_position": {
   "D/ST": {
-   "claims": 15,
-   "paid_claims": 15,
-   "median": 2.0,
+   "claims": 16,
+   "paid_claims": 16,
+   "median": 2.5,
    "p75": 4.0,
    "max": 7
   },
@@ -150,8 +150,8 @@
    "max": 19
   },
   "8": {
-   "claims": 10,
-   "spent": 31,
+   "claims": 11,
+   "spent": 34,
    "max": 8
   }
  },
@@ -1440,6 +1440,21 @@
    "losing_bids": [],
    "runner_up_bid": null,
    "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-10-29T07:06:26Z",
+   "week": 8,
+   "player": "Browns D/ST",
+   "position": "D/ST",
+   "nfl_team": "CLE",
+   "team": "DeVonta Be Kidding Me",
+   "team_id": 8,
+   "winning_bid": 3,
+   "losing_bids": [
+    1
+   ],
+   "runner_up_bid": 1,
+   "overpay_vs_runner_up": 2
   }
  ]
 }
