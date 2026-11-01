@@ -1,6 +1,6 @@
 # Mongo reconciliation — NEEDS_INGEST
 
-ESPN 2026-11-01T17:05:43Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 276.
+ESPN 2026-11-01T20:46:56Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 276.
 
 ## Completed on ESPN, not in the repository
 
