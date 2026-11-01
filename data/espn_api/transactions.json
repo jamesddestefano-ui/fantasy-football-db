@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-10-31T17:49:41Z",
+ "observed_at": "2026-11-01T17:05:43Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 103,
+  "FREEAGENT": 105,
   "FUTURE_ROSTER": 33,
-  "ROSTER": 375,
+  "ROSTER": 382,
   "TRADE_PROPOSAL": 2,
   "WAIVER": 170
  },
@@ -8476,6 +8476,70 @@
      "position": "WR",
      "nfl_team": "LAC",
      "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "68f67e05-ad55-46fa-8bd9-3771d031b1df",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 0,
+   "scoring_period": 8,
+   "processed_at": "2026-11-01T04:03:57Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4242512",
+     "name": "Malik Willis",
+     "position": "QB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4427728",
+     "name": "Bam Knight",
+     "position": "RB",
+     "nfl_team": "ARI",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "0de53b01-0524-4bbb-95fa-4ab9b9afd5a3",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 0,
+   "scoring_period": 8,
+   "processed_at": "2026-11-01T16:41:59Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431431",
+     "name": "Corey Kiner",
+     "position": "RB",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3045147",
+     "name": "James Conner",
+     "position": "RB",
+     "nfl_team": "ARI",
+     "from_team_id": 11,
      "to_team_id": 0
     }
    ]
