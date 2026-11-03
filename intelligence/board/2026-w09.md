@@ -2,23 +2,23 @@
 
 _Intelligence for the Mongo Brain, not a recorded recommendation. Availability: ESPN_FREE_AGENT/ESPN_WAIVERS = in ESPN's pool at snapshot time; UNKNOWN = not verified._
 
-FAAB: **$54** · roster from ESPN_API (2026-11-03T15:45:28Z) · ESPN snapshot 2026-11-03T15:45:28Z · FantasyPros 2026-11-03T15:46:13+00:00
+FAAB: **$54** · roster from ESPN_API (2026-11-03T20:09:40Z) · ESPN snapshot 2026-11-03T20:09:40Z · FantasyPros 2026-11-03T20:10:12+00:00
 
 ## Lineup
 
 | Slot | Player | Proj | Basis |
 |---|---|---|---|
 | QB | Malik Willis | 20.97 | espn |
-| RB | Bijan Robinson | 19.64 | espn |
-| RB | Kaelon Black | 8.42 | espn |
-| WR | CeeDee Lamb | 21.14 | espn |
-| WR | Tetairoa McMillan | 14.02 | espn |
+| RB | Bijan Robinson | 19.66 | espn |
+| RB | Kaelon Black | 8.43 | espn |
+| WR | CeeDee Lamb | 21.15 | espn |
+| WR | Luther Burden III | 14.4 | espn |
 | TE | Chig Okonkwo | 9.44 | espn |
-| FLEX | Luther Burden III | 13.88 | espn |
+| FLEX | Tetairoa McMillan | 14.04 | espn |
 | FLEX | Ryan Flournoy | 9.04 | espn |
 | D/ST | Commanders D/ST | 7.14 | espn |
 
-Projected: current **119.55** → suggested **123.69**
+Projected: current **120.13** → suggested **124.27**
 Changes: start Kaelon Black, Malik Willis, Ryan Flournoy; bench Dylan Sampson, Geno Smith, Josh Downs
 
 ## Waiver targets
@@ -26,19 +26,19 @@ Changes: start Kaelon Black, Malik Willis, Ryan Flournoy; bench Dylan Sampson, G
 | Pri | Player | Pos | Proj | FP waiver # | ROS | ESPN % | Replaces | Availability |
 |---|---|---|---|---|---|---|---|---|
 | LOW | Greg Dulcich (MIA) | TE | 8.91 | 22 | 138 | 1% | Mason Taylor | ESPN_WAIVERS |
-| LOW | AJ Barner (SEA) | TE | 8.38 | 25 | 141 | 8% | Mason Taylor | ESPN_WAIVERS |
+| LOW | AJ Barner (SEA) | TE | 8.61 | 25 | 141 | 8% | Mason Taylor | ESPN_WAIVERS |
 | LOW | Pat Freiermuth (PIT) | TE | 0 | — | 115 | 48% | Mason Taylor | ESPN_WAIVERS |
 | LOW | Juwan Johnson (NO) | TE | 7.29 | — | 119 | 50% | Mason Taylor | ESPN_WAIVERS |
-| LOW | Michael Mayer (LV) | TE | 8.51 | — | 126 | 23% | Mason Taylor | ESPN_WAIVERS |
-| LOW | Mark Andrews (BAL) | TE | 6.32 | — | 135 | 66% | Mason Taylor | ESPN_WAIVERS |
-| LOW | Tyler Higbee (LAR) | TE | 6.12 | — | 139 | 14% | Mason Taylor | ESPN_WAIVERS |
-| LOW | Elijah Mitchell (PHI) | RB | 10.63 | — | 245 | 3% | Dylan Sampson | ESPN_WAIVERS |
+| LOW | Michael Mayer (LV) | TE | 8.52 | — | 126 | 23% | Mason Taylor | ESPN_WAIVERS |
+| LOW | Mark Andrews (BAL) | TE | 6.33 | — | 135 | 66% | Mason Taylor | ESPN_WAIVERS |
+| LOW | Tyler Higbee (LAR) | TE | 6.13 | — | 139 | 14% | Mason Taylor | ESPN_WAIVERS |
+| LOW | Elijah Mitchell (PHI) | RB | 10.62 | — | 245 | 3% | Dylan Sampson | ESPN_WAIVERS |
 | LOW | New Orleans Saints (NO) | D/ST | 8.27 | — | — | 2% | Commanders D/ST | ESPN_WAIVERS |
 
 ## Matchup — Week 9 vs SHOWSTOPPERS (2-6-0)
 
-ESPN projections (current slots): you **119.55** vs **123.77** (-4.2). Close: start the best projection.
-Their starters: Rams D/ST 7.33, A.J. Brown 13.66, Malik Nabers 17.79, Jameson Williams 14.47, Kyren Williams 17.44, Blake Corum 10.14, Jakobi Meyers 10.87, Kyle Pitts Sr. 10.23, Jordan Love 21.84
+ESPN projections (current slots): you **120.13** vs **123.8** (-3.7). Close: start the best projection.
+Their starters: Rams D/ST 7.33, A.J. Brown 13.65, Malik Nabers 17.79, Jameson Williams 14.47, Kyren Williams 17.44, Blake Corum 10.14, Jakobi Meyers 10.88, Kyle Pitts Sr. 10.25, Jordan Love 21.85
 
 ## FAAB market (league winning bids)
 
