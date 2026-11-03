@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-02T22:17:13-05:00",
+  "generated_at": "2026-11-03T10:48:37-05:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
   "total_decisions": 18,
-  "reviewed_decisions": 11,
-  "pending_decisions": 7,
-  "wins": 6,
-  "losses": 1,
-  "neutral": 4,
+  "reviewed_decisions": 16,
+  "pending_decisions": 2,
+  "wins": 7,
+  "losses": 2,
+  "neutral": 7,
   "outcome_grade_distribution": {
-    "B": 6,
-    "C": 4,
-    "D": 1
+    "B": 7,
+    "C": 7,
+    "D": 2
   },
   "process_grade_distribution": {
     "A": 1,
-    "B": 9,
-    "C": 1
+    "B": 13,
+    "C": 2
   },
   "confidence_calibration": {
     "1": {
@@ -29,17 +29,17 @@
     },
     "2": {
       "count": 7,
-      "success_rate": 0.5,
-      "average_outcome_grade": 2.5,
-      "average_process_grade": 3.0,
-      "reviewed_count": 2
+      "success_rate": 0.4,
+      "average_outcome_grade": 2.4,
+      "average_process_grade": 2.8,
+      "reviewed_count": 5
     },
     "3": {
       "count": 6,
-      "success_rate": 0.5,
-      "average_outcome_grade": 2.25,
+      "success_rate": 0.333,
+      "average_outcome_grade": 2.0,
       "average_process_grade": 3.0,
-      "reviewed_count": 4
+      "reviewed_count": 6
     },
     "4": {
       "count": 5,
@@ -59,10 +59,10 @@
   "decision_type_performance": {
     "ADD": {
       "count": 6,
-      "success_rate": 0.333,
+      "success_rate": 0.2,
       "average_outcome_grade": 2.0,
-      "average_process_grade": 2.667,
-      "reviewed_count": 3
+      "average_process_grade": 2.8,
+      "reviewed_count": 5
     },
     "INJURY_CONTINGENCY": {
       "count": 6,
@@ -73,10 +73,10 @@
     },
     "START_SIT": {
       "count": 5,
-      "success_rate": 1.0,
-      "average_outcome_grade": 3.0,
-      "average_process_grade": 4.0,
-      "reviewed_count": 1
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.25,
+      "average_process_grade": 3.0,
+      "reviewed_count": 4
     },
     "STREAM": {
       "count": 1,
@@ -109,11 +109,11 @@
     },
     "13 targets in last two games": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -149,21 +149,21 @@
     },
     "Downs is IND slot with Alec Pierce on IR": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Downs trade request before deadline adds small risk of a pre-game trade/role disruption": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -179,31 +179,31 @@
     },
     "ESPN projects him over Higbee (8.19 vs 6.65)": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Flournoy higher ESPN projection (9.21 vs 8.57)": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Flournoy rising role in hot DAL offense": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -259,21 +259,21 @@
     },
     "McCarthy has no Week 8 value and QB is streamable": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "McLaurin season-ending injury concentrates WAS targets": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -289,41 +289,41 @@
     },
     "Pickens active removes Flournoy's WR2 path": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Pickens questionable: if he sits, Flournoy is DAL WR2 vs ARI at home": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Sampson clear CLE RB2 and receiving back (Raheim Sanders IR)": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Saturday call explicitly flagged Pickens playing as its key risk": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -419,21 +419,21 @@
     },
     "fills Juwan Johnson's W8 bye with a ROS upgrade": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "healthy rookie starter with TD equity": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -499,21 +499,21 @@
     },
     "projection above every James bench WR (Flournoy 9.55, Downs 8.57)": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "removes two zero-projection starters": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -599,43 +599,45 @@
     }
   },
   "major_error_counts": {
+    "PROCESS_GOOD_VARIANCE_BAD": 2,
     "INJURY_MISREAD": 1,
     "NEWS_REACTION_TOO_SLOW": 1,
-    "PROCESS_GOOD_VARIANCE_BAD": 1
+    "FAAB_OVERPAY": 1,
+    "START_SIT_ERROR": 1
   },
   "timing_failures": 1,
   "data_quality_failures": 0,
   "user_action_performance": {
     "followed": {
-      "count": 9,
-      "success_rate": 0.667,
-      "average_outcome_grade": 2.667,
-      "average_process_grade": 3.111,
-      "reviewed_count": 9
+      "count": 12,
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 3.0,
+      "reviewed_count": 12
     },
     "ignored": {
-      "count": 0,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0
+      "count": 1,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1
     },
     "overrode": {
-      "count": 2,
+      "count": 3,
       "success_rate": 0.0,
-      "average_outcome_grade": 1.5,
-      "average_process_grade": 2.5,
-      "reviewed_count": 2
+      "average_outcome_grade": 1.333,
+      "average_process_grade": 2.667,
+      "reviewed_count": 3
     }
   },
   "mongo_outcome_metrics": {
-    "reviewed_decisions": 11,
-    "actual_acquisitions": 4,
+    "reviewed_decisions": 16,
+    "actual_acquisitions": 5,
     "tracked_value_count": {
-      "recommended_faab": 4,
-      "actual_faab_cost": 4,
-      "winning_faab": 0,
-      "next_highest_bid": 0,
+      "recommended_faab": 6,
+      "actual_faab_cost": 6,
+      "winning_faab": 2,
+      "next_highest_bid": 2,
       "faab_saved_or_overspent": 0,
       "points_added_above_replacement": 1,
       "starter_bench_differential": 0,
@@ -643,10 +645,10 @@
       "roster_value_improvement": 0
     },
     "averages": {
-      "recommended_faab": 0.0,
-      "actual_faab_cost": 0.0,
-      "winning_faab": null,
-      "next_highest_bid": null,
+      "recommended_faab": 2.167,
+      "actual_faab_cost": 1.333,
+      "winning_faab": 8.0,
+      "next_highest_bid": 4.0,
       "faab_saved_or_overspent": null,
       "points_added_above_replacement": 0.0,
       "starter_bench_differential": null,
@@ -732,10 +734,10 @@
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
       "count": 12,
-      "success_rate": 0.6,
-      "average_outcome_grade": 2.4,
-      "average_process_grade": 3.0,
-      "reviewed_count": 5
+      "success_rate": 0.4,
+      "average_outcome_grade": 2.2,
+      "average_process_grade": 2.9,
+      "reviewed_count": 10
     },
     "PRIME_MONGO_FANTASY_WATCH": {
       "count": 6,

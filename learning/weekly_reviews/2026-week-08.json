@@ -1,0 +1,154 @@
+{
+  "system": "CLAUDE_MONGO_BRAIN",
+  "season": 2026,
+  "week": 8,
+  "reviewed_at": "2026-11-03T10:50:00-05:00",
+  "best_decisions": [
+    "mongo-2026-w08-lineup-002: Flournoy at FLEX2 was right by 0.8, but it was reversed before kickoff",
+    "James's own move, not a ledger decision: Commanders D/ST for Browns ($3) scored 13 vs 3 (FantasyPros for Browns)"
+  ],
+  "worst_decisions": [
+    "mongo-2026-w08-lineup-001: Browns at D/ST would have cost about 10 points; James overrode it",
+    "mongo-2026-w08-lineup-003: reversed Saturday's call to Downs, -0.8 vs Flournoy in a 2.28-point loss"
+  ],
+  "good_process_bad_result": [
+    "mongo-2026-w08-lineup-001: rejected Commanders on a sub-1-point projected edge; D/ST variance went the other way"
+  ],
+  "bad_process_good_result": [],
+  "missed_opportunities": [
+    "Okonkwo $8: one rival bid, $3. A $4 bid would have won",
+    "Flournoy 13.1 outscored McMillan 11.8 and Downs 12.3 from the bench"
+  ],
+  "signals_that_worked": [
+    "Confirmed status news on Sampson (healthy, passing-down role): 12.9 vs projection 6.89",
+    "Burden at FLEX: 18.6 vs projection 13.88"
+  ],
+  "signals_that_failed": [
+    "Pickens playing as a reason to fade Flournoy: Pickens played (6.8 FantasyPros) and Flournoy still scored 13.1",
+    "ESPN projections for Bijan (7.6 vs 21.0) and Okonkwo (5.2 vs 8.43)"
+  ],
+  "data_quality_issues": [
+    "At 10:42 AM ET Tuesday neither the daily ESPN pull nor the Tuesday board had landed; the newest snapshot predated MNF and still showed Week 7 results. Both were dispatched manually (snapshot 2026-11-03T15:45:28Z)",
+    "Reconcile NEEDS_INGEST: Mason Taylor, Geno Smith and Malik Willis adds are not in repository history (newest import 2026-10-28T08:11:00Z). Drafts are in intelligence/reconcile/pending/ for Codex",
+    "Kyler Murray's drop has no add/drop record in data/espn_api/transactions.json, so its time is UNKNOWN",
+    "Murray's Week 8 Mongo-scored total is not in the repository; only FantasyPros standard PPR 20.9",
+    "Browns D/ST ESPN Week 8 points not in the repository; FantasyPros value used",
+    "Opponent score derived from the points_for change, not a matchup field"
+  ],
+  "timing_issues": [
+    "GitHub scheduled runs have started hours after their cron time (recent daily runs 16:00-20:46Z vs cron 11:07Z), which puts the Tuesday pull after the 10:45 AM report card",
+    "The Week 9 plan was written Monday night before MNF finished, so its lineup predates ESPN Week 9 projections"
+  ],
+  "rule_changes_proposed": [
+    "Near-tie start/sit (under 1 projected point): keep the higher ESPN projection unless new news changes the role (monitor)"
+  ],
+  "rule_changes_adopted": [],
+  "rules_rejected_due_to_insufficient_sample": [
+    "Near-tie start/sit rule: two weeks on one player pair (Flournoy over Downs), held for more evidence (AGENTS learning rule 8)",
+    "Practice-report rule from Week 7: no repeat occurrence in Week 8, still held"
+  ],
+  "mongo_metrics": {
+    "recommended_acquisition_vs_actual": [
+      "Okonkwo: rec=actual, claim won",
+      "Caleb Douglas: rec=actual claim, lost to $8",
+      "Bourne $1 backup: not submitted; Kendrick Bourne went to AAGD at $1",
+      "James's own moves: Darnold $1 (drop Juwan Johnson), Commanders D/ST $3 (drop Browns), Mason Taylor $0 (drop McCarthy), Geno Smith $0, Malik Willis $0 (drop Knight)"
+    ],
+    "recommended_faab_vs_actual_and_winning": [
+      "Okonkwo: rec $8, paid $8, next bid $3",
+      "Douglas: rec $5, lost, winner $8, other bids $4 and $4"
+    ],
+    "points_added_above_replacement": [
+      "Okonkwo 5.2 vs Higbee 2.4 = +2.8; vs $0 Mason Taylor 4.9 = +0.3",
+      "Commanders 13 vs Browns 3 = +10"
+    ],
+    "starter_bench_differential": [
+      "Week 8: 116.2 started vs 117.5 optimal = 1.3 left on bench"
+    ],
+    "weeks_retained": [
+      "Okonkwo, Commanders D/ST, Darnold, Mason Taylor, Geno Smith, Malik Willis 1+"
+    ],
+    "drop_timing_and_regret": [
+      "Higbee: no regret (2.4)",
+      "Browns: no regret (3)",
+      "Knight: no regret (0.8)",
+      "Murray: possible regret. FantasyPros 20.9 vs Geno 19.0; Mongo total unknown"
+    ],
+    "missed_waiver_opportunities": [],
+    "roster_value_improvement": [
+      "Three QBs rostered; Darnold 21.52 and Willis 18.64 sat on the bench because QB cannot use FLEX"
+    ]
+  },
+  "result": {
+    "james_points": 116.2,
+    "opponent": "DeVonta Be Kidding Me (ME)",
+    "opponent_points": 118.48,
+    "outcome": "LOSS",
+    "record_after": "3-5-0",
+    "margin": -2.28,
+    "source": "data/espn_api/latest.json last_week + ME points_for delta vs data/espn_api/2026-11-02T2043Z.json (1001.58 to 1120.06)"
+  },
+  "week_grade": "B-",
+  "lineup_efficiency": {
+    "starter_points": 116.2,
+    "optimal_points": 117.5,
+    "points_left_on_bench": 1.3,
+    "efficiency_pct": 98.9,
+    "optimal_lineup": "QB Geno 22.0; RB Sampson 12.9 / Bijan 7.6; WR Burden 18.6 / Flournoy 13.1; TE Okonkwo 5.2; FLEX Lamb 12.8 / Downs 12.3; D/ST Commanders 13.0",
+    "biggest_misses": [
+      "Flournoy 13.1 on the bench vs McMillan 11.8 (-1.3)"
+    ],
+    "note": "The best possible lineup from this roster still loses, 117.5 to 118.48. The bench did not decide this game; Bijan's 7.6 against a 21.0 projection did the most damage."
+  },
+  "waiver_faab_results": {
+    "faab_start": 66,
+    "faab_end": 54,
+    "paid_claims": 3,
+    "moves": [
+      "Okonkwo for Higbee $8 (followed) -> started, 5.2",
+      "Commanders D/ST for Browns $3 (James's call) -> started, 13.0",
+      "Darnold for Juwan Johnson $1 (James's call) -> bench, 21.52",
+      "Mason Taylor for McCarthy $0 (James's call) -> bench, 4.9",
+      "Geno Smith $0 (James's call) -> started, 22.0",
+      "Malik Willis for Bam Knight $0 (James's call) -> bench, 18.64"
+    ],
+    "failed_claims": "Caleb Douglas $5 (drop McCarthy) FAILED_INVALIDPLAYERSOURCE 2026-10-28; You're a JaGoff won at $8"
+  },
+  "advice_followed": {
+    "followed": 3,
+    "overrode_partially": 1,
+    "ignored": 1,
+    "detail": "Both claims and the Sunday lineup were followed. James overrode lineup-001 (D/ST and QB), and that helped. Saturday's FLEX swap was not made and was then reversed."
+  },
+  "nfl_pulse_performance": {
+    "pulses_considered": 2,
+    "pulses_used": 0,
+    "pulses_rejected": 0,
+    "actions_changed_by_pulse": 0,
+    "successful_changed_actions": 0,
+    "unsuccessful_changed_actions": 0,
+    "average_information_lead_time_minutes": null,
+    "highly_useful": 0,
+    "useful": 0,
+    "misleading": 0,
+    "late": 0,
+    "category_source_performance": {},
+    "note": "Pulse 10/31 and 11/01 confirmed Sampson's status and are cited in lineup-002 and lineup-003, but those decisions recorded no Pulse lineage, so no Pulse grade was given. No decision changed because of Pulse."
+  },
+  "season_trend": {
+    "reviewed_decisions": 16,
+    "claude": {
+      "count": 10,
+      "avg_outcome": 2.2,
+      "avg_process": 2.9,
+      "success_rate": 0.4
+    },
+    "prime": {
+      "count": 6,
+      "avg_outcome": 2.5,
+      "avg_process": 3.0,
+      "success_rate": 0.5
+    },
+    "team": "3-5-0, 964.1 PF (9th of 12 in PF)"
+  }
+}
