@@ -1,7 +1,7 @@
 {
  "league": "mongo",
  "season": 2026,
- "observed_at": "2026-11-02T20:43:58Z",
+ "observed_at": "2026-11-03T15:44:09Z",
  "authority": "ESPN draft results (read-only API): authoritative auction prices and buyers.",
  "drafted": true,
  "auction_budget": 200,
@@ -19,7 +19,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 86.4,
-   "season_proj": 179.57
+   "season_proj": 179.56
   },
   {
    "pick": 2,
@@ -34,7 +34,7 @@
    "nominated_by": "Joe's Finest Team",
    "keeper": false,
    "season_points": 150.2,
-   "season_proj": 161.74
+   "season_proj": 161.73
   },
   {
    "pick": 3,
@@ -49,7 +49,7 @@
    "nominated_by": "I Loveland Rice Krispies",
    "keeper": false,
    "season_points": 152.4,
-   "season_proj": 147.96
+   "season_proj": 145.82
   },
   {
    "pick": 4,
@@ -124,7 +124,7 @@
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
    "season_points": 44.0,
-   "season_proj": 72.87
+   "season_proj": 72.69
   },
   {
    "pick": 9,
@@ -154,7 +154,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 130.2,
-   "season_proj": 236.43
+   "season_proj": 236.42
   },
   {
    "pick": 11,
@@ -183,8 +183,8 @@
    "price": 53,
    "nominated_by": "T.N.T",
    "keeper": false,
-   "season_points": 208.16,
-   "season_proj": 202.46
+   "season_points": 233.96,
+   "season_proj": 202.43
   },
   {
    "pick": 13,
@@ -259,7 +259,7 @@
    "nominated_by": "Tom Brady of Ass",
    "keeper": false,
    "season_points": 95.08,
-   "season_proj": 215.87
+   "season_proj": 0.0
   },
   {
    "pick": 18,
@@ -274,7 +274,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 53.4,
-   "season_proj": 116.31
+   "season_proj": 115.95
   },
   {
    "pick": 19,
@@ -334,7 +334,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 145.0,
-   "season_proj": 201.46
+   "season_proj": 201.44
   },
   {
    "pick": 23,
@@ -349,7 +349,7 @@
    "nominated_by": "Justmyluck3",
    "keeper": false,
    "season_points": 174.3,
-   "season_proj": 187.99
+   "season_proj": 187.98
   },
   {
    "pick": 24,
@@ -363,7 +363,7 @@
    "price": 27,
    "nominated_by": "T.N.T",
    "keeper": false,
-   "season_points": 128.8,
+   "season_points": 156.7,
    "season_proj": 145.25
   },
   {
@@ -394,7 +394,7 @@
    "nominated_by": "Joe's Finest Team",
    "keeper": false,
    "season_points": 106.3,
-   "season_proj": 120.28
+   "season_proj": 120.27
   },
   {
    "pick": 27,
@@ -409,7 +409,7 @@
    "nominated_by": "I Loveland Rice Krispies",
    "keeper": false,
    "season_points": 116.64,
-   "season_proj": 258.85
+   "season_proj": 258.86
   },
   {
    "pick": 28,
@@ -424,7 +424,7 @@
    "nominated_by": "You're a JaGoff",
    "keeper": false,
    "season_points": 130.6,
-   "season_proj": 154.1
+   "season_proj": 154.09
   },
   {
    "pick": 29,
@@ -439,7 +439,7 @@
    "nominated_by": "Tom Brady of Ass",
    "keeper": false,
    "season_points": 84.0,
-   "season_proj": 108.31
+   "season_proj": 108.3
   },
   {
    "pick": 30,
@@ -499,7 +499,7 @@
    "nominated_by": "Geno Smith",
    "keeper": false,
    "season_points": 74.4,
-   "season_proj": 136.23
+   "season_proj": 136.22
   },
   {
    "pick": 34,
@@ -529,7 +529,7 @@
    "nominated_by": "Justmyluck3",
    "keeper": false,
    "season_points": 217.6,
-   "season_proj": 277.73
+   "season_proj": 277.72
   },
   {
    "pick": 36,
@@ -559,7 +559,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 71.1,
-   "season_proj": 108.11
+   "season_proj": 108.1
   },
   {
    "pick": 38,
@@ -619,7 +619,7 @@
    "nominated_by": "Tom Brady of Ass",
    "keeper": false,
    "season_points": 56.8,
-   "season_proj": 56.57
+   "season_proj": 56.56
   },
   {
    "pick": 42,
@@ -634,7 +634,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 128.5,
-   "season_proj": 181.35
+   "season_proj": 181.34
   },
   {
    "pick": 43,
@@ -649,7 +649,7 @@
    "nominated_by": "SHOWSTOPPERS",
    "keeper": false,
    "season_points": 78.1,
-   "season_proj": 144.85
+   "season_proj": 144.84
   },
   {
    "pick": 44,
@@ -664,7 +664,7 @@
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
    "season_points": 168.1,
-   "season_proj": 233.23
+   "season_proj": 233.22
   },
   {
    "pick": 45,
@@ -678,8 +678,8 @@
    "price": 27,
    "nominated_by": "Geno Smith",
    "keeper": false,
-   "season_points": 18.0,
-   "season_proj": 68.72
+   "season_points": 23.7,
+   "season_proj": 96.61
   },
   {
    "pick": 46,
@@ -694,7 +694,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 114.9,
-   "season_proj": 154.95
+   "season_proj": 154.94
   },
   {
    "pick": 47,
@@ -739,7 +739,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 56.3,
-   "season_proj": 143.58
+   "season_proj": 143.57
   },
   {
    "pick": 50,
@@ -754,7 +754,7 @@
    "nominated_by": "Joe's Finest Team",
    "keeper": false,
    "season_points": 102.7,
-   "season_proj": 136.04
+   "season_proj": 136.03
   },
   {
    "pick": 51,
@@ -784,7 +784,7 @@
    "nominated_by": "You're a JaGoff",
    "keeper": false,
    "season_points": 30.9,
-   "season_proj": 130.93
+   "season_proj": 130.92
   },
   {
    "pick": 53,
@@ -814,7 +814,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 140.6,
-   "season_proj": 166.55
+   "season_proj": 166.54
   },
   {
    "pick": 55,
@@ -829,7 +829,7 @@
    "nominated_by": "SHOWSTOPPERS",
    "keeper": false,
    "season_points": 145.6,
-   "season_proj": 173.94
+   "season_proj": 173.93
   },
   {
    "pick": 56,
@@ -843,7 +843,7 @@
    "price": 18,
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
-   "season_points": 62.4,
+   "season_points": 75.9,
    "season_proj": 116.86
   },
   {
@@ -874,7 +874,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 128.2,
-   "season_proj": 122.21
+   "season_proj": 122.2
   },
   {
    "pick": 59,
@@ -934,7 +934,7 @@
    "nominated_by": "Joe's Finest Team",
    "keeper": false,
    "season_points": 179.94,
-   "season_proj": 197.55
+   "season_proj": 197.48
   },
   {
    "pick": 63,
@@ -948,7 +948,7 @@
    "price": 10,
    "nominated_by": "I Loveland Rice Krispies",
    "keeper": false,
-   "season_points": 101.0,
+   "season_points": 119.6,
    "season_proj": 135.08
   },
   {
@@ -994,7 +994,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 150.8,
-   "season_proj": 144.55
+   "season_proj": 144.54
   },
   {
    "pick": 67,
@@ -1024,7 +1024,7 @@
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
    "season_points": 75.7,
-   "season_proj": 102.25
+   "season_proj": 102.24
   },
   {
    "pick": 69,
@@ -1039,7 +1039,7 @@
    "nominated_by": "Geno Smith",
    "keeper": false,
    "season_points": 112.5,
-   "season_proj": 133.03
+   "season_proj": 133.02
   },
   {
    "pick": 70,
@@ -1054,7 +1054,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 83.3,
-   "season_proj": 120.11
+   "season_proj": 120.1
   },
   {
    "pick": 71,
@@ -1099,7 +1099,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 79.9,
-   "season_proj": 120.66
+   "season_proj": 120.65
   },
   {
    "pick": 74,
@@ -1128,7 +1128,7 @@
    "price": 15,
    "nominated_by": "I Loveland Rice Krispies",
    "keeper": false,
-   "season_points": 62.1,
+   "season_points": 74.8,
    "season_proj": 98.17
   },
   {
@@ -1174,7 +1174,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 96.1,
-   "season_proj": 101.58
+   "season_proj": 101.57
   },
   {
    "pick": 79,
@@ -1219,7 +1219,7 @@
    "nominated_by": "Geno Smith",
    "keeper": false,
    "season_points": 97.5,
-   "season_proj": 135.1
+   "season_proj": 135.09
   },
   {
    "pick": 82,
@@ -1234,7 +1234,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 42.0,
-   "season_proj": 78.3
+   "season_proj": 78.4
   },
   {
    "pick": 83,
@@ -1279,7 +1279,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 110.68,
-   "season_proj": 139.74
+   "season_proj": 137.19
   },
   {
    "pick": 86,
@@ -1338,7 +1338,7 @@
    "price": 2,
    "nominated_by": "Tom Brady of Ass",
    "keeper": false,
-   "season_points": 60.0,
+   "season_points": 63.0,
    "season_proj": 79.9
   },
   {
@@ -1459,7 +1459,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 82.2,
-   "season_proj": 130.12
+   "season_proj": 129.78
   },
   {
    "pick": 98,
@@ -1474,7 +1474,7 @@
    "nominated_by": "Joe's Finest Team",
    "keeper": false,
    "season_points": 55.0,
-   "season_proj": 83.03
+   "season_proj": 83.02
   },
   {
    "pick": 99,
@@ -1533,8 +1533,8 @@
    "price": 6,
    "nominated_by": "Horton",
    "keeper": false,
-   "season_points": 97.6,
-   "season_proj": 201.45
+   "season_points": 113.58,
+   "season_proj": 201.38
   },
   {
    "pick": 103,
@@ -1549,7 +1549,7 @@
    "nominated_by": "SHOWSTOPPERS",
    "keeper": false,
    "season_points": 12.2,
-   "season_proj": 47.66
+   "season_proj": 47.65
   },
   {
    "pick": 104,
@@ -1564,7 +1564,7 @@
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
    "season_points": 53.1,
-   "season_proj": 75.34
+   "season_proj": 75.33
   },
   {
    "pick": 105,
@@ -1594,7 +1594,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 181.06,
-   "season_proj": 224.71
+   "season_proj": 224.7
   },
   {
    "pick": 107,
@@ -1609,7 +1609,7 @@
    "nominated_by": "Justmyluck3",
    "keeper": false,
    "season_points": 85.9,
-   "season_proj": 115.34
+   "season_proj": 115.33
   },
   {
    "pick": 108,
@@ -1729,7 +1729,7 @@
    "nominated_by": "SHOWSTOPPERS",
    "keeper": false,
    "season_points": 49.1,
-   "season_proj": 106.29
+   "season_proj": 106.28
   },
   {
    "pick": 116,
@@ -1759,7 +1759,7 @@
    "nominated_by": "Geno Smith",
    "keeper": false,
    "season_points": 62.8,
-   "season_proj": 106.24
+   "season_proj": 131.89
   },
   {
    "pick": 118,
@@ -1789,7 +1789,7 @@
    "nominated_by": "Justmyluck3",
    "keeper": false,
    "season_points": 153.5,
-   "season_proj": 215.9
+   "season_proj": 215.89
   },
   {
    "pick": 120,
@@ -1924,7 +1924,7 @@
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
    "season_points": 73.6,
-   "season_proj": 97.33
+   "season_proj": 97.32
   },
   {
    "pick": 129,
@@ -1999,7 +1999,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 86.1,
-   "season_proj": 72.4
+   "season_proj": 72.24
   },
   {
    "pick": 134,
@@ -2074,7 +2074,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 83.4,
-   "season_proj": 126.1
+   "season_proj": 126.09
   },
   {
    "pick": 139,
@@ -2119,7 +2119,7 @@
    "nominated_by": "Geno Smith",
    "keeper": false,
    "season_points": 65.8,
-   "season_proj": 90.09
+   "season_proj": 90.08
   },
   {
    "pick": 142,
@@ -2133,8 +2133,8 @@
    "price": 1,
    "nominated_by": "Bills Mafia",
    "keeper": false,
-   "season_points": 0.0,
-   "season_proj": 122.73
+   "season_points": 5.9,
+   "season_proj": 109.74
   },
   {
    "pick": 143,
@@ -2404,7 +2404,7 @@
    "nominated_by": "You're a JaGoff",
    "keeper": false,
    "season_points": 44.2,
-   "season_proj": 65.2
+   "season_proj": 65.24
   },
   {
    "pick": 161,
@@ -2434,7 +2434,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 23.6,
-   "season_proj": 72.04
+   "season_proj": 72.03
   },
   {
    "pick": 163,
@@ -2494,7 +2494,7 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 86.9,
-   "season_proj": 110.89
+   "season_proj": 110.87
   },
   {
    "pick": 167,
@@ -2508,8 +2508,8 @@
    "price": 1,
    "nominated_by": "Justmyluck3",
    "keeper": false,
-   "season_points": 52.0,
-   "season_proj": 76.8
+   "season_points": 60.0,
+   "season_proj": 76.81
   },
   {
    "pick": 168,
@@ -2524,7 +2524,7 @@
    "nominated_by": "T.N.T",
    "keeper": false,
    "season_points": 87.18,
-   "season_proj": 124.94
+   "season_proj": 124.87
   },
   {
    "pick": 169,
@@ -2614,7 +2614,7 @@
    "nominated_by": "Horton",
    "keeper": false,
    "season_points": 33.1,
-   "season_proj": 41.55
+   "season_proj": 41.54
   },
   {
    "pick": 175,
@@ -2719,7 +2719,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 34.4,
-   "season_proj": 47.07
+   "season_proj": 47.06
   },
   {
    "pick": 182,
@@ -2734,7 +2734,7 @@
    "nominated_by": "Joe's Finest Team",
    "keeper": false,
    "season_points": 67.4,
-   "season_proj": 99.35
+   "season_proj": 99.34
   },
   {
    "pick": 183,
@@ -2839,7 +2839,7 @@
    "nominated_by": "Geno Smith",
    "keeper": false,
    "season_points": 0.0,
-   "season_proj": 52.23
+   "season_proj": 52.22
   },
   {
    "pick": 190,
