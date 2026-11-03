@@ -80,6 +80,7 @@ Standing learning rules (`learning/rules/learning_rules_v3.json`, adopted 2026-1
 ## Session B — Tuesday waiver plan (~11:10 AM ET)
 
 1. Read `intelligence/board/latest.md` + `.json`, roster, FAAB, open spots, the scorecard.
+   Also read any `intelligence/brain/2026-wWW-usage-notes.md` (James's Data Suite usage summary) for this week.
 2. Research the top 5–8 targets (role, snaps/targets, injuries ahead of them, schedule) and
    James's weakest roster spots; check bye weeks and IR eligibility.
 3. Check `intelligence/faab_market.md`: what this league paid for similar players, how much the
