@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-01T11:17:40-05:00",
+  "generated_at": "2026-11-02T22:17:13-05:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 16,
+  "total_decisions": 18,
   "reviewed_decisions": 11,
-  "pending_decisions": 5,
+  "pending_decisions": 7,
   "wins": 6,
   "losses": 1,
   "neutral": 4,
@@ -28,7 +28,7 @@
       "reviewed_count": 0
     },
     "2": {
-      "count": 5,
+      "count": 7,
       "success_rate": 0.5,
       "average_outcome_grade": 2.5,
       "average_process_grade": 3.0,
@@ -58,7 +58,7 @@
   },
   "decision_type_performance": {
     "ADD": {
-      "count": 5,
+      "count": 6,
       "success_rate": 0.333,
       "average_outcome_grade": 2.0,
       "average_process_grade": 2.667,
@@ -72,7 +72,7 @@
       "reviewed_count": 6
     },
     "START_SIT": {
-      "count": 4,
+      "count": 5,
       "success_rate": 1.0,
       "average_outcome_grade": 3.0,
       "average_process_grade": 4.0,
@@ -108,6 +108,36 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "13 targets in last two games": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Best TE matchup of the week": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Cheap, low-demand player; Mitchell is the weakest RB": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Downs gets the best WR matchup on the roster": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -217,6 +247,16 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "Matchup-driven QB/TE calls from points-allowed data": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "McCarthy has no Week 8 value and QB is streamable": {
       "count": 1,
       "success_rate": null,
@@ -278,6 +318,16 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Saturday call explicitly flagged Pickens playing as its key risk": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Taylor injury creates TE risk": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -681,7 +731,7 @@
   },
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
-      "count": 10,
+      "count": 12,
       "success_rate": 0.6,
       "average_outcome_grade": 2.4,
       "average_process_grade": 3.0,
