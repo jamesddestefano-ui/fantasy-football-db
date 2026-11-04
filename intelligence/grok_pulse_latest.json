@@ -1,1 +1,32 @@
-PLACEHOLDER_LATEST
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-11-04T051500Z",
+  "generated_at": "2026-11-04T05:00:00Z",
+  "completed_at": "2026-11-04T05:15:00Z",
+  "week": 9,
+  "season": 2026,
+  "run_type": "overnight_12am_et",
+  "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "LIMITED"},
+  "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
+  "roster_context": {"source": "ESPN snapshot data/espn_api/latest.json observed_at 2026-11-03T20:09:40Z. FAAB $54, record updated to 3-5-0 (prior Pulse referenced 3-4-0). Intelligence only. Post-Week 8; Week 9 practices start Wed Nov 4.", "faab_remaining": 54, "roster_count": 16, "ir": [], "record": "3-5-0"},
+  "player_signals": [
+    {"player": "Bijan Robinson", "team": "ATL", "status": "CONFIRMED_FACT", "summary": "Played Week 8 @ TB healthy (19-76 rush, 0 rec). No injury designation. Brian Robinson Jr. hamstring continues to limit backup role (prior Out Week 8; Week 9 practices pending Wed). Workload opportunity persists vs CIN. No new reports overnight.", "mongo_impact": "OWNED starter; elevated role potential. Unchanged status.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/bijan-robinson-totals-76-yards-in-week-8-dud", "https://dknetwork.draftkings.com/2026/11/03/nfl-injury-report-week-9/"]},
+    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "Played Week 8 vs ARI healthy (7-58). No injury designation. Elite WR1 context for Week 9 @ IND. Practices start Wed. No new issues as of 12AM ET Nov 4.", "mongo_impact": "Locked-in starter; no issues.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nbcsports.com/nfl/ceedee-lamb/6733/news"]},
+    {"player": "Dylan Sampson", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "Played Week 8 @ PIT: 1 rush 7 yds, 6-62 rec. Healthy, no designation. Pass-catching role behind Judkins. Week 9 practices pending. No new reports.", "mongo_impact": "OWNED RB; available. Low-end PPR RB3/FLEX.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sampson-has-six-catches-in-loss-to-steelers"]},
+    {"player": "Geno Smith", "team": "NYJ", "status": "CONFIRMED_FACT", "summary": "Played Week 8 vs LV: 20/32 290 yds 2 TD 1 INT. Healthy. QB2/streamer context for Week 9 @ KC. No new reports.", "mongo_impact": "OWNED starter; no issues.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/geno-smith-throws-for-290-2-vs-former-team-vegas"]},
+    {"player": "Luther Burden III", "team": "CHI", "status": "CONFIRMED_FACT", "summary": "Bears context from MNF; no injury reports. Healthy. Week 9 practices start Wed. No new designations.", "mongo_impact": "OWNED; available. Unchanged.", "urgency": "LOW", "availability": "OWNED", "sources": []}
+  ],
+  "waiver_signals": [],
+  "lineup_signals": [{"type": "post_week8_recap_week9_prep", "status": "CONFIRMED_FACT", "summary": "Week 8 complete. Owned players healthy with NORMAL ESPN status. No mid-week practice reports yet (start Wed Nov 4). Record now 3-5-0 per latest ESPN snapshot. Lineup decisions remain James call."}],
+  "expert_signals": [],
+  "material_changes": ["ESPN snapshot updated: record 3-5-0 (was 3-4-0 in prior Pulse context); observed_at 2026-11-03T20:09:40Z. No player injury or availability changes."],
+  "no_material_change": false,
+  "summary": "~12:15 AM ET Wednesday overnight Nov 4 (post-Week 8 into Week 9). Material change limited to league record update to 3-5-0 in refreshed ESPN snapshot (FAAB $54 unchanged). Owned players remain healthy with no new injury designations. Week 9 practices start today. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-11-03T110530Z",
+  "prior_completed_at": "2026-11-03T11:05:30Z",
+  "prior_commit": "pending",
+  "source_status_notes": "Official NFL.com / beat reports OK for post-game and no new injuries as of overnight. x_direct LIMITED. Experts/analytics LIMITED. ESPN roster from 11/03 20:09Z snapshot."
+}
