@@ -1,15 +1,15 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-03T20:09:40Z",
+ "observed_at": "2026-11-04T18:36:05Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 105,
+  "FREEAGENT": 108,
   "FUTURE_ROSTER": 37,
-  "ROSTER": 399,
-  "TRADE_PROPOSAL": 2,
-  "WAIVER": 170
+  "ROSTER": 409,
+  "TRADE_PROPOSAL": 3,
+  "WAIVER": 190
  },
  "transactions": [
   {
@@ -5867,7 +5867,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "CLE",
+     "nfl_team": "NO",
      "from_team_id": 0,
      "to_team_id": 2
     }
@@ -6070,7 +6070,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "CLE",
+     "nfl_team": "NO",
      "from_team_id": 2,
      "to_team_id": 0
     }
@@ -6315,7 +6315,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "CLE",
+     "nfl_team": "NO",
      "from_team_id": 0,
      "to_team_id": 2
     }
@@ -7374,7 +7374,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "CLE",
+     "nfl_team": "NO",
      "from_team_id": 2,
      "to_team_id": 0
     }
@@ -8540,6 +8540,742 @@
      "position": "RB",
      "nfl_team": "ARI",
      "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f3844059-ed45-423f-8a6d-a8b53266c4c5",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-03T23:54:35Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "8439",
+     "name": "Aaron Rodgers",
+     "position": "QB",
+     "nfl_team": "PIT",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3ff34663-a82a-4be9-abc6-80e8d4790885",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 3,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T04:28:15Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4367209",
+     "name": "Greg Dulcich",
+     "position": "TE",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "15864",
+     "name": "Geno Smith",
+     "position": "QB",
+     "nfl_team": "NYJ",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "7b2fcc79-ec56-4d4f-8a57-b952e27d3412",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 3,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T04:28:31Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16018",
+     "name": "Saints D/ST",
+     "position": "D/ST",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9948741b-4936-4a69-ac98-9e9638e6527e",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T07:25:17Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4427728",
+     "name": "Bam Knight",
+     "position": "RB",
+     "nfl_team": "ARI",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4242557",
+     "name": "Colby Parkinson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "047bbc5f-5c01-454d-9af4-8ab252f29ae8",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 1,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16018",
+     "name": "Saints D/ST",
+     "position": "D/ST",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16001",
+     "name": "Falcons D/ST",
+     "position": "D/ST",
+     "nfl_team": "ATL",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "079339ed-59aa-436e-b443-f9977cf6b1f2",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 3,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "2818a69d-8145-45e6-bff7-6e3edc47c24e",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 5,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "14880",
+     "name": "Kirk Cousins",
+     "position": "QB",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3045523",
+     "name": "Kendrick Bourne",
+     "position": "WR",
+     "nfl_team": "ARI",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "34823ec1-3b4d-45a2-9781-ccec4bf9392a",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 2,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4682648",
+     "name": "Malachi Fields",
+     "position": "WR",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4431487",
+     "name": "Savion Williams",
+     "position": "WR",
+     "nfl_team": "GB",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "4ae1db57-8f1b-4c8b-ae9a-213a5864ac31",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 1,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16008",
+     "name": "Lions D/ST",
+     "position": "D/ST",
+     "nfl_team": "DET",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16001",
+     "name": "Falcons D/ST",
+     "position": "D/ST",
+     "nfl_team": "ATL",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "512403f2-b6e3-4533-b942-d580f56a27e0",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 3,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4682648",
+     "name": "Malachi Fields",
+     "position": "WR",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4870847",
+     "name": "Ja'Kobi Lane",
+     "position": "WR",
+     "nfl_team": "BAL",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5312bc3a-8025-456c-be8f-64b9f199a0b1",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 8,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4241555",
+     "name": "Elijah Mitchell",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3915411",
+     "name": "Ty Johnson",
+     "position": "RB",
+     "nfl_team": "BUF",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5c9c1a6d-ada2-4d8a-a1f0-5da06b9aa4b6",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 11,
+   "team": "$Cmoney$",
+   "bid": 3,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4426338",
+     "name": "Bo Nix",
+     "position": "QB",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 11
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4870612",
+     "name": "Zachariah Branch",
+     "position": "WR",
+     "nfl_team": "ATL",
+     "from_team_id": 11,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "807d7256-f738-4570-9be7-be7500b0a0a5",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4426338",
+     "name": "Bo Nix",
+     "position": "QB",
+     "nfl_team": "DEN",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "8439",
+     "name": "Aaron Rodgers",
+     "position": "QB",
+     "nfl_team": "PIT",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8bc4daf5-f9a2-459f-8ad9-6b31b23c2004",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 5,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4241555",
+     "name": "Elijah Mitchell",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "9b1b01dd-c831-4787-8732-5a667db7f647",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 1,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "8439",
+     "name": "Aaron Rodgers",
+     "position": "QB",
+     "nfl_team": "PIT",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a3f10b01-8989-4785-803f-e343cfd268bb",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 1,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16001",
+     "name": "Falcons D/ST",
+     "position": "D/ST",
+     "nfl_team": "ATL",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "af1e103d-a1e7-4d76-af3c-0b21630c0d0a",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 3,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4367209",
+     "name": "Greg Dulcich",
+     "position": "TE",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "15864",
+     "name": "Geno Smith",
+     "position": "QB",
+     "nfl_team": "NYJ",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "b28120dd-3f59-4fef-ba1c-ed4b7c6c1866",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 3,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16018",
+     "name": "Saints D/ST",
+     "position": "D/ST",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c0984daa-2d57-4ac6-8775-6c2eb7734ef9",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 3,
+   "team": "Justmyluck3",
+   "bid": 13,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4241555",
+     "name": "Elijah Mitchell",
+     "position": "RB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 3
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4242557",
+     "name": "Colby Parkinson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 3,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "dad3a4ea-2884-49b3-bd02-1216ae417136",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 1,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T08:59:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2973405",
+     "name": "Kalif Raymond",
+     "position": "WR",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4430871",
+     "name": "Sean Tucker",
+     "position": "RB",
+     "nfl_team": "TB",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "d72b5174-2ecd-4f88-96b9-b069fad6bdc5",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T11:26:06Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360438",
+     "name": "Brandon Aiyuk",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16009",
+     "name": "Packers D/ST",
+     "position": "D/ST",
+     "nfl_team": "GB",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c5cc8d56-121c-4241-a78d-a2aa197882ac",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T11:27:18Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4361409",
+     "name": "Jahan Dotson",
+     "position": "WR",
+     "nfl_team": "ATL",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4715355",
+     "name": "Darius Cooper",
+     "position": "WR",
+     "nfl_team": "PHI",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1439692b-cfef-4051-8a82-539c985c4e80",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 13,
+   "team": "Joe's Finest Team",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-04T15:32:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16002",
+     "name": "Bills D/ST",
+     "position": "D/ST",
+     "nfl_team": "BUF",
+     "from_team_id": 0,
+     "to_team_id": 13
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3121422",
+     "name": "Terry McLaurin",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 13,
      "to_team_id": 0
     }
    ]

@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-03T20:09:40Z",
+ "observed_at": "2026-11-04T18:36:05Z",
  "kind": "INTELLIGENCE_FAAB_MARKET",
  "budgets": [
   {
@@ -22,46 +22,34 @@
    "spent": 8
   },
   {
-   "team": "Bills Mafia",
-   "abbrev": "BM",
-   "remaining": 83,
-   "spent": 17
-  },
-  {
    "team": "DeVonta Be Kidding Me",
    "abbrev": "ME",
    "remaining": 82,
    "spent": 18
   },
   {
-   "team": "Justmyluck3",
-   "abbrev": "J3",
-   "remaining": 73,
-   "spent": 27
+   "team": "Bills Mafia",
+   "abbrev": "BM",
+   "remaining": 82,
+   "spent": 18
   },
   {
    "team": "$Cmoney$",
    "abbrev": "C$",
-   "remaining": 70,
-   "spent": 30
+   "remaining": 67,
+   "spent": 33
+  },
+  {
+   "team": "Justmyluck3",
+   "abbrev": "J3",
+   "remaining": 60,
+   "spent": 40
   },
   {
    "team": "Tom Brady of Ass",
    "abbrev": "JDD",
-   "remaining": 54,
-   "spent": 46
-  },
-  {
-   "team": "I Loveland Rice Krispies",
-   "abbrev": "AAGD",
-   "remaining": 42,
-   "spent": 58
-  },
-  {
-   "team": "T.N.T",
-   "abbrev": "FFT",
-   "remaining": 42,
-   "spent": 58
+   "remaining": 48,
+   "spent": 52
   },
   {
    "team": "You're a JaGoff",
@@ -70,46 +58,58 @@
    "spent": 59
   },
   {
-   "team": "SHOWSTOPPERS",
-   "abbrev": "BE3",
+   "team": "T.N.T",
+   "abbrev": "FFT",
    "remaining": 39,
    "spent": 61
+  },
+  {
+   "team": "SHOWSTOPPERS",
+   "abbrev": "BE3",
+   "remaining": 38,
+   "spent": 62
+  },
+  {
+   "team": "I Loveland Rice Krispies",
+   "abbrev": "AAGD",
+   "remaining": 33,
+   "spent": 67
   }
  ],
  "by_position": {
   "D/ST": {
-   "claims": 16,
-   "paid_claims": 16,
-   "median": 2.5,
-   "p75": 4.0,
+   "claims": 19,
+   "paid_claims": 19,
+   "median": 3.0,
+   "p75": 3.5,
    "max": 7
   },
   "QB": {
-   "claims": 11,
-   "paid_claims": 11,
-   "median": 1.0,
-   "p75": 8.0,
+   "claims": 14,
+   "paid_claims": 14,
+   "median": 2.0,
+   "p75": 7.2,
    "max": 13
   },
   "RB": {
-   "claims": 17,
-   "paid_claims": 17,
+   "claims": 18,
+   "paid_claims": 18,
    "median": 6.0,
    "p75": 13.0,
    "max": 23
   },
   "TE": {
-   "claims": 9,
-   "paid_claims": 9,
-   "median": 6.0,
-   "p75": 8.0,
+   "claims": 10,
+   "paid_claims": 10,
+   "median": 4.5,
+   "p75": 7.5,
    "max": 9
   },
   "WR": {
-   "claims": 18,
-   "paid_claims": 18,
-   "median": 4.5,
-   "p75": 8.8,
+   "claims": 20,
+   "paid_claims": 20,
+   "median": 3.5,
+   "p75": 8.2,
    "max": 19
   }
  },
@@ -153,6 +153,11 @@
    "claims": 11,
    "spent": 34,
    "max": 8
+  },
+  "9": {
+   "claims": 10,
+   "spent": 36,
+   "max": 13
   }
  },
  "top_claims": [
@@ -291,6 +296,22 @@
    "overpay_vs_runner_up": 2
   },
   {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Elijah Mitchell",
+   "position": "RB",
+   "nfl_team": "PHI",
+   "team": "Justmyluck3",
+   "team_id": 3,
+   "winning_bid": 13,
+   "losing_bids": [
+    8,
+    5
+   ],
+   "runner_up_bid": 8,
+   "overpay_vs_runner_up": 5
+  },
+  {
    "processed_at": "2026-10-21T08:08:28Z",
    "week": 7,
    "player": "Ja'Kobi Lane",
@@ -377,28 +398,12 @@
    "losing_bids": [],
    "runner_up_bid": null,
    "overpay_vs_runner_up": null
-  },
-  {
-   "processed_at": "2026-09-23T07:27:31Z",
-   "week": 3,
-   "player": "Oronde Gadsden",
-   "position": "TE",
-   "nfl_team": "LAC",
-   "team": "Tom Brady of Ass",
-   "team_id": 2,
-   "winning_bid": 8,
-   "losing_bids": [
-    6,
-    3
-   ],
-   "runner_up_bid": 6,
-   "overpay_vs_runner_up": 2
   }
  ],
  "median_overpay_vs_runner_up": 2.0,
  "james": {
-  "won": 9,
-  "spent": 46,
+  "won": 11,
+  "spent": 52,
   "lost_claims": [
    {
     "player": "Tre Tucker",
@@ -1455,6 +1460,147 @@
    ],
    "runner_up_bid": 1,
    "overpay_vs_runner_up": 2
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Saints D/ST",
+   "position": "D/ST",
+   "nfl_team": "NO",
+   "team": "Tom Brady of Ass",
+   "team_id": 2,
+   "winning_bid": 3,
+   "losing_bids": [
+    1
+   ],
+   "runner_up_bid": 1,
+   "overpay_vs_runner_up": 2
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Giants D/ST",
+   "position": "D/ST",
+   "nfl_team": "NYG",
+   "team": "T.N.T",
+   "team_id": 6,
+   "winning_bid": 3,
+   "losing_bids": [
+    1
+   ],
+   "runner_up_bid": 1,
+   "overpay_vs_runner_up": 2
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Kirk Cousins",
+   "position": "QB",
+   "nfl_team": "LV",
+   "team": "I Loveland Rice Krispies",
+   "team_id": 1,
+   "winning_bid": 5,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Malachi Fields",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "team": "I Loveland Rice Krispies",
+   "team_id": 1,
+   "winning_bid": 3,
+   "losing_bids": [
+    2
+   ],
+   "runner_up_bid": 2,
+   "overpay_vs_runner_up": 1
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Lions D/ST",
+   "position": "D/ST",
+   "nfl_team": "DET",
+   "team": "I Loveland Rice Krispies",
+   "team_id": 1,
+   "winning_bid": 1,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Elijah Mitchell",
+   "position": "RB",
+   "nfl_team": "PHI",
+   "team": "Justmyluck3",
+   "team_id": 3,
+   "winning_bid": 13,
+   "losing_bids": [
+    8,
+    5
+   ],
+   "runner_up_bid": 8,
+   "overpay_vs_runner_up": 5
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Bo Nix",
+   "position": "QB",
+   "nfl_team": "DEN",
+   "team": "$Cmoney$",
+   "team_id": 11,
+   "winning_bid": 3,
+   "losing_bids": [
+    1
+   ],
+   "runner_up_bid": 1,
+   "overpay_vs_runner_up": 2
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Kyler Murray",
+   "position": "QB",
+   "nfl_team": "MIN",
+   "team": "Bills Mafia",
+   "team_id": 10,
+   "winning_bid": 1,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Greg Dulcich",
+   "position": "TE",
+   "nfl_team": "MIA",
+   "team": "Tom Brady of Ass",
+   "team_id": 2,
+   "winning_bid": 3,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-11-04T08:59:02Z",
+   "week": 9,
+   "player": "Kalif Raymond",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "team": "SHOWSTOPPERS",
+   "team_id": 7,
+   "winning_bid": 1,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
   }
  ]
 }
