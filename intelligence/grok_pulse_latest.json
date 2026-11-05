@@ -1,1 +1,36 @@
-PLACEHOLDER_LATEST
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-11-05T111500Z",
+  "generated_at": "2026-11-05T11:00:00Z",
+  "completed_at": "2026-11-05T11:15:00Z",
+  "week": 9,
+  "season": 2026,
+  "run_type": "overnight_6am_et",
+  "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "LIMITED"},
+  "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
+  "roster_context": {"source": "ESPN snapshot data/espn_api/latest.json observed_at 2026-11-04T18:36:05Z. FAAB remaining $48. Record 3-5-0. Intelligence only. Thursday practices for Week 9 underway or starting; no material new reports for owned players as of ~6AM ET.",
+    "faab_remaining": 48, "roster_count": 16, "ir": [], "record": "3-5-0"},
+  "player_signals": [
+    {"player": "Sam Darnold", "team": "SEA", "status": "CONFIRMED_FACT", "summary": "Ruled OUT for Week 9 vs ARI (Sun 4:25 PM ET) due to quad injury (also cracked rib). Week-to-week, not expected on IR. Coach Mike Macdonald confirmed Wednesday. Drew Lock to start. No new updates as of ~6AM ET Thursday. ESPN snapshot still NORMAL as of 18:36Z Nov 4.", "mongo_impact": "OWNED bench QB; unavailable Week 9. Malik Willis is the starting QB slot.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.nytimes.com/athletic/7753860/2026/11/04/sam-darnold-injury-seahawks-drew-lock/", "https://www.espn.com/nfl/story/_/id/50380713/seahawks-qb-sam-darnold-ruled-quad-injury"]},
+    {"player": "Bijan Robinson", "team": "ATL", "status": "CONFIRMED_FACT", "summary": "No injury designation. Not on Week 9 injury report. Healthy. Brian Robinson Jr. limited/DNP (hamstring) Wednesday. Opportunity elevated vs CIN in Madrid. No change. No material Thursday practice update yet.", "mongo_impact": "OWNED starter; elevated role potential. Unchanged healthy status.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/news/nfl-week-9-injury-report-2026-season"]},
+    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "No injury designation. Healthy. Elite WR1 context @ IND. No change. No Thursday practice update yet.", "mongo_impact": "Locked-in starter; no issues.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/news/nfl-week-9-injury-report-2026-season"]},
+    {"player": "Malik Willis", "team": "MIA", "status": "CONFIRMED_FACT", "summary": "Starting QB. No injury designation for Week 9 vs DET. Practiced full Wednesday (groin). Healthy. No new reports. No Thursday update yet.", "mongo_impact": "OWNED starter QB slot; available.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Tetairoa McMillan", "team": "CAR", "status": "CONFIRMED_FACT", "summary": "No injury designation. Healthy. No practice issues reported. WR1 role vs DEN. Unchanged. No Thursday update yet.", "mongo_impact": "OWNED; available. Unchanged.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Luther Burden III", "team": "CHI", "status": "CONFIRMED_FACT", "summary": "No injury designation. Healthy. Practices ongoing. No new reports. No Thursday update yet.", "mongo_impact": "OWNED; available. Unchanged.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Dylan Sampson", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "No injury designation. Healthy. No new reports. No Thursday update yet.", "mongo_impact": "OWNED RB; available.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Kaelon Black", "team": "SF", "status": "CONFIRMED_FACT", "summary": "Healthy, no designation. CMC (hamstring) DNP Wednesday; Black remains primary backup with potential elevated role if CMC limited further. No personal injury. No Thursday update yet.", "mongo_impact": "OWNED RB; available, upside if CMC out/limited.", "urgency": "LOW", "availability": "OWNED", "sources": ["https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-nov-4"]}
+  ],
+  "waiver_signals": [],
+  "lineup_signals": [{"type": "week9_prep", "status": "CONFIRMED_FACT", "summary": "Week 9 in progress. Malik Willis is the starting QB. Sam Darnold OUT. All other key owned players healthy with NORMAL ESPN status and no injury designations on reports. Thursday practices underway; no material new updates for owned as of 6AM ET. Lineup decisions remain James call."}],
+  "expert_signals": [],
+  "material_changes": [],
+  "no_material_change": true,
+  "summary": "~6:15 AM ET Thursday overnight Nov 5 (Week 9). NO MATERIAL CHANGE since prior Pulse (~4:20 AM ET). Darnold remains OUT Week 9 (already noted). Owned starters otherwise healthy. ESPN snapshot unchanged (FAAB $48, record 3-5-0). Thursday practice reports not yet material for owned players. Intelligence only; no ESPN action.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-11-05T092000Z",
+  "prior_completed_at": "2026-11-05T09:20:00Z",
+  "prior_commit": "pending",
+  "source_status_notes": "Official NFL.com / beat reports OK for confirmed Darnold OUT (no new updates). Thursday practice reports not yet material at 6AM ET. x_direct LIMITED. Experts/analytics LIMITED. ESPN roster from 11/04 18:36Z snapshot unchanged."
+}
