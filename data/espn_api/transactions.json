@@ -1,14 +1,14 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-05T18:41:12Z",
+ "observed_at": "2026-11-06T17:54:29Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 109,
+  "FREEAGENT": 112,
   "FUTURE_ROSTER": 37,
-  "ROSTER": 414,
-  "TRADE_PROPOSAL": 3,
+  "ROSTER": 425,
+  "TRADE_PROPOSAL": 4,
   "WAIVER": 190
  },
  "transactions": [
@@ -4297,7 +4297,7 @@
      "espn_id": "2578570",
      "name": "Jacoby Brissett",
      "position": "QB",
-     "nfl_team": "ARI",
+     "nfl_team": "BAL",
      "from_team_id": 0,
      "to_team_id": 7
     }
@@ -4393,7 +4393,7 @@
      "espn_id": "2578570",
      "name": "Jacoby Brissett",
      "position": "QB",
-     "nfl_team": "ARI",
+     "nfl_team": "BAL",
      "from_team_id": 0,
      "to_team_id": 12
     }
@@ -6262,7 +6262,7 @@
      "espn_id": "2578570",
      "name": "Jacoby Brissett",
      "position": "QB",
-     "nfl_team": "ARI",
+     "nfl_team": "BAL",
      "from_team_id": 12,
      "to_team_id": 0
     }
@@ -9308,6 +9308,102 @@
      "position": "TE",
      "nfl_team": "HOU",
      "from_team_id": 12,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "87574f2e-e946-4273-a357-2f4d71f89af3",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-05T21:01:42Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3043116",
+     "name": "Demarcus Robinson",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16008",
+     "name": "Lions D/ST",
+     "position": "D/ST",
+     "nfl_team": "DET",
+     "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f4f0992d-9ff5-4010-a7b4-4cabafc40b4a",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-05T22:40:13Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4432577",
+     "name": "C.J. Stroud",
+     "position": "QB",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3917315",
+     "name": "Kyler Murray",
+     "position": "QB",
+     "nfl_team": "MIN",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "1ce11887-b104-419a-afdb-188c8be8e932",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-06T15:23:03Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4831959",
+     "name": "Eli Raridon",
+     "position": "TE",
+     "nfl_team": "NE",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3915411",
+     "name": "Ty Johnson",
+     "position": "RB",
+     "nfl_team": "BUF",
+     "from_team_id": 10,
      "to_team_id": 0
     }
    ]
