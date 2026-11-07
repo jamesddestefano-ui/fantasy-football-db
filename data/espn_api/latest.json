@@ -2,7 +2,7 @@
  "league": "mongo",
  "espn_league_id": "1470431049",
  "season": 2026,
- "observed_at": "2026-11-07T16:48:44Z",
+ "observed_at": "2026-11-07T18:05:52Z",
  "scoring_period": 9,
  "authority": "ESPN current ownership evidence as of observed_at (read-only API). Does not by itself write transactions; availability must be re-checked before a claim.",
  "faab_budget": 100,
@@ -105,7 +105,7 @@
     "espn_id": "4696044",
     "injury_status": "NORMAL",
     "proj": 11.11,
-    "pct_owned": 35.5,
+    "pct_owned": 35.6,
     "slot": "RB"
    },
    {
@@ -175,7 +175,7 @@
     "espn_id": "4367209",
     "injury_status": "NORMAL",
     "proj": 8.93,
-    "pct_owned": 5.0,
+    "pct_owned": 5.1,
     "slot": "TE"
    },
    {
@@ -2162,7 +2162,7 @@
    "espn_id": "3917315",
    "injury_status": "QUESTIONABLE",
    "proj": 0.0,
-   "pct_owned": 52.7,
+   "pct_owned": 52.6,
    "status": "FREEAGENT"
   },
   {
@@ -2172,7 +2172,7 @@
    "espn_id": "3929645",
    "injury_status": "ACTIVE",
    "proj": 7.35,
-   "pct_owned": 45.0,
+   "pct_owned": 44.9,
    "status": "FREEAGENT"
   },
   {
@@ -2342,7 +2342,7 @@
    "espn_id": "15864",
    "injury_status": "ACTIVE",
    "proj": 17.36,
-   "pct_owned": 23.7,
+   "pct_owned": 23.6,
    "status": "FREEAGENT"
   },
   {
@@ -2636,22 +2636,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Jaylin Noel",
-   "position": "WR",
-   "nfl_team": "HOU",
-   "espn_id": "4586312",
-   "injury_status": "INJURY_RESERVE",
-   "proj": 0.0,
-   "pct_owned": 6.0,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Drew Lock",
    "position": "QB",
    "nfl_team": "SEA",
    "espn_id": "3924327",
    "injury_status": "ACTIVE",
    "proj": 21.5,
+   "pct_owned": 6.1,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Jaylin Noel",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "espn_id": "4586312",
+   "injury_status": "INJURY_RESERVE",
+   "proj": 0.0,
    "pct_owned": 6.0,
    "status": "FREEAGENT"
   },
@@ -2706,22 +2706,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Christian Kirk",
-   "position": "WR",
-   "nfl_team": "SF",
-   "espn_id": "3895856",
-   "injury_status": "OUT",
-   "proj": 5.01,
-   "pct_owned": 4.3,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Tyrone Tracy Jr.",
    "position": "RB",
    "nfl_team": "NYG",
    "espn_id": "4360516",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
+   "pct_owned": 4.3,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Christian Kirk",
+   "position": "WR",
+   "nfl_team": "SF",
+   "espn_id": "3895856",
+   "injury_status": "OUT",
+   "proj": 5.01,
    "pct_owned": 4.3,
    "status": "FREEAGENT"
   },
@@ -2926,22 +2926,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Cade Otton",
-   "position": "TE",
-   "nfl_team": "TB",
-   "espn_id": "4243331",
-   "injury_status": "ACTIVE",
-   "proj": 6.15,
-   "pct_owned": 2.4,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Efton Chism III",
    "position": "WR",
    "nfl_team": "NE",
    "espn_id": "4695193",
    "injury_status": "ACTIVE",
    "proj": 8.3,
+   "pct_owned": 2.4,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Cade Otton",
+   "position": "TE",
+   "nfl_team": "TB",
+   "espn_id": "4243331",
+   "injury_status": "ACTIVE",
+   "proj": 6.15,
    "pct_owned": 2.4,
    "status": "FREEAGENT"
   },
@@ -3176,16 +3176,6 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "KaVontae Turpin",
-   "position": "WR",
-   "nfl_team": "DAL",
-   "espn_id": "3676833",
-   "injury_status": "OUT",
-   "proj": 0.0,
-   "pct_owned": 1.1,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Jaleel McLaughlin",
    "position": "RB",
    "nfl_team": "CLE",
@@ -3201,6 +3191,16 @@
    "nfl_team": "WAS",
    "espn_id": "2576980",
    "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 1.1,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "KaVontae Turpin",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "espn_id": "3676833",
+   "injury_status": "OUT",
    "proj": 0.0,
    "pct_owned": 1.1,
    "status": "FREEAGENT"
@@ -3726,16 +3726,6 @@
    "status": "WAIVERS"
   },
   {
-   "name": "Emari Demercado",
-   "position": "RB",
-   "nfl_team": "FA",
-   "espn_id": "4362478",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.3,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Dylan Laube",
    "position": "RB",
    "nfl_team": "LV",
@@ -3752,6 +3742,16 @@
    "espn_id": "4431574",
    "injury_status": "ACTIVE",
    "proj": 3.0,
+   "pct_owned": 0.3,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Emari Demercado",
+   "position": "RB",
+   "nfl_team": "FA",
+   "espn_id": "4362478",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
    "pct_owned": 0.3,
    "status": "FREEAGENT"
   },
@@ -3886,6 +3886,16 @@
    "status": "FREEAGENT"
   },
   {
+   "name": "Kevin Coleman Jr.",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "espn_id": "4685307",
+   "injury_status": "ACTIVE",
+   "proj": 4.05,
+   "pct_owned": 0.2,
+   "status": "FREEAGENT"
+  },
+  {
    "name": "Kaden Wetjen",
    "position": "WR",
    "nfl_team": "PIT",
@@ -3942,16 +3952,6 @@
    "espn_id": "4259147",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 0.2,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Kevin Coleman Jr.",
-   "position": "WR",
-   "nfl_team": "MIA",
-   "espn_id": "4685307",
-   "injury_status": "ACTIVE",
-   "proj": 4.05,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
   },
@@ -4733,7 +4733,7 @@
     "espn_id": "4696044",
     "injury_status": "NORMAL",
     "proj": 0.0,
-    "pct_owned": 35.5,
+    "pct_owned": 35.6,
     "slot": "BN",
     "actual": null
    },
@@ -4810,7 +4810,7 @@
     "espn_id": "15864",
     "injury_status": "NORMAL",
     "proj": 23.43,
-    "pct_owned": 23.7,
+    "pct_owned": 23.6,
     "slot": "QB",
     "actual": 22.0
    },
