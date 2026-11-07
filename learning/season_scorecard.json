@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T11:21:47-05:00",
+  "generated_at": "2026-11-07T10:24:17-05:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 21,
+  "total_decisions": 22,
   "reviewed_decisions": 16,
-  "pending_decisions": 5,
+  "pending_decisions": 6,
   "wins": 7,
   "losses": 2,
   "neutral": 7,
@@ -35,7 +35,7 @@
       "reviewed_count": 5
     },
     "3": {
-      "count": 8,
+      "count": 9,
       "success_rate": 0.333,
       "average_outcome_grade": 2.0,
       "average_process_grade": 3.0,
@@ -72,7 +72,7 @@
       "reviewed_count": 6
     },
     "START_SIT": {
-      "count": 6,
+      "count": 7,
       "success_rate": 0.5,
       "average_outcome_grade": 2.25,
       "average_process_grade": 3.0,
@@ -128,6 +128,16 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Best TE matchup of the week": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Big favorite: Sampson's PPR passing-down role is the steadier floor vs the defense allowing the most RB points": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -204,6 +214,16 @@
       "average_process_grade": 2.0,
       "reviewed_count": 1,
       "false_positive_rate": 0.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Downs leads Flournoy on averaged ESPN/FP; Flournoy only clearly better if Pickens sits": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -308,6 +328,16 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Matchup-driven QB/TE calls from points-allowed data": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "McCaffrey has no designation, which was the Tuesday trigger for Black; plan said Sampson otherwise": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -823,7 +853,7 @@
   },
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
-      "count": 15,
+      "count": 16,
       "success_rate": 0.4,
       "average_outcome_grade": 2.2,
       "average_process_grade": 2.9,
