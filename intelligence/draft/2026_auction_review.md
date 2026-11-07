@@ -1,4 +1,4 @@
-# Mongo 2026 auction review (points through 2026-11-06)
+# Mongo 2026 auction review (points through 2026-11-07)
 
 _For the 2027 redraft auction. Points are ESPN league scoring, season to date._
 
