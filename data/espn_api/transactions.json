@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-07T18:05:52Z",
+ "observed_at": "2026-11-08T17:00:28Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 113,
+  "FREEAGENT": 114,
   "FUTURE_ROSTER": 37,
-  "ROSTER": 428,
+  "ROSTER": 437,
   "TRADE_PROPOSAL": 4,
   "WAIVER": 190
  },
@@ -5867,7 +5867,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "FA",
+     "nfl_team": "NO",
      "from_team_id": 0,
      "to_team_id": 2
     }
@@ -6070,7 +6070,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "FA",
+     "nfl_team": "NO",
      "from_team_id": 2,
      "to_team_id": 0
     }
@@ -6315,7 +6315,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "FA",
+     "nfl_team": "NO",
      "from_team_id": 0,
      "to_team_id": 2
     }
@@ -7374,7 +7374,7 @@
      "espn_id": "4569682",
      "name": "Audric Estime",
      "position": "RB",
-     "nfl_team": "FA",
+     "nfl_team": "NO",
      "from_team_id": 2,
      "to_team_id": 0
     }
@@ -9436,6 +9436,38 @@
      "position": "WR",
      "nfl_team": "GB",
      "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8b6f7b60-2e9b-4f53-b420-a74dfac5397d",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 9,
+   "processed_at": "2026-11-08T16:37:05Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4569682",
+     "name": "Audric Estime",
+     "position": "RB",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4567156",
+     "name": "Treylon Burks",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 5,
      "to_team_id": 0
     }
    ]

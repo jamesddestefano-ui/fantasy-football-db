@@ -1,7 +1,7 @@
 {
  "league": "mongo",
  "season": 2026,
- "observed_at": "2026-11-07T16:48:46Z",
+ "observed_at": "2026-11-08T17:00:31Z",
  "kind": "INTELLIGENCE_AUCTION_REVIEW_FOR_NEXT_DRAFT",
  "auction_budget": 200,
  "by_position": {
@@ -64,7 +64,7 @@
    "tiers": {
     "$30+": {
      "count": 16,
-     "median_points": 115.8
+     "median_points": 121.7
     },
     "$10-29": {
      "count": 13,
@@ -188,29 +188,9 @@
    "season_proj": 162.5,
    "pts_per_dollar": 27.5,
    "price_rank": 38,
-   "points_rank": 7,
-   "rank_gain": 31,
-   "value_label": "paid like WR38, scored like WR7"
-  },
-  {
-   "pick": 91,
-   "espn_id": "4248528",
-   "name": "Christian Watson",
-   "position": "WR",
-   "nfl_team": "GB",
-   "team_id": 8,
-   "team": "DeVonta Be Kidding Me",
-   "abbrev": "ME",
-   "price": 9,
-   "nominated_by": "SHOWSTOPPERS",
-   "keeper": false,
-   "season_points": 154.8,
-   "season_proj": 148.08,
-   "pts_per_dollar": 17.2,
-   "price_rank": 33,
-   "points_rank": 3,
+   "points_rank": 8,
    "rank_gain": 30,
-   "value_label": "paid like WR33, scored like WR3"
+   "value_label": "paid like WR38, scored like WR8"
   },
   {
    "pick": 178,
@@ -231,6 +211,26 @@
    "points_rank": 31,
    "rank_gain": 29,
    "value_label": "paid like RB60, scored like RB31"
+  },
+  {
+   "pick": 91,
+   "espn_id": "4248528",
+   "name": "Christian Watson",
+   "position": "WR",
+   "nfl_team": "GB",
+   "team_id": 8,
+   "team": "DeVonta Be Kidding Me",
+   "abbrev": "ME",
+   "price": 9,
+   "nominated_by": "SHOWSTOPPERS",
+   "keeper": false,
+   "season_points": 154.8,
+   "season_proj": 148.08,
+   "pts_per_dollar": 17.2,
+   "price_rank": 33,
+   "points_rank": 5,
+   "rank_gain": 28,
+   "value_label": "paid like WR33, scored like WR5"
   },
   {
    "pick": 133,
@@ -305,7 +305,7 @@
    "nominated_by": "Geno Smith",
    "keeper": false,
    "season_points": 74.5,
-   "season_proj": 81.02,
+   "season_proj": 81.03,
    "pts_per_dollar": 74.5,
    "price_rank": 60,
    "points_rank": 33,
@@ -507,7 +507,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 56.3,
-   "season_proj": 143.6,
+   "season_proj": 143.59,
    "pts_per_dollar": 1.76,
    "price_rank": 13,
    "points_rank": 43,
@@ -587,7 +587,7 @@
    "nominated_by": "Justmyluck3",
    "keeper": false,
    "season_points": 71.0,
-   "season_proj": 109.82,
+   "season_proj": 109.81,
    "pts_per_dollar": 2.29,
    "price_rank": 15,
    "points_rank": 36,
@@ -632,7 +632,7 @@
    "one_dollar_players": 1,
    "most_expensive": "Derrick Henry",
    "most_expensive_price": 44,
-   "season_points_drafted": 1528.7
+   "season_points_drafted": 1583.3
   },
   {
    "team_id": 13,
@@ -686,7 +686,7 @@
    "one_dollar_players": 2,
    "most_expensive": "Chase Brown",
    "most_expensive_price": 47,
-   "season_points_drafted": 1418.5
+   "season_points_drafted": 1428.8
   },
   {
    "team_id": 10,
@@ -722,7 +722,7 @@
    "one_dollar_players": 7,
    "most_expensive": "Jonathan Taylor",
    "most_expensive_price": 50,
-   "season_points_drafted": 1272.1
+   "season_points_drafted": 1283.9
   },
   {
    "team_id": 5,
@@ -758,7 +758,7 @@
    "one_dollar_players": 3,
    "most_expensive": "Jahmyr Gibbs",
    "most_expensive_price": 67,
-   "season_points_drafted": 1121.9
+   "season_points_drafted": 1125.3
   },
   {
    "team_id": 6,
@@ -776,7 +776,25 @@
    "one_dollar_players": 10,
    "most_expensive": "Puka Nacua",
    "most_expensive_price": 62,
-   "season_points_drafted": 1052.8
+   "season_points_drafted": 1083.0
+  },
+  {
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "abbrev": "JDD",
+   "spent": 200,
+   "position_split": {
+    "QB": 10,
+    "RB": 102,
+    "WR": 85,
+    "TE": 1,
+    "D/ST": 2
+   },
+   "top3_share": 0.75,
+   "one_dollar_players": 8,
+   "most_expensive": "Bijan Robinson",
+   "most_expensive_price": 61,
+   "season_points_drafted": 1055.0
   },
   {
    "team_id": 11,
@@ -813,24 +831,6 @@
    "most_expensive": "A.J. Brown",
    "most_expensive_price": 44,
    "season_points_drafted": 1032.9
-  },
-  {
-   "team_id": 2,
-   "team": "Tom Brady of Ass",
-   "abbrev": "JDD",
-   "spent": 200,
-   "position_split": {
-    "QB": 10,
-    "RB": 102,
-    "WR": 85,
-    "TE": 1,
-    "D/ST": 2
-   },
-   "top3_share": 0.75,
-   "one_dollar_players": 8,
-   "most_expensive": "Bijan Robinson",
-   "most_expensive_price": 61,
-   "season_points_drafted": 1027.0
   }
  ],
  "james": {
@@ -850,7 +850,7 @@
    "one_dollar_players": 8,
    "most_expensive": "Bijan Robinson",
    "most_expensive_price": 61,
-   "season_points_drafted": 1027.0
+   "season_points_drafted": 1055.0
   },
   "picks": [
    {
@@ -865,13 +865,13 @@
     "price": 61,
     "nominated_by": "SHOWSTOPPERS",
     "keeper": false,
-    "season_points": 157.3,
-    "season_proj": 176.26,
-    "pts_per_dollar": 2.58,
+    "season_points": 185.3,
+    "season_proj": 185.58,
+    "pts_per_dollar": 3.04,
     "price_rank": 2,
-    "points_rank": 3,
-    "rank_gain": -1,
-    "value_label": "paid like RB2, scored like RB3"
+    "points_rank": 2,
+    "rank_gain": 0,
+    "value_label": "paid like RB2, scored like RB2"
    },
    {
     "pick": 23,
@@ -886,7 +886,7 @@
     "nominated_by": "Justmyluck3",
     "keeper": false,
     "season_points": 174.3,
-    "season_proj": 188.82,
+    "season_proj": 189.52,
     "pts_per_dollar": 3.29,
     "price_rank": 5,
     "points_rank": 2,
@@ -929,9 +929,9 @@
     "season_proj": 155.45,
     "pts_per_dollar": 6.38,
     "price_rank": 22,
-    "points_rank": 14,
-    "rank_gain": 8,
-    "value_label": "paid like WR22, scored like WR14"
+    "points_rank": 15,
+    "rank_gain": 7,
+    "value_label": "paid like WR22, scored like WR15"
    },
    {
     "pick": 63,
@@ -949,9 +949,9 @@
     "season_proj": 140.04,
     "pts_per_dollar": 11.96,
     "price_rank": 29,
-    "points_rank": 12,
-    "rank_gain": 17,
-    "value_label": "paid like WR29, scored like WR12"
+    "points_rank": 13,
+    "rank_gain": 16,
+    "value_label": "paid like WR29, scored like WR13"
    },
    {
     "pick": 76,
@@ -1138,7 +1138,7 @@
     "espn_id": "4599739",
     "name": "Kendre Miller",
     "position": "RB",
-    "nfl_team": "NO",
+    "nfl_team": "FA",
     "team_id": 2,
     "team": "Tom Brady of Ass",
     "abbrev": "JDD",
@@ -1146,7 +1146,7 @@
     "nominated_by": "SHOWSTOPPERS",
     "keeper": false,
     "season_points": 40.6,
-    "season_proj": 18.9,
+    "season_proj": 0.0,
     "pts_per_dollar": 40.6,
     "price_rank": 59,
     "points_rank": 47,
