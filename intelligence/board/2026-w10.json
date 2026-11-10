@@ -1,0 +1,995 @@
+{
+ "league": "mongo",
+ "season": 2026,
+ "week": 10,
+ "team": "Tom Brady of Ass (JDD)",
+ "kind": "INTELLIGENCE_BOARD_NOT_A_RECORDED_RECOMMENDATION",
+ "generated_from": {
+  "fantasypros_pulled_at": "2026-11-10T15:46:23+00:00",
+  "roster_source": "ESPN_API",
+  "roster_observed_at": "2026-11-10T15:45:38Z",
+  "espn_observed_at": "2026-11-10T15:45:38Z"
+ },
+ "faab": {
+  "balance": 48
+ },
+ "open_roster_spots": 0,
+ "lineup": {
+  "suggested": [
+   {
+    "slot": "QB",
+    "player": "Malik Willis",
+    "proj": 16.94,
+    "basis": "espn"
+   },
+   {
+    "slot": "RB",
+    "player": "Bijan Robinson",
+    "proj": 19.63,
+    "basis": "espn"
+   },
+   {
+    "slot": "RB",
+    "player": "Dylan Sampson",
+    "proj": 9.01,
+    "basis": "espn"
+   },
+   {
+    "slot": "WR",
+    "player": "CeeDee Lamb",
+    "proj": 21.81,
+    "basis": "espn"
+   },
+   {
+    "slot": "WR",
+    "player": "Tetairoa McMillan",
+    "proj": 16.73,
+    "basis": "espn"
+   },
+   {
+    "slot": "TE",
+    "player": "Chig Okonkwo",
+    "proj": 8.81,
+    "basis": "espn"
+   },
+   {
+    "slot": "FLEX",
+    "player": "Josh Downs",
+    "proj": 8.82,
+    "basis": "espn"
+   },
+   {
+    "slot": "FLEX",
+    "player": "Ryan Flournoy",
+    "proj": 8.52,
+    "basis": "espn"
+   },
+   {
+    "slot": "D/ST",
+    "player": "Saints D/ST",
+    "proj": 7.52,
+    "basis": "espn"
+   }
+  ],
+  "changes": {
+   "start": [
+    "Chig Okonkwo",
+    "Ryan Flournoy"
+   ],
+   "bench": [
+    "Greg Dulcich",
+    "Luther Burden III"
+   ]
+  },
+  "proj_current_starters": 108.42,
+  "proj_suggested": 117.79
+ },
+ "roster": [
+  {
+   "name": "Malik Willis",
+   "position": "QB",
+   "nfl_team": "MIA",
+   "current_slot": "QB",
+   "status": "NORMAL",
+   "proj_espn": 16.94,
+   "proj_ppr": 16.43,
+   "ecr_rank": 19.0,
+   "ros_rank": null,
+   "opponent": "at IND",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Sam Darnold",
+   "position": "QB",
+   "nfl_team": "SEA",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 0.0,
+   "proj_ppr": null,
+   "ecr_rank": null,
+   "ros_rank": null,
+   "opponent": null,
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Bijan Robinson",
+   "position": "RB",
+   "nfl_team": "ATL",
+   "current_slot": "RB",
+   "status": "NORMAL",
+   "proj_espn": 19.63,
+   "proj_ppr": 19.2,
+   "ecr_rank": 7.0,
+   "ros_rank": 3.0,
+   "opponent": "vs. KC",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Dylan Sampson",
+   "position": "RB",
+   "nfl_team": "CLE",
+   "current_slot": "RB",
+   "status": "NORMAL",
+   "proj_espn": 9.01,
+   "proj_ppr": 7.96,
+   "ecr_rank": 98.0,
+   "ros_rank": 147.0,
+   "opponent": "vs. HOU",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Kaelon Black",
+   "position": "RB",
+   "nfl_team": "SF",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 7.83,
+   "proj_ppr": 6.12,
+   "ecr_rank": 112.0,
+   "ros_rank": 125.0,
+   "opponent": "at DAL",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Keaton Mitchell",
+   "position": "RB",
+   "nfl_team": "LAC",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 6.67,
+   "proj_ppr": 5.52,
+   "ecr_rank": 146.0,
+   "ros_rank": 183.0,
+   "opponent": "at BAL",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Kendre Miller",
+   "position": "RB",
+   "nfl_team": "FA",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 0.0,
+   "proj_ppr": 2.42,
+   "ecr_rank": null,
+   "ros_rank": 232.0,
+   "opponent": null,
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "CeeDee Lamb",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "current_slot": "WR",
+   "status": "NORMAL",
+   "proj_espn": 21.81,
+   "proj_ppr": 20.54,
+   "ecr_rank": 5.0,
+   "ros_rank": 8.0,
+   "opponent": "vs. SF",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Tetairoa McMillan",
+   "position": "WR",
+   "nfl_team": "CAR",
+   "current_slot": "WR",
+   "status": "NORMAL",
+   "proj_espn": 16.73,
+   "proj_ppr": 15.18,
+   "ecr_rank": 32.0,
+   "ros_rank": 34.0,
+   "opponent": "at NO",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Josh Downs",
+   "position": "WR",
+   "nfl_team": "IND",
+   "current_slot": "FLEX",
+   "status": "NORMAL",
+   "proj_espn": 8.82,
+   "proj_ppr": 10.74,
+   "ecr_rank": 101.0,
+   "ros_rank": 66.0,
+   "opponent": "vs. MIA",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Ryan Flournoy",
+   "position": "WR",
+   "nfl_team": "DAL",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 8.52,
+   "proj_ppr": 9.17,
+   "ecr_rank": 72.0,
+   "ros_rank": 81.0,
+   "opponent": "vs. SF",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Luther Burden III",
+   "position": "WR",
+   "nfl_team": "CHI",
+   "current_slot": "FLEX",
+   "status": "NORMAL",
+   "proj_espn": 0.0,
+   "proj_ppr": 0.0,
+   "ecr_rank": null,
+   "ros_rank": 33.0,
+   "opponent": null,
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Chig Okonkwo",
+   "position": "TE",
+   "nfl_team": "WAS",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 8.81,
+   "proj_ppr": 8.36,
+   "ecr_rank": 90.0,
+   "ros_rank": 108.0,
+   "opponent": "at NYG",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Greg Dulcich",
+   "position": "TE",
+   "nfl_team": "MIA",
+   "current_slot": "TE",
+   "status": "NORMAL",
+   "proj_espn": 7.96,
+   "proj_ppr": 7.24,
+   "ecr_rank": 102.0,
+   "ros_rank": 134.0,
+   "opponent": "at IND",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Mason Taylor",
+   "position": "TE",
+   "nfl_team": "NYJ",
+   "current_slot": "BN",
+   "status": "NORMAL",
+   "proj_espn": 7.81,
+   "proj_ppr": 6.99,
+   "ecr_rank": 126.0,
+   "ros_rank": 145.0,
+   "opponent": "vs. BUF",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  },
+  {
+   "name": "Saints D/ST",
+   "position": "D/ST",
+   "nfl_team": "NO",
+   "current_slot": "D/ST",
+   "status": "NORMAL",
+   "proj_espn": 7.52,
+   "proj_ppr": 6.27,
+   "ecr_rank": 10.0,
+   "ros_rank": null,
+   "opponent": "vs. CAR",
+   "matched_fantasypros": true,
+   "unavailable": false,
+   "on_bye": false
+  }
+ ],
+ "waiver_targets": [
+  {
+   "name": "Pat Freiermuth",
+   "position": "TE",
+   "nfl_team": "PIT",
+   "proj": 8.32,
+   "ros_rank": 122.0,
+   "fp_waiver_rank": 11.0,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 23.0,
+   "week_proj_gain": -0.49,
+   "priority": "MEDIUM",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 41.2,
+   "fp_waiver_note": "With Colston Loveland and Dallas Goedert on bye in Week 10, some fantasy managers might be in search of a tight end to stream this week. Pat Freiermuth isn't having a banner season but could be a palatable option this week based on matchup.\n\nFreiermuth has been splitting TE targets with Darnell Washington and has an uninspiring 11.7% target share. Although Freiermuth has delivered five touchdowns (including one on a goal-line tush push), he's averaging 4.4 targets, 3.1 catches and 29.4 receiving yards per game.\n\nBut Freiermuth has a favorable Week 10 matchup against the Bengals. He had only 2-30-0 on four targets in a Week 6 game against Cincinnati, but Bengals defensive coordinator Al Golden's unit is usually content to give up receptions to tight ends over the middle.\n\nCincinnati entered Week 9 having allowed the ninth-most fantasy points to tight ends, even though no TE has scored a touchdown against the Bengals. Last year under Golden, the Bengals gave up the most catches, receiving yards and touchdowns to tight ends.\n\nLast week, the Titans' Gunnar Helm had a season-best 5-76-0 day against the Bengals. Helm hadn't produced more than 28 receiving yards in any other game this year.\n\nDespite his humble reception and yardage totals this season, Freiermuth has streaming appeal in Week 9."
+  },
+  {
+   "name": "Drew Lock",
+   "position": "QB",
+   "nfl_team": "SEA",
+   "proj": 22.17,
+   "ros_rank": null,
+   "fp_waiver_rank": null,
+   "injury": "QUESTIONABLE",
+   "replaces": "Sam Darnold",
+   "ros_rank_gain": null,
+   "week_proj_gain": 5.23,
+   "priority": "MEDIUM",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 7.9,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Pat Bryant",
+   "position": "WR",
+   "nfl_team": "DEN",
+   "proj": 0.0,
+   "ros_rank": 159.0,
+   "fp_waiver_rank": 14.0,
+   "injury": "ACTIVE",
+   "replaces": "Ryan Flournoy",
+   "ros_rank_gain": -78.0,
+   "week_proj_gain": -8.52,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 1.2,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Darren Waller",
+   "position": "TE",
+   "nfl_team": "CAR",
+   "proj": 8.61,
+   "ros_rank": 136.0,
+   "fp_waiver_rank": 15.0,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 9.0,
+   "week_proj_gain": -0.2,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 7.7,
+   "fp_waiver_note": "With the Panthers' wide receivers having trouble shaking free from the coverage of the Broncos' cornerbacks in Week 9, Darren Waller stepped up and had his biggest game of the season, with 8-90-1 on a team-high 10 targets. Waller ran routes on 69% of QB Bryce Young's dropbacks.\n\nSeemingly bothered by a toe injury, Waller had only two catches in his previous three games &mdash; although one of them went for a 50-yard touchdown. We might have thrown Waller into the Fool's Gold section of this article if not for a favorable Week 10 matchup with the Saints.\n\nEntering Week 9, the Saints had allowed the seventh-most fantasy points per game to tight ends. New Orleans has allowed 47-521-5 to TEs in eight games. The Saints had kept Cleveland's Harold Fannin Jr. under wraps for most of their game against the Browns last week until Fannin bounced off some inept Saints tackle attempts to score a late 39-yard touchdown.\n\nWaller is a viable Week 10 streaming option."
+  },
+  {
+   "name": "Tyler Higbee",
+   "position": "TE",
+   "nfl_team": "LAR",
+   "proj": 7.24,
+   "ros_rank": 127.0,
+   "fp_waiver_rank": 17.0,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 18.0,
+   "week_proj_gain": -1.57,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 10.1,
+   "fp_waiver_note": "Tyler Higbee had 18-212-1 over a three-game stretch from Week 3 to Week 5. Since then, he's had 22 or fewer receiving yards in four consecutive games.\n\nDespite the downturn, this might be a good time to buy in on Higbee. WR Davante Adams is expected to be out for at least another 5-6 weeks with a severe hamstring injury. WR Puka Nacua sustained a knee injury of unknown severity on Sunday. TE Terrance Ferguson was on his way back from an ankle injury when he picked up a hamstring injury in practice last week.\n\nHead coach Sean McVay has leaned aggressively into multiple-TE sets the last two seasons and may have to do so out of necessity in the weeks to come.\n\nHigbee led the Rams' tight ends in snaps (60), routes (35) and targets (5) in Sunday's 20-13 win over the Commanders, although his five targets netted only a single 13-yard catch.\n\nStill, Higbee has a promising target outlook this week against an Arizona defense that has allowed the eighth-most fantasy points to tight ends."
+  },
+  {
+   "name": "Juwan Johnson",
+   "position": "TE",
+   "nfl_team": "NO",
+   "proj": 7.39,
+   "ros_rank": 121.0,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 24.0,
+   "week_proj_gain": -1.42,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 44.1,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Michael Mayer",
+   "position": "TE",
+   "nfl_team": "LV",
+   "proj": 8.05,
+   "ros_rank": 126.0,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 19.0,
+   "week_proj_gain": -0.76,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 22.1,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Dalton Schultz",
+   "position": "TE",
+   "nfl_team": "HOU",
+   "proj": 7.72,
+   "ros_rank": 130.0,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 15.0,
+   "week_proj_gain": -1.09,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 24.1,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Mark Andrews",
+   "position": "TE",
+   "nfl_team": "BAL",
+   "proj": 6.98,
+   "ros_rank": 143.0,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 2.0,
+   "week_proj_gain": -1.83,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 60.5,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "AJ Barner",
+   "position": "TE",
+   "nfl_team": "SEA",
+   "proj": 8.84,
+   "ros_rank": 144.0,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Mason Taylor",
+   "ros_rank_gain": 1.0,
+   "week_proj_gain": 0.03,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 7.2,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Mack Hollins",
+   "position": "WR",
+   "nfl_team": "NE",
+   "proj": 10.82,
+   "ros_rank": 162.0,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Ryan Flournoy",
+   "ros_rank_gain": -81.0,
+   "week_proj_gain": 2.3,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 7.3,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Tutu Atwell",
+   "position": "WR",
+   "nfl_team": "LAR",
+   "proj": 9.74,
+   "ros_rank": 249.0,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Ryan Flournoy",
+   "ros_rank_gain": -168.0,
+   "week_proj_gain": 1.22,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 0.3,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "J.J. McCarthy",
+   "position": "QB",
+   "nfl_team": "NYG",
+   "proj": 19.55,
+   "ros_rank": null,
+   "fp_waiver_rank": null,
+   "injury": "Questionable",
+   "replaces": "Sam Darnold",
+   "ros_rank_gain": null,
+   "week_proj_gain": 2.61,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 33.6,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Aaron Rodgers",
+   "position": "QB",
+   "nfl_team": "PIT",
+   "proj": 18.69,
+   "ros_rank": null,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Sam Darnold",
+   "ros_rank_gain": null,
+   "week_proj_gain": 1.75,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 32.9,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Geno Smith",
+   "position": "QB",
+   "nfl_team": "NYJ",
+   "proj": 18.65,
+   "ros_rank": null,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Sam Darnold",
+   "ros_rank_gain": null,
+   "week_proj_gain": 1.71,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 22.5,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Deshaun Watson",
+   "position": "QB",
+   "nfl_team": "CLE",
+   "proj": 18.17,
+   "ros_rank": null,
+   "fp_waiver_rank": null,
+   "injury": "QUESTIONABLE",
+   "replaces": "Sam Darnold",
+   "ros_rank_gain": null,
+   "week_proj_gain": 1.23,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 10.3,
+   "fp_waiver_note": null
+  },
+  {
+   "name": "Green Bay Packers",
+   "position": "D/ST",
+   "nfl_team": "GB",
+   "proj": 9.08,
+   "ros_rank": null,
+   "fp_waiver_rank": null,
+   "injury": "ACTIVE",
+   "replaces": "Saints D/ST",
+   "ros_rank_gain": null,
+   "week_proj_gain": 1.56,
+   "priority": "LOW",
+   "availability": "ESPN_WAIVERS",
+   "espn_pct_owned": 19.1,
+   "fp_waiver_note": null
+  }
+ ],
+ "unmatched_roster_players": [],
+ "roster_notes": [],
+ "last_week": {
+  "week": 9,
+  "players": [
+   {
+    "name": "Bijan Robinson",
+    "position": "RB",
+    "nfl_team": "ATL",
+    "espn_id": "4430807",
+    "injury_status": "NORMAL",
+    "proj": 20.78,
+    "pct_owned": 99.9,
+    "slot": "RB",
+    "actual": 28.7
+   },
+   {
+    "name": "CeeDee Lamb",
+    "position": "WR",
+    "nfl_team": "DAL",
+    "espn_id": "4241389",
+    "injury_status": "NORMAL",
+    "proj": 22.16,
+    "pct_owned": 99.9,
+    "slot": "WR",
+    "actual": 37.5
+   },
+   {
+    "name": "Tetairoa McMillan",
+    "position": "WR",
+    "nfl_team": "CAR",
+    "espn_id": "4685472",
+    "injury_status": "NORMAL",
+    "proj": 14.05,
+    "pct_owned": 98.3,
+    "slot": "WR",
+    "actual": 15.6
+   },
+   {
+    "name": "Luther Burden III",
+    "position": "WR",
+    "nfl_team": "CHI",
+    "espn_id": "4685278",
+    "injury_status": "NORMAL",
+    "proj": 14.38,
+    "pct_owned": 93.4,
+    "slot": "FLEX",
+    "actual": 22.7
+   },
+   {
+    "name": "Josh Downs",
+    "position": "WR",
+    "nfl_team": "IND",
+    "espn_id": "4688813",
+    "injury_status": "NORMAL",
+    "proj": 8.73,
+    "pct_owned": 61.3,
+    "slot": "FLEX",
+    "actual": 5.4
+   },
+   {
+    "name": "Dylan Sampson",
+    "position": "RB",
+    "nfl_team": "CLE",
+    "espn_id": "5081397",
+    "injury_status": "NORMAL",
+    "proj": 9.0,
+    "pct_owned": 18.6,
+    "slot": "RB",
+    "actual": 7.8
+   },
+   {
+    "name": "Kendre Miller",
+    "position": "RB",
+    "nfl_team": "FA",
+    "espn_id": "4599739",
+    "injury_status": "NORMAL",
+    "proj": 0.0,
+    "pct_owned": 19.3,
+    "slot": "BN",
+    "actual": null
+   },
+   {
+    "name": "Kaelon Black",
+    "position": "RB",
+    "nfl_team": "SF",
+    "espn_id": "4696044",
+    "injury_status": "NORMAL",
+    "proj": 11.11,
+    "pct_owned": 36.9,
+    "slot": "BN",
+    "actual": 7.0
+   },
+   {
+    "name": "Keaton Mitchell",
+    "position": "RB",
+    "nfl_team": "LAC",
+    "espn_id": "4596334",
+    "injury_status": "NORMAL",
+    "proj": 6.54,
+    "pct_owned": 10.2,
+    "slot": "BN",
+    "actual": 9.7
+   },
+   {
+    "name": "Ryan Flournoy",
+    "position": "WR",
+    "nfl_team": "DAL",
+    "espn_id": "5083754",
+    "injury_status": "NORMAL",
+    "proj": 12.71,
+    "pct_owned": 30.1,
+    "slot": "BN",
+    "actual": 7.3
+   },
+   {
+    "name": "Chig Okonkwo",
+    "position": "TE",
+    "nfl_team": "WAS",
+    "espn_id": "4360635",
+    "injury_status": "NORMAL",
+    "proj": 9.64,
+    "pct_owned": 13.7,
+    "slot": "BN",
+    "actual": 11.7
+   },
+   {
+    "name": "Sam Darnold",
+    "position": "QB",
+    "nfl_team": "SEA",
+    "espn_id": "3912547",
+    "injury_status": "NORMAL",
+    "proj": 0.0,
+    "pct_owned": 26.7,
+    "slot": "BN",
+    "actual": 0.0
+   },
+   {
+    "name": "Mason Taylor",
+    "position": "TE",
+    "nfl_team": "NYJ",
+    "espn_id": "4808766",
+    "injury_status": "NORMAL",
+    "proj": 9.08,
+    "pct_owned": 8.1,
+    "slot": "BN",
+    "actual": 2.1
+   },
+   {
+    "name": "Malik Willis",
+    "position": "QB",
+    "nfl_team": "MIA",
+    "espn_id": "4242512",
+    "injury_status": "NORMAL",
+    "proj": 21.03,
+    "pct_owned": 23.0,
+    "slot": "QB",
+    "actual": 3.82
+   },
+   {
+    "name": "Greg Dulcich",
+    "position": "TE",
+    "nfl_team": "MIA",
+    "espn_id": "4367209",
+    "injury_status": "NORMAL",
+    "proj": 8.89,
+    "pct_owned": 5.6,
+    "slot": "TE",
+    "actual": 3.4
+   },
+   {
+    "name": "Saints D/ST",
+    "position": "D/ST",
+    "nfl_team": "NO",
+    "espn_id": "-16018",
+    "injury_status": "NORMAL",
+    "proj": 7.9,
+    "pct_owned": 12.6,
+    "slot": "D/ST",
+    "actual": 6.0
+   }
+  ],
+  "starter_points": 130.92
+ },
+ "matchup": {
+  "week": 10,
+  "opponent_team_id": 13,
+  "opponent": "Joe's Finest Team",
+  "opponent_abbrev": "JFT",
+  "opponent_record": "7-2-0",
+  "opponent_points_for": 1212.34,
+  "my_proj": 108.42,
+  "opponent_proj": 96.65,
+  "opponent_starters": [
+   {
+    "slot": "TE",
+    "name": "Trey McBride",
+    "nfl_team": "ARI",
+    "proj": 14.48,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "RB",
+    "name": "Ashton Jeanty",
+    "nfl_team": "LV",
+    "proj": 14.88,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "RB",
+    "name": "Bucky Irving",
+    "nfl_team": "TB",
+    "proj": 0.0,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "WR",
+    "name": "Zay Flowers",
+    "nfl_team": "BAL",
+    "proj": 15.24,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "QB",
+    "name": "Dak Prescott",
+    "nfl_team": "DAL",
+    "proj": 20.56,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "WR",
+    "name": "Marvin Harrison Jr.",
+    "nfl_team": "HOU",
+    "proj": 6.05,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "FLEX",
+    "name": "Josh Jacobs",
+    "nfl_team": "GB",
+    "proj": 0.0,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "FLEX",
+    "name": "Matthew Golden",
+    "nfl_team": "GB",
+    "proj": 17.64,
+    "injury_status": "NORMAL"
+   },
+   {
+    "slot": "D/ST",
+    "name": "Bills D/ST",
+    "nfl_team": "BUF",
+    "proj": 7.8,
+    "injury_status": "NORMAL"
+   }
+  ]
+ },
+ "faab_market": {
+  "by_position": {
+   "D/ST": {
+    "claims": 19,
+    "paid_claims": 19,
+    "median": 3.0,
+    "p75": 3.5,
+    "max": 7
+   },
+   "QB": {
+    "claims": 14,
+    "paid_claims": 14,
+    "median": 2.0,
+    "p75": 7.2,
+    "max": 13
+   },
+   "RB": {
+    "claims": 18,
+    "paid_claims": 18,
+    "median": 6.0,
+    "p75": 13.0,
+    "max": 23
+   },
+   "TE": {
+    "claims": 10,
+    "paid_claims": 10,
+    "median": 4.5,
+    "p75": 7.5,
+    "max": 9
+   },
+   "WR": {
+    "claims": 20,
+    "paid_claims": 20,
+    "median": 3.5,
+    "p75": 8.2,
+    "max": 19
+   }
+  },
+  "budgets": [
+   {
+    "team": "Joe's Finest Team",
+    "abbrev": "JFT",
+    "remaining": 100,
+    "spent": 0
+   },
+   {
+    "team": "Geno Smith",
+    "abbrev": "GENO",
+    "remaining": 94,
+    "spent": 6
+   },
+   {
+    "team": "Horton",
+    "abbrev": "CCT",
+    "remaining": 92,
+    "spent": 8
+   },
+   {
+    "team": "DeVonta Be Kidding Me",
+    "abbrev": "ME",
+    "remaining": 82,
+    "spent": 18
+   },
+   {
+    "team": "Bills Mafia",
+    "abbrev": "BM",
+    "remaining": 82,
+    "spent": 18
+   },
+   {
+    "team": "$Cmoney$",
+    "abbrev": "C$",
+    "remaining": 67,
+    "spent": 33
+   },
+   {
+    "team": "Justmyluck3",
+    "abbrev": "J3",
+    "remaining": 60,
+    "spent": 40
+   },
+   {
+    "team": "Tom Brady of Ass",
+    "abbrev": "JDD",
+    "remaining": 48,
+    "spent": 52
+   },
+   {
+    "team": "You're a JaGoff",
+    "abbrev": "PbP",
+    "remaining": 41,
+    "spent": 59
+   },
+   {
+    "team": "T.N.T",
+    "abbrev": "FFT",
+    "remaining": 39,
+    "spent": 61
+   },
+   {
+    "team": "SHOWSTOPPERS",
+    "abbrev": "BE3",
+    "remaining": 38,
+    "spent": 62
+   },
+   {
+    "team": "I Loveland Rice Krispies",
+    "abbrev": "AAGD",
+    "remaining": 33,
+    "spent": 67
+   }
+  ],
+  "median_overpay_vs_runner_up": 2.0,
+  "observed_at": "2026-11-10T15:45:38Z"
+ },
+ "reconcile_status": {
+  "status": "NEEDS_INGEST",
+  "unlogged_moves": 5,
+  "roster_diff": {
+   "on_espn_not_in_repo": [
+    "Greg Dulcich",
+    "Malik Willis",
+    "Mason Taylor",
+    "Saints D/ST"
+   ],
+   "in_repo_not_on_espn": [
+    "Bam Knight",
+    "Commanders D/ST",
+    "J.J. McCarthy",
+    "Kyler Murray"
+   ]
+  }
+ }
+}
