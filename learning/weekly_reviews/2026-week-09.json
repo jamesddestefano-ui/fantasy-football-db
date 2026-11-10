@@ -1,0 +1,148 @@
+{
+  "system": "CLAUDE_MONGO_BRAIN",
+  "season": 2026,
+  "week": 9,
+  "reviewed_at": "2026-11-10T10:58:00-05:00",
+  "best_decisions": [
+    "mongo-2026-w09-lineup-003: Black -> Sampson at RB2 (+0.8) and Willis kept at QB with Darnold OUT",
+    "mongo-2026-w09-claim-dulcich-002: switched the drop from Keaton Mitchell (9.7 in Week 9) to Geno Smith"
+  ],
+  "worst_decisions": [
+    "mongo-2026-w09-claim-dulcich-002 / lineup-003: Dulcich ($3) started at TE, 3.4 vs Okonkwo 11.7 on the bench (-8.3)",
+    "mongo-2026-w09-claim-saints-dst-001: $3 for Saints 6.0, no better than the dropped Commanders"
+  ],
+  "good_process_bad_result": [
+    "mongo-2026-w09-claim-saints-dst-001: projection-led D/ST stream; the Giants backup scored 13 for T.N.T"
+  ],
+  "bad_process_good_result": [],
+  "missed_opportunities": [
+    "Pickens inactive trigger: Flournoy 7.3 vs Downs 5.4 (-1.9) not executed",
+    "Keaton Mitchell 9.7 on the bench vs Downs 5.4 (projection 6.54 vs 8.73, not a predictable miss)"
+  ],
+  "signals_that_worked": [
+    "ESPN projections at TE: Okonkwo 9.64 > Dulcich 8.89; the higher projection won by 8.3",
+    "Sunday note that DAL elevated Jordan Hudson pointed to Pickens sitting; he was inactive"
+  ],
+  "signals_that_failed": [
+    "DET allows the most TE points: Dulcich 3.4",
+    "Willis vs DET (most QB points allowed): 3.82, groin issue in-game (Pulse 2026-11-10)",
+    "Saints D/ST vs CLE with Watson out: 6.0"
+  ],
+  "data_quality_issues": [
+    "Scheduled ESPN daily and Tuesday board had not run by 10:44 AM ET; newest snapshot predated MNF and still showed Week 8 in last_week. Mongo weekly board dispatched manually (snapshot 2026-11-10T15:45:38Z)",
+    "Reconcile NEEDS_INGEST: Mason Taylor, Geno Smith, Malik Willis, Dulcich and Saints D/ST moves not in repository history (newest import 2026-10-28T08:11:00Z); repository FAAB $54 vs ESPN $48",
+    "Geno, Commanders and Giants Week 9 points only in FantasyPros standard PPR, not Mongo scoring",
+    "Opponent score derived from points_for delta (SHOWSTOPPERS 888.24 to 1001.32)"
+  ],
+  "timing_issues": [
+    "The Pickens trigger fired at 11:30 AM inactives, after the 11:25 Sunday check; nobody confirmed it before 1 PM"
+  ],
+  "rule_changes_proposed": [
+    "Near-tie start/sit (under 1 ESPN point): keep the higher ESPN projection unless news changes the role. Evidence now W7, W8, W9 on two player pairs (Flournoy/Downs, Okonkwo/Dulcich). Recommend adopting as learning_rules_v4 with James's OK",
+    "Do not claim a streaming TE/D/ST unless he out-projects the rostered starter on ESPN; check whether anyone else is bidding before going above $1"
+  ],
+  "rule_changes_adopted": [],
+  "rules_rejected_due_to_insufficient_sample": [
+    "Practice-report rule from Week 7: no repeat occurrence, still held"
+  ],
+  "mongo_metrics": {
+    "recommended_acquisition_vs_actual": [
+      "Dulcich: rec $2 (drop Geno), actual $3 (drop Geno), won uncontested",
+      "Saints D/ST: rec $2 (drop Commanders), actual $3, won over a $1 bid"
+    ],
+    "recommended_faab_vs_actual_and_winning": [
+      "Dulcich: rec $2, paid $3, no other bid",
+      "Saints D/ST: rec $2, paid $3, next bid $1"
+    ],
+    "points_added_above_replacement": [
+      "Dulcich 3.4 vs Okonkwo 11.7 = -8.3",
+      "Saints 6.0 vs Commanders ~6 (FantasyPros) = ~0"
+    ],
+    "starter_bench_differential": [
+      "Week 9: 130.92 started vs 143.52 optimal = 12.6 left on bench"
+    ],
+    "weeks_retained": [
+      "Okonkwo, Mason Taylor, Willis, Darnold 2+; Dulcich, Saints D/ST 1+"
+    ],
+    "drop_timing_and_regret": [
+      "Geno Smith: no Week 9 regret (7.4 FantasyPros) but leaves Willis as the only healthy QB for Week 10 (Darnold OUT)",
+      "Commanders D/ST: no regret (~6)"
+    ],
+    "missed_waiver_opportunities": [
+      "Giants D/ST (rec backup) scored 13 for T.N.T at $3"
+    ],
+    "roster_value_improvement": [
+      "Three TEs rostered (Okonkwo, Taylor, Dulcich) and Kendre Miller (nfl_team FA) is a dead spot"
+    ]
+  },
+  "result": {
+    "james_points": 130.92,
+    "opponent": "SHOWSTOPPERS (BE3)",
+    "opponent_points": 113.08,
+    "outcome": "WIN",
+    "record_after": "4-5-0",
+    "margin": 17.84,
+    "source": "data/espn_api/latest.json last_week (observed 2026-11-10T15:45:38Z) + BE3 points_for delta vs data/espn_api/2026-11-09T2125Z.json (888.24 to 1001.32)"
+  },
+  "week_grade": "B",
+  "lineup_efficiency": {
+    "starter_points": 130.92,
+    "optimal_points": 143.52,
+    "points_left_on_bench": 12.6,
+    "efficiency_pct": 91.2,
+    "optimal_lineup": "QB Willis 3.82; RB Bijan 28.7 / K. Mitchell 9.7; WR Lamb 37.5 / Burden 22.7; TE Okonkwo 11.7; FLEX McMillan 15.6 / Sampson 7.8; D/ST Saints 6.0",
+    "biggest_misses": [
+      "Okonkwo 11.7 on the bench vs Dulcich 3.4 (-8.3)",
+      "K. Mitchell 9.7 on the bench vs Downs 5.4 (-4.3)"
+    ],
+    "note": "Win by 17.84; the bench did not decide it. Lamb 37.5, Bijan 28.7 and Burden 22.7 carried a 3.82 QB."
+  },
+  "waiver_faab_results": {
+    "faab_start": 54,
+    "faab_end": 48,
+    "paid_claims": 2,
+    "moves": [
+      "Dulcich for Geno Smith $3 (followed, bid $1 over rec) -> started, 3.4",
+      "Saints D/ST for Commanders D/ST $3 (followed, bid $1 over rec) -> started, 6.0"
+    ],
+    "failed_claims": "None"
+  },
+  "advice_followed": {
+    "followed": 3,
+    "overrode_partially": 0,
+    "ignored": 3,
+    "detail": "Both claims and the Saturday lineup were followed (claims at $3 instead of $2). The three 'ignored' are superseded earlier versions. The Sunday Pickens trigger (Flournoy for Downs) was not executed."
+  },
+  "nfl_pulse_performance": {
+    "pulses_considered": 3,
+    "pulses_used": 0,
+    "pulses_rejected": 0,
+    "actions_changed_by_pulse": 0,
+    "successful_changed_actions": 0,
+    "unsuccessful_changed_actions": 0,
+    "average_information_lead_time_minutes": null,
+    "highly_useful": 0,
+    "useful": 0,
+    "misleading": 0,
+    "late": 0,
+    "category_source_performance": {},
+    "note": "Pulse runs 11/7-11/8 reported no change; no Week 9 decision recorded Pulse lineage. Post-week Pulse (Darnold OUT W10, Burden concussion, Willis groin) matters for Week 10."
+  },
+  "season_trend": {
+    "reviewed_decisions": 22,
+    "claude": {
+      "count": 16,
+      "avg_outcome": 1.94,
+      "avg_process": 2.62,
+      "success_rate": 0.25
+    },
+    "prime": {
+      "count": 6,
+      "avg_outcome": 2.5,
+      "avg_process": 3.0,
+      "success_rate": 0.5
+    },
+    "team": "4-5-0, 1095.02 PF (8th of 12 in PF)",
+    "note": "Claude's decision grades fell again (outcome 2.2 -> 1.94, process 2.9 -> 2.62) even in a win; the team result improved."
+  }
+}

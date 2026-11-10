@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-07T10:24:17-05:00",
+  "generated_at": "2026-11-10T10:48:06-05:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
   "total_decisions": 22,
-  "reviewed_decisions": 16,
-  "pending_decisions": 6,
+  "reviewed_decisions": 22,
+  "pending_decisions": 0,
   "wins": 7,
-  "losses": 2,
-  "neutral": 7,
+  "losses": 5,
+  "neutral": 10,
   "outcome_grade_distribution": {
     "B": 7,
-    "C": 7,
-    "D": 2
+    "C": 10,
+    "D": 5
   },
   "process_grade_distribution": {
     "A": 1,
-    "B": 13,
-    "C": 2
+    "B": 14,
+    "C": 7
   },
   "confidence_calibration": {
     "1": {
@@ -29,17 +29,17 @@
     },
     "2": {
       "count": 8,
-      "success_rate": 0.4,
-      "average_outcome_grade": 2.4,
-      "average_process_grade": 2.8,
-      "reviewed_count": 5
+      "success_rate": 0.25,
+      "average_outcome_grade": 2.125,
+      "average_process_grade": 2.5,
+      "reviewed_count": 8
     },
     "3": {
       "count": 9,
-      "success_rate": 0.333,
-      "average_outcome_grade": 2.0,
-      "average_process_grade": 3.0,
-      "reviewed_count": 6
+      "success_rate": 0.222,
+      "average_outcome_grade": 1.778,
+      "average_process_grade": 2.778,
+      "reviewed_count": 9
     },
     "4": {
       "count": 5,
@@ -59,10 +59,10 @@
   "decision_type_performance": {
     "ADD": {
       "count": 7,
-      "success_rate": 0.2,
-      "average_outcome_grade": 2.0,
-      "average_process_grade": 2.8,
-      "reviewed_count": 5
+      "success_rate": 0.143,
+      "average_outcome_grade": 1.714,
+      "average_process_grade": 2.571,
+      "reviewed_count": 7
     },
     "INJURY_CONTINGENCY": {
       "count": 6,
@@ -73,17 +73,17 @@
     },
     "START_SIT": {
       "count": 7,
-      "success_rate": 0.5,
-      "average_outcome_grade": 2.25,
-      "average_process_grade": 3.0,
-      "reviewed_count": 4
+      "success_rate": 0.286,
+      "average_outcome_grade": 2.143,
+      "average_process_grade": 2.571,
+      "reviewed_count": 7
     },
     "STREAM": {
       "count": 2,
-      "success_rate": 1.0,
-      "average_outcome_grade": 3.0,
+      "success_rate": 0.5,
+      "average_outcome_grade": 2.0,
       "average_process_grade": 3.0,
-      "reviewed_count": 1
+      "reviewed_count": 2
     }
   },
   "signal_performance": {
@@ -119,91 +119,91 @@
     },
     "Best D/ST in the pool on both ESPN and FantasyPros": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Best TE matchup of the week": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Big favorite: Sampson's PPR passing-down role is the steadier floor vs the defense allowing the most RB points": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Cheap, low-demand player; Mitchell is the weakest RB": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Commanders face the Rams and rank DST23": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "D/ST claims cost $1-$3 in Mongo": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "DAL allows 35.8 WR points per game": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "DET allows the most TE points (27.9/game, Data Suite)": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Downs gets the best WR matchup on the roster": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -219,11 +219,11 @@
     },
     "Downs leads Flournoy on averaged ESPN/FP; Flournoy only clearly better if Pickens sits": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -319,31 +319,31 @@
     },
     "Mason Taylor left Week 8 with a leg injury, status unknown": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Matchup-driven QB/TE calls from points-allowed data": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "McCaffrey has no designation, which was the Tuesday trigger for Black; plan said Sampson otherwise": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -379,11 +379,11 @@
     },
     "NO allows the most RB points; Sampson had 6-62 in Week 8": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -409,11 +409,11 @@
     },
     "QB pool is flooded, RB is not: Geno costs nothing to lose": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -439,11 +439,11 @@
     },
     "Taylor injury creates TE risk": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 1.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 1.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -459,11 +459,11 @@
     },
     "Willis top of two near-tied QBs vs the defense allowing the most QB points": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -719,28 +719,29 @@
     }
   },
   "major_error_counts": {
-    "PROCESS_GOOD_VARIANCE_BAD": 2,
+    "MATCHUP_OVERWEIGHTED": 5,
+    "PROCESS_GOOD_VARIANCE_BAD": 3,
+    "FAAB_OVERPAY": 2,
+    "START_SIT_ERROR": 2,
     "INJURY_MISREAD": 1,
-    "NEWS_REACTION_TOO_SLOW": 1,
-    "FAAB_OVERPAY": 1,
-    "START_SIT_ERROR": 1
+    "NEWS_REACTION_TOO_SLOW": 1
   },
   "timing_failures": 1,
   "data_quality_failures": 0,
   "user_action_performance": {
     "followed": {
-      "count": 12,
-      "success_rate": 0.5,
-      "average_outcome_grade": 2.5,
-      "average_process_grade": 3.0,
-      "reviewed_count": 12
+      "count": 15,
+      "success_rate": 0.4,
+      "average_outcome_grade": 2.267,
+      "average_process_grade": 2.867,
+      "reviewed_count": 15
     },
     "ignored": {
-      "count": 1,
-      "success_rate": 1.0,
-      "average_outcome_grade": 3.0,
-      "average_process_grade": 3.0,
-      "reviewed_count": 1
+      "count": 4,
+      "success_rate": 0.25,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 2.25,
+      "reviewed_count": 4
     },
     "overrode": {
       "count": 3,
@@ -751,13 +752,13 @@
     }
   },
   "mongo_outcome_metrics": {
-    "reviewed_decisions": 16,
-    "actual_acquisitions": 5,
+    "reviewed_decisions": 22,
+    "actual_acquisitions": 8,
     "tracked_value_count": {
-      "recommended_faab": 6,
-      "actual_faab_cost": 6,
-      "winning_faab": 2,
-      "next_highest_bid": 2,
+      "recommended_faab": 9,
+      "actual_faab_cost": 8,
+      "winning_faab": 4,
+      "next_highest_bid": 3,
       "faab_saved_or_overspent": 0,
       "points_added_above_replacement": 1,
       "starter_bench_differential": 0,
@@ -765,10 +766,10 @@
       "roster_value_improvement": 0
     },
     "averages": {
-      "recommended_faab": 2.167,
-      "actual_faab_cost": 1.333,
-      "winning_faab": 8.0,
-      "next_highest_bid": 4.0,
+      "recommended_faab": 2.111,
+      "actual_faab_cost": 1.75,
+      "winning_faab": 5.5,
+      "next_highest_bid": 3.0,
       "faab_saved_or_overspent": null,
       "points_added_above_replacement": 0.0,
       "starter_bench_differential": null,
@@ -854,10 +855,10 @@
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
       "count": 16,
-      "success_rate": 0.4,
-      "average_outcome_grade": 2.2,
-      "average_process_grade": 2.9,
-      "reviewed_count": 10
+      "success_rate": 0.25,
+      "average_outcome_grade": 1.938,
+      "average_process_grade": 2.625,
+      "reviewed_count": 16
     },
     "PRIME_MONGO_FANTASY_WATCH": {
       "count": 6,
