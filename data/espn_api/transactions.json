@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-10T18:38:25Z",
+ "observed_at": "2026-11-10T20:29:48Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
   "FREEAGENT": 114,
   "FUTURE_ROSTER": 37,
-  "ROSTER": 443,
+  "ROSTER": 447,
   "TRADE_PROPOSAL": 4,
   "WAIVER": 190
  },
@@ -3891,7 +3891,7 @@
      "espn_id": "14880",
      "name": "Kirk Cousins",
      "position": "QB",
-     "nfl_team": "LV",
+     "nfl_team": "MIN",
      "from_team_id": 0,
      "to_team_id": 7
     }
@@ -5579,7 +5579,7 @@
      "espn_id": "14880",
      "name": "Kirk Cousins",
      "position": "QB",
-     "nfl_team": "LV",
+     "nfl_team": "MIN",
      "from_team_id": 0,
      "to_team_id": 4
     }
@@ -7310,7 +7310,7 @@
      "espn_id": "14880",
      "name": "Kirk Cousins",
      "position": "QB",
-     "nfl_team": "LV",
+     "nfl_team": "MIN",
      "from_team_id": 4,
      "to_team_id": 0
     }
@@ -7523,7 +7523,7 @@
      "espn_id": "14880",
      "name": "Kirk Cousins",
      "position": "QB",
-     "nfl_team": "LV",
+     "nfl_team": "MIN",
      "from_team_id": 0,
      "to_team_id": 1
     }
@@ -7694,7 +7694,7 @@
      "espn_id": "14880",
      "name": "Kirk Cousins",
      "position": "QB",
-     "nfl_team": "LV",
+     "nfl_team": "MIN",
      "from_team_id": 1,
      "to_team_id": 0
     }
@@ -7854,7 +7854,7 @@
      "espn_id": "14880",
      "name": "Kirk Cousins",
      "position": "QB",
-     "nfl_team": "LV",
+     "nfl_team": "MIN",
      "from_team_id": 1,
      "to_team_id": 0
     }
@@ -8751,7 +8751,7 @@
      "espn_id": "14880",
      "name": "Kirk Cousins",
      "position": "QB",
-     "nfl_team": "LV",
+     "nfl_team": "MIN",
      "from_team_id": 0,
      "to_team_id": 1
     }
