@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_PENDING_INGEST",
+  "event_type": "WAIVER_ADD",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Aaron Rodgers",
+  "nfl_team": "PIT",
+  "position": "QB",
+  "espn_id": "8439",
+  "faab_amount": 2,
+  "dropped_player": null,
+  "dropped_nfl_team": null,
+  "dropped_position": null,
+  "observed_at": "2026-11-11T08:51:38Z",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "WAIVER_ADD",
+    "added": "Aaron Rodgers",
+    "dropped": null,
+    "calendar_day_ET": "2026-11-11",
+    "faab_amount": 2
+  },
+  "sources": [
+    {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction c20d5231-08f8-488e-810f-4bcb0bb4a1ed WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Aaron Rodgers, PIT QB from Waivers for $2."
+    }
+  ],
+  "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+}

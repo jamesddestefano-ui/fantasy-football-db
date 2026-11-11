@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_PENDING_INGEST",
+  "event_type": "WAIVER_ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Fernando Mendoza",
+  "nfl_team": "LV",
+  "position": "QB",
+  "espn_id": "4837248",
+  "faab_amount": 10,
+  "dropped_player": "Mason Taylor",
+  "dropped_nfl_team": "NYJ",
+  "dropped_position": "TE",
+  "observed_at": "2026-11-11T08:51:38Z",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "WAIVER_ADD_DROP",
+    "added": "Fernando Mendoza",
+    "dropped": "Mason Taylor",
+    "calendar_day_ET": "2026-11-11",
+    "faab_amount": 10
+  },
+  "sources": [
+    {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 972f999c-635e-4323-b77a-ccb8eeacbc35 WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Fernando Mendoza, LV QB from Waivers for $10; dropped Mason Taylor, NYJ TE."
+    }
+  ],
+  "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+}

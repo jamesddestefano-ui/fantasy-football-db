@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_PENDING_INGEST",
+  "event_type": "WAIVER_ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Pat Freiermuth",
+  "nfl_team": "PIT",
+  "position": "TE",
+  "espn_id": "4361411",
+  "faab_amount": 1,
+  "dropped_player": "Kendre Miller",
+  "dropped_nfl_team": "FA",
+  "dropped_position": "RB",
+  "observed_at": "2026-11-11T08:51:38Z",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "WAIVER_ADD_DROP",
+    "added": "Pat Freiermuth",
+    "dropped": "Kendre Miller",
+    "calendar_day_ET": "2026-11-11",
+    "faab_amount": 1
+  },
+  "sources": [
+    {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction da8654eb-f15a-46eb-aba9-f40eee9645d5 WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Pat Freiermuth, PIT TE from Waivers for $1; dropped Kendre Miller, FA RB."
+    }
+  ],
+  "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+}

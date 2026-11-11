@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-11-10T20:29:48Z",
+ "espn_observed_at": "2026-11-11T18:37:57Z",
  "repo_observed_at": "2026-10-28T08:11:00Z",
  "status": "NEEDS_INGEST",
  "unlogged_moves": [
@@ -318,25 +318,344 @@
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
    }
+  },
+  {
+   "transaction": {
+    "id": "04454643-4675-44ab-ab4e-f2bdfdf3151c",
+    "type": "WAIVER",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 1,
+    "scoring_period": 10,
+    "processed_at": "2026-11-11T08:51:38Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "2576925",
+      "name": "Darren Waller",
+      "position": "TE",
+      "nfl_team": "CAR",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "4596334",
+      "name": "Keaton Mitchell",
+      "position": "RB",
+      "nfl_team": "LAC",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "WAIVER_ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Darren Waller",
+    "nfl_team": "CAR",
+    "position": "TE",
+    "espn_id": "2576925",
+    "faab_amount": 1,
+    "dropped_player": "Keaton Mitchell",
+    "dropped_nfl_team": "LAC",
+    "dropped_position": "RB",
+    "observed_at": "2026-11-11T08:51:38Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "WAIVER_ADD_DROP",
+     "added": "Darren Waller",
+     "dropped": "Keaton Mitchell",
+     "calendar_day_ET": "2026-11-11",
+     "faab_amount": 1
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 04454643-4675-44ab-ab4e-f2bdfdf3151c WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Darren Waller, CAR TE from Waivers for $1; dropped Keaton Mitchell, LAC RB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
+  },
+  {
+   "transaction": {
+    "id": "54c7b0e3-55ad-4113-b8ac-2cd706e2627e",
+    "type": "WAIVER",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 3,
+    "scoring_period": 10,
+    "processed_at": "2026-11-11T08:51:38Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "-16009",
+      "name": "Packers D/ST",
+      "position": "D/ST",
+      "nfl_team": "GB",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "-16018",
+      "name": "Saints D/ST",
+      "position": "D/ST",
+      "nfl_team": "NO",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "WAIVER_ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Packers D/ST",
+    "nfl_team": "GB",
+    "position": "D/ST",
+    "espn_id": "-16009",
+    "faab_amount": 3,
+    "dropped_player": "Saints D/ST",
+    "dropped_nfl_team": "NO",
+    "dropped_position": "D/ST",
+    "observed_at": "2026-11-11T08:51:38Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "WAIVER_ADD_DROP",
+     "added": "Packers D/ST",
+     "dropped": "Saints D/ST",
+     "calendar_day_ET": "2026-11-11",
+     "faab_amount": 3
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 54c7b0e3-55ad-4113-b8ac-2cd706e2627e WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Packers D/ST, GB D/ST from Waivers for $3; dropped Saints D/ST, NO D/ST."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
+  },
+  {
+   "transaction": {
+    "id": "972f999c-635e-4323-b77a-ccb8eeacbc35",
+    "type": "WAIVER",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 10,
+    "scoring_period": 10,
+    "processed_at": "2026-11-11T08:51:38Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "4837248",
+      "name": "Fernando Mendoza",
+      "position": "QB",
+      "nfl_team": "LV",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "4808766",
+      "name": "Mason Taylor",
+      "position": "TE",
+      "nfl_team": "NYJ",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "WAIVER_ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Fernando Mendoza",
+    "nfl_team": "LV",
+    "position": "QB",
+    "espn_id": "4837248",
+    "faab_amount": 10,
+    "dropped_player": "Mason Taylor",
+    "dropped_nfl_team": "NYJ",
+    "dropped_position": "TE",
+    "observed_at": "2026-11-11T08:51:38Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "WAIVER_ADD_DROP",
+     "added": "Fernando Mendoza",
+     "dropped": "Mason Taylor",
+     "calendar_day_ET": "2026-11-11",
+     "faab_amount": 10
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 972f999c-635e-4323-b77a-ccb8eeacbc35 WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Fernando Mendoza, LV QB from Waivers for $10; dropped Mason Taylor, NYJ TE."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
+  },
+  {
+   "transaction": {
+    "id": "c20d5231-08f8-488e-810f-4bcb0bb4a1ed",
+    "type": "WAIVER",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 2,
+    "scoring_period": 10,
+    "processed_at": "2026-11-11T08:51:38Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "8439",
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "nfl_team": "PIT",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": []
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "WAIVER_ADD",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Aaron Rodgers",
+    "nfl_team": "PIT",
+    "position": "QB",
+    "espn_id": "8439",
+    "faab_amount": 2,
+    "dropped_player": null,
+    "dropped_nfl_team": null,
+    "dropped_position": null,
+    "observed_at": "2026-11-11T08:51:38Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "WAIVER_ADD",
+     "added": "Aaron Rodgers",
+     "dropped": null,
+     "calendar_day_ET": "2026-11-11",
+     "faab_amount": 2
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction c20d5231-08f8-488e-810f-4bcb0bb4a1ed WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Aaron Rodgers, PIT QB from Waivers for $2."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
+  },
+  {
+   "transaction": {
+    "id": "da8654eb-f15a-46eb-aba9-f40eee9645d5",
+    "type": "WAIVER",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 1,
+    "scoring_period": 10,
+    "processed_at": "2026-11-11T08:51:38Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "4361411",
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "nfl_team": "PIT",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "4599739",
+      "name": "Kendre Miller",
+      "position": "RB",
+      "nfl_team": "FA",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "WAIVER_ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Pat Freiermuth",
+    "nfl_team": "PIT",
+    "position": "TE",
+    "espn_id": "4361411",
+    "faab_amount": 1,
+    "dropped_player": "Kendre Miller",
+    "dropped_nfl_team": "FA",
+    "dropped_position": "RB",
+    "observed_at": "2026-11-11T08:51:38Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "WAIVER_ADD_DROP",
+     "added": "Pat Freiermuth",
+     "dropped": "Kendre Miller",
+     "calendar_day_ET": "2026-11-11",
+     "faab_amount": 1
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction da8654eb-f15a-46eb-aba9-f40eee9645d5 WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Pat Freiermuth, PIT TE from Waivers for $1; dropped Kendre Miller, FA RB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
   }
  ],
  "roster_diff": {
   "on_espn_not_in_repo": [
+   "Aaron Rodgers",
+   "Darren Waller",
+   "Fernando Mendoza",
    "Greg Dulcich",
-   "Malik Willis",
-   "Mason Taylor",
-   "Saints D/ST"
+   "Packers D/ST",
+   "Pat Freiermuth"
   ],
   "in_repo_not_on_espn": [
    "Bam Knight",
    "Commanders D/ST",
    "J.J. McCarthy",
+   "Keaton Mitchell",
+   "Kendre Miller",
    "Kyler Murray"
   ]
  },
  "faab": {
-  "espn": 48,
+  "espn": 31,
   "repository": 54.0
  },
- "transactions_checked": 305
+ "transactions_checked": 328
 }
