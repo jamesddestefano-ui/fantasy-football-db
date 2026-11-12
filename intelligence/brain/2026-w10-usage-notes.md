@@ -7,7 +7,7 @@ XFP/G = expected fantasy points per game from usage. FP/G = actual points per ga
 
 ## Correction: this is the Week 10 file
 ESPN scoring period 10 is Week 10 (games Thu Nov 12 to Mon Nov 16).
-Byes this week: CHI (Burden) and SEA (Darnold).
+Week 10 byes on James's roster: CHI (Burden). Darnold projects 0 because he is OUT (injury); SEA plays at LV in Week 10 and has its bye in Week 11.
 
 ## Week 10 lineup verdicts
 
