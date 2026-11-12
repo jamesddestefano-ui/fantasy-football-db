@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_PENDING_INGEST",
+  "event_type": "ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Roschon Johnson",
+  "nfl_team": "CHI",
+  "position": "RB",
+  "espn_id": "4426386",
+  "faab_amount": 0,
+  "dropped_player": "Darren Waller",
+  "dropped_nfl_team": "CAR",
+  "dropped_position": "TE",
+  "observed_at": "2026-11-12T02:12:39Z",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "ADD_DROP",
+    "added": "Roschon Johnson",
+    "dropped": "Darren Waller",
+    "calendar_day_ET": "2026-11-11",
+    "faab_amount": 0
+  },
+  "sources": [
+    {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction bc132c0c-3f95-43c3-ab22-8449657a78e2 FREEAGENT EXECUTED processed Wed Nov 11, 9:12 PM ET: added Roschon Johnson, CHI RB; dropped Darren Waller, CAR TE."
+    }
+  ],
+  "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+}

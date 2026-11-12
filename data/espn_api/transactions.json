@@ -1,15 +1,15 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-11T18:37:57Z",
+ "observed_at": "2026-11-12T18:51:02Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 117,
+  "FREEAGENT": 121,
   "FUTURE_ROSTER": 37,
-  "ROSTER": 463,
+  "ROSTER": 474,
   "TRADE_PROPOSAL": 4,
-  "WAIVER": 210
+  "WAIVER": 211
  },
  "transactions": [
   {
@@ -10177,6 +10177,146 @@
      "to_team_id": 0
     }
    ]
+  },
+  {
+   "id": "b981a539-ca28-46fb-b949-7e11ec220d74",
+   "type": "WAIVER",
+   "status": "CANCELED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 10,
+   "processed_at": "2026-11-11T22:26:14Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16015",
+     "name": "Dolphins D/ST",
+     "position": "D/ST",
+     "nfl_team": "MIA",
+     "from_team_id": 5,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "ba72b7aa-ba67-4204-832b-35e255ad6ff5",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 8,
+   "team": "DeVonta Be Kidding Me",
+   "bid": 0,
+   "scoring_period": 10,
+   "processed_at": "2026-11-11T23:46:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3915411",
+     "name": "Ty Johnson",
+     "position": "RB",
+     "nfl_team": "BUF",
+     "from_team_id": 0,
+     "to_team_id": 8
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "4483ecbc-44cf-4cb8-bdf4-0ebfadc15cd1",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 10,
+   "processed_at": "2026-11-12T01:22:09Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4242557",
+     "name": "Colby Parkinson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4569559",
+     "name": "Devaughn Vele",
+     "position": "WR",
+     "nfl_team": "NO",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "bc132c0c-3f95-43c3-ab22-8449657a78e2",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 0,
+   "scoring_period": 10,
+   "processed_at": "2026-11-12T02:12:39Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4426386",
+     "name": "Roschon Johnson",
+     "position": "RB",
+     "nfl_team": "CHI",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "2576925",
+     "name": "Darren Waller",
+     "position": "TE",
+     "nfl_team": "CAR",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "aa3b78f7-007d-4eff-a541-1c2e5ed43142",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 0,
+   "scoring_period": 10,
+   "processed_at": "2026-11-12T05:39:04Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "2576925",
+     "name": "Darren Waller",
+     "position": "TE",
+     "nfl_team": "CAR",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": []
   }
  ]
 }

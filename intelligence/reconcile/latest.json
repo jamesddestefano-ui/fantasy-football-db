@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-11-11T18:37:57Z",
+ "espn_observed_at": "2026-11-12T18:51:02Z",
  "repo_observed_at": "2026-10-28T08:11:00Z",
  "status": "NEEDS_INGEST",
  "unlogged_moves": [
@@ -633,16 +633,81 @@
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
    }
+  },
+  {
+   "transaction": {
+    "id": "bc132c0c-3f95-43c3-ab22-8449657a78e2",
+    "type": "FREEAGENT",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 0,
+    "scoring_period": 10,
+    "processed_at": "2026-11-12T02:12:39Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "4426386",
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "nfl_team": "CHI",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "2576925",
+      "name": "Darren Waller",
+      "position": "TE",
+      "nfl_team": "CAR",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Roschon Johnson",
+    "nfl_team": "CHI",
+    "position": "RB",
+    "espn_id": "4426386",
+    "faab_amount": 0,
+    "dropped_player": "Darren Waller",
+    "dropped_nfl_team": "CAR",
+    "dropped_position": "TE",
+    "observed_at": "2026-11-12T02:12:39Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "ADD_DROP",
+     "added": "Roschon Johnson",
+     "dropped": "Darren Waller",
+     "calendar_day_ET": "2026-11-11",
+     "faab_amount": 0
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction bc132c0c-3f95-43c3-ab22-8449657a78e2 FREEAGENT EXECUTED processed Wed Nov 11, 9:12 PM ET: added Roschon Johnson, CHI RB; dropped Darren Waller, CAR TE."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
   }
  ],
  "roster_diff": {
   "on_espn_not_in_repo": [
    "Aaron Rodgers",
-   "Darren Waller",
    "Fernando Mendoza",
    "Greg Dulcich",
    "Packers D/ST",
-   "Pat Freiermuth"
+   "Pat Freiermuth",
+   "Roschon Johnson"
   ],
   "in_repo_not_on_espn": [
    "Bam Knight",
@@ -657,5 +722,5 @@
   "espn": 31,
   "repository": 54.0
  },
- "transactions_checked": 328
+ "transactions_checked": 333
 }

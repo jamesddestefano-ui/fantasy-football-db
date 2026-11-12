@@ -1,6 +1,6 @@
 # Mongo reconciliation — NEEDS_INGEST
 
-ESPN 2026-11-11T18:37:57Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 328.
+ESPN 2026-11-12T18:51:02Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 333.
 
 ## Completed on ESPN, not in the repository
 
@@ -14,10 +14,11 @@ ESPN 2026-11-11T18:37:57Z vs repository (newest import 2026-10-28T08:11:00Z). Tr
 - 2026-11-11T08:51:38Z WAIVER +Fernando Mendoza, -Mason Taylor ($10)
 - 2026-11-11T08:51:38Z WAIVER +Aaron Rodgers ($2)
 - 2026-11-11T08:51:38Z WAIVER +Pat Freiermuth, -Kendre Miller ($1)
+- 2026-11-12T02:12:39Z FREEAGENT +Roschon Johnson, -Darren Waller
 
 ## Roster differences
 
-- On ESPN, not in repo: Aaron Rodgers, Darren Waller, Fernando Mendoza, Greg Dulcich, Packers D/ST, Pat Freiermuth
+- On ESPN, not in repo: Aaron Rodgers, Fernando Mendoza, Greg Dulcich, Packers D/ST, Pat Freiermuth, Roschon Johnson
 - In repo, not on ESPN: Bam Knight, Commanders D/ST, J.J. McCarthy, Keaton Mitchell, Kendre Miller, Kyler Murray
 
 FAAB: ESPN $31 · repository $54.0
