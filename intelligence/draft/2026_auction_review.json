@@ -1,7 +1,7 @@
 {
  "league": "mongo",
  "season": 2026,
- "observed_at": "2026-11-12T18:51:05Z",
+ "observed_at": "2026-11-13T18:29:17Z",
  "kind": "INTELLIGENCE_AUCTION_REVIEW_FOR_NEXT_DRAFT",
  "auction_budget": 200,
  "by_position": {
@@ -10,7 +10,7 @@
    "total_spent": 128,
    "median_price": 4.5,
    "max_price": 26,
-   "median_points": 166.4,
+   "median_points": 169.0,
    "tiers": {
     "$30+": {
      "count": 0,
@@ -145,12 +145,12 @@
    "nominated_by": "Bills Mafia",
    "keeper": false,
    "season_points": 102.7,
-   "season_proj": 104.86,
+   "season_proj": 104.85,
    "pts_per_dollar": 102.7,
    "price_rank": 61,
-   "points_rank": 21,
-   "rank_gain": 40,
-   "value_label": "paid like WR61, scored like WR21"
+   "points_rank": 22,
+   "rank_gain": 39,
+   "value_label": "paid like WR61, scored like WR22"
   },
   {
    "pick": 155,
@@ -233,26 +233,6 @@
    "value_label": "paid like WR60, scored like WR31"
   },
   {
-   "pick": 133,
-   "espn_id": "4373626",
-   "name": "Tyler Allgeier",
-   "position": "RB",
-   "nfl_team": "ARI",
-   "team_id": 1,
-   "team": "I Loveland Rice Krispies",
-   "abbrev": "AAGD",
-   "price": 1,
-   "nominated_by": "$Cmoney$",
-   "keeper": false,
-   "season_points": 92.7,
-   "season_proj": 70.74,
-   "pts_per_dollar": 92.7,
-   "price_rank": 49,
-   "points_rank": 21,
-   "rank_gain": 28,
-   "value_label": "paid like RB49, scored like RB21"
-  },
-  {
    "pick": 179,
    "espn_id": "4832955",
    "name": "Emmett Johnson",
@@ -273,6 +253,26 @@
    "value_label": "paid like RB61, scored like RB33"
   },
   {
+   "pick": 133,
+   "espn_id": "4373626",
+   "name": "Tyler Allgeier",
+   "position": "RB",
+   "nfl_team": "ARI",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "abbrev": "AAGD",
+   "price": 1,
+   "nominated_by": "$Cmoney$",
+   "keeper": false,
+   "season_points": 92.7,
+   "season_proj": 70.74,
+   "pts_per_dollar": 92.7,
+   "price_rank": 49,
+   "points_rank": 22,
+   "rank_gain": 27,
+   "value_label": "paid like RB49, scored like RB22"
+  },
+  {
    "pick": 181,
    "espn_id": "4429022",
    "name": "Kayshon Boutte",
@@ -285,12 +285,32 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 64.9,
-   "season_proj": 48.28,
+   "season_proj": 48.29,
    "pts_per_dollar": 64.9,
    "price_rank": 69,
    "points_rank": 42,
    "rank_gain": 27,
    "value_label": "paid like WR69, scored like WR42"
+  },
+  {
+   "pick": 97,
+   "espn_id": "2976212",
+   "name": "Stefon Diggs",
+   "position": "WR",
+   "nfl_team": "WAS",
+   "team_id": 4,
+   "team": "You're a JaGoff",
+   "abbrev": "PbP",
+   "price": 4,
+   "nominated_by": "$Cmoney$",
+   "keeper": false,
+   "season_points": 110.6,
+   "season_proj": 104.09,
+   "pts_per_dollar": 27.65,
+   "price_rank": 43,
+   "points_rank": 18,
+   "rank_gain": 25,
+   "value_label": "paid like WR43, scored like WR18"
   },
   {
    "pick": 164,
@@ -305,7 +325,7 @@
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
    "season_points": 62.9,
-   "season_proj": 139.17,
+   "season_proj": 139.16,
    "pts_per_dollar": 62.9,
    "price_rank": 57,
    "points_rank": 32,
@@ -351,26 +371,6 @@
    "points_rank": 28,
    "rank_gain": 24,
    "value_label": "paid like WR52, scored like WR28"
-  },
-  {
-   "pick": 100,
-   "espn_id": "4241416",
-   "name": "Chuba Hubbard",
-   "position": "RB",
-   "nfl_team": "CAR",
-   "team_id": 10,
-   "team": "Bills Mafia",
-   "abbrev": "BM",
-   "price": 6,
-   "nominated_by": "You're a JaGoff",
-   "keeper": false,
-   "season_points": 150.6,
-   "season_proj": 175.1,
-   "pts_per_dollar": 25.1,
-   "price_rank": 35,
-   "points_rank": 12,
-   "rank_gain": 23,
-   "value_label": "paid like RB35, scored like RB12"
   }
  ],
  "worst_buys": [
@@ -387,7 +387,7 @@
    "nominated_by": "You're a JaGoff",
    "keeper": false,
    "season_points": 19.1,
-   "season_proj": 98.43,
+   "season_proj": 111.42,
    "pts_per_dollar": 0.43,
    "price_rank": 6,
    "points_rank": 61,
@@ -487,7 +487,7 @@
    "nominated_by": "$Cmoney$",
    "keeper": false,
    "season_points": 66.2,
-   "season_proj": 119.07,
+   "season_proj": 119.06,
    "pts_per_dollar": 2.07,
    "price_rank": 13,
    "points_rank": 41,
@@ -507,7 +507,7 @@
    "nominated_by": "DeVonta Be Kidding Me",
    "keeper": false,
    "season_points": 58.7,
-   "season_proj": 111.83,
+   "season_proj": 111.82,
    "pts_per_dollar": 1.33,
    "price_rank": 9,
    "points_rank": 36,
@@ -668,7 +668,7 @@
    "one_dollar_players": 2,
    "most_expensive": "James Cook III",
    "most_expensive_price": 47,
-   "season_points_drafted": 1617.5
+   "season_points_drafted": 1644.3
   },
   {
    "team_id": 1,
@@ -689,24 +689,6 @@
    "season_points_drafted": 1511.8
   },
   {
-   "team_id": 4,
-   "team": "You're a JaGoff",
-   "abbrev": "PbP",
-   "spent": 200,
-   "position_split": {
-    "QB": 4,
-    "RB": 79,
-    "WR": 111,
-    "TE": 4,
-    "D/ST": 2
-   },
-   "top3_share": 0.6,
-   "one_dollar_players": 7,
-   "most_expensive": "Jonathan Taylor",
-   "most_expensive_price": 50,
-   "season_points_drafted": 1419.9
-  },
-  {
    "team_id": 5,
    "team": "Horton",
    "abbrev": "CCT",
@@ -722,7 +704,25 @@
    "one_dollar_players": 7,
    "most_expensive": "Kenneth Walker III",
    "most_expensive_price": 39,
-   "season_points_drafted": 1409.3
+   "season_points_drafted": 1475.4
+  },
+  {
+   "team_id": 4,
+   "team": "You're a JaGoff",
+   "abbrev": "PbP",
+   "spent": 200,
+   "position_split": {
+    "QB": 4,
+    "RB": 79,
+    "WR": 111,
+    "TE": 4,
+    "D/ST": 2
+   },
+   "top3_share": 0.6,
+   "one_dollar_players": 7,
+   "most_expensive": "Jonathan Taylor",
+   "most_expensive_price": 50,
+   "season_points_drafted": 1440.2
   },
   {
    "team_id": 10,
@@ -776,7 +776,7 @@
    "one_dollar_players": 3,
    "most_expensive": "Jahmyr Gibbs",
    "most_expensive_price": 67,
-   "season_points_drafted": 1228.1
+   "season_points_drafted": 1234.3
   },
   {
    "team_id": 2,
@@ -830,7 +830,7 @@
    "one_dollar_players": 5,
    "most_expensive": "A.J. Brown",
    "most_expensive_price": 44,
-   "season_points_drafted": 1132.0
+   "season_points_drafted": 1141.4
   }
  ],
  "james": {
@@ -949,9 +949,9 @@
     "season_proj": 122.06,
     "pts_per_dollar": 14.23,
     "price_rank": 29,
-    "points_rank": 10,
-    "rank_gain": 19,
-    "value_label": "paid like WR29, scored like WR10"
+    "points_rank": 11,
+    "rank_gain": 18,
+    "value_label": "paid like WR29, scored like WR11"
    },
    {
     "pick": 76,
@@ -1066,7 +1066,7 @@
     "nominated_by": "You're a JaGoff",
     "keeper": false,
     "season_points": 65.0,
-    "season_proj": 62.99,
+    "season_proj": 63.02,
     "pts_per_dollar": 65.0,
     "price_rank": 10,
     "points_rank": 7,
@@ -1146,7 +1146,7 @@
     "nominated_by": "SHOWSTOPPERS",
     "keeper": false,
     "season_points": 40.6,
-    "season_proj": 8.55,
+    "season_proj": 8.88,
     "pts_per_dollar": 40.6,
     "price_rank": 59,
     "points_rank": 47,
@@ -1166,7 +1166,7 @@
     "nominated_by": "$Cmoney$",
     "keeper": false,
     "season_points": 64.9,
-    "season_proj": 48.28,
+    "season_proj": 48.29,
     "pts_per_dollar": 64.9,
     "price_rank": 69,
     "points_rank": 42,
