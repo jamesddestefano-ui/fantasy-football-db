@@ -1,0 +1,965 @@
+{
+ "note": "Extra Data Suite 2.0 exports from the same session, bytes unchanged. Not labelled B23 inputs and not read by fp.loader (it reads MANIFEST.json only). Descriptive use only. Files without exported_utc are report exports that carry no Data Suite footer; their export time is the session window above.",
+ "received_utc": "2026-11-14T01:08Z",
+ "files": [
+  {
+   "file": "FP_100_splits_QB_man_zone_beaters_2026.csv",
+   "source_filename": "FP_100_splits_QB_man_zone_beaters_2026.csv",
+   "exported_utc": "2026-11-14T00:33Z",
+   "lines": 35,
+   "sha256": "b7d20f5750d1729a5b069d97300e252613fb6d9d8eb9c3ad1925bbc12f5ab685"
+  },
+  {
+   "file": "FP_100_weekly_receiving_air_yards_share_2026.csv",
+   "source_filename": "FP_100_weekly_receiving_air_yards_share_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "339c04b439158924aaf5d60917374426ccaf65f73023a900c94353c30fd6418a"
+  },
+  {
+   "file": "FP_101_splits_WR_man_zone_beaters_2026.csv",
+   "source_filename": "FP_101_splits_WR_man_zone_beaters_2026.csv",
+   "exported_utc": "2026-11-14T00:33Z",
+   "lines": 65,
+   "sha256": "a27f194b90a9a2fe08b03c8650e55307f8deba130777ae49849368806f814be4"
+  },
+  {
+   "file": "FP_101_weekly_receiving_receptions_2026.csv",
+   "source_filename": "FP_101_weekly_receiving_receptions_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "3c2611f43b5568e8bec53d85a8e6eff99b8527505d2caf4fb7b1264a3fbee68f"
+  },
+  {
+   "file": "FP_102_splits_TE_man_zone_beaters_2026.csv",
+   "source_filename": "FP_102_splits_TE_man_zone_beaters_2026.csv",
+   "exported_utc": "2026-11-14T00:33Z",
+   "lines": 25,
+   "sha256": "641eec95f53476828e8f6c9dbb43ee8a444290ce1521bc66deee57698c641af3"
+  },
+  {
+   "file": "FP_102_weekly_receiving_yards_2026.csv",
+   "source_filename": "FP_102_weekly_receiving_yards_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "e03fb85f0dc090f7f888d8ef147427222e24d1777c3f6543121035989b1c4314"
+  },
+  {
+   "file": "FP_103_splits_RB_oz_iz_beaters_2026.csv",
+   "source_filename": "FP_103_splits_RB_oz_iz_beaters_2026.csv",
+   "exported_utc": "2026-11-14T00:33Z",
+   "lines": 51,
+   "sha256": "33dc984d2eb4e0783c8aaa9f71251d78a0c24026b529ecb065684e503b75db4e"
+  },
+  {
+   "file": "FP_103_weekly_receiving_td_2026.csv",
+   "source_filename": "FP_103_weekly_receiving_td_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "6a935e1f61d5547dfd2d3cf81e080d4ff2d3386524ba8f7ba64ebe1e4e1ef118"
+  },
+  {
+   "file": "FP_104_splits_QB_disguise_beaters_2026.csv",
+   "source_filename": "FP_104_splits_QB_disguise_beaters_2026.csv",
+   "exported_utc": "2026-11-14T00:34Z",
+   "lines": 38,
+   "sha256": "0f553545997cf7e412ea1a54455808e5bdb1ef07d2b80613accff966b498de8e"
+  },
+  {
+   "file": "FP_104_weekly_receiving_xtd_2026.csv",
+   "source_filename": "FP_104_weekly_receiving_xtd_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "7152169e75062d78ce766dc7bd9eea2490082802139dcc207b94b01804ea665f"
+  },
+  {
+   "file": "FP_105_splits_WR_slot_winners_2026.csv",
+   "source_filename": "FP_105_splits_WR_slot_winners_2026.csv",
+   "exported_utc": "2026-11-14T00:34Z",
+   "lines": 82,
+   "sha256": "114764575f1adbb6173c6eb7bc482ab62a80c2edea03e78d802a2265c88bb76b"
+  },
+  {
+   "file": "FP_105_weekly_receiving_i20_targets_2026.csv",
+   "source_filename": "FP_105_weekly_receiving_i20_targets_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "a5b9c26ceced532dfb9d551107dd7143e63c058ed617736dd3ee72b1fde7b960"
+  },
+  {
+   "file": "FP_106_splits_QB_blitz_proof_2026.csv",
+   "source_filename": "FP_106_splits_QB_blitz_proof_2026.csv",
+   "exported_utc": "2026-11-14T00:34Z",
+   "lines": 38,
+   "sha256": "207d1a11fc4c056cb9a23af6672927ed63f21c2431be14b9d2df864f9e413193"
+  },
+  {
+   "file": "FP_106_weekly_receiving_endzone_targets_2026.csv",
+   "source_filename": "FP_106_weekly_receiving_endzone_targets_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "80881f4c536d5fdbfe31a138a3e560ab9e170f5ae5f9a8f268dc03d83f51470e"
+  },
+  {
+   "file": "FP_107_splits_QB_pressure_2026.csv",
+   "source_filename": "FP_107_splits_QB_pressure_2026.csv",
+   "exported_utc": "2026-11-14T00:34Z",
+   "lines": 38,
+   "sha256": "4a8fa75af6b67a625ce3a31db6221c2712ca05877051f3566f383c255d51652a"
+  },
+  {
+   "file": "FP_107_weekly_rushing_att_2026.csv",
+   "source_filename": "FP_107_weekly_rushing_att_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 239,
+   "sha256": "6757eb30794b4e581e55ad5715d68e80de4b4130f35f3ff7df20346d80d6cdfa"
+  },
+  {
+   "file": "FP_108_splits_RB_stacked_box_2026.csv",
+   "source_filename": "FP_108_splits_RB_stacked_box_2026.csv",
+   "exported_utc": "2026-11-14T00:34Z",
+   "lines": 55,
+   "sha256": "6fa143993b5e56cc0046c26f54585b298c266b6eac4163b86909632003cc593f"
+  },
+  {
+   "file": "FP_108_weekly_rushing_yards_2026.csv",
+   "source_filename": "FP_108_weekly_rushing_yards_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 239,
+   "sha256": "99f016805846922e4dc737c19695bfe13dce6f78d34ccf420c8047496f17fb7c"
+  },
+  {
+   "file": "FP_109_splits_QB_play_action_2026.csv",
+   "source_filename": "FP_109_splits_QB_play_action_2026.csv",
+   "exported_utc": "2026-11-14T00:34Z",
+   "lines": 37,
+   "sha256": "fa8ebb65448d526d246b63d665b575278899a204c86ba831e13f300857a8c351"
+  },
+  {
+   "file": "FP_109_weekly_rushing_td_2026.csv",
+   "source_filename": "FP_109_weekly_rushing_td_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 239,
+   "sha256": "f18df5a22340fe0ed0a3953f78bba0c15b7526ed31ae4b26818b4789600901c4"
+  },
+  {
+   "file": "FP_110_weekly_rushing_xtd_2026.csv",
+   "source_filename": "FP_110_weekly_rushing_xtd_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 239,
+   "sha256": "a2c5fc01f6956a52d9b1d6787d96c9cef1271460b77e23824f476bebaf2396c7"
+  },
+  {
+   "file": "FP_111_weekly_rushing_touches_2026.csv",
+   "source_filename": "FP_111_weekly_rushing_touches_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 239,
+   "sha256": "a12da3515bcb2ea8ca41b6c08a1ba1f1e293c7a92a72908a4657e35d9720ee32"
+  },
+  {
+   "file": "FP_112_weekly_fp_2026.csv",
+   "source_filename": "FP_112_weekly_fp_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 560,
+   "sha256": "aa40503d9138a1aab65c30d7f0ba5a84db71eb3a0f473eaf9f94419cb15adf74"
+  },
+  {
+   "file": "FP_113_weekly_xfp_2026.csv",
+   "source_filename": "FP_113_weekly_xfp_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 560,
+   "sha256": "cbbb0ddeebb80b4e0bc890dd2b5c669b0a0d2a787e726a4f4c291cd18f41051e"
+  },
+  {
+   "file": "FP_114_weekly_passing_dropbacks_2026.csv",
+   "source_filename": "FP_114_weekly_passing_dropbacks_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 63,
+   "sha256": "2fa37b93a2f898b2cde711d2ba16939c81d3c4ffc9f358ef783db1bb4e1767c1"
+  },
+  {
+   "file": "FP_115_weekly_passing_att_2026.csv",
+   "source_filename": "FP_115_weekly_passing_att_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 63,
+   "sha256": "78ca3335268fbfac1906df822b2393d280fad657fa1991ac380d977cb0f930f8"
+  },
+  {
+   "file": "FP_116_weekly_passing_yards_2026.csv",
+   "source_filename": "FP_116_weekly_passing_yards_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 63,
+   "sha256": "334d250106f8269b3314f4a6f85d68bd6f2a1259f146fe8e736e8fd2ac56426c"
+  },
+  {
+   "file": "FP_117_weekly_passing_td_2026.csv",
+   "source_filename": "FP_117_weekly_passing_td_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 63,
+   "sha256": "b5f94cd5b6c51d0b19da855d1c96c99c69cccdac4d16d75a1b475184e78c99ea"
+  },
+  {
+   "file": "FP_119_wr_coverage_matchup_week10_2026.csv",
+   "source_filename": "FP_119_wr_coverage_matchup_week10_2026.csv",
+   "exported_utc": null,
+   "lines": 106,
+   "sha256": "13ce2176dc8f3ba5cecb9c41e8404de39132406799cc9b76badbb0dbade9a080"
+  },
+  {
+   "file": "FP_120_receiving_routes_run_season_2026.csv",
+   "source_filename": "FP_120_receiving_routes_run_season_2026.csv",
+   "exported_utc": null,
+   "lines": 484,
+   "sha256": "9b2124163e17116425ee8c4f14249cfd4df851e48767d85ff59d5e4962b51838"
+  },
+  {
+   "file": "FP_121_offense_snaps_season_2026.csv",
+   "source_filename": "FP_121_offense_snaps_season_2026 (1).csv",
+   "exported_utc": null,
+   "lines": 504,
+   "sha256": "a11f28a2630356b6a88a77477f02fbc2e024c94cd123a4240653c129d8f8ec87"
+  },
+  {
+   "file": "FP_122_team_run_pass_report_2026.csv",
+   "source_filename": "FP_122_team_run_pass_report_2026 (1).csv",
+   "exported_utc": null,
+   "lines": 32,
+   "sha256": "b2c271fa0e9c6f8057f501c27450563ebe18698f472f33b0e8b025ad1fe554be"
+  },
+  {
+   "file": "FP_123_team_line_matchups_week10_2026.csv",
+   "source_filename": "FP_123_team_line_matchups_week10_2026.csv",
+   "exported_utc": null,
+   "lines": 28,
+   "sha256": "81e9346e60b0aff05ad60e1147ceb65173b74117e51e95db01e9dfea4d877da7"
+  },
+  {
+   "file": "FP_124_fantasy_points_scored_player_season_2026.csv",
+   "source_filename": "FP_124_fantasy_points_scored_player_season_2026.csv",
+   "exported_utc": null,
+   "lines": 32,
+   "sha256": "ce49468f888be426e740ab30e2d9ac4d88870704161446d0fa534ca02c2f4960"
+  },
+  {
+   "file": "FP_125_fantasy_points_scored_team_offense_season_2026.csv",
+   "source_filename": "FP_125_fantasy_points_scored_team_offense_season_2026.csv",
+   "exported_utc": null,
+   "lines": 32,
+   "sha256": "b55f8455fec132bddda8897b00881b1818c35c417daa883bc9dd5492d55a3095"
+  },
+  {
+   "file": "FP_126_fantasy_points_scored_team_defense_season_2026.csv",
+   "source_filename": "FP_126_fantasy_points_scored_team_defense_season_2026.csv",
+   "exported_utc": null,
+   "lines": 32,
+   "sha256": "b2606855e704e5715dac35ad6d29e5985c74424b304caf3766df97aba67447f1"
+  },
+  {
+   "file": "FP_127_weekly_fpts_scored_report_2026.csv",
+   "source_filename": "FP_127_weekly_fpts_scored_report_2026.csv",
+   "exported_utc": null,
+   "lines": 69,
+   "sha256": "081b273903476b219120d3cd0e7f25af45307f472fe5bf4368fb07e7b57e117e"
+  },
+  {
+   "file": "FP_128_weekly_snap_share_report_2026.csv",
+   "source_filename": "FP_128_weekly_snap_share_report_2026.csv",
+   "exported_utc": null,
+   "lines": 518,
+   "sha256": "02ba9699bb94fc0c84f898d2cc679e8621b2c9e315e916c78ac44b91e514f5a7"
+  },
+  {
+   "file": "FP_129_weekly_route_share_report_2026.csv",
+   "source_filename": "FP_129_weekly_route_share_report_2026.csv",
+   "exported_utc": null,
+   "lines": 366,
+   "sha256": "1fa67a1b4af91d7e87c0b2d004a679121593f04111a49e82dc5ff7ee6c2bbbb2"
+  },
+  {
+   "file": "FP_130_weekly_target_share_report_2026.csv",
+   "source_filename": "FP_130_weekly_target_share_report_2026.csv",
+   "exported_utc": null,
+   "lines": 366,
+   "sha256": "b4a85b7dca12a6c77cb2f8570b8ba28d275469b3c07ced36a9c4f78d62bf94a2"
+  },
+  {
+   "file": "FP_131_weekly_proe_report_team_offense_2026.csv",
+   "source_filename": "FP_131_weekly_proe_report_team_offense_2026.csv",
+   "exported_utc": null,
+   "lines": 32,
+   "sha256": "8d44af9c6b6980b21b2bfeb896675daade6e0e80345748732c1758e7165ef098"
+  },
+  {
+   "file": "FP_132_weekly_proe_report_team_defense_2026.csv",
+   "source_filename": "FP_132_weekly_proe_report_team_defense_2026.csv",
+   "exported_utc": null,
+   "lines": 32,
+   "sha256": "ec3115f7ffd2873fe37c5547425beaa157b56a6ea830f1e8d3588923cf3d1fd0"
+  },
+  {
+   "file": "FP_16_passing_basic_QB_season_2026.csv",
+   "source_filename": "FP_16_passing_basic_QB_season_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "bb62b638c3145281d149c0f6f0a8d1564df9cc0e286d15e832d833f2dbeb7286"
+  },
+  {
+   "file": "FP_17_passing_basic_QB_last4games_2026.csv",
+   "source_filename": "FP_17_passing_basic_QB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "86e8bde546059d6f68a412706a63abe2cdf7152b9e2b16b7ccf6ce98b62bf606"
+  },
+  {
+   "file": "FP_17_passing_basic_team_offense_season_2026.csv",
+   "source_filename": "FP_17_passing_basic_team_offense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:06Z",
+   "lines": 35,
+   "sha256": "f1caa274422af22fe363685270d7e9fdb0ddc9ee49bb7a201debf9bf1b7d1800"
+  },
+  {
+   "file": "FP_18_passing_advanced_QB_season_2026.csv",
+   "source_filename": "FP_18_passing_advanced_QB_season_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "842cfb0235d416485acc0abba3434b0c0a02ddd8dbe8616c3e7bd0507e7d3e4e"
+  },
+  {
+   "file": "FP_18_passing_basic_team_defense_season_2026.csv",
+   "source_filename": "FP_18_passing_basic_team_defense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:06Z",
+   "lines": 35,
+   "sha256": "2a39d470284f09bc79184cb01a2ff261e47a038836619af8e266aea3e5909408"
+  },
+  {
+   "file": "FP_19_passing_advanced_QB_last4games_2026.csv",
+   "source_filename": "FP_19_passing_advanced_QB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "6b79e2078ef27fb4acf1ba41e3bd50c97066626940f60f5e2adfd358dcc77d17"
+  },
+  {
+   "file": "FP_20_passing_advanced_team_offense_season_2026.csv",
+   "source_filename": "FP_20_passing_advanced_team_offense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:06Z",
+   "lines": 35,
+   "sha256": "a6fcb47f2d03abbcd18c5ce437753d6de3feaf0f8900d4c719c10edf37295df2"
+  },
+  {
+   "file": "FP_20_passing_depth_of_target_QB_season_2026.csv",
+   "source_filename": "FP_20_passing_depth_of_target_QB_season_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "4d1b1ab1f50d131826a04e80d4fa3f83068edab7e0ec69aa1fbb63dbca3943aa"
+  },
+  {
+   "file": "FP_21_passing_advanced_team_defense_season_2026.csv",
+   "source_filename": "FP_21_passing_advanced_team_defense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:06Z",
+   "lines": 35,
+   "sha256": "94fa68aa30191884959487ecc56d3066d27bc1360da66f7d888e7a311bc5172e"
+  },
+  {
+   "file": "FP_21_passing_depth_of_target_QB_last4games_2026.csv",
+   "source_filename": "FP_21_passing_depth_of_target_QB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "3f9eea36a71d6e54ac8f06438b739132e2ce3cc32a7bbd6109a18f8fc0e416cb"
+  },
+  {
+   "file": "FP_22_passing_situation_QB_season_2026.csv",
+   "source_filename": "FP_22_passing_situation_QB_season_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "5b25b2c5050d41b86111013ac7b7eb9f2d4cd0c1cb20b82af077389b6384027a"
+  },
+  {
+   "file": "FP_23_passing_situation_QB_last4games_2026.csv",
+   "source_filename": "FP_23_passing_situation_QB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 64,
+   "sha256": "b24f2a673b6efba4d596c91f7cb9f3318ce276267ab4b3b68b24fc84222d99f6"
+  },
+  {
+   "file": "FP_24_receiving_advanced_player_season_2026.csv",
+   "source_filename": "FP_24_receiving_advanced_player_season_2026.csv",
+   "exported_utc": "2026-11-14T00:07Z",
+   "lines": 351,
+   "sha256": "7268ce2c398bd2c605c80902c4ff220d669cb9ea964e48697bd7ed8c2a90ab1b"
+  },
+  {
+   "file": "FP_24_rushing_advanced_RB_last4games_2026.csv",
+   "source_filename": "FP_24_rushing_advanced_RB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 125,
+   "sha256": "f0a7991a822f6333de8ad70ab64a8da3fe10489379a66aeaf8ca6c88ad55c387"
+  },
+  {
+   "file": "FP_25_receiving_advanced_team_offense_season_2026.csv",
+   "source_filename": "FP_25_receiving_advanced_team_offense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:07Z",
+   "lines": 35,
+   "sha256": "8d5bcb1604eb63bbfbe260b606505f09810206939b7264994e39107fa6100fc1"
+  },
+  {
+   "file": "FP_26_receiving_advanced_WR-TE_last4games_2026.csv",
+   "source_filename": "FP_26_receiving_advanced_WR-TE_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 351,
+   "sha256": "42e64db9f2e695d64fcb935f805848ceead953cd66f0489c48203ec9611db2ea"
+  },
+  {
+   "file": "FP_26_receiving_advanced_team_defense_season_2026.csv",
+   "source_filename": "FP_26_receiving_advanced_team_defense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:07Z",
+   "lines": 35,
+   "sha256": "8370fc9c7dbed0dbad004e28bff86ef551c3e0cbda243444d98afb09f54317eb"
+  },
+  {
+   "file": "FP_27_receiving_alignment_season_2026.csv",
+   "source_filename": "FP_27_receiving_alignment_season_2026 (1).csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 350,
+   "sha256": "32b73e9ff6a30b6f96c7928932cb8ddb1c32fe00e699f331841f19411f894442"
+  },
+  {
+   "file": "FP_28_receiving_alignment_last4games_2026.csv",
+   "source_filename": "FP_28_receiving_alignment_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 350,
+   "sha256": "908755e483ff563cb750dd34e5498e1b5a7ee0cd823d8fabcc91f055217cf0bd"
+  },
+  {
+   "file": "FP_28_receiving_separation_by_alignment_season_2026.csv",
+   "source_filename": "FP_28_receiving_separation_by_alignment_season_2026.csv",
+   "exported_utc": "2026-11-14T00:08Z",
+   "lines": 350,
+   "sha256": "587473a6de3931f815b46264d4f0e9e6a10dcda8b05afaaa95434f0df395c5c1"
+  },
+  {
+   "file": "FP_29_receiving_by_coverage_WR-TE-RB_last4games_2026.csv",
+   "source_filename": "FP_29_receiving_by_coverage_WR-TE-RB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 473,
+   "sha256": "23bdb3f302bfab5ed1598c07771bfa06b6f8c0c9fb2e2f04a9899cf0dbcd9d51"
+  },
+  {
+   "file": "FP_29_receiving_separation_by_routes_season_2026.csv",
+   "source_filename": "FP_29_receiving_separation_by_routes_season_2026.csv",
+   "exported_utc": "2026-11-14T00:08Z",
+   "lines": 350,
+   "sha256": "d597d77cfad078f109b5db20bba499525082b58af1e1590673393d1b18aae217"
+  },
+  {
+   "file": "FP_30_receiving_separation_by_breaks_season_2026.csv",
+   "source_filename": "FP_30_receiving_separation_by_breaks_season_2026.csv",
+   "exported_utc": "2026-11-14T00:08Z",
+   "lines": 350,
+   "sha256": "59ddea1a94cc2ac1ebd4ecd680e998209c1c873e907908aa6a7ec7151d44979b"
+  },
+  {
+   "file": "FP_31_receiving_separation_by_coverage_season_2026.csv",
+   "source_filename": "FP_31_receiving_separation_by_coverage_season_2026.csv",
+   "exported_utc": "2026-11-14T00:08Z",
+   "lines": 350,
+   "sha256": "a1a95b145192a30f1f07610f5fee7397dd64d97c888ef122dec8e9482dc60e08"
+  },
+  {
+   "file": "FP_31_separation_by_alignment_last4games_2026.csv",
+   "source_filename": "FP_31_separation_by_alignment_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 350,
+   "sha256": "36cd405409021a6aefc3c2f6a12922523c302be710b054e7c60561a0fe4a425e"
+  },
+  {
+   "file": "FP_32_receiving_separation_by_role_season_2026.csv",
+   "source_filename": "FP_32_receiving_separation_by_role_season_2026.csv",
+   "exported_utc": "2026-11-14T00:08Z",
+   "lines": 218,
+   "sha256": "6a610a7fdffae5f8c2d2fc4a4a5dde1037d5d6084b25ed1f4e46e470177150ef"
+  },
+  {
+   "file": "FP_33_separation_by_routes_last4games_2026.csv",
+   "source_filename": "FP_33_separation_by_routes_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 350,
+   "sha256": "a9b44376d344d0adc89ef1d247be435a2c90df77bd5b67b8a52e5c6193403dfc"
+  },
+  {
+   "file": "FP_33_team_offense_season_2026.csv",
+   "source_filename": "FP_33_team_offense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:08Z",
+   "lines": 35,
+   "sha256": "4d7869574a1e37b0f5d61bd9d123df95f03ee0da2aac4e29ab08d1ab40f6463f"
+  },
+  {
+   "file": "FP_34_offense_pace_season_2026.csv",
+   "source_filename": "FP_34_offense_pace_season_2026.csv",
+   "exported_utc": "2026-11-14T00:09Z",
+   "lines": 35,
+   "sha256": "e5c6b37765342803df375533cda9296d4166d94c7bb52b42b68c71ab8f5520ac"
+  },
+  {
+   "file": "FP_35_coverage_matrix_defense_season_2026.csv",
+   "source_filename": "FP_35_coverage_matrix_defense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:09Z",
+   "lines": 35,
+   "sha256": "32e08806e874e77caf39611fd65e9113b2620a5637d5127ef8edfd03151e5b0d"
+  },
+  {
+   "file": "FP_35_separation_by_breaks_last4games_2026.csv",
+   "source_filename": "FP_35_separation_by_breaks_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 350,
+   "sha256": "c0caed6085c0c61e11602adc9baaf67961bea1b75fff90347d09067343f1dcf3"
+  },
+  {
+   "file": "FP_36_coverage_matrix_offense_season_2026.csv",
+   "source_filename": "FP_36_coverage_matrix_offense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:09Z",
+   "lines": 35,
+   "sha256": "0500eaf88fdc43dcd6c9ec8e5dd7348205675f2be76257cd06c1597f0976a59b"
+  },
+  {
+   "file": "FP_37_coach_records_2026.csv",
+   "source_filename": "FP_37_coach_records_2026.csv",
+   "exported_utc": "2026-11-14T00:09Z",
+   "lines": 99,
+   "sha256": "bfcdd47edfe433141961056e0a2d2808ceaeb372842f8259e1906e46d823ed3a"
+  },
+  {
+   "file": "FP_37_separation_by_coverage_last4games_2026.csv",
+   "source_filename": "FP_37_separation_by_coverage_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 350,
+   "sha256": "265f213fde75560f0acffb78555b1da43e9be0079d4b6ac5b7cda0656dfe3b5c"
+  },
+  {
+   "file": "FP_38_playcaller_stats_2026.csv",
+   "source_filename": "FP_38_playcaller_stats_2026.csv",
+   "exported_utc": "2026-11-14T00:09Z",
+   "lines": 36,
+   "sha256": "c45c16671ee4a8199cd85b536abcd91c778899c4e2ae15cc2161f9e6c8dc3f91"
+  },
+  {
+   "file": "FP_39_cornerbacks_season_2026.csv",
+   "source_filename": "FP_39_cornerbacks_season_2026.csv",
+   "exported_utc": "2026-11-14T00:10Z",
+   "lines": 316,
+   "sha256": "14ccd1ba7a78519397cd2e0d7c556f120e0b447c2de48bba937708619a08d276"
+  },
+  {
+   "file": "FP_39_separation_by_role_last4games_2026.csv",
+   "source_filename": "FP_39_separation_by_role_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:21Z",
+   "lines": 218,
+   "sha256": "887f7f5abe704daa6d9d71506c0030385ba81efb7f160ccb5cd45930f491e8b0"
+  },
+  {
+   "file": "FP_40_shadow_index_2026.csv",
+   "source_filename": "FP_40_shadow_index_2026.csv",
+   "exported_utc": "2026-11-14T00:10Z",
+   "lines": 12783,
+   "sha256": "66b028d17bebb60d05f2aa060fc5116f3d4e9839391b73b4d756f6747f01f397"
+  },
+  {
+   "file": "FP_41_receiving_points_allowed_by_alignment_season_2026.csv",
+   "source_filename": "FP_41_receiving_points_allowed_by_alignment_season_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 35,
+   "sha256": "6e0b4d31cac3551165fdce25fae77e8d76215e75c82d9a90ca7253d5fa3083d2"
+  },
+  {
+   "file": "FP_41_team_offense_last4games_2026.csv",
+   "source_filename": "FP_41_team_offense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:22Z",
+   "lines": 35,
+   "sha256": "c5430dbe820290431b187decb677eee6a134723c0e4c8b133a9a6f241f09d504"
+  },
+  {
+   "file": "FP_42_rb_wr_efficiency_season_2026.csv",
+   "source_filename": "FP_42_rb_wr_efficiency_season_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 359,
+   "sha256": "778aeb73983d96fe1e0118d2efba32fbcb7fcef458bd2634c32888bbf7f4efac"
+  },
+  {
+   "file": "FP_42_team_defense_last4games_2026.csv",
+   "source_filename": "FP_42_team_defense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:22Z",
+   "lines": 35,
+   "sha256": "6f5cf6db752d36e89910e7e6a76d0e9d4df6c1b239747459c1d526a249cc16ae"
+  },
+  {
+   "file": "FP_43_injury_reports_2026.csv",
+   "source_filename": "FP_43_injury_reports_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 881,
+   "sha256": "4337b41b0e13a14b66514b72c8a2ddc1056a4f4607a26721225315757a104d6b"
+  },
+  {
+   "file": "FP_44_lineup_combos_2026.csv",
+   "source_filename": "FP_44_lineup_combos_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 297,
+   "sha256": "d5cda5134fd95916040ba897889b842dd1b84f31a69272a8cd2698096f367253"
+  },
+  {
+   "file": "FP_44_team_pace_last4games_2026.csv",
+   "source_filename": "FP_44_team_pace_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:22Z",
+   "lines": 35,
+   "sha256": "46d15d51bf1a8973ef8bb618d16e1700e5d6d8ab27aed21ae3e8e708415b2b84"
+  },
+  {
+   "file": "FP_45_fp_allowed_vs_QB_season_2026.csv",
+   "source_filename": "FP_45_fp_allowed_vs_QB_season_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 35,
+   "sha256": "69672528bd0daed9d744b0d33c77a28ae552b670626e5ddbbdd4ef92deec02bd"
+  },
+  {
+   "file": "FP_46_coverage_matrix_defense_last4games_2026.csv",
+   "source_filename": "FP_46_coverage_matrix_defense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:22Z",
+   "lines": 35,
+   "sha256": "5ef0e25594dddcfdb5026d65fe8ba37297e877f425c655935ede9b8b0e41dbf9"
+  },
+  {
+   "file": "FP_46_rushing_basic_team_offense_season_2026.csv",
+   "source_filename": "FP_46_rushing_basic_team_offense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 35,
+   "sha256": "64810db559627cbc086f829cb29bd1ab75d75193508bcae29b91b0a90bd8f182"
+  },
+  {
+   "file": "FP_47_receiving_basic_team_offense_season_2026.csv",
+   "source_filename": "FP_47_receiving_basic_team_offense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 35,
+   "sha256": "e5f0ccef24f33e289fb535bbc761440a27277a3e43d82cd51037f5c8ea4f88ad"
+  },
+  {
+   "file": "FP_48_coverage_matrix_offense_last4games_2026.csv",
+   "source_filename": "FP_48_coverage_matrix_offense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:22Z",
+   "lines": 35,
+   "sha256": "ca914e41e029ba4de393c4408c51262f280db34608006a33fe9a434d344a52ea"
+  },
+  {
+   "file": "FP_48_receiving_basic_team_defense_season_2026.csv",
+   "source_filename": "FP_48_receiving_basic_team_defense_season_2026.csv",
+   "exported_utc": "2026-11-14T00:11Z",
+   "lines": 35,
+   "sha256": "606d97cb54f1bccb5e708e55417b11224ff4496f90a1420382c181a8c9e0ef7a"
+  },
+  {
+   "file": "FP_50_cornerbacks_last4games_2026.csv",
+   "source_filename": "FP_50_cornerbacks_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:22Z",
+   "lines": 315,
+   "sha256": "b1fd29e86308d01dbc2aed6c9ce14a8fab80ce34da85ccc8db05725704bd96bc"
+  },
+  {
+   "file": "FP_50_passing_basic_team_offense_last4games_2026.csv",
+   "source_filename": "FP_50_passing_basic_team_offense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:13Z",
+   "lines": 35,
+   "sha256": "40190cb2a0c99a040e9044e0e981e189fcddaa23869d5c10156ea73ebf669e0f"
+  },
+  {
+   "file": "FP_51_passing_basic_team_defense_last4games_2026.csv",
+   "source_filename": "FP_51_passing_basic_team_defense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:14Z",
+   "lines": 35,
+   "sha256": "bf35c4d0ffe91ca387b14accd081b0229ea9170c0fddd54d83ab4f7b09f70df4"
+  },
+  {
+   "file": "FP_53_passing_advanced_team_offense_last4games_2026.csv",
+   "source_filename": "FP_53_passing_advanced_team_offense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:14Z",
+   "lines": 35,
+   "sha256": "4c337c35b106e9832d105735e88da2bc9b3c74b0efa22a646918c76612d6a3fd"
+  },
+  {
+   "file": "FP_54_passing_advanced_team_defense_last4games_2026.csv",
+   "source_filename": "FP_54_passing_advanced_team_defense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:14Z",
+   "lines": 35,
+   "sha256": "e206bedbac2037191d97a8eb4989a00a63fc3dcadbec897a0358e4acd3542866"
+  },
+  {
+   "file": "FP_54_receiving_points_allowed_last4games_2026.csv",
+   "source_filename": "FP_54_receiving_points_allowed_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 35,
+   "sha256": "c88eaec611bac5f7c64c950e28e8f4c2a6d4175a5bfb371777f60f1ffecab61d"
+  },
+  {
+   "file": "FP_56_fp_allowed_vs_WR_last4games_2026.csv",
+   "source_filename": "FP_56_fp_allowed_vs_WR_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 35,
+   "sha256": "1d53b75e2c4b278d811052b8530231a0fd6f843638e1d2550cdf72ccfcaeccab"
+  },
+  {
+   "file": "FP_58_offense_efficiency_last4games_2026.csv",
+   "source_filename": "FP_58_offense_efficiency_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 359,
+   "sha256": "73682f6d00191729bef8bdf0269835bb38941ef4a3cf06428e2c922b01bb0dc8"
+  },
+  {
+   "file": "FP_58_receiving_advanced_team_offense_last4games_2026.csv",
+   "source_filename": "FP_58_receiving_advanced_team_offense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:15Z",
+   "lines": 35,
+   "sha256": "60a08892a2aa2a77b2c8e88821eb5f8dc8ad7019ecbeb893b6604b27e7cbe9a8"
+  },
+  {
+   "file": "FP_59_fp_allowed_vs_TE_last4games_2026.csv",
+   "source_filename": "FP_59_fp_allowed_vs_TE_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 35,
+   "sha256": "80fe3a50f30ceee973ec1e5f4b2444c31e28e48ff1618178fb60a43e46b51bf3"
+  },
+  {
+   "file": "FP_59_receiving_advanced_team_defense_last4games_2026.csv",
+   "source_filename": "FP_59_receiving_advanced_team_defense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:15Z",
+   "lines": 35,
+   "sha256": "bdea3fc6be651477e4979b75c2615f3811cd2394cc40da97982c3ca6fadfcb32"
+  },
+  {
+   "file": "FP_60_fp_allowed_vs_RB_last4games_2026.csv",
+   "source_filename": "FP_60_fp_allowed_vs_RB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 35,
+   "sha256": "c094f6ea0ac2459094aff07a664868f6b9afe1688a10dc1981faf98d8aee2b99"
+  },
+  {
+   "file": "FP_61_fp_allowed_vs_QB_last4games_2026.csv",
+   "source_filename": "FP_61_fp_allowed_vs_QB_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 35,
+   "sha256": "b7da3bfd4b6a9ea4e3998ea5afc8497923b9b94af7867db7a51399e41353937f"
+  },
+  {
+   "file": "FP_65_coach_records_last4games_2026.csv",
+   "source_filename": "FP_65_coach_records_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 99,
+   "sha256": "d8ce650be86b723f40c2964c401b7eee62f2778faaa859135fd8c24ecbcc5b2c"
+  },
+  {
+   "file": "FP_66_playcallers_last4games_2026.csv",
+   "source_filename": "FP_66_playcallers_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 36,
+   "sha256": "011ce076e1ace1fc2882eb16f274914f0df89d7ebc8ffb044150a2b1683723a7"
+  },
+  {
+   "file": "FP_67_lineup_combos_skill_season_2026.csv",
+   "source_filename": "FP_67_lineup_combos_skill_season_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 4121,
+   "sha256": "09a91f90729c3106e8c1bd0fe7b65768d77c5f84551d19e11100fb242ba0b0a6"
+  },
+  {
+   "file": "FP_68_lineup_combos_rb_season_2026.csv",
+   "source_filename": "FP_68_lineup_combos_rb_season_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 254,
+   "sha256": "6a355632e1e67a6e0d6b5e02839faabb0c079d12ce735ee75d79a29aa27cefba"
+  },
+  {
+   "file": "FP_69_lineup_combos_wr_season_2026.csv",
+   "source_filename": "FP_69_lineup_combos_wr_season_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 992,
+   "sha256": "9f3e1fdb55a58089536cbc3545b043f56edb759dce32cd3ac8f3c2abf3be92b3"
+  },
+  {
+   "file": "FP_70_lineup_combos_te_season_2026.csv",
+   "source_filename": "FP_70_lineup_combos_te_season_2026.csv",
+   "exported_utc": "2026-11-14T00:24Z",
+   "lines": 368,
+   "sha256": "d384dff115a78ddd361e2396ceae3ad33c84c12bb9f3484657a514597140fdbc"
+  },
+  {
+   "file": "FP_71_lineup_combos_front_season_2026.csv",
+   "source_filename": "FP_71_lineup_combos_front_season_2026.csv",
+   "exported_utc": "2026-11-14T00:25Z",
+   "lines": 5039,
+   "sha256": "dc085c330c7e8820a59b151cde18f9d58897acd56010d6e332dcfe4cd8711c52"
+  },
+  {
+   "file": "FP_72_lineup_combos_db_season_2026.csv",
+   "source_filename": "FP_72_lineup_combos_db_season_2026.csv",
+   "exported_utc": "2026-11-14T00:25Z",
+   "lines": 1118,
+   "sha256": "74ecf295f5b793d6c75a7ac2201660148ea022374fbde230b0ff691fe5109541"
+  },
+  {
+   "file": "FP_77_weekly_snaps_snap_pct_2026.csv",
+   "source_filename": "FP_77_weekly_snaps_snap_pct_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 560,
+   "sha256": "d0bef6e5e2d4dab5ca9a6f8a9b94f320979dc201ef53c2614d3712a3cdfcbc4b"
+  },
+  {
+   "file": "FP_78_weekly_snaps_snaps_2026.csv",
+   "source_filename": "FP_78_weekly_snaps_snaps_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 560,
+   "sha256": "829682e2cb2cd93fde69974249e3a488d1575b294a011632ecb6027ddedc5e6c"
+  },
+  {
+   "file": "FP_79_weekly_snaps_i5_snap_pct_2026.csv",
+   "source_filename": "FP_79_weekly_snaps_i5_snap_pct_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 525,
+   "sha256": "26e2d6ad36e49a02d511322fde1067f9000ced106649af8799e8bdbaf96ca03e"
+  },
+  {
+   "file": "FP_80_weekly_snaps_i5_snaps_2026.csv",
+   "source_filename": "FP_80_weekly_snaps_i5_snaps_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 525,
+   "sha256": "eb4c3d17d6a4378a8f2a1c5e8c36c1e4e78d2a8a42b3c1a7feee075641f56bfd"
+  },
+  {
+   "file": "FP_81_rushing_basic_team_offense_last4games_2026.csv",
+   "source_filename": "FP_81_rushing_basic_team_offense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 35,
+   "sha256": "f13a86d82a6bf2d62dc2350791c14d23a1cb71d3e9ef2548d396858e4198a5dd"
+  },
+  {
+   "file": "FP_81_weekly_snaps_i10_snap_pct_2026.csv",
+   "source_filename": "FP_81_weekly_snaps_i10_snap_pct_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 532,
+   "sha256": "1ef01ad8197115a27cf49641b89bdc02e8b39a972eebe57ca40a64061b3b542e"
+  },
+  {
+   "file": "FP_82_rushing_defense_allowed_allpos_last4games_2026.csv",
+   "source_filename": "FP_82_rushing_defense_allowed_allpos_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 35,
+   "sha256": "6776a1ea482b034385014fbb920307d500832e729933fd97300604e70bad1fd8"
+  },
+  {
+   "file": "FP_82_weekly_snaps_i10_snaps_2026.csv",
+   "source_filename": "FP_82_weekly_snaps_i10_snaps_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 532,
+   "sha256": "c8ae9cf8b84f5ef6ca890950c56b60218ffe9649c52c7c1c8a9b76e48f2545cf"
+  },
+  {
+   "file": "FP_83_receiving_basic_team_offense_last4games_2026.csv",
+   "source_filename": "FP_83_receiving_basic_team_offense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 35,
+   "sha256": "1859313fc3760d5faee19226dc8a606e1ede9a4fa2564f9d350eb869ad03976a"
+  },
+  {
+   "file": "FP_83_weekly_snaps_i20_snap_pct_2026.csv",
+   "source_filename": "FP_83_weekly_snaps_i20_snap_pct_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 539,
+   "sha256": "a538d7e4973d0d52ec7f5e5924617e090a2a854af7e83caf05b2570087d72344"
+  },
+  {
+   "file": "FP_84_receiving_basic_team_defense_last4games_2026.csv",
+   "source_filename": "FP_84_receiving_basic_team_defense_last4games_2026.csv",
+   "exported_utc": "2026-11-14T00:20Z",
+   "lines": 35,
+   "sha256": "bc228a30b1d15ad6b310172aabe397951f54db4fa50957ed18ac771005429fc4"
+  },
+  {
+   "file": "FP_84_weekly_snaps_i20_snaps_2026.csv",
+   "source_filename": "FP_84_weekly_snaps_i20_snaps_2026.csv",
+   "exported_utc": "2026-11-14T00:29Z",
+   "lines": 539,
+   "sha256": "3d1165c7bc8f2c016fa53092b6ac3bd663d0fbd86f3da0f50bfbb581538cd33e"
+  },
+  {
+   "file": "FP_87_weekly_fp_backfield_xfp_pct_2026.csv",
+   "source_filename": "FP_87_weekly_fp_backfield_xfp_pct_2026.csv",
+   "exported_utc": "2026-11-14T00:30Z",
+   "lines": 560,
+   "sha256": "7062710f9709ce3a43043a9113456785ed0e1148751b18b02ea1950bd74e696f"
+  },
+  {
+   "file": "FP_92_weekly_receiving_rte_2026.csv",
+   "source_filename": "FP_92_weekly_receiving_rte_2026.csv",
+   "exported_utc": "2026-11-14T00:30Z",
+   "lines": 473,
+   "sha256": "c7bd9fc2864dd5089ddb2286c5f08f7fce2e13d4629fdb3bfa2d4924e3e17014"
+  },
+  {
+   "file": "FP_93_weekly_receiving_rte_pct_2026.csv",
+   "source_filename": "FP_93_weekly_receiving_rte_pct_2026.csv",
+   "exported_utc": "2026-11-14T00:31Z",
+   "lines": 473,
+   "sha256": "70526a2a96af756be2197314870975262149e13a7c6d3fd0614530b25ba7790a"
+  },
+  {
+   "file": "FP_94_weekly_receiving_tgt_2026.csv",
+   "source_filename": "FP_94_weekly_receiving_tgt_2026.csv",
+   "exported_utc": "2026-11-14T00:31Z",
+   "lines": 473,
+   "sha256": "552a0235f5d3f8af482c146c40bcb02fcc2683f0c26b76e183eda67a76585acf"
+  },
+  {
+   "file": "FP_95_weekly_receiving_tgt_pct_2026.csv",
+   "source_filename": "FP_95_weekly_receiving_tgt_pct_2026.csv",
+   "exported_utc": "2026-11-14T00:31Z",
+   "lines": 473,
+   "sha256": "a7fa6556dfa5d69e70ab7f062dbf26536508904557a3cd5f602c91e4500d58ec"
+  },
+  {
+   "file": "FP_96_weekly_receiving_tprr_2026.csv",
+   "source_filename": "FP_96_weekly_receiving_tprr_2026.csv",
+   "exported_utc": "2026-11-14T00:31Z",
+   "lines": 473,
+   "sha256": "ea3b9d88f75b3f586d8f16f1d0cb3fd573fd19bafcb6d8fa13815fd4850c59fb"
+  },
+  {
+   "file": "FP_98_weekly_receiving_yprr_2026.csv",
+   "source_filename": "FP_98_weekly_receiving_yprr_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "6e79af6a2b002a079043e59417aebd9dfd3e07b4014a0a3646a3934527304f3c"
+  },
+  {
+   "file": "FP_99_weekly_receiving_adot_2026.csv",
+   "source_filename": "FP_99_weekly_receiving_adot_2026.csv",
+   "exported_utc": "2026-11-14T00:23Z",
+   "lines": 473,
+   "sha256": "c1a81c8f54242333a474e2accc397852a18170097c72e2d1694e10b9b080a7b1"
+  },
+  {
+   "file": "FP_coverage_matrix_DEFENSE_2026_wk1-9.csv",
+   "source_filename": "FP_coverage_matrix_DEFENSE_2026_wk1-9.csv",
+   "exported_utc": null,
+   "lines": 33,
+   "sha256": "d7bf5cf6c374113b7b7856d839b3b11ed77eea28997b1e5d4d2baf6a2110af6d"
+  },
+  {
+   "file": "FP_coverage_matrix_OFFENSE_2026_wk1-9.csv",
+   "source_filename": "FP_coverage_matrix_OFFENSE_2026_wk1-9.csv",
+   "exported_utc": null,
+   "lines": 33,
+   "sha256": "70b6428a61d57e999f8acc74b38ccc80c8708fb9ded89e05f33ac77a66260e1b"
+  },
+  {
+   "file": "qbCoverageMatchupExport.csv",
+   "source_filename": "qbCoverageMatchupExport.csv",
+   "exported_utc": null,
+   "lines": 28,
+   "sha256": "3c87f3ce4a5f0ac7ae52c1e636e7027d206648c6942054d55c1fc2973f74920f"
+  }
+ ]
+}
