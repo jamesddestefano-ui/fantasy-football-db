@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-11-14T18:46:10Z",
+ "espn_observed_at": "2026-11-15T17:40:05Z",
  "repo_observed_at": "2026-10-28T08:11:00Z",
  "status": "NEEDS_INGEST",
  "unlogged_moves": [
@@ -698,11 +698,76 @@
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
    }
+  },
+  {
+   "transaction": {
+    "id": "af0df6ee-abb7-4d1f-9724-46059f30c8a6",
+    "type": "FREEAGENT",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 0,
+    "scoring_period": 10,
+    "processed_at": "2026-11-15T17:38:57Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "3924327",
+      "name": "Drew Lock",
+      "position": "QB",
+      "nfl_team": "SEA",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "8439",
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "nfl_team": "PIT",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Drew Lock",
+    "nfl_team": "SEA",
+    "position": "QB",
+    "espn_id": "3924327",
+    "faab_amount": 0,
+    "dropped_player": "Aaron Rodgers",
+    "dropped_nfl_team": "PIT",
+    "dropped_position": "QB",
+    "observed_at": "2026-11-15T17:38:57Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "ADD_DROP",
+     "added": "Drew Lock",
+     "dropped": "Aaron Rodgers",
+     "calendar_day_ET": "2026-11-15",
+     "faab_amount": 0
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction af0df6ee-abb7-4d1f-9724-46059f30c8a6 FREEAGENT EXECUTED processed Sun Nov 15, 12:38 PM ET: added Drew Lock, SEA QB; dropped Aaron Rodgers, PIT QB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
   }
  ],
  "roster_diff": {
   "on_espn_not_in_repo": [
-   "Aaron Rodgers",
+   "Drew Lock",
    "Fernando Mendoza",
    "Greg Dulcich",
    "Packers D/ST",
@@ -722,5 +787,5 @@
   "espn": 31,
   "repository": 54.0
  },
- "transactions_checked": 334
+ "transactions_checked": 337
 }

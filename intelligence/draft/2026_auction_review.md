@@ -1,4 +1,4 @@
-# Mongo 2026 auction review (points through 2026-11-14)
+# Mongo 2026 auction review (points through 2026-11-15)
 
 _For the 2027 redraft auction. Points are ESPN league scoring, season to date._
 
@@ -9,8 +9,8 @@ _For the 2027 redraft auction. Points are ESPN league scoring, season to date._
 | QB | 20 | $128 | $4.5 | $26 | 169.0 | — | 163.3 (4) | 176.0 (13) | 156.8 (3) |
 | RB | 63 | $1027 | $8 | $67 | 62.9 | 161.0 (14) | 56.2 (15) | 62.9 (18) | 46.4 (16) |
 | WR | 73 | $1048 | $6 | $62 | 75.1 | 121.7 (16) | 106.0 (13) | 63.0 (26) | 41.5 (18) |
-| TE | 20 | $143 | $3.0 | $34 | 84.7 | 160.4 (2) | 84.7 (2) | 101.3 (7) | 71.6 (9) |
-| D/ST | 16 | $32 | $1.5 | $5 | 59.0 | — | — | 56.0 (8) | 63.5 (8) |
+| TE | 20 | $143 | $3.0 | $34 | 84.8 | 160.4 (2) | 84.7 (2) | 101.3 (7) | 71.6 (9) |
+| D/ST | 16 | $32 | $1.5 | $5 | 65.5 | — | — | 56.0 (8) | 66.5 (8) |
 
 Tier cells: median points (players).
 
@@ -20,22 +20,22 @@ Tier cells: median points (players).
 |---|---|---|---|---|
 | Denzel Boston (WR) | BM | $1 | 102.7 | paid like WR61, scored like WR22 |
 | Braelon Allen (RB) | CCT | $1 | 113.0 | paid like RB53, scored like RB18 |
-| Matthew Golden (WR) | JFT | $5 | 171.9 | paid like WR38, scored like WR5 |
-| Christian Watson (WR) | ME | $9 | 186.9 | paid like WR33, scored like WR3 |
+| Matthew Golden (WR) | JFT | $5 | 171.9 | paid like WR38, scored like WR6 |
+| Christian Watson (WR) | ME | $9 | 186.9 | paid like WR33, scored like WR4 |
 | Keenan Allen (WR) | ME | $1 | 81.1 | paid like WR60, scored like WR31 |
 | Emmett Johnson (RB) | FFT | $1 | 62.8 | paid like RB61, scored like RB33 |
 | Tyler Allgeier (RB) | AAGD | $1 | 92.7 | paid like RB49, scored like RB22 |
 | Kayshon Boutte (WR) | JDD | $1 | 64.9 | paid like WR69, scored like WR42 |
-| Stefon Diggs (WR) | PbP | $4 | 110.6 | paid like WR43, scored like WR18 |
 | Jonah Coleman (RB) | BE3 | $1 | 62.9 | paid like RB57, scored like RB32 |
 | Justice Hill (RB) | BM | $1 | 61.1 | paid like RB60, scored like RB35 |
+| Stefon Diggs (WR) | PbP | $4 | 110.6 | paid like WR43, scored like WR19 |
 | Jalen Coker (WR) | AAGD | $2 | 90.0 | paid like WR52, scored like WR28 |
 
 ## Worst buys ($10+)
 
 | Player | Team | $ | Pts | Value |
 |---|---|---|---|---|
-| A.J. Brown (WR) | BE3 | $44 | 19.1 | paid like WR6, scored like WR61 |
+| A.J. Brown (WR) | BE3 | $44 | 23.8 | paid like WR6, scored like WR60 |
 | De'Von Achane (RB) | JDD | $36 | 24.6 | paid like RB12, scored like RB56 |
 | Ladd McConkey (WR) | PbP | $31 | 51.6 | paid like WR14, scored like WR51 |
 | Travis Etienne Jr. (RB) | PbP | $28 | 30.9 | paid like RB16, scored like RB52 |
@@ -52,18 +52,18 @@ Tier cells: median points (players).
 
 | Team | Pts drafted | Top-3 share | $1 players | Priciest | QB $ | RB $ | WR $ | TE $ | D/ST $ |
 |---|---|---|---|---|---|---|---|---|---|
+| Justmyluck3 (J3) | 1665.8 | 46% | 1 | Derrick Henry $44 | 17 | 91 | 63 | 12 | 7 |
 | Joe's Finest Team (JFT) | 1664.2 | 52% | 0 | Ashton Jeanty $44 | 8 | 80 | 72 | 34 | 3 |
-| Justmyluck3 (J3) | 1661.7 | 46% | 1 | Derrick Henry $44 | 17 | 91 | 63 | 12 | 7 |
-| DeVonta Be Kidding Me (ME) | 1644.3 | 53% | 2 | James Cook III $47 | 9 | 114 | 60 | 13 | 4 |
-| I Loveland Rice Krispies (AAGD) | 1511.8 | 56% | 2 | Chase Brown $47 | 5 | 114 | 57 | 21 | 1 |
-| Horton (CCT) | 1475.4 | 52% | 7 | Kenneth Walker III $39 | 7 | 117 | 65 | 9 | 1 |
-| You're a JaGoff (PbP) | 1440.2 | 60% | 7 | Jonathan Taylor $50 | 4 | 79 | 111 | 4 | 2 |
-| Bills Mafia (BM) | 1396.2 | 79% | 8 | Amon-Ra St. Brown $55 | 22 | 57 | 117 | 2 | 2 |
+| DeVonta Be Kidding Me (ME) | 1648.5 | 53% | 2 | James Cook III $47 | 9 | 114 | 60 | 13 | 4 |
+| I Loveland Rice Krispies (AAGD) | 1516.8 | 56% | 2 | Chase Brown $47 | 5 | 114 | 57 | 21 | 1 |
+| Horton (CCT) | 1486.4 | 52% | 7 | Kenneth Walker III $39 | 7 | 117 | 65 | 9 | 1 |
+| You're a JaGoff (PbP) | 1468.6 | 60% | 7 | Jonathan Taylor $50 | 4 | 79 | 111 | 4 | 2 |
+| Bills Mafia (BM) | 1422.0 | 79% | 8 | Amon-Ra St. Brown $55 | 22 | 57 | 117 | 2 | 2 |
+| Geno Smith (GENO) | 1280.5 | 70% | 3 | Jahmyr Gibbs $67 | 5 | 85 | 100 | 8 | 2 |
 | T.N.T (FFT) | 1243.3 | 78% | 10 | Puka Nacua $62 | 26 | 12 | 127 | 33 | 2 |
-| Geno Smith (GENO) | 1234.3 | 70% | 3 | Jahmyr Gibbs $67 | 5 | 85 | 100 | 8 | 2 |
 | Tom Brady of Ass (JDD) | 1195.4 | 75% | 8 | Bijan Robinson $61 | 10 | 102 | 85 | 1 | 2 |
-| $Cmoney$ (C$) | 1161.5 | 62% | 1 | Saquon Barkley $44 | 9 | 95 | 83 | 5 | 2 |
-| SHOWSTOPPERS (BE3) | 1141.4 | 55% | 5 | A.J. Brown $44 | 6 | 81 | 108 | 1 | 4 |
+| $Cmoney$ (C$) | 1164.5 | 62% | 1 | Saquon Barkley $44 | 9 | 95 | 83 | 5 | 2 |
+| SHOWSTOPPERS (BE3) | 1155.1 | 55% | 5 | A.J. Brown $44 | 6 | 81 | 108 | 1 | 4 |
 
 ## James's auction
 
