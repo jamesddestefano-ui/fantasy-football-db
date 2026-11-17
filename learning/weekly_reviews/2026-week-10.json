@@ -1,0 +1,160 @@
+{
+ "system": "CLAUDE_MONGO_BRAIN",
+ "season": 2026,
+ "week": 10,
+ "reviewed_at": "2026-11-17T10:58:00-05:00",
+ "best_decisions": [
+  "mongo-2026-w10-fa-lock-001: $0 add + start Drew Lock at LV -> 23.6, James's top scorer (~+8 over Rodgers, +9.68 over Mendoza)",
+  "mongo-2026-w10-claim-freiermuth-001: Freiermuth won at $1 -> 11.5 at TE (+5.1 over Okonkwo)"
+ ],
+ "worst_decisions": [
+  "mongo-2026-w10-lineup-001: Sampson 7.7 at RB2 over Black 14.6 (-6.9); TE call Okonkwo 6.4 would have cost 5.1 had James not overridden",
+  "mongo-2026-w10-claim-packers-dst-001: $3 for 5.0 points, about replacement level"
+ ],
+ "good_process_bad_result": [
+  "mongo-2026-w10-lineup-001: both near-ties (Sampson/Black, Okonkwo/Freiermuth) followed the higher ESPN projection and both went the other way",
+  "mongo-2026-w10-claim-packers-dst-001: best-projected D/ST scored 5.0"
+ ],
+ "bad_process_good_result": [
+  "James's QB spending: $12 on Mendoza ($10) and Rodgers ($2), neither started; Lock still landed for $0"
+ ],
+ "missed_opportunities": [
+  "Kaelon Black 14.6 on the bench (RB2 near-tie, ESPN 7.84 vs Sampson 9.02 — not predictable from projections)",
+  "Lock waiver claim ($2) not placed; $10 Mendoza bid was the costliest QB move"
+ ],
+ "signals_that_worked": [
+  "ESPN QB projection gap (Lock 22.1 vs Rodgers/Mendoza) plus LV allowing the most QB points: Lock 23.6",
+  "Pickens-return check: Flournoy kept over Black at FLEX (19.1 vs 14.6)",
+  "Darnold OUT via Pulse 2026-11-10 (accurate, prompted the QB stream)"
+ ],
+ "signals_that_failed": [
+  "ESPN near-tie at RB2 and TE (both lost this week after winning W7-W9)",
+  "D/ST stream projections (Packers 7.49 proj -> 5.0)",
+  "McMillan proj 16.67 -> 6.5"
+ ],
+ "data_quality_issues": [
+  "Scheduled ESPN daily and Tuesday board had not run by 10:42 AM ET (newest snapshot 2026-11-16T20:57Z, pre-MNF, last_week = Week 9). Mongo weekly board dispatched manually; snapshot 2026-11-17T15:44:26Z provided Week 10 league scoring",
+  "Reconcile NEEDS_INGEST: 12 ESPN moves since 2026-10-28 not in repository history; repository FAAB $54 vs ESPN $31",
+  "Malik Willis is off James's roster but no Willis drop appears in the ESPN transaction log (likely with the Rodgers claim, which shows no drop)",
+  "Rodgers and Saints D/ST Week 10 points only in FantasyPros standard PPR, not Mongo scoring"
+ ],
+ "timing_issues": [
+  "GitHub scheduled runs are landing hours late on Tuesdays two weeks running; the report card depends on a manual dispatch"
+ ],
+ "rule_changes_proposed": [
+  "Near-tie rule (keep higher ESPN projection unless news changes role): W10 went 0-2 after W7-W9 support. Keep as proposed, not adopted; needs James's OK and more sample",
+  "D/ST streams: cap at $2; $3 streams in W9 and W10 returned ~replacement"
+ ],
+ "rule_changes_adopted": [],
+ "rules_rejected_due_to_insufficient_sample": [
+  "Practice-report rule from Week 7: no repeat occurrence, still held"
+ ],
+ "mongo_metrics": {
+  "recommended_acquisition_vs_actual": [
+   "Lock: rec $2 claim (drop K. Miller); not placed; added $0 FA Sunday (drop Rodgers)",
+   "Rodgers (backup): rec $1, actual $2, won",
+   "Packers D/ST: rec $2 (drop Saints), actual $3, won",
+   "Freiermuth: rec $2 (drop Dulcich), actual $1 (drop K. Miller), won",
+   "Waller (backup): rec $1 auto-fail, actual $1 (drop K. Mitchell), won, dropped Wed for Roschon Johnson",
+   "Mendoza: not recommended, $10 (drop Mason Taylor), won"
+  ],
+  "recommended_faab_vs_actual_and_winning": [
+   "Recommended $5-7 total; spent $17 ($48 -> $31)"
+  ],
+  "points_added_above_replacement": [
+   "Lock 23.6 vs Mendoza 13.92 = +9.68",
+   "Freiermuth 11.5 vs Okonkwo 6.4 = +5.1",
+   "Packers 5.0 vs Saints 4.0 (FantasyPros) = ~+1"
+  ],
+  "starter_bench_differential": [
+   "Week 10: 126.6 started vs 134.7 optimal = 8.1 left on bench"
+  ],
+  "weeks_retained": [
+   "Freiermuth 1+, Mendoza 1+ (bench), Packers 1 (bye W11), Lock 1 (bye W11), Waller 0"
+  ],
+  "drop_timing_and_regret": [
+   "Mason Taylor 6.0 (FantasyPros) — no regret",
+   "Keaton Mitchell 0.4 — no regret",
+   "Rodgers 15.62 (FantasyPros) — no Week 10 regret"
+  ],
+  "missed_waiver_opportunities": [],
+  "roster_value_improvement": [
+   "Freiermuth is the TE1 now; Dulcich (0.0) and Darnold (out until W12) are dead spots; Burden back from bye"
+  ]
+ },
+ "result": {
+  "james_points": 126.6,
+  "opponent": "Joe's Finest Team (JFT)",
+  "opponent_points": 140.02,
+  "outcome": "LOSS",
+  "record_after": "4-6-0",
+  "margin": -13.42,
+  "source": "data/espn_api/latest.json last_week (observed 2026-11-17T15:44:26Z) + JFT points_for delta vs data/espn_api/2026-11-16T2057Z.json (1212.34 to 1352.36)"
+ },
+ "week_grade": "C",
+ "lineup_efficiency": {
+  "starter_points": 126.6,
+  "optimal_points": 134.7,
+  "points_left_on_bench": 8.1,
+  "efficiency_pct": 94.0,
+  "optimal_lineup": "QB Lock 23.6; RB Bijan 17.7 / Black 14.6; WR Lamb 20.2 / Flournoy 19.1; TE Freiermuth 11.5; FLEX Downs 15.3 / Sampson 7.7; D/ST Packers 5.0",
+  "biggest_misses": [
+   "Black 14.6 on the bench vs McMillan 6.5 (WR slot) / Sampson 7.7 (-8.1 net)"
+  ],
+  "note": "Loss by 13.42; even the optimal 134.7 loses. McMillan 6.5 on a 16.67 projection and Bijan 17.7 were the shortfall."
+ },
+ "waiver_faab_results": {
+  "faab_start": 48,
+  "faab_end": 31,
+  "paid_claims": 5,
+  "moves": [
+   "Mendoza for Mason Taylor $10 -> bench, 13.92",
+   "Rodgers $2 -> dropped Sunday for Lock",
+   "Packers D/ST for Saints D/ST $3 -> started, 5.0",
+   "Freiermuth for K. Miller $1 -> started, 11.5",
+   "Waller for K. Mitchell $1 -> dropped Wed for Roschon Johnson ($0)",
+   "Lock for Rodgers $0 (Sun) -> started, 23.6"
+  ],
+  "failed_claims": "None in the ESPN log"
+ },
+ "advice_followed": {
+  "followed": 3,
+  "overrode_partially": 1,
+  "ignored": 1,
+  "detail": "Packers, Freiermuth and the Sunday Lock add were followed. Lineup followed except James's TE override (Freiermuth, +5.1). The Lock waiver claim was not placed; Mendoza $10 was James's own move."
+ },
+ "nfl_pulse_performance": {
+  "pulses_considered": 2,
+  "pulses_used": 2,
+  "pulses_rejected": 0,
+  "actions_changed_by_pulse": 0,
+  "successful_changed_actions": 0,
+  "unsuccessful_changed_actions": 0,
+  "average_information_lead_time_minutes": null,
+  "highly_useful": 0,
+  "useful": 1,
+  "misleading": 0,
+  "late": 0,
+  "category_source_performance": {
+   "injury": "Darnold OUT (USEFUL), Burden concussion (ACCURATE_NOT_ACTIONABLE, bye)"
+  },
+  "note": "Pulse confirmed existing theses; no action changed. Willis surgery report (2026-11-17) matters for Week 11+ only."
+ },
+ "season_trend": {
+  "reviewed_decisions": 27,
+  "claude": {
+   "count": 21,
+   "avg_outcome": 2.19,
+   "avg_process": 2.71,
+   "success_rate": 0.333
+  },
+  "prime": {
+   "count": 6,
+   "avg_outcome": 2.5,
+   "avg_process": 3.0,
+   "success_rate": 0.5
+  },
+  "team": "4-6-0, 1221.62 PF (8th of 12 in PF)",
+  "note": "Claude's decision grades rose (outcome 1.94 -> 2.19, success 0.25 -> 0.33) but the team lost; bench waste improved (W7 15.2, W8 1.3, W9 12.6, W10 8.1)."
+ }
+}

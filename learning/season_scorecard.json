@@ -1,22 +1,23 @@
 {
-  "generated_at": "2026-11-13T20:12:27-05:00",
+  "generated_at": "2026-11-17T10:47:56-05:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
   "total_decisions": 27,
-  "reviewed_decisions": 22,
-  "pending_decisions": 5,
-  "wins": 7,
+  "reviewed_decisions": 27,
+  "pending_decisions": 0,
+  "wins": 10,
   "losses": 5,
-  "neutral": 10,
+  "neutral": 12,
   "outcome_grade_distribution": {
-    "B": 7,
-    "C": 10,
+    "A": 2,
+    "B": 8,
+    "C": 12,
     "D": 5
   },
   "process_grade_distribution": {
     "A": 1,
-    "B": 14,
+    "B": 19,
     "C": 7
   },
   "confidence_calibration": {
@@ -29,17 +30,17 @@
     },
     "2": {
       "count": 10,
-      "success_rate": 0.25,
-      "average_outcome_grade": 2.125,
-      "average_process_grade": 2.5,
-      "reviewed_count": 8
+      "success_rate": 0.4,
+      "average_outcome_grade": 2.5,
+      "average_process_grade": 2.6,
+      "reviewed_count": 10
     },
     "3": {
       "count": 12,
-      "success_rate": 0.222,
-      "average_outcome_grade": 1.778,
-      "average_process_grade": 2.778,
-      "reviewed_count": 9
+      "success_rate": 0.25,
+      "average_outcome_grade": 1.917,
+      "average_process_grade": 2.833,
+      "reviewed_count": 12
     },
     "4": {
       "count": 5,
@@ -59,10 +60,10 @@
   "decision_type_performance": {
     "ADD": {
       "count": 10,
-      "success_rate": 0.143,
-      "average_outcome_grade": 1.714,
-      "average_process_grade": 2.571,
-      "reviewed_count": 7
+      "success_rate": 0.4,
+      "average_outcome_grade": 2.3,
+      "average_process_grade": 2.7,
+      "reviewed_count": 10
     },
     "INJURY_CONTINGENCY": {
       "count": 6,
@@ -73,17 +74,17 @@
     },
     "START_SIT": {
       "count": 8,
-      "success_rate": 0.286,
-      "average_outcome_grade": 2.143,
-      "average_process_grade": 2.571,
-      "reviewed_count": 7
+      "success_rate": 0.25,
+      "average_outcome_grade": 2.125,
+      "average_process_grade": 2.625,
+      "reviewed_count": 8
     },
     "STREAM": {
       "count": 3,
-      "success_rate": 0.5,
+      "success_rate": 0.333,
       "average_outcome_grade": 2.0,
       "average_process_grade": 3.0,
-      "reviewed_count": 2
+      "reviewed_count": 3
     }
   },
   "signal_performance": {
@@ -119,11 +120,11 @@
     },
     "Best D/ST in the pool on ESPN and FantasyPros (+1.5 over Saints on both)": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -159,11 +160,11 @@
     },
     "Burden on bye; Dulcich lost the TE job": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -219,11 +220,11 @@
     },
     "Downs and Flournoy lead the FLEX pool on both sources": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -269,11 +270,11 @@
     },
     "Dulcich has lost the TE job to Okonkwo on results": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 4.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -289,11 +290,11 @@
     },
     "ESPN projection gap +3.5": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 4.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -309,11 +310,11 @@
     },
     "Favored by ~12: steady PPR floors": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -339,11 +340,11 @@
     },
     "Freiermuth is the top FantasyPros TE in the pool and ROS 122 vs Dulcich 134": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 4.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -359,11 +360,11 @@
     },
     "Kendre Miller has no NFL team: free roster spot": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -379,11 +380,11 @@
     },
     "Lock beats Willis by 5.2 on ESPN league scoring and 1.4 on FantasyPros": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -459,11 +460,11 @@
     },
     "Mendoza unusable vs SEA": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 4.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -489,11 +490,11 @@
     },
     "Okonkwo is hurt and plays Thursday - a Sunday TE fallback has value": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 4.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -529,21 +530,21 @@
     },
     "Raiders defense is a soft matchup; Lock started and won in Week 9": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 3.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "Removes Saints-vs-McMillan negative correlation": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 0.0,
+      "average_outcome_grade": 2.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -719,11 +720,11 @@
     },
     "matchup: LV allows most QB points": {
       "count": 1,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null,
-      "reviewed_count": 0,
-      "false_positive_rate": null,
+      "success_rate": 1.0,
+      "average_outcome_grade": 4.0,
+      "average_process_grade": 3.0,
+      "reviewed_count": 1,
+      "false_positive_rate": 0.0,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -859,9 +860,9 @@
     }
   },
   "major_error_counts": {
+    "PROCESS_GOOD_VARIANCE_BAD": 5,
     "MATCHUP_OVERWEIGHTED": 5,
-    "PROCESS_GOOD_VARIANCE_BAD": 3,
-    "FAAB_OVERPAY": 2,
+    "FAAB_OVERPAY": 3,
     "START_SIT_ERROR": 2,
     "INJURY_MISREAD": 1,
     "NEWS_REACTION_TOO_SLOW": 1
@@ -870,33 +871,33 @@
   "data_quality_failures": 0,
   "user_action_performance": {
     "followed": {
-      "count": 15,
-      "success_rate": 0.4,
-      "average_outcome_grade": 2.267,
-      "average_process_grade": 2.867,
-      "reviewed_count": 15
+      "count": 18,
+      "success_rate": 0.444,
+      "average_outcome_grade": 2.444,
+      "average_process_grade": 2.889,
+      "reviewed_count": 18
     },
     "ignored": {
-      "count": 4,
-      "success_rate": 0.25,
-      "average_outcome_grade": 2.0,
-      "average_process_grade": 2.25,
-      "reviewed_count": 4
+      "count": 5,
+      "success_rate": 0.4,
+      "average_outcome_grade": 2.2,
+      "average_process_grade": 2.4,
+      "reviewed_count": 5
     },
     "overrode": {
-      "count": 3,
+      "count": 4,
       "success_rate": 0.0,
-      "average_outcome_grade": 1.333,
-      "average_process_grade": 2.667,
-      "reviewed_count": 3
+      "average_outcome_grade": 1.5,
+      "average_process_grade": 2.75,
+      "reviewed_count": 4
     }
   },
   "mongo_outcome_metrics": {
-    "reviewed_decisions": 22,
-    "actual_acquisitions": 8,
+    "reviewed_decisions": 27,
+    "actual_acquisitions": 12,
     "tracked_value_count": {
-      "recommended_faab": 9,
-      "actual_faab_cost": 8,
+      "recommended_faab": 13,
+      "actual_faab_cost": 12,
       "winning_faab": 4,
       "next_highest_bid": 3,
       "faab_saved_or_overspent": 0,
@@ -906,8 +907,8 @@
       "roster_value_improvement": 0
     },
     "averages": {
-      "recommended_faab": 2.111,
-      "actual_faab_cost": 1.75,
+      "recommended_faab": 1.923,
+      "actual_faab_cost": 2.583,
       "winning_faab": 5.5,
       "next_highest_bid": 3.0,
       "faab_saved_or_overspent": null,
@@ -931,9 +932,9 @@
     "misleading_pulses": 0,
     "too_late_pulses": 0,
     "usefulness_grade_distribution": {
-      "ACCURATE_NOT_ACTIONABLE": 3,
+      "ACCURATE_NOT_ACTIONABLE": 4,
       "DUPLICATIVE": 1,
-      "USEFUL": 3
+      "USEFUL": 4
     },
     "pulse_category_performance": {
       "INJURY_DESIGNATION": {
@@ -953,13 +954,13 @@
         "success_rate": 0.5,
         "average_outcome_grade": 2.5,
         "average_process_grade": 3.0,
-        "reviewed_count": 6,
+        "reviewed_count": 8,
         "used_count": 7,
         "changed_decision_count": 5,
         "usefulness_grade_distribution": {
-          "ACCURATE_NOT_ACTIONABLE": 3,
+          "ACCURATE_NOT_ACTIONABLE": 4,
           "DUPLICATIVE": 1,
-          "USEFUL": 2
+          "USEFUL": 3
         }
       }
     },
@@ -981,13 +982,13 @@
         "success_rate": 0.5,
         "average_outcome_grade": 2.5,
         "average_process_grade": 3.0,
-        "reviewed_count": 6,
+        "reviewed_count": 8,
         "used_count": 7,
         "changed_decision_count": 5,
         "usefulness_grade_distribution": {
-          "ACCURATE_NOT_ACTIONABLE": 3,
+          "ACCURATE_NOT_ACTIONABLE": 4,
           "DUPLICATIVE": 1,
-          "USEFUL": 2
+          "USEFUL": 3
         }
       }
     }
@@ -995,10 +996,10 @@
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
       "count": 21,
-      "success_rate": 0.25,
-      "average_outcome_grade": 1.938,
-      "average_process_grade": 2.625,
-      "reviewed_count": 16
+      "success_rate": 0.333,
+      "average_outcome_grade": 2.19,
+      "average_process_grade": 2.714,
+      "reviewed_count": 21
     },
     "PRIME_MONGO_FANTASY_WATCH": {
       "count": 6,
