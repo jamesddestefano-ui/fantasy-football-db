@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-17T10:47:56-05:00",
+  "generated_at": "2026-11-17T11:17:46-05:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 27,
+  "total_decisions": 31,
   "reviewed_decisions": 27,
-  "pending_decisions": 0,
+  "pending_decisions": 4,
   "wins": 10,
   "losses": 5,
   "neutral": 12,
@@ -29,14 +29,14 @@
       "reviewed_count": 0
     },
     "2": {
-      "count": 10,
+      "count": 11,
       "success_rate": 0.4,
       "average_outcome_grade": 2.5,
       "average_process_grade": 2.6,
       "reviewed_count": 10
     },
     "3": {
-      "count": 12,
+      "count": 15,
       "success_rate": 0.25,
       "average_outcome_grade": 1.917,
       "average_process_grade": 2.833,
@@ -59,7 +59,7 @@
   },
   "decision_type_performance": {
     "ADD": {
-      "count": 10,
+      "count": 12,
       "success_rate": 0.4,
       "average_outcome_grade": 2.3,
       "average_process_grade": 2.7,
@@ -73,14 +73,14 @@
       "reviewed_count": 6
     },
     "START_SIT": {
-      "count": 8,
+      "count": 9,
       "success_rate": 0.25,
       "average_outcome_grade": 2.125,
       "average_process_grade": 2.625,
       "reviewed_count": 8
     },
     "STREAM": {
-      "count": 3,
+      "count": 4,
       "success_rate": 0.333,
       "average_outcome_grade": 2.0,
       "average_process_grade": 3.0,
@@ -115,6 +115,16 @@
       "average_process_grade": 3.0,
       "reviewed_count": 1,
       "false_positive_rate": 0.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Bears top streamer: big favorite vs a depleted NO line": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -168,6 +178,16 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "Chargers backup faces a first-start rookie QB": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "Cheap, low-demand player; Mitchell is the weakest RB": {
       "count": 1,
       "success_rate": 0.0,
@@ -215,6 +235,16 @@
       "average_process_grade": 2.0,
       "reviewed_count": 1,
       "false_positive_rate": 1.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Demercado backup covers a Montgomery absence Thursday": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -308,6 +338,26 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "Ekeler has a near-even split with White plus pass-catching work in full PPR": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Favorable QB schedule ahead; can be the QB through Week 14 over Mendoza/Darnold": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "Favored by ~12: steady PPR floors": {
       "count": 1,
       "success_rate": 0.0,
@@ -315,6 +365,16 @@
       "average_process_grade": 3.0,
       "reviewed_count": 1,
       "false_positive_rate": 0.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Flournoy beats Downs on both sources for FLEX2": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -335,6 +395,16 @@
       "average_process_grade": 3.0,
       "reviewed_count": 1,
       "false_positive_rate": 1.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Four starters on bye - every open slot must be refilled": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -385,6 +455,16 @@
       "average_process_grade": 3.0,
       "reviewed_count": 1,
       "false_positive_rate": 0.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Lock is dead weight: SEA bye now, Darnold back Week 12": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -498,6 +578,26 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "Okonkwo leads Freiermuth on both sources; WAS-CIN shootout potential": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Packers on bye": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "Pickens active removes Flournoy's WR2 path": {
       "count": 1,
       "success_rate": 0.0,
@@ -525,6 +625,16 @@
       "average_process_grade": 2.0,
       "reviewed_count": 1,
       "false_positive_rate": 1.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "RB2 slot otherwise filled by Roschon Johnson (~1 pt)": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -575,6 +685,16 @@
       "average_process_grade": 2.0,
       "reviewed_count": 1,
       "false_positive_rate": 1.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Ward beats Mendoza by 3.1 (ESPN) / 3.6 (FP) this week": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -995,7 +1115,7 @@
   },
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
-      "count": 21,
+      "count": 25,
       "success_rate": 0.333,
       "average_outcome_grade": 2.19,
       "average_process_grade": 2.714,
