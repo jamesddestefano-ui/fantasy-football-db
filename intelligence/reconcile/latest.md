@@ -1,6 +1,6 @@
 # Mongo reconciliation — NEEDS_INGEST
 
-ESPN 2026-11-17T21:49:34Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 337.
+ESPN 2026-11-18T19:22:53Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 361.
 
 ## Completed on ESPN, not in the repository
 
@@ -16,12 +16,14 @@ ESPN 2026-11-17T21:49:34Z vs repository (newest import 2026-10-28T08:11:00Z). Tr
 - 2026-11-11T08:51:38Z WAIVER +Pat Freiermuth, -Kendre Miller ($1)
 - 2026-11-12T02:12:39Z FREEAGENT +Roschon Johnson, -Darren Waller
 - 2026-11-15T17:38:57Z FREEAGENT +Drew Lock, -Aaron Rodgers
+- 2026-11-18T08:35:14Z WAIVER +Cam Ward, -Drew Lock ($3)
+- 2026-11-18T08:35:14Z WAIVER +Austin Ekeler, -Roschon Johnson ($1)
 
 ## Roster differences
 
-- On ESPN, not in repo: Drew Lock, Fernando Mendoza, Greg Dulcich, Packers D/ST, Pat Freiermuth, Roschon Johnson
+- On ESPN, not in repo: Austin Ekeler, Cam Ward, Fernando Mendoza, Greg Dulcich, Packers D/ST, Pat Freiermuth
 - In repo, not on ESPN: Bam Knight, Commanders D/ST, J.J. McCarthy, Keaton Mitchell, Kendre Miller, Kyler Murray
 
-FAAB: ESPN $31 · repository $54.0
+FAAB: ESPN $27 · repository $54.0
 
 Codex: ingest the drafts in intelligence/reconcile/pending/ (Mongo Live Check workflow).

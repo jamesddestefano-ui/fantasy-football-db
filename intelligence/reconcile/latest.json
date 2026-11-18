@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-11-17T21:49:34Z",
+ "espn_observed_at": "2026-11-18T19:22:53Z",
  "repo_observed_at": "2026-10-28T08:11:00Z",
  "status": "NEEDS_INGEST",
  "unlogged_moves": [
@@ -763,16 +763,146 @@
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
    }
+  },
+  {
+   "transaction": {
+    "id": "5b14df0f-4547-47dc-a474-1cf7b80a953f",
+    "type": "WAIVER",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 3,
+    "scoring_period": 11,
+    "processed_at": "2026-11-18T08:35:14Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "4688380",
+      "name": "Cam Ward",
+      "position": "QB",
+      "nfl_team": "TEN",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "3924327",
+      "name": "Drew Lock",
+      "position": "QB",
+      "nfl_team": "SEA",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "WAIVER_ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Cam Ward",
+    "nfl_team": "TEN",
+    "position": "QB",
+    "espn_id": "4688380",
+    "faab_amount": 3,
+    "dropped_player": "Drew Lock",
+    "dropped_nfl_team": "SEA",
+    "dropped_position": "QB",
+    "observed_at": "2026-11-18T08:35:14Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "WAIVER_ADD_DROP",
+     "added": "Cam Ward",
+     "dropped": "Drew Lock",
+     "calendar_day_ET": "2026-11-18",
+     "faab_amount": 3
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 5b14df0f-4547-47dc-a474-1cf7b80a953f WAIVER EXECUTED processed Wed Nov 18, 3:35 AM ET: added Cam Ward, TEN QB from Waivers for $3; dropped Drew Lock, SEA QB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
+  },
+  {
+   "transaction": {
+    "id": "fc01f21b-6629-4ec9-b5af-bea7ed00a5c0",
+    "type": "WAIVER",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 1,
+    "scoring_period": 11,
+    "processed_at": "2026-11-18T08:35:14Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "3068267",
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "nfl_team": "WAS",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "4426386",
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "nfl_team": "CHI",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "WAIVER_ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Austin Ekeler",
+    "nfl_team": "WAS",
+    "position": "RB",
+    "espn_id": "3068267",
+    "faab_amount": 1,
+    "dropped_player": "Roschon Johnson",
+    "dropped_nfl_team": "CHI",
+    "dropped_position": "RB",
+    "observed_at": "2026-11-18T08:35:14Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "WAIVER_ADD_DROP",
+     "added": "Austin Ekeler",
+     "dropped": "Roschon Johnson",
+     "calendar_day_ET": "2026-11-18",
+     "faab_amount": 1
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction fc01f21b-6629-4ec9-b5af-bea7ed00a5c0 WAIVER EXECUTED processed Wed Nov 18, 3:35 AM ET: added Austin Ekeler, WAS RB from Waivers for $1; dropped Roschon Johnson, CHI RB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
   }
  ],
  "roster_diff": {
   "on_espn_not_in_repo": [
-   "Drew Lock",
+   "Austin Ekeler",
+   "Cam Ward",
    "Fernando Mendoza",
    "Greg Dulcich",
    "Packers D/ST",
-   "Pat Freiermuth",
-   "Roschon Johnson"
+   "Pat Freiermuth"
   ],
   "in_repo_not_on_espn": [
    "Bam Knight",
@@ -784,8 +914,8 @@
   ]
  },
  "faab": {
-  "espn": 31,
+  "espn": 27,
   "repository": 54.0
  },
- "transactions_checked": 337
+ "transactions_checked": 361
 }

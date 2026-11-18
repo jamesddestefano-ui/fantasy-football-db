@@ -1,4 +1,4 @@
-# Mongo FAAB market (as of 2026-11-17T21:49:34Z)
+# Mongo FAAB market (as of 2026-11-18T19:22:53Z)
 
 _What Mongo managers actually pay. Use for bid sizing; never availability._
 
@@ -8,26 +8,26 @@ _What Mongo managers actually pay. Use for bid sizing; never availability._
 |---|---|---|
 | Joe's Finest Team (JFT) | $100 | $0 |
 | Geno Smith (GENO) | $94 | $6 |
-| Horton (CCT) | $90 | $10 |
 | DeVonta Be Kidding Me (ME) | $82 | $18 |
-| Bills Mafia (BM) | $82 | $18 |
-| $Cmoney$ (C$) | $67 | $33 |
-| Justmyluck3 (J3) | $46 | $54 |
-| SHOWSTOPPERS (BE3) | $38 | $62 |
-| I Loveland Rice Krispies (AAGD) | $33 | $67 |
-| Tom Brady of Ass (JDD) | $31 | $69 |
+| Bills Mafia (BM) | $80 | $20 |
+| Horton (CCT) | $78 | $22 |
+| $Cmoney$ (C$) | $61 | $39 |
+| SHOWSTOPPERS (BE3) | $35 | $65 |
+| I Loveland Rice Krispies (AAGD) | $30 | $70 |
+| Justmyluck3 (J3) | $30 | $70 |
 | T.N.T (FFT) | $30 | $70 |
-| You're a JaGoff (PbP) | $23 | $77 |
+| Tom Brady of Ass (JDD) | $27 | $73 |
+| You're a JaGoff (PbP) | $22 | $78 |
 
 ## Winning bids by position (paid claims)
 
 | Pos | Claims | Paid | Median | 75th % | Max |
 |---|---|---|---|---|---|
-| D/ST | 21 | 21 | $3 | $3 | $7 |
-| QB | 17 | 17 | $2 | $8 | $13 |
-| RB | 21 | 21 | $7 | $13 | $23 |
-| TE | 12 | 12 | $3 | $6.5 | $9 |
-| WR | 22 | 22 | $3.5 | $8 | $19 |
+| D/ST | 22 | 22 | $3 | $3 | $7 |
+| QB | 18 | 18 | $2.5 | $7.2 | $13 |
+| RB | 24 | 24 | $6.5 | $13.2 | $23 |
+| TE | 14 | 14 | $3 | $6 | $9 |
+| WR | 25 | 25 | $3 | $8 | $19 |
 
 Winners typically beat the runner-up bid by **$2.0** (median).
 
@@ -38,6 +38,7 @@ Winners typically beat the runner-up bid by **$2.0** (median).
 | 4 | Jaylen Wright (MIA) | RB | You're a JaGoff | $23 | $12 |
 | 4 | Ollie Gordon II (MIA) | RB | T.N.T | $21 | $15 |
 | 7 | Omar Cooper Jr. (NYJ) | WR | I Loveland Rice Krispies | $19 | $10 |
+| 11 | Seth McGowan (IND) | RB | Justmyluck3 | $16 | $6 |
 | 6 | Dameon Pierce (PHI) | RB | DeVonta Be Kidding Me | $15 | — |
 | 5 | Will Shipley (PHI) | RB | $Cmoney$ | $14 | $13 |
 | 10 | MarShawn Lloyd (GB) | RB | Justmyluck3 | $14 | — |
@@ -49,9 +50,8 @@ Winners typically beat the runner-up bid by **$2.0** (median).
 | 5 | Dohnte Meyers (CIN) | WR | Justmyluck3 | $11 | — |
 | 3 | Emanuel Wilson (SEA) | RB | T.N.T | $10 | $6 |
 | 7 | C.J. Stroud (HOU) | QB | T.N.T | $10 | $10 |
-| 10 | Fernando Mendoza (LV) | QB | Tom Brady of Ass | $10 | — |
 
-James: won 16 claim(s) for $69; lost 7.
+James: won 18 claim(s) for $73; lost 9.
 - Week 3: Tre Tucker at $4 (FAILED_INVALIDPLAYERSOURCE)
 - Week 3: Emanuel Wilson at $6 (FAILED_INVALIDPLAYERSOURCE)
 - Week 4: Ollie Gordon II at $15 (FAILED_INVALIDPLAYERSOURCE)
@@ -59,3 +59,5 @@ James: won 16 claim(s) for $69; lost 7.
 - Week 7: C.J. Stroud at $10 (FAILED_INVALIDPLAYERSOURCE)
 - Week 7: Omar Cooper Jr. at $3 (FAILED_INVALIDPLAYERSOURCE)
 - Week 8: Caleb Douglas at $5 (FAILED_INVALIDPLAYERSOURCE)
+- Week 11: Steelers D/ST at $3 (FAILED_INVALIDPLAYERSOURCE)
+- Week 11: Seth McGowan at $3 (FAILED_INVALIDPLAYERSOURCE)
