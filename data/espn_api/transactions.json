@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-18T19:22:53Z",
+ "observed_at": "2026-11-19T19:27:48Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 126,
+  "FREEAGENT": 128,
   "FUTURE_ROSTER": 42,
-  "ROSTER": 533,
+  "ROSTER": 538,
   "TRADE_PROPOSAL": 4,
   "WAIVER": 234
  },
@@ -11203,6 +11203,70 @@
     }
    ],
    "drops": []
+  },
+  {
+   "id": "c39c70b4-8fda-4aac-968d-db929219ae44",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 0,
+   "scoring_period": 11,
+   "processed_at": "2026-11-19T02:50:12Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4883647",
+     "name": "Elic Ayomanor",
+     "position": "WR",
+     "nfl_team": "TEN",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4242557",
+     "name": "Colby Parkinson",
+     "position": "TE",
+     "nfl_team": "LAR",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "d6beacef-b2e8-463b-ab17-fcda28defbfa",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 0,
+   "scoring_period": 11,
+   "processed_at": "2026-11-19T18:52:21Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3117256",
+     "name": "Dalton Schultz",
+     "position": "TE",
+     "nfl_team": "HOU",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16033",
+     "name": "Ravens D/ST",
+     "position": "D/ST",
+     "nfl_team": "BAL",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
   }
  ]
 }
