@@ -1,11 +1,11 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-20T19:04:02Z",
+ "observed_at": "2026-11-21T17:56:38Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 128,
+  "FREEAGENT": 129,
   "FUTURE_ROSTER": 42,
   "ROSTER": 540,
   "TRADE_PROPOSAL": 4,
@@ -11264,6 +11264,38 @@
      "position": "D/ST",
      "nfl_team": "BAL",
      "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "2caedb59-bb26-46d3-8ef0-91d210b4e402",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 1,
+   "team": "I Loveland Rice Krispies",
+   "bid": 0,
+   "scoring_period": 11,
+   "processed_at": "2026-11-21T12:05:41Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16027",
+     "name": "Buccaneers D/ST",
+     "position": "D/ST",
+     "nfl_team": "TB",
+     "from_team_id": 0,
+     "to_team_id": 1
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3043116",
+     "name": "Demarcus Robinson",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 1,
      "to_team_id": 0
     }
    ]
