@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-21T17:56:38Z",
+ "observed_at": "2026-11-21T20:09:52Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 129,
+  "FREEAGENT": 131,
   "FUTURE_ROSTER": 42,
-  "ROSTER": 540,
+  "ROSTER": 543,
   "TRADE_PROPOSAL": 4,
   "WAIVER": 234
  },
@@ -11296,6 +11296,60 @@
      "position": "WR",
      "nfl_team": "SF",
      "from_team_id": 1,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "5af5a1b5-065a-4250-aa09-538a7602ac71",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 11,
+   "processed_at": "2026-11-21T19:46:30Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4596334",
+     "name": "Keaton Mitchell",
+     "position": "RB",
+     "nfl_team": "LAC",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "0f0c7e6f-af80-4fff-ac9b-e41b2700e5c2",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 11,
+   "processed_at": "2026-11-21T19:48:54Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4428718",
+     "name": "Tre Tucker",
+     "position": "WR",
+     "nfl_team": "LV",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4569682",
+     "name": "Audric Estime",
+     "position": "RB",
+     "nfl_team": "NO",
+     "from_team_id": 5,
      "to_team_id": 0
     }
    ]
