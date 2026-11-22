@@ -1,4 +1,4 @@
-# Mongo FAAB market (as of 2026-11-21T20:09:52Z)
+# Mongo FAAB market (as of 2026-11-22T18:27:18Z)
 
 _What Mongo managers actually pay. Use for bid sizing; never availability._
 

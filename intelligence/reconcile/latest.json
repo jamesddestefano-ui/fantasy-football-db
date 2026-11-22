@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-11-21T20:09:52Z",
+ "espn_observed_at": "2026-11-22T18:27:18Z",
  "repo_observed_at": "2026-10-28T08:11:00Z",
  "status": "NEEDS_INGEST",
  "unlogged_moves": [
@@ -893,6 +893,61 @@
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
    }
+  },
+  {
+   "transaction": {
+    "id": "758adcfc-bbfc-4a11-9362-859bc06f6567",
+    "type": "FREEAGENT",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 0,
+    "scoring_period": 11,
+    "processed_at": "2026-11-22T16:56:12Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "-16020",
+      "name": "Jets D/ST",
+      "position": "D/ST",
+      "nfl_team": "NYJ",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": []
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "FREE_AGENT_ADD",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Jets D/ST",
+    "nfl_team": "NYJ",
+    "position": "D/ST",
+    "espn_id": "-16020",
+    "faab_amount": 0,
+    "dropped_player": null,
+    "dropped_nfl_team": null,
+    "dropped_position": null,
+    "observed_at": "2026-11-22T16:56:12Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "FREE_AGENT_ADD",
+     "added": "Jets D/ST",
+     "dropped": null,
+     "calendar_day_ET": "2026-11-22",
+     "faab_amount": 0
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 758adcfc-bbfc-4a11-9362-859bc06f6567 FREEAGENT EXECUTED processed Sun Nov 22, 11:56 AM ET: added Jets D/ST, NYJ D/ST."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
   }
  ],
  "roster_diff": {
@@ -900,7 +955,7 @@
    "Austin Ekeler",
    "Cam Ward",
    "Fernando Mendoza",
-   "Greg Dulcich",
+   "Jets D/ST",
    "Packers D/ST",
    "Pat Freiermuth"
   ],
@@ -917,5 +972,5 @@
   "espn": 27,
   "repository": 54.0
  },
- "transactions_checked": 366
+ "transactions_checked": 369
 }
