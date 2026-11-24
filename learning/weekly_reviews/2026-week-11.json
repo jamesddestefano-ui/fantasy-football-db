@@ -1,0 +1,155 @@
+{
+ "system": "CLAUDE_MONGO_BRAIN",
+ "season": 2026,
+ "week": 11,
+ "reviewed_at": "2026-11-24T10:58:00-05:00",
+ "best_decisions": [
+  "mongo-2026-w11-claim-bears-dst-001: Bears D/ST (vs NO) for $2 was the right stream - Bears scored 16.0 (FP), best of every D/ST considered. Not placed by James.",
+  "mongo-2026-w11-claim-ward-001: Ward won at $3 -> 28.22, James's #2 scorer",
+  "mongo-2026-w11-lineup-001 TE call: Okonkwo 10.6 over Freiermuth 9.0"
+ ],
+ "worst_decisions": [
+  "mongo-2026-w11-lineup-001 FLEX: Burden 3.3 (first game back from concussion, proj 15.68) and Flournoy 2.1 started over Downs 9.9 / Freiermuth 9.0 (-13.5)"
+ ],
+ "good_process_bad_result": [
+  "mongo-2026-w11-claim-ward-001: correct claim at market price, but bench QB Mendoza (28.88) outscored him by 0.66"
+ ],
+ "bad_process_good_result": [],
+ "missed_opportunities": [
+  "Bears D/ST: recommended $2 claim not placed; James bid $3 on Steelers (lost the tie to SHOWSTOPPERS). Bears then sat unclaimed in free agency ~3 hours Wednesday morning before T.N.T. took it for $0. ~+9-10 points forgone vs Jets",
+  "FLEX: Downs 9.9 and Freiermuth 9.0 on the bench (14.16 total bench waste incl. QB)"
+ ],
+ "signals_that_worked": [
+  "Matchup-driven D/ST ranking (RotoWire Bears #1 vs injury-hit NO OL): Bears 16.0",
+  "ESPN TE projection gap (Okonkwo 10.29 vs Freiermuth 7.62): held",
+  "Ward schedule thesis (soft QB defenses): 28.22",
+  "Ekeler role share after Croskey-Merritt IR: 6.4 in an empty RB2 slot"
+ ],
+ "signals_that_failed": [
+  "Burden ESPN 15.68 projection in his first game back from concussion: 3.3",
+  "Flournoy 9.79 proj -> 2.1; Kaelon Black 6.65 -> 2.5"
+ ],
+ "data_quality_issues": [
+  "Scheduled Tuesday ESPN daily and weekly board had not run by 10:42 AM ET (newest snapshot 2026-11-23T22:34Z, pre-MNF, last_week = Week 10). Mongo weekly board dispatched manually at 15:43Z; snapshot 2026-11-24T15:44:14Z provided Week 11 league scoring",
+  "Reconcile NEEDS_INGEST: 15 ESPN moves since 2026-10-28 not in repository history; repository FAAB $54 vs ESPN $27",
+  "Greg Dulcich is off James's roster but no Dulcich drop appears in the ESPN transaction log (Jets D/ST add shows no drop)",
+  "Bears/Chargers/Steelers/Roschon Johnson/Demercado Week 11 points only in FantasyPros standard PPR, not Mongo scoring"
+ ],
+ "timing_issues": [
+  "Third straight Tuesday where GitHub scheduled runs landed hours late; the report card again needed a manual dispatch"
+ ],
+ "rule_changes_proposed": [
+  "Concussion-return discount: in a WR/FLEX near-tie, a player's first game back from concussion protocol ranks below a healthy option within ~5 projected points. One occurrence - proposed only",
+  "D/ST $2 cap from Week 10: held (Bears rec was $2); still not adopted"
+ ],
+ "rule_changes_adopted": [],
+ "rules_rejected_due_to_insufficient_sample": [
+  "Near-tie rule: W11 TE near-tie went with the projection (+1.6); 3-2 since W7 - still proposed, not adopted"
+ ],
+ "mongo_metrics": {
+  "recommended_acquisition_vs_actual": [
+   "Ward: rec $3 (drop Lock), actual $3, won",
+   "Ekeler: rec $2 (drop R. Johnson), actual $1, won",
+   "Bears D/ST: rec $2 (drop Packers), not placed; James bid Steelers $3, lost (SHOWSTOPPERS $3)",
+   "Demercado (backup): rec $1, James bid $3, lost (Horton $4)",
+   "Seth McGowan: not recommended, James bid $3, lost (Justmyluck3 $16)",
+   "Jets D/ST: rec $0 FA Sunday, followed"
+  ],
+  "recommended_faab_vs_actual_and_winning": [
+   "Recommended $7 max; spent $4 ($31 -> $27)"
+  ],
+  "points_added_above_replacement": [
+   "Ward 28.22 vs Mendoza 28.88 = -0.66",
+   "Ekeler 6.4 vs R. Johnson 0.0 (FP) = +6.4",
+   "Jets 7.0 vs Chargers 1.0 (FP) = ~+6"
+  ],
+  "starter_bench_differential": [
+   "Week 11: 111.42 started vs 125.58 optimal = 14.16 left on bench"
+  ],
+  "weeks_retained": [
+   "Ward 1+, Ekeler 1+, Jets D/ST 1+, Freiermuth 2+, Mendoza 2+ (bench)"
+  ],
+  "drop_timing_and_regret": [
+   "Drew Lock: SEA bye - no regret",
+   "Roschon Johnson 0.0 (FP) - no regret",
+   "Greg Dulcich 3.2 (FP) - no regret"
+  ],
+  "missed_waiver_opportunities": [
+   "Bears D/ST 16.0 (FP): unclaimed on waivers, then a $0 free agent for ~3h Wednesday"
+  ],
+  "roster_value_improvement": [
+   "Bijan, Sampson, Darnold, Packers back from bye for Week 12; QB room now Ward / Mendoza / Darnold - one can go"
+  ]
+ },
+ "result": {
+  "james_points": 111.42,
+  "opponent": "Justmyluck3 (J3)",
+  "opponent_points": 138.0,
+  "outcome": "LOSS",
+  "record_after": "4-7-0",
+  "margin": -26.58,
+  "source": "data/espn_api/latest.json last_week (observed 2026-11-24T15:44:14Z) + J3 points_for delta vs data/espn_api/2026-11-23T2234Z.json (1346.94 to 1484.94)"
+ },
+ "week_grade": "C-",
+ "lineup_efficiency": {
+  "starter_points": 111.42,
+  "optimal_points": 125.58,
+  "points_left_on_bench": 14.16,
+  "efficiency_pct": 88.7,
+  "optimal_lineup": "QB Mendoza 28.88; RB Ekeler 6.4 / Black 2.5; WR Lamb 32.2 / McMillan 19.1; TE Okonkwo 10.6; FLEX Downs 9.9 / Freiermuth 9.0; D/ST Jets 7.0",
+  "biggest_misses": [
+   "Downs 9.9 + Freiermuth 9.0 on bench vs Burden 3.3 + Flournoy 2.1 at FLEX (-13.5)",
+   "Mendoza 28.88 vs Ward 28.22 (-0.66)"
+  ],
+  "note": "Loss by 26.58; even the optimal 125.58 loses. Four byes (Bijan, Sampson, Darnold, Packers) left only two healthy RBs (Black 2.5, Ekeler 6.4)."
+ },
+ "waiver_faab_results": {
+  "faab_start": 31,
+  "faab_end": 27,
+  "paid_claims": 2,
+  "moves": [
+   "Cam Ward for Drew Lock $3 -> started, 28.22",
+   "Austin Ekeler for Roschon Johnson $1 -> started, 6.4",
+   "Jets D/ST $0 FA (Sun) -> started, 7.0"
+  ],
+  "failed_claims": "Steelers D/ST $3 (lost to SHOWSTOPPERS $3), Seth McGowan $3 (J3 $16), Demercado $3 (Horton $4)"
+ },
+ "advice_followed": {
+  "followed": 3,
+  "overrode_partially": 2,
+  "ignored": 0,
+  "detail": "Ward claim, lineup and Jets $0 add followed. Ekeler bid lowered to $1 (won). D/ST: Steelers $3 instead of recommended Bears $2 - cost ~10 points."
+ },
+ "nfl_pulse_performance": {
+  "pulses_considered": 0,
+  "pulses_used": 0,
+  "pulses_rejected": 0,
+  "actions_changed_by_pulse": 0,
+  "successful_changed_actions": 0,
+  "unsuccessful_changed_actions": 0,
+  "average_information_lead_time_minutes": null,
+  "highly_useful": 0,
+  "useful": 0,
+  "misleading": 0,
+  "late": 0,
+  "category_source_performance": {},
+  "note": "No Week 11 decision used Pulse. Overnight 2026-11-24 Pulse items (Parsons cleared for Packers D/ST, Darnold practice progress) bear on Week 12 only."
+ },
+ "season_trend": {
+  "reviewed_decisions": 32,
+  "claude": {
+   "count": 26,
+   "avg_outcome": 2.346,
+   "avg_process": 2.808,
+   "success_rate": 0.423
+  },
+  "prime": {
+   "count": 6,
+   "avg_outcome": 2.5,
+   "avg_process": 3.0,
+   "success_rate": 0.5
+  },
+  "team": "4-7-0, 1333.04 PF (8th of 12 in PF)",
+  "note": "Claude's decision grades rose again (outcome 2.19 -> 2.35, success 0.33 -> 0.42) but the team lost; bench waste W7 15.2, W8 1.3, W9 12.6, W10 8.1, W11 14.16."
+ }
+}
