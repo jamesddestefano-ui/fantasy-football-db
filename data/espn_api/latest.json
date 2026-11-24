@@ -2,7 +2,7 @@
  "league": "mongo",
  "espn_league_id": "1470431049",
  "season": 2026,
- "observed_at": "2026-11-24T21:06:20Z",
+ "observed_at": "2026-11-24T23:04:52Z",
  "scoring_period": 12,
  "authority": "ESPN current ownership evidence as of observed_at (read-only API). Does not by itself write transactions; availability must be re-checked before a claim.",
  "faab_budget": 100,
@@ -105,7 +105,7 @@
     "espn_id": "5083754",
     "injury_status": "NORMAL",
     "proj": 8.11,
-    "pct_owned": 43.9,
+    "pct_owned": 43.8,
     "slot": "FLEX"
    },
    {
@@ -808,7 +808,7 @@
      "name": "Kenneth Walker III",
      "position": "RB",
      "nfl_team": "KC",
-     "slot": "IR",
+     "slot": "BN",
      "proj": 22.14,
      "injury_status": "NORMAL"
     },
@@ -890,14 +890,6 @@
      "nfl_team": "HOU",
      "slot": "BN",
      "proj": 0.0,
-     "injury_status": "NORMAL"
-    },
-    {
-     "name": "Keaton Mitchell",
-     "position": "RB",
-     "nfl_team": "LAC",
-     "slot": "BN",
-     "proj": 6.11,
      "injury_status": "NORMAL"
     },
     {
@@ -1364,7 +1356,7 @@
      "name": "Jaxon Smith-Njigba",
      "position": "WR",
      "nfl_team": "SEA",
-     "slot": "BN",
+     "slot": "WR",
      "proj": 22.62,
      "injury_status": "NORMAL"
     },
@@ -1404,7 +1396,7 @@
      "name": "Xavier Worthy",
      "position": "WR",
      "nfl_team": "KC",
-     "slot": "FLEX",
+     "slot": "BN",
      "proj": 5.97,
      "injury_status": "NORMAL"
     },
@@ -1412,7 +1404,7 @@
      "name": "Dalton Kincaid",
      "position": "TE",
      "nfl_team": "BUF",
-     "slot": "BN",
+     "slot": "TE",
      "proj": 8.37,
      "injury_status": "NORMAL"
     },
@@ -1428,7 +1420,7 @@
      "name": "Denzel Boston",
      "position": "WR",
      "nfl_team": "CLE",
-     "slot": "BN",
+     "slot": "FLEX",
      "proj": 13.26,
      "injury_status": "NORMAL"
     },
@@ -1436,7 +1428,7 @@
      "name": "Justice Hill",
      "position": "RB",
      "nfl_team": "BAL",
-     "slot": "FLEX",
+     "slot": "BN",
      "proj": 9.68,
      "injury_status": "NORMAL"
     },
@@ -1468,7 +1460,7 @@
      "name": "Deebo Samuel Sr.",
      "position": "WR",
      "nfl_team": "SF",
-     "slot": "WR",
+     "slot": "FLEX",
      "proj": 11.04,
      "injury_status": "NORMAL"
     },
@@ -1492,7 +1484,7 @@
      "name": "Dalton Schultz",
      "position": "TE",
      "nfl_team": "HOU",
-     "slot": "TE",
+     "slot": "BN",
      "proj": 7.79,
      "injury_status": "NORMAL"
     }
@@ -2014,7 +2006,6 @@
   "rico dowdle": 5,
   "laquon treadwell": 5,
   "emari demercado": 5,
-  "keaton mitchell": 5,
   "tre tucker": 5,
   "brock bowers": 6,
   "joshua allen": 6,
@@ -2143,7 +2134,7 @@
    "espn_id": "4426515",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 83.3,
+   "pct_owned": 83.2,
    "status": "WAIVERS"
   },
   {
@@ -2153,7 +2144,7 @@
    "espn_id": "-16014",
    "injury_status": "ACTIVE",
    "proj": 9.12,
-   "pct_owned": 71.4,
+   "pct_owned": 71.3,
    "status": "WAIVERS"
   },
   {
@@ -2163,7 +2154,7 @@
    "espn_id": "-16033",
    "injury_status": "ACTIVE",
    "proj": 5.99,
-   "pct_owned": 56.9,
+   "pct_owned": 56.8,
    "status": "WAIVERS"
   },
   {
@@ -2173,7 +2164,7 @@
    "espn_id": "4569587",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 39.3,
+   "pct_owned": 39.2,
    "status": "WAIVERS"
   },
   {
@@ -2183,7 +2174,7 @@
    "espn_id": "8439",
    "injury_status": "ACTIVE",
    "proj": 17.94,
-   "pct_owned": 38.8,
+   "pct_owned": 38.7,
    "status": "WAIVERS"
   },
   {
@@ -2241,7 +2232,7 @@
    "position": "TE",
    "nfl_team": "DAL",
    "espn_id": "4242355",
-   "injury_status": "QUESTIONABLE",
+   "injury_status": "DOUBTFUL",
    "proj": 0.0,
    "pct_owned": 30.8,
    "status": "WAIVERS"
@@ -2303,7 +2294,7 @@
    "espn_id": "3917315",
    "injury_status": "QUESTIONABLE",
    "proj": 0.0,
-   "pct_owned": 26.8,
+   "pct_owned": 26.7,
    "status": "WAIVERS"
   },
   {
@@ -2383,7 +2374,7 @@
    "espn_id": "4569682",
    "injury_status": "ACTIVE",
    "proj": 0.0,
-   "pct_owned": 20.0,
+   "pct_owned": 19.9,
    "status": "WAIVERS"
   },
   {
@@ -2423,7 +2414,7 @@
    "espn_id": "3052587",
    "injury_status": "ACTIVE",
    "proj": 17.68,
-   "pct_owned": 17.9,
+   "pct_owned": 17.8,
    "status": "WAIVERS"
   },
   {
@@ -2553,7 +2544,7 @@
    "espn_id": "3924327",
    "injury_status": "ACTIVE",
    "proj": 0.0,
-   "pct_owned": 10.6,
+   "pct_owned": 10.5,
    "status": "WAIVERS"
   },
   {
@@ -2573,7 +2564,7 @@
    "espn_id": "4570037",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 9.7,
+   "pct_owned": 9.6,
    "status": "WAIVERS"
   },
   {
@@ -2604,6 +2595,16 @@
    "injury_status": "ACTIVE",
    "proj": 6.99,
    "pct_owned": 8.7,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Keaton Mitchell",
+   "position": "RB",
+   "nfl_team": "LAC",
+   "espn_id": "4596334",
+   "injury_status": "QUESTIONABLE",
+   "proj": 6.11,
+   "pct_owned": 8.4,
    "status": "WAIVERS"
   },
   {
@@ -2923,7 +2924,7 @@
    "espn_id": "4241555",
    "injury_status": "ACTIVE",
    "proj": 0.0,
-   "pct_owned": 2.7,
+   "pct_owned": 2.6,
    "status": "WAIVERS"
   },
   {
@@ -3403,7 +3404,7 @@
    "espn_id": "4035671",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 0.6,
+   "pct_owned": 0.5,
    "status": "WAIVERS"
   },
   {
@@ -3821,7 +3822,7 @@
    "position": "TE",
    "nfl_team": "KC",
    "espn_id": "4240472",
-   "injury_status": "QUESTIONABLE",
+   "injury_status": "ACTIVE",
    "proj": 3.74,
    "pct_owned": 0.2,
    "status": "WAIVERS"
@@ -4625,16 +4626,6 @@
    "proj": null,
    "pct_owned": 0.1,
    "status": "WAIVERS"
-  },
-  {
-   "name": "Patrick Ricard",
-   "position": "RB",
-   "nfl_team": "NYG",
-   "espn_id": "2975417",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.1,
-   "status": "WAIVERS"
   }
  ],
  "last_week": {
@@ -4724,7 +4715,7 @@
     "espn_id": "5083754",
     "injury_status": "NORMAL",
     "proj": 9.79,
-    "pct_owned": 43.9,
+    "pct_owned": 43.8,
     "slot": "FLEX",
     "actual": 2.1
    },
@@ -4827,8 +4818,15 @@
   "opponent_record": "8-3-0",
   "opponent_points_for": 1622.04,
   "my_proj": 104.36,
-  "opponent_proj": 124.79,
+  "opponent_proj": 145.6,
   "opponent_starters": [
+   {
+    "slot": "WR",
+    "name": "Jaxon Smith-Njigba",
+    "nfl_team": "SEA",
+    "proj": 22.62,
+    "injury_status": "NORMAL"
+   },
    {
     "slot": "RB",
     "name": "Christian McCaffrey",
@@ -4851,17 +4849,17 @@
     "injury_status": "NORMAL"
    },
    {
-    "slot": "FLEX",
-    "name": "Xavier Worthy",
-    "nfl_team": "KC",
-    "proj": 5.97,
+    "slot": "TE",
+    "name": "Dalton Kincaid",
+    "nfl_team": "BUF",
+    "proj": 8.37,
     "injury_status": "NORMAL"
    },
    {
     "slot": "FLEX",
-    "name": "Justice Hill",
-    "nfl_team": "BAL",
-    "proj": 9.68,
+    "name": "Denzel Boston",
+    "nfl_team": "CLE",
+    "proj": 13.26,
     "injury_status": "NORMAL"
    },
    {
@@ -4872,7 +4870,7 @@
     "injury_status": "NORMAL"
    },
    {
-    "slot": "WR",
+    "slot": "FLEX",
     "name": "Deebo Samuel Sr.",
     "nfl_team": "SF",
     "proj": 11.04,
@@ -4883,13 +4881,6 @@
     "name": "C.J. Stroud",
     "nfl_team": "HOU",
     "proj": 27.61,
-    "injury_status": "NORMAL"
-   },
-   {
-    "slot": "TE",
-    "name": "Dalton Schultz",
-    "nfl_team": "HOU",
-    "proj": 7.79,
     "injury_status": "NORMAL"
    }
   ]
