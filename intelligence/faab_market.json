@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-24T23:04:52Z",
+ "observed_at": "2026-11-25T20:26:38Z",
  "kind": "INTELLIGENCE_FAAB_MARKET",
  "budgets": [
   {
@@ -22,28 +22,22 @@
    "spent": 18
   },
   {
-   "team": "Bills Mafia",
-   "abbrev": "BM",
-   "remaining": 80,
-   "spent": 20
-  },
-  {
    "team": "Horton",
    "abbrev": "CCT",
    "remaining": 78,
    "spent": 22
   },
   {
+   "team": "Bills Mafia",
+   "abbrev": "BM",
+   "remaining": 70,
+   "spent": 30
+  },
+  {
    "team": "$Cmoney$",
    "abbrev": "C$",
    "remaining": 61,
    "spent": 39
-  },
-  {
-   "team": "SHOWSTOPPERS",
-   "abbrev": "BE3",
-   "remaining": 35,
-   "spent": 65
   },
   {
    "team": "I Loveland Rice Krispies",
@@ -58,30 +52,36 @@
    "spent": 70
   },
   {
-   "team": "T.N.T",
-   "abbrev": "FFT",
-   "remaining": 30,
-   "spent": 70
-  },
-  {
    "team": "Tom Brady of Ass",
    "abbrev": "JDD",
    "remaining": 27,
    "spent": 73
   },
   {
+   "team": "T.N.T",
+   "abbrev": "FFT",
+   "remaining": 25,
+   "spent": 75
+  },
+  {
    "team": "You're a JaGoff",
    "abbrev": "PbP",
+   "remaining": 22,
+   "spent": 78
+  },
+  {
+   "team": "SHOWSTOPPERS",
+   "abbrev": "BE3",
    "remaining": 22,
    "spent": 78
   }
  ],
  "by_position": {
   "D/ST": {
-   "claims": 22,
-   "paid_claims": 22,
+   "claims": 24,
+   "paid_claims": 24,
    "median": 3.0,
-   "p75": 3.0,
+   "p75": 3.2,
    "max": 7
   },
   "QB": {
@@ -106,9 +106,9 @@
    "max": 9
   },
   "WR": {
-   "claims": 25,
-   "paid_claims": 25,
-   "median": 3.0,
+   "claims": 28,
+   "paid_claims": 28,
+   "median": 4.5,
    "p75": 8.0,
    "max": 19
   }
@@ -168,6 +168,11 @@
    "claims": 10,
    "spent": 47,
    "max": 16
+  },
+  "12": {
+   "claims": 5,
+   "spent": 28,
+   "max": 10
   }
  },
  "top_claims": [
@@ -468,6 +473,12 @@
     "bid": 3,
     "status": "FAILED_INVALIDPLAYERSOURCE",
     "week": 11
+   },
+   {
+    "player": "Commanders D/ST",
+    "bid": 3,
+    "status": "FAILED_INVALIDPLAYERSOURCE",
+    "week": 12
    }
   ]
  },
@@ -1921,6 +1932,76 @@
    "team": "Tom Brady of Ass",
    "team_id": 2,
    "winning_bid": 1,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-11-25T08:20:24Z",
+   "week": 12,
+   "player": "Chimere Dike",
+   "position": "WR",
+   "nfl_team": "TEN",
+   "team": "SHOWSTOPPERS",
+   "team_id": 7,
+   "winning_bid": 6,
+   "losing_bids": [
+    3
+   ],
+   "runner_up_bid": 3,
+   "overpay_vs_runner_up": 3
+  },
+  {
+   "processed_at": "2026-11-25T08:20:24Z",
+   "week": 12,
+   "player": "Commanders D/ST",
+   "position": "D/ST",
+   "nfl_team": "WAS",
+   "team": "T.N.T",
+   "team_id": 6,
+   "winning_bid": 5,
+   "losing_bids": [
+    3,
+    2
+   ],
+   "runner_up_bid": 3,
+   "overpay_vs_runner_up": 2
+  },
+  {
+   "processed_at": "2026-11-25T08:20:24Z",
+   "week": 12,
+   "player": "Malachi Fields",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "team": "SHOWSTOPPERS",
+   "team_id": 7,
+   "winning_bid": 6,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-11-25T08:20:24Z",
+   "week": 12,
+   "player": "Browns D/ST",
+   "position": "D/ST",
+   "nfl_team": "CLE",
+   "team": "SHOWSTOPPERS",
+   "team_id": 7,
+   "winning_bid": 1,
+   "losing_bids": [],
+   "runner_up_bid": null,
+   "overpay_vs_runner_up": null
+  },
+  {
+   "processed_at": "2026-11-25T08:20:24Z",
+   "week": 12,
+   "player": "Devaughn Vele",
+   "position": "WR",
+   "nfl_team": "NO",
+   "team": "Bills Mafia",
+   "team_id": 10,
+   "winning_bid": 10,
    "losing_bids": [],
    "runner_up_bid": null,
    "overpay_vs_runner_up": null

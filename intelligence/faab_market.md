@@ -1,4 +1,4 @@
-# Mongo FAAB market (as of 2026-11-24T23:04:52Z)
+# Mongo FAAB market (as of 2026-11-25T20:26:38Z)
 
 _What Mongo managers actually pay. Use for bid sizing; never availability._
 
@@ -9,25 +9,25 @@ _What Mongo managers actually pay. Use for bid sizing; never availability._
 | Joe's Finest Team (JFT) | $100 | $0 |
 | Geno Smith (GENO) | $94 | $6 |
 | DeVonta Be Kidding Me (ME) | $82 | $18 |
-| Bills Mafia (BM) | $80 | $20 |
 | Horton (CCT) | $78 | $22 |
+| Bills Mafia (BM) | $70 | $30 |
 | $Cmoney$ (C$) | $61 | $39 |
-| SHOWSTOPPERS (BE3) | $35 | $65 |
 | I Loveland Rice Krispies (AAGD) | $30 | $70 |
 | Justmyluck3 (J3) | $30 | $70 |
-| T.N.T (FFT) | $30 | $70 |
 | Tom Brady of Ass (JDD) | $27 | $73 |
+| T.N.T (FFT) | $25 | $75 |
 | You're a JaGoff (PbP) | $22 | $78 |
+| SHOWSTOPPERS (BE3) | $22 | $78 |
 
 ## Winning bids by position (paid claims)
 
 | Pos | Claims | Paid | Median | 75th % | Max |
 |---|---|---|---|---|---|
-| D/ST | 22 | 22 | $3 | $3 | $7 |
+| D/ST | 24 | 24 | $3 | $3.2 | $7 |
 | QB | 18 | 18 | $2.5 | $7.2 | $13 |
 | RB | 24 | 24 | $6.5 | $13.2 | $23 |
 | TE | 14 | 14 | $3 | $6 | $9 |
-| WR | 25 | 25 | $3 | $8 | $19 |
+| WR | 28 | 28 | $4.5 | $8 | $19 |
 
 Winners typically beat the runner-up bid by **$2.0** (median).
 
@@ -51,7 +51,7 @@ Winners typically beat the runner-up bid by **$2.0** (median).
 | 3 | Emanuel Wilson (SEA) | RB | T.N.T | $10 | $6 |
 | 7 | C.J. Stroud (HOU) | QB | T.N.T | $10 | $10 |
 
-James: won 18 claim(s) for $73; lost 9.
+James: won 18 claim(s) for $73; lost 10.
 - Week 3: Tre Tucker at $4 (FAILED_INVALIDPLAYERSOURCE)
 - Week 3: Emanuel Wilson at $6 (FAILED_INVALIDPLAYERSOURCE)
 - Week 4: Ollie Gordon II at $15 (FAILED_INVALIDPLAYERSOURCE)
@@ -61,3 +61,4 @@ James: won 18 claim(s) for $73; lost 9.
 - Week 8: Caleb Douglas at $5 (FAILED_INVALIDPLAYERSOURCE)
 - Week 11: Steelers D/ST at $3 (FAILED_INVALIDPLAYERSOURCE)
 - Week 11: Seth McGowan at $3 (FAILED_INVALIDPLAYERSOURCE)
+- Week 12: Commanders D/ST at $3 (FAILED_INVALIDPLAYERSOURCE)

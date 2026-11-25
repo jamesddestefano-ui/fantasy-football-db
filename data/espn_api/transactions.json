@@ -1,15 +1,15 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-24T23:04:52Z",
+ "observed_at": "2026-11-25T20:26:38Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 135,
+  "FREEAGENT": 136,
   "FUTURE_ROSTER": 42,
-  "ROSTER": 573,
+  "ROSTER": 584,
   "TRADE_PROPOSAL": 4,
-  "WAIVER": 234
+  "WAIVER": 245
  },
  "transactions": [
   {
@@ -11468,6 +11468,390 @@
      "position": "WR",
      "nfl_team": "LAR",
      "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "e9cbf0bb-93f5-44e7-9237-44766e430afd",
+   "type": "WAIVER",
+   "status": "PENDING",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 3,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T02:19:32Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16020",
+     "name": "Jets D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYJ",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3fac8ab6-6876-4755-9ba0-d89605122aad",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 6,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431268",
+     "name": "Chimere Dike",
+     "position": "WR",
+     "nfl_team": "TEN",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360689",
+     "name": "Tyler Shough",
+     "position": "QB",
+     "nfl_team": "NO",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "482d075a-deda-4ec3-883e-ab7beb07c407",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 5,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4883647",
+     "name": "Elic Ayomanor",
+     "position": "WR",
+     "nfl_team": "TEN",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "61950a62-1ddf-42d3-92c2-86fbfd624304",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 3,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16020",
+     "name": "Jets D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYJ",
+     "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "78c6ba83-1656-43f3-ab28-d196b2255f08",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 4,
+   "team": "You're a JaGoff",
+   "bid": 3,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4431268",
+     "name": "Chimere Dike",
+     "position": "WR",
+     "nfl_team": "TEN",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3116365",
+     "name": "Mark Andrews",
+     "position": "TE",
+     "nfl_team": "BAL",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8145a4fb-d2b2-4680-92e0-8c82f0bf854c",
+   "type": "WAIVER",
+   "status": "FAILED_PLAYERALREADYDROPPED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 5,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3886598",
+     "name": "Jauan Jennings",
+     "position": "WR",
+     "nfl_team": "MIN",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4567156",
+     "name": "Treylon Burks",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8c45773d-a130-4490-8fc4-17f0d9a87457",
+   "type": "WAIVER",
+   "status": "FAILED_INVALIDPLAYERSOURCE",
+   "team_id": 4,
+   "team": "You're a JaGoff",
+   "bid": 2,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16028",
+     "name": "Commanders D/ST",
+     "position": "D/ST",
+     "nfl_team": "WAS",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4427728",
+     "name": "Bam Knight",
+     "position": "RB",
+     "nfl_team": "ARI",
+     "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "a7683a9b-bfa2-4f53-9835-87612bec1541",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 6,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4682648",
+     "name": "Malachi Fields",
+     "position": "WR",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4431466",
+     "name": "Jordan Watkins",
+     "position": "WR",
+     "nfl_team": "SF",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c180ec58-21be-428c-8d10-e117a159f8c2",
+   "type": "WAIVER",
+   "status": "FAILED_POSITIONLIMIT",
+   "team_id": 6,
+   "team": "T.N.T",
+   "bid": 2,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 6
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4808766",
+     "name": "Mason Taylor",
+     "position": "TE",
+     "nfl_team": "NYJ",
+     "from_team_id": 6,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "c2a2cc7d-ee3b-4133-8012-dfcfe1e5fd2a",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 7,
+   "team": "SHOWSTOPPERS",
+   "bid": 1,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16005",
+     "name": "Browns D/ST",
+     "position": "D/ST",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 7
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16023",
+     "name": "Steelers D/ST",
+     "position": "D/ST",
+     "nfl_team": "PIT",
+     "from_team_id": 7,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "f736a17b-3c82-4bc0-9101-2a597492f79e",
+   "type": "WAIVER",
+   "status": "EXECUTED",
+   "team_id": 10,
+   "team": "Bills Mafia",
+   "bid": 10,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T08:20:24Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4569559",
+     "name": "Devaughn Vele",
+     "position": "WR",
+     "nfl_team": "NO",
+     "from_team_id": 0,
+     "to_team_id": 10
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4567156",
+     "name": "Treylon Burks",
+     "position": "WR",
+     "nfl_team": "WAS",
+     "from_team_id": 10,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "3a8dd907-6cde-4e7e-a344-ddf47ce3c42a",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 4,
+   "team": "You're a JaGoff",
+   "bid": 0,
+   "scoring_period": 12,
+   "processed_at": "2026-11-25T10:05:21Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16019",
+     "name": "Giants D/ST",
+     "position": "D/ST",
+     "nfl_team": "NYG",
+     "from_team_id": 0,
+     "to_team_id": 4
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "3116365",
+     "name": "Mark Andrews",
+     "position": "TE",
+     "nfl_team": "BAL",
+     "from_team_id": 4,
      "to_team_id": 0
     }
    ]
