@@ -9,7 +9,7 @@
   "espn_id": "3924327",
   "faab_amount": 0,
   "dropped_player": "Aaron Rodgers",
-  "dropped_nfl_team": "PIT",
+  "dropped_nfl_team": "FA",
   "dropped_position": "QB",
   "observed_at": "2026-11-15T17:38:57Z",
   "dedupe_key": {
@@ -24,7 +24,7 @@
   "sources": [
     {
       "type": "ESPN_API_TRANSACTION",
-      "statement": "ESPN transaction log (read-only API), transaction af0df6ee-abb7-4d1f-9724-46059f30c8a6 FREEAGENT EXECUTED processed Sun Nov 15, 12:38 PM ET: added Drew Lock, SEA QB; dropped Aaron Rodgers, PIT QB."
+      "statement": "ESPN transaction log (read-only API), transaction af0df6ee-abb7-4d1f-9724-46059f30c8a6 FREEAGENT EXECUTED processed Sun Nov 15, 12:38 PM ET: added Drew Lock, SEA QB; dropped Aaron Rodgers, FA QB."
     }
   ],
   "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."

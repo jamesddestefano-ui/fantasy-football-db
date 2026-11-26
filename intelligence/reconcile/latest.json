@@ -1,6 +1,6 @@
 {
  "league": "mongo",
- "espn_observed_at": "2026-11-25T20:26:38Z",
+ "espn_observed_at": "2026-11-26T20:06:22Z",
  "repo_observed_at": "2026-10-28T08:11:00Z",
  "status": "NEEDS_INGEST",
  "unlogged_moves": [
@@ -530,7 +530,7 @@
       "espn_id": "8439",
       "name": "Aaron Rodgers",
       "position": "QB",
-      "nfl_team": "PIT",
+      "nfl_team": "FA",
       "from_team_id": 0,
       "to_team_id": 2
      }
@@ -543,7 +543,7 @@
     "league": "mongo",
     "fantasy_team": "Tom Brady of Ass",
     "player": "Aaron Rodgers",
-    "nfl_team": "PIT",
+    "nfl_team": "FA",
     "position": "QB",
     "espn_id": "8439",
     "faab_amount": 2,
@@ -563,7 +563,7 @@
     "sources": [
      {
       "type": "ESPN_API_TRANSACTION",
-      "statement": "ESPN transaction log (read-only API), transaction c20d5231-08f8-488e-810f-4bcb0bb4a1ed WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Aaron Rodgers, PIT QB from Waivers for $2."
+      "statement": "ESPN transaction log (read-only API), transaction c20d5231-08f8-488e-810f-4bcb0bb4a1ed WAIVER EXECUTED processed Wed Nov 11, 3:51 AM ET: added Aaron Rodgers, FA QB from Waivers for $2."
      }
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
@@ -726,7 +726,7 @@
       "espn_id": "8439",
       "name": "Aaron Rodgers",
       "position": "QB",
-      "nfl_team": "PIT",
+      "nfl_team": "FA",
       "from_team_id": 2,
       "to_team_id": 0
      }
@@ -743,7 +743,7 @@
     "espn_id": "3924327",
     "faab_amount": 0,
     "dropped_player": "Aaron Rodgers",
-    "dropped_nfl_team": "PIT",
+    "dropped_nfl_team": "FA",
     "dropped_position": "QB",
     "observed_at": "2026-11-15T17:38:57Z",
     "dedupe_key": {
@@ -758,7 +758,7 @@
     "sources": [
      {
       "type": "ESPN_API_TRANSACTION",
-      "statement": "ESPN transaction log (read-only API), transaction af0df6ee-abb7-4d1f-9724-46059f30c8a6 FREEAGENT EXECUTED processed Sun Nov 15, 12:38 PM ET: added Drew Lock, SEA QB; dropped Aaron Rodgers, PIT QB."
+      "statement": "ESPN transaction log (read-only API), transaction af0df6ee-abb7-4d1f-9724-46059f30c8a6 FREEAGENT EXECUTED processed Sun Nov 15, 12:38 PM ET: added Drew Lock, SEA QB; dropped Aaron Rodgers, FA QB."
      }
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
@@ -948,12 +948,77 @@
     ],
     "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
    }
+  },
+  {
+   "transaction": {
+    "id": "15b24ed2-86f6-4d7d-995f-43835b89fb45",
+    "type": "FREEAGENT",
+    "status": "EXECUTED",
+    "team_id": 2,
+    "team": "Tom Brady of Ass",
+    "bid": 0,
+    "scoring_period": 12,
+    "processed_at": "2026-11-26T18:16:38Z",
+    "adds": [
+     {
+      "type": "ADD",
+      "espn_id": "3122840",
+      "name": "Deshaun Watson",
+      "position": "QB",
+      "nfl_team": "CLE",
+      "from_team_id": 0,
+      "to_team_id": 2
+     }
+    ],
+    "drops": [
+     {
+      "type": "DROP",
+      "espn_id": "4688380",
+      "name": "Cam Ward",
+      "position": "QB",
+      "nfl_team": "TEN",
+      "from_team_id": 2,
+      "to_team_id": 0
+     }
+    ]
+   },
+   "draft": {
+    "status": "DRAFT_PENDING_INGEST",
+    "event_type": "ADD_DROP",
+    "league": "mongo",
+    "fantasy_team": "Tom Brady of Ass",
+    "player": "Deshaun Watson",
+    "nfl_team": "CLE",
+    "position": "QB",
+    "espn_id": "3122840",
+    "faab_amount": 0,
+    "dropped_player": "Cam Ward",
+    "dropped_nfl_team": "TEN",
+    "dropped_position": "QB",
+    "observed_at": "2026-11-26T18:16:38Z",
+    "dedupe_key": {
+     "league": "mongo",
+     "team": "Tom Brady of Ass",
+     "type": "ADD_DROP",
+     "added": "Deshaun Watson",
+     "dropped": "Cam Ward",
+     "calendar_day_ET": "2026-11-26",
+     "faab_amount": 0
+    },
+    "sources": [
+     {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 15b24ed2-86f6-4d7d-995f-43835b89fb45 FREEAGENT EXECUTED processed Thu Nov 26, 1:16 PM ET: added Deshaun Watson, CLE QB; dropped Cam Ward, TEN QB."
+     }
+    ],
+    "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+   }
   }
  ],
  "roster_diff": {
   "on_espn_not_in_repo": [
    "Austin Ekeler",
-   "Cam Ward",
+   "Deshaun Watson",
    "Fernando Mendoza",
    "Jets D/ST",
    "Packers D/ST",
@@ -972,5 +1037,5 @@
   "espn": 27,
   "repository": 54.0
  },
- "transactions_checked": 382
+ "transactions_checked": 384
 }

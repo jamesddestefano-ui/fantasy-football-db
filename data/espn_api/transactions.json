@@ -1,14 +1,15 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-25T20:26:38Z",
+ "observed_at": "2026-11-26T20:06:22Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 136,
+  "FREEAGENT": 138,
   "FUTURE_ROSTER": 42,
-  "ROSTER": 584,
-  "TRADE_PROPOSAL": 4,
+  "ROSTER": 594,
+  "TRADE_DECLINE": 1,
+  "TRADE_PROPOSAL": 5,
   "WAIVER": 245
  },
  "transactions": [
@@ -4201,7 +4202,7 @@
      "espn_id": "8439",
      "name": "Aaron Rodgers",
      "position": "QB",
-     "nfl_team": "PIT",
+     "nfl_team": "FA",
      "from_team_id": 0,
      "to_team_id": 10
     }
@@ -8570,7 +8571,7 @@
      "espn_id": "8439",
      "name": "Aaron Rodgers",
      "position": "QB",
-     "nfl_team": "PIT",
+     "nfl_team": "FA",
      "from_team_id": 10,
      "to_team_id": 0
     }
@@ -8954,7 +8955,7 @@
      "espn_id": "8439",
      "name": "Aaron Rodgers",
      "position": "QB",
-     "nfl_team": "PIT",
+     "nfl_team": "FA",
      "from_team_id": 10,
      "to_team_id": 0
     }
@@ -9018,7 +9019,7 @@
      "espn_id": "8439",
      "name": "Aaron Rodgers",
      "position": "QB",
-     "nfl_team": "PIT",
+     "nfl_team": "FA",
      "from_team_id": 10,
      "to_team_id": 0
     }
@@ -9615,7 +9616,7 @@
      "espn_id": "8439",
      "name": "Aaron Rodgers",
      "position": "QB",
-     "nfl_team": "PIT",
+     "nfl_team": "FA",
      "from_team_id": 0,
      "to_team_id": 2
     }
@@ -10011,7 +10012,7 @@
      "espn_id": "8439",
      "name": "Aaron Rodgers",
      "position": "QB",
-     "nfl_team": "PIT",
+     "nfl_team": "FA",
      "from_team_id": 0,
      "to_team_id": 2
     }
@@ -10440,7 +10441,7 @@
      "espn_id": "8439",
      "name": "Aaron Rodgers",
      "position": "QB",
-     "nfl_team": "PIT",
+     "nfl_team": "FA",
      "from_team_id": 2,
      "to_team_id": 0
     }
@@ -11852,6 +11853,60 @@
      "position": "TE",
      "nfl_team": "BAL",
      "from_team_id": 4,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "0b549ed8-889f-494f-a2e6-50ec1467f15d",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 5,
+   "team": "Horton",
+   "bid": 0,
+   "scoring_period": 12,
+   "processed_at": "2026-11-26T14:35:08Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4682745",
+     "name": "Jaylen Wright",
+     "position": "RB",
+     "nfl_team": "MIA",
+     "from_team_id": 0,
+     "to_team_id": 5
+    }
+   ],
+   "drops": []
+  },
+  {
+   "id": "15b24ed2-86f6-4d7d-995f-43835b89fb45",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 2,
+   "team": "Tom Brady of Ass",
+   "bid": 0,
+   "scoring_period": 12,
+   "processed_at": "2026-11-26T18:16:38Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "3122840",
+     "name": "Deshaun Watson",
+     "position": "QB",
+     "nfl_team": "CLE",
+     "from_team_id": 0,
+     "to_team_id": 2
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4688380",
+     "name": "Cam Ward",
+     "position": "QB",
+     "nfl_team": "TEN",
+     "from_team_id": 2,
      "to_team_id": 0
     }
    ]

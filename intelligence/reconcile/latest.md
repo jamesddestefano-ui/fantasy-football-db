@@ -1,6 +1,6 @@
 # Mongo reconciliation — NEEDS_INGEST
 
-ESPN 2026-11-25T20:26:38Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 382.
+ESPN 2026-11-26T20:06:22Z vs repository (newest import 2026-10-28T08:11:00Z). Transactions checked: 384.
 
 ## Completed on ESPN, not in the repository
 
@@ -19,10 +19,11 @@ ESPN 2026-11-25T20:26:38Z vs repository (newest import 2026-10-28T08:11:00Z). Tr
 - 2026-11-18T08:35:14Z WAIVER +Cam Ward, -Drew Lock ($3)
 - 2026-11-18T08:35:14Z WAIVER +Austin Ekeler, -Roschon Johnson ($1)
 - 2026-11-22T16:56:12Z FREEAGENT +Jets D/ST
+- 2026-11-26T18:16:38Z FREEAGENT +Deshaun Watson, -Cam Ward
 
 ## Roster differences
 
-- On ESPN, not in repo: Austin Ekeler, Cam Ward, Fernando Mendoza, Jets D/ST, Packers D/ST, Pat Freiermuth
+- On ESPN, not in repo: Austin Ekeler, Deshaun Watson, Fernando Mendoza, Jets D/ST, Packers D/ST, Pat Freiermuth
 - In repo, not on ESPN: Bam Knight, Commanders D/ST, J.J. McCarthy, Keaton Mitchell, Kendre Miller, Kyler Murray
 
 FAAB: ESPN $27 · repository $54.0

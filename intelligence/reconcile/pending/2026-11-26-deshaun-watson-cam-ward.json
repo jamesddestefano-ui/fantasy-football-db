@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_PENDING_INGEST",
+  "event_type": "ADD_DROP",
+  "league": "mongo",
+  "fantasy_team": "Tom Brady of Ass",
+  "player": "Deshaun Watson",
+  "nfl_team": "CLE",
+  "position": "QB",
+  "espn_id": "3122840",
+  "faab_amount": 0,
+  "dropped_player": "Cam Ward",
+  "dropped_nfl_team": "TEN",
+  "dropped_position": "QB",
+  "observed_at": "2026-11-26T18:16:38Z",
+  "dedupe_key": {
+    "league": "mongo",
+    "team": "Tom Brady of Ass",
+    "type": "ADD_DROP",
+    "added": "Deshaun Watson",
+    "dropped": "Cam Ward",
+    "calendar_day_ET": "2026-11-26",
+    "faab_amount": 0
+  },
+  "sources": [
+    {
+      "type": "ESPN_API_TRANSACTION",
+      "statement": "ESPN transaction log (read-only API), transaction 15b24ed2-86f6-4d7d-995f-43835b89fb45 FREEAGENT EXECUTED processed Thu Nov 26, 1:16 PM ET: added Deshaun Watson, CLE QB; dropped Cam Ward, TEN QB."
+    }
+  ],
+  "notes": "Drafted automatically by scripts/espn_reconcile.py from the ESPN API transaction log. Not applied. Ingest = add to src/ffdb/seed.py + data/imports/, debit FAAB, rebuild, validate."
+}
