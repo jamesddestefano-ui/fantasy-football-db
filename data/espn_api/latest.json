@@ -2,7 +2,7 @@
  "league": "mongo",
  "espn_league_id": "1470431049",
  "season": 2026,
- "observed_at": "2026-11-26T20:06:22Z",
+ "observed_at": "2026-11-27T19:53:50Z",
  "scoring_period": 12,
  "authority": "ESPN current ownership evidence as of observed_at (read-only API). Does not by itself write transactions; availability must be re-checked before a claim.",
  "faab_budget": 100,
@@ -44,7 +44,7 @@
     "nfl_team": "DAL",
     "espn_id": "4241389",
     "injury_status": "NORMAL",
-    "proj": 21.22,
+    "proj": 21.21,
     "pct_owned": 99.9,
     "slot": "WR"
    },
@@ -64,7 +64,7 @@
     "nfl_team": "CHI",
     "espn_id": "4685278",
     "injury_status": "NORMAL",
-    "proj": 13.47,
+    "proj": 13.51,
     "pct_owned": 94.4,
     "slot": "FLEX"
    },
@@ -85,7 +85,7 @@
     "espn_id": "5081397",
     "injury_status": "NORMAL",
     "proj": 11.56,
-    "pct_owned": 30.8,
+    "pct_owned": 31.9,
     "slot": "BN"
    },
    {
@@ -95,7 +95,7 @@
     "espn_id": "4696044",
     "injury_status": "NORMAL",
     "proj": 6.41,
-    "pct_owned": 36.4,
+    "pct_owned": 36.2,
     "slot": "RB"
    },
    {
@@ -105,7 +105,7 @@
     "espn_id": "5083754",
     "injury_status": "NORMAL",
     "proj": 8.11,
-    "pct_owned": 39.4,
+    "pct_owned": 39.3,
     "slot": "FLEX"
    },
    {
@@ -115,7 +115,7 @@
     "espn_id": "4360635",
     "injury_status": "NORMAL",
     "proj": 9.57,
-    "pct_owned": 62.8,
+    "pct_owned": 63.4,
     "slot": "TE"
    },
    {
@@ -125,7 +125,7 @@
     "espn_id": "3912547",
     "injury_status": "NORMAL",
     "proj": 15.76,
-    "pct_owned": 18.5,
+    "pct_owned": 18.6,
     "slot": "BN"
    },
    {
@@ -135,7 +135,7 @@
     "espn_id": "4837248",
     "injury_status": "NORMAL",
     "proj": 19.73,
-    "pct_owned": 31.7,
+    "pct_owned": 32.8,
     "slot": "BN"
    },
    {
@@ -145,7 +145,7 @@
     "espn_id": "-16009",
     "injury_status": "NORMAL",
     "proj": 6.84,
-    "pct_owned": 24.9,
+    "pct_owned": 24.8,
     "slot": "BN"
    },
    {
@@ -155,7 +155,7 @@
     "espn_id": "4361411",
     "injury_status": "NORMAL",
     "proj": 7.73,
-    "pct_owned": 44.7,
+    "pct_owned": 44.8,
     "slot": "BN"
    },
    {
@@ -165,7 +165,7 @@
     "espn_id": "3068267",
     "injury_status": "NORMAL",
     "proj": 9.24,
-    "pct_owned": 9.7,
+    "pct_owned": 10.3,
     "slot": "BN"
    },
    {
@@ -175,7 +175,7 @@
     "espn_id": "-16020",
     "injury_status": "NORMAL",
     "proj": 8.19,
-    "pct_owned": 33.6,
+    "pct_owned": 33.3,
     "slot": "D/ST"
    },
    {
@@ -185,7 +185,7 @@
     "espn_id": "3122840",
     "injury_status": "NORMAL",
     "proj": 24.12,
-    "pct_owned": 40.8,
+    "pct_owned": 43.4,
     "slot": "QB"
    }
   ]
@@ -245,7 +245,7 @@
      "position": "TE",
      "nfl_team": "CHI",
      "slot": "TE",
-     "proj": 10.68,
+     "proj": 10.7,
      "injury_status": "NORMAL"
     },
     {
@@ -285,7 +285,7 @@
      "position": "RB",
      "nfl_team": "ARI",
      "slot": "BN",
-     "proj": 8.66,
+     "proj": 8.52,
      "injury_status": "NORMAL"
     },
     {
@@ -360,7 +360,7 @@
      "position": "WR",
      "nfl_team": "DAL",
      "slot": "WR",
-     "proj": 21.22,
+     "proj": 21.21,
      "injury_status": "NORMAL"
     },
     {
@@ -376,7 +376,7 @@
      "position": "WR",
      "nfl_team": "CHI",
      "slot": "FLEX",
-     "proj": 13.47,
+     "proj": 13.51,
      "injury_status": "NORMAL"
     },
     {
@@ -734,7 +734,7 @@
      "position": "RB",
      "nfl_team": "ARI",
      "slot": "BN",
-     "proj": 8.59,
+     "proj": 8.46,
      "injury_status": "NORMAL"
     },
     {
@@ -750,7 +750,7 @@
      "position": "D/ST",
      "nfl_team": "DET",
      "slot": "BN",
-     "proj": 7.57,
+     "proj": 7.36,
      "injury_status": "NORMAL"
     },
     {
@@ -777,7 +777,7 @@
      "position": "WR",
      "nfl_team": "DAL",
      "slot": "WR",
-     "proj": 15.51,
+     "proj": 15.5,
      "injury_status": "NORMAL"
     },
     {
@@ -833,7 +833,7 @@
      "position": "QB",
      "nfl_team": "CHI",
      "slot": "QB",
-     "proj": 19.32,
+     "proj": 19.34,
      "injury_status": "NORMAL"
     },
     {
@@ -1052,7 +1052,7 @@
      "position": "D/ST",
      "nfl_team": "WAS",
      "slot": "D/ST",
-     "proj": 9.75,
+     "proj": 8.99,
      "injury_status": "NORMAL"
     }
    ]
@@ -1167,7 +1167,7 @@
      "position": "WR",
      "nfl_team": "CHI",
      "slot": "BN",
-     "proj": 7.27,
+     "proj": 7.29,
      "injury_status": "NORMAL"
     },
     {
@@ -1226,7 +1226,7 @@
      "position": "RB",
      "nfl_team": "CHI",
      "slot": "RB",
-     "proj": 14.4,
+     "proj": 14.41,
      "injury_status": "NORMAL"
     },
     {
@@ -1274,7 +1274,7 @@
      "position": "WR",
      "nfl_team": "JAX",
      "slot": "FLEX",
-     "proj": 18.49,
+     "proj": 18.48,
      "injury_status": "NORMAL"
     },
     {
@@ -1691,7 +1691,7 @@
      "position": "WR",
      "nfl_team": "CHI",
      "slot": "FLEX",
-     "proj": 11.18,
+     "proj": 11.21,
      "injury_status": "NORMAL"
     },
     {
@@ -1738,7 +1738,7 @@
      "name": "Bryce Young",
      "position": "QB",
      "nfl_team": "CAR",
-     "slot": "QB",
+     "slot": "BN",
      "proj": 17.6,
      "injury_status": "NORMAL"
     },
@@ -1748,14 +1748,6 @@
      "nfl_team": "MIN",
      "slot": "TE",
      "proj": 11.06,
-     "injury_status": "NORMAL"
-    },
-    {
-     "name": "Michael Penix Jr.",
-     "position": "QB",
-     "nfl_team": "ATL",
-     "slot": "BN",
-     "proj": 13.7,
      "injury_status": "NORMAL"
     },
     {
@@ -1789,6 +1781,14 @@
      "slot": "D/ST",
      "proj": 8.76,
      "injury_status": "NORMAL"
+    },
+    {
+     "name": "Joe Milton",
+     "position": "QB",
+     "nfl_team": "PHI",
+     "slot": "QB",
+     "proj": 18.6,
+     "injury_status": "NORMAL"
     }
    ]
   },
@@ -1806,7 +1806,7 @@
      "position": "TE",
      "nfl_team": "ARI",
      "slot": "TE",
-     "proj": 14.99,
+     "proj": 14.76,
      "injury_status": "NORMAL"
     },
     {
@@ -1910,15 +1910,7 @@
      "position": "QB",
      "nfl_team": "KC",
      "slot": "BN",
-     "proj": 21.89,
-     "injury_status": "NORMAL"
-    },
-    {
-     "name": "Bills D/ST",
-     "position": "D/ST",
-     "nfl_team": "BUF",
-     "slot": "D/ST",
-     "proj": 6.56,
+     "proj": 21.91,
      "injury_status": "NORMAL"
     },
     {
@@ -1927,6 +1919,14 @@
      "nfl_team": "HOU",
      "slot": "FLEX",
      "proj": 8.99,
+     "injury_status": "NORMAL"
+    },
+    {
+     "name": "Cowboys D/ST",
+     "position": "D/ST",
+     "nfl_team": "DAL",
+     "slot": "D/ST",
+     "proj": 9.08,
      "injury_status": "NORMAL"
     }
    ]
@@ -2113,11 +2113,11 @@
   "khalil shakir": 12,
   "bryce young": 12,
   "tj hockenson": 12,
-  "michael penix": 12,
   "sione vaki": 12,
   "konata mumpfield": 12,
   "brenton strange": 12,
   "def:LAC": 12,
+  "joe milton": 12,
   "trey mcbride": 13,
   "ashton jeanty": 13,
   "bucky irving": 13,
@@ -2132,8 +2132,8 @@
   "matthew golden": 13,
   "jordan mason": 13,
   "patrick mahomes": 13,
-  "def:BUF": 13,
-  "xavier hutchinson": 13
+  "xavier hutchinson": 13,
+  "def:DAL": 13
  },
  "available": [
   {
@@ -2143,7 +2143,7 @@
    "espn_id": "-16023",
    "injury_status": "ACTIVE",
    "proj": 7.44,
-   "pct_owned": 86.3,
+   "pct_owned": 85.4,
    "status": "FREEAGENT"
   },
   {
@@ -2173,7 +2173,7 @@
    "espn_id": "4360689",
    "injury_status": "ACTIVE",
    "proj": 17.41,
-   "pct_owned": 60.6,
+   "pct_owned": 60.4,
    "status": "FREEAGENT"
   },
   {
@@ -2183,7 +2183,17 @@
    "espn_id": "3116365",
    "injury_status": "ACTIVE",
    "proj": 6.91,
-   "pct_owned": 58.7,
+   "pct_owned": 58.3,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Bills D/ST",
+   "position": "D/ST",
+   "nfl_team": "BUF",
+   "espn_id": "-16002",
+   "injury_status": "ACTIVE",
+   "proj": 6.54,
+   "pct_owned": 55.6,
    "status": "WAIVERS"
   },
   {
@@ -2193,7 +2203,7 @@
    "espn_id": "-16033",
    "injury_status": "ACTIVE",
    "proj": 6.01,
-   "pct_owned": 49.7,
+   "pct_owned": 48.8,
    "status": "FREEAGENT"
   },
   {
@@ -2203,7 +2213,7 @@
    "espn_id": "4569587",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 37.0,
+   "pct_owned": 36.5,
    "status": "FREEAGENT"
   },
   {
@@ -2213,7 +2223,7 @@
    "espn_id": "4035687",
    "injury_status": "ACTIVE",
    "proj": 4.77,
-   "pct_owned": 36.8,
+   "pct_owned": 36.4,
    "status": "FREEAGENT"
   },
   {
@@ -2223,27 +2233,7 @@
    "espn_id": "4038941",
    "injury_status": "QUESTIONABLE",
    "proj": 19.88,
-   "pct_owned": 35.9,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Juwan Johnson",
-   "position": "TE",
-   "nfl_team": "NO",
-   "espn_id": "3929645",
-   "injury_status": "QUESTIONABLE",
-   "proj": 5.41,
-   "pct_owned": 32.5,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Patriots D/ST",
-   "position": "D/ST",
-   "nfl_team": "NE",
-   "espn_id": "-16017",
-   "injury_status": "ACTIVE",
-   "proj": 8.24,
-   "pct_owned": 31.8,
+   "pct_owned": 35.8,
    "status": "FREEAGENT"
   },
   {
@@ -2253,7 +2243,37 @@
    "espn_id": "4432773",
    "injury_status": "ACTIVE",
    "proj": 6.06,
-   "pct_owned": 31.0,
+   "pct_owned": 32.4,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Juwan Johnson",
+   "position": "TE",
+   "nfl_team": "NO",
+   "espn_id": "3929645",
+   "injury_status": "OUT",
+   "proj": 5.41,
+   "pct_owned": 32.1,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Patriots D/ST",
+   "position": "D/ST",
+   "nfl_team": "NE",
+   "espn_id": "-16017",
+   "injury_status": "ACTIVE",
+   "proj": 8.24,
+   "pct_owned": 32.0,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "J.J. McCarthy",
+   "position": "QB",
+   "nfl_team": "NYG",
+   "espn_id": "4433970",
+   "injury_status": "ACTIVE",
+   "proj": 20.24,
+   "pct_owned": 30.9,
    "status": "FREEAGENT"
   },
   {
@@ -2264,17 +2284,7 @@
    "injury_status": "OUT",
    "proj": 0.0,
    "pct_owned": 30.1,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "J.J. McCarthy",
-   "position": "QB",
-   "nfl_team": "NYG",
-   "espn_id": "4433970",
-   "injury_status": "ACTIVE",
-   "proj": 20.24,
-   "pct_owned": 29.9,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Terry McLaurin",
@@ -2283,7 +2293,7 @@
    "espn_id": "3121422",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 29.3,
+   "pct_owned": 29.1,
    "status": "FREEAGENT"
   },
   {
@@ -2293,7 +2303,7 @@
    "espn_id": "4688380",
    "injury_status": "ACTIVE",
    "proj": 14.22,
-   "pct_owned": 28.1,
+   "pct_owned": 27.4,
    "status": "WAIVERS"
   },
   {
@@ -2302,18 +2312,18 @@
    "nfl_team": "PHI",
    "espn_id": "-16021",
    "injury_status": "ACTIVE",
-   "proj": 5.9,
+   "proj": 5.91,
    "pct_owned": 26.4,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Darren Waller",
    "position": "TE",
    "nfl_team": "CAR",
    "espn_id": "2576925",
-   "injury_status": "ACTIVE",
+   "injury_status": "QUESTIONABLE",
    "proj": 7.32,
-   "pct_owned": 26.4,
+   "pct_owned": 26.1,
    "status": "FREEAGENT"
   },
   {
@@ -2337,16 +2347,6 @@
    "status": "WAIVERS"
   },
   {
-   "name": "Kyler Murray",
-   "position": "QB",
-   "nfl_team": "MIN",
-   "espn_id": "3917315",
-   "injury_status": "QUESTIONABLE",
-   "proj": 0.0,
-   "pct_owned": 25.4,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Jalen Hurts",
    "position": "QB",
    "nfl_team": "PHI",
@@ -2354,16 +2354,16 @@
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 25.3,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
-   "name": "Aaron Rodgers",
+   "name": "Kyler Murray",
    "position": "QB",
-   "nfl_team": "FA",
-   "espn_id": "8439",
-   "injury_status": "ACTIVE",
+   "nfl_team": "MIN",
+   "espn_id": "3917315",
+   "injury_status": "QUESTIONABLE",
    "proj": 0.0,
-   "pct_owned": 23.6,
+   "pct_owned": 25.2,
    "status": "FREEAGENT"
   },
   {
@@ -2387,6 +2387,16 @@
    "status": "FREEAGENT"
   },
   {
+   "name": "Aaron Rodgers",
+   "position": "QB",
+   "nfl_team": "FA",
+   "espn_id": "8439",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 21.4,
+   "status": "FREEAGENT"
+  },
+  {
    "name": "Jaxson Dart",
    "position": "QB",
    "nfl_team": "NYG",
@@ -2403,7 +2413,17 @@
    "espn_id": "3052587",
    "injury_status": "ACTIVE",
    "proj": 17.68,
-   "pct_owned": 19.1,
+   "pct_owned": 19.2,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Geno Smith",
+   "position": "QB",
+   "nfl_team": "NYJ",
+   "espn_id": "15864",
+   "injury_status": "ACTIVE",
+   "proj": 19.33,
+   "pct_owned": 18.0,
    "status": "FREEAGENT"
   },
   {
@@ -2417,23 +2437,13 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Geno Smith",
-   "position": "QB",
-   "nfl_team": "NYJ",
-   "espn_id": "15864",
-   "injury_status": "ACTIVE",
-   "proj": 19.33,
-   "pct_owned": 17.7,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Rashid Shaheed",
    "position": "WR",
    "nfl_team": "SEA",
    "espn_id": "4032473",
    "injury_status": "ACTIVE",
    "proj": 6.17,
-   "pct_owned": 16.9,
+   "pct_owned": 16.8,
    "status": "FREEAGENT"
   },
   {
@@ -2443,7 +2453,7 @@
    "espn_id": "4428557",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 16.8,
+   "pct_owned": 16.6,
    "status": "FREEAGENT"
   },
   {
@@ -2457,32 +2467,12 @@
    "status": "WAIVERS"
   },
   {
-   "name": "Cowboys D/ST",
-   "position": "D/ST",
-   "nfl_team": "DAL",
-   "espn_id": "-16006",
-   "injury_status": "ACTIVE",
-   "proj": 9.08,
-   "pct_owned": 15.9,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Panthers D/ST",
    "position": "D/ST",
    "nfl_team": "CAR",
    "espn_id": "-16029",
    "injury_status": "ACTIVE",
    "proj": 7.32,
-   "pct_owned": 15.5,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Audric Estime",
-   "position": "RB",
-   "nfl_team": "NO",
-   "espn_id": "4569682",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
    "pct_owned": 15.1,
    "status": "FREEAGENT"
   },
@@ -2493,7 +2483,7 @@
    "espn_id": "5083315",
    "injury_status": "ACTIVE",
    "proj": 5.15,
-   "pct_owned": 14.9,
+   "pct_owned": 14.8,
    "status": "FREEAGENT"
   },
   {
@@ -2503,7 +2493,17 @@
    "espn_id": "4887558",
    "injury_status": "ACTIVE",
    "proj": 0.0,
-   "pct_owned": 14.8,
+   "pct_owned": 14.6,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Audric Estime",
+   "position": "RB",
+   "nfl_team": "NO",
+   "espn_id": "4569682",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 14.5,
    "status": "FREEAGENT"
   },
   {
@@ -2513,7 +2513,7 @@
    "espn_id": "4883647",
    "injury_status": "ACTIVE",
    "proj": 6.92,
-   "pct_owned": 13.0,
+   "pct_owned": 12.5,
    "status": "FREEAGENT"
   },
   {
@@ -2533,7 +2533,7 @@
    "espn_id": "2578570",
    "injury_status": "ACTIVE",
    "proj": 14.49,
-   "pct_owned": 12.3,
+   "pct_owned": 12.1,
    "status": "FREEAGENT"
   },
   {
@@ -2543,8 +2543,8 @@
    "espn_id": "4428850",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 10.2,
-   "status": "FREEAGENT"
+   "pct_owned": 10.1,
+   "status": "WAIVERS"
   },
   {
    "name": "Tyler Higbee",
@@ -2563,17 +2563,7 @@
    "espn_id": "4576297",
    "injury_status": "ACTIVE",
    "proj": 7.77,
-   "pct_owned": 9.3,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Colts D/ST",
-   "position": "D/ST",
-   "nfl_team": "IND",
-   "espn_id": "-16011",
-   "injury_status": "ACTIVE",
-   "proj": 7.79,
-   "pct_owned": 9.0,
+   "pct_owned": 9.6,
    "status": "FREEAGENT"
   },
   {
@@ -2583,8 +2573,28 @@
    "espn_id": "4603186",
    "injury_status": "ACTIVE",
    "proj": 4.6,
-   "pct_owned": 8.8,
+   "pct_owned": 8.9,
    "status": "FREEAGENT"
+  },
+  {
+   "name": "Colts D/ST",
+   "position": "D/ST",
+   "nfl_team": "IND",
+   "espn_id": "-16011",
+   "injury_status": "ACTIVE",
+   "proj": 7.79,
+   "pct_owned": 8.7,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Michael Penix Jr.",
+   "position": "QB",
+   "nfl_team": "ATL",
+   "espn_id": "4360423",
+   "injury_status": "ACTIVE",
+   "proj": 13.7,
+   "pct_owned": 8.6,
+   "status": "WAIVERS"
   },
   {
    "name": "Daniel Jones",
@@ -2593,7 +2603,7 @@
    "espn_id": "3917792",
    "injury_status": "ACTIVE",
    "proj": 0.0,
-   "pct_owned": 8.6,
+   "pct_owned": 8.3,
    "status": "FREEAGENT"
   },
   {
@@ -2613,7 +2623,7 @@
    "espn_id": "4596334",
    "injury_status": "QUESTIONABLE",
    "proj": 6.11,
-   "pct_owned": 8.0,
+   "pct_owned": 7.9,
    "status": "FREEAGENT"
   },
   {
@@ -2623,15 +2633,15 @@
    "espn_id": "4360238",
    "injury_status": "QUESTIONABLE",
    "proj": 0.0,
-   "pct_owned": 8.0,
-   "status": "FREEAGENT"
+   "pct_owned": 7.9,
+   "status": "WAIVERS"
   },
   {
-   "name": "Drew Lock",
-   "position": "QB",
-   "nfl_team": "SEA",
-   "espn_id": "3924327",
-   "injury_status": "QUESTIONABLE",
+   "name": "Jalen McMillan",
+   "position": "WR",
+   "nfl_team": "TB",
+   "espn_id": "4430834",
+   "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 7.6,
    "status": "FREEAGENT"
@@ -2643,17 +2653,17 @@
    "espn_id": "4567156",
    "injury_status": "QUESTIONABLE",
    "proj": 7.6,
-   "pct_owned": 7.6,
+   "pct_owned": 7.5,
    "status": "FREEAGENT"
   },
   {
-   "name": "Jalen McMillan",
-   "position": "WR",
-   "nfl_team": "TB",
-   "espn_id": "4430834",
-   "injury_status": "INJURY_RESERVE",
+   "name": "Drew Lock",
+   "position": "QB",
+   "nfl_team": "SEA",
+   "espn_id": "3924327",
+   "injury_status": "QUESTIONABLE",
    "proj": 0.0,
-   "pct_owned": 7.6,
+   "pct_owned": 7.3,
    "status": "FREEAGENT"
   },
   {
@@ -2671,7 +2681,7 @@
    "position": "WR",
    "nfl_team": "BAL",
    "espn_id": "4360939",
-   "injury_status": "QUESTIONABLE",
+   "injury_status": "ACTIVE",
    "proj": 5.77,
    "pct_owned": 6.8,
    "status": "FREEAGENT"
@@ -2683,7 +2693,7 @@
    "espn_id": "4241463",
    "injury_status": "ACTIVE",
    "proj": 5.3,
-   "pct_owned": 6.8,
+   "pct_owned": 6.7,
    "status": "FREEAGENT"
   },
   {
@@ -2693,7 +2703,7 @@
    "espn_id": "4430802",
    "injury_status": "ACTIVE",
    "proj": 6.07,
-   "pct_owned": 6.2,
+   "pct_owned": 6.1,
    "status": "FREEAGENT"
   },
   {
@@ -2703,16 +2713,6 @@
    "espn_id": "4242512",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 6.0,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Ja'Kobi Lane",
-   "position": "WR",
-   "nfl_team": "BAL",
-   "espn_id": "4870847",
-   "injury_status": "ACTIVE",
-   "proj": 5.01,
    "pct_owned": 5.9,
    "status": "FREEAGENT"
   },
@@ -2723,7 +2723,17 @@
    "espn_id": "4715355",
    "injury_status": "ACTIVE",
    "proj": 8.49,
-   "pct_owned": 5.7,
+   "pct_owned": 5.8,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Ja'Kobi Lane",
+   "position": "WR",
+   "nfl_team": "BAL",
+   "espn_id": "4870847",
+   "injury_status": "ACTIVE",
+   "proj": 5.01,
+   "pct_owned": 5.8,
    "status": "FREEAGENT"
   },
   {
@@ -2733,7 +2743,7 @@
    "espn_id": "4599739",
    "injury_status": "ACTIVE",
    "proj": 0.0,
-   "pct_owned": 5.3,
+   "pct_owned": 5.2,
    "status": "FREEAGENT"
   },
   {
@@ -2743,18 +2753,8 @@
    "espn_id": "3930086",
    "injury_status": "ACTIVE",
    "proj": 4.38,
-   "pct_owned": 4.9,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Joe Milton",
-   "position": "QB",
-   "nfl_team": "PHI",
-   "espn_id": "4360698",
-   "injury_status": "ACTIVE",
-   "proj": 18.6,
-   "pct_owned": 4.7,
-   "status": "FREEAGENT"
+   "pct_owned": 4.8,
+   "status": "WAIVERS"
   },
   {
    "name": "Kayshon Boutte",
@@ -2763,7 +2763,7 @@
    "espn_id": "4429022",
    "injury_status": "QUESTIONABLE",
    "proj": 5.28,
-   "pct_owned": 4.6,
+   "pct_owned": 4.5,
    "status": "FREEAGENT"
   },
   {
@@ -2783,8 +2783,8 @@
    "espn_id": "4429013",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
-   "pct_owned": 4.5,
-   "status": "FREEAGENT"
+   "pct_owned": 4.4,
+   "status": "WAIVERS"
   },
   {
    "name": "Jauan Jennings",
@@ -2793,7 +2793,7 @@
    "espn_id": "3886598",
    "injury_status": "ACTIVE",
    "proj": 8.57,
-   "pct_owned": 4.0,
+   "pct_owned": 4.3,
    "status": "FREEAGENT"
   },
   {
@@ -2813,17 +2813,37 @@
    "espn_id": "4686612",
    "injury_status": "ACTIVE",
    "proj": 6.9,
-   "pct_owned": 3.7,
+   "pct_owned": 3.6,
    "status": "FREEAGENT"
   },
   {
-   "name": "Jaylin Noel",
+   "name": "Anthony Richardson Sr.",
+   "position": "QB",
+   "nfl_team": "IND",
+   "espn_id": "4429084",
+   "injury_status": "ACTIVE",
+   "proj": 15.44,
+   "pct_owned": 3.6,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Evan Engram",
+   "position": "TE",
+   "nfl_team": "DEN",
+   "espn_id": "3051876",
+   "injury_status": "ACTIVE",
+   "proj": 6.74,
+   "pct_owned": 3.5,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Josh Cameron",
    "position": "WR",
-   "nfl_team": "HOU",
-   "espn_id": "4586312",
-   "injury_status": "INJURY_RESERVE",
-   "proj": 0.0,
-   "pct_owned": 3.4,
+   "nfl_team": "JAX",
+   "espn_id": "4879194",
+   "injury_status": "ACTIVE",
+   "proj": 6.02,
+   "pct_owned": 3.5,
    "status": "FREEAGENT"
   },
   {
@@ -2837,12 +2857,12 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Anthony Richardson Sr.",
-   "position": "QB",
-   "nfl_team": "IND",
-   "espn_id": "4429084",
-   "injury_status": "ACTIVE",
-   "proj": 15.44,
+   "name": "Jaylin Noel",
+   "position": "WR",
+   "nfl_team": "HOU",
+   "espn_id": "4586312",
+   "injury_status": "INJURY_RESERVE",
+   "proj": 0.0,
    "pct_owned": 3.4,
    "status": "FREEAGENT"
   },
@@ -2854,16 +2874,6 @@
    "injury_status": "ACTIVE",
    "proj": 5.82,
    "pct_owned": 3.4,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Evan Engram",
-   "position": "TE",
-   "nfl_team": "DEN",
-   "espn_id": "3051876",
-   "injury_status": "ACTIVE",
-   "proj": 6.74,
-   "pct_owned": 3.3,
    "status": "FREEAGENT"
   },
   {
@@ -2914,7 +2924,7 @@
    "injury_status": "ACTIVE",
    "proj": 4.82,
    "pct_owned": 2.9,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Jalen Nailor",
@@ -2931,10 +2941,20 @@
    "position": "WR",
    "nfl_team": "ATL",
    "espn_id": "4361409",
-   "injury_status": "QUESTIONABLE",
+   "injury_status": "OUT",
    "proj": 7.58,
    "pct_owned": 2.7,
    "status": "FREEAGENT"
+  },
+  {
+   "name": "Colby Parkinson",
+   "position": "TE",
+   "nfl_team": "LAR",
+   "espn_id": "4242557",
+   "injury_status": "ACTIVE",
+   "proj": 7.03,
+   "pct_owned": 2.4,
+   "status": "WAIVERS"
   },
   {
    "name": "James Conner",
@@ -2947,12 +2967,12 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Colby Parkinson",
-   "position": "TE",
-   "nfl_team": "LAR",
-   "espn_id": "4242557",
+   "name": "Ray Davis",
+   "position": "RB",
+   "nfl_team": "BUF",
+   "espn_id": "4429501",
    "injury_status": "ACTIVE",
-   "proj": 7.03,
+   "proj": 1.43,
    "pct_owned": 2.4,
    "status": "WAIVERS"
   },
@@ -2977,13 +2997,13 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Ray Davis",
-   "position": "RB",
-   "nfl_team": "BUF",
-   "espn_id": "4429501",
+   "name": "Mason Rudolph",
+   "position": "QB",
+   "nfl_team": "PIT",
+   "espn_id": "3116407",
    "injury_status": "ACTIVE",
-   "proj": 1.43,
-   "pct_owned": 2.4,
+   "proj": 18.25,
+   "pct_owned": 2.3,
    "status": "FREEAGENT"
   },
   {
@@ -2993,17 +3013,17 @@
    "espn_id": "4686728",
    "injury_status": "ACTIVE",
    "proj": 5.55,
-   "pct_owned": 2.4,
+   "pct_owned": 2.3,
    "status": "FREEAGENT"
   },
   {
-   "name": "Myles Price",
-   "position": "WR",
-   "nfl_team": "MIN",
-   "espn_id": "4430656",
-   "injury_status": "QUESTIONABLE",
-   "proj": 2.32,
-   "pct_owned": 2.2,
+   "name": "Greg Dulcich",
+   "position": "TE",
+   "nfl_team": "MIA",
+   "espn_id": "4367209",
+   "injury_status": "ACTIVE",
+   "proj": 7.58,
+   "pct_owned": 2.1,
    "status": "FREEAGENT"
   },
   {
@@ -3014,15 +3034,15 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 2.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
-   "name": "Greg Dulcich",
-   "position": "TE",
-   "nfl_team": "MIA",
-   "espn_id": "4367209",
-   "injury_status": "ACTIVE",
-   "proj": 7.58,
+   "name": "Myles Price",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "espn_id": "4430656",
+   "injury_status": "QUESTIONABLE",
+   "proj": 2.32,
    "pct_owned": 2.1,
    "status": "FREEAGENT"
   },
@@ -3037,16 +3057,6 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Mason Rudolph",
-   "position": "QB",
-   "nfl_team": "PIT",
-   "espn_id": "3116407",
-   "injury_status": "ACTIVE",
-   "proj": 18.25,
-   "pct_owned": 2.1,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Tez Johnson",
    "position": "WR",
    "nfl_team": "TB",
@@ -3057,22 +3067,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Demarcus Robinson",
-   "position": "WR",
-   "nfl_team": "SF",
-   "espn_id": "3043116",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 1.9,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Dohnte Meyers",
    "position": "WR",
    "nfl_team": "CIN",
    "espn_id": "4384852",
    "injury_status": "ACTIVE",
    "proj": 2.93,
+   "pct_owned": 1.9,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Demarcus Robinson",
+   "position": "WR",
+   "nfl_team": "SF",
+   "espn_id": "3043116",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
    "pct_owned": 1.9,
    "status": "FREEAGENT"
   },
@@ -3207,6 +3217,16 @@
    "status": "FREEAGENT"
   },
   {
+   "name": "Tommy DeVito",
+   "position": "QB",
+   "nfl_team": "NE",
+   "espn_id": "4240391",
+   "injury_status": "ACTIVE",
+   "proj": 17.37,
+   "pct_owned": 1.1,
+   "status": "FREEAGENT"
+  },
+  {
    "name": "KaVontae Turpin",
    "position": "WR",
    "nfl_team": "DAL",
@@ -3214,16 +3234,16 @@
    "injury_status": "ACTIVE",
    "proj": 2.46,
    "pct_owned": 1.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
-   "name": "Tommy DeVito",
-   "position": "QB",
-   "nfl_team": "NE",
-   "espn_id": "4240391",
+   "name": "Chris Bell",
+   "position": "WR",
+   "nfl_team": "MIA",
+   "espn_id": "4869961",
    "injury_status": "ACTIVE",
-   "proj": 17.36,
-   "pct_owned": 1.1,
+   "proj": 5.47,
+   "pct_owned": 1.0,
    "status": "FREEAGENT"
   },
   {
@@ -3233,16 +3253,6 @@
    "espn_id": "4431466",
    "injury_status": "QUESTIONABLE",
    "proj": 1.14,
-   "pct_owned": 1.1,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Chris Bell",
-   "position": "WR",
-   "nfl_team": "MIA",
-   "espn_id": "4869961",
-   "injury_status": "ACTIVE",
-   "proj": 5.47,
    "pct_owned": 1.0,
    "status": "FREEAGENT"
   },
@@ -3261,7 +3271,7 @@
    "position": "WR",
    "nfl_team": "ATL",
    "espn_id": "4870612",
-   "injury_status": "QUESTIONABLE",
+   "injury_status": "OUT",
    "proj": 1.76,
    "pct_owned": 1.0,
    "status": "FREEAGENT"
@@ -3274,16 +3284,16 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 1.0,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Carson Beck",
    "position": "QB",
    "nfl_team": "ARI",
    "espn_id": "4430841",
-   "injury_status": "QUESTIONABLE",
-   "proj": 14.98,
-   "pct_owned": 1.0,
+   "injury_status": "OUT",
+   "proj": 0.0,
+   "pct_owned": 0.9,
    "status": "FREEAGENT"
   },
   {
@@ -3294,6 +3304,16 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.9,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Mac Jones",
+   "position": "QB",
+   "nfl_team": "SF",
+   "espn_id": "4241464",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.8,
    "status": "FREEAGENT"
   },
   {
@@ -3312,7 +3332,7 @@
    "nfl_team": "CHI",
    "espn_id": "4869748",
    "injury_status": "ACTIVE",
-   "proj": 3.8,
+   "proj": 3.81,
    "pct_owned": 0.8,
    "status": "WAIVERS"
   },
@@ -3327,11 +3347,21 @@
    "status": "FREEAGENT"
   },
   {
+   "name": "Odell Beckham Jr.",
+   "position": "WR",
+   "nfl_team": "MIN",
+   "espn_id": "16733",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.8,
+   "status": "FREEAGENT"
+  },
+  {
    "name": "Tommy Tremble",
    "position": "TE",
    "nfl_team": "CAR",
    "espn_id": "4372780",
-   "injury_status": "ACTIVE",
+   "injury_status": "QUESTIONABLE",
    "proj": 5.87,
    "pct_owned": 0.8,
    "status": "FREEAGENT"
@@ -3341,16 +3371,6 @@
    "position": "QB",
    "nfl_team": "WAS",
    "espn_id": "2576980",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.8,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Odell Beckham Jr.",
-   "position": "WR",
-   "nfl_team": "MIN",
-   "espn_id": "16733",
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.8,
@@ -3374,7 +3394,7 @@
    "injury_status": "ACTIVE",
    "proj": 5.29,
    "pct_owned": 0.7,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Jalon Daniels",
@@ -3407,22 +3427,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Mac Jones",
-   "position": "QB",
-   "nfl_team": "SF",
-   "espn_id": "4241464",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.6,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Carson Wentz",
    "position": "QB",
    "nfl_team": "MIN",
    "espn_id": "2573079",
    "injury_status": "ACTIVE",
    "proj": 0.0,
+   "pct_owned": 0.6,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Max Hurleman",
+   "position": "WR",
+   "nfl_team": "PIT",
+   "espn_id": "4694237",
+   "injury_status": "ACTIVE",
+   "proj": 1.0,
    "pct_owned": 0.6,
    "status": "FREEAGENT"
   },
@@ -3447,16 +3467,6 @@
    "status": "WAIVERS"
   },
   {
-   "name": "Max Hurleman",
-   "position": "WR",
-   "nfl_team": "PIT",
-   "espn_id": "4694237",
-   "injury_status": "ACTIVE",
-   "proj": 1.0,
-   "pct_owned": 0.5,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Kyle Williams",
    "position": "WR",
    "nfl_team": "NE",
@@ -3473,6 +3483,16 @@
    "espn_id": "-16022",
    "injury_status": "ACTIVE",
    "proj": 6.21,
+   "pct_owned": 0.5,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Dylan Laube",
+   "position": "RB",
+   "nfl_team": "LV",
+   "espn_id": "4366963",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
    "pct_owned": 0.5,
    "status": "FREEAGENT"
   },
@@ -3497,10 +3517,10 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Dylan Laube",
+   "name": "Jordan James",
    "position": "RB",
-   "nfl_team": "LV",
-   "espn_id": "4366963",
+   "nfl_team": "SF",
+   "espn_id": "4685397",
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.5,
@@ -3512,17 +3532,7 @@
    "nfl_team": "ARI",
    "espn_id": "4039050",
    "injury_status": "ACTIVE",
-   "proj": 0.46,
-   "pct_owned": 0.5,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Jordan James",
-   "position": "RB",
-   "nfl_team": "SF",
-   "espn_id": "4685397",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
+   "proj": 0.45,
    "pct_owned": 0.5,
    "status": "FREEAGENT"
   },
@@ -3533,7 +3543,7 @@
    "espn_id": "4565185",
    "injury_status": "ACTIVE",
    "proj": 7.41,
-   "pct_owned": 0.4,
+   "pct_owned": 0.5,
    "status": "FREEAGENT"
   },
   {
@@ -3547,6 +3557,16 @@
    "status": "FREEAGENT"
   },
   {
+   "name": "Harrison Wallace III",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "espn_id": "4699354",
+   "injury_status": "ACTIVE",
+   "proj": 7.56,
+   "pct_owned": 0.4,
+   "status": "FREEAGENT"
+  },
+  {
    "name": "Malik Davis",
    "position": "RB",
    "nfl_team": "DAL",
@@ -3554,7 +3574,7 @@
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 0.4,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Joe Mixon",
@@ -3584,7 +3604,7 @@
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 0.4,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Brevyn Spann-Ford",
@@ -3594,7 +3614,7 @@
    "injury_status": "ACTIVE",
    "proj": 3.59,
    "pct_owned": 0.4,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Tyquan Thornton",
@@ -3604,17 +3624,7 @@
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 0.4,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Harrison Wallace III",
-   "position": "WR",
-   "nfl_team": "ARI",
-   "espn_id": "4699354",
-   "injury_status": "ACTIVE",
-   "proj": 7.64,
-   "pct_owned": 0.4,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Luke McCaffrey",
@@ -3661,7 +3671,7 @@
    "position": "WR",
    "nfl_team": "NYJ",
    "espn_id": "4569371",
-   "injury_status": "QUESTIONABLE",
+   "injury_status": "ACTIVE",
    "proj": 0.92,
    "pct_owned": 0.3,
    "status": "FREEAGENT"
@@ -3687,16 +3697,6 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Josh Cameron",
-   "position": "WR",
-   "nfl_team": "JAX",
-   "espn_id": "4879194",
-   "injury_status": "ACTIVE",
-   "proj": 6.02,
-   "pct_owned": 0.3,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Kaytron Allen",
    "position": "RB",
    "nfl_team": "MIA",
@@ -3714,7 +3714,7 @@
    "injury_status": "ACTIVE",
    "proj": 4.56,
    "pct_owned": 0.3,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Brashard Smith",
@@ -3723,6 +3723,16 @@
    "espn_id": "4596602",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
+   "pct_owned": 0.3,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Josh Johnson",
+   "position": "QB",
+   "nfl_team": "ARI",
+   "espn_id": "11394",
+   "injury_status": "ACTIVE",
+   "proj": 15.99,
    "pct_owned": 0.3,
    "status": "FREEAGENT"
   },
@@ -3747,26 +3757,6 @@
    "status": "WAIVERS"
   },
   {
-   "name": "Reggie Virgil",
-   "position": "WR",
-   "nfl_team": "ARI",
-   "espn_id": "4869132",
-   "injury_status": "ACTIVE",
-   "proj": 1.5,
-   "pct_owned": 0.3,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Josh Johnson",
-   "position": "QB",
-   "nfl_team": "ARI",
-   "espn_id": "11394",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.3,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Jaydon Blue",
    "position": "RB",
    "nfl_team": "PHI",
@@ -3774,7 +3764,7 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.3,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Troy Franklin",
@@ -3804,15 +3794,45 @@
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 0.3,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Simi Fehoko",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "espn_id": "4360739",
+   "injury_status": "ACTIVE",
+   "proj": 8.12,
+   "pct_owned": 0.3,
    "status": "FREEAGENT"
   },
   {
-   "name": "Lan Larison",
-   "position": "RB",
-   "nfl_team": "NE",
-   "espn_id": "4698253",
+   "name": "Ashton Dulin",
+   "position": "WR",
+   "nfl_team": "IND",
+   "espn_id": "4061956",
    "injury_status": "ACTIVE",
-   "proj": 0.84,
+   "proj": 5.87,
+   "pct_owned": 0.3,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Reggie Virgil",
+   "position": "WR",
+   "nfl_team": "ARI",
+   "espn_id": "4869132",
+   "injury_status": "ACTIVE",
+   "proj": 1.49,
+   "pct_owned": 0.3,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Khalil Herbert",
+   "position": "RB",
+   "nfl_team": "ATL",
+   "espn_id": "4035886",
+   "injury_status": "ACTIVE",
+   "proj": 3.55,
    "pct_owned": 0.3,
    "status": "FREEAGENT"
   },
@@ -3827,22 +3847,12 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Ashton Dulin",
-   "position": "WR",
-   "nfl_team": "IND",
-   "espn_id": "4061956",
-   "injury_status": "ACTIVE",
-   "proj": 5.87,
-   "pct_owned": 0.2,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Khalil Herbert",
+   "name": "Lan Larison",
    "position": "RB",
-   "nfl_team": "ATL",
-   "espn_id": "4035886",
+   "nfl_team": "NE",
+   "espn_id": "4698253",
    "injury_status": "ACTIVE",
-   "proj": 3.55,
+   "proj": 0.84,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
   },
@@ -3851,10 +3861,10 @@
    "position": "WR",
    "nfl_team": "KC",
    "espn_id": "5082630",
-   "injury_status": "ACTIVE",
+   "injury_status": "QUESTIONABLE",
    "proj": 0.53,
    "pct_owned": 0.2,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Zach Ertz",
@@ -3864,7 +3874,7 @@
    "injury_status": "ACTIVE",
    "proj": 2.22,
    "pct_owned": 0.2,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Demond Claiborne",
@@ -3887,16 +3897,6 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Gardner Minshew II",
-   "position": "QB",
-   "nfl_team": "ARI",
-   "espn_id": "4038524",
-   "injury_status": "INJURY_RESERVE",
-   "proj": 0.0,
-   "pct_owned": 0.2,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "DJ Giddens",
    "position": "RB",
    "nfl_team": "IND",
@@ -3911,10 +3911,10 @@
    "position": "TE",
    "nfl_team": "KC",
    "espn_id": "4240472",
-   "injury_status": "QUESTIONABLE",
+   "injury_status": "ACTIVE",
    "proj": 3.76,
    "pct_owned": 0.2,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Raheim Sanders",
@@ -3937,22 +3937,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Eli Heidenreich",
-   "position": "RB",
-   "nfl_team": "PIT",
-   "espn_id": "5081508",
-   "injury_status": "ACTIVE",
+   "name": "Gardner Minshew II",
+   "position": "QB",
+   "nfl_team": "ARI",
+   "espn_id": "4038524",
+   "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
   },
   {
-   "name": "Simi Fehoko",
-   "position": "WR",
-   "nfl_team": "ARI",
-   "espn_id": "4360739",
-   "injury_status": "ACTIVE",
-   "proj": 8.21,
+   "name": "Eli Heidenreich",
+   "position": "RB",
+   "nfl_team": "PIT",
+   "espn_id": "5081508",
+   "injury_status": "OUT",
+   "proj": 0.0,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
   },
@@ -3974,7 +3974,47 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.2,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Justin Fields",
+   "position": "QB",
+   "nfl_team": "KC",
+   "espn_id": "4362887",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.2,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Skyler Bell",
+   "position": "WR",
+   "nfl_team": "BUF",
+   "espn_id": "4683153",
+   "injury_status": "OUT",
+   "proj": 0.0,
+   "pct_owned": 0.2,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Israel Abanikanda",
+   "position": "RB",
+   "nfl_team": "DAL",
+   "espn_id": "4429202",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.2,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Ty Simpson",
+   "position": "QB",
+   "nfl_team": "LAR",
+   "espn_id": "4685522",
+   "injury_status": "OUT",
+   "proj": 0.0,
+   "pct_owned": 0.2,
+   "status": "WAIVERS"
   },
   {
    "name": "Drew Sample",
@@ -3997,46 +4037,6 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Justin Fields",
-   "position": "QB",
-   "nfl_team": "KC",
-   "espn_id": "4362887",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.2,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Skyler Bell",
-   "position": "WR",
-   "nfl_team": "BUF",
-   "espn_id": "4683153",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.2,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Israel Abanikanda",
-   "position": "RB",
-   "nfl_team": "DAL",
-   "espn_id": "4429202",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.2,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Ty Simpson",
-   "position": "QB",
-   "nfl_team": "LAR",
-   "espn_id": "4685522",
-   "injury_status": "OUT",
-   "proj": 0.0,
-   "pct_owned": 0.2,
-   "status": "WAIVERS"
-  },
-  {
    "name": "Kevin Coleman Jr.",
    "position": "WR",
    "nfl_team": "MIA",
@@ -4051,7 +4051,7 @@
    "position": "TE",
    "nfl_team": "NO",
    "espn_id": "4036131",
-   "injury_status": "ACTIVE",
+   "injury_status": "QUESTIONABLE",
    "proj": 3.05,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
@@ -4071,7 +4071,7 @@
    "position": "WR",
    "nfl_team": "PIT",
    "espn_id": "5081338",
-   "injury_status": "ACTIVE",
+   "injury_status": "OUT",
    "proj": 0.0,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
@@ -4097,16 +4097,6 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Olamide Zaccheaus",
-   "position": "WR",
-   "nfl_team": "ATL",
-   "espn_id": "3917914",
-   "injury_status": "ACTIVE",
-   "proj": 3.66,
-   "pct_owned": 0.2,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Skyy Moore",
    "position": "WR",
    "nfl_team": "GB",
@@ -4115,6 +4105,16 @@
    "proj": 0.0,
    "pct_owned": 0.2,
    "status": "WAIVERS"
+  },
+  {
+   "name": "Drew Allar",
+   "position": "QB",
+   "nfl_team": "PIT",
+   "espn_id": "4714771",
+   "injury_status": "OUT",
+   "proj": 0.0,
+   "pct_owned": 0.2,
+   "status": "FREEAGENT"
   },
   {
    "name": "Barion Brown",
@@ -4167,12 +4167,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Drew Allar",
-   "position": "QB",
-   "nfl_team": "PIT",
-   "espn_id": "4714771",
+   "name": "Jashaun Corbin",
+   "position": "RB",
+   "nfl_team": "DAL",
+   "espn_id": "4372519",
    "injury_status": "ACTIVE",
-   "proj": 0.0,
+   "proj": 4.72,
+   "pct_owned": 0.2,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Olamide Zaccheaus",
+   "position": "WR",
+   "nfl_team": "ATL",
+   "espn_id": "3917914",
+   "injury_status": "ACTIVE",
+   "proj": 3.66,
    "pct_owned": 0.2,
    "status": "FREEAGENT"
   },
@@ -4187,22 +4197,22 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Jashaun Corbin",
-   "position": "RB",
-   "nfl_team": "DAL",
-   "espn_id": "4372519",
-   "injury_status": "ACTIVE",
-   "proj": 4.72,
-   "pct_owned": 0.1,
-   "status": "FREEAGENT"
-  },
-  {
    "name": "Elijah Arroyo",
    "position": "TE",
    "nfl_team": "SEA",
    "espn_id": "4678006",
    "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
+   "pct_owned": 0.1,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Tyler Badie",
+   "position": "RB",
+   "nfl_team": "DEN",
+   "espn_id": "4362748",
+   "injury_status": "ACTIVE",
+   "proj": 3.77,
    "pct_owned": 0.1,
    "status": "FREEAGENT"
   },
@@ -4222,16 +4232,6 @@
    "nfl_team": "BAL",
    "espn_id": "4690013",
    "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.1,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Tyler Badie",
-   "position": "RB",
-   "nfl_team": "DEN",
-   "espn_id": "4362748",
-   "injury_status": "INJURY_RESERVE",
    "proj": 0.0,
    "pct_owned": 0.1,
    "status": "FREEAGENT"
@@ -4257,12 +4257,12 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Mitchell Evans",
-   "position": "TE",
-   "nfl_team": "CAR",
-   "espn_id": "4683243",
+   "name": "CJ Donaldson",
+   "position": "RB",
+   "nfl_team": "NO",
+   "espn_id": "5081999",
    "injury_status": "ACTIVE",
-   "proj": 3.79,
+   "proj": 5.56,
    "pct_owned": 0.1,
    "status": "FREEAGENT"
   },
@@ -4284,7 +4284,7 @@
    "injury_status": "ACTIVE",
    "proj": 0.82,
    "pct_owned": 0.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Michael Carter",
@@ -4293,6 +4293,16 @@
    "espn_id": "4240657",
    "injury_status": "ACTIVE",
    "proj": 4.1,
+   "pct_owned": 0.1,
+   "status": "FREEAGENT"
+  },
+  {
+   "name": "Mitchell Evans",
+   "position": "TE",
+   "nfl_team": "CAR",
+   "espn_id": "4683243",
+   "injury_status": "QUESTIONABLE",
+   "proj": 3.79,
    "pct_owned": 0.1,
    "status": "FREEAGENT"
   },
@@ -4314,7 +4324,17 @@
    "injury_status": "ACTIVE",
    "proj": 2.86,
    "pct_owned": 0.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Ronnie Rivers",
+   "position": "RB",
+   "nfl_team": "LAR",
+   "espn_id": "4243003",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.1,
+   "status": "WAIVERS"
   },
   {
    "name": "Ameer Abdullah",
@@ -4344,17 +4364,7 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.1,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "CJ Donaldson",
-   "position": "RB",
-   "nfl_team": "NO",
-   "espn_id": "5081999",
-   "injury_status": "ACTIVE",
-   "proj": 5.56,
-   "pct_owned": 0.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Bryce Lance",
@@ -4397,22 +4407,12 @@
    "status": "FREEAGENT"
   },
   {
-   "name": "Dare Ogunbowale",
-   "position": "RB",
-   "nfl_team": "FA",
-   "espn_id": "2983509",
+   "name": "Sam Roush",
+   "position": "TE",
+   "nfl_team": "CHI",
+   "espn_id": "4685504",
    "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.1,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Ronnie Rivers",
-   "position": "RB",
-   "nfl_team": "LAR",
-   "espn_id": "4243003",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
+   "proj": 1.54,
    "pct_owned": 0.1,
    "status": "WAIVERS"
   },
@@ -4445,16 +4445,6 @@
    "proj": 0.0,
    "pct_owned": 0.1,
    "status": "WAIVERS"
-  },
-  {
-   "name": "Nate Boerkircher",
-   "position": "TE",
-   "nfl_team": "JAX",
-   "espn_id": "4686248",
-   "injury_status": "ACTIVE",
-   "proj": 3.41,
-   "pct_owned": 0.1,
-   "status": "FREEAGENT"
   },
   {
    "name": "Jonnu Smith",
@@ -4507,6 +4497,16 @@
    "status": "WAIVERS"
   },
   {
+   "name": "Dare Ogunbowale",
+   "position": "RB",
+   "nfl_team": "FA",
+   "espn_id": "2983509",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.1,
+   "status": "FREEAGENT"
+  },
+  {
    "name": "Ja'Tavion Sanders",
    "position": "TE",
    "nfl_team": "CAR",
@@ -4515,16 +4515,6 @@
    "proj": 0.0,
    "pct_owned": 0.1,
    "status": "FREEAGENT"
-  },
-  {
-   "name": "Sam Roush",
-   "position": "TE",
-   "nfl_team": "CHI",
-   "espn_id": "4685504",
-   "injury_status": "ACTIVE",
-   "proj": 1.54,
-   "pct_owned": 0.1,
-   "status": "WAIVERS"
   },
   {
    "name": "Erick All Jr.",
@@ -4544,6 +4534,16 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.1,
+   "status": "WAIVERS"
+  },
+  {
+   "name": "Nate Boerkircher",
+   "position": "TE",
+   "nfl_team": "JAX",
+   "espn_id": "4686248",
+   "injury_status": "ACTIVE",
+   "proj": 3.41,
+   "pct_owned": 0.1,
    "status": "FREEAGENT"
   },
   {
@@ -4554,7 +4554,7 @@
    "injury_status": "OUT",
    "proj": 0.0,
    "pct_owned": 0.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Elijah Higgins",
@@ -4562,7 +4562,7 @@
    "nfl_team": "ARI",
    "espn_id": "4426844",
    "injury_status": "ACTIVE",
-   "proj": 3.57,
+   "proj": 3.52,
    "pct_owned": 0.1,
    "status": "FREEAGENT"
   },
@@ -4574,7 +4574,7 @@
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Jahdae Walker",
@@ -4585,6 +4585,16 @@
    "proj": 0.0,
    "pct_owned": 0.1,
    "status": "WAIVERS"
+  },
+  {
+   "name": "Xavier Gipson",
+   "position": "WR",
+   "nfl_team": "NYG",
+   "espn_id": "4427278",
+   "injury_status": "ACTIVE",
+   "proj": 0.0,
+   "pct_owned": 0.1,
+   "status": "FREEAGENT"
   },
   {
    "name": "Joe Fagnano",
@@ -4604,7 +4614,7 @@
    "injury_status": "ACTIVE",
    "proj": 1.82,
    "pct_owned": 0.1,
-   "status": "FREEAGENT"
+   "status": "WAIVERS"
   },
   {
    "name": "Van Jefferson",
@@ -4621,16 +4631,6 @@
    "position": "WR",
    "nfl_team": "CLE",
    "espn_id": "4808839",
-   "injury_status": "ACTIVE",
-   "proj": 0.0,
-   "pct_owned": 0.1,
-   "status": "FREEAGENT"
-  },
-  {
-   "name": "Lil'Jordan Humphrey",
-   "position": "WR",
-   "nfl_team": "DEN",
-   "espn_id": "4039057",
    "injury_status": "ACTIVE",
    "proj": 0.0,
    "pct_owned": 0.1,
@@ -4702,7 +4702,7 @@
     "espn_id": "5081397",
     "injury_status": "NORMAL",
     "proj": 0.0,
-    "pct_owned": 30.8,
+    "pct_owned": 31.9,
     "slot": "BN",
     "actual": null
    },
@@ -4713,7 +4713,7 @@
     "espn_id": "4696044",
     "injury_status": "NORMAL",
     "proj": 6.65,
-    "pct_owned": 36.4,
+    "pct_owned": 36.2,
     "slot": "RB",
     "actual": 2.5
    },
@@ -4724,7 +4724,7 @@
     "espn_id": "5083754",
     "injury_status": "NORMAL",
     "proj": 9.79,
-    "pct_owned": 39.4,
+    "pct_owned": 39.3,
     "slot": "FLEX",
     "actual": 2.1
    },
@@ -4735,7 +4735,7 @@
     "espn_id": "4360635",
     "injury_status": "NORMAL",
     "proj": 10.29,
-    "pct_owned": 62.8,
+    "pct_owned": 63.4,
     "slot": "TE",
     "actual": 10.6
    },
@@ -4746,7 +4746,7 @@
     "espn_id": "3912547",
     "injury_status": "NORMAL",
     "proj": 0.0,
-    "pct_owned": 18.5,
+    "pct_owned": 18.6,
     "slot": "BN",
     "actual": null
    },
@@ -4757,7 +4757,7 @@
     "espn_id": "4837248",
     "injury_status": "NORMAL",
     "proj": 17.58,
-    "pct_owned": 31.7,
+    "pct_owned": 32.8,
     "slot": "BN",
     "actual": 28.88
    },
@@ -4768,7 +4768,7 @@
     "espn_id": "-16009",
     "injury_status": "NORMAL",
     "proj": 0.0,
-    "pct_owned": 24.9,
+    "pct_owned": 24.8,
     "slot": "BN",
     "actual": null
    },
@@ -4779,7 +4779,7 @@
     "espn_id": "4361411",
     "injury_status": "NORMAL",
     "proj": 7.62,
-    "pct_owned": 44.7,
+    "pct_owned": 44.8,
     "slot": "BN",
     "actual": 9.0
    },
@@ -4790,7 +4790,7 @@
     "espn_id": "4688380",
     "injury_status": "NORMAL",
     "proj": 20.63,
-    "pct_owned": 28.1,
+    "pct_owned": 27.4,
     "slot": "QB",
     "actual": 28.22
    },
@@ -4801,7 +4801,7 @@
     "espn_id": "3068267",
     "injury_status": "NORMAL",
     "proj": 4.3,
-    "pct_owned": 9.7,
+    "pct_owned": 10.3,
     "slot": "RB",
     "actual": 6.4
    },
@@ -4812,7 +4812,7 @@
     "espn_id": "-16020",
     "injury_status": "NORMAL",
     "proj": 8.7,
-    "pct_owned": 33.6,
+    "pct_owned": 33.3,
     "slot": "D/ST",
     "actual": 7.0
    }
@@ -4826,7 +4826,7 @@
   "opponent_abbrev": "BM",
   "opponent_record": "8-3-0",
   "opponent_points_for": 1622.04,
-  "my_proj": 123.86,
+  "my_proj": 123.89,
   "opponent_proj": 145.61,
   "opponent_starters": [
    {

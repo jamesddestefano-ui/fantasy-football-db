@@ -1,13 +1,13 @@
 {
  "league": "mongo",
- "observed_at": "2026-11-26T20:06:22Z",
+ "observed_at": "2026-11-27T19:53:50Z",
  "season": 2026,
  "authority": "ESPN transaction log (read-only). Completed (EXECUTED) rows are ownership evidence; ingest into data/imports is a separate reviewed step.",
  "raw_type_counts": {
   "DRAFT": 192,
-  "FREEAGENT": 138,
+  "FREEAGENT": 140,
   "FUTURE_ROSTER": 42,
-  "ROSTER": 594,
+  "ROSTER": 595,
   "TRADE_DECLINE": 1,
   "TRADE_PROPOSAL": 5,
   "WAIVER": 245
@@ -11907,6 +11907,70 @@
      "position": "QB",
      "nfl_team": "TEN",
      "from_team_id": 2,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "8091f7e5-5d05-4b33-9298-575f5e3d2ad0",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 13,
+   "team": "Joe's Finest Team",
+   "bid": 0,
+   "scoring_period": 12,
+   "processed_at": "2026-11-26T20:47:02Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "-16006",
+     "name": "Cowboys D/ST",
+     "position": "D/ST",
+     "nfl_team": "DAL",
+     "from_team_id": 0,
+     "to_team_id": 13
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "-16002",
+     "name": "Bills D/ST",
+     "position": "D/ST",
+     "nfl_team": "BUF",
+     "from_team_id": 13,
+     "to_team_id": 0
+    }
+   ]
+  },
+  {
+   "id": "316d20a1-8f44-468c-a25b-48eb87465cca",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "team_id": 12,
+   "team": "Geno Smith",
+   "bid": 0,
+   "scoring_period": 12,
+   "processed_at": "2026-11-26T21:10:22Z",
+   "adds": [
+    {
+     "type": "ADD",
+     "espn_id": "4360698",
+     "name": "Joe Milton",
+     "position": "QB",
+     "nfl_team": "PHI",
+     "from_team_id": 0,
+     "to_team_id": 12
+    }
+   ],
+   "drops": [
+    {
+     "type": "DROP",
+     "espn_id": "4360423",
+     "name": "Michael Penix Jr.",
+     "position": "QB",
+     "nfl_team": "ATL",
+     "from_team_id": 12,
      "to_team_id": 0
     }
    ]
