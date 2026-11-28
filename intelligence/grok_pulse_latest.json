@@ -1,1 +1,32 @@
-PLACEHOLDER_TO_REPLACE
+{
+  "league": "mongo",
+  "espn_league_id": "1470431049",
+  "espn_team_id": 2,
+  "team": "Tom Brady of Ass / JDD",
+  "pulse_id": "mongo-grok-pulse-2026-11-28T051606Z",
+  "generated_at": "2026-11-28T05:16:06Z",
+  "completed_at": "2026-11-28T05:16:06Z",
+  "week": 12,
+  "season": 2026,
+  "run_type": "overnight_12am_et",
+  "source_status": {"official_nfl_team": "OK", "beat_reporting": "OK", "x_direct": "LIMITED", "experts": "LIMITED", "analytics": "LIMITED"},
+  "scope": {"repository": "jamesddestefano-ui/fantasy-football-db", "branch": "main", "internal_league_id": "mongo", "intelligence_only": true, "sparta_touched": false, "dfs_touched": false, "props_touched": false},
+  "roster_context": {"source": "ESPN snapshot data/espn_api/latest.json observed_at 2026-11-27T19:53:50Z. FAAB remaining $27. Record 4-7-0. Roster 16 players. Intelligence only. Overnight Saturday Nov 28 12AM ET. No ownership or FAAB change by this Pulse.", "faab_remaining": 27, "roster_count": 16, "ir": [], "record": "4-7-0", "current_roster_names": ["Bijan Robinson", "CeeDee Lamb", "Tetairoa McMillan", "Luther Burden III", "Josh Downs", "Dylan Sampson", "Kaelon Black", "Ryan Flournoy", "Chig Okonkwo", "Sam Darnold", "Fernando Mendoza", "Packers D/ST", "Pat Freiermuth", "Austin Ekeler", "Jets D/ST", "Deshaun Watson"]},
+  "player_signals": [
+    {"player": "Sam Darnold", "team": "SEA", "status": "CONFIRMED_FACT", "summary": "HC Mike Macdonald confirmed Darnold will start Week 12 at 49ers after full practices all week (quad/rib). Off final injury report. Ready to roll.", "mongo_impact": "OWNED bench QB. Confirmed Week 12 start provides depth/option. Matchup vs Mac Jones (Purdy out).", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://www.espn.com/nfl/story/_/id/50616624/seahawks-sam-darnold-return-vs-49ers-2-game-absence", "https://sports.mynorthwest.com/nfl/seattle-seahawks/sam-darnold-will-start-seahawks-rule-out-just-3-players-vs-49ers", "https://www.49ers.com/news/brock-purdy-out-mac-jones-to-start-vs-seahawks-practice-report-seavssf"]},
+    {"player": "Deshaun Watson", "team": "CLE", "status": "CONFIRMED_FACT", "summary": "Now on ESPN roster as QB starter slot. No injury designation. Coming off bye, vs LV (soft matchup). Experts view as streamer/QB2 option.", "mongo_impact": "OWNED starter QB per latest ESPN snapshot (replaces prior Cam Ward observation). Intelligence only.", "urgency": "MEDIUM", "availability": "OWNED", "sources": ["https://ftnfantasy.com/nfl/player/deshaun-watson"]},
+    {"player": "Brock Purdy", "team": "SF", "status": "CONFIRMED_FACT", "summary": "Ruled OUT for Week 12 (ankle sprain, mid not high; no surgery). Mac Jones to start vs SEA. Optimistic for Week 13.", "mongo_impact": "Not owned. Improves Darnold matchup context. Packers D/ST unaffected.", "urgency": "LOW", "availability": "UNKNOWN", "sources": ["https://www.nfl.com/news/brock-purdy-ankle-out-49ers-seahawks-mac-jones-start", "https://www.49ers.com/news/brock-purdy-out-mac-jones-to-start-vs-seahawks-practice-report-seavssf"]},
+    {"player": "CeeDee Lamb", "team": "DAL", "status": "CONFIRMED_FACT", "summary": "Played Thursday vs PHI (strong: 7-11-134-0). No injury. Continuity positive.", "mongo_impact": "OWNED starter WR1. Strong recent output.", "urgency": "LOW", "availability": "OWNED", "sources": []},
+    {"player": "Luther Burden III", "team": "CHI", "status": "CONFIRMED_FACT", "summary": "Played Thursday vs DET (3-7-44-0). No injury. Cleared prior issues.", "mongo_impact": "OWNED FLEX/WR. Modest output but available.", "urgency": "LOW", "availability": "OWNED", "sources": []}
+  ],
+  "waiver_signals": [],
+  "lineup_signals": [{"type": "overnight_saturday_week12", "status": "CONFIRMED_FACT", "summary": "ESPN snapshot updated (observed_at 2026-11-27T19:53:50Z) shows Deshaun Watson as QB starter (Cam Ward no longer listed). Darnold confirmed start. All owned skill players NORMAL/no designation. Lineup remains manager decision. Intelligence only."}],
+  "expert_signals": [{"topic": "QB streaming", "status": "EXPERT_OPINION", "summary": "Multiple sources list Deshaun Watson as viable Week 12 streamer vs LV after bye; Cam Ward also noted but softer matchup favors Watson in some rankings.", "mongo_impact": "Relevant to current QB depth (Watson/Darnold/Mendoza).", "sources": ["https://www.si.com/onsi/fantasy/waiver-wire/add-pickup-week-12-fantasy-football-waiver-wire-quarterbacks-deshaun-watson-cam-ward"]}],
+  "material_changes": ["Sam Darnold confirmed Week 12 starter (was tracking/ATTRIBUTED).", "ESPN snapshot (2026-11-27T19:53:50Z) shows roster update: Deshaun Watson now owned as QB (prior Pulse listed Cam Ward).", "Brock Purdy ruled out; Mac Jones starting for 49ers."],
+  "no_material_change": false,
+  "summary": "12:00 AM ET Saturday overnight Nov 28 refresh (Week 12). Material: Darnold start confirmed; ESPN snapshot shows Watson on roster replacing prior Cam Ward observation. Purdy out/Jones start. Skill players healthy post-Thursday. Intelligence only; no ESPN action by this Pulse.",
+  "prior_pulse_id": "mongo-grok-pulse-2026-11-27T110151Z",
+  "prior_completed_at": "2026-11-27T11:01:51Z",
+  "prior_commit": "pending",
+  "source_status_notes": "Official NFL/team (49ers.com, Seahawks/Macdonald, ESPN, NFL.com) OK. Beat reporting OK (ESPN, Yahoo, CBS, RotoWire, NBC). x_direct LIMITED. Experts/analytics LIMITED. Overnight scan detected Darnold confirmation and roster observation update."
+}
