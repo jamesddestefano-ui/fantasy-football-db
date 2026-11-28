@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-26T13:14:20-05:00",
+  "generated_at": "2026-11-28T10:30:01-05:00",
   "schema_version": 1,
   "system": "PRIME_MONGO_FANTASY_WATCH",
   "season": 2026,
-  "total_decisions": 36,
+  "total_decisions": 37,
   "reviewed_decisions": 32,
-  "pending_decisions": 4,
+  "pending_decisions": 5,
   "wins": 14,
   "losses": 5,
   "neutral": 13,
@@ -29,7 +29,7 @@
       "reviewed_count": 0
     },
     "2": {
-      "count": 11,
+      "count": 12,
       "success_rate": 0.455,
       "average_outcome_grade": 2.545,
       "average_process_grade": 2.636,
@@ -73,7 +73,7 @@
       "reviewed_count": 6
     },
     "START_SIT": {
-      "count": 10,
+      "count": 11,
       "success_rate": 0.222,
       "average_outcome_grade": 2.111,
       "average_process_grade": 2.667,
@@ -129,6 +129,16 @@
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
     "4-7 team: spend now, FAAB is worthless if eliminated": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "All of James's other WRs have already played (Thu/Fri games), so a $0 Monday-night WR is the only fill": {
       "count": 1,
       "success_rate": null,
       "average_outcome_grade": null,
@@ -638,6 +648,16 @@
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
+    "McMillan limited Friday with optimistic coach comments - likely plays": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
     "Mendoza unusable vs SEA": {
       "count": 1,
       "success_rate": 1.0,
@@ -805,6 +825,16 @@
       "average_process_grade": 2.0,
       "reviewed_count": 1,
       "false_positive_rate": 1.0,
+      "false_negative_rate": null,
+      "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
+    },
+    "Tez Johnson is the top-projected ESPN free-agent WR playing Monday (6.43)": {
+      "count": 1,
+      "success_rate": null,
+      "average_outcome_grade": null,
+      "average_process_grade": null,
+      "reviewed_count": 0,
+      "false_positive_rate": null,
       "false_negative_rate": null,
       "false_negative_note": "Derived from explicit missed-opportunity entries in weekly reviews after outcomes are known."
     },
@@ -1199,15 +1229,15 @@
     }
   },
   "nfl_pulse_performance": {
-    "pulses_considered": 9,
-    "pulses_used": 8,
+    "pulses_considered": 10,
+    "pulses_used": 9,
     "pulses_rejected": 1,
-    "decision_lineages_considered": 9,
-    "decision_lineages_used": 8,
+    "decision_lineages_considered": 10,
+    "decision_lineages_used": 9,
     "actions_changed_by_pulse": 5,
     "successful_actions_changed_by_pulse": 2,
     "unsuccessful_actions_changed_by_pulse": 0,
-    "average_information_lead_time_minutes": 719.5,
+    "average_information_lead_time_minutes": 681.222,
     "highly_useful_pulses": 0,
     "misleading_pulses": 0,
     "too_late_pulses": 0,
@@ -1218,12 +1248,12 @@
     },
     "pulse_category_performance": {
       "INJURY_DESIGNATION": {
-        "count": 1,
+        "count": 2,
         "success_rate": 1.0,
         "average_outcome_grade": 3.0,
         "average_process_grade": 4.0,
         "reviewed_count": 1,
-        "used_count": 1,
+        "used_count": 2,
         "changed_decision_count": 0,
         "usefulness_grade_distribution": {
           "USEFUL": 1
@@ -1246,12 +1276,12 @@
     },
     "pulse_source_performance": {
       "Grok Pulse overnight": {
-        "count": 1,
+        "count": 2,
         "success_rate": 1.0,
         "average_outcome_grade": 3.0,
         "average_process_grade": 4.0,
         "reviewed_count": 1,
-        "used_count": 1,
+        "used_count": 2,
         "changed_decision_count": 0,
         "usefulness_grade_distribution": {
           "USEFUL": 1
@@ -1275,7 +1305,7 @@
   },
   "system_performance": {
     "CLAUDE_MONGO_BRAIN": {
-      "count": 30,
+      "count": 31,
       "success_rate": 0.423,
       "average_outcome_grade": 2.346,
       "average_process_grade": 2.808,
